@@ -11,11 +11,16 @@ y_spd = (down_key - up_key) * move_spd;
 //collisions
 if place_meeting(x + x_spd, y, obj_wall) == true
 	{
-		x_spd = 0;
+		x_spd = 0; //this activates the moving animations
+		
 	}
 if place_meeting(x, y + y_spd, obj_wall) == true
 	{
 		y_spd = 0;
+		
 	}
+	
+if ((x_spd==0)&&(y_spd==0)) image_speed = 0;
+else image_speed = 4;
 x += x_spd
 y += y_spd
