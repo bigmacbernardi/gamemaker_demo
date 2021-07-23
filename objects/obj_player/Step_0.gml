@@ -20,7 +20,22 @@ if place_meeting(x, y + y_spd, obj_wall) == true
 		
 	}
 	
-if ((x_spd==0)&&(y_spd==0)) image_speed = 0;
-else image_speed = 4;
+if (x_spd==0){
+	if (y_spd==0) image_speed = 0;
+	else image_speed = 4;
+}
+else{
+	if ((x_spd<0)&&(image_xscale != -1))
+	{
+		image_xscale = -1;
+		x-= sprite_width;
+	}
+	else if ((x_spd>0)&&(image_xscale == -1))
+	{
+		image_xscale = 1;
+		x-= sprite_width;
+	}
+	image_speed = 4;
+}
 x += x_spd
 y += y_spd
