@@ -4,6 +4,7 @@
     {"id":{"name":"Basic_Platformer_Tiles","path":"extensions/Basic_Platformer_Tiles/Basic_Platformer_Tiles.yy",},"order":0,},
     {"id":{"name":"til_platformtiles","path":"sprites/til_platformtiles/til_platformtiles.yy",},"order":1,},
     {"id":{"name":"bg_brickwall","path":"sprites/bg_brickwall/bg_brickwall.yy",},"order":0,},
+    {"id":{"name":"spr_playerback","path":"sprites/spr_playerback/spr_playerback.yy",},"order":3,},
     {"id":{"name":"idkguy","path":"tilesets/idkguy/idkguy.yy",},"order":4,},
     {"id":{"name":"til_platformtiles_tileset","path":"tilesets/til_platformtiles_tileset/til_platformtiles_tileset.yy",},"order":0,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},

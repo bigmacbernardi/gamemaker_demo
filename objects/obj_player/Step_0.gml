@@ -20,11 +20,10 @@ if place_meeting(x, y + y_spd, obj_wall) == true
 		
 	}
 	
-if (x_spd==0){
-	if (y_spd==0) image_speed = 0;
-	else image_speed = 4;
-}
+if ((x_spd==0)&&(y_spd==0))image_speed = 0;
 else{
+	if ((y_spd<0)&&(sprite_index == spr_player)) sprite_index = spr_playerback;
+	else if ((y_spd>0)&&(sprite_index == spr_playerback)) sprite_index = spr_player;
 	if ((x_spd<0)&&(image_xscale != -1))
 	{
 		image_xscale = -1;
