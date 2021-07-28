@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "tilesets",
-    "path": "folders/Sprites/tilesets.yy",
+    "name": "gamemaker_demo",
+    "path": "gamemaker_demo.yyp",
   },
   "resourceVersion": "1.0",
   "name": "til_platformtiles",
