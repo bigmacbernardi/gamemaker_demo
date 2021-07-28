@@ -10,6 +10,7 @@
     {"id":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},"order":4,},
     {"id":{"name":"bg_brickwall","path":"sprites/bg_brickwall/bg_brickwall.yy",},"order":0,},
     {"id":{"name":"Not_Lucas_MessinAround","path":"sprites/Not_Lucas_MessinAround/Not_Lucas_MessinAround.yy",},"order":1,},
+    {"id":{"name":"battle_manager","path":"objects/battle_manager/battle_manager.yy",},"order":7,},
     {"id":{"name":"Not__Lucas","path":"sprites/Not__Lucas/Not__Lucas.yy",},"order":2,},
     {"id":{"name":"spr_castletiles","path":"sprites/spr_castletiles/spr_castletiles.yy",},"order":1,},
     {"id":{"name":"spr_warp_transition","path":"sprites/spr_warp_transition/spr_warp_transition.yy",},"order":9,},
