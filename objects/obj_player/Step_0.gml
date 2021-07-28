@@ -8,6 +8,13 @@ down_key = keyboard_check(0x53);
 x_spd = (right_key - left_key) * move_spd;
 y_spd = (down_key - up_key) * move_spd;
 
+//cheap pause effect
+if instance_exists(obj_pauser)
+	{
+		x_spd = 0
+		y_spd = 0
+	}
+
 //collisions
 if place_meeting(x + x_spd, y, obj_wall) == true
 	{

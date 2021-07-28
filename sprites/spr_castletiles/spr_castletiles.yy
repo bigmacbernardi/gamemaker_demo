@@ -148,8 +148,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "demo",
-    "path": "demo.yyp",
+    "name": "gamemaker_demo",
+    "path": "gamemaker_demo.yyp",
   },
   "resourceVersion": "1.0",
   "name": "spr_castletiles",

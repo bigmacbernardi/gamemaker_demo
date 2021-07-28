@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-target_x = 0;
-target_y = 0;
-target_rm = 0;
-
+if room == target_rm && image_index < 1
+	{
+	instance_destroy()
+	}

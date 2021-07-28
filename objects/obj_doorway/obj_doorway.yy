@@ -1,10 +1,7 @@
 {
-  "spriteId": {
-    "name": "spr_warp",
-    "path": "sprites/spr_warp/spr_warp.yy",
-  },
+  "spriteId": null,
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -31,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_warp",
+  "name": "obj_doorway",
   "tags": [],
   "resourceType": "GMObject",
 }
