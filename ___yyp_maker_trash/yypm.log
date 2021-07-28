@@ -1,0 +1,373 @@
+You are using YYP Maker v1.1.2, released in 11-04-2021
+
+
+
+[28-07-2021 12:28:37] Initialized GameMaker Project: gamemaker_demo.yyp
+[28-07-2021 12:28:37] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/animcurves
+[28-07-2021 12:28:37] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/datafiles
+[28-07-2021 12:28:37] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/extensions
+[28-07-2021 12:28:37] Checking Basic_Platformer_Tiles
+[28-07-2021 12:28:37] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/extensions/Basic_Platformer_Tiles
+[28-07-2021 12:28:37] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/extensions/Basic_Platformer_Tiles
+[28-07-2021 12:28:37] Checking Basic_Platformer_Tiles.yy
+[28-07-2021 12:28:37] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/extensions/Basic_Platformer_Tiles/Basic_Platformer_Tiles.yy
+[28-07-2021 12:28:37] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/extensions/Basic_Platformer_Tiles/Basic_Platformer_Tiles.yy
+[28-07-2021 12:28:37] Par: "folders/Extensions" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/extensions/Basic_Platformer_Tiles/Basic_Platformer_Tiles.yy"
+[28-07-2021 12:28:37] Found Extension: Basic_Platformer_Tiles
+[28-07-2021 12:28:37] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/fonts
+[28-07-2021 12:28:37] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/notes
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects
+[28-07-2021 12:28:38] Checking obj_warp
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_warp
+[28-07-2021 12:28:38] Checking obj_wall
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_wall
+[28-07-2021 12:28:38] Checking obj_player
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_player
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_player
+[28-07-2021 12:28:38] Checking Step_0.gml
+[28-07-2021 12:28:38] Checking obj_player.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_player/obj_player.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_player/obj_player.yy
+[28-07-2021 12:28:38] Par: "folders/Objects" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_player/obj_player.yy"
+[28-07-2021 12:28:38] Found Object: obj_player
+[28-07-2021 12:28:38] Checking Create_0.gml
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_wall
+[28-07-2021 12:28:38] Checking obj_wall.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_wall/obj_wall.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_wall/obj_wall.yy
+[28-07-2021 12:28:38] Par: "folders/Objects" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_wall/obj_wall.yy"
+[28-07-2021 12:28:38] Found Object: obj_wall
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_warp
+[28-07-2021 12:28:38] Checking Step_0.gml
+[28-07-2021 12:28:38] Checking obj_warp.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_warp/obj_warp.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_warp/obj_warp.yy
+[28-07-2021 12:28:38] Par: "folders/Objects" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/objects/obj_warp/obj_warp.yy"
+[28-07-2021 12:28:38] Found Object: obj_warp
+[28-07-2021 12:28:38] Checking Create_0.gml
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/options
+[28-07-2021 12:28:38] Checking windows
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/options/windows
+[28-07-2021 12:28:38] Checking main
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/options/main
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/options/main
+[28-07-2021 12:28:38] Checking options_main.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/options/main/options_main.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/options/main/options_main.yy
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/options/windows
+[28-07-2021 12:28:38] Checking options_windows.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/options/windows/options_windows.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/options/windows/options_windows.yy
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/paths
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms
+[28-07-2021 12:28:38] Checking Room2
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms/Room2
+[28-07-2021 12:28:38] Checking Room1
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms/Room1
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms/Room1
+[28-07-2021 12:28:38] Checking Room1.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms/Room1/Room1.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms/Room1/Room1.yy
+[28-07-2021 12:28:38] Par: "folders/Rooms" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms/Room1/Room1.yy"
+[28-07-2021 12:28:38] Found Room: Room1
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms/Room2
+[28-07-2021 12:28:38] Checking Room2.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms/Room2/Room2.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms/Room2/Room2.yy
+[28-07-2021 12:28:38] Par: "folders/Rooms" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/rooms/Room2/Room2.yy"
+[28-07-2021 12:28:38] Found Room: Room2
+[28-07-2021 12:28:38] Checking InstanceCreationCode_inst_4659C843.gml
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/scripts
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sequences
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/shaders
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sounds
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites
+[28-07-2021 12:28:38] Checking til_platformtiles
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/til_platformtiles
+[28-07-2021 12:28:38] Checking spr_warp
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_warp
+[28-07-2021 12:28:38] Checking spr_wall
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_wall
+[28-07-2021 12:28:38] Checking spr_stanley
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_stanley
+[28-07-2021 12:28:38] Checking spr_playerback
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback
+[28-07-2021 12:28:38] Checking spr_player11
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player11
+[28-07-2021 12:28:38] Checking spr_player
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player
+[28-07-2021 12:28:38] Checking spr_person1_back
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1_back
+[28-07-2021 12:28:38] Checking spr_person1
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1
+[28-07-2021 12:28:38] Checking spr_castletiles
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_castletiles
+[28-07-2021 12:28:38] Checking Not__Lucas
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not__Lucas
+[28-07-2021 12:28:38] Checking Not_Lucas_MessinAround
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not_Lucas_MessinAround
+[28-07-2021 12:28:38] Checking bg_brickwall
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/bg_brickwall
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/bg_brickwall
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/bg_brickwall/layers
+[28-07-2021 12:28:38] Checking c192b7d7-a3fa-4385-be19-f6eede61a890.png
+[28-07-2021 12:28:38] Checking bg_brickwall.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/bg_brickwall/bg_brickwall.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/bg_brickwall/bg_brickwall.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites/tilesets" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/bg_brickwall/bg_brickwall.yy"
+[28-07-2021 12:28:38] Found Sprite: bg_brickwall
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/bg_brickwall/layers
+[28-07-2021 12:28:38] Checking c192b7d7-a3fa-4385-be19-f6eede61a890
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/bg_brickwall/layers/c192b7d7-a3fa-4385-be19-f6eede61a890
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/bg_brickwall/layers/c192b7d7-a3fa-4385-be19-f6eede61a890
+[28-07-2021 12:28:38] Checking f4b6729f-6831-430e-a81c-14733516b717.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not_Lucas_MessinAround
+[28-07-2021 12:28:38] Checking Not__Lucas.yy
+[28-07-2021 12:28:38] Trash file: Not__Lucas.yy, will be moved to ___yyp_maker_trash
+[28-07-2021 12:28:38] Checking Not_Lucas_MessinAround.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not_Lucas_MessinAround/Not_Lucas_MessinAround.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not_Lucas_MessinAround/Not_Lucas_MessinAround.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites/tilesets" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not_Lucas_MessinAround/Not_Lucas_MessinAround.yy"
+[28-07-2021 12:28:38] Found Sprite: Not_Lucas_MessinAround
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not_Lucas_MessinAround/layers
+[28-07-2021 12:28:38] Checking 4624d3fc-a694-46ce-aed9-b68bf1059579.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not_Lucas_MessinAround/layers
+[28-07-2021 12:28:38] Checking 4624d3fc-a694-46ce-aed9-b68bf1059579
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not_Lucas_MessinAround/layers/4624d3fc-a694-46ce-aed9-b68bf1059579
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not_Lucas_MessinAround/layers/4624d3fc-a694-46ce-aed9-b68bf1059579
+[28-07-2021 12:28:38] Checking 8f8c5911-e703-4728-89d6-abe85271dede.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not__Lucas
+[28-07-2021 12:28:38] Checking Not__Lucas.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not__Lucas/Not__Lucas.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not__Lucas/Not__Lucas.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites/tilesets" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not__Lucas/Not__Lucas.yy"
+[28-07-2021 12:28:38] Found Sprite: Not__Lucas
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not__Lucas/layers
+[28-07-2021 12:28:38] Checking 4624d3fc-a694-46ce-aed9-b68bf1059579.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not__Lucas/layers
+[28-07-2021 12:28:38] Checking 4624d3fc-a694-46ce-aed9-b68bf1059579
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not__Lucas/layers/4624d3fc-a694-46ce-aed9-b68bf1059579
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/Not__Lucas/layers/4624d3fc-a694-46ce-aed9-b68bf1059579
+[28-07-2021 12:28:38] Checking 8f8c5911-e703-4728-89d6-abe85271dede.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_castletiles
+[28-07-2021 12:28:38] Checking spr_castletiles.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_castletiles/spr_castletiles.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_castletiles/spr_castletiles.yy
+[28-07-2021 12:28:38] Par: "demo.yyp" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_castletiles/spr_castletiles.yy"
+[28-07-2021 12:28:38] Found Sprite: spr_castletiles
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_castletiles/layers
+[28-07-2021 12:28:38] Checking 86c0013f-ada0-464f-a27a-341837f0076a.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_castletiles/layers
+[28-07-2021 12:28:38] Checking 86c0013f-ada0-464f-a27a-341837f0076a
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_castletiles/layers/86c0013f-ada0-464f-a27a-341837f0076a
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_castletiles/layers/86c0013f-ada0-464f-a27a-341837f0076a
+[28-07-2021 12:28:38] Checking 2e8c123c-3e9a-4cd7-8a64-df2ba6e555ec.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1
+[28-07-2021 12:28:38] Checking spr_person1.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1/spr_person1.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1/spr_person1.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1/spr_person1.yy"
+[28-07-2021 12:28:38] Found Sprite: spr_person1
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1/layers
+[28-07-2021 12:28:38] Checking ad471237-ff0f-43e7-a8eb-798a032238f2.png
+[28-07-2021 12:28:38] Checking 64e634c4-c6c6-4294-9529-faa616e72f53.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1/layers
+[28-07-2021 12:28:38] Checking ad471237-ff0f-43e7-a8eb-798a032238f2
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1/layers/ad471237-ff0f-43e7-a8eb-798a032238f2
+[28-07-2021 12:28:38] Checking 64e634c4-c6c6-4294-9529-faa616e72f53
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1/layers/64e634c4-c6c6-4294-9529-faa616e72f53
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1/layers/64e634c4-c6c6-4294-9529-faa616e72f53
+[28-07-2021 12:28:38] Checking d49272c3-44b9-4781-b9e0-c750dc5f523f.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1/layers/ad471237-ff0f-43e7-a8eb-798a032238f2
+[28-07-2021 12:28:38] Checking d49272c3-44b9-4781-b9e0-c750dc5f523f.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1_back
+[28-07-2021 12:28:38] Checking spr_person1_back.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1_back/spr_person1_back.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1_back/spr_person1_back.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1_back/spr_person1_back.yy"
+[28-07-2021 12:28:38] Found Sprite: spr_person1_back
+[28-07-2021 12:28:38] Checking spr_person1.yy
+[28-07-2021 12:28:38] Trash file: spr_person1.yy, will be moved to ___yyp_maker_trash
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1_back/layers
+[28-07-2021 12:28:38] Checking ad471237-ff0f-43e7-a8eb-798a032238f2.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1_back/layers
+[28-07-2021 12:28:38] Checking ad471237-ff0f-43e7-a8eb-798a032238f2
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1_back/layers/ad471237-ff0f-43e7-a8eb-798a032238f2
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_person1_back/layers/ad471237-ff0f-43e7-a8eb-798a032238f2
+[28-07-2021 12:28:38] Checking d49272c3-44b9-4781-b9e0-c750dc5f523f.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player
+[28-07-2021 12:28:38] Checking spr_player.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/spr_player.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/spr_player.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/spr_player.yy"
+[28-07-2021 12:28:38] Found Sprite: spr_player
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers
+[28-07-2021 12:28:38] Checking db82804f-d596-49f1-bf98-94bbfe08cd25.png
+[28-07-2021 12:28:38] Checking b957d963-a831-4af2-86fe-f67dbf3b406a.png
+[28-07-2021 12:28:38] Checking 6fd75d90-e726-4c56-bf57-0e18a722337e.png
+[28-07-2021 12:28:38] Checking 5e5348f5-108e-4f86-a791-a17f11bb77e7.png
+[28-07-2021 12:28:38] Checking 478901cf-7f99-4c0c-8c02-f45704d50bcc.png
+[28-07-2021 12:28:38] Checking 25aa5302-83e8-4e47-b6d7-f97e08fd0867.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers
+[28-07-2021 12:28:38] Checking db82804f-d596-49f1-bf98-94bbfe08cd25
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/db82804f-d596-49f1-bf98-94bbfe08cd25
+[28-07-2021 12:28:38] Checking b957d963-a831-4af2-86fe-f67dbf3b406a
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/b957d963-a831-4af2-86fe-f67dbf3b406a
+[28-07-2021 12:28:38] Checking 6fd75d90-e726-4c56-bf57-0e18a722337e
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/6fd75d90-e726-4c56-bf57-0e18a722337e
+[28-07-2021 12:28:38] Checking 5e5348f5-108e-4f86-a791-a17f11bb77e7
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/5e5348f5-108e-4f86-a791-a17f11bb77e7
+[28-07-2021 12:28:38] Checking 478901cf-7f99-4c0c-8c02-f45704d50bcc
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/478901cf-7f99-4c0c-8c02-f45704d50bcc
+[28-07-2021 12:28:38] Checking 25aa5302-83e8-4e47-b6d7-f97e08fd0867
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/25aa5302-83e8-4e47-b6d7-f97e08fd0867
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/25aa5302-83e8-4e47-b6d7-f97e08fd0867
+[28-07-2021 12:28:38] Checking 1e8e718f-d409-4428-9ba5-5c38ae2d4b66.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/478901cf-7f99-4c0c-8c02-f45704d50bcc
+[28-07-2021 12:28:38] Checking 1e8e718f-d409-4428-9ba5-5c38ae2d4b66.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/5e5348f5-108e-4f86-a791-a17f11bb77e7
+[28-07-2021 12:28:38] Checking 1e8e718f-d409-4428-9ba5-5c38ae2d4b66.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/6fd75d90-e726-4c56-bf57-0e18a722337e
+[28-07-2021 12:28:38] Checking 1e8e718f-d409-4428-9ba5-5c38ae2d4b66.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/b957d963-a831-4af2-86fe-f67dbf3b406a
+[28-07-2021 12:28:38] Checking 1e8e718f-d409-4428-9ba5-5c38ae2d4b66.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player/layers/db82804f-d596-49f1-bf98-94bbfe08cd25
+[28-07-2021 12:28:38] Checking 1e8e718f-d409-4428-9ba5-5c38ae2d4b66.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player11
+[28-07-2021 12:28:38] Checking spr_player11.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player11/spr_player11.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player11/spr_player11.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player11/spr_player11.yy"
+[28-07-2021 12:28:38] Found Sprite: spr_player11
+[28-07-2021 12:28:38] Checking spr_player.yy
+[28-07-2021 12:28:38] Trash file: spr_player.yy, will be moved to ___yyp_maker_trash
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player11/layers
+[28-07-2021 12:28:38] Checking 15883bb6-4517-4400-a06d-448bdb04f076.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player11/layers
+[28-07-2021 12:28:38] Checking 15883bb6-4517-4400-a06d-448bdb04f076
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player11/layers/15883bb6-4517-4400-a06d-448bdb04f076
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_player11/layers/15883bb6-4517-4400-a06d-448bdb04f076
+[28-07-2021 12:28:38] Checking 5048ed90-95ef-45be-9d60-2d333bb6ce89.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback
+[28-07-2021 12:28:38] Checking spr_playerback.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/spr_playerback.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/spr_playerback.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/spr_playerback.yy"
+[28-07-2021 12:28:38] Found Sprite: spr_playerback
+[28-07-2021 12:28:38] Checking spr_player.yy
+[28-07-2021 12:28:38] Trash file: spr_player.yy, will be moved to ___yyp_maker_trash
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/layers
+[28-07-2021 12:28:38] Checking 6828b4b9-c6b0-4eef-a632-2d1650590b77.png
+[28-07-2021 12:28:38] Checking 15883bb6-4517-4400-a06d-448bdb04f076.png
+[28-07-2021 12:28:38] Checking 139ba11d-ad03-4ad0-b7cb-299f008c4ae3.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/layers
+[28-07-2021 12:28:38] Checking 6828b4b9-c6b0-4eef-a632-2d1650590b77
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/layers/6828b4b9-c6b0-4eef-a632-2d1650590b77
+[28-07-2021 12:28:38] Checking 15883bb6-4517-4400-a06d-448bdb04f076
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/layers/15883bb6-4517-4400-a06d-448bdb04f076
+[28-07-2021 12:28:38] Checking 139ba11d-ad03-4ad0-b7cb-299f008c4ae3
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/layers/139ba11d-ad03-4ad0-b7cb-299f008c4ae3
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/layers/139ba11d-ad03-4ad0-b7cb-299f008c4ae3
+[28-07-2021 12:28:38] Checking 5048ed90-95ef-45be-9d60-2d333bb6ce89.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/layers/15883bb6-4517-4400-a06d-448bdb04f076
+[28-07-2021 12:28:38] Checking 5048ed90-95ef-45be-9d60-2d333bb6ce89.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_playerback/layers/6828b4b9-c6b0-4eef-a632-2d1650590b77
+[28-07-2021 12:28:38] Checking 5048ed90-95ef-45be-9d60-2d333bb6ce89.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_stanley
+[28-07-2021 12:28:38] Checking spr_stanley.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_stanley/spr_stanley.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_stanley/spr_stanley.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_stanley/spr_stanley.yy"
+[28-07-2021 12:28:38] Found Sprite: spr_stanley
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_stanley/layers
+[28-07-2021 12:28:38] Checking 422867c6-e594-4923-a5cb-42d82ba878e8.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_stanley/layers
+[28-07-2021 12:28:38] Checking 422867c6-e594-4923-a5cb-42d82ba878e8
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_stanley/layers/422867c6-e594-4923-a5cb-42d82ba878e8
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_stanley/layers/422867c6-e594-4923-a5cb-42d82ba878e8
+[28-07-2021 12:28:38] Checking 8a6a594c-5de5-42d6-a72a-e4ab549e0a59.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_wall
+[28-07-2021 12:28:38] Checking spr_wall.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_wall/spr_wall.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_wall/spr_wall.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_wall/spr_wall.yy"
+[28-07-2021 12:28:38] Found Sprite: spr_wall
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_wall/layers
+[28-07-2021 12:28:38] Checking 89c966b1-5599-4737-8e86-a1bdc244413e.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_wall/layers
+[28-07-2021 12:28:38] Checking 89c966b1-5599-4737-8e86-a1bdc244413e
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_wall/layers/89c966b1-5599-4737-8e86-a1bdc244413e
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_wall/layers/89c966b1-5599-4737-8e86-a1bdc244413e
+[28-07-2021 12:28:38] Checking efbfdc6e-ef82-45bc-93e8-5691b9af7b83.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_warp
+[28-07-2021 12:28:38] Checking spr_warp.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_warp/spr_warp.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_warp/spr_warp.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_warp/spr_warp.yy"
+[28-07-2021 12:28:38] Found Sprite: spr_warp
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_warp/layers
+[28-07-2021 12:28:38] Checking 713c8e01-224d-4994-beb7-a8436c2d28c4.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_warp/layers
+[28-07-2021 12:28:38] Checking 713c8e01-224d-4994-beb7-a8436c2d28c4
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_warp/layers/713c8e01-224d-4994-beb7-a8436c2d28c4
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/spr_warp/layers/713c8e01-224d-4994-beb7-a8436c2d28c4
+[28-07-2021 12:28:38] Checking 3ce1f90f-bb90-4523-b5ae-b0669e3264d4.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/til_platformtiles
+[28-07-2021 12:28:38] Checking til_platformtiles.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/til_platformtiles/til_platformtiles.yy
+[28-07-2021 12:28:38] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/til_platformtiles/til_platformtiles.yy
+[28-07-2021 12:28:38] Par: "folders/Sprites/tilesets" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/til_platformtiles/til_platformtiles.yy"
+[28-07-2021 12:28:38] Found Sprite: til_platformtiles
+[28-07-2021 12:28:38] Checking layers
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/til_platformtiles/layers
+[28-07-2021 12:28:38] Checking 86228992-47bf-4364-9330-88fa7ae851bf.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/til_platformtiles/layers
+[28-07-2021 12:28:38] Checking 86228992-47bf-4364-9330-88fa7ae851bf
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/til_platformtiles/layers/86228992-47bf-4364-9330-88fa7ae851bf
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/sprites/til_platformtiles/layers/86228992-47bf-4364-9330-88fa7ae851bf
+[28-07-2021 12:28:38] Checking 4d216170-3ebf-4b4c-8654-308fc51be71e.png
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets
+[28-07-2021 12:28:38] Checking til_platformtiles_tileset
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/til_platformtiles_tileset
+[28-07-2021 12:28:38] Checking TileSet3
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/TileSet3
+[28-07-2021 12:28:38] Checking idkguy
+[28-07-2021 12:28:38] Directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/idkguy
+[28-07-2021 12:28:38] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/idkguy
+[28-07-2021 12:28:38] Checking output_tileset.png
+[28-07-2021 12:28:38] Checking idkguy.yy
+[28-07-2021 12:28:38] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/idkguy/idkguy.yy
+[28-07-2021 12:28:39] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/idkguy/idkguy.yy
+[28-07-2021 12:28:39] Par: "folders/Sprites/tilesets" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/idkguy/idkguy.yy"
+[28-07-2021 12:28:39] Found TileSet: idkguy
+[28-07-2021 12:28:39] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/TileSet3
+[28-07-2021 12:28:39] Checking TileSet3.yy
+[28-07-2021 12:28:39] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/TileSet3/TileSet3.yy
+[28-07-2021 12:28:39] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/TileSet3/TileSet3.yy
+[28-07-2021 12:28:39] Par: "folders/Tile Sets" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/TileSet3/TileSet3.yy"
+[28-07-2021 12:28:39] Found TileSet: TileSet3
+[28-07-2021 12:28:39] Checking output_tileset.png
+[28-07-2021 12:28:39] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/til_platformtiles_tileset
+[28-07-2021 12:28:39] Checking til_platformtiles_tileset.yy
+[28-07-2021 12:28:39] Parsing C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/til_platformtiles_tileset/til_platformtiles_tileset.yy
+[28-07-2021 12:28:39] Reading C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/til_platformtiles_tileset/til_platformtiles_tileset.yy
+[28-07-2021 12:28:39] Par: "folders/Tile Sets" at dir: "C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/tilesets/til_platformtiles_tileset/til_platformtiles_tileset.yy"
+[28-07-2021 12:28:39] Found TileSet: til_platformtiles_tileset
+[28-07-2021 12:28:39] Checking output_tileset.png
+[28-07-2021 12:28:39] Current parent directory: C:/Users/johns/Documents/GameMakerStudio2/gamemaker_demo/timelines
+[28-07-2021 12:28:39] Moving files to trash...
+[28-07-2021 12:28:39] Files yeeted successfully!
+[28-07-2021 12:28:39] Generating YYP...
+[28-07-2021 12:28:39] gamemaker_demo.yyp created successfully!

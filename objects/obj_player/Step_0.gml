@@ -22,17 +22,17 @@ if place_meeting(x, y + y_spd, obj_wall) == true
 	
 if ((x_spd==0)&&(y_spd==0))image_speed = 0;
 else{
-	if ((y_spd<0)&&(sprite_index == spr_player)) sprite_index = spr_playerback;
-	else if ((y_spd>0)&&(sprite_index == spr_playerback)) sprite_index = spr_player;
+	if ((y_spd<0)&&(sprite_index == spr_person1)) sprite_index = spr_person1_back;
+	else if ((y_spd>0)&&(sprite_index == spr_person1_back)) sprite_index = spr_person1;
 	if ((x_spd<0)&&(image_xscale != -1))
 	{
 		image_xscale = -1;
-		x-= sprite_width;
+		//x-= sprite_width;
 	}
 	else if ((x_spd>0)&&(image_xscale == -1))
 	{
 		image_xscale = 1;
-		x-= sprite_width;
+		//x-= sprite_width;
 	}
 	image_speed = 4;
 }
