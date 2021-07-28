@@ -1,12 +1,12 @@
 {
   "spriteId": {
-    "name": "spr_person1",
-    "path": "sprites/spr_person1/spr_person1.yy",
+    "name": "spr_warp",
+    "path": "sprites/spr_warp/spr_warp.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -31,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_player",
+  "name": "obj_warp",
   "tags": [],
   "resourceType": "GMObject",
 }

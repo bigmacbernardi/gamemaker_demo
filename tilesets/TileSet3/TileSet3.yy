@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite9",
-    "path": "sprites/Sprite9/Sprite9.yy",
+    "name": "spr_castletiles",
+    "path": "sprites/spr_castletiles/spr_castletiles.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
