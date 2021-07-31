@@ -26,25 +26,30 @@ switch(combatPhase){
 		for (var i = 0; i < ds_list_size(global.units); i++){
 			var inst = global.units[|i];
 			if (inst.turnFinished == false){
-				
+				inst.selected = true;
 				global.selectedUnit = inst;
 				break;
 			}
 		}  
+		allowInput = true;
 		combatPhase = phase.wait;
 	break;
 	
 	case phase.wait:
-		if(global.selectedUnit.turnFinished == true)
+		if(selectedFinished == true){
+			global.selectedUnit.selected = false;
 			unitsFinished++;
 			combatPhase = phase.process;
+		}
 	break;
 	
 	case phase.process:
-		combatPhase = phase.checkFinish;
+		if (processFinished)
+			combatPhase = phase.checkFinish;
 	break;
 	
 	case phase.checkFinish:
+	processFinished = false;
 		//if(keyboard_check_released(vk_space))
 			combatPhase = phase.endTurn;
 		//if(keyboard_check_released(vk_enter))
@@ -54,6 +59,8 @@ switch(combatPhase){
 	break;
 	
 	case phase.endTurn:
+		selectedFinished = false;
+		global.selectedTargets = noone;
 		combatPhase = phase.startTurn;
 	break;
 	
