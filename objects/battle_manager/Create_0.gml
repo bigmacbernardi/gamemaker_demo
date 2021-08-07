@@ -16,8 +16,12 @@ combatPhase = phase.init;
 unitsFinished = 0;
 selectedFinished = false;
 processFinished = false;
+checkCompletion = false;
+checkParty = false;
 allowInput = false;
 
 global.units = ds_list_create();
+global.allies = ds_list_create();
+global.enemies = ds_list_create();
 global.selectedUnit = noone;
 global.selectedTargets = noone;

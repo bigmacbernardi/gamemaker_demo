@@ -10,14 +10,14 @@ switch(state){
 	case ATTACK:
 		if (layer_sequence_get_headpos(unitSequence) > atkEnd){
 			turnFinished = true;
-			if (attackWillHit){
-				layer_sequence_headpos(unitSequence, idleStart);
+			//if (attackWillHit){
+			//	layer_sequence_headpos(unitSequence, idleStart);
 				state = IDLE;
-			}
-			else{
-				layer_sequence_headpos(unitSequence, missStart);
-				state = MISS;
-			}
+			//}
+			//else{
+			//	layer_sequence_headpos(unitSequence, missStart);
+			//	state = MISS;
+			//}
 		}
 	
 	break;
@@ -40,7 +40,10 @@ switch(state){
 				}
 				else{
 					layer_sequence_headpos(unitSequence, deathStart);
-					ds_list_delete(global.units,ds_list_find_index(global.units,id));
+					if (isPlayer)
+						ds_list_delete(global.allies,ds_list_find_index(global.allies,id));
+					else
+						ds_list_delete(global.enemies,ds_list_find_index(global.enemies,id));
 					state = DEATH;
 				}
 			}
@@ -61,7 +64,7 @@ switch(state){
 	
 	case DEATH:
 		if (layer_sequence_get_headpos(unitSequence) > deathEnd){
-			instance_destroy();
+			layer_sequence_headpos(unitSequence,deathMid);
 		}
 	break;
 }

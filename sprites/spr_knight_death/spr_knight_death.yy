@@ -63,6 +63,15 @@
     {"compositeImage":{"FrameId":{"name":"3610ba83-974c-44f2-8b17-6bc5183121f5","path":"sprites/spr_knight_death/spr_knight_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"3610ba83-974c-44f2-8b17-6bc5183121f5","path":"sprites/spr_knight_death/spr_knight_death.yy",},"LayerId":{"name":"26740849-f97b-4014-9b69-02a1e7a82f1c","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_knight_death","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","name":"3610ba83-974c-44f2-8b17-6bc5183121f5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5f85b337-43d5-4517-b404-7b7f3520121a","path":"sprites/spr_knight_death/spr_knight_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5f85b337-43d5-4517-b404-7b7f3520121a","path":"sprites/spr_knight_death/spr_knight_death.yy",},"LayerId":{"name":"26740849-f97b-4014-9b69-02a1e7a82f1c","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_knight_death","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","name":"5f85b337-43d5-4517-b404-7b7f3520121a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"77b414c4-2e2f-4061-9623-401fdba9de2c","path":"sprites/spr_knight_death/spr_knight_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"77b414c4-2e2f-4061-9623-401fdba9de2c","path":"sprites/spr_knight_death/spr_knight_death.yy",},"LayerId":{"name":"26740849-f97b-4014-9b69-02a1e7a82f1c","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_knight_death","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","name":"77b414c4-2e2f-4061-9623-401fdba9de2c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9caa663b-3daa-4f65-b78c-913dc74b2390","path":"sprites/spr_knight_death/spr_knight_death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9caa663b-3daa-4f65-b78c-913dc74b2390","path":"sprites/spr_knight_death/spr_knight_death.yy",},"LayerId":{"name":"26740849-f97b-4014-9b69-02a1e7a82f1c","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_knight_death","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","name":"9caa663b-3daa-4f65-b78c-913dc74b2390","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_knight_death","path":"sprites/spr_knight_death/spr_knight_death.yy",},
@@ -72,7 +81,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 13.0,
+    "length": 16.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -90,6 +99,9 @@
             {"id":"32a9aff5-41c0-42b0-b14c-7bf5bddb9713","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"caef362d-dcc8-459a-bbdc-e86d07544fa6","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"48248698-5003-4f6e-8dcc-b3a50468b0b6","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"75addf75-42c9-4888-be89-917607586d05","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4fb73541-e103-4bce-857e-d48afb5dfb9b","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3610ba83-974c-44f2-8b17-6bc5183121f5","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5c62abf9-2ec6-4ec0-b93b-6e3ba1a15257","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5f85b337-43d5-4517-b404-7b7f3520121a","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d40547f0-208c-457d-adba-075b902be465","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"77b414c4-2e2f-4061-9623-401fdba9de2c","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"04701bfa-2a7e-4685-901e-d3f6d36b55a3","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9caa663b-3daa-4f65-b78c-913dc74b2390","path":"sprites/spr_knight_death/spr_knight_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,

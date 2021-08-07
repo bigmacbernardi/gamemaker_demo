@@ -4,7 +4,7 @@ event_inherited();
 
 //sPlayer is filler animation for the knight
 unitSequence = layer_sequence_create("Sequences",x,y,sPlayer);
-
+isPlayer = true;
 //start and end frames for each state
 idleStart = 0;
 idleEnd = 30;
@@ -19,4 +19,5 @@ hitEnd = 45;
 missStart = 46;
 missEnd = 49;
 deathStart = 61;
-deathEnd = 71;
+deathMid = 69;
+deathEnd = 73;

@@ -22,4 +22,11 @@ function unitAttack(){
 				layer_sequence_headpos(unitSequence,hitStart);
 		}
 	}
+	else{
+		with(global.selectedTargets){
+			state = MISS;
+			layer_sequence_headpos(unitSequence,missStart);
+		}
+	}
+	
 }

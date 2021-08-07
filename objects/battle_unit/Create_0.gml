@@ -35,6 +35,7 @@ current[DEF] = base[@ DEF]
 current[SPD] = base[@ SPD]
 current[ACC] = base[@ ACC]
 
+isPlayer = false;
 turnFinished = false;
 selected = false;
 attackWillHit = false;

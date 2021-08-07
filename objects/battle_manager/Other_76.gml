@@ -12,5 +12,13 @@ if (event_data[? "event_type"] == "sequence event"){
 			processFinished = true;
 		break;
 		
+		case "playerDeath":
+			checkCompletion = true;
+			checkParty = true;
+		break;
+		
+		case "enemyDeath":
+			checkCompletion = true;
+		break;
 	}
 }
