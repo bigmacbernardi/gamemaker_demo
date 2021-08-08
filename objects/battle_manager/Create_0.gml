@@ -19,6 +19,7 @@ processFinished = false;
 checkCompletion = false;
 checkParty = false;
 allowInput = false;
+solicitInput = false;
 
 global.units = ds_list_create();
 global.allies = ds_list_create();

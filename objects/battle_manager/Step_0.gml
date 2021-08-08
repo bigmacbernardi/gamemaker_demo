@@ -16,6 +16,12 @@ switch(combatPhase){
 	break;
 	
 	case phase.startTurn:
+		show_debug_message("Turn Start");
+		if (ds_list_empty(global.enemies) || ds_list_empty(global.allies)){
+			show_debug_message("One team has been eliminated");
+			combatPhase = phase.checkFinish;
+			break;
+		}
 		//this is where you would sort the list of units, based on SPD attribute or whatever else
 		
 		//if there are as many unitsFinished as units, reset everyone's turnFinished status
@@ -31,32 +37,26 @@ switch(combatPhase){
 		//change unit's local selected status (draws indicator) and make it the selectedUnit
 		for (var i = 0; i < ds_list_size(global.units); i++){
 			var inst = global.units[|i];
-			if (!inst.turnFinished){
+			if ((!inst.turnFinished)&&(inst.state != DEATH)){
 				inst.selected = true;
 				global.selectedUnit = inst;
 				break;
 			}
 		}  
-		allowInput = true;
+		if (global.selectedUnit.isPlayer)
+			allowInput = true;
+		else
+			solicitInput = true;
 		combatPhase = phase.wait;
 	break;
 	
 	case phase.wait:
-		if (global.selectedUnit.isPlayer)
-			allowInput = true;
-		else{
-			with (global.selectedUnit){
-				state = ATTACK; 
-				layer_sequence_headpos(unitSequence,atkStart);
-				for(var i = 0; i < ds_list_size(global.allies); i++){
-					if (global.allies[|i].state != DEATH){
-						global.selectedTargets = global.allies[|i];
-						break;
-						}
-				}
-			}
+		if (solicitInput){
+			simulateInput();		
+			solicitInput = false;
 		}
-		if(selectedFinished == true){
+		if (selectedFinished){
+			show_debug_message("Selected Finished");
 			global.selectedUnit.selected = false;
 			unitsFinished++;
 			combatPhase = phase.process;
@@ -64,48 +64,40 @@ switch(combatPhase){
 	break;
 	
 	case phase.process:
-		if (processFinished)
+		if (processFinished){
+			show_debug_message("Process Finished");
 			combatPhase = phase.checkFinish;
+		}
 	break;
 	
 	case phase.checkFinish:
-	if (checkCompletion){
-		var checkList = (checkParty ? global.allies : global.enemies);
-		var size = ds_list_size(checkList);
-		var unbroken = true;
-		for (var i=0;i<size;i++){
-			var item = ds_list_find_value(checkList,i);
-			if !(item.state == DEATH){
-				unbroken = false;
-				break;
-			}
+		show_debug_message("Checking for end-states");
+		if (ds_list_empty(global.allies)){
+			combatPhase = phase.lose;
+			break;
 		}
-		if (unbroken)
-			combatPhase = (checkParty ? phase.lose : phase.win);
-	}
-	processFinished = false;
-		//if(keyboard_check_released(vk_space))
-	combatPhase = phase.endTurn;
-	
-		//if(keyboard_check_released(vk_enter))
-			//combatPhase = phase.win;
-		//if(keyboard_check_released(vk_control))
-			//combatPhase = phase.lose;
+		if (ds_list_empty(global.enemies)){
+			combatPhase = phase.win;
+			break;
+		}
+		processFinished = false;
+		combatPhase = phase.endTurn;
+
 	break;
 	
 	case phase.endTurn:
-		checkCompletion = false;
-		checkParty = false;
 		selectedFinished = false;
 		global.selectedTargets = noone;
 		combatPhase = phase.startTurn;
 	break;
 	
 	case phase.win:
+		show_debug_message("You win!");
 	//return to previous room
 	break;
 	
 	case phase.lose:
+		show_debug_message("You lose...");
 	//game over
 	break;
 }

@@ -6,7 +6,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Helper",
+  "name": "create_button",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -4,6 +4,19 @@ function Helper(){
 
 }
 
+function simulateInput(){
+			with (global.selectedUnit){
+				for(var i = 0; i < ds_list_size(global.allies); i++){
+					if (global.allies[|i].state != DEATH){
+						global.selectedTargets = global.allies[|i];
+						break;
+						}
+				}
+				state = ATTACK; 
+				layer_sequence_headpos(unitSequence,atkStart);
+			}	
+}
+
 function checkForHit(){
 	var number = random(1);
 	var unit = global.selectedUnit;
@@ -30,3 +43,4 @@ function unitAttack(){
 	}
 	
 }
+

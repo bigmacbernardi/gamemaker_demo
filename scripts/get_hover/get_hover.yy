@@ -6,7 +6,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Helper",
+  "name": "get_hover",
   "tags": [],
   "resourceType": "GMScript",
 }

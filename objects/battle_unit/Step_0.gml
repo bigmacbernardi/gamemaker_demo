@@ -40,10 +40,14 @@ switch(state){
 				}
 				else{
 					layer_sequence_headpos(unitSequence, deathStart);
-					if (isPlayer)
+					if (isPlayer){
+						show_debug_message("Player Killed");
 						ds_list_delete(global.allies,ds_list_find_index(global.allies,id));
-					else
+					}
+					else{
+						show_debug_message("Enemy Killed");
 						ds_list_delete(global.enemies,ds_list_find_index(global.enemies,id));
+					}
 					state = DEATH;
 				}
 			}
