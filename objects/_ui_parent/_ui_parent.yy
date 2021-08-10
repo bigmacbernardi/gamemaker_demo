@@ -29,7 +29,6 @@
         "Anchor.bottom_center",
         "Anchor.bottom_left",
       ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"anchor","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":0,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"script","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

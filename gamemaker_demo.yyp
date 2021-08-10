@@ -6,6 +6,7 @@
     {"id":{"name":"spr_battleunit","path":"sprites/spr_battleunit/spr_battleunit.yy",},"order":7,},
     {"id":{"name":"spr_ghost_front","path":"sprites/spr_ghost_front/spr_ghost_front.yy",},"order":22,},
     {"id":{"name":"button_attack","path":"objects/button_attack/button_attack.yy",},"order":2,},
+    {"id":{"name":"simulateInput","path":"scripts/simulateInput/simulateInput.yy",},"order":16,},
     {"id":{"name":"ui_element_update_positions","path":"scripts/ui_element_update_positions/ui_element_update_positions.yy",},"order":7,},
     {"id":{"name":"Basic_Platformer_Tiles","path":"extensions/Basic_Platformer_Tiles/Basic_Platformer_Tiles.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},

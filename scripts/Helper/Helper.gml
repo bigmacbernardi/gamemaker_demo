@@ -4,20 +4,6 @@ function Helper(){
 
 }
 
-function simulateInput(){
-			with (global.selectedUnit){
-				var checkList = (isPlayer ? global.enemies : global.allies);
-				for(var i = 0; i < ds_list_size(checkList); i++){
-					if (checkList[|i].state != DEATH){
-						global.selectedTargets = checkList[|i];
-						break;
-						}
-				}
-				state = ATTACK; 
-				layer_sequence_headpos(unitSequence,atkStart);
-				show_debug_message("ATTACKING!");
-			}	
-}
 
 function checkForHit(){
 	var number = random(1);
