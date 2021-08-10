@@ -56,13 +56,15 @@ switch(state)
 //Detect Clicks
 if (state != VisualState.active) exit;
 
-if((script != noone)&&(isSelected))// && position_meeting(mouse_gui_x,mouse_gui_y,id))
+if((script != noone)&&(isSelected)&&(battle_manager.allowInput))// && position_meeting(mouse_gui_x,mouse_gui_y,id))
 {	//Selected with an existing script
 	image_index=1;
 	if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{	//Left button is being pressed
 		show_debug_message("Button Pressed");
-		script_execute(script);		
+		battle_manager.allowInput = false; //done before to prevent shenanigans
+		script_execute(script);
+		button_attack.visible = 0;
 	}
 }
 else
