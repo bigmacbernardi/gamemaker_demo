@@ -26,17 +26,7 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [
-    {"varType":6,"value":"Anchor.bottom_left","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
-        "Anchor.bottom_left",
-        "Anchor.middle_center",
-        "Anchor.bottom_center",
-      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"anchor","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":0,"value":"simulateInput()","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"script","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":6,"value":"global.enemies","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
-        "global.enemies",
-      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"argument","tags":[],"resourceType":"GMObjectProperty",},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "GUI",

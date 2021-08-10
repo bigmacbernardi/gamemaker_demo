@@ -4,9 +4,9 @@ function Helper(){
 
 }
 
-function simulateInput(targetList){
-			var checkList = targetList;
+function simulateInput(){
 			with (global.selectedUnit){
+				var checkList = (isPlayer ? global.enemies : global.allies);
 				for(var i = 0; i < ds_list_size(checkList); i++){
 					if (checkList[|i].state != DEATH){
 						global.selectedTargets = checkList[|i];

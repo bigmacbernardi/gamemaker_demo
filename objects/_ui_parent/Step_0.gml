@@ -62,7 +62,7 @@ if(script != noone && position_meeting(mouse_gui_x,mouse_gui_y,id))
 	if(mouse_check_button_pressed(mb_left))
 	{	//Left button is being pressed
 		show_debug_message("Button Pressed");
-		script_execute(script,argument);		
+		script_execute(script);		
 	}
 }
 else
