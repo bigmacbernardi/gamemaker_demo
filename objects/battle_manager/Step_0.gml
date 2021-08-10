@@ -25,10 +25,12 @@ switch(combatPhase){
 		//this is where you would sort the list of units, based on SPD attribute or whatever else
 		
 		//if there are as many unitsFinished as units, reset everyone's turnFinished status
-		if(unitsFinished >= ds_list_size(global.units)){
+		if (unitsFinished >= ds_list_size(global.units)){
 			for(var i = 0;i < ds_list_size(global.units);i++){
-				with(global.units[|i])
-					turnFinished = false;			
+				with(global.units[|i]){
+					if !(state == DEATH)
+						turnFinished = false;			
+				}
 			}
 			unitsFinished = 0;
 		}
@@ -56,13 +58,14 @@ switch(combatPhase){
 	case phase.wait:
 		if (solicitInput){
 			show_debug_message("Running AI");
-			simulateInput(global.allies);		
+			simulateInput();		
 			solicitInput = false;
 		}
 			
 		if (selectedFinished){
 			show_debug_message("Selected Finished");
 			global.selectedUnit.selected = false;
+			global.selectedUnit.turnFinished = true;
 			unitsFinished++;
 			combatPhase = phase.process;
 		}

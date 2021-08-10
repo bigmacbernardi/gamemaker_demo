@@ -6,6 +6,7 @@ function Helper(){
 
 
 function checkForHit(){
+	show_debug_message("Checking for hit");
 	var number = random(1);
 	var unit = global.selectedUnit;
 	if (number > unit.current[@ ACC])
@@ -15,6 +16,7 @@ function checkForHit(){
 }
 
 function unitAttack(){
+	show_debug_message("Unit attacking");
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
 		with(global.selectedTargets){

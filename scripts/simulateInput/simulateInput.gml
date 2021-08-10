@@ -11,6 +11,5 @@ function simulateInput(){
 				}
 				state = ATTACK; 
 				layer_sequence_headpos(unitSequence,atkStart);
-				show_debug_message("ATTACKING!");
 			}	
 }

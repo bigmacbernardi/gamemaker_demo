@@ -49,6 +49,7 @@ switch(state){
 						show_debug_message("Enemy Killed");
 						ds_list_delete(global.enemies,ds_list_find_index(global.enemies,id));
 					}
+					turnFinished = true;
 					state = DEATH;
 				}
 			}
