@@ -21,3 +21,9 @@ missEnd = 49;
 deathStart = 61;
 deathMid = 69;
 deathEnd = 73;
+
+current[HP] = 4;
+current[ATK] = 2;
+current[DEF] = 1;
+current[SPD] = 1;
+current[ACC] = 0.5;

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_ghost_front",
+    "path": "sprites/spr_ghost_front/spr_ghost_front.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
