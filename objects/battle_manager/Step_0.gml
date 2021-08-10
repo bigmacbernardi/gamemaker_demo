@@ -46,9 +46,10 @@ switch(combatPhase){
 			}
 		}  
 		if (global.selectedUnit.isPlayer){
+			solicitInput = false;
 			allowInput = true;
 			button_attack.visible = 1;
-			//show_debug_message("Creating menu button");
+			show_debug_message("Showing menu button");
 			//menu = create_button(0,200,280,80,"Attack",simulateInput(global.enemies));
 		}
 		else {
