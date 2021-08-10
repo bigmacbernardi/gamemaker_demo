@@ -9,10 +9,11 @@ switch(state){
 	
 	case ATTACK:
 		if (layer_sequence_get_headpos(unitSequence) > atkEnd){
+			show_debug_message("Attack animation finished");
 			turnFinished = true;
 			//if (attackWillHit){
 			//	layer_sequence_headpos(unitSequence, idleStart);
-				state = IDLE;
+			state = IDLE;
 			//}
 			//else{
 			//	layer_sequence_headpos(unitSequence, missStart);

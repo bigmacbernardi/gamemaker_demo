@@ -43,8 +43,11 @@ switch(combatPhase){
 				break;
 			}
 		}  
-		if (global.selectedUnit.isPlayer)
+		if (global.selectedUnit.isPlayer){
 			allowInput = true;
+			//show_debug_message("Creating menu button");
+			//menu = create_button(0,200,280,80,"Attack",simulateInput(global.enemies));
+		}
 		else
 			solicitInput = true;
 		combatPhase = phase.wait;
@@ -52,9 +55,11 @@ switch(combatPhase){
 	
 	case phase.wait:
 		if (solicitInput){
-			simulateInput();		
+			show_debug_message("Running AI");
+			simulateInput(global.allies);		
 			solicitInput = false;
 		}
+			
 		if (selectedFinished){
 			show_debug_message("Selected Finished");
 			global.selectedUnit.selected = false;
@@ -76,7 +81,7 @@ switch(combatPhase){
 			combatPhase = phase.lose;
 			break;
 		}
-		if (ds_list_empty(global.enemies)){
+		else if (ds_list_empty(global.enemies)){
 			combatPhase = phase.win;
 			break;
 		}

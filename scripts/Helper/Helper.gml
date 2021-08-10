@@ -4,16 +4,18 @@ function Helper(){
 
 }
 
-function simulateInput(){
+function simulateInput(targetList){
+			var checkList = targetList;
 			with (global.selectedUnit){
-				for(var i = 0; i < ds_list_size(global.allies); i++){
-					if (global.allies[|i].state != DEATH){
-						global.selectedTargets = global.allies[|i];
+				for(var i = 0; i < ds_list_size(checkList); i++){
+					if (checkList[|i].state != DEATH){
+						global.selectedTargets = checkList[|i];
 						break;
 						}
 				}
 				state = ATTACK; 
 				layer_sequence_headpos(unitSequence,atkStart);
+				show_debug_message("ATTACKING!");
 			}	
 }
 

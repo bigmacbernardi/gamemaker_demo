@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+/*
 if (allowInput){
 	with (global.selectedUnit){
 		state = ATTACK; 
@@ -13,3 +14,4 @@ if (allowInput){
 	}
 	allowInput = false;
 }
+*/
