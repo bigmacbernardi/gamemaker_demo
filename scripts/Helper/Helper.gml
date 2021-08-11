@@ -28,7 +28,7 @@ function unitAttack(){
 	else{
 		with(global.selectedTargets){
 			state = MISS;
-			path_speed = 2;
+			if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
 			layer_sequence_headpos(unitSequence,missStart);
 		}
 	}

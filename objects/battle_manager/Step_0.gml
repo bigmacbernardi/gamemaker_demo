@@ -4,9 +4,6 @@ switch(combatPhase){
 		for (var i = 0; i < instance_number(battle_spawner); i++){
 			var spawner = instance_find(battle_spawner, i);
 			var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit)
-			with (unit){
-				if (!spawner.isPlayer) path_start(enemy_dodge,0,path_action_restart,false);	
-			}
 			ds_list_add(global.units,unit);
 			if (spawner.isPlayer){
 				ds_list_add(global.allies,unit);
@@ -103,7 +100,7 @@ switch(combatPhase){
 	
 	case phase.endTurn:
 		selectedFinished = false;
-		global.selectedTargets.path_speed = 0;
+		//global.selectedTargets.path_speed = 0;
 		global.selectedTargets = noone;
 		combatPhase = phase.startTurn;
 	break;
