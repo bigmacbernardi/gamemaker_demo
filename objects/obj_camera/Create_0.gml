@@ -2,8 +2,8 @@
 // You can write your code in this editor
 /// @description 
 #macro cam view_camera[0]
-#macro base_width 320
-#macro base_height 180
+#macro base_width 400
+#macro base_height 225
 current_width = base_width
 current_height = base_height
 

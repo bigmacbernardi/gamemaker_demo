@@ -47,7 +47,7 @@
     "spriteId": {"name":"spr_ghost_front","path":"sprites/spr_ghost_front/spr_ghost_front.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

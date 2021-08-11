@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_ghost_front",
-    "path": "sprites/spr_ghost_front/spr_ghost_front.yy",
+    "name": "spr_ghost_idle",
+    "path": "sprites/spr_ghost_idle/spr_ghost_idle.yy",
   },
   "solid": false,
   "visible": true,

@@ -38,6 +38,7 @@ current[ACC] = base[@ ACC]
 isPlayer = false;
 turnFinished = false;
 selected = false;
+targeted = false;
 attackWillHit = false;
 incomingDamage = 0;
 hpBarWidth = sprite_get_width(ui_hp);

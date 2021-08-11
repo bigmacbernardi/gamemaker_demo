@@ -15,9 +15,9 @@ if(is_full_screen != _full)
 
 if(!mouse_wheel_up() && !mouse_wheel_down()) exit;
 
-gui_scale+=(mouse_wheel_down()-mouse_wheel_up())*.25;
-gui_scale=clamp(gui_scale,1,window_scale);
+//gui_scale+=(mouse_wheel_down()-mouse_wheel_up())*.25;
+//gui_scale=clamp(gui_scale,1,window_scale);
 
-display_set_gui_size(current_width*gui_scale,
-									   current_height*gui_scale);
-ui_element_update_positions();
+//display_set_gui_size(current_width*gui_scale,
+//									   current_height*gui_scale);
+//ui_element_update_positions();

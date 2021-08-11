@@ -3,24 +3,24 @@
 event_inherited();
 
 //sPlayer is filler animation for the knight
-unitSequence = layer_sequence_create("Sequences",x,y,sKnight);
+unitSequence = layer_sequence_create("Sequences",x,y,sGhost);
 
 //start and end frames for each state
 idleStart = 0;
-idleEnd = 30;
-atkStart = 30;
-atkEnd = 41;
-intoDefStart = 50;
-intoDefEnd = 55;
-defStart = 56;
-defEnd = 59;
-hitStart = 42;
-hitEnd = 45;
-missStart = 46;
-missEnd = 49;
-deathStart = 61;
-deathMid = 69;
-deathEnd = 73;
+idleEnd = 24;
+atkStart = 26;
+atkEnd = 79;
+intoDefStart = 81;
+intoDefEnd = 101;
+defStart = 102;
+defEnd = 120;
+hitStart = 123;
+hitEnd = 159;
+missStart = 161;
+missEnd = 197;
+deathStart = 199;
+deathMid = 229;
+deathEnd = 244;
 
 current[HP] = 4;
 current[ATK] = 2;

@@ -6,3 +6,7 @@
 if(selected){
 	draw_sprite(spr_indicator, 0, x, y);
 }
+
+if(targeted){
+		draw_sprite(spr_indicator,0,x,y);
+}
