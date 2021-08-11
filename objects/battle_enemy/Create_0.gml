@@ -22,6 +22,7 @@ deathStart = 199;
 deathMid = 229;
 deathEnd = 244;
 
+base[HP] = 4;
 current[HP] = 4;
 current[ATK] = 2;
 current[DEF] = 1;

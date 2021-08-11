@@ -28,6 +28,7 @@ function unitAttack(){
 	else{
 		with(global.selectedTargets){
 			state = MISS;
+			path_speed = 2;
 			layer_sequence_headpos(unitSequence,missStart);
 		}
 	}

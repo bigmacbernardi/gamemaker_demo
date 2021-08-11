@@ -6,7 +6,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "simulateInput",
+  "name": "simulate_input",
   "tags": [],
   "resourceType": "GMScript",
 }
