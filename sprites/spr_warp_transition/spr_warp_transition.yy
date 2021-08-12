@@ -121,8 +121,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "GUI and object filler",
+    "path": "folders/Sprites/GUI and object filler.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_warp_transition",

@@ -21,8 +21,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "overworld",
+    "path": "folders/Objects/overworld.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_pauser",

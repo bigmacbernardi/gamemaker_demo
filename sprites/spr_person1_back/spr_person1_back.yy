@@ -148,8 +148,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Aoi",
+    "path": "folders/Sprites/Aoi.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_person1_back",

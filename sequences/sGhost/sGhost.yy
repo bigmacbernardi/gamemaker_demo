@@ -153,8 +153,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "battle resources",
+    "path": "folders/Objects/battle resources.yy",
   },
   "resourceVersion": "1.3",
   "name": "sGhost",

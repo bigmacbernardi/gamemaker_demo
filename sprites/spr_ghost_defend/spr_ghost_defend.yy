@@ -105,8 +105,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Ghost",
+    "path": "folders/Sprites/Ghost.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ghost_defend",

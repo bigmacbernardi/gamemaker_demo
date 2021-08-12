@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Scripts",
+    "path": "folders/Objects/Scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "simulate_input",

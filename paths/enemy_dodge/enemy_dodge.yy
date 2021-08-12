@@ -9,8 +9,8 @@
     {"speed":100.0,"x":0.0,"y":0.0,},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "battle resources",
+    "path": "folders/Objects/battle resources.yy",
   },
   "resourceVersion": "1.0",
   "name": "enemy_dodge",

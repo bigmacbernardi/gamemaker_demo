@@ -129,8 +129,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Knight",
+    "path": "folders/Sprites/Knight.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_knight_death",
