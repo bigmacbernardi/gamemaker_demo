@@ -169,8 +169,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "gamemaker_demo",
-    "path": "gamemaker_demo.yyp",
+    "name": "battle resources",
+    "path": "folders/Objects/battle resources.yy",
   },
   "resourceVersion": "1.3",
   "name": "sPlayer",

@@ -156,8 +156,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "misc people",
+    "path": "folders/Sprites/misc people.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_playerback",

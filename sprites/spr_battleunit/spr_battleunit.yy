@@ -148,8 +148,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "gamemaker_demo",
-    "path": "gamemaker_demo.yyp",
+    "name": "GUI and object filler",
+    "path": "folders/Sprites/GUI and object filler.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battleunit",
