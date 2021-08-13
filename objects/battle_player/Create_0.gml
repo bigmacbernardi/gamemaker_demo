@@ -2,6 +2,10 @@
 // You can write your code in this editor
 event_inherited();
 
+
+base[ACC] = 0.8;  //only miss 1 in 5
+current[ACC] = base[@ ACC]
+
 //sPlayer is filler animation for the knight
 unitSequence = layer_sequence_create("Sequences",x,y,sPlayer);
 isPlayer = true;

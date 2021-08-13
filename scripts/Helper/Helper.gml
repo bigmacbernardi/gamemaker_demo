@@ -6,10 +6,11 @@ function Helper(){
 
 
 function checkForHit(){
-	show_debug_message("Checking for hit");
 	var number = random(1);
 	var unit = global.selectedUnit;
-	if (number > unit.current[@ ACC])
+	show_debug_message("Checking for hit (ACC "+string(10*global.selectedUnit.current[@ ACC])
+			+", rolled a "+string(10-(number*10))+")");
+	if (number < unit.current[@ ACC])
 		unit.attackWillHit = true;
 	else
 		unit.attackWillHit = false;
