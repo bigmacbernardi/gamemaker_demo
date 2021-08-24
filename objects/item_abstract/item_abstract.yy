@@ -1,7 +1,7 @@
 {
   "spriteId": null,
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,7 +21,7 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":0,"value":"(Archetype) The very essence of an item.  Can appear in your inventory, where it has a description and the menu layout anticipates the possibility of the item being usable, which isn't guaranteed.","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"description","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":2,"value":"(Archetype) The very essence of an item.  Can appear in your inventory, where it has a description and the menu layout anticipates the possibility of the item being usable, which isn't guaranteed.","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"description","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"usable","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],

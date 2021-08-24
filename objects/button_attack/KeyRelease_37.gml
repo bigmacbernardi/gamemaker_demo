@@ -4,3 +4,6 @@ if (isSelected) {
       button_item.isSelected = true;
 	  isSelected = false;
    }
+
+else if (!(button_item.isSelected||button_skill.isSelected))
+	  isSelected = true;

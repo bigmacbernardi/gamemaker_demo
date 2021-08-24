@@ -4,15 +4,15 @@
 #macro Display_ScaleX display_get_gui_width()/Camera_Width
 #macro Display_ScaleY display_get_gui_height()/Camera_Height
 
-//macros for unit stats
-#macro HP 0
-#macro ATK 1
-#macro DEF 2
-#macro SPD 3
-#macro ACC 4
+//macros for unit stats - set in initializer instead
+//#macro HP 0
+//#macro ATK 1
+//#macro DEF 2
+//#macro SPD 3
+//#macro ACC 4
 
 //macros for animation/sequence states
-//I should change them to eliminate the "ATK"/"ATTACK" ambiguity
+//I don't need to change them, the "ATK"/"ATTACK" ambiguity is fine bc they are equal
 #macro IDLE 0
 #macro ATTACK 1
 #macro HIT 2

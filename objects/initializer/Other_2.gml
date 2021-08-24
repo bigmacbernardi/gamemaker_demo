@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 
+//order for stats set here
 #macro HP 0
 #macro ATK 1
 #macro DEF 2
@@ -9,8 +10,12 @@
 #macro ACC 4
 #macro XP 5
 
+//characters' indices defined - permanent first, then any guests
 #macro AOI 0
 #macro YUSUF 1
+
+
+
 global.inventory = ds_list_create();
 
 global.party[AOI][HP] = 10;

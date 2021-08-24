@@ -48,7 +48,10 @@ switch(combatPhase){
 		if (global.selectedUnit.isPlayer){
 			solicitInput = false;
 			allowInput = true;
+			//maybe just have a single method for menu show/hide
 			button_attack.visible = 1;
+			button_skill.visible = 1;
+			button_item.visible = 1;
 			show_debug_message("Showing menu button");
 			//menu = create_button(0,200,280,80,"Attack",simulateInput(global.enemies));
 		}

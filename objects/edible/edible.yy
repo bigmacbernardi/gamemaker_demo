@@ -1,7 +1,7 @@
 {
   "spriteId": null,
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -31,7 +31,7 @@
     {"varType":1,"value":"1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"numOwned","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [
-    {"propertyId":{"name":"description","path":"objects/item_abstract/item_abstract.yy",},"objectId":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"value":"(Archetype) The base form of \"consumable\" (single-use) items.  Can be used outside of battle, but not (directly) in battle.  Applied to one or more targets.","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"description","path":"objects/item_abstract/item_abstract.yy",},"objectId":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"value":"\"(Archetype) The base form of \"consumable\" (single-use) items. Can be used outside of battle, but not (directly) in battle.  Applied to one or more targets.\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"usable","path":"objects/item_abstract/item_abstract.yy",},"objectId":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
