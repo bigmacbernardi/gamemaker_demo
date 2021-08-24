@@ -29,6 +29,9 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"rightEast","path":"objects/_ui_parent/_ui_parent.yy",},"objectId":{"name":"_ui_parent","path":"objects/_ui_parent/_ui_parent.yy",},"value":"button_item","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"leftWest","path":"objects/_ui_parent/_ui_parent.yy",},"objectId":{"name":"_ui_parent","path":"objects/_ui_parent/_ui_parent.yy",},"value":"button_attack","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"onSprite","path":"objects/_ui_parent/_ui_parent.yy",},"objectId":{"name":"_ui_parent","path":"objects/_ui_parent/_ui_parent.yy",},"value":"spr_sklbutton_on","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"offSprite","path":"objects/_ui_parent/_ui_parent.yy",},"objectId":{"name":"_ui_parent","path":"objects/_ui_parent/_ui_parent.yy",},"value":"spr_sklbutton_off","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "GUI",

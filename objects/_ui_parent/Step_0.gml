@@ -59,10 +59,10 @@ if ((isSelected)&&(timer - stopwatch)>6){
 if	
 }
 */
+
+//else stopwatch = timer;
+
 //we'll do this later
-
-else stopwatch = timer;
-
 
 //Detect Clicks
 if (state != VisualState.active) exit;
