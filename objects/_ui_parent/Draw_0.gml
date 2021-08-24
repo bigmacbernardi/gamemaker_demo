@@ -1,2 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Generalized basically for fun
+
+
+sprite_index = isSelected?onSprite:offSprite;

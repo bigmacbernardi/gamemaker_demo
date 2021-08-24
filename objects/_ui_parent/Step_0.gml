@@ -53,6 +53,14 @@ switch(state)
 }
 #endregion
 
+//detect time since last movement, and if something should be done
+if ((isSelected)&&(timer - stopwatch)>6){
+if	
+}
+
+else stopwatch = timer;
+
+
 //Detect Clicks
 if (state != VisualState.active) exit;
 

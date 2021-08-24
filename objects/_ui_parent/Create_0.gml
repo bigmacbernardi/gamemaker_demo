@@ -42,6 +42,7 @@ state = VisualState.inactive;
 
 length=15;
 timer=length;
+var stopwatch = timer;
 activate_ease=TwerpType.out_back;
 deactivate_ease=TwerpType.in_back;
 active_pos=[0,0];

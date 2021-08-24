@@ -1,7 +1,6 @@
 /// @description Passing the "isSelected" status to the next button
 
-if (isSelected) {
-      button_attack.isSelected = true;
+if (isSelected)&&(rightEast!=noone) {
 	  isSelected = false;
-   }
-   
+      rightEast.isSelected = true;
+}

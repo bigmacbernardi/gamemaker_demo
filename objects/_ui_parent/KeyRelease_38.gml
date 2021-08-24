@@ -1,7 +1,6 @@
 /// @description Passing the "isSelected" status to the next button
 
-if (isSelected) {
-      button_skill.isSelected = true;
+if (isSelected)&&(upNorth!=noone) {
 	  isSelected = false;
-   }
-   
+      upNorth.isSelected = true;
+}
