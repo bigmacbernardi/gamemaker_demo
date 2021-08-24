@@ -54,9 +54,12 @@ switch(state)
 #endregion
 
 //detect time since last movement, and if something should be done
+/*
 if ((isSelected)&&(timer - stopwatch)>6){
 if	
 }
+*/
+//we'll do this later
 
 else stopwatch = timer;
 
