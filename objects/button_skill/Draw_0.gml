@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited(); //nothing
 
-sprite_index = (isSelected?spr_itmbutton_on:spr_itmbutton_off)
+sprite_index = (isSelected?spr_sklbutton_on:spr_sklbutton_off)
