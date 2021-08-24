@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "battle_item",
+    "path": "objects/battle_item/battle_item.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -17,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":2,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "story",
-    "path": "folders/Objects/overworld/story.yy",
+    "name": "items",
+    "path": "folders/Objects/items.yy",
   },
   "resourceVersion": "1.0",
-  "name": "initializer",
+  "name": "Uh_oh",
   "tags": [],
   "resourceType": "GMObject",
 }

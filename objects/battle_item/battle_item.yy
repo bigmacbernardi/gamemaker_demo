@@ -1,0 +1,38 @@
+{
+  "spriteId": null,
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "item_abstract",
+    "path": "objects/item_abstract/item_abstract.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [],
+  "properties": [
+    {"varType":1,"value":"1","rangeEnabled":true,"rangeMin":0.0,"rangeMax":248.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"numOwned","tags":[],"resourceType":"GMObjectProperty",},
+  ],
+  "overriddenProperties": [
+    {"propertyId":{"name":"description","path":"objects/item_abstract/item_abstract.yy",},"objectId":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"value":"(Archetype) ONLY usable in battle.  May or may not be consumable (single-use).","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "abstract",
+    "path": "folders/Objects/items/abstract.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "battle_item",
+  "tags": [],
+  "resourceType": "GMObject",
+}
