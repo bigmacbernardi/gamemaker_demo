@@ -5,6 +5,7 @@ switch(combatPhase){
 			var spawner = instance_find(battle_spawner, i);
 			var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit)
 			ds_list_add(global.units,unit);
+			ds_priority_add(pq,unit,getWait(unit));
 			if (spawner.isPlayer){
 				ds_list_add(global.allies,unit);
 				unit.isPlayer = true;
@@ -37,14 +38,19 @@ switch(combatPhase){
 		
 		//cycle through the units and find the first w/ turnFinished FALSE
 		//change unit's local selected status (draws indicator) and make it the selectedUnit
-		for (var i = 0; i < ds_list_size(global.units); i++){
+		var inst = ds_priority_delete_min(pq); //needs corresponding ds_priority_add in later phase
+		//if (inst.turnFinished||inst.state != DEATH) then it shouldn't be in queue
+		inst.selected = true;
+		global.selectedUnit = inst;
+		//old list-looping method
+		/*for (var i = 0; i < ds_list_size(global.units); i++){
 			var inst = global.units[|i];
 			if ((!inst.turnFinished)&&(inst.state != DEATH)){
 				inst.selected = true;
 				global.selectedUnit = inst;
 				break;
 			}
-		}  
+		} */ 
 		if (global.selectedUnit.isPlayer){
 			solicitInput = false;
 			allowInput = true;
