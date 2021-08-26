@@ -58,6 +58,7 @@
     {"id":{"name":"battle_manager","path":"objects/battle_manager/battle_manager.yy",},"order":2,},
     {"id":{"name":"battle_aoi","path":"objects/battle_aoi/battle_aoi.yy",},"order":0,},
     {"id":{"name":"spr_ghost_defend","path":"sprites/spr_ghost_defend/spr_ghost_defend.yy",},"order":2,},
+    {"id":{"name":"Roses","path":"fonts/Roses/Roses.yy",},"order":6,},
     {"id":{"name":"spr_ghost_hit","path":"sprites/spr_ghost_hit/spr_ghost_hit.yy",},"order":3,},
     {"id":{"name":"KnightDeath_strip","path":"sprites/KnightDeath_strip/KnightDeath_strip.yy",},"order":1,},
     {"id":{"name":"noBKG_KnightJumpAndFall_strip","path":"sprites/noBKG_KnightJumpAndFall_strip/noBKG_KnightJumpAndFall_strip.yy",},"order":9,},
