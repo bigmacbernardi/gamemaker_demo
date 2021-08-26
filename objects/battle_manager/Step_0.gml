@@ -90,6 +90,10 @@ switch(combatPhase){
 			show_debug_message("Process Finished");
 			combatPhase = phase.checkFinish;
 		}
+		//requeue
+		var nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedTargets); //this process will need to change for overflow reasons
+		ds_priority_add(pq,global.selectedTargets,nextPriority);
+		
 	break;
 	
 	case phase.checkFinish:
