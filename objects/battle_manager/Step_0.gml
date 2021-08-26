@@ -1,4 +1,4 @@
-
+/// @description Continuous (continual) battle management functionality
 switch(combatPhase){
 	case phase.init:
 		for (var i = 0; i < instance_number(battle_spawner); i++){
@@ -42,15 +42,7 @@ switch(combatPhase){
 		//if (inst.turnFinished||inst.state != DEATH) then it shouldn't be in queue
 		inst.selected = true;
 		global.selectedUnit = inst;
-		//old list-looping method
-		/*for (var i = 0; i < ds_list_size(global.units); i++){
-			var inst = global.units[|i];
-			if ((!inst.turnFinished)&&(inst.state != DEATH)){
-				inst.selected = true;
-				global.selectedUnit = inst;
-				break;
-			}
-		} */ 
+		//old list-looping method used:	if ((!inst.turnFinished)&&(inst.state != DEATH))
 		if (global.selectedUnit.isPlayer){
 			solicitInput = false;
 			allowInput = true;
@@ -82,6 +74,9 @@ switch(combatPhase){
 			global.selectedUnit.turnFinished = true;
 			unitsFinished++;
 			combatPhase = phase.process;
+			//requeue
+			var nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedTargets); //this process will need to change for overflow reasons
+			ds_priority_add(pq,global.selectedTargets,nextPriority);
 		}
 	break;
 	
@@ -90,9 +85,7 @@ switch(combatPhase){
 			show_debug_message("Process Finished");
 			combatPhase = phase.checkFinish;
 		}
-		//requeue
-		var nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedTargets); //this process will need to change for overflow reasons
-		ds_priority_add(pq,global.selectedTargets,nextPriority);
+		
 		
 	break;
 	
