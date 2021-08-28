@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description When Aoi spawns in battle
 
 // Inherit the parent event
 event_inherited();
