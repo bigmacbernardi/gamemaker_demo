@@ -76,6 +76,7 @@ switch(combatPhase){
 			combatPhase = phase.process;
 			//requeue
 			var nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedTargets); //this process will need to change for overflow reasons
+			show_debug_message("Requeuing "+global.selectedTargets.title+" with priority "+string(nextPriority));
 			ds_priority_add(pq,global.selectedTargets,nextPriority);
 		}
 	break;
@@ -90,7 +91,7 @@ switch(combatPhase){
 	break;
 	
 	case phase.checkFinish:
-		show_debug_message("Checking for end-states");
+		show_debug_message("Checking for the end of states");
 		if (ds_list_empty(global.allies)){
 			combatPhase = phase.lose;
 			break;

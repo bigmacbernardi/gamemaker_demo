@@ -10,6 +10,7 @@ switch(state){
 	case ATTACK:
 		if (layer_sequence_get_headpos(unitSequence) > atkEnd){
 			show_debug_message("Attack animation finished");
+			//at THIS point damage should happen right?
 			turnFinished = true;
 			//if (attackWillHit){
 			//	layer_sequence_headpos(unitSequence, idleStart);

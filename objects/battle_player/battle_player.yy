@@ -24,7 +24,9 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"title","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"(player archetype)","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "battle resources",
     "path": "folders/Objects/battle resources.yy",

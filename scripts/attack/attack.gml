@@ -5,7 +5,7 @@ function attack(){
 		if (global.enemies[|i].state != DEATH){
 	        
 			global.selectedTargets = global.enemies[|i];
-    var inst = instance_create_layer(global.enemies[|i].x, global.enemies[|i].y,"UI_Targeting", atk_selector);
+			var inst = instance_create_layer(global.enemies[|i].x, global.enemies[|i].y,"UI_Targeting", atk_selector);
 			inst.selectedIndex = i;
 			break;
 			}

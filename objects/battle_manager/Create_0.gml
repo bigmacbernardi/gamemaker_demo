@@ -42,5 +42,4 @@ global.selectedTargets = noone;
 function getWait(u){
 	return 100-u.current[SPD];
 }
-
 draw_set_font(Roses);
