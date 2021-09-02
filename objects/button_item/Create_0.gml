@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 state = VisualState.active;
-script = attack;
+script = item;
