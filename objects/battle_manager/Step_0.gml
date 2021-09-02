@@ -6,7 +6,7 @@ switch(combatPhase){
 			var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit)
 			ds_list_add(global.units,unit);
 			ds_priority_add(pq,unit,getWait(unit));
-			show_debug_message("Queued "+unit.title+" with priority "+string(getWait(unit)));
+			//show_debug_message("Queued "+unit.title+" with priority "+string(getWait(unit)));
 			if (spawner.isPlayer){
 				ds_list_add(global.allies,unit);
 				unit.isPlayer = true;
@@ -70,7 +70,7 @@ switch(combatPhase){
 		}
 			
 		if (selectedFinished){
-			show_debug_message("Selected ("+global.selectedUnit.title+") Finished");
+			//show_debug_message("Selected ("+global.selectedUnit.title+") Finished");
 			global.selectedUnit.selected = false;
 			global.selectedUnit.turnFinished = true;
 			unitsFinished++;
@@ -108,8 +108,8 @@ switch(combatPhase){
 	
 	case phase.endTurn:
 		selectedFinished = false;
-		//global.selectedTargets.path_speed = 0;
-		global.selectedTargets = noone;
+		//global.targets.path_speed = 0;
+		global.targets = noone;
 		combatPhase = phase.startTurn;
 	break;
 	

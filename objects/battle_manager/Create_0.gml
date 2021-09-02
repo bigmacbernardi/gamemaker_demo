@@ -37,7 +37,7 @@ global.allies = ds_list_create();
 global.enemies = ds_list_create();
 pq = ds_priority_create();//only battle managers needs to see this
 global.selectedUnit = noone;
-global.selectedTargets = noone;
+global.targets = noone;
 
 function getWait(u){
 	return 100-u.current[SPD];

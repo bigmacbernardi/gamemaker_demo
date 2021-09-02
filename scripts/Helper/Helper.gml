@@ -31,14 +31,14 @@ function unitAttack(){
 	show_debug_message(global.selectedUnit.title+" attacking");
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
-		with(global.selectedTargets){
+		with(global.targets){
 				incomingDamage = unit.current[@ ATK] ;
 				state = HIT;
 				layer_sequence_headpos(unitSequence,hitStart);
 		}
 	}
 	else{
-		with(global.selectedTargets){
+		with(global.targets){
 			state = MISS;
 			if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
 			layer_sequence_headpos(unitSequence,missStart);

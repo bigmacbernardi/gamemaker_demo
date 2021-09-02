@@ -7,7 +7,7 @@ if (allowInput){
 		layer_sequence_headpos(unitSequence,atkStart);
 		for(var i = 0; i < ds_list_size(global.enemies); i++){
 			if (global.enemies[|i].state != DEATH){
-				global.selectedTargets = global.enemies[|i];
+				global.targets = global.enemies[|i];
 				break;
 			}
 		}
