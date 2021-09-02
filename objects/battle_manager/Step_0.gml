@@ -6,6 +6,7 @@ switch(combatPhase){
 			var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit)
 			ds_list_add(global.units,unit);
 			ds_priority_add(pq,unit,getWait(unit));
+			show_debug_message("Queued "+unit.title+" with priority "+string(getWait(unit)));
 			if (spawner.isPlayer){
 				ds_list_add(global.allies,unit);
 				unit.isPlayer = true;
@@ -69,15 +70,15 @@ switch(combatPhase){
 		}
 			
 		if (selectedFinished){
-			show_debug_message("Selected Finished");
+			show_debug_message("Selected ("+global.selectedUnit.title+") Finished");
 			global.selectedUnit.selected = false;
 			global.selectedUnit.turnFinished = true;
 			unitsFinished++;
 			combatPhase = phase.process;
 			//requeue
-			var nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedTargets); //this process will need to change for overflow reasons
-			show_debug_message("Requeuing "+global.selectedTargets.title+" with priority "+string(nextPriority));
-			ds_priority_add(pq,global.selectedTargets,nextPriority);
+			var nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedUnit); //this process will need to change for overflow reasons
+			show_debug_message("Requeuing "+global.selectedUnit.title+" with priority "+string(nextPriority));
+			ds_priority_add(pq,global.selectedUnit,nextPriority);
 		}
 	break;
 	

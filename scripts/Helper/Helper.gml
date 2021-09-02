@@ -28,7 +28,7 @@ function checkForHit(){
 }
 
 function unitAttack(){
-	show_debug_message("Unit attacking");
+	show_debug_message(global.selectedUnit.title+" attacking");
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
 		with(global.selectedTargets){
