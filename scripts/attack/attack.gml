@@ -6,7 +6,7 @@ function attack(){
 	        
 			global.targets = global.enemies[|i];
 			var inst = instance_create_layer(global.enemies[|i].x, global.enemies[|i].y,"UI_Targeting", atk_selector);
-			inst.selectedIndex = i;
+			inst.index = i;
 			break;
 			}
 	 	}		 

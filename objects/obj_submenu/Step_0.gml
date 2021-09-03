@@ -1,7 +1,7 @@
 /// @description Used for compound events
 // You can write your code in this editor
-//x = 0;//global.enemies[|selectedIndex].x;
-//y = global.enemies[|selectedIndex].y;
+//x = 0;//global.enemies[|index].x;
+//y = global.enemies[|index].y;
 if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{
@@ -29,11 +29,11 @@ else {
 	var _moveH = _right - _left;
 	var _moveV = _down - _up;
 	if (_moveH != 0){
-		selectedIndex += _moveH;
+		index += _moveH;
 	}
 	if (_moveV != 0){
 		//depends how the grid works, so just doin the same for now
-		selectedIndex += _moveH;	
+		index += _moveH;	
 	}
 }
 	

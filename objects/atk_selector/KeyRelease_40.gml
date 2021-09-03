@@ -1,5 +1,5 @@
 /// @description Moves index "down"
 // You can write your code in this editor
-selectedIndex = (selectedIndex + 1)%ds_list_size(global.enemies);
-while (global.enemies[|selectedIndex].state == DEATH) selectedIndex = (selectedIndex + 1)%ds_list_size(global.enemies);
-global.targets = global.enemies[|selectedIndex];
+if (index == ds_list_size(global.enemies)-1) index = 0;
+else index += 1;
+global.targets = global.enemies[|index];

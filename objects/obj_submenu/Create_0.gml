@@ -3,3 +3,4 @@
 
 //ds_grid_I'mthinkin
 frameHasPassed = false;
+//initialize options?

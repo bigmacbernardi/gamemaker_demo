@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_angryindicator",
-    "path": "sprites/spr_angryindicator/spr_angryindicator.yy",
+    "name": "spr_menu_temp",
+    "path": "sprites/spr_menu_temp/spr_menu_temp.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,7 +25,7 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"selectedIndex","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"index","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"frameHasPassed","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":4,"value":"global.inventory","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"options","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":5,"value":"button_item","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"priorMenu","tags":[],"resourceType":"GMObjectProperty",},
@@ -36,7 +36,7 @@
     "path": "folders/Objects/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "submenu",
+  "name": "obj_submenu",
   "tags": [],
   "resourceType": "GMObject",
 }
