@@ -27,7 +27,7 @@
     "path": "folders/Objects/overworld/story.yy",
   },
   "resourceVersion": "1.0",
-  "name": "initializer",
+  "name": "obj_initializer",
   "tags": [],
   "resourceType": "GMObject",
 }

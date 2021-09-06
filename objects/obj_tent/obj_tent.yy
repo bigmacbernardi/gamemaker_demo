@@ -3,7 +3,7 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": {
     "name": "edible",
     "path": "objects/edible/edible.yy",
@@ -28,13 +28,14 @@
     {"propertyId":{"name":"HPdelta","path":"objects/edible/edible.yy",},"objectId":{"name":"edible","path":"objects/edible/edible.yy",},"value":"100","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"MPdelta","path":"objects/edible/edible.yy",},"objectId":{"name":"edible","path":"objects/edible/edible.yy",},"value":"100","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"description","path":"objects/item_abstract/item_abstract.yy",},"objectId":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"value":"Everyone gets 100% of everything healed.","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"title","path":"objects/item_abstract/item_abstract.yy",},"objectId":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"value":"Tent","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "items",
     "path": "folders/Objects/items.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Tent",
+  "name": "obj_tent",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -17,6 +17,10 @@
 
 
 global.inventory = ds_list_create();
+global.currentParty = ds_list_create();//party equivalent of "foesToSpawn" that can also be used for menus
+
+ds_list_add(global.currentParty,YUSUF);
+ds_list_add(global.currentParty,AOI);
 
 global.party[AOI][HP] = 10;
 global.party[AOI][ATK] = 2;
@@ -31,9 +35,9 @@ global.party[YUSUF][DEF] = 1;
 global.party[YUSUF][SPD] = 5;
 global.party[YUSUF][ACC] = .5;
 global.party[YUSUF][XP] = 0;
-var pot = instance_create_depth(0,0,10,Potion);
-var tot = instance_create_depth(0,0,2,Tent);
-var oh = instance_create_depth(0,0,1,Uh_oh);
+var pot = [obj_potion,10]; //in menu, will call: instance_create_depth(0,0,10,obj_potion);
+var tot = [obj_tent,2];
+var oh = [obj_uhoh,1];
 ds_list_add(global.inventory,pot);
 ds_list_add(global.inventory,tot);
 ds_list_add(global.inventory,oh);
