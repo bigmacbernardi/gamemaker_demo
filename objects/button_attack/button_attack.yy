@@ -38,8 +38,8 @@
     {"propertyId":{"name":"onSprite","path":"objects/_ui_parent/_ui_parent.yy",},"objectId":{"name":"_ui_parent","path":"objects/_ui_parent/_ui_parent.yy",},"value":"spr_atkbutton_on","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "GUI",
-    "path": "folders/Objects/GUI.yy",
+    "name": "battle",
+    "path": "folders/Objects/GUI/battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "button_attack",

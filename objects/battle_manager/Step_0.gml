@@ -90,6 +90,7 @@ switch(combatPhase){
 	break;
 	
 	case phase.process:
+		show_debug_message("Processing");
 		if (processFinished){
 			show_debug_message("Process Finished");
 			combatPhase = phase.checkFinish;

@@ -32,8 +32,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "GUI",
-    "path": "folders/Objects/GUI.yy",
+    "name": "battle",
+    "path": "folders/Objects/GUI/battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "atk_selector",

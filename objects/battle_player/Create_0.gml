@@ -25,3 +25,5 @@ missEnd = 49;
 deathStart = 61;
 deathMid = 69;
 deathEnd = 73;
+itmStart = 75;
+itmEnd = 87;

@@ -20,6 +20,7 @@
 #macro TODEFEND 4
 #macro DEFEND 5
 #macro DEATH 6
+#macro ITEM 7
 
 state = IDLE;
 

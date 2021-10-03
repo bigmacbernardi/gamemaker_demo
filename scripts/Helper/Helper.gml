@@ -5,7 +5,7 @@ function Helper(){
 }
 
 
-/*function checkForHit(){//no idea how or where this is ever called so i'm taking it
+/*function checkForHit(){
 	var number = random(1);
 	var unit = global.selectedUnit;
 	show_debug_message("Checking for hit (ACC "+string(10*global.selectedUnit.current[@ ACC])
@@ -25,6 +25,15 @@ function checkForHit(){
 		unit.attackWillHit = true;
 	else
 		unit.attackWillHit = false;
+}
+
+function useItem(){
+	show_debug_message(global.selectedUnit.title+" using "+ global.itemInUse[0].title +" on " + global.targets.title);
+	/*	with(global.targets){
+			state = MISS;
+			//getting-healed animation?
+		}*/
+	
 }
 
 function unitAttack(){

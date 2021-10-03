@@ -23,7 +23,19 @@ switch(state){
 		}
 	
 	break;
+
+	case ITEM:
+		if (layer_sequence_get_headpos(unitSequence) > itmEnd){
+			show_debug_message("Item animation finished");
+			//at THIS point damage should happen right?
+			turnFinished = true;
+			//layer_sequence_headpos(unitSequence, itmStart);
+			state = IDLE;
+		}
 	
+	break;
+
+
 	//no MISS or HURT animations right now
 	case MISS:
 			if (layer_sequence_get_headpos(unitSequence) > missEnd){

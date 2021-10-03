@@ -34,8 +34,8 @@
     {"propertyId":{"name":"offSprite","path":"objects/_ui_parent/_ui_parent.yy",},"objectId":{"name":"_ui_parent","path":"objects/_ui_parent/_ui_parent.yy",},"value":"spr_sklbutton_off","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "GUI",
-    "path": "folders/Objects/GUI.yy",
+    "name": "battle",
+    "path": "folders/Objects/GUI/battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "button_skill",
