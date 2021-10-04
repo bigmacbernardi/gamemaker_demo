@@ -13,8 +13,5 @@ var drawY = y;
 options = ds_list_create(); 
 for (var i = 0; i < ds_list_size(global.inventory); i++){
   ds_list_add(options,instance_create_depth(drawX,drawY,global.inventory[|i][1],global.inventory[|i][0]));
-  if ((i % 3)==2){
-	drawX = 0;
-	drawY += 24;
-  }else	drawX += 100;
+  drawY += 24;
 }

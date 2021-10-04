@@ -116,6 +116,7 @@
     {"id":{"name":"_ui_parent","path":"objects/_ui_parent/_ui_parent.yy",},"order":0,},
     {"id":{"name":"idkguy","path":"tilesets/idkguy/idkguy.yy",},"order":3,},
     {"id":{"name":"spr_indicator","path":"sprites/spr_indicator/spr_indicator.yy",},"order":1,},
+    {"id":{"name":"obj_elder","path":"objects/obj_elder/obj_elder.yy",},"order":11,},
     {"id":{"name":"sAoi","path":"sequences/sAoi/sAoi.yy",},"order":11,},
     {"id":{"name":"noBKG_KnightRun_strip","path":"sprites/noBKG_KnightRun_strip/noBKG_KnightRun_strip.yy",},"order":11,},
     {"id":{"name":"item","path":"scripts/item/item.yy",},"order":8,},
