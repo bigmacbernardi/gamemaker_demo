@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self();
-var drawX = 10;
+var drawX = x+10;
 var drawY = y+12;
 for (var i = scrollLevel; i < ds_list_size(options); i++){
   if (i!=index) draw_set_color(c_black);

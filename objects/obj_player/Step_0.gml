@@ -48,10 +48,13 @@ else{
 }
 x += x_spd;
 y += y_spd;
-if (pause_butt){
+if (pause_butt && (framesToBuffer==0)){
 	x_spd = 0;//cheap
 	y_spd = 0;//cheap
 	paused = true;
-	instance_create_depth(0,0,2,obj_mainmenu);
+	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam),-10,obj_mainmenu);
+}
+else if (framesToBuffer>0){
+	framesToBuffer--;	
 }
 }

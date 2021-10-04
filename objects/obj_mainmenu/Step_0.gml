@@ -1,35 +1,37 @@
+/// @description General  menulogic
 var pause_butt = keyboard_check(vk_escape) || keyboard_check(vk_backspace);
 
-/// @description Used for compound events
-// You can write your code in this editor
-//x = 0;//global.enemies[|index].x;
-//y = global.enemies[|index].y;
 if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
-	{
-		//for(var i = 0; i < ds_list_size(global.allies); i++){
-		//if (global.allies[|i].state != DEATH){//probably shouldn't be a concern?
-	    global.itemInUse = [options[|index],index];
-		global.targets = global.allies[|0];
-		var inst = instance_create_layer(global.allies[|0].x, global.allies[|0].y,"UI_Targeting", itm_selector);
+	{ 
+		//submenu doesn't exist yet
+		/*var inst = instance_create_layer(global.allies[|0].x, global.allies[|0].y,"UI_Targeting", submenu);
 		inst.index = 0;
 		for (var i = 0; i < ds_list_size(options); i++){
 			if (i==index) continue;
 			with (options[|i]){
-				instance_destroy();	
+				instance_destroy();	//????
 			}
-		}
-        instance_destroy();
+		}*/
 	}
 else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
 	{
-		battle_manager.allowInput = true;
-		button_attack.visible = 1;
+		//replace following with menu buttons?
+		/*button_attack.visible = 1;
 		button_skill.visible = 1;
-		button_item.visible = 1;
-		priorMenu.selected = true;
-        instance_destroy();
+		button_item.visible = 1;*/
+		if (priorMenu != noone) priorMenu.selected = true;//logic for if we genericize
+        else{
+			obj_player.paused = false;
+			obj_player.framesToBuffer = 2;
+			instance_destroy();
+		}
 	}
+else if (obj_player.paused)&&(pause_butt){
+	obj_player.paused = false;
+	obj_player.framesToBuffer = 2;
+    instance_destroy();
+}
 else {
 	var _up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 	var _down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
@@ -50,10 +52,6 @@ else {
 		if (index < 0) index = ds_list_size(options)-1;
 	}
 	
-}
-if (obj_player.paused)&&(pause_butt){
-	obj_player.paused = false;
-    instance_destroy();
 }
 	
 

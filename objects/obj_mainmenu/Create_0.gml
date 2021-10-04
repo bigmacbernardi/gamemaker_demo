@@ -1,6 +1,7 @@
 /// @description Can be used anywhere.
 // You can write your code in this editor
-
+image_xscale = camera_get_view_width(cam) / sprite_width;
+image_yscale = camera_get_view_height(cam) / sprite_height;
 //ds_grid_I'mthinkin
 frameHasPassed = false;
 //initialize options?
