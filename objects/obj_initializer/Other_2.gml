@@ -43,3 +43,4 @@ ds_list_add(global.inventory,tot);
 ds_list_add(global.inventory,oh);
 
 global.msc= 0;
+global.dialogueLine=0;

@@ -39,7 +39,7 @@
     "path": "folders/Objects/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_dialogue",
+  "name": "obj_writer",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -3,7 +3,8 @@
 if variable_global_exists("msc") global.msc++;
 else global.msc = 0;
 if !variable_global_exists("msg") global.msg=["Bub","%%%","%%%","%%%"]; 
-writingx=0;
+with obj_choose{
+	writingx=0;
 writingy=0;
 stringno= 0;
 stringpos= 1;
@@ -21,3 +22,4 @@ while(global.msg[n] != "%%%") {
 originalstring= mystring[0];
 halt= 0;
 alarm[0]= textspeed;
+}

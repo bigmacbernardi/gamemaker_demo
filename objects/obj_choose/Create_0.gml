@@ -11,3 +11,6 @@ if(room != 179 && (obj_player.y > camera_get_view_y(cam) + 130 || d == 0))
 mychoice= 0;
 global.choice= -1;
 chosen = 0;
+
+script_execute(SCR_TEXTTYPE,4); //so ttexttype is set
+show_debug_message("Speed be "+str(textspeed));
