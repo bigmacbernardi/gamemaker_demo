@@ -41,3 +41,5 @@ var oh = [obj_uhoh,1];
 ds_list_add(global.inventory,pot);
 ds_list_add(global.inventory,tot);
 ds_list_add(global.inventory,oh);
+
+global.msc= 0;

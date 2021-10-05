@@ -72,7 +72,9 @@ switch(combatPhase){
 	case phase.wait:
 		if (solicitInput){
 			show_debug_message("Running AI");
-			simulateInput();		
+			with global.selectedUnit{
+				event_user(0);
+			}
 			solicitInput = false;
 		}
 			

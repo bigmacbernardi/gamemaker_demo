@@ -148,8 +148,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "misc people",
-    "path": "folders/Sprites/misc people.yy",
+    "name": "Elder",
+    "path": "folders/Sprites/Elder.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_old_man",
