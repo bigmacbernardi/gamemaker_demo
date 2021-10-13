@@ -19,8 +19,8 @@ switch(argument0){
         global.msg[3]= "%%%";
         break;
 	default: 
-        global.msg[0]= "* Stinky./";
-        global.msg[1]= "%%%";
+        global.msg[0]= "* Press ENTER./";
+        global.msg[1]= "This is a second line. & Don't leave.";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;

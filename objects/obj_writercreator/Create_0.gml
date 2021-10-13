@@ -12,5 +12,5 @@ global.msc= 1;
 writerid2= instance_create_depth(30, 176, -10, obj_writer);
 global.typer= 3;
 global.msc= 3;
-writerid2= instance_create_depth(448, 176, -10, obj_writer);
+writerid3= instance_create_depth(448, 176, -10, obj_writer);
 action_set_alarm(1, 0);*/

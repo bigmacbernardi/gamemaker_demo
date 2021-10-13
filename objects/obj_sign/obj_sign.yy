@@ -3,7 +3,7 @@
     "name": "spr_sign",
     "path": "sprites/spr_sign/spr_sign.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

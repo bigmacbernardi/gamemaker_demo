@@ -97,7 +97,7 @@ while(n < stringpos + 1) {
                 break;
             } else  {
                 stringpos= 1;
-                stringno++;
+                stringno++;//stringno = min(stringno+1,array_length_1d(mystring)-1);
                 originalstring= mystring[stringno];
                 myx= writingx;
                 myy= writingy;
