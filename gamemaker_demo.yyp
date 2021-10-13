@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"obj_sign","path":"objects/obj_sign/obj_sign.yy",},"order":12,},
     {"id":{"name":"noBKG_KnightShield_strip","path":"sprites/noBKG_KnightShield_strip/noBKG_KnightShield_strip.yy",},"order":12,},
     {"id":{"name":"opt_stat","path":"objects/opt_stat/opt_stat.yy",},"order":2,},
     {"id":{"name":"battle_enemy","path":"objects/battle_enemy/battle_enemy.yy",},"order":1,},
@@ -68,6 +69,7 @@
     {"id":{"name":"spr_select_right","path":"sprites/spr_select_right/spr_select_right.yy",},"order":19,},
     {"id":{"name":"opt_magic","path":"objects/opt_magic/opt_magic.yy",},"order":4,},
     {"id":{"name":"spr_girl_face0","path":"sprites/spr_girl_face0/spr_girl_face0.yy",},"order":0,},
+    {"id":{"name":"obj_dialogue","path":"objects/obj_dialogue/obj_dialogue.yy",},"order":18,},
     {"id":{"name":"ui_hp","path":"sprites/ui_hp/ui_hp.yy",},"order":8,},
     {"id":{"name":"button_item","path":"objects/button_item/button_item.yy",},"order":2,},
     {"id":{"name":"obj_choose","path":"objects/obj_choose/obj_choose.yy",},"order":14,},
@@ -120,10 +122,12 @@
     {"id":{"name":"spr_player11","path":"sprites/spr_player11/spr_player11.yy",},"order":4,},
     {"id":{"name":"spr_old_man44","path":"sprites/spr_old_man44/spr_old_man44.yy",},"order":2,},
     {"id":{"name":"spr_itmbutton_off","path":"sprites/spr_itmbutton_off/spr_itmbutton_off.yy",},"order":11,},
+    {"id":{"name":"spr_sign","path":"sprites/spr_sign/spr_sign.yy",},"order":8,},
     {"id":{"name":"spr_playerback","path":"sprites/spr_playerback/spr_playerback.yy",},"order":5,},
     {"id":{"name":"Helper","path":"scripts/Helper/Helper.yy",},"order":2,},
     {"id":{"name":"obj_battle_transition","path":"objects/obj_battle_transition/obj_battle_transition.yy",},"order":0,},
     {"id":{"name":"spr_dialog_temp","path":"sprites/spr_dialog_temp/spr_dialog_temp.yy",},"order":18,},
+    {"id":{"name":"scr_facechoice","path":"scripts/scr_facechoice/scr_facechoice.yy",},"order":18,},
     {"id":{"name":"battle_spawner","path":"objects/battle_spawner/battle_spawner.yy",},"order":4,},
     {"id":{"name":"get_hover","path":"scripts/get_hover/get_hover.yy",},"order":1,},
     {"id":{"name":"spr_stanley","path":"sprites/spr_stanley/spr_stanley.yy",},"order":6,},

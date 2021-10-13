@@ -15,6 +15,9 @@ writingx= round(writingx);
 writingy= round(writingy);
 myx= writingx;
 myy= writingy;
+show_debug_message("at exectuion time: msc was gonna be "+string(global.msc));
+show_debug_message("fixing it to zero like an asshole");
+global.msc = 0;
 script_execute(SCR_TEXT, global.msc);
 n= 0;
 while(global.msg[n] != "%%%") {
@@ -29,3 +32,5 @@ alarm[0]= textspeed;
 	
 	if (sound != noone)	audio_play_sound(sound, 8, false);
 }*/
+
+lastMsc = -1;

@@ -42,5 +42,10 @@ ds_list_add(global.inventory,pot);
 ds_list_add(global.inventory,tot);
 ds_list_add(global.inventory,oh);
 
+//temp stuff
 global.msc= 0;
 global.dialogueLine=0;
+//global.facechoice=0;
+global.flag=[0,0,0,0,0,0,0,0,0,0,
+			0,0,0,0,0,0,0,0,0,0,
+			0,0,0,0,0,0,0,0,0,0];

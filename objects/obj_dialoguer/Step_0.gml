@@ -25,22 +25,22 @@ if(global.facechange == 1 && instance_exists(writer)) {
     writer.x= xx + 68;
     writer.writingx= writer.x + 20;
     if(global.facechoice == 1 && !instance_exists(765/* obj_face_torieltalk */) && !instance_exists(767/* obj_face_torielblink */))
-        script_execute(144/* scr_facechoice */);
+        script_execute(scr_facechoice);
     if(global.facechoice == 2 && !instance_exists(768/* obj_face_floweytalk */))
-        script_execute(144/* scr_facechoice */);
+        script_execute(scr_facechoice);
     if(global.facechoice == 3 && !instance_exists(776/* obj_face_sans */))
-        script_execute(144/* scr_facechoice */);
+        script_execute(scr_facechoice);
     if(global.facechoice == 4 && !instance_exists(775/* obj_face_papyrus */))
-        script_execute(144/* scr_facechoice */);
+        script_execute(scr_facechoice);
     if(global.facechoice == 5 && !instance_exists(777/* obj_face_undyne */))
-        script_execute(144/* scr_facechoice */);
+        script_execute(scr_facechoice);
     if(global.facechoice == 6 && !instance_exists(770/* obj_face_alphys */))
-        script_execute(144/* scr_facechoice */);
+        script_execute(scr_facechoice);
     if(global.facechoice == 7 && !instance_exists(771/* obj_face_asgore */))
-        script_execute(144/* scr_facechoice */);
+        script_execute(scr_facechoice);
     if(global.facechoice == 8 && !instance_exists(773/* obj_face_mettaton */))
-        script_execute(144/* scr_facechoice */);
+        script_execute(scr_facechoice);
     if(global.facechoice == 9 && !instance_exists(772/* obj_face_asriel */))
-        script_execute(144/* scr_facechoice */);
+        script_execute(scr_facechoice);
     global.facechange= 2;
 }

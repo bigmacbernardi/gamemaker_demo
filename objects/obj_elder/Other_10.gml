@@ -2,10 +2,10 @@
 
 /*if (global.story[|"dumb_test"]==true){
 	global.dialogueLine=1;
-	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam)+120,-6,obj_dialogue);
+	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam)+120,-6,obj_writer);
 }
 else{*/
 	global.dialogueLine=0;
-	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam)+120,-6,obj_dialogue);
+	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam)+120,-6,obj_writer);
 /*	global.story[|"dumb_test"]==true
 }*/

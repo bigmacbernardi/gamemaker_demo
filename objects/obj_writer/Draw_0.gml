@@ -38,7 +38,7 @@ while(n < stringpos + 1) {
         if(string_char_at(originalstring, n + 1) == "C" && global.inbattle == 0) {
             if(!instance_exists(obj_choose))
                 //SAVE FOR LATER
-				choicer = instance_create(0, 0,obj_choose);
+				choicer = instance_create_depth(0, 0,-20,obj_choose);
 				choicer.creator= id;
 				halt= 5;
         }

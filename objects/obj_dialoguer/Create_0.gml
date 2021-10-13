@@ -9,14 +9,14 @@ if(instance_exists(obj_player)) {
     if(obj_player.y > yy + 130) {
         side= 0;
         if(global.facechoice != 0) {
-            writer= instance_create(xx + 68, yy - 5, obj_dialogue);
-            script_execute(144/* scr_facechoice */);
-        } else  writer= instance_create(xx + 10, yy - 5, obj_dialogue);
+            writer= instance_create_depth(xx + 68, yy - 5, -5,obj_writer);
+            script_execute(scr_facechoice);
+        } else  writer= instance_create_depth(xx + 10, yy - 5,-5, obj_writer);
     } else  {
         side= 1;
         if(global.facechoice != 0) {
-            writer= instance_create(xx + 68, yy + 150, obj_dialogue);
-            script_execute(144/* scr_facechoice */);
-        } else  writer= instance_create(xx + 10, yy + 150, obj_dialogue);
+            writer= instance_create_depth(xx + 68, yy + 150,-5, obj_writer);
+            script_execute(scr_facechoice);
+        } else  writer= instance_create_depth(xx + 10, yy + 150,-5, obj_writer);
     }
 }
