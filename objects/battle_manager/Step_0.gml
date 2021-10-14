@@ -1,9 +1,10 @@
 /// @description Continuous (continual) battle management functionality
 switch(combatPhase){
+	
 	case phase.init:
 		for (var i = 0; i < instance_number(battle_spawner); i++){
 			var spawner = instance_find(battle_spawner, i);
-			var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit)
+			var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit);
 			ds_list_add(global.units,unit);
 			ds_priority_add(pq,unit,getWait(unit));
 			//show_debug_message("Queued "+unit.title+" with priority "+string(getWait(unit)));
@@ -38,7 +39,8 @@ switch(combatPhase){
 			for(var i = 0;i < ds_list_size(global.units);i++){
 				with(global.units[|i]){
 					if !(state == DEATH)
-						turnFinished = false;			
+						turnFinished = false;
+
 				}
 			}
 			unitsFinished = 0;

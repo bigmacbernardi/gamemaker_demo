@@ -64,6 +64,7 @@ switch(state){
 					}
 					turnFinished = true;
 					state = DEATH;
+					if (ds_priority_find_priority(battle_manager.pq,id)!=undefined) ds_priority_delete_value(battle_manager.pq,id);
 				}
 			}
 	break;

@@ -92,6 +92,7 @@
     {"id":{"name":"KnightDeath_strip","path":"sprites/KnightDeath_strip/KnightDeath_strip.yy",},"order":1,},
     {"id":{"name":"itm_selector","path":"objects/itm_selector/itm_selector.yy",},"order":4,},
     {"id":{"name":"dialogue","path":"scripts/dialogue/dialogue.yy",},"order":10,},
+    {"id":{"name":"say_the_line","path":"scripts/say_the_line/say_the_line.yy",},"order":19,},
     {"id":{"name":"spr_girl_face3","path":"sprites/spr_girl_face3/spr_girl_face3.yy",},"order":6,},
     {"id":{"name":"spr_select_down","path":"sprites/spr_select_down/spr_select_down.yy",},"order":20,},
     {"id":{"name":"noBKG_KnightJumpAndFall_strip","path":"sprites/noBKG_KnightJumpAndFall_strip/noBKG_KnightJumpAndFall_strip.yy",},"order":9,},
