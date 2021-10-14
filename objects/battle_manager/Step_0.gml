@@ -139,6 +139,7 @@ switch(combatPhase){
 	case phase.lose:
 		show_debug_message("You lose...");
 		global.foesToSpawn = [];
+		room_goto(gameover);
 	//game over
 	break;
 }
