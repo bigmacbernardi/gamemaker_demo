@@ -13,14 +13,20 @@ switch(argument0){
         global.msg[3]= "%%%";
         break;
 	case 2: 
-        global.msg[0]= "* Slinky./";
+        global.msg[0]= "* Sign line 1./";
+        global.msg[1]= "PUNCHLINE!/";
+        global.msg[2]= "%%%";
+        global.msg[3]= "%%%";
+        break;
+	case 3: 
+        global.msg[0]= "* Threenky./";
         global.msg[1]= "%%%";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;
 	default: 
         global.msg[0]= "* Press ENTER./";
-        global.msg[1]= "This is a second line. & Don't leave.";
+        global.msg[1]= "This is a second line. &Don't leave./%";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;

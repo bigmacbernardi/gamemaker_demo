@@ -4,7 +4,7 @@ myy= writingy;
 n= 1;
 while(n < stringpos + 1) {
     nskip= 0;
-    if(string_char_at(originalstring, n) == "&") {
+    if(string_char_at(originalstring, n) == "&") {//line break!
         myx= writingx;
 		myy+= vspacing;
 		lineno++;
@@ -17,30 +17,31 @@ while(n < stringpos + 1) {
     if(string_char_at(originalstring, n) == "\\" + chr(ord("\""))+ " + ") {
         if(string_char_at(originalstring, n + 1) == "R")
             mycolor= 255;
-        if(string_char_at(originalstring, n + 1) == "G")
+        else if(string_char_at(originalstring, n + 1) == "G")
             mycolor= 65280;
-        if(string_char_at(originalstring, n + 1) == "W")
+        else if(string_char_at(originalstring, n + 1) == "W")
             mycolor= 16777215;
-        if(string_char_at(originalstring, n + 1) == "Y")
+        else if(string_char_at(originalstring, n + 1) == "Y")
             mycolor= 65535;
-        if(string_char_at(originalstring, n + 1) == "X")
+        else if(string_char_at(originalstring, n + 1) == "X")
             mycolor= 0;
-        if(string_char_at(originalstring, n + 1) == "B")
+        else if(string_char_at(originalstring, n + 1) == "B")
             mycolor= 16711680;
-        if(string_char_at(originalstring, n + 1) == "O")
+        else if(string_char_at(originalstring, n + 1) == "O")
             mycolor= 4235519;
-        if(string_char_at(originalstring, n + 1) == "L")
+        else if(string_char_at(originalstring, n + 1) == "L")
             mycolor= 16754964;
-        if(string_char_at(originalstring, n + 1) == "P")
+        else if(string_char_at(originalstring, n + 1) == "P")
             mycolor= 16711935;
-        if(string_char_at(originalstring, n + 1) == "p")
+        else if(string_char_at(originalstring, n + 1) == "p")
             mycolor= 13941759;
-        if(string_char_at(originalstring, n + 1) == "C" && global.inbattle == 0) {
-            if(!instance_exists(obj_choose))
+        else if(string_char_at(originalstring, n + 1) == "C" && global.inbattle == 0) {
+            if(!instance_exists(obj_choose)) {
                 //SAVE FOR LATER
 				choicer = instance_create_depth(0, 0,-20,obj_choose);
 				choicer.creator= id;
 				halt= 5;
+			}
         }
         if(string_char_at(originalstring, n + 1) == "M") {
             global.flag[20]= real(string_char_at(originalstring, n + 2));
@@ -58,17 +59,17 @@ while(n < stringpos + 1) {
         if(string_char_at(originalstring, n + 1) == "T") {
             newtyper= string_char_at(originalstring, n + 2);
             if(newtyper == "T") global.typer= 4;
-            if(newtyper == "t") global.typer= 48;
-            if(newtyper == "0") global.typer= 5;
-            if(newtyper == "S") global.typer= 10;
-            if(newtyper == "F") global.typer= 16;
-            if(newtyper == "s") global.typer= 17;
-            if(newtyper == "P") global.typer= 18;
-            if(newtyper == "M") global.typer= 27;
-            if(newtyper == "U") global.typer= 37;
-            if(newtyper == "A") global.typer= 47;
-            if(newtyper == "a") global.typer= 60;
-            if(newtyper == "R") global.typer= 76;
+            else if(newtyper == "t") global.typer= 48;
+            else if(newtyper == "0") global.typer= 5;
+            else if(newtyper == "S") global.typer= 10;
+            else if(newtyper == "F") global.typer= 16;
+            else if(newtyper == "s") global.typer= 17;
+            else if(newtyper == "P") global.typer= 18;
+            else if(newtyper == "M") global.typer= 27;
+            else if(newtyper == "U") global.typer= 37;
+            else if(newtyper == "A") global.typer= 47;
+            else if(newtyper == "a") global.typer= 60;
+            else if(newtyper == "R") global.typer= 76;
             script_execute(SCR_TEXTTYPE, global.typer);
             global.facechange= 1;
             n++;
@@ -77,7 +78,7 @@ while(n < stringpos + 1) {
             sym= real(string_char_at(originalstring, n + 2));
             sym_s= 837;
             if(sym == 4) sym_s= 837;
-            if(sym == 4)
+            if(sym == 4) //wtf?
                 draw_sprite_ext(sym_s, 0, myx + random(shake) - shake / 2, myy + 10 + random(shake) - shake / 2, 2, 2, 0, 16777215, 1);
             n++;
         }
@@ -93,12 +94,14 @@ while(n < stringpos + 1) {
     } else  {
         if(string_char_at(originalstring, n) == "%") {
             if(string_char_at(originalstring, n + 1) == "%") {
+				show_debug_message("DOUBLE % SPOTTED");//used to confirm it wasn't getting this far
                 instance_destroy();
                 break;
             } else  {
+				show_debug_message("SINGLE % SPOTTED");
                 stringpos= 1;
                 stringno++;//stringno = min(stringno+1,array_length_1d(mystring)-1);
-                originalstring= mystring[stringno];
+                originalstring= global.msg[stringno]; //once used myString
                 myx= writingx;
                 myy= writingy;
                 lineno= 0;

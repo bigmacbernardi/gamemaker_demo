@@ -7,7 +7,6 @@ down_key = keyboard_check(0x53);
 run_key = keyboard_check(vk_shift);
 check_butt = keyboard_check(vk_space) || keyboard_check(vk_enter);
 pause_butt = keyboard_check(vk_escape) || keyboard_check(vk_backspace);
-
 x_spd = (right_key - left_key) * move_spd * (run_key?1.5:1);
 y_spd = (down_key - up_key) * move_spd * (run_key?1.5:1);
 
@@ -73,14 +72,20 @@ else{
 }
 x += x_spd;
 y += y_spd;
-if (check_butt){
-	inst = collision_rectangle(eye_x1, eye_y1, eye_x2, eye_y2, checkable, false, true);
-}
-if inst != noone
+if (check_butt)
 {
-   paused = true;//preventing other player input
-   with (inst) event_user(0);
+	if (checkReleased && framesToBuffer==0)
+	{
+		checkReleased = false;
+		inst = collision_rectangle(eye_x1, eye_y1, eye_x2, eye_y2, checkable, false, true);	
+		if inst != noone
+		{
+		   paused = true;//preventing other player input
+		   with (inst) event_user(0);
+		}
+	}
 }
+else checkReleased = true;
 if (pause_butt && (framesToBuffer==0)){
 	x_spd = 0;//cheap
 	y_spd = 0;//cheap

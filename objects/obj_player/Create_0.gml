@@ -5,6 +5,7 @@ y_spd = 0;
 move_spd = 2.1;
 paused = false;
 framesToBuffer = 0;
+checkReleased = true; //prevents interaction looping
 inst = noone;
 eye_x1 = x - 1;//top left corner
 eye_y1 = y + sprite_height;

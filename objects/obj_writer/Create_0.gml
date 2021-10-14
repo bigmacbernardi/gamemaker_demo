@@ -1,5 +1,7 @@
 /// @description When created, this box will print a globally selected line character by character.
 // The entire line will display at once
+//stopping movement
+obj_player.paused = true;
 //Toby's variables
 writingx= 0;
 writingy= 0;
@@ -15,9 +17,6 @@ writingx= round(writingx);
 writingy= round(writingy);
 myx= writingx;
 myy= writingy;
-//show_debug_message("at exectuion time: msc was gonna be "+string(global.msc));
-//show_debug_message("fixing it to zero like an asshole");
-//global.msc = 0;
 script_execute(SCR_TEXT, global.msc);
 n= 0;
 while(global.msg[n] != "%%%") { //Toby's method for indicating a line is complete.  Unnecessary for our purposes, but still implemented for the sake of ripping his code at this stage.
