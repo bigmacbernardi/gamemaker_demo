@@ -79,8 +79,13 @@ switch(combatPhase){
 			}
 			solicitInput = false;
 		}
-			
-		if (selectedFinished){
+		if (ds_list_empty(global.enemies)){
+			global.selectedUnit.selected = false;
+			global.selectedUnit.turnFinished = true;
+			unitsFinished++;
+			combatPhase = phase.win;
+		}
+		else if (selectedFinished){
 			//show_debug_message("Selected ("+global.selectedUnit.title+") Finished");
 			global.selectedUnit.selected = false;
 			global.selectedUnit.turnFinished = true;

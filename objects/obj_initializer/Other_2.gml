@@ -26,14 +26,14 @@ global.party[AOI][HP] = 10;
 global.party[AOI][ATK] = 2;
 global.party[AOI][DEF] = 1;
 global.party[AOI][SPD] = 5;
-global.party[AOI][ACC] = .5;
+global.party[AOI][ACC] = .75;
 global.party[AOI][XP] = 0;
 
 global.party[YUSUF][HP] = 10;
 global.party[YUSUF][ATK] = 2;
 global.party[YUSUF][DEF] = 1;
 global.party[YUSUF][SPD] = 5;
-global.party[YUSUF][ACC] = .5;
+global.party[YUSUF][ACC] = .75;
 global.party[YUSUF][XP] = 0;
 var pot = [obj_potion,10]; //in menu, will call: instance_create_depth(0,0,10,obj_potion);
 var tot = [obj_tent,2];
