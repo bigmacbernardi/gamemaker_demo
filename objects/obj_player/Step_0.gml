@@ -32,25 +32,21 @@ if place_meeting(x, y + y_spd, obj_wall) == true
 if ((x_spd==0)&&(y_spd==0))image_speed = 0;
 else{
 	if (y_spd<0){ //moving up
-		//eye_x1 = x - 16; set later
 		eye_y1 = y - 16;
-		//eye_x2 = x;
 		eye_y2 = y;
 		if (sprite_index == spr_person1) sprite_index = spr_person1_back; //turning up
 	}
 	else if (y_spd>0){ //moving down
 		eye_y1 = y + sprite_height;
-		//eye_x2 = x;
 		eye_y2 = y + sprite_height + 16;
 		if (sprite_index == spr_person1_back) sprite_index = spr_person1; //turning down
-		
-		show_debug_message("Y's changed to: "+string(y)+": "+string(eye_y1)+","+string(eye_y2));
+		//show_debug_message("Y's changed to: "+string(y)+": "+string(eye_y1)+","+string(eye_y2));
 	}
 	else{ //just left or right
 		eye_y1 = y - 1;
 		eye_y2 = y + sprite_height + 1;
 		
-		show_debug_message("Y's reset to: "+string(y)+": "+string(eye_y1)+","+string(eye_y2));
+		//show_debug_message("Y's reset to: "+string(y)+": "+string(eye_y1)+","+string(eye_y2));
 	}
 	if (x_spd<0) // moving left
 	{
@@ -58,21 +54,21 @@ else{
 		eye_x2 = x; //right boundary
 		if (image_xscale != -1) image_xscale = -1;//turning left
 		//x-= sprite_width;
-		show_debug_message("Lefty X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
+		//show_debug_message("Lefty X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
 	}
 	else if (x_spd>0) //moving right
 	{
 		if (image_xscale == -1) image_xscale = 1;//turning right
 		eye_x1 = x + sprite_width/2;
 		eye_x2 = x + sprite_width/2 + 16;
-		show_debug_message("Righty X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
+		//show_debug_message("Righty X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
 		//x-= sprite_width;
 	}
 	else if (y_spd != 0) { //just up or down -- not even needed anymore?
 		eye_x1 = x -  abs(sprite_width)/2 - 1;
 		eye_x2 = x + abs(sprite_width)/2 + 1;
 		
-		show_debug_message("Last X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
+		show_debug_message("X's reset");//Last X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
 		
 	}
 	image_speed = 4;
