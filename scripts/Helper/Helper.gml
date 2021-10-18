@@ -41,7 +41,7 @@ function unitAttack(){
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
 		with(global.targets){
-				incomingDamage = unit.current[@ ATK] ;
+				incomingDamage = unit.current[@ POW] ;
 				state = HIT;
 				layer_sequence_headpos(unitSequence,hitStart);
 		}

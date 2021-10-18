@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 randomize();
 enum phase{
 	init,
@@ -43,3 +44,5 @@ function getWait(u){
 	return 100-u.current[SPD];
 }
 draw_set_font(Roses);
+obj_player.visible = 0;//undoes debug crap
+draw_set_colour(c_white);//to reset silly red thing

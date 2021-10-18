@@ -53,7 +53,7 @@ switch(combatPhase){
 		inst.selected = true;
 		global.selectedUnit = inst;
 		//old list-looping method used:	if ((!inst.turnFinished)&&(inst.state != DEATH))
-		if (global.selectedUnit.isPlayer){
+		if (global.selectedUnit.isPlayer){  //do check if dual technique is possible HERE
 			solicitInput = false;
 			allowInput = true;
 			//maybe just have a single method for menu show/hide
