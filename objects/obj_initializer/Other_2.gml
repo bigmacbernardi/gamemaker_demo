@@ -18,6 +18,10 @@
 
 global.inventory = ds_list_create();
 global.currentParty = ds_list_create();//party equivalent of "foesToSpawn" that can also be used for menus
+global.chests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
 
 ds_list_add(global.currentParty,YUSUF);
 ds_list_add(global.currentParty,AOI);

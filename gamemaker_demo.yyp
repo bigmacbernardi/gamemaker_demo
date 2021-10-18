@@ -41,6 +41,7 @@
     {"id":{"name":"obj_dialoguer","path":"objects/obj_dialoguer/obj_dialoguer.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
     {"id":{"name":"enemy_dodge","path":"paths/enemy_dodge/enemy_dodge.yy",},"order":7,},
+    {"id":{"name":"obj_chest","path":"objects/obj_chest/obj_chest.yy",},"order":13,},
     {"id":{"name":"spr_atkbutton_on","path":"sprites/spr_atkbutton_on/spr_atkbutton_on.yy",},"order":10,},
     {"id":{"name":"KnightIdle_strip","path":"sprites/KnightIdle_strip/KnightIdle_strip.yy",},"order":2,},
     {"id":{"name":"twerp","path":"scripts/twerp/twerp.yy",},"order":5,},
