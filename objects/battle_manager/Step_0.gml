@@ -133,7 +133,7 @@ switch(combatPhase){
 	case phase.win:
 		show_debug_message("You win!");
 		global.foesToSpawn = [];
-		room_goto(Room1);//make this "last room" instead
+		room_goto(global.returnRoom);//orig Room1
 	//return to previous room
 	break;
 	
