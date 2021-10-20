@@ -12,3 +12,4 @@ if (ds_exists(global.enemies,ds_type_list)){
 }
 
 obj_player.visible = 1;
+obj_player.paused = false;
