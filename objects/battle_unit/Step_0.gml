@@ -45,7 +45,9 @@ switch(state){
 	break;
 	
 	case HIT:
+		show_debug_message(title + string(id) + " got hit!!!");
 		if (layer_sequence_get_headpos(unitSequence) > hitEnd){
+				show_debug_message("here comes the damage!!!");
 				damageUnit(incomingDamage);
 				if (current[@ HP] > 0){
 					layer_sequence_headpos(unitSequence, idleStart);
@@ -67,6 +69,7 @@ switch(state){
 					if (ds_priority_find_priority(battle_manager.pq,id)!=undefined) ds_priority_delete_value(battle_manager.pq,id);
 				}
 			}
+			else show_debug_message("hit end already happened!  probably a sequencing issue");
 	break;
 	
 	case TODEFEND:

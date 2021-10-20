@@ -6,8 +6,19 @@ if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{
 		//replace this part with selection thing
+		show_debug_message("Skill click detected");
 		visible = 0;
-		script_execute(optionSlots[|index].script);
+		
+		for(var i = 0; i < ds_list_size(global.enemies); i++){
+			if (global.enemies[|i].state != DEATH){
+	        
+				global.targets = global.enemies[|i];
+				var inst = instance_create_layer(global.enemies[|i].x, global.enemies[|i].y,"UI_Targeting", skill_selector);
+				inst.script = optionSlots[|index].script;
+				inst.index = i;
+				break;
+				}
+	 		}
         instance_destroy();
 	}
 else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))

@@ -35,19 +35,20 @@ function useItem(){
 		}*/
 	
 }
-
 function unitAttack(){
-	show_debug_message(global.selectedUnit.title+" attacking");
+	show_debug_message(global.selectedUnit.title+" attacking "+global.targets.title+"#"+string(global.targets));
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
 		with(global.targets){
 				incomingDamage = unit.current[@ POW] ;
+				show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 				state = HIT;
 				layer_sequence_headpos(unitSequence,hitStart);
 		}
 	}
 	else{
 		with(global.targets){
+			show_debug_message("OFFICIALLY MISSING");
 			state = MISS;
 			if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
 			layer_sequence_headpos(unitSequence,missStart);

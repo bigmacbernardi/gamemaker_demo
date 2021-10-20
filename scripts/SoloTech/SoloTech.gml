@@ -19,15 +19,24 @@ function burn(){
 }
 
 function freeze(){
-	for(var i = 0; i < ds_list_size(global.enemies); i++){
-		if (global.enemies[|i].state != DEATH){
-	        
-			global.targets = global.enemies[|i];
-			var inst = instance_create_layer(global.enemies[|i].x, global.enemies[|i].y,"UI_Targeting", atk_selector);
-			inst.index = i;
-			break;
-			}
-	 	}		 
+	show_debug_message(global.selectedUnit.title+" attacking "+global.targets.title+"#"+string(global.targets));
+	var unit = global.selectedUnit;
+	if (unit.attackWillHit){
+		with(global.targets){
+				incomingDamage = unit.current[@ POW] ;
+				show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
+				state = HIT;
+				layer_sequence_headpos(unitSequence,hitStart);
+		}
+	}
+	else{
+		with(global.targets){
+			show_debug_message("OFFICIALLY MISSING");
+			state = MISS;
+			if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
+			layer_sequence_headpos(unitSequence,missStart);
+		}
+	}
 }
 
 /* YUSUF TECH */

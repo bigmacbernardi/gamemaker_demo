@@ -50,8 +50,8 @@ else{
 	}
 	if (x_spd<0) // moving left
 	{
-		eye_x1 = x - 16;//left boundary
-		eye_x2 = x; //right boundary
+		eye_x1 = x - 16 -  abs(sprite_width/2) ;//left boundary
+		eye_x2 = x -  abs(sprite_width/2); //right boundary
 		if (image_xscale != -1) image_xscale = -1;//turning left
 		//x-= sprite_width;
 		//show_debug_message("Lefty X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));

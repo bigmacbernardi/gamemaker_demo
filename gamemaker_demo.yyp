@@ -161,6 +161,7 @@
     {"id":{"name":"obj_pauser","path":"objects/obj_pauser/obj_pauser.yy",},"order":3,},
     {"id":{"name":"spr_girl_face2","path":"sprites/spr_girl_face2/spr_girl_face2.yy",},"order":5,},
     {"id":{"name":"til_platformtiles","path":"sprites/til_platformtiles/til_platformtiles.yy",},"order":4,},
+    {"id":{"name":"skill_selector","path":"objects/skill_selector/skill_selector.yy",},"order":9,},
     {"id":{"name":"spr_knight_atk","path":"sprites/spr_knight_atk/spr_knight_atk.yy",},"order":13,},
     {"id":{"name":"_ui_parent","path":"objects/_ui_parent/_ui_parent.yy",},"order":0,},
     {"id":{"name":"idkguy","path":"tilesets/idkguy/idkguy.yy",},"order":3,},
