@@ -102,6 +102,7 @@
     {"id":{"name":"dialogue","path":"scripts/dialogue/dialogue.yy",},"order":10,},
     {"id":{"name":"say_the_line","path":"scripts/say_the_line/say_the_line.yy",},"order":19,},
     {"id":{"name":"spr_girl_face3","path":"sprites/spr_girl_face3/spr_girl_face3.yy",},"order":6,},
+    {"id":{"name":"obj_persistentmusicplayer","path":"objects/obj_persistentmusicplayer/obj_persistentmusicplayer.yy",},"order":15,},
     {"id":{"name":"spr_select_down","path":"sprites/spr_select_down/spr_select_down.yy",},"order":20,},
     {"id":{"name":"button_dual","path":"objects/button_dual/button_dual.yy",},"order":6,},
     {"id":{"name":"noBKG_KnightJumpAndFall_strip","path":"sprites/noBKG_KnightJumpAndFall_strip/noBKG_KnightJumpAndFall_strip.yy",},"order":9,},
@@ -181,6 +182,7 @@
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
+    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
@@ -234,7 +236,7 @@
     {"CopyToMask":153157610357391598,"filePath":"datafiles","resourceVersion":"1.0","name":"RosesareFF0000.ttf","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.3.574",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "gamemaker_demo",

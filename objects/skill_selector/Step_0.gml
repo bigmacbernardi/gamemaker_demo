@@ -8,7 +8,7 @@ else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space
 		with (global.selectedUnit){
 				//state = ATTACK; 
 				layer_sequence_headpos(unitSequence,atkStart);
-				script_execute(script);
+				script_execute(optionSlots[|index].script);
 			}
         instance_destroy();
 	}
