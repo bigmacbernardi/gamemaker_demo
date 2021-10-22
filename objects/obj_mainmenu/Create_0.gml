@@ -11,7 +11,19 @@ draw_set_font(Roses); //why would i call this every time?
 var drawX = 0;
 var drawY = y;
 options = ds_list_create(); 
-for (var i = 0; i < ds_list_size(global.inventory); i++){
+ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pauseitem));
+drawY += 24;
+ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pauseequip));
+drawY += 24;
+ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pauseskill));
+drawY += 24;
+ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pausestat));
+drawY += 24;
+ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pauseteam));
+drawY += 24;
+ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pauseconfig));
+drawY += 24;
+/*for (var i = 0; i < ds_list_size(global.inventory); i++){
   ds_list_add(options,instance_create_depth(drawX,drawY,global.inventory[|i][1],global.inventory[|i][0]));
   drawY += 24;
-}
+}*/

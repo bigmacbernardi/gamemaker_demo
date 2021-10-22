@@ -39,15 +39,15 @@ else {
 	var _right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 	var _moveH = _right - _left;
 	var _moveV = _down - _up;
-	if (_moveH != 0){ //will wrap eventually
-		index += _moveH;
+	if (_moveV != 0){ //will wrap eventually
+		index += _moveV;
 		if (index < 0) index = ds_list_size(options)-1;
 		if (index > ds_list_size(options)-1) index = 0;
 	}
-	if (_moveV < 0){ //assumes width of 3
+	if (_moveH < 0){ //assumes width of 3
 		index += 3;	
 		if (index > ds_list_size(options)-1) index = 0;
-	}else if(_moveV > 0){
+	}else if(_moveH > 0){
 		index -= 3;	
 		if (index < 0) index = ds_list_size(options)-1;
 	}
