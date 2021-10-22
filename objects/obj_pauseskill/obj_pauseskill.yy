@@ -22,7 +22,7 @@
   ],
   "properties": [
     {"varType":2,"value":"Magic/Skills","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"title","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":2,"value":"View each character in your party's battle techniques.  You can even use some of them outside of battle.","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"description","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":2,"value":"View/use each party members's battle techniques.","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"description","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
