@@ -56,12 +56,13 @@ switch(state){
 				}
 				else{
 					layer_sequence_headpos(unitSequence, deathStart);
-					if (isPlayer){
+					if (isPlayer){//could probably just make this battle_player behavior
 						show_debug_message("Player Killed");
 						ds_list_delete(global.allies,ds_list_find_index(global.allies,id));
 					}
-					else{
+					else{//could probably just make this battle_enemy behavior
 						show_debug_message("Enemy Killed");
+						battle_manager.expEarned += xp_value; //naive!  doesn't account for resurrection and assumes xp_value exists
 						ds_list_delete(global.enemies,ds_list_find_index(global.enemies,id));
 					}
 					turnFinished = true;

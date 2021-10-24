@@ -2,18 +2,31 @@
 switch(combatPhase){
 	
 	case phase.init:
-		for (var i = 0; i < instance_number(battle_spawner); i++){
-			var spawner = instance_find(battle_spawner, i);
-			var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit);
-			ds_list_add(global.units,unit);
-			ds_priority_add(pq,unit,getWait(unit));
-			//show_debug_message("Queued "+unit.title+" with priority "+string(getWait(unit)));
-			if (spawner.isPlayer){
+		var characters = [battle_aoi,battle_yusuf]; //declare in inner scope so it's not held?
+		for (var i = 0; i<4;i++){//4 global.currentParty slots
+			if (global.currentParty[i] != noone) {
+				var next_char = characters[global.currentParty[i]];
+				//var next_id = instance_create_layer((i%2)==0?16:32,200-(i*64),"Instances",next_char);
+				var unit = instance_create_depth((i%2)==0?16:32,140-(i*60),0,next_char);
+				ds_list_add(global.units,unit);
+				ds_priority_add(pq,unit,getWait(unit));
 				ds_list_add(global.allies,unit);
 				unit.isPlayer = true;
 			}
-			else
+		}
+		for (var i = 0; i < instance_number(battle_spawner); i++){
+			var spawner = instance_find(battle_spawner, i);
+			if (!spawner.isPlayer){ //regular
+				var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit);
+				ds_list_add(global.units,unit);
+				ds_priority_add(pq,unit,getWait(unit));
+				//show_debug_message("Queued "+unit.title+" with priority "+string(getWait(unit)));
 				ds_list_add(global.enemies,unit);
+			}
+			else{
+				//spawner.event_user(0); //bc it's player_spawner.  dumb
+				//ignore, shouldn't exist anymore
+			}
 		}
 		//enemy spawner
 		for (var i = 0; i < array_length(global.foesToSpawn); i+=3){
@@ -133,6 +146,11 @@ switch(combatPhase){
 	case phase.win:
 		show_debug_message("You win!");
 		global.foesToSpawn = [];
+		for (var i = 0; i<ds_list_size(global.allies);i++){//if allies are deleted from allies then mayyybe this ain't the best idea lol
+			global.points[global.currentParty[i]][HP] = global.allies[|i].current[HP];
+			global.points[global.currentParty[i]][MP] = global.allies[|i].current[MP];
+			global.party[global.currentParty[i]][XP] += expEarned;
+		}
 		room_goto(global.returnRoom);//orig Room1
 	//return to previous room
 	break;

@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4624d3fc-a694-46ce-aed9-b68bf1059579","path":"sprites/Not__Lucas/Not__Lucas.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4624d3fc-a694-46ce-aed9-b68bf1059579","path":"sprites/Not__Lucas/Not__Lucas.yy",},"LayerId":{"name":"8f8c5911-e703-4728-89d6-abe85271dede","path":"sprites/Not__Lucas/Not__Lucas.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Not__Lucas","path":"sprites/Not__Lucas/Not__Lucas.yy",},"resourceVersion":"1.0","name":"4624d3fc-a694-46ce-aed9-b68bf1059579","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4624d3fc-a694-46ce-aed9-b68bf1059579","path":"sprites/AoiProto/AoiProto.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4624d3fc-a694-46ce-aed9-b68bf1059579","path":"sprites/AoiProto/AoiProto.yy",},"LayerId":{"name":"8f8c5911-e703-4728-89d6-abe85271dede","path":"sprites/AoiProto/AoiProto.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"AoiProto","path":"sprites/AoiProto/AoiProto.yy",},"resourceVersion":"1.0","name":"4624d3fc-a694-46ce-aed9-b68bf1059579","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Not__Lucas","path":"sprites/Not__Lucas/Not__Lucas.yy",},
+    "spriteId": {"name":"AoiProto","path":"sprites/AoiProto/AoiProto.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4d8b289b-9ebd-4692-94a2-634971ed10ae","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4624d3fc-a694-46ce-aed9-b68bf1059579","path":"sprites/Not__Lucas/Not__Lucas.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a009bb2a-49d7-45fc-b17d-3245a3893365","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4624d3fc-a694-46ce-aed9-b68bf1059579","path":"sprites/AoiProto/AoiProto.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Not__Lucas","path":"sprites/Not__Lucas/Not__Lucas.yy",},
+    "parent": {"name":"AoiProto","path":"sprites/AoiProto/AoiProto.yy",},
     "resourceVersion": "1.3",
-    "name": "Not__Lucas",
+    "name": "AoiProto",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/tilesets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Not__Lucas",
+  "name": "AoiProto",
   "tags": [],
   "resourceType": "GMSprite",
 }

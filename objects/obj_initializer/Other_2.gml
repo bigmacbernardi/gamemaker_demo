@@ -18,14 +18,15 @@
 
 
 global.inventory = ds_list_create();
-global.currentParty = ds_list_create();//party equivalent of "foesToSpawn" that can also be used for menus
+//global.currentParty = ds_list_create();//party equivalent of "foesToSpawn" that can also be used for menus
+//ds_list_add(global.currentParty,YUSUF);
+//ds_list_add(global.currentParty,AOI);
+global.currentParty = [AOI,YUSUF,noone,noone];
 global.chests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
 
-ds_list_add(global.currentParty,YUSUF);
-ds_list_add(global.currentParty,AOI);
 //party: stats
 //points: health/MP
 //open to rework
