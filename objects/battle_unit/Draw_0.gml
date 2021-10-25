@@ -8,5 +8,5 @@ if(selected){
 }
 
 if(targeted){
-		draw_sprite(spr_indicator,0,x,y);
+		draw_sprite(spr_angryindicator,0,x,y);
 }

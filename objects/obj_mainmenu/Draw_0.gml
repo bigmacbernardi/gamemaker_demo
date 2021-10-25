@@ -12,7 +12,7 @@ for (var i = scrollLevel; i < ds_list_size(options); i++){
   //drawX = x+20;
   drawY += 24;
 }
-draw_text_transformed(drawX-6,drawY+24,options[|index].description,.5,.5,1);
+draw_text_transformed(drawX-2,drawY+24,options[|index].description,.5,.5,1);
 //drawing potraits and stats
 for (var i = 0; i<4; i++){
 	drawX = (i%2==0)? x+100:x+208;

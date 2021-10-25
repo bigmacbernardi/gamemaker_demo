@@ -10,11 +10,11 @@ function IcyHeat(){
 	for(var i = 0; i < ds_list_size(global.enemies); i++){
 		if (global.enemies[|i].state != DEATH){
 	        
-			global.targets = global.enemies[|i];
-			var inst = instance_create_layer(global.enemies[|i].x, global.enemies[|i].y,"UI_Targeting", atk_selector);
-			inst.index = i;
-			break;
+			global.targets = [global.enemies[|i]];
 			}
 	 	}		 
+		
+	var inst = instance_create_layer(global.enemies[|0].x, global.enemies[|0].y,"UI_Targeting", atk_selector);
+	inst.index = 0;
 }
 

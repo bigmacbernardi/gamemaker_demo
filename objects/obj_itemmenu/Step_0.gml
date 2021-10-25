@@ -8,7 +8,7 @@ else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space
 		//for(var i = 0; i < ds_list_size(global.allies); i++){
 		//if (global.allies[|i].state != DEATH){//probably shouldn't be a concern?
 	    global.itemInUse = [options[|index],index];
-		global.targets = global.allies[|0];
+		global.targets = [global.allies[|0]];
 		var inst = instance_create_layer(global.allies[|0].x, global.allies[|0].y,"UI_Targeting", itm_selector);
 		inst.index = 0;
 		for (var i = 0; i < ds_list_size(options); i++){

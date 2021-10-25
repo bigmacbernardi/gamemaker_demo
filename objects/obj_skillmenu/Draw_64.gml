@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
+draw_sprite(spr_menu_temp,0,x,y);
 var drawX = 10;
 var drawY = y+12;
 for (var i = scrollLevel; i < ds_list_size(optionSlots); i++){

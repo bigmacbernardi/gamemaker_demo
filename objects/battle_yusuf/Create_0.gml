@@ -6,14 +6,26 @@ event_inherited();
 
 base[HP] = global.party[YUSUF][HP];
 base[MP] = global.party[YUSUF][MP];
-base[POW] = global.party[YUSUF][POW];
 base[DEF] = global.party[YUSUF][DEF];
-base[ACC] = global.party[YUSUF][ACC];
 base[SPD] = global.party[YUSUF][SPD];
+base[STR] = global.party[YUSUF][STR];
+base[AGI] = global.party[YUSUF][AGI];
+base[CHA] = global.party[YUSUF][CHA];
+base[DEX] = global.party[YUSUF][DEX];
+base[WIS] = global.party[YUSUF][WIS];
+
+base[ACC] = global.party[YUSUF][ACC]; //change to formuler
 
 current[HP] = global.points[YUSUF][HP];
 current[MP] = global.points[YUSUF][MP];
-current[POW] = base[@ POW]
-current[DEF] = base[@ DEF]
-current[SPD] = base[@ SPD]
-current[ACC] = base[@ ACC]
+current[DEF] = base[@ DEF];
+current[SPD] = base[@ SPD];
+current[STR] = base[@ STR]; //PLUS weapon+attack!
+current[AGI] = base[@ AGI];
+current[CHA] = base[@ CHA];
+current[DEX] = base[@ DEX];
+current[WIS] = base[@ WIS];
+current[ACC] = base[@ ACC]; // TIMES weapon accuracy!
+
+
+index = YUSUF;//will make slotting easier

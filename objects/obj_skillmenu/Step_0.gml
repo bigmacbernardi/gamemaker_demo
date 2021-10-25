@@ -9,16 +9,19 @@ else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space
 		show_debug_message("Skill click detected");
 		visible = 0;
 		
-		for(var i = 0; i < ds_list_size(global.enemies); i++){
+		/*for(var i = 0; i < ds_list_size(global.enemies); i++){
 			if (global.enemies[|i].state != DEATH){
 	        
-				global.targets = global.enemies[|i];
+				global.targets = [global.enemies[|i]];//replace ALL our
 				var inst = instance_create_layer(global.enemies[|i].x, global.enemies[|i].y,"UI_Targeting", skill_selector);
 				inst.script = optionSlots[|index].script;
 				inst.index = i;
 				break;
 				}
-	 		}
+	 		}*/
+		var inst = instance_create_layer(global.enemies[|0].x, global.enemies[|0].y,"UI_Targeting", skill_selector);
+		inst.mode = optionSlots[|index].mode;//make sure not too late!
+		inst.script = optionSlots[|index].script;
         instance_destroy();
 	}
 else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))

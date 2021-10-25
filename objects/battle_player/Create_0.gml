@@ -27,3 +27,6 @@ deathMid = 69;
 deathEnd = 73;
 itmStart = 75;
 itmEnd = 87;
+
+mpBarWidth = sprite_get_width(ui_mp);
+mpBarHeight = sprite_get_height(ui_mp);

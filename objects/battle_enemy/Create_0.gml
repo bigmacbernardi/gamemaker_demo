@@ -24,7 +24,7 @@ deathEnd = 244;
 
 base[HP] = 4;
 current[HP] = 4;
-current[POW] = 2;
+current[STR] = 2;
 current[DEF] = 1;
 current[SPD] = 1;
 current[ACC] = 0.5;

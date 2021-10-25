@@ -7,9 +7,13 @@
 #macro MP 1
 #macro DEF 2
 #macro SPD 3
-#macro POW 4
-#macro ACC 5
-#macro XP 6
+#macro STR 4
+#macro AGI 5
+#macro CHA 6
+#macro DEX 7
+#macro WIS 8
+#macro XP 9
+#macro ACC 10
 
 //characters' indices defined - permanent first, then any guests
 #macro AOI 0
@@ -32,19 +36,27 @@ false,false,false,false,false,false,false,false,false,false,false,false,false,fa
 //open to rework
 global.party[AOI][HP] = 10;
 global.party[AOI][MP] = 10;
-global.party[AOI][POW] = 2;
 global.party[AOI][DEF] = 1;
-global.party[AOI][SPD] = 5;
-global.party[AOI][ACC] = .75;
+global.party[AOI][SPD] = 3;
+global.party[AOI][STR] = 6;
+global.party[AOI][AGI] = 3;
+global.party[AOI][CHA] = 3;
+global.party[AOI][DEX] = 3;
+global.party[AOI][WIS] = 5;
 global.party[AOI][XP] = 0;
+global.party[AOI][ACC] = .75;
 
 global.party[YUSUF][HP] = 10;
 global.party[YUSUF][MP] = 10;
-global.party[YUSUF][POW] = 2;
 global.party[YUSUF][DEF] = 1;
-global.party[YUSUF][SPD] = 5;
-global.party[YUSUF][ACC] = .75;
+global.party[YUSUF][SPD] = 4;
+global.party[YUSUF][STR] = 5;
+global.party[YUSUF][AGI] = 5;
+global.party[YUSUF][CHA] = 3;
+global.party[YUSUF][DEX] = 3;
+global.party[YUSUF][WIS] = 3;
 global.party[YUSUF][XP] = 0;
+global.party[YUSUF][ACC] = .75;
 
 global.points[AOI][HP] = global.party[AOI][HP]; //full health
 global.points[AOI][MP] = global.party[AOI][MP]; //full MP

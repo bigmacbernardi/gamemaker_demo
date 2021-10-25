@@ -5,7 +5,6 @@ var yy = (y-cy)*Display_ScaleY;
 
 
 var _hp = current[@ HP]/base[@ HP];
-
 if (state != DEATH) //clean up some clutter
 {
 	draw_sprite(ui_hp,0,xx,yy-20);

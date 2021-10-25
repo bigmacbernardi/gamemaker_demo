@@ -8,6 +8,7 @@ function slot_skills(){
 				var aoiBurn = instance_create_layer(0,0,"UI_Base",obj_skill);
 				aoiBurn.title = "Burn";
 				aoiBurn.description = "Fire damage on all enemies.";
+				aoiBurn.mode = 2;
 				aoiBurn.script = burn;
 				a[index++] = aoiBurn;
 			//}
@@ -15,6 +16,7 @@ function slot_skills(){
 				var aoiFreeze = instance_create_layer(0,0,"UI_Base",obj_skill);
 				aoiFreeze.title = "Freeze";
 				aoiFreeze.description = "Ice damage on one enemy.";
+				aoiFreeze.mode = 0;
 				aoiFreeze.script = freeze;
 				a[index++] = aoiFreeze;
 			//}
@@ -24,12 +26,14 @@ function slot_skills(){
 				var yusufBold = instance_create_layer(0,0,"UI_Base",obj_skill);
 				yusufBold.title = "Embolden";
 				yusufBold.description = "Raise ally's strength and defense.";
+				yusufBold.mode = 1;
 				yusufBold.script = embolden;
 				a[index++] = yusufBold;
 			//}
 			//if (balmLearned){
 				var yusufBalm = instance_create_layer(0,0,"UI_Base",obj_skill);
 				yusufBalm.title = "Balm";
+				yusufBalm.mode = 3;
 				yusufBalm.description = "Heals you and your teammate.  5 MP.";
 				yusufBalm.script = balm;
 				a[index++] = yusufBalm;
@@ -37,6 +41,7 @@ function slot_skills(){
 			//if (ICLearned){
 				var yusufIC = instance_create_layer(0,0,"UI_Base",obj_skill);
 				yusufIC.title = "Intensive care";
+				yusufIC.mode = 1;
 				yusufIC.description = "Raise fallen ally.  10 MP.";
 				yusufIC.script = intensiveCare;
 				a[index++] = yusufIC;

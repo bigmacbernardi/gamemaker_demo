@@ -4,7 +4,7 @@
 //debugging
 
 draw_text_transformed(0,0,"Phase: "+curPhaseName(),.45,.45,0);
-draw_text_transformed(90,6,"Selected target: "+(int64(global.targets)==-4?"no one":global.targets.title+" ("+string(global.targets)+")"),.45,.45,0);
+draw_text_transformed(90,6,"Selected target: "+(int64(global.targets[0])==-4?"no one":global.targets[0].title+" ("+string(global.targets[0])+")"),.45,.45,0);
 
 for (var i = 0; i < ds_list_size(global.units); i++){
 	var guy_type = (ds_list_find_index(global.allies,global.units[|i])!=-1?"(ally, alive)":

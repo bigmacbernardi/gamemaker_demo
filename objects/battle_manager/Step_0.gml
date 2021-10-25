@@ -138,8 +138,8 @@ switch(combatPhase){
 	
 	case phase.endTurn:
 		selectedFinished = false;
-		//global.targets.path_speed = 0;
-		global.targets = noone;
+		//global.targets[0].path_speed = 0;
+		global.targets = [noone];
 		combatPhase = phase.startTurn;
 	break;
 	

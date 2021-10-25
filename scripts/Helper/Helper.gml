@@ -28,32 +28,36 @@ function checkForHit(){
 }
 
 function useItem(){
-	show_debug_message(global.selectedUnit.title+" using "+ global.itemInUse[0].title +" on " + global.targets.title);
-	/*	with(global.targets){
+	show_debug_message(global.selectedUnit.title+" using "+ global.itemInUse[0].title +" on " + global.targets[0].title);
+	/*	with(global.targets[0]){
 			state = MISS;
 			//getting-healed animation?
 		}*/
 	
 }
 function unitAttack(){
-	show_debug_message(global.selectedUnit.title+" attacking "+global.targets.title+"#"+string(global.targets));
+	show_debug_message(global.selectedUnit.title+" attacking "+global.targets[0].title+"#"+string(global.targets[0]));
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
-		with(global.targets){
-				incomingDamage = unit.current[@ POW] ;
-				show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
-				state = HIT;
-				layer_sequence_headpos(unitSequence,hitStart);
+		for (var i = 0; i < array_length(global.targets); i++){ //should recalculate and put outside, but that's not how attack works rn
+			with(global.targets[i]){
+					incomingDamage = unit.current[@ STR] ;
+					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
+					state = HIT;
+					layer_sequence_headpos(unitSequence,hitStart);
+			}
 		}
 	}
 	else{
-		with(global.targets){
-			show_debug_message("OFFICIALLY MISSING");
-			state = MISS;
-			if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
-			layer_sequence_headpos(unitSequence,missStart);
+		for (var i = 0; i < array_length(global.targets); i++){
+			with(global.targets[i]){
+				show_debug_message("OFFICIALLY MISSING");
+				state = MISS;
+				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
+				layer_sequence_headpos(unitSequence,missStart);
+			}
 		}
-	}
 	
-}
+	}
 
+}
