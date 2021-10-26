@@ -108,7 +108,7 @@ switch(combatPhase){
 			var nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedUnit); //this process will need to change for overflow reasons
 			show_debug_message("Requeuing "+global.selectedUnit.title+" with priority "+string(nextPriority));
 			ds_priority_add(pq,global.selectedUnit,nextPriority);
-		}
+		}else show_debug_message("Waiting on "+global.selectedUnit.title); //have selectedFinished signaled by the other thing by an alarm
 	break;
 	
 	case phase.process:

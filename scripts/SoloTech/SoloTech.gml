@@ -28,7 +28,8 @@ function burn(){
 				layer_sequence_headpos(unitSequence,missStart);
 			}
 		}
-	 	}		 
+	 }
+	battle_manager.alarm[1] = 10;		 
 }
 
 function freeze(){
@@ -52,6 +53,7 @@ function freeze(){
 			layer_sequence_headpos(unitSequence,missStart);
 		}
 	}
+	battle_manager.alarm[1] = 10;
 	//complete the turn?
 }
 
@@ -68,6 +70,7 @@ function embolden(){
 			break;
 			}
 	 	}		 
+	battle_manager.alarm[1] = 10;
 }
 
 function balm(){
@@ -79,7 +82,8 @@ function balm(){
 			inst.index = i;//do something different lol
 			
 			}
-	 	}		 
+	 	}	
+	battle_manager.alarm[1] = 10;	 
 }
 
 function intensiveCare(){
@@ -91,5 +95,6 @@ function intensiveCare(){
 			inst.index = i;
 			break;
 			}
-	 	}		 
+	 	}		
+	battle_manager.alarm[1] = 10; 
 }
