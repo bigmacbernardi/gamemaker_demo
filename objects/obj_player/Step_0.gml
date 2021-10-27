@@ -6,7 +6,7 @@ up_key = keyboard_check(0x57);
 down_key = keyboard_check(0x53);
 run_key = keyboard_check(vk_shift);
 check_butt = keyboard_check(vk_space) || keyboard_check(vk_enter);
-pause_butt = keyboard_check_released(vk_escape) || keyboard_check_released(vk_backspace);
+pause_butt = (keyboard_check_released(vk_escape) || keyboard_check_released(vk_backspace));
 x_spd = (right_key - left_key) * move_spd * (run_key?1.5:1);
 y_spd = (down_key - up_key) * move_spd * (run_key?1.5:1);
 //cheap pause effect
