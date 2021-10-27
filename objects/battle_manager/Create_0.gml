@@ -41,6 +41,8 @@ global.enemies = ds_list_create();
 pq = ds_priority_create();//only battle managers needs to see this
 global.selectedUnit = noone;
 global.targets = [noone];
+global.P_System = part_system_create_layer("UI_Targeting",false);//special fx!
+global.Particle1 = part_type_create();
 
 function getWait(u){
 	return 100-u.current[SPD];

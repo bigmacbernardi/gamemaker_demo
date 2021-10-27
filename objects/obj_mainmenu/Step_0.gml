@@ -1,5 +1,5 @@
 /// @description General  menulogic
-var pause_butt = keyboard_check(vk_escape) || keyboard_check(vk_backspace);
+var pause_butt = keyboard_check_released(vk_escape) || keyboard_check_released(vk_backspace);
 
 if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
