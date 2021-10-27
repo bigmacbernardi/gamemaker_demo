@@ -5,7 +5,7 @@ if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{ 
 		//submenu doesn't exist yet
-		/*var inst = instance_create_layer(global.allies[|0].x, global.allies[|0].y,"UI_Targeting", submenu);
+		/*var inst = instance_create_depth(0,0,-100, submenu);
 		inst.index = 0;
 		for (var i = 0; i < ds_list_size(options); i++){
 			if (i==index) continue;

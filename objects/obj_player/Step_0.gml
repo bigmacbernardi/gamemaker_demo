@@ -10,7 +10,7 @@ pause_butt = keyboard_check_released(vk_escape) || keyboard_check_released(vk_ba
 x_spd = (right_key - left_key) * move_spd * (run_key?1.5:1);
 y_spd = (down_key - up_key) * move_spd * (run_key?1.5:1);
 //cheap pause effect
-/*if instance_exists(obj_pauser)//might as well just use mainmenu
+/*if instance_exists(obj_pauser)//might as well just use pausemenu_main
 	{
 		x_spd = 0;
 		y_spd = 0;
@@ -93,7 +93,7 @@ if (pause_butt && (framesToBuffer==0)){
 	x_spd = 0;//cheap
 	y_spd = 0;//cheap
 	paused = true;
-	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam),-10,obj_mainmenu);
+	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam),-10,obj_pausemenu_main);
 }
 else if (framesToBuffer>0){
 	framesToBuffer--;	

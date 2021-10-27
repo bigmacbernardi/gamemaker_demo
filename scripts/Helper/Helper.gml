@@ -41,8 +41,9 @@ function unitAttack(){
 	if (unit.attackWillHit){
 		for (var i = 0; i < array_length(global.targets); i++){ //should recalculate and put outside, but that's not how attack works rn
 			with(global.targets[i]){
-					incomingDamage = unit.current[@ STR] ;
+					incomingDamage = unit.current[@ STR]; //+= to compound
 					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
+					//alarm[0] = 10;
 					state = HIT;
 					layer_sequence_headpos(unitSequence,hitStart);
 			}

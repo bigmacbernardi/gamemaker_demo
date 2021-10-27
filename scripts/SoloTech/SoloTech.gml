@@ -18,6 +18,7 @@ function burn(){
 			with(global.targets[i]){ // (Energy) * (Fire) / 4
 					incomingDamage = round(unit.current[@ WIS] * unit.current[@ STR]/4);
 					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
+					//alarm[0] = 10;
 					state = HIT;
 					layer_sequence_headpos(unitSequence,hitStart);
 			}
@@ -45,6 +46,7 @@ function freeze(){
 		with(global.targets[0]){ // (Energy*1.25 + Fire/4) * (Ice/2 + Shadow/2)  ... / Earth * (Ice/2 + Shadow/2)?
 				incomingDamage = round((unit.current[@ WIS]*1.25) + (unit.current[@ STR] / 4)* ((unit.current[@ AGI] / 2)+(unit.current[@ CHA] / 2)));
 				show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
+				//alarm[0] = 10;
 				state = HIT;
 				layer_sequence_headpos(unitSequence,hitStart);
 		}

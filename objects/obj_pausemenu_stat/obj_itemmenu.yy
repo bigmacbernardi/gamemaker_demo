@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_menubkgd_temp",
-    "path": "sprites/spr_menubkgd_temp/spr_menubkgd_temp.yy",
+    "name": "spr_menu_temp",
+    "path": "sprites/spr_menu_temp/spr_menu_temp.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,16 +28,16 @@
   "properties": [
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"index","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"frameHasPassed","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"priorMenu","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"button_item","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"priorMenu","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"scrollLevel","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "pause",
-    "path": "folders/Objects/GUI/pause.yy",
+    "name": "GUI",
+    "path": "folders/Objects/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_mainmenu",
+  "name": "obj_itemmenu",
   "tags": [],
   "resourceType": "GMObject",
 }
