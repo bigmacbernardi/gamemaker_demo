@@ -12,7 +12,19 @@ function burn(){
 	setParticle(2);//fire;
 	for(var i = 0; i < array_length(global.targets); i++){
 		show_debug_message(global.selectedUnit.title+" attacking "+global.targets[i].title+"#"+string(global.targets[i]));
-		part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 10);
+		var xStep = (global.targets[i].x - unit.x )/40;
+		var yStep = (global.targets[i].y - unit.y )/40;
+		var partX = unit.x;
+		var partY = unit.y;
+		//part_type_direction(global.Particle1,)
+		
+		repeat(40)
+		{
+			partX+=xStep;
+			partY+=yStep;
+			part_particles_create(global.P_System, partX, partY, global.Particle1, 1);
+		}
+		//part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 10);
 		checkForHit();
 		if (unit.attackWillHit){
 			with(global.targets[i]){ // (Energy) * (Fire) / 4
@@ -41,7 +53,19 @@ function freeze(){
 	setParticle(7);//ice
 	var unit = global.selectedUnit;
 	unit.current[MP] -= 4;
-	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
+	var xStep = (global.targets[0].x - unit.x )/40;
+	var yStep = (global.targets[0].y - unit.y )/40;
+	var partX = unit.x;
+	var partY = unit.y;
+	//part_type_direction(global.Particle1,)
+		
+	repeat(40)
+	{
+		partX+=xStep;
+		partY+=yStep;
+		part_particles_create(global.P_System, partX, partY, global.Particle1, 1);
+	}
+	//part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
 	if (unit.attackWillHit){
 		with(global.targets[0]){ // (Energy*1.25 + Fire/4) * (Ice/2 + Shadow/2)  ... / Earth * (Ice/2 + Shadow/2)?
 				incomingDamage = round((unit.current[@ WIS]*1.25) + (unit.current[@ STR] / 4)* ((unit.current[@ AGI] / 2)+(unit.current[@ CHA] / 2)));

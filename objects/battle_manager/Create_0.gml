@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Prepare for battle
 // You can write your code in this editor
 
 obj_player.paused = true;//lock it in place

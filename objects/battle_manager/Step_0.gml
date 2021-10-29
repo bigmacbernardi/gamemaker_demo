@@ -13,6 +13,14 @@ switch(combatPhase){
 				ds_list_add(global.allies,unit);
 				unit.isPlayer = true;
 			}
+			if ds_list_size(global.allies)>1{
+				global.allies[|0].teammate = global.allies[|1];
+				global.allies[|1].teammate = global.allies[|0];
+				if ds_list_size(global.allies)>3{
+					global.allies[|2].teammate = global.allies[|3];
+					global.allies[|3].teammate = global.allies[|2];
+				}
+			}
 		}
 		for (var i = 0; i < instance_number(battle_spawner); i++){
 			var spawner = instance_find(battle_spawner, i);
@@ -72,6 +80,7 @@ switch(combatPhase){
 			//maybe just have a single method for menu show/hide
 			button_attack.visible = 1;
 			button_skill.visible = 1;
+			button_dual_wait.visible = 1;
 			button_item.visible = 1;
 			show_debug_message("Showing menu button");
 			//menu = create_button(0,200,280,80,"Attack",simulateInput(global.enemies));

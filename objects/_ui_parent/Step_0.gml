@@ -78,6 +78,7 @@ if((script != noone)&&(isSelected)&&(battle_manager.allowInput))// && position_m
 		//if we just had a way to automatically iterate through children, this could be easier
 		button_attack.visible = 0;
 		button_skill.visible = 0;
+		button_dual_wait.visible = 0;
 		button_item.visible = 0;
 	}
 }

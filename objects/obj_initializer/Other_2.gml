@@ -18,6 +18,18 @@
 //characters' indices defined - permanent first, then any guests
 #macro AOI 0
 #macro YUSUF 1
+#macro STRAVSKY 2
+#macro POLO 3
+/*#macro PJANE 4
+#macro WRESTLER 5
+#macro SERVER 6
+#macro PAT 7
+#macro NIKOLAI 8
+#macro SPIDER 9
+#macro MANAMI 10
+#macro ATTA 11
+#macro VARIS 12
+#macro OGHUZ 30*/
 
 
 

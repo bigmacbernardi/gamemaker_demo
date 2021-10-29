@@ -17,6 +17,7 @@ else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shif
 		button_attack.visible = 1;
 		button_attack.selected = true;
 		button_skill.visible = 1;
+		button_dual_wait.visible = 1;
 		button_item.visible = 1;
         instance_destroy();
 	}	

@@ -68,6 +68,7 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":1,},
     {"id":{"name":"attack","path":"scripts/attack/attack.yy",},"order":0,},
     {"id":{"name":"sKnight","path":"sequences/sKnight/sKnight.yy",},"order":9,},
+    {"id":{"name":"slot_dual","path":"scripts/slot_dual/slot_dual.yy",},"order":24,},
     {"id":{"name":"spr_guide","path":"sprites/spr_guide/spr_guide.yy",},"order":0,},
     {"id":{"name":"spr_knight_itm","path":"sprites/spr_knight_itm/spr_knight_itm.yy",},"order":20,},
     {"id":{"name":"sGhost","path":"sequences/sGhost/sGhost.yy",},"order":8,},

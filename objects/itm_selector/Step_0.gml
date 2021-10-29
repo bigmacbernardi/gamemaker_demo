@@ -35,6 +35,7 @@ else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shif
 		battle_manager.allowInput = true;
 		button_attack.visible = 1;
 		button_skill.visible = 1;
+		button_dual_wait.visible = 1;
 		button_item.visible = 1;
         button_item.selected = true;
 		instance_destroy();
