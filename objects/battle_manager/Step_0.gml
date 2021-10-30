@@ -69,7 +69,14 @@ switch(combatPhase){
 		
 		//cycle through the units and find the first w/ turnFinished FALSE
 		//change unit's local selected status (draws indicator) and make it the selectedUnit
-		var inst = ds_priority_delete_min(pq); //needs corresponding ds_priority_add in later phase
+		var last_key = ds_priority_find_priority(pq,ds_priority_find_min(pq));
+		show_debug_message("Gonna delete the "+string(last_key));
+		var inst = ds_priority_delete_min(pq); //needs corresponding add?
+		show_debug_message("Bout to reduce "+string(ds_priority_size(pq))+" items by "+string(last_key));
+		
+		reduce(last_key);
+		show_debug_message("Done reduced");
+		
 		//if (inst.turnFinished||inst.state != DEATH) then it shouldn't be in queue
 		inst.selected = true;
 		global.selectedUnit = inst;

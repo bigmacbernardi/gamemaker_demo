@@ -50,3 +50,32 @@ function getWait(u){
 draw_set_font(Roses);
 obj_player.visible = 0;//undoes debug crap
 draw_set_colour(c_white);//to reset silly red thing
+function foreach_priority(priority) {
+    var size = ds_priority_size(priority);
+    
+    for (var i = 0; i < size; i++) {
+        var element = ds_priority_find_min(priority);
+        var key = ds_priority_find_priority(priority, element);
+        //func(element, key, i);
+	    draw_text_transformed(280,2+(i*15),((i==0)?"NEXT: ":"In "+string(i)+" turn(s): ")+element.title+" ("+string(key)+" left)",.375,.375,0);
+        ds_priority_delete_min(priority);
+    }
+}
+function reduce(amt) {
+    var copy = ds_priority_create();
+	ds_priority_copy(copy,pq);
+	var size = ds_priority_size(copy);
+    
+	show_debug_message("Before all reduction, pq size is "+string(ds_priority_size(pq))+" and copy size is "+string(ds_priority_size(pq)));
+    for (var i = 0; i < size; i++) {
+        var element = ds_priority_find_min(copy);
+        var key = ds_priority_find_priority(copy, element);
+		var new_key = key - amt;
+        //func(element, key, i);
+        ds_priority_change_priority(pq,element,new_key);
+			show_debug_message("After change, pq size is "+string(ds_priority_size(pq)));
+		ds_priority_delete_min(copy);
+			show_debug_message("After copy delete, pq size is "+string(ds_priority_size(pq)));
+    }
+	show_debug_message("After all reduction, pq size is "+string(ds_priority_size(pq)));
+}

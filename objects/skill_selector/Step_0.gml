@@ -27,8 +27,6 @@ if (mode==0){ //not learning nested behavior so doing this instead
 	}
 }
 }
-x = global.targets[0].x;
-y = global.targets[0].y;
 if (mode==0) {//single-enemy
 	if (!frameHasPassed) frameHasPassed = true;
 	else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
