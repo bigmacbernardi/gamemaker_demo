@@ -120,8 +120,11 @@ switch(combatPhase){
 			global.selectedUnit.turnFinished = true;
 			unitsFinished++;
 			combatPhase = phase.process;
-			//requeue
-			var nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedUnit); //this process will need to change for overflow reasons
+			//requeue: this calculation should ONLY be used if they did NOT pick WAIT.
+			var nextPriority;
+			if (!global.selectedUnit.isHolding) //this calculation should ONLY be used if they did NOT pick WAIT.
+			nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedUnit); //this process will need to change for overflow reasons
+			else nextPriority = ds_priority_find_priority(pq,ds_priority_find_min(pq))+1;//come in at SOONEST opportunity
 			show_debug_message("Requeuing "+global.selectedUnit.title+" with priority "+string(nextPriority));
 			ds_priority_add(pq,global.selectedUnit,nextPriority);
 		}else show_debug_message("Waiting on "+global.selectedUnit.title); //have selectedFinished signaled by the other thing by an alarm

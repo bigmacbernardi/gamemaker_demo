@@ -4,7 +4,7 @@
     "path": "sprites/spr_itmbutton_off/spr_itmbutton_off.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

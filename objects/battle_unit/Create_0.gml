@@ -21,6 +21,7 @@
 #macro DEFEND 5
 #macro DEATH 6
 #macro ITEM 7
+#macro HEAL 8
 
 state = IDLE;
 
@@ -48,4 +49,7 @@ hpBarHeight = sprite_get_height(ui_hp);
 function damageUnit(amount){
 	var damage = amount - current[@ DEF];
 	current[@ HP] -= max(0,damage);
+}
+function healUnit(amount){
+	current[@ HP] = min(base[HP],current[HP]+amount);
 }

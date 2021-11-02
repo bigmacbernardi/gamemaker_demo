@@ -4,7 +4,7 @@
     "path": "sprites/spr_atkbutton_off/spr_atkbutton_off.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

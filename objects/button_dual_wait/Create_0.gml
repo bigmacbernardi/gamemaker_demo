@@ -3,4 +3,4 @@
 
 event_inherited();
 state = VisualState.active;
-script = skills;//dual
+script = wait;//default

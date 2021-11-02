@@ -4,7 +4,7 @@
     "path": "sprites/spr_sklbutton_off/spr_sklbutton_off.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

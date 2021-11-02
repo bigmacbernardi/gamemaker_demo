@@ -72,6 +72,15 @@ switch(state){
 			}
 			else show_debug_message("hit end already happened!  probably a sequencing issue");
 	break;
+	case HEAL:
+		show_debug_message(title + string(id) + " got 'specially healt!!!");
+//		if (layer_sequence_get_headpos(unitSequence) > hitEnd){
+		healUnit(incomingDamage);
+		layer_sequence_headpos(unitSequence, idleStart);
+		incomingDamage = 0;
+		state = IDLE;
+//			} else show_debug_message("hit end already happened!  probably a sequencing issue");
+	break;
 	
 	case TODEFEND:
 		if (layer_sequence_get_headpos(unitSequence) > intoDefEnd){

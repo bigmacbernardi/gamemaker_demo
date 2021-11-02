@@ -16,32 +16,32 @@ function slot_dual(){
 				icyHeat.description = "Light ice damage on all enemies.  Warm healing to all allies.";
 				icyHeat.mode = 2;
 				icyHeat.usable = global.selectedUnit.current[MP]>=4;
-				icyHeat.script = burn;
+				icyHeat.script = IcyHeat;
 				a[index++] = icyHeat;
 			//}
 			//if (freezeLearned){
-				var aoiFreeze = instance_create_layer(0,0,"UI_Base",obj_skill);
-				aoiFreeze.title = "Freeze";
-				aoiFreeze.description = "Ice damage on one enemy.";
-				aoiFreeze.mode = 0;
-				aoiFreeze.usable = global.selectedUnit.current[MP]>=4;
-				aoiFreeze.script = freeze;
-				a[index++] = aoiFreeze;
+				var mugumugu = instance_create_layer(0,0,"UI_Base",obj_skill);
+				mugumugu.title = "Mugu mugu";
+				mugumugu.description = "Ice damage on one enemy.";
+				mugumugu.mode = 0;
+				mugumugu.usable = global.selectedUnit.current[MP]>=4;
+				mugumugu.script = freeze;
+				a[index++] = mugumugu;
 			//}
 			break;
-		case ((AOI*32)-(STRAVSKY)):
+		case ((AOI*32)-(JAMIR)):
 			
 			break;
-		case ((AOI*32)-(POLO)):
+		case ((AOI*32)-(BARDO)):
 			
 			break;
-		case ((YUSUF*32)-(STRAVSKY)):
+		case ((YUSUF*32)-(JAMIR)):
 			
 			break;
-		case ((YUSUF*32)-(POLO)):
+		case ((YUSUF*32)-(BARDO)):
 			
 			break;
-		case ((STRAVSKY*32)-(POLO)):
+		case ((JAMIR*32)-(BARDO)):
 			
 			break;
 		default: //testing only

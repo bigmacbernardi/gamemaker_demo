@@ -24,12 +24,12 @@
   "gridX": 10,
   "gridY": 11,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d2da4abe-8f80-4190-9c28-30d1fd051b9c","path":"sprites/spr_atkbutton_on/spr_atkbutton_on.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d2da4abe-8f80-4190-9c28-30d1fd051b9c","path":"sprites/spr_atkbutton_on/spr_atkbutton_on.yy",},"LayerId":{"name":"394c1716-8cc6-48c5-8148-a260c2651cea","path":"sprites/spr_atkbutton_on/spr_atkbutton_on.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_atkbutton_on","path":"sprites/spr_atkbutton_on/spr_atkbutton_on.yy",},"resourceVersion":"1.0","name":"d2da4abe-8f80-4190-9c28-30d1fd051b9c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d2da4abe-8f80-4190-9c28-30d1fd051b9c","path":"sprites/spr_atkbutton/spr_atkbutton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d2da4abe-8f80-4190-9c28-30d1fd051b9c","path":"sprites/spr_atkbutton/spr_atkbutton.yy",},"LayerId":{"name":"394c1716-8cc6-48c5-8148-a260c2651cea","path":"sprites/spr_atkbutton/spr_atkbutton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_atkbutton","path":"sprites/spr_atkbutton/spr_atkbutton.yy",},"resourceVersion":"1.0","name":"d2da4abe-8f80-4190-9c28-30d1fd051b9c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_atkbutton_on","path":"sprites/spr_atkbutton_on/spr_atkbutton_on.yy",},
+    "spriteId": {"name":"spr_atkbutton","path":"sprites/spr_atkbutton/spr_atkbutton.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,8 +41,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"02726f2e-3074-453a-831e-6a9d712060e5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d2da4abe-8f80-4190-9c28-30d1fd051b9c","path":"sprites/spr_atkbutton_on/spr_atkbutton_on.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+            {"id":"86c5f7eb-821d-4039-9038-7b7607a9b31c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d2da4abe-8f80-4190-9c28-30d1fd051b9c","path":"sprites/spr_atkbutton/spr_atkbutton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_atkbutton_on","path":"sprites/spr_atkbutton_on/spr_atkbutton_on.yy",},
+    "parent": {"name":"spr_atkbutton","path":"sprites/spr_atkbutton/spr_atkbutton.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_atkbutton_on",
+    "name": "spr_atkbutton",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/GUI and object filler.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_atkbutton_on",
+  "name": "spr_atkbutton",
   "tags": [],
   "resourceType": "GMSprite",
 }
