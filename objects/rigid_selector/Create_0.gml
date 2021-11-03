@@ -1,6 +1,6 @@
 /// @description What's funny about this is I think ONLY rigid selections could require two target groups!
 // You can write your code in this editor
-
+show_debug_message("Rigid selector showing");
 frameHasPassed = false;
 mode = global.selectMode;
 lastMode = mode;
@@ -32,4 +32,7 @@ else if (mode==2){//everybody
 }
 else if (mode==3){//self only - means this has to be called for solo skills too
 	targetSet1 = [global.selectedUnit];
+}
+else if (mode==4){//TEAM only
+	targetSet1 = [global.selectedUnit,global.selectedUnit.teammate];
 }

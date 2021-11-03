@@ -88,3 +88,4 @@ global.dialogueLine=0;
 global.flag=[0,0,0,0,0,0,0,0,0,0,
 			0,0,0,0,0,0,0,0,0,0,
 			0,0,0,0,0,0,0,0,0,0];
+//global.showBattleDetails = true; //can use this for toggles

@@ -36,7 +36,8 @@ function slot_skills(){
 			//if (balmLearned){
 				var yusufBalm = instance_create_layer(0,0,"UI_Base",obj_skill);
 				yusufBalm.title = "Balm";
-				yusufBalm.mode = 3;
+				yusufBalm.selector = rigid_selector;
+				yusufBalm.mode = 4;//rigid_selector:4 - team stuff
 				yusufBalm.usable = global.selectedUnit.current[MP]>=5;
 				yusufBalm.description = "Heals you and your teammate.  5 MP.";
 				yusufBalm.script = balm;

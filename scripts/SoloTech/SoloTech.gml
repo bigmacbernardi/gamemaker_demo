@@ -31,16 +31,16 @@ function burn(){
 					incomingDamage = round(unit.current[@ WIS] * unit.current[@ STR]/4);
 					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
-					state = HIT;
 					layer_sequence_headpos(unitSequence,hitStart);
+					state = HIT;
 			}
 		}
 		else{
 			with(global.targets[i]){
 				show_debug_message("OFFICIALLY MISSING");
-				state = MISS;
 				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
 				layer_sequence_headpos(unitSequence,missStart);
+				state = MISS;
 			}
 		}
 	 }
@@ -71,16 +71,16 @@ function freeze(){
 				incomingDamage = round((unit.current[@ WIS]*1.25) + (unit.current[@ STR] / 4)* ((unit.current[@ AGI] / 2)+(unit.current[@ CHA] / 2)));
 				show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 				//alarm[0] = 10;
-				state = HIT;
 				layer_sequence_headpos(unitSequence,hitStart);
+				state = HIT;
 		}
 	}
 	else{
 		with(global.targets[0]){
 			show_debug_message("OFFICIALLY MISSING");
-			state = MISS;
 			if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
 			layer_sequence_headpos(unitSequence,missStart);
+			state = MISS;
 		}
 	}
 	battle_manager.alarm[1] = 10;
@@ -95,15 +95,17 @@ function embolden(){
 	setParticle(8);//Fighting energy
 	unit.current[MP] -= 2;
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
-	for(var i = 0; i < ds_list_size(global.allies); i++){//probably gonna be called BY skill_selector, so take out the selection logic
-		if (global.allies[|i].state != DEATH){
+	//for(var i = 0; i < ds_list_size(global.allies); i++){//probably gonna be called BY skill_selector, so take out the selection logic
+	//	if (global.allies[|i].state != DEATH){ //should technically apply but who cares lol
 	        
-			global.targets = [global.enemies[|i]];
-			var inst = instance_create_layer(global.enemies[|i].x, global.enemies[|i].y,"UI_Targeting", atk_selector);
-			inst.index = i;
-			break;
-			}
-	 	}		 
+		//	}
+	 //	}
+	 
+	 with(global.targets[0]){
+			current[STR]+=1.5;//HELL yes
+			layer_sequence_headpos(unitSequence,hitStart);
+			state = HEAL;
+		}
 	battle_manager.alarm[1] = 10;
 }
 
@@ -112,15 +114,17 @@ function balm(){
 	setParticle(0);
 	unit.current[MP] -= 5;
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
-	for(var i = 0; i < ds_list_size(global.allies); i++){
-		if (global.allies[|i].state != DEATH){
-	        
-			global.targets[i] = global.allies[|i];
-			var inst = instance_create_layer(global.allies[|i].x, global.allies[|i].y,"UI_Targeting", atk_selector);
-			inst.index = i;//do something different lol
-			
+	
+	for(var i = 0; i < array_length_1d(global.targets); i++){
+		part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 2);
+		if (global.targets[i].state != DEATH){
+	        with global.targets[i]{
+				incomingDamage = round(base[HP]/6);
+				layer_sequence_headpos(unitSequence,hitStart);
+				state = HEAL;
 			}
-	 	}	
+		}
+	}	
 	battle_manager.alarm[1] = 10;	 
 }
 
@@ -129,14 +133,13 @@ function intensiveCare(){
 	setParticle(0);
 	unit.current[MP] -= 10;
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
-	for(var i = 0; i < ds_list_size(global.allies); i++){
-		if (global.allies[|i].state == DEATH){
-			part_particles_create(global.P_System, global.allies[|i].x, global.allies[|i].y, global.Particle1, 20);
+	//for(var i = 0; i < ds_list_size(global.allies); i++){
+		if (global.targets[0].state == DEATH){
+			part_particles_create(global.P_System, global.targets[0].x, global.targets[0].y, global.Particle1, 20);
 			
-			global.allies[|i].current[HP] = round(global.allies[|i].base[HP]/2);
-			global.allies[|i].state = IDLE;
-			break;
+			global.targets[0].current[HP] = round(global.allies[|i].base[HP]/2);
+			global.targets[0].state = IDLE;
 			}
-	 	}		
+	// 	}		
 	battle_manager.alarm[1] = 10; 
 }

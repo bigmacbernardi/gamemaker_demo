@@ -68,7 +68,7 @@ else{
 		eye_x1 = x -  abs(sprite_width)/2 - 1;
 		eye_x2 = x + abs(sprite_width)/2 + 1;
 		
-		show_debug_message("X's reset");//Last X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
+		//show_debug_message("X's reset");//Last X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
 		
 	}
 	image_speed = 4;

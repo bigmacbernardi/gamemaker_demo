@@ -44,8 +44,8 @@ function unitAttack(){
 					incomingDamage = unit.current[@ STR]; //+= to compound
 					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
-					state = HIT;
 					layer_sequence_headpos(unitSequence,hitStart);
+					state = HIT;
 			}
 		}
 	}
@@ -53,9 +53,9 @@ function unitAttack(){
 		for (var i = 0; i < array_length(global.targets); i++){
 			with(global.targets[i]){
 				show_debug_message("OFFICIALLY MISSING");
-				state = MISS;
 				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
 				layer_sequence_headpos(unitSequence,missStart);
+				state = MISS;
 			}
 		}
 	

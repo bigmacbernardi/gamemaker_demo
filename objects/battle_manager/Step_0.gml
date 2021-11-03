@@ -127,7 +127,7 @@ switch(combatPhase){
 			else nextPriority = ds_priority_find_priority(pq,ds_priority_find_min(pq))+1;//come in at SOONEST opportunity
 			show_debug_message("Requeuing "+global.selectedUnit.title+" with priority "+string(nextPriority));
 			ds_priority_add(pq,global.selectedUnit,nextPriority);
-		}else show_debug_message("Waiting on "+global.selectedUnit.title); //have selectedFinished signaled by the other thing by an alarm
+		}//else show_debug_message("Waiting on "+global.selectedUnit.title); //have selectedFinished signaled by the other thing by an alarm
 	break;
 	
 	case phase.process:

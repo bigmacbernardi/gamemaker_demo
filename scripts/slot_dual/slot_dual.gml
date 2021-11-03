@@ -12,6 +12,7 @@ function slot_dual(){
 		case ((AOI*32)-(YUSUF)):
 			//if (icyHeatLearned){
 				var icyHeat = instance_create_layer(0,0,"UI_Base",obj_skill);
+				icyHeat.selector = rigid_selector;
 				icyHeat.title = "Icy Heat";
 				icyHeat.description = "Light ice damage on all enemies.  Warm healing to all allies.";
 				icyHeat.mode = 2;
