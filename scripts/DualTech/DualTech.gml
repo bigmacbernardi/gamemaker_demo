@@ -49,7 +49,6 @@ function IcyHeat(){
 		}
 	 }
 	global.targets = friends;
-	var unit = global.selectedUnit;
 	setParticle(2);//fire
 	battle_yusuf.current[MP] -= 4;
 	part_particles_create(global.P_System, battle_yusuf.x, battle_yusuf.y, global.Particle1, 10);
@@ -63,6 +62,11 @@ function IcyHeat(){
 				state = HEAL;
 			}
 		}
+	}
+	instance_destroy(rigid_selector);
+	battle_manager.alarm[1]=1;
+	with global.selectedUnit.teammate{
+	isHolding = true;//.something
 	}
 	battle_manager.alarm[1]=10;
 }
