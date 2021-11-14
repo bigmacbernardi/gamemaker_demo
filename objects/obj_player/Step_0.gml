@@ -34,12 +34,12 @@ else{
 	if (y_spd<0){ //moving up
 		eye_y1 = y - 16;
 		eye_y2 = y;
-		if (sprite_index == spr_person1) sprite_index = spr_person1_back; //turning up
+		if (sprite_index != back_sprite) sprite_index = back_sprite; //turning up
 	}
 	else if (y_spd>0){ //moving down
 		eye_y1 = y + sprite_height;
 		eye_y2 = y + sprite_height + 16;
-		if (sprite_index == spr_person1_back) sprite_index = spr_person1; //turning down
+		if (sprite_index != front_sprite) sprite_index = front_sprite; //turning down
 		//show_debug_message("Y's changed to: "+string(y)+": "+string(eye_y1)+","+string(eye_y2));
 	}
 	else{ //just left or right
@@ -52,13 +52,13 @@ else{
 	{
 		eye_x1 = x - 16 -  abs(sprite_width/2) ;//left boundary
 		eye_x2 = x -  abs(sprite_width/2); //right boundary
-		if (image_xscale != -1) image_xscale = -1;//turning left
+		if (sprite_index != left_sprite) sprite_index = left_sprite;//turning left
 		//x-= sprite_width;
 		//show_debug_message("Lefty X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
 	}
 	else if (x_spd>0) //moving right
 	{
-		if (image_xscale == -1) image_xscale = 1;//turning right
+		if (sprite_index != right_sprite) sprite_index = right_sprite;
 		eye_x1 = x + sprite_width/2;
 		eye_x2 = x + sprite_width/2 + 16;
 		//show_debug_message("Righty X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
