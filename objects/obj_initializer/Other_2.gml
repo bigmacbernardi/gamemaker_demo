@@ -85,7 +85,7 @@ ds_list_add(global.inventory,oh);
 global.msc= 0;
 global.dialogueLine=0;
 //global.facechoice=0;
-global.flag=[0,0,0,0,0,0,0,0,0,0,
-			0,0,0,0,0,0,0,0,0,0,
-			0,0,0,0,0,0,0,0,0,0];
+global.flag=[0,0,0,0,0,0,0,0,0,0,//Elder has gotten your attention
+			0,0,0,0,0,0,0,0,0,0,//
+			0,0,0,0,0,0,0,0,0,0];//some writer thing, , , , some dialogue thing
 //global.showBattleDetails = true; //can use this for toggles
