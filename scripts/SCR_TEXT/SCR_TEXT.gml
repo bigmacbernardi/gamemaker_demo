@@ -19,7 +19,7 @@ switch(argument0){
         global.msg[3]= "%%%";
         break;
 	case 3: 
-        global.msg[0]= "Haha I just kidding, I fix it./";
+        global.msg[0]= "Haha I just kidding,&I fix it./";
         global.msg[1]= "%%%";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";

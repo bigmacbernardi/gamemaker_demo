@@ -172,6 +172,7 @@
     {"id":{"name":"spr_dialog_temp","path":"sprites/spr_dialog_temp/spr_dialog_temp.yy",},"order":18,},
     {"id":{"name":"ui_mp","path":"sprites/ui_mp/ui_mp.yy",},"order":23,},
     {"id":{"name":"scr_facechoice","path":"scripts/scr_facechoice/scr_facechoice.yy",},"order":18,},
+    {"id":{"name":"obj_face_elder","path":"objects/obj_face_elder/obj_face_elder.yy",},"order":19,},
     {"id":{"name":"metal_small3","path":"sounds/metal_small3/metal_small3.yy",},"order":5,},
     {"id":{"name":"battle_spawner","path":"objects/battle_spawner/battle_spawner.yy",},"order":4,},
     {"id":{"name":"get_hover","path":"scripts/get_hover/get_hover.yy",},"order":1,},

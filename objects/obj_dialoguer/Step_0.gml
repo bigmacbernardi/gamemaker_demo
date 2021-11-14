@@ -24,7 +24,7 @@ if(global.facechange == 1 && global.facechoice == 0) {
 if(global.facechange == 1 && instance_exists(writer)) {
     writer.x= xx + 68;
     writer.writingx= writer.x + 20;
-    if(global.facechoice == 1 && !instance_exists(765/* obj_face_torieltalk */) && !instance_exists(767/* obj_face_torielblink */))
+    if(global.facechoice == 1 && !instance_exists(obj_face_elder))//elder
         script_execute(scr_facechoice);
     if(global.facechoice == 2 && !instance_exists(768/* obj_face_floweytalk */))
         script_execute(scr_facechoice);
