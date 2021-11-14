@@ -24,10 +24,10 @@ function slot_dual(){
 			//if (freezeLearned){
 				var mugumugu = instance_create_layer(0,0,"UI_Base",obj_dual);
 				mugumugu.title = "Mugu mugu";
-				mugumugu.description = "Ice damage on one enemy.";
-				mugumugu.mode = 0;
+				mugumugu.description = "Some kinda status thing?  Idk";
+				mugumugu.mode = 2;//all enemies
 				mugumugu.usable = global.selectedUnit.current[MP]>=4;
-				mugumugu.script = freeze;
+				mugumugu.script = MuguMugu;
 				a[index++] = mugumugu;
 			//}
 			break;

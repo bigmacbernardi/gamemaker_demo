@@ -25,8 +25,10 @@ switch(argument0){
         global.msg[3]= "%%%";
         break;
 	default: 
-        global.msg[0]= "* Press ENTER./";
-        global.msg[1]= "This is a second line. &Don't leave./%";
+        var playerNames = ["Aoi","Yusuf"];
+        if (variable_global_exists("currentParty")) global.msg[0]= "* Hey "+playerNames[global.currentParty[0]]+"./";
+        else  global.msg[0]= "* Hey kid./";
+		global.msg[1]= "I'm over here. &But don't come talk to me,&or the game will break./%";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;
