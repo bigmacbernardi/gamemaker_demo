@@ -95,17 +95,11 @@ function embolden(){
 	setParticle(8);//Fighting energy
 	unit.current[MP] -= 2;
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
-	//for(var i = 0; i < ds_list_size(global.allies); i++){//probably gonna be called BY skill_selector, so take out the selection logic
-	//	if (global.allies[|i].state != DEATH){ //should technically apply but who cares lol
-	        
-		//	}
-	 //	}
-	 
-	 with(global.targets[0]){
-			current[STR]+=1.5;//HELL yes
-			layer_sequence_headpos(unitSequence,hitStart);
-			state = HEAL;
-		}
+	with(global.targets[0]){
+		current[STR]+=1.5;//HELL yes
+		layer_sequence_headpos(unitSequence,hitStart);
+		state = HEAL;
+	}
 	battle_manager.alarm[1] = 10;
 }
 
@@ -119,7 +113,7 @@ function balm(){
 		part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 2);
 		if (global.targets[i].state != DEATH){
 	        with global.targets[i]{
-				incomingDamage = round(base[HP]/6);
+				incomingDamage = round(base[HP]/6);//scale to water stat
 				layer_sequence_headpos(unitSequence,hitStart);
 				state = HEAL;
 			}
@@ -133,13 +127,11 @@ function intensiveCare(){
 	setParticle(0);
 	unit.current[MP] -= 10;
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
-	//for(var i = 0; i < ds_list_size(global.allies); i++){
-		if (global.targets[0].state == DEATH){
-			part_particles_create(global.P_System, global.targets[0].x, global.targets[0].y, global.Particle1, 20);
+	if (global.targets[0].state == DEATH){
+		part_particles_create(global.P_System, global.targets[0].x, global.targets[0].y, global.Particle1, 20);
 			
-			global.targets[0].current[HP] = round(global.allies[|i].base[HP]/2);
-			global.targets[0].state = IDLE;
-			}
-	// 	}		
+		global.targets[0].current[HP] = round(global.targets[0].base[HP]/2);
+		global.targets[0].state = IDLE;
+		}
 	battle_manager.alarm[1] = 10; 
 }

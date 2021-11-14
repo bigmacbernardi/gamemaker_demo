@@ -39,6 +39,7 @@ else {
 	var _right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 	var _moveH = _right - _left;
 	var _moveV = _down - _up;
+	var startingIndex =index; //just used to track if sound should play rn
 	if (_moveV != 0){ //will wrap eventually
 		index += _moveV;
 		if (index < 0) index = ds_list_size(options)-1;
@@ -51,7 +52,7 @@ else {
 		index -= 3;	
 		if (index < 0) index = ds_list_size(options)-1;
 	}
-	
+	if (index !=startingIndex) audio_play_sound(Notice2,100,false);
 }
 	
 

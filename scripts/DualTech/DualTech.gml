@@ -7,14 +7,63 @@ function DualTech(){
 /* AOI + YUSUF TECH */
 
 function IcyHeat(){
-	for(var i = 0; i < ds_list_size(global.enemies); i++){
-		if (global.enemies[|i].state != DEATH){
-	        
-			global.targets = [global.enemies[|i]];
-			}
-	 	}		 
+	var enemies = rigid_selector.targetSet1;		 
+	var friends = rigid_selector.targetSet2;
+	global.targets = enemies;
+	var unitX = global.selectedUnit.x + global.selectedUnit.teammate.x / 2;
+	var unitY = global.selectedUnit.y + global.selectedUnit.teammate.y / 2;	
+	battle_aoi.current[MP] -= 4;
+	setParticle(7);//fire;
+	for(var i = 0; i < array_length(global.targets); i++){
+		show_debug_message(global.selectedUnit.title+" attacking "+global.targets[i].title+"#"+string(global.targets[i]));
+		var xStep = (global.targets[i].x - unitX )/10;
+		var yStep = (global.targets[i].y - unitY )/10;
+		var partX = unitX;
+		var partY = unitY;
+		//part_type_direction(global.Particle1,)
 		
-	var inst = instance_create_layer(global.enemies[|0].x, global.enemies[|0].y,"UI_Targeting", atk_selector);
-	inst.index = 0;
+		repeat(10)
+		{
+			partX+=xStep;
+			partY+=yStep;
+			part_particles_create(global.P_System, partX, partY, global.Particle1, 1);
+		}
+		//part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 10);
+		checkForHit();
+		if (global.selectedUnit.attackWillHit){
+			with(global.targets[i]){ // Freeze Attack / 4
+					incomingDamage = round((battle_aoi.current[@ WIS]*1.25) + (battle_aoi.current[@ STR] / 4)* ((battle_aoi.current[@ AGI] / 2)+(battle_aoi.current[@ CHA] / 2)))/4;
+					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
+					//alarm[0] = 10;
+					layer_sequence_headpos(unitSequence,hitStart);
+					state = HIT;
+			}
+		}
+		else{
+			with(global.targets[i]){
+				show_debug_message("ICY_HEAT OFFICIALLY MISSING");
+				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
+				layer_sequence_headpos(unitSequence,missStart);
+				state = MISS;
+			}
+		}
+	 }
+	global.targets = friends;
+	var unit = global.selectedUnit;
+	setParticle(2);//fire
+	battle_yusuf.current[MP] -= 4;
+	part_particles_create(global.P_System, battle_yusuf.x, battle_yusuf.y, global.Particle1, 10);
+	
+	for(var i = 0; i < array_length_1d(global.targets); i++){
+		part_particles_create(global.P_System, global.targets[i].x, global.targets[i].y, global.Particle1, 3);
+		if (global.targets[i].state != DEATH){
+	        with global.targets[i]{
+				incomingDamage = round(base[HP]/7);//scale to water stat
+				layer_sequence_headpos(unitSequence,hitStart);
+				state = HEAL;
+			}
+		}
+	}
+	battle_manager.alarm[1]=10;
 }
 

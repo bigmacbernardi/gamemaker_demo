@@ -13,8 +13,8 @@
   "soundFile": "voice_narrate.wav",
   "duration": 0.021769,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "voice_narrate",

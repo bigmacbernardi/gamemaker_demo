@@ -48,6 +48,7 @@ hpBarHeight = sprite_get_height(ui_hp);
 
 function damageUnit(amount){
 	var damage = amount - current[@ DEF];
+	audio_play_sound(damageSound,100,false);
 	current[@ HP] -= max(0,damage);
 }
 function healUnit(amount){

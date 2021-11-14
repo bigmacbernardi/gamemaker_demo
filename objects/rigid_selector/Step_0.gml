@@ -1,42 +1,17 @@
 /// @description Used for compound events
 // You can write your code in this editor
-if (mode != lastMode){ //dummy solution
-	lastMode = mode;
-	
-lastMode = mode;
-if (mode==0){ //not learning nested behavior so doing this instead
-	for(var i = 0; i < ds_list_size(global.enemies); i++){
-		if (global.enemies[|i].state != DEATH){
-	        
-			global.targets = [global.enemies[|i]];
-			break;
-		}
-	}
-} else if (mode==1){ //not learning nested behavior so doing this instead
-	global.targets = [global.allies[|0]];	
-} else if (mode==2){
-	for(var i = 0; i < ds_list_size(global.enemies); i++){
-		if (global.enemies[|i].state != DEATH){
-	        
-			global.targets[i] = global.enemies[|i];
-		}
-	}
-} else if (mode==2){
-	for(var i = 0; i < ds_list_size(global.allies); i++){
-		global.targets[i] = global.allies[|i];
-	}
-}
-}
-if (mode==0) {//single-enemy
+//if (mode==0) {//enemies
 	if (!frameHasPassed) frameHasPassed = true;
 	else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 		{
+			if (mode!=2) global.targets=targetSet1; //for mode 2, will be referenced by tech
 			with (global.selectedUnit){
-					//state = ATTACK; 
+					//state = ATTACK;
+					
 					layer_sequence_headpos(unitSequence,atkStart);
 					script_execute(rigid_selector.script);
 				}
-	        instance_destroy();
+	        if (mode!=2)instance_destroy();//for mode 2 rigid spells, rigid_selector is DESTROYED BY THE TECHNIQUE
 		}
 	else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
 		{
@@ -48,7 +23,7 @@ if (mode==0) {//single-enemy
 			button_item.visible = 1;
 	        instance_destroy();
 		}	
-}	
+/*}
 if (mode==1) {//single-ally default
 	if (!frameHasPassed) frameHasPassed = true;
 	else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
@@ -94,7 +69,7 @@ else if (mode==2) {//all enemies
 			button_item.visible = 1;
 	        instance_destroy();
 		}	
-}	
+}	*/
 
 
 

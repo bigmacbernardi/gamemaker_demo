@@ -12,16 +12,18 @@ switch(combatPhase){
 				ds_priority_add(pq,unit,getWait(unit));
 				ds_list_add(global.allies,unit);
 				unit.isPlayer = true;
-			}
-			if ds_list_size(global.allies)>1{
+			}	
+		}
+		if ds_list_size(global.allies)>1{
 				global.allies[|0].teammate = global.allies[|1];
+				show_debug_message(string(global.allies[|0])+"(#"+string(global.allies[|0].index)+")"+"'s teammate is now "+string(global.allies[|0].teammate)+"(#"+string(global.allies[|0].teammate.index)+")");
 				global.allies[|1].teammate = global.allies[|0];
+				show_debug_message(string(global.allies[|1])+"(#"+string(global.allies[|1].index)+")"+"'s teammate is now "+string(global.allies[|1].teammate)+"(#"+string(global.allies[|1].teammate.index)+")");
 				if ds_list_size(global.allies)>3{
 					global.allies[|2].teammate = global.allies[|3];
 					global.allies[|3].teammate = global.allies[|2];
 				}
 			}
-		}
 		for (var i = 0; i < instance_number(battle_spawner); i++){
 			var spawner = instance_find(battle_spawner, i);
 			if (!spawner.isPlayer){ //regular

@@ -32,6 +32,7 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"title","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"Spukergeist","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"damageSound","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"longdamage","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "battle resources",

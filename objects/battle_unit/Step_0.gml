@@ -72,14 +72,14 @@ switch(state){
 			}
 			else show_debug_message("hit end already happened!  probably a sequencing issue");
 	break;
-	case HEAL:
+	case HEAL://also to be used for buffs (and debuffs?)
 		show_debug_message(title + string(id) + " got 'specially healt!!!");
-//		if (layer_sequence_get_headpos(unitSequence) > hitEnd){
+		if (layer_sequence_get_headpos(unitSequence) > hitEnd){//delay is apparently needed for sequencing with battle_manager
 		healUnit(incomingDamage);
 		layer_sequence_headpos(unitSequence, idleStart);
 		incomingDamage = 0;
 		state = IDLE;
-//			} else show_debug_message("hit end already happened!  probably a sequencing issue");
+			}
 	break;
 	
 	case TODEFEND:

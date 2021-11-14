@@ -3,7 +3,6 @@
 show_debug_message("Rigid selector showing");
 frameHasPassed = false;
 mode = global.selectMode;
-lastMode = mode;
 targetSet1 = [];
 targetSet2 = [];
 if (mode==0){ //enemies only
