@@ -1,5 +1,5 @@
 {
-  "compression": 0,
+  "compression": 1,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "longdamage.wav",
-  "duration": 5.137415,
+  "duration": 1.678345,
   "parent": {
     "name": "gamemaker_demo",
     "path": "gamemaker_demo.yyp",
