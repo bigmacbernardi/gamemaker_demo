@@ -30,7 +30,7 @@ for (var i = 0; i < 4; i++){
 }
 //drawing submenu
 draw_sprite(spr_menu_temp,0,x,subY);
-drawX = x+10;
+drawX = x+30;
 drawY = subY+14;
 //draw_set_color(c_white);
 for (var i = scrollLevel; i < min(8+scrollLevel,ds_list_size(options)); i++){
@@ -38,7 +38,7 @@ for (var i = scrollLevel; i < min(8+scrollLevel,ds_list_size(options)); i++){
   else draw_sprite(front_sprites[options[|i]],0,drawX,drawY);
   //draw_text_transformed(drawX+104,drawY,options[|i].numOwned,.75,.75,1);
   if ((i%4)==3){
-	drawX = x+10;
+	drawX = x+30;
 	drawY += 30;
   }else drawX += 30
 }

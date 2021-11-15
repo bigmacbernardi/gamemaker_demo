@@ -3,6 +3,15 @@
 function set_sprites(){
 	if (!instance_exists(obj_player))return;
 	with obj_player{
+		var direct = 0;
+		if (sprite_index == spr_aoi) direct = 0;//first time set
+		else{ //declared elsewhere
+		if (sprite_index == front_sprite) direct = 0;
+		else if (sprite_index == left_sprite) direct = 1;
+		else if (sprite_index == right_sprite) direct = 2;
+		else if (sprite_index == back_sprite) direct = 3;
+		}
+		
 		if (variable_global_exists("currentParty")){
 			switch (global.currentParty[0]){
 				case AOI: front_sprite = spr_aoi;
@@ -30,5 +39,7 @@ function set_sprites(){
 					right_sprite = spr_aoi_right;
 					back_sprite = spr_aoi_back;
 			}
+			var sprites = [front_sprite,left_sprite,right_sprite,back_sprite];
+			sprite_index = sprites[direct];
 	}
 }
