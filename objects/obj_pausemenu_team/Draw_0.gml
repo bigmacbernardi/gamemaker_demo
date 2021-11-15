@@ -13,7 +13,6 @@ for (var i = 0; i < 4; i++){
 	  draw_text_transformed(drawX,drawY, (i == 0)?"Team 1":"Team 2",.5,.5,1);
 	  drawY += 12;
   }
-	show_debug_message("I: "+string(i)+"; drawY:"+string(drawY));
   if (i!=index){
 	  draw_set_color(c_black);
 	  alpha = .5;  
