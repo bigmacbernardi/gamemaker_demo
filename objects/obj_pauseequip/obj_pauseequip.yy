@@ -23,6 +23,7 @@
   "properties": [
     {"varType":2,"value":"Equip","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"title","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":2,"value":"Set weapons, armor, and trinkets.","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"description","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"obj_pausemenu_equip","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"submenu","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

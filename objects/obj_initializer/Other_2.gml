@@ -32,13 +32,31 @@
 #macro OGHUZ 30*/
 
 
-global.names=["Aoi","Yusuf","Jamir","Bardo","Prison Jane","Luchador","Nikolai","Atta","Pat","Wormwood"];
+global.names=["Aoi","Yusuf","Jamir","Bardo","Prison Jane","Luchador","Server","Nikolai","Atta","Pat","Wormwood"];
 //global.varisMistake="Birdo";
 global.inventory = ds_list_create();
-//global.currentParty = ds_list_create();//party equivalent of "foesToSpawn" that can also be used for menus
-//ds_list_add(global.currentParty,YUSUF);
-//ds_list_add(global.currentParty,AOI);
+global.equipment = ds_list_create();
+var staff =  instance_create_depth(0,0,10,obj_weapon);//for now we'll just leave these as persistent things.  will compress eventually
+var spear = instance_create_depth(0,0,10,obj_weapon);
+spear.title = "Kida-yari";
+spear.description = "A spear-like staff used mainly for ceremonial magic.  But those spikes aren't just ornamental.";
+spear.ATK = 3;
+spear.type = 2;//polearm!
+staff.title = "Pathfinder Staff";
+spear.description = "A big, blunt shillelagh originally designed by shepherds.  Searchers uses these to feel through the shadows of the future.";
+staff.ATK = 2;
+staff.type = 1;//staff!
+ds_list_add(global.equipment,staff);
+ds_list_add(global.equipment,spear);
+equip(AOI,0);
+equip(YUSUF,1);
 global.currentParty = [AOI,YUSUF,noone,noone];
+global.equipped[AOI] = [noone,noone,noone,noone];
+global.equipped[YUSUF] = [noone,noone,noone,noone];
+/*  A big chunk for setting up default equipment and equipping it
+
+
+*/
 global.availableParty = ds_list_create();
 ds_list_add(global.availableParty,AOI);
 ds_list_add(global.availableParty,YUSUF);

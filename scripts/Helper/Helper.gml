@@ -62,6 +62,18 @@ function unitAttack(){
 	}
 
 }
+
+function equip(char,equI){//character, equipment index
+	//show_debug_message(global.equipment[|equI]);
+	show_debug_message(round(equI));
+	//var silly = round(equI);
+	var entry = ds_list_find_value(global.equipment,equI);
+	//if (is_array(equI))entry = global.equipment[|equI[0]];
+	//else entry = global.equipment[|equI];
+	global.equipped[char][entry.category] = entry;//equipping item to character data
+	entry.currentUser=char;//equipping character to equipment (used to track "taken" weapons)
+}	
+
 function setParticle(int){
 	var debug_names = ["Healing","Wind","Fire","Water","Shadow","Light","Electric","Ice","Spirit"];
 	show_debug_message("Casting "+debug_names[int]+" magic");

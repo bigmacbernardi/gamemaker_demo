@@ -5,7 +5,7 @@ if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{ 
 		if variable_instance_exists(options[|index],"submenu"){
-			instance_create_depth(0,0,-100, options[|index].submenu);
+			instance_create_depth(x,y,-100, options[|index].submenu);
 			selected=false;	
 		}
 		

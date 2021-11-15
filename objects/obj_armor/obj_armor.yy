@@ -1,9 +1,9 @@
 {
   "spriteId": null,
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": {
     "name": "equippable",
     "path": "objects/equippable/equippable.yy",
