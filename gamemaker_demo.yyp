@@ -38,6 +38,7 @@
     {"id":{"name":"Owl1","path":"sounds/Owl1/Owl1.yy",},"order":23,},
     {"id":{"name":"obj_dialogu","path":"objects/obj_dialogu/obj_dialogu.yy",},"order":16,},
     {"id":{"name":"spr_elder_face2","path":"sprites/spr_elder_face2/spr_elder_face2.yy",},"order":3,},
+    {"id":{"name":"overworld_manostemp","path":"sounds/overworld_manostemp/overworld_manostemp.yy",},"order":1,},
     {"id":{"name":"obj_uhoh","path":"objects/obj_uhoh/obj_uhoh.yy",},"order":6,},
     {"id":{"name":"checkable","path":"objects/checkable/checkable.yy",},"order":10,},
     {"id":{"name":"spr_knight_idling","path":"sprites/spr_knight_idling/spr_knight_idling.yy",},"order":17,},
@@ -168,6 +169,7 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":3,},
     {"id":{"name":"spr_justalittleguy","path":"sprites/spr_justalittleguy/spr_justalittleguy.yy",},"order":0,},
     {"id":{"name":"obj_pauseteam","path":"objects/obj_pauseteam/obj_pauseteam.yy",},"order":9,},
+    {"id":{"name":"battle_torgotemp","path":"sounds/battle_torgotemp/battle_torgotemp.yy",},"order":0,},
     {"id":{"name":"spr_aoi_left","path":"sprites/spr_aoi_left/spr_aoi_left.yy",},"order":2,},
     {"id":{"name":"spr_player11","path":"sprites/spr_player11/spr_player11.yy",},"order":4,},
     {"id":{"name":"spr_old_man44","path":"sprites/spr_old_man44/spr_old_man44.yy",},"order":2,},
@@ -290,6 +292,7 @@
     {"folderPath":"folders/Objects/minigame assets/shuckin.yy","order":3,"resourceVersion":"1.0","name":"shuckin","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/minigame assets/stonks.yy","order":4,"resourceVersion":"1.0","name":"stonks","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/minigame assets/galaxy-patrol.yy","order":5,"resourceVersion":"1.0","name":"galaxy-patrol","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sounds/music.yy","order":25,"resourceVersion":"1.0","name":"music","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

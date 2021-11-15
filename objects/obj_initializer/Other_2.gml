@@ -53,10 +53,8 @@ equip(YUSUF,1);
 global.currentParty = [AOI,YUSUF,noone,noone];
 global.equipped[AOI] = [noone,noone,noone,noone];
 global.equipped[YUSUF] = [noone,noone,noone,noone];
-/*  A big chunk for setting up default equipment and equipping it
 
 
-*/
 global.availableParty = ds_list_create();
 ds_list_add(global.availableParty,AOI);
 ds_list_add(global.availableParty,YUSUF);
@@ -111,3 +109,5 @@ global.flag=[0,0,0,0,0,0,0,0,0,0,//Elder has gotten your attention
 			0,0,0,0,0,0,0,0,0,0,//
 			0,0,0,0,0,0,0,0,0,0];//some writer thing, , , , some dialogue thing
 //global.showBattleDetails = true; //can use this for toggles
+
+instance_create_depth(0,0,10,obj_persistentmusicplayer); //can probably put in room but i do not trust
