@@ -18,7 +18,7 @@ else if go
 		}
 		else /*if (mode==1) doesn't matter*/{
 			if (index > 1)&&((global.currentParty[0]==noone)||(global.currentParty[1]==noone)){
-				//do error
+				//this check should be pushed further down the logic
 				show_debug_message("Fill out your first team first!");//pop up as window
 				mode = 0;
 				index = 0;
@@ -37,9 +37,14 @@ else if go
 					global.currentParty[index] = global.availableParty[|index2]
 				}
 				else{
-					var temp = global.currentParty[index];
-					global.currentParty[index] = global.currentParty[currentPos];
-					global.currentParty[currentPos] = temp;
+					if (index > 1)&&((global.currentParty[index]==noone)){
+						show_debug_message("Fill out your first team first!");
+					}
+					else{
+						var temp = global.currentParty[index];
+						global.currentParty[index] = global.currentParty[currentPos];
+						global.currentParty[currentPos] = temp;
+					}
 				}
 				mode = 0;
 				index = 0;

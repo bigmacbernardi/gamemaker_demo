@@ -284,6 +284,11 @@
     {"folderPath":"folders/Objects/minigame assets.yy","order":29,"resourceVersion":"1.0","name":"minigame assets","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sounds.yy","order":9,"resourceVersion":"1.0","name":"Sounds","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/items/equipment.yy","order":7,"resourceVersion":"1.0","name":"equipment","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/minigame assets/skeeball.yy","order":1,"resourceVersion":"1.0","name":"skeeball","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/minigame assets/fishing.yy","order":2,"resourceVersion":"1.0","name":"fishing","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/minigame assets/shuckin.yy","order":3,"resourceVersion":"1.0","name":"shuckin","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/minigame assets/stonks.yy","order":4,"resourceVersion":"1.0","name":"stonks","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/minigame assets/galaxy-patrol.yy","order":5,"resourceVersion":"1.0","name":"galaxy-patrol","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -21,8 +21,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "minigame assets",
-    "path": "folders/Objects/minigame assets.yy",
+    "name": "skeeball",
+    "path": "folders/Objects/minigame assets/skeeball.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_skeeball",
