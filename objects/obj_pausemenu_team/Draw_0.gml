@@ -10,7 +10,7 @@ var alpha;
 for (var i = 0; i < 4; i++){
   draw_set_color(c_white);
   if (i == 0)||(i==2){
-	  draw_text_transformed(drawX,drawY, (i == 0)?"Team 1":"Team 2",.5,.5,1);
+	  draw_text_transformed(drawX,drawY, (i == 0)?"Team 1":"Team 2",.5,.5,0);
 	  drawY += 12;
   }
   if (i!=index){
@@ -19,11 +19,11 @@ for (var i = 0; i < 4; i++){
   }else{
 	  alpha = 1;
   }
-  if (global.currentParty[i]==noone) draw_text_transformed(drawX,drawY,"[empty]",.6,.6,1);
+  if (global.currentParty[i]==noone) draw_text_transformed(drawX,drawY,"[empty]",.6,.6,0);
   else{
 	//draw_sprite(front_sprites[global.currentParty[i]],0,drawX+40,drawY-3);
 	draw_sprite_ext(front_sprites[global.currentParty[i]],0,drawX+50,drawY-2,.5,.5,0,c_white,alpha);
-	draw_text_transformed(drawX,drawY,global.names[global.currentParty[i]],.6,.6,1);
+	draw_text_transformed(drawX,drawY,global.names[global.currentParty[i]],.6,.6,0);
   }
   //draw_set_color(c_white);
   drawY += 20;
