@@ -12,7 +12,4 @@ eye_y1 = y + sprite_height;
 eye_x2 = x + abs(sprite_width/2) + 1;//top right corner
 eye_y2 = y + sprite_height + 16;
 //everything below this line should be based on currentParty[0]
-front_sprite = spr_person1;
-left_sprite = spr_person1_left;
-right_sprite = spr_person1_right;
-back_sprite = spr_person1_back;
+set_sprites();

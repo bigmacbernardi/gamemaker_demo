@@ -32,12 +32,16 @@
 #macro OGHUZ 30*/
 
 
-
+global.names=["Aoi","Yusuf","Jamir","Bardo","Prison Jane","Luchador","Nikolai","Atta","Pat","Wormwood"];
+//global.varisMistake="Birdo";
 global.inventory = ds_list_create();
 //global.currentParty = ds_list_create();//party equivalent of "foesToSpawn" that can also be used for menus
 //ds_list_add(global.currentParty,YUSUF);
 //ds_list_add(global.currentParty,AOI);
 global.currentParty = [AOI,YUSUF,noone,noone];
+global.availableParty = ds_list_create();
+ds_list_add(global.availableParty,AOI);
+ds_list_add(global.availableParty,YUSUF);
 global.chests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,

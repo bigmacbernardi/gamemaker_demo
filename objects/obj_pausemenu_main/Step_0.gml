@@ -1,9 +1,15 @@
 /// @description General  menulogic
 var pause_butt = keyboard_check_released(vk_escape) || keyboard_check_released(vk_backspace);
-
+if (selected){
 if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{ 
+		if variable_instance_exists(options[|index],"submenu"){
+			instance_create_depth(0,0,-100, options[|index].submenu);
+			selected=false;	
+		}
+		
+		//options[|index].alarm[0]=1;
 		//submenu doesn't exist yet
 		/*var inst = instance_create_depth(0,0,-100, submenu);
 		inst.index = 0;
@@ -16,10 +22,6 @@ else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space
 	}
 else if((keyboard_check_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace))
 	{
-		//replace following with menu buttons?
-		/*button_attack.visible = 1;
-		button_skill.visible = 1;
-		button_item.visible = 1;*/
 		if (priorMenu != noone) priorMenu.selected = true;//logic for if we genericize
         else{
 			obj_player.framesToBuffer = 3;
@@ -54,8 +56,7 @@ else {
 	}
 	if (index !=startingIndex) audio_play_sound(Notice2,100,false);
 }
-	
-
+}
 
 
 

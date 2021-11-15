@@ -1,8 +1,8 @@
 // Taken from Toby
 switch(argument0){
 	case 0: 
-        global.msg[0]= "\\XLa, la.^3 &Welcome to METROPOLE&up and\\R smell\\X &the^4 pain./";
-        global.msg[1]= "* Though^2.^4.^6.^8.&It\'s still a&little shaky./";
+        global.msg[0]= "La la.^3 Welcome2METROPOLE&up and\\R smell\\X the^4 pain./";
+        global.msg[1]= "* Though^2.^4.^6.^8.&It\'s still a ^4little shaky./";
         global.msg[2]= "fhuehfuehfuehfuheufhe/%";
         global.msg[3]= "%%%";
         break;
