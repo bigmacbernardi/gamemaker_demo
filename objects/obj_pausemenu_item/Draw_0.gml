@@ -36,6 +36,6 @@ for (var i = scrollLevel; i < ds_list_size(options); i++){
   //}else	drawX += 80;
 }
 
-draw_sprite(spr_menu_temp,0,x,y+sprite_height-40);
+draw_sprite(spr_menu_temp,0,x,y+camera_get_view_height(cam)-40);
 draw_set_color(c_white);
-draw_text_transformed(x+10,y+sprite_height-30,options[|index].description,.6,.6,0);
+draw_text_transformed(x+10,y+camera_get_view_height(cam)-30,options[|index].description,.6,.6,0);

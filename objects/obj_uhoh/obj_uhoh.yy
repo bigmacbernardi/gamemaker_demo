@@ -24,7 +24,7 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"title","path":"objects/item_abstract/item_abstract.yy",},"objectId":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"value":"Uh oh","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"description","path":"objects/item_abstract/item_abstract.yy",},"objectId":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"value":"(Battle item)  Kills everybody.","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"description","path":"objects/item_abstract/item_abstract.yy",},"objectId":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"value":"[Battle item] Kills everybody.\\n Can't be used outside of battle.","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "items",
