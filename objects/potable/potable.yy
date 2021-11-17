@@ -20,7 +20,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"description","path":"objects/item_abstract/item_abstract.yy",},"objectId":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"value":"(Archetype) These more convenient consumables can be used in battle as well. Applied to one or more targets.","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},

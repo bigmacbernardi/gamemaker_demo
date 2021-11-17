@@ -17,3 +17,4 @@ for (var i = 0; i < ds_list_size(global.inventory); i++){
 	drawY += 24;
   }else	drawX += 100;
 }
+//mode = 0;

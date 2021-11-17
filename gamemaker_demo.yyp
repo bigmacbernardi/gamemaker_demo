@@ -175,6 +175,7 @@
     {"id":{"name":"spr_old_man44","path":"sprites/spr_old_man44/spr_old_man44.yy",},"order":2,},
     {"id":{"name":"spr_itmbutton_off","path":"sprites/spr_itmbutton_off/spr_itmbutton_off.yy",},"order":11,},
     {"id":{"name":"spr_yusuf_right","path":"sprites/spr_yusuf_right/spr_yusuf_right.yy",},"order":3,},
+    {"id":{"name":"silencelol","path":"sounds/silencelol/silencelol.yy",},"order":26,},
     {"id":{"name":"spr_sign","path":"sprites/spr_sign/spr_sign.yy",},"order":8,},
     {"id":{"name":"spr_playerback","path":"sprites/spr_playerback/spr_playerback.yy",},"order":5,},
     {"id":{"name":"Helper","path":"scripts/Helper/Helper.yy",},"order":2,},

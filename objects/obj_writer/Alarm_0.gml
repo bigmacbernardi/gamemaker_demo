@@ -1,4 +1,4 @@
-/// @description Idk what this code means, but it's the event type in Toby's
+/// @description Type a character!
 
 if(stringpos < string_length(originalstring)) {
     stringpos++;
@@ -8,7 +8,7 @@ if(stringpos < string_length(originalstring)) {
         n= real(string_char_at(originalstring, stringpos + 1));
         alarm[0]= n * 10;
     } else  {
-		//audio_play_sound(txtsound,5,0);//silly workaround from the matching below
+		audio_play_sound(txtsound,5,0);//silly workaround from the matching below
         if(txtsound == 56 || txtsound == 65 || txtsound == 71) {
             if(txtsound == 56) {
                 if(string_char_at(originalstring, stringpos) != "" && string_char_at(originalstring, stringpos) != "^" && string_char_at(originalstring, stringpos) != "/" && string_char_at(originalstring, stringpos) != "%") {

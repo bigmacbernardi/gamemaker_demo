@@ -5,7 +5,7 @@
 frameHasPassed = false;
 //initialize options?
 
-draw_set_font(Roses); //why would i call this every time?
+draw_set_font(Roses); 
 //was spawning all in position for now, just in case we switch to having slots draw themselves
 var drawX = 0;
 var drawY = y;
@@ -16,4 +16,8 @@ for (var i = 0; i < ds_list_size(global.inventory); i++){
 	drawX = 0;
 	drawY += 24;
   }else	drawX += 100;
+  
 }
+mode = 0;//item MUST be selected first.  this ain't equipment
+index2 = -1;
+index3 = 0;
