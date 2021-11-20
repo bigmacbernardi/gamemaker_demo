@@ -100,3 +100,4 @@ else if (framesToBuffer>0){
 	framesToBuffer--;	
 }
 }
+depth = -y;//primitive depth effects

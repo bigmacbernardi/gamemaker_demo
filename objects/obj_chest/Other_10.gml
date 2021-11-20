@@ -11,6 +11,7 @@ if (!opened){
 	//}
 	opened = true;
 	global.chests[chestNo] = true;
+	sprite_index = spr_chest_open;
 }
 	
 

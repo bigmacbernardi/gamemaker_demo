@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_sign",
-    "path": "sprites/spr_sign/spr_sign.yy",
+    "name": "spr_chest_closed",
+    "path": "sprites/spr_chest_closed/spr_chest_closed.yy",
   },
   "solid": true,
   "visible": true,

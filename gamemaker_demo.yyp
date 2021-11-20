@@ -120,6 +120,7 @@
     {"id":{"name":"Notice3","path":"sounds/Notice3/Notice3.yy",},"order":22,},
     {"id":{"name":"noBKG_AoiAttack_strip","path":"sprites/noBKG_AoiAttack_strip/noBKG_AoiAttack_strip.yy",},"order":0,},
     {"id":{"name":"YusufProto","path":"sprites/YusufProto/YusufProto.yy",},"order":1,},
+    {"id":{"name":"spr_chest_open","path":"sprites/spr_chest_open/spr_chest_open.yy",},"order":1,},
     {"id":{"name":"spr_knight_hit","path":"sprites/spr_knight_hit/spr_knight_hit.yy",},"order":16,},
     {"id":{"name":"noBKG_KnightAttack_strip","path":"sprites/noBKG_KnightAttack_strip/noBKG_KnightAttack_strip.yy",},"order":7,},
     {"id":{"name":"set_aspect","path":"scripts/set_aspect/set_aspect.yy",},"order":4,},
@@ -199,6 +200,7 @@
     {"id":{"name":"scr_facechoice","path":"scripts/scr_facechoice/scr_facechoice.yy",},"order":18,},
     {"id":{"name":"obj_face_elder","path":"objects/obj_face_elder/obj_face_elder.yy",},"order":19,},
     {"id":{"name":"metal_small3","path":"sounds/metal_small3/metal_small3.yy",},"order":5,},
+    {"id":{"name":"spr_chest_closed","path":"sprites/spr_chest_closed/spr_chest_closed.yy",},"order":0,},
     {"id":{"name":"noBKG_AoiShield_strip","path":"sprites/noBKG_AoiShield_strip/noBKG_AoiShield_strip.yy",},"order":5,},
     {"id":{"name":"battle_spawner","path":"objects/battle_spawner/battle_spawner.yy",},"order":4,},
     {"id":{"name":"get_hover","path":"scripts/get_hover/get_hover.yy",},"order":1,},
@@ -310,6 +312,7 @@
     {"folderPath":"folders/Objects/minigame assets/galaxy-patrol.yy","order":5,"resourceVersion":"1.0","name":"galaxy-patrol","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sounds/music.yy","order":25,"resourceVersion":"1.0","name":"music","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Aoi/battle.yy","order":4,"resourceVersion":"1.0","name":"battle","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/stuff.yy","order":42,"resourceVersion":"1.0","name":"stuff","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

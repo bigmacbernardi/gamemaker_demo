@@ -1,4 +1,4 @@
-/// @description Every step. 
+/// @description Who knows what this used to do
 //Still sets unnecessary alarm too, i'll comment that out
 if(myinteract == 1) {
     global.interact= 1;
