@@ -47,6 +47,8 @@ activate_ease=TwerpType.out_back;
 deactivate_ease=TwerpType.in_back;
 active_pos=[0,0];
 inactive_offset=[0,0];
+
+frameHasPassed = false;
 #endregion
 
 //Update Position

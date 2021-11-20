@@ -66,7 +66,8 @@ if
 
 //Detect Clicks
 if (state != VisualState.active) exit;
-
+if (isSelected)	frameHasPassed = true;	//to prevent chaining
+else frameHasPassed = false;	
 if((script != noone)&&(isSelected)&&(battle_manager.allowInput))// && position_meeting(mouse_gui_x,mouse_gui_y,id))
 {	//Selected with an existing script
 	image_index=1;

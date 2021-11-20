@@ -6,5 +6,5 @@ function dual(){
 	inst.priorMenu = button_dual_wait;
 }
 function wait(){
-	
+	battle_manager.alarm[1]=10;
 }

@@ -96,9 +96,11 @@ global.points[AOI][MP] = global.party[AOI][MP]; //full MP
 global.points[YUSUF][HP] = global.party[YUSUF][HP]; //full health
 global.points[YUSUF][MP] = global.party[YUSUF][MP]; //full MP
 var pot = [obj_potion,10]; //in menu, will call: instance_create_depth(0,0,10,obj_potion);
+var eth = [obj_ether,4]; //in menu, will call: instance_create_depth(0,0,10,obj_potion);
 var tot = [obj_tent,2];
 var oh = [obj_uhoh,1];
 ds_list_add(global.inventory,pot);
+ds_list_add(global.inventory,eth);
 ds_list_add(global.inventory,tot);
 ds_list_add(global.inventory,oh);
 
