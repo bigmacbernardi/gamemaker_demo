@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+//pseudoY = y + sprite_height/2;
 right_key = keyboard_check(0x44);
 left_key = keyboard_check(0x41);
 up_key = keyboard_check(0x57);
@@ -20,7 +21,7 @@ if (!paused){
 //collisions
 if place_meeting(x + x_spd, y, obj_wall) == true
 	{
-		x_spd = 0; //this activates the moving animations
+		x_spd = 0; //this activates the moving animations? what
 		
 	}
 if place_meeting(x, y + y_spd, obj_wall) == true
