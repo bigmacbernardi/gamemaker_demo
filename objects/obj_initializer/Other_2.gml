@@ -36,6 +36,10 @@ global.names=["Aoi","Yusuf","Jamir","Bardo","Prison Jane","Luchador","Server","N
 //global.varisMistake="Birdo";
 global.inventory = ds_list_create();
 global.equipment = ds_list_create();
+global.currentParty = [AOI,YUSUF,noone,noone];
+global.equipped[AOI] = [noone,noone,noone,noone];
+global.equipped[YUSUF] = [noone,noone,noone,noone];
+
 var staff =  instance_create_depth(0,0,10,obj_weapon);//for now we'll just leave these as persistent things.  will compress eventually
 var spear = instance_create_depth(0,0,10,obj_weapon);
 spear.title = "Kida-yari";
@@ -50,9 +54,6 @@ ds_list_add(global.equipment,staff);
 ds_list_add(global.equipment,spear);
 equip(AOI,0);
 equip(YUSUF,1);
-global.currentParty = [AOI,YUSUF,noone,noone];
-global.equipped[AOI] = [noone,noone,noone,noone];
-global.equipped[YUSUF] = [noone,noone,noone,noone];
 
 
 global.availableParty = ds_list_create();
