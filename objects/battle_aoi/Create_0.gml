@@ -17,13 +17,13 @@ base[ACC] = global.party[AOI][ACC]; //change to formuler
 
 current[HP] = global.points[AOI][HP];
 current[MP] = global.points[AOI][MP];
-current[DEF] = base[@ DEF];
-current[SPD] = base[@ SPD];
-current[STR] = base[@ STR]; //PLUS weapon+attack!
-current[AGI] = base[@ AGI];
+current[DEF] = base[@ DEF] + (global.equipped[AOI][1]!=noone?global.equipped[AOI][1].defBonus:0);
+current[SPD] = base[@ SPD] + (global.equipped[AOI][1]!=noone?global.equipped[AOI][1].spdBonus:0);
+current[STR] = base[@ STR] + global.equipped[AOI][0].ATK;
+current[AGI] = base[@ AGI] + (global.equipped[AOI][1]!=noone?global.equipped[AOI][1].agiBonus:0);
 current[CHA] = base[@ CHA];
 current[DEX] = base[@ DEX];
-current[WIS] = base[@ WIS];
+current[WIS] = base[@ WIS] + (global.equipped[AOI][1]!=noone?global.equipped[AOI][1].wisBonus:0);
 current[ACC] = base[@ ACC]; // TIMES weapon accuracy!
 
 index = AOI;

@@ -18,13 +18,13 @@ base[ACC] = global.party[YUSUF][ACC]; //change to formuler
 
 current[HP] = global.points[YUSUF][HP];
 current[MP] = global.points[YUSUF][MP];
-current[DEF] = base[@ DEF];
-current[SPD] = base[@ SPD];
-current[STR] = base[@ STR]; //PLUS weapon+attack!
-current[AGI] = base[@ AGI];
+current[DEF] = base[@ DEF] + (global.equipped[YUSUF][1]!=noone?global.equipped[YUSUF][1].defBonus:0);
+current[SPD] = base[@ SPD] + (global.equipped[YUSUF][1]!=noone?global.equipped[YUSUF][1].spdBonus:0);
+current[STR] = base[@ STR] + global.equipped[YUSUF][0].ATK;
+current[AGI] = base[@ AGI] + (global.equipped[YUSUF][1]!=noone?global.equipped[YUSUF][1].agiBonus:0);
 current[CHA] = base[@ CHA];
 current[DEX] = base[@ DEX];
-current[WIS] = base[@ WIS];
+current[WIS] = base[@ WIS] + (global.equipped[YUSUF][1]!=noone?global.equipped[YUSUF][1].wisBonus:0);
 current[ACC] = base[@ ACC]; // TIMES weapon accuracy!
 
 

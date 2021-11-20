@@ -47,13 +47,13 @@ spear.description = "A spear-like staff used mainly for ceremonial magic.  But t
 spear.ATK = 3;
 spear.type = 2;//polearm!
 staff.title = "Pathfinder Staff";
-spear.description = "A big, blunt shillelagh originally designed by shepherds.  Searchers uses these to feel through the shadows of the future.";
+staff.description = "A big, blunt shillelagh originally designed by shepherds.  Searchers uses these to feel through the shadows of the future.";
 staff.ATK = 2;
 staff.type = 1;//staff!
 ds_list_add(global.equipment,staff);
 ds_list_add(global.equipment,spear);
-equip(AOI,0);
-equip(YUSUF,1);
+equip(AOI,1);
+equip(YUSUF,0);
 
 
 global.availableParty = ds_list_create();

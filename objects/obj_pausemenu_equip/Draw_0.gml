@@ -4,7 +4,7 @@ draw_self();//background
 var options = global.equipment;
 var drawX = x+10;
 draw_set_color(c_white);
-var drawY = y+20;
+var drawY = y+5;
 var equipments = ["Weapon:","Armor:","Accessory:","Offhand:"];
 for (var i = 0; i < 4; i++){// upper slots
   var iAm = global.currentParty[i];
@@ -12,19 +12,19 @@ for (var i = 0; i < 4; i++){// upper slots
   if (i!=index) draw_set_color(c_black);//just to have SOME feedback
 
   if (iAm!=noone) {
-	draw_text_transformed(drawX,drawY,global.names[iAm],.6,.6,0);
+	draw_text_transformed(drawX,drawY,global.names[iAm],.5,.5,0);
 	drawY+=12;
 	for (var j = 0; j < 4; j++){
 		//draw_sprite(front_sprites[global.currentParty[i]],0,drawX+40,drawY-3);
-		draw_text_transformed(drawX,drawY,equipments[j],.6,.6,0);
+		draw_text_transformed(drawX,drawY,equipments[j],.5,.5,0);
 		if (global.equipped[iAm][j]==noone) {
 			draw_set_color(c_dkgray);
-			draw_text_transformed(drawX+50,drawY,"None",.6,.6,0);
+			draw_text_transformed(drawX+50,drawY,"None",.5,.5,0);
 		}
 		else{
-			draw_text_transformed(drawX+50,drawY,global.equipped[iAm][j].title,.6,.6,0);
+			draw_text_transformed(drawX+50,drawY,global.equipped[iAm][j].title,.5,.5,0);
 		}
-		drawY+=12;
+		drawY+=10;
 	}	
   }
   //draw_set_color(c_white);
@@ -38,7 +38,7 @@ drawY = subY+14;
 for (var i = scrollLevel; i < min(8+scrollLevel,ds_list_size(options)); i++){
   if (i!=index2) draw_set_color(c_black);
   else draw_set_color(c_white);
-  draw_text_transformed(drawX,drawY,options[|i].title,.75,.75,0);
+  draw_text_transformed(drawX,drawY,options[|i].title+(options[|i].currentUser==noone?"":"~"),.70,.70,0);
   if ((i%3)==2){
 	drawX = x+10;
 	drawY += 30;
