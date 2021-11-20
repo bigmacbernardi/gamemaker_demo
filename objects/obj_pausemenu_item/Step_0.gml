@@ -21,6 +21,19 @@ else if(mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space)|
 			with (global.itemInUse[0]){
 				event_user(0); 
 			}
+			/*attempt to update lmao*/
+			var drawX = 0;
+			var drawY = y;
+			options = ds_list_create(); 
+			for (var i = 0; i < ds_list_size(global.inventory); i++){
+			  ds_list_add(options,instance_create_depth(drawX,drawY,global.inventory[|i][1],global.inventory[|i][0]));
+			  if ((i % 3)==2){
+				drawX = 0;
+				drawY += 24;
+			  }else	drawX += 100;
+  
+			}
+			/*budump*/
 			index2 = -1;
 			mode = 0;
 		}
