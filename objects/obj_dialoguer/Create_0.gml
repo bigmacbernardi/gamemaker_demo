@@ -9,14 +9,14 @@ if(instance_exists(obj_player)) {
     if(obj_player.y > yy + 130) {
         side= 0;
         if(global.facechoice != 0) {
-            writer= instance_create_depth(xx + 68, yy - 5, -5,obj_writer);
+            writer= instance_create_depth(xx + 68, yy - 5, -5000,obj_writer);
             script_execute(scr_facechoice);
-        } else  writer= instance_create_depth(xx + 10, yy - 5,-5, obj_writer);
+        } else  writer= instance_create_depth(xx + 10, yy - 5,-5000, obj_writer);
     } else  {
         side= 1;
         if(global.facechoice != 0) {
-            writer= instance_create_depth(xx + 68, yy + 150,-5, obj_writer);
+            writer= instance_create_depth(xx + 68, yy + camera_get_view_height(cam) - 87,-5000, obj_writer);
             script_execute(scr_facechoice);
-        } else  writer= instance_create_depth(xx + 10, yy + 150,-5, obj_writer);
+        } else  writer= instance_create_depth(xx + 10, yy + camera_get_view_height(cam) - 87,-5000, obj_writer);
     }
 }

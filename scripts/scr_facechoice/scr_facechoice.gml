@@ -1,7 +1,7 @@
 // How Toby put the faces down.  Will merge in with something else
 if !variable_global_exists("facechoice") global.facechoice=0;
 if(global.facechoice == 1) {
-    instance_create_depth(writer.x - 61, writer.y - 17,-10, obj_face_elder);//givin a shot
+    instance_create_depth(writer.x - 55, writer.y + 2,-10, obj_face_elder);//givin character specificity a shot
     //instance_create_depth(0, 0,-10, 764/* obj_torbody */);
 }
 if(global.facechoice == 2)

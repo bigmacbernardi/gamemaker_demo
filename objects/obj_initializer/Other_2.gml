@@ -105,7 +105,7 @@ ds_list_add(global.inventory,tot);
 ds_list_add(global.inventory,oh);
 
 //temp stuff
-global.msc= 0;
+global.lineNo= 0;
 global.dialogueLine=0;
 //global.facechoice=0;
 global.flag=[0,0,0,0,0,0,0,0,0,0,//Elder has gotten your attention
@@ -113,4 +113,6 @@ global.flag=[0,0,0,0,0,0,0,0,0,0,//Elder has gotten your attention
 			0,0,0,0,0,0,0,0,0,0];//some writer thing, , , , some dialogue thing
 //global.showBattleDetails = true; //can use this for toggles
 
-instance_create_depth(0,0,10,obj_persistentmusicplayer); //can probably put in room but i do not trust
+instance_create_depth(0,0,10,obj_persistentmusicplayer); //can just put in room but i do not trust
+global.lastSortOpt = 0;
+//global.lastUsedSkills = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];//could be used for ease of use

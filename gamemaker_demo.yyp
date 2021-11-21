@@ -111,6 +111,7 @@
     {"id":{"name":"obj_dialogue","path":"objects/obj_dialogue/obj_dialogue.yy",},"order":18,},
     {"id":{"name":"ui_hp","path":"sprites/ui_hp/ui_hp.yy",},"order":8,},
     {"id":{"name":"button_item","path":"objects/button_item/button_item.yy",},"order":2,},
+    {"id":{"name":"item_sort_submenu","path":"objects/item_sort_submenu/item_sort_submenu.yy",},"order":11,},
     {"id":{"name":"obj_pausemenu_team","path":"objects/obj_pausemenu_team/obj_pausemenu_team.yy",},"order":7,},
     {"id":{"name":"obj_pausemenu_stat","path":"objects/obj_pausemenu_stat/obj_pausemenu_stat.yy",},"order":6,},
     {"id":{"name":"obj_choose","path":"objects/obj_choose/obj_choose.yy",},"order":14,},

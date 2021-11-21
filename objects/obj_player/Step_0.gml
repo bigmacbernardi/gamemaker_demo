@@ -94,7 +94,7 @@ if (pause_butt && (framesToBuffer==0)){
 	x_spd = 0;//cheap
 	y_spd = 0;//cheap
 	paused = true;
-	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam),-10,obj_pausemenu_main);
+	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam),-6999,obj_pausemenu_main);
 }
 else if (framesToBuffer>0){
 	framesToBuffer--;	

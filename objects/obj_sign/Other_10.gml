@@ -1,6 +1,6 @@
 /// @description On player interact
 obj_player.paused = true;
-global.msc = 2; 
+global.lineNo = 2; 
 global.dialogueLine = 2; //not using yet
 global.typer= 4;
 global.facechoice= 0;

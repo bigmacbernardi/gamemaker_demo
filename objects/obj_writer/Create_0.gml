@@ -5,7 +5,7 @@ obj_player.paused = true;
 //Toby's variables
 writingx= 0;
 writingy= 0;
-SCR_TEXTTYPE(global.typer); //idk what this does
+SCR_TEXTTYPE(global.typer); //sets text properties
 x= round(x);
 y= round(y);
 doak= 0;
@@ -17,7 +17,7 @@ writingx= round(writingx);
 writingy= round(writingy);
 myx= writingx;
 myy= writingy;
-script_execute(SCR_TEXT, global.msc);
+script_execute(SCR_TEXT, global.lineNo);
 n= 0;
 while(global.msg[n] != "%%%") { //Toby's method for indicating a line is complete.  Unnecessary for our purposes, but still implemented for the sake of ripping his code at this stage.
     mystring[n]= global.msg[n];

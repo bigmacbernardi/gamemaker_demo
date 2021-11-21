@@ -5,7 +5,7 @@ var options = global.availableParty;
 var drawX = x+10;
 draw_set_color(c_white);
 draw_text(drawX,y+5,"Assign Your Teams");
-var drawY = y+20;
+var drawY = y+35;
 var alpha;
 for (var i = 0; i < 4; i++){
   draw_set_color(c_white);

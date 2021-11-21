@@ -2,6 +2,8 @@
 // You can write your code in this editor
 //x = 0;//global.enemies[|index].x;
 //y = global.enemies[|index].y;
+if (selected){
+	
 if (!frameHasPassed) frameHasPassed = true;
 else if(mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{
@@ -50,8 +52,15 @@ else {
 	var _right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 	var _moveH = _right - _left; //will use this for pagination/filters/selecting sort options
 	var _moveV = _down - _up;
-	if (_moveH!= 0){ //will wrap eventually
-			index3 += _moveV;
+	if (_moveH> 0){ //will wrap eventually
+			index3++;
+			if (index3>=array_length(filterOptions)) index3=0;
+			//update options here
+	}else if (_moveH< 0){ //will wrap eventually
+			index3--;
+			if (index3<0)index3=array_length(filterOptions)-1;
+			//update options here
+		
 	}
 	if (_moveV != 0){
 		if (mode==0){
@@ -73,4 +82,6 @@ else {
 			global.targets = [global.currentParty[index2]];
 		}
 	}
+}
+
 }

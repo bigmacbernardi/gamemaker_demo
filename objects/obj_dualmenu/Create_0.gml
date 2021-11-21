@@ -12,7 +12,7 @@ var drawX = 0;
 var drawY = y;
 slot_dual();
 optionSlots = ds_list_create(); //temporary means for selection
-for (var i = 0; i < array_length_1d(options); i++){
+for (var i = 0; i < array_length(options); i++){
   show_debug_message("#"+string(i)+": Shifting "+string(options[i]));
   //if (options[i]==0) continue; //blank mystery that i think is just using wrong decrement/increment
   ds_list_add(optionSlots,options[i]);

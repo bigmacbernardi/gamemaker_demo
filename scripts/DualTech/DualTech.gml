@@ -53,7 +53,7 @@ function IcyHeat(){
 	battle_yusuf.current[MP] -= 4;
 	part_particles_create(global.P_System, battle_yusuf.x, battle_yusuf.y, global.Particle1, 10);
 	
-	for(var i = 0; i < array_length_1d(global.targets); i++){
+	for(var i = 0; i < array_length(global.targets); i++){
 		part_particles_create(global.P_System, global.targets[i].x, global.targets[i].y, global.Particle1, 3);
 		if (global.targets[i].state != DEATH){
 	        with global.targets[i]{

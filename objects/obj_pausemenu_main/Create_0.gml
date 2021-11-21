@@ -28,3 +28,4 @@ drawY += 24;
   drawY += 24;
 }*/
 selected=true;
+portraits = [spr_aoi,spr_yusuf,spr_old_man44,spr_old_man44,spr_old_man44,spr_old_man44];

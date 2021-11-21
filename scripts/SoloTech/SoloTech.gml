@@ -109,7 +109,7 @@ function balm(){
 	unit.current[MP] -= 5;
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
 	
-	for(var i = 0; i < array_length_1d(global.targets); i++){
+	for(var i = 0; i < array_length(global.targets); i++){
 		part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 2);
 		if (global.targets[i].state != DEATH){
 	        with global.targets[i]{

@@ -100,7 +100,7 @@ while(n < stringpos + 1) {
             } else  {
 				show_debug_message("SINGLE % SPOTTED");
                 stringpos= 1;
-                stringno++;//stringno = min(stringno+1,array_length_1d(mystring)-1);
+                stringno++;//stringno = min(stringno+1,array_length(mystring)-1);
                 originalstring= global.msg[stringno]; //once used myString
                 myx= writingx;
                 myy= writingy;

@@ -5,12 +5,12 @@ global.typer= 5;//should produce sound?
 global.facechoice= 1;
 //global.dialogueLine = 3; //not using yet
 if (global.flag[0]<2){
-	global.msc = 3; 
+	global.lineNo = 3; 
 	global.faceemotion= 2;
 	global.flag[0]++;
 }
 else{
-	global.msc = 0;//nonsense test line 
+	global.lineNo = 0;//nonsense test line 
 	global.faceemotion= 0;
 }
 if (instance_exists(obj_dialoguer)) instance_destroy(obj_dialoguer);

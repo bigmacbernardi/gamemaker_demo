@@ -4,21 +4,13 @@ if (selected){
 if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{ 
+		//if (!variable_instance_exists(options[|index],"usable")||options[|index].usable){//uncomment when you're ready to disable Team
 		if variable_instance_exists(options[|index],"submenu"){
-			instance_create_depth(x,y,-100, options[|index].submenu);
+			instance_create_depth(x,y,depth-1, options[|index].submenu);
 			selected=false;	
 		}
-		
+		//}
 		//options[|index].alarm[0]=1;
-		//submenu doesn't exist yet
-		/*var inst = instance_create_depth(0,0,-100, submenu);
-		inst.index = 0;
-		for (var i = 0; i < ds_list_size(options); i++){
-			if (i==index) continue;
-			with (options[|i]){
-				instance_destroy();	//????
-			}
-		}*/
 	}
 else if((keyboard_check_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace))
 	{
