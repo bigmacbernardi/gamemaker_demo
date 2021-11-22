@@ -16,7 +16,11 @@ classes=["Seer","Speaker","Composer","Bard","Ex-Con","Wrestler"];//should be som
 front_sprites = [spr_aoi,spr_yusuf,spr_old_man,spr_old_man44];
 
 index = 0;
-scrollLevel = 0;
+//scrollLevel = 0;
+mode = 0;
+index2=-1;
+global.selectedUnit = global.availableParty[|index];
+skillsToShow = slot_skills();
 /*for (var i = 0; i < ds_list_size(global.inventory); i++){
   ds_list_add(options,instance_create_depth(drawX,drawY,global.inventory[|i][1],global.inventory[|i][0]));
   drawY += 24;

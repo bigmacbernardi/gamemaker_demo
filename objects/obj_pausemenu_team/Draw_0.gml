@@ -32,11 +32,11 @@ for (var i = 0; i < 4; i++){
 if (index != 4) && (global.currentParty[index]!=noone){
 	var halfway =  x+camera_get_view_width(cam)/2;
 	var allway =  x+camera_get_view_width(cam)-8;
-	draw_set_color(c_black);
+	draw_set_color(c_ltgray);
 	draw_rectangle(halfway,y+22,allway,subY,false);
 	draw_set_color(make_color_rgb(172, 45, 207));
 	draw_rectangle(halfway+2,y+24,allway-2,subY-2,false);
-	draw_set_color(c_dkgray);
+	draw_set_color(c_black);
 	draw_text(halfway+16,y+27,"Dual Techniques");
 	var techniques = ["Icy Heat","Mugu mugu"];//reassign from function
 	draw_set_color(c_white);
@@ -62,7 +62,8 @@ for (var i = scrollLevel; i < min(8+scrollLevel,ds_list_size(options)); i++){
   if ((i%4)==3){
 	drawX = x+30;
 	drawY += 30;
-  }else drawX += 30
+  }
+  else drawX += 30
 }
 
 //draw_text_transformed(drawX-2,drawY+24,options[|index].description,.5,.5,0);

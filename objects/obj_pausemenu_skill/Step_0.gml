@@ -49,11 +49,14 @@ else {
 	if (_moveH < 0){ 
 		index--;	
 		if (index < 0) index = ds_list_size(options)-1;
+		global.selectedUnit = global.availableParty[|index];
+		skillsToShow = slot_skills();
 	}else if(_moveH > 0){
 		index++;	
 		if (index > ds_list_size(options)-1) index = 0;
+		global.selectedUnit = global.availableParty[|index];
+		skillsToShow = slot_skills();
 	}
-	
 }
 	
 
