@@ -19,13 +19,13 @@ for (var i = 0; i < 4; i++){
 /* ITEMS */
 drawX = x+160;
 drawY = y+6;//was 46;
-draw_set_color(c_navy);
+draw_set_color(make_color_rgb(34, 54, 161));
 draw_rectangle(drawX-10,drawY-1,x+camera_get_view_width(cam)-6,y+camera_get_view_height(cam),false);
 for (var i = scrollLevel; i < ds_list_size(options); i++){
   if (i!=index) draw_set_color(options[|i].usable?c_black:c_dkgray);
   else draw_set_color(options[|i].usable?c_white:c_gray);
   draw_text_transformed(drawX,drawY,options[|i].title,.6,.6,0);
-  draw_text_transformed(x+camera_get_view_width(cam)-20,drawY,options[|i].numOwned,.6,.6,0);
+  draw_text_transformed(x+camera_get_view_width(cam)-26,drawY,options[|i].numOwned,.6,.6,0);
   drawY += 24;
 }
 draw_set_color(c_white);//for next text, JIC

@@ -71,7 +71,7 @@ switch(state){
 					if (ds_priority_find_priority(battle_manager.pq,id)!=undefined) ds_priority_delete_value(battle_manager.pq,id);
 				}
 			}
-			else show_debug_message("hit end already happened!  probably a sequencing issue");
+			else show_debug_message("hit end HAS NOT happened yet! "+string(layer_sequence_get_headpos(unitSequence))+" vs "+string(hitEnd)+"  probably a sequencing issue");
 	break;
 	case HEAL://also to be used for buffs (and debuffs?)
 		show_debug_message(title + string(id) + " got 'specially healt!!!");

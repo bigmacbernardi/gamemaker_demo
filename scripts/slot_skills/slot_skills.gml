@@ -107,7 +107,7 @@ function slot_skills(){
 	fleeOpt.selector = rigid_selector;
 	fleeOpt.description = "Run away, boy.";
 	fleeOpt.mode = 4;
-	fleeOpt.usable = !instance_exists(micro_manager);// or something
+	fleeOpt.usable = battling && !instance_exists(micro_manager);// or something
 	fleeOpt.script = flee;
 	a[index++] = fleeOpt;
 	c[cIndex++] = fleeOpt;

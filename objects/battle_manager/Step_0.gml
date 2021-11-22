@@ -153,15 +153,29 @@ switch(combatPhase){
 			break;
 		}
 		processFinished = false;
-		combatPhase = phase.endTurn;
+		var tempBool = false;
+		for (var i=0; i<array_length(global.targets);i++){
+			if global.targets[0].state==HIT tempBool = true; 
+		}
+		if (!tempBool) combatPhase = phase.endTurn;
+		else combatPhase = phase.checkFinish;
 
 	break;
 	
 	case phase.endTurn:
 		selectedFinished = false;
 		//global.targets[0].path_speed = 0;
+		/*var delayIt = false; //this did not work
+		for (var i = 0; i < array_length(global.targets);i++){
+			if (global.targets[i].state != IDLE){
+				delayIt = true;
+				break;
+			}
+		}
+		if !delayIt{*/
 		global.targets = [noone];
 		combatPhase = phase.startTurn;
+		/*}*/
 	break;
 	
 	case phase.win:

@@ -35,7 +35,6 @@ draw_text_transformed(drawX,drawY,"Trained skills",.7,.7,0);
 drawX+=10; drawY+=15;
 draw_set_color(c_white);
 for (var i = 0; i < array_length(skillsToShow[1]); i++){
-  show_debug_message("showing "+string(i)+" of "+string(array_length(skillsToShow)));
   //var bendY = lineY+((jointY-lineY)/2)+(10*i);
   //if (i!=index) draw_set_color(c_black);//maybe re-enable for guide mode
   //draw_set_color(statColors[i]);
