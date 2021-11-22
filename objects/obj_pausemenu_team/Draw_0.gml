@@ -28,6 +28,28 @@ for (var i = 0; i < 4; i++){
   //draw_set_color(c_white);
   drawY += 20;
 }
+//drawing team preview
+if (index != 4) && (global.currentParty[index]!=noone){
+	var halfway =  x+camera_get_view_width(cam)/2;
+	var allway =  x+camera_get_view_width(cam)-8;
+	draw_set_color(c_black);
+	draw_rectangle(halfway,y+22,allway,subY,false);
+	draw_set_color(make_color_rgb(172, 45, 207));
+	draw_rectangle(halfway+2,y+24,allway-2,subY-2,false);
+	draw_set_color(c_dkgray);
+	draw_text(halfway+16,y+27,"Dual Techniques");
+	var techniques = ["Icy Heat","Mugu mugu"];//reassign from function
+	draw_set_color(c_white);
+	var strin = "";
+	for (var i =0;i<array_length(techniques);i++){
+		strin += techniques[i];
+		//if (i+1)<array_length(techniques)
+			strin+= " - ";
+	}
+	draw_text_transformed(halfway+24,y+50,strin,.45,.45,0);
+	
+}
+
 //drawing submenu
 draw_sprite(spr_menu_temp,0,x,subY);
 drawX = x+30;
@@ -42,6 +64,7 @@ for (var i = scrollLevel; i < min(8+scrollLevel,ds_list_size(options)); i++){
 	drawY += 30;
   }else drawX += 30
 }
+
 //draw_text_transformed(drawX-2,drawY+24,options[|index].description,.5,.5,0);
 //drawing portraits and stats -- save it
 /*for (var i = 0; i<4; i++){
