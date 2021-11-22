@@ -172,7 +172,7 @@ switch(combatPhase){
 			global.points[global.currentParty[i]][MP] = global.allies[|i].current[MP];
 			global.party[global.currentParty[i]][XP] += expEarned;
 		}
-		global.money += moneyEarned;
+		global.money += cashEarned;
 		room_goto(global.returnRoom);//orig Room1
 	//return to previous room
 	break;

@@ -182,6 +182,7 @@
     {"id":{"name":"noBKG_KnightDeath_strip","path":"sprites/noBKG_KnightDeath_strip/noBKG_KnightDeath_strip.yy",},"order":8,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":3,},
     {"id":{"name":"spr_aoi_def","path":"sprites/spr_aoi_def/spr_aoi_def.yy",},"order":8,},
+    {"id":{"name":"obj_pausemenu_skill","path":"objects/obj_pausemenu_skill/obj_pausemenu_skill.yy",},"order":12,},
     {"id":{"name":"spr_justalittleguy","path":"sprites/spr_justalittleguy/spr_justalittleguy.yy",},"order":0,},
     {"id":{"name":"obj_pauseteam","path":"objects/obj_pauseteam/obj_pauseteam.yy",},"order":9,},
     {"id":{"name":"battle_torgotemp","path":"sounds/battle_torgotemp/battle_torgotemp.yy",},"order":0,},
