@@ -16,7 +16,7 @@ else if goButton
 			inst.script = optionSlots[|index].script;
 	        instance_destroy();
 		}
-		//else audio_play_sound(snd_nope,100,1);
+		//else audio_play_sound(snd_nope,100,false);
 	}
 else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
 	{

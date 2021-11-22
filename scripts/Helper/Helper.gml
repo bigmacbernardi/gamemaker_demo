@@ -75,6 +75,19 @@ function equip(char,equI){//character, equipment index
 
 }	
 
+function isReady(partner,amAlly=true){//pass in .teammate var
+	if (!instance_exists(battle_manager))//SHOULD NOT BE CALLED OUTSIDE OF BATTLE
+		return false;
+	else{
+			
+	}
+	//check queue
+	//if enemy of character found in queue before partner
+		//return false
+	//if partner found in queue before an enemy
+		//return true
+}
+
 function setParticle(int){
 	var debug_names = ["Healing","Wind","Fire","Water","Shadow","Light","Electric","Ice","Spirit"];
 	show_debug_message("Casting "+debug_names[int]+" magic");

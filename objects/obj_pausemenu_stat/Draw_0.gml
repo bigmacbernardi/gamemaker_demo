@@ -1,31 +1,50 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
+draw_self();//should be PARCHMENT background
+draw_set_font(Roses); //should be DIFFERENT font
 var drawX = x+10;
 var drawY = y+12;
-draw_set_color(c_white);
-for (var i = scrollLevel; i < ds_list_size(options); i++){
-  if (i!=index) draw_set_color(c_black);
-  draw_text_transformed(drawX,drawY,options[|i].title,.75,.75,1);
-  //draw_text_transformed(drawX+104,drawY,options[|i].numOwned,.75,.75,1);
-  draw_set_color(c_white);//for other text
-  //drawX = x+20;
-  drawY += 24;
-}
-draw_text_transformed(drawX-2,drawY+24,options[|index].description,.5,.5,1);
-//drawing potraits and stats
-for (var i = 0; i<4; i++){
-	drawX = (i%2==0)? x+100:x+208;
-	drawY = (i<2)? y+10:y+104;
-	draw_set_color((global.currentParty[i] != noone)?c_white:c_gray);
-	draw_text_transformed(drawX,drawY,"Member "+string(i+1),.5,.5,1);
-	if (global.currentParty[i] != noone){
-		drawY +=12;
-		draw_text_transformed(drawX,drawY,"HP: "+string(global.points[global.currentParty[i]][HP])+"/"+string(global.party[global.currentParty[i]][HP]),.5,.5,1);
-		drawY +=12;
-		draw_text_transformed(drawX,drawY,"HP: "+string(global.points[global.currentParty[i]][MP])+"/"+string(global.party[global.currentParty[i]][MP]),.5,.5,1);
-		drawY +=12;
-		draw_text_transformed(drawX,drawY,"Next LV in: "+string(1000-global.party[global.currentParty[i]][XP])+"xp",.5,.5,1);
+draw_set_color(c_black);
 
-	}
+/*drawing character header*/
+
+draw_text_transformed(drawX,drawY,global.names[options[|index]],.8,.8,0);
+draw_text_transformed(drawX+94,drawY,"Level 1",.7,.7,0);
+drawY +=16;
+draw_text_transformed(drawX,drawY,classes[options[|index]],.7,.7,0);
+/*drawing stats and stat tree*/
+//var mins = [0,0,0,0,0,0,0];//should match seven stats at level 1
+//var maxs = [99,99,99,99,99,99,99];//should match seven stats at level 99
+drawX = x+10;
+drawY+=15;
+for (var i = 0; i < 7; i++){
+  //if (i!=index) draw_set_color(c_black);//maybe re-enable for guide mode
+  draw_set_color(statColors[i]);
+  draw_text_transformed(drawX,drawY,stats[i],.5,.5,0);
+  draw_set_color(c_black);
+  draw_text_transformed(drawX,drawY+8,global.party[options[|index]][i+2],.75,.75,0);
+  //draw_text_transformed(drawX+104,drawY,options[|i].numOwned,.75,.75,0);
+  drawX += 24;
+  
+}
+/* right side: showing health and statuses */
+
+
+
+
+
+/* bottom: showing characters and which is selected */
+//drawing submenu
+draw_sprite(spr_menu_temp,0,x,y+camera_get_view_height(cam)-42);
+drawX = x+30;
+drawY = y+camera_get_view_height(cam)-30;
+//draw_set_color(c_white);
+for (var i = scrollLevel; i < min(8+scrollLevel,ds_list_size(options)); i++){
+  if (i!=index) draw_sprite_ext(front_sprites[options[|i]],0,drawX,drawY,1,1,0,c_dkgray,.8); //do different indicator
+  else draw_sprite(front_sprites[options[|i]],0,drawX,drawY);
+  //draw_text_transformed(drawX+104,drawY,options[|i].numOwned,.75,.75,0);
+  if ((i%4)==3){
+	drawX = x+30;
+	drawY += 30;
+  }else drawX += 30
 }
