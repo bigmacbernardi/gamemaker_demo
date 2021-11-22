@@ -139,6 +139,7 @@
     {"id":{"name":"spr_aoi_hit","path":"sprites/spr_aoi_hit/spr_aoi_hit.yy",},"order":9,},
     {"id":{"name":"spr_yusuf_back","path":"sprites/spr_yusuf_back/spr_yusuf_back.yy",},"order":2,},
     {"id":{"name":"obj_ether","path":"objects/obj_ether/obj_ether.yy",},"order":8,},
+    {"id":{"name":"spr_blueparchment","path":"sprites/spr_blueparchment/spr_blueparchment.yy",},"order":27,},
     {"id":{"name":"obj_pauseequip","path":"objects/obj_pauseequip/obj_pauseequip.yy",},"order":2,},
     {"id":{"name":"KnightDeath_strip","path":"sprites/KnightDeath_strip/KnightDeath_strip.yy",},"order":1,},
     {"id":{"name":"itm_selector","path":"objects/itm_selector/itm_selector.yy",},"order":4,},

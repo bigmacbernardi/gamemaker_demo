@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_menubkgd_temp",
-    "path": "sprites/spr_menubkgd_temp/spr_menubkgd_temp.yy",
+    "name": "spr_blueparchment",
+    "path": "sprites/spr_blueparchment/spr_blueparchment.yy",
   },
   "solid": false,
   "visible": true,

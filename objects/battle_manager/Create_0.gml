@@ -22,6 +22,7 @@ processFinished = false;
 allowInput = false;
 solicitInput = false;
 expEarned = 0;
+moneyEarned = 0;
 
 function curPhaseName(){
 	switch(combatPhase){

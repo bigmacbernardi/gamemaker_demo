@@ -2,6 +2,7 @@
 // You can write your code in this editor
 event_inherited();
 xp_value = 15;
+cash_value = 5;
 //sPlayer is filler animation for the knight
 unitSequence = layer_sequence_create("Sequences",x,y,sGhost);
 

@@ -172,6 +172,7 @@ switch(combatPhase){
 			global.points[global.currentParty[i]][MP] = global.allies[|i].current[MP];
 			global.party[global.currentParty[i]][XP] += expEarned;
 		}
+		global.money += moneyEarned;
 		room_goto(global.returnRoom);//orig Room1
 	//return to previous room
 	break;
@@ -181,7 +182,7 @@ switch(combatPhase){
 		for (var i = 0; i<ds_list_size(global.allies);i++){//if allies are deleted from allies then mayyybe this ain't the best idea lol
 			global.points[global.currentParty[i]][HP] = global.allies[|i].current[HP];
 			global.points[global.currentParty[i]][MP] = global.allies[|i].current[MP];
-		global.party[global.currentParty[i]][XP] += expEarned;//sure since expEarned is only the killed ones
+			global.party[global.currentParty[i]][XP] += expEarned;//sure since expEarned is only the killed ones
 		}
 		room_goto(global.returnRoom);//orig Room1
 	break;

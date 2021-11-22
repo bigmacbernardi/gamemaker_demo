@@ -63,6 +63,7 @@ switch(state){
 					else{//could probably just make this battle_enemy behavior
 						show_debug_message("Enemy Killed");
 						battle_manager.expEarned += xp_value; //naive!  doesn't account for resurrection and assumes xp_value exists
+						battle_manager.cashEarned += cash_value; //ditt'
 						ds_list_delete(global.enemies,ds_list_find_index(global.enemies,id));
 					}
 					turnFinished = true;
