@@ -31,3 +31,13 @@ for (var i = 0; i<4; i++){
 
 	}
 }
+//display
+draw_set_color(c_white);
+drawX = x + camera_get_view_width(cam)-80;
+drawY = y + camera_get_view_height(cam)-24;
+draw_text_transformed(drawX,drawY,"Money: "+string(global.money),.5,.5,0);
+
+draw_set_color(c_ltgray);
+drawX = x + 8;
+drawY += 13;
+draw_text_transformed(drawX,drawY,"Accept: ENTER/L-click     Back: Bkspc/Shift/R-click",.4,.4,0);

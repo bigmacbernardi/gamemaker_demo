@@ -16,7 +16,7 @@ draw_text_transformed(drawX,drawY,classes[options[|index]],.7,.7,0);
 
 //var mins = [0,0,0,0,0,0,0];//should match seven stats at level 1
 //var maxs = [99,99,99,99,99,99,99];//should match seven stats at level 99
-drawX = x+10;
+drawX = x+20;
 drawY+=15;
 
 var lineY = drawY+20;
