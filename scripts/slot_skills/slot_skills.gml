@@ -67,5 +67,13 @@ function slot_skills(){
 				a[index++] = yusufBalm;
 			//a = [];
 	}
+	var fleeOpt = instance_create_layer(0,0,"UI_Base",obj_skill);
+	fleeOpt.title = "Flee";
+	fleeOpt.selector = rigid_selector;
+	fleeOpt.description = "Run away, boy.";
+	fleeOpt.mode = 4;
+	fleeOpt.usable = !instance_exists(micro_manager);// or something
+	fleeOpt.script = flee;
+	a[index++] = fleeOpt;
 	obj_skillmenu.options = a;
 }

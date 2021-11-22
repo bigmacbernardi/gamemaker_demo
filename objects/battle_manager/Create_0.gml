@@ -12,6 +12,7 @@ enum phase{
 	endTurn,
 	win,
 	lose,
+	escape
 }
 
 combatPhase = phase.init;
@@ -32,6 +33,7 @@ function curPhaseName(){
 		case phase.endTurn: return "endTurn";
 		case phase.win: return "win";
 		case phase.lose: return "lose";
+		case phase.escape: return "escape";
 	}
 }
 

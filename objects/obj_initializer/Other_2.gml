@@ -31,7 +31,7 @@
 #macro VARIS 12
 #macro OGHUZ 30*/
 
-
+/*party stuff*/
 global.names=["Aoi","Yusuf","Jamir","Bardo","Prison Jane","Luchador","Server","Nikolai","Atta","Pat","Wormwood"];
 //global.varisMistake="Birdo";
 global.inventory = ds_list_create();
@@ -39,7 +39,34 @@ global.equipment = ds_list_create();
 global.currentParty = [AOI,YUSUF,noone,noone];
 global.equipped[AOI] = [noone,noone,noone,noone];
 global.equipped[YUSUF] = [noone,noone,noone,noone];
-
+global.availableParty = ds_list_create();
+ds_list_add(global.availableParty,AOI);
+ds_list_add(global.availableParty,YUSUF);
+global.skills= [/*naive but still fully functional solution*/
+	[true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+	[true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+	[true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+	[true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+	[true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+	[]
+];
+global.dualSkills = [//even MORE naive
+	true,true,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false,
+	false,false,false,false,false,false,false
+]
 var staff =  instance_create_depth(0,0,10,obj_weapon);//for now we'll just leave these as persistent things.  will compress eventually
 var spear = instance_create_depth(0,0,10,obj_weapon);
 spear.title = "Kida-yari";
@@ -55,10 +82,10 @@ ds_list_add(global.equipment,spear);
 equip(AOI,1);
 equip(YUSUF,0);
 
-
-global.availableParty = ds_list_create();
-ds_list_add(global.availableParty,AOI);
-ds_list_add(global.availableParty,YUSUF);
+/*world stuff*/
+global.flag=[0,0,0,0,0,0,0,0,0,0,//Elder has gotten your attention
+			0,0,0,0,0,0,0,0,0,0,//
+			0,0,0,0,0,0,0,0,0,0];//some writer thing, , , , some dialogue thing
 global.chests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
@@ -104,13 +131,10 @@ ds_list_add(global.inventory,eth);
 ds_list_add(global.inventory,tot);
 ds_list_add(global.inventory,oh);
 
-//temp stuff
+//temp system stuff
 global.lineNo= 0;
 global.dialogueLine=0;
 //global.facechoice=0;
-global.flag=[0,0,0,0,0,0,0,0,0,0,//Elder has gotten your attention
-			0,0,0,0,0,0,0,0,0,0,//
-			0,0,0,0,0,0,0,0,0,0];//some writer thing, , , , some dialogue thing
 //global.showBattleDetails = true; //can use this for toggles
 
 instance_create_depth(0,0,10,obj_persistentmusicplayer); //can just put in room but i do not trust

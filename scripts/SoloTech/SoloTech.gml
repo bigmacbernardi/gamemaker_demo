@@ -3,6 +3,29 @@
 function SoloTech(){
 //seems like we can just ignore this
 }
+/* UNIVERSAL */
+function flee(){
+	//100% success rate
+	with battle_manager{
+		combatPhase = phase.escape;
+	}
+	//battle_manager.alarm[1]=10;
+}
+/* NEAR UNIVERSAL */
+function pacify(){
+	
+}
+function negotiate(){
+	
+}
+function interrogate(){
+	
+}
+function speak(){//should open speech menu I guess?
+	pacify();
+	negotiate();
+	interrogate();
+}
 
 /* AOI TECH */
 

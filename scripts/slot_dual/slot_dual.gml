@@ -11,7 +11,7 @@ function slot_dual(){
 	var a;//array
 	switch(key){
 		case ((AOI*32)+(YUSUF)):
-			//if (icyHeatLearned){
+			if (global.dualSkills[0]){//just put them in order
 				var icyHeat = instance_create_layer(0,0,"UI_Base",obj_dual);
 				icyHeat.selector = rigid_selector;
 				icyHeat.title = "Icy Heat";
@@ -20,8 +20,8 @@ function slot_dual(){
 				icyHeat.usable = global.selectedUnit.current[MP]>=4;
 				icyHeat.script = IcyHeat;
 				a[index++] = icyHeat;
-			//}
-			//if (freezeLearned){
+			}
+			if (global.dualSkills[1]){
 				var mugumugu = instance_create_layer(0,0,"UI_Base",obj_dual);
 				mugumugu.title = "Mugu mugu";
 				mugumugu.description = "Some kinda status thing?  Idk";
@@ -29,7 +29,7 @@ function slot_dual(){
 				mugumugu.usable = global.selectedUnit.current[MP]>=4;
 				mugumugu.script = MuguMugu;
 				a[index++] = mugumugu;
-			//}
+			}
 			break;
 		case ((AOI*32)+(JAMIR)):
 			

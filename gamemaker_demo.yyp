@@ -223,6 +223,7 @@
     {"id":{"name":"wood_small","path":"sounds/wood_small/wood_small.yy",},"order":10,},
     {"id":{"name":"spr_girl_face5","path":"sprites/spr_girl_face5/spr_girl_face5.yy",},"order":8,},
     {"id":{"name":"spr_warp","path":"sprites/spr_warp/spr_warp.yy",},"order":6,},
+    {"id":{"name":"micro_manager","path":"objects/micro_manager/micro_manager.yy",},"order":13,},
     {"id":{"name":"Owl2","path":"sounds/Owl2/Owl2.yy",},"order":24,},
     {"id":{"name":"equippable","path":"objects/equippable/equippable.yy",},"order":5,},
     {"id":{"name":"spr_old_man","path":"sprites/spr_old_man/spr_old_man.yy",},"order":0,},

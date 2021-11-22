@@ -33,10 +33,13 @@ for (var i = 0; i < 7; i++){
   draw_text_transformed(drawX,drawY+8,global.party[options[|index]][i+2],.75,.75,0);
   //draw_text_transformed(drawX+104,drawY,options[|i].numOwned,.75,.75,0);
   drawX += 4;
+  repeat(4){
   draw_line(drawX,lineY,drawX,bendY);
   draw_line(drawX,bendY,jointX,jointY);
   draw_line(jointX,jointY,jointX,destY);
-  drawX += 20;
+  drawX+=.5;
+  }
+  drawX += 18;
   
 }
 /* dividing line */

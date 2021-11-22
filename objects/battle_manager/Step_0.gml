@@ -175,7 +175,16 @@ switch(combatPhase){
 		room_goto(global.returnRoom);//orig Room1
 	//return to previous room
 	break;
-	
+	case phase.escape:
+		show_debug_message("You got out of there!");
+		global.foesToSpawn = [];
+		for (var i = 0; i<ds_list_size(global.allies);i++){//if allies are deleted from allies then mayyybe this ain't the best idea lol
+			global.points[global.currentParty[i]][HP] = global.allies[|i].current[HP];
+			global.points[global.currentParty[i]][MP] = global.allies[|i].current[MP];
+		global.party[global.currentParty[i]][XP] += expEarned;//sure since expEarned is only the killed ones
+		}
+		room_goto(global.returnRoom);//orig Room1
+	break;
 	case phase.lose:
 		show_debug_message("You lose...");
 		global.foesToSpawn = [];
