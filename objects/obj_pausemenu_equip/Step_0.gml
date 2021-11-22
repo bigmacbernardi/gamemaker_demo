@@ -78,7 +78,7 @@ else {
 	var _right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 	var _moveH = _right - _left;
 	var _moveV = _down - _up;
-	if (_moveV != 0){ //will wrap eventually
+	if (_moveV != 0){ 
 		if (index ==4){ //submenu is selected in mode 0
 			if (_moveV>0){//moving down
 				if (ds_list_size(global.availableParty) > index2+4) index2+=4;
@@ -97,7 +97,9 @@ else {
 				//else index2%4;//should wrap to bottom row in Mode 1 but does nothing now
 			}
 		}
-		else if (mode != 1) index += _moveV;
+		else if (mode != 1){
+			index += _moveV;
+		}
 		if (mode==2){
 			if (index < 0) index = 3;
 			else if (index > 3)index = 0;
@@ -113,6 +115,17 @@ else {
 			else if (index > 4){
 				index = 0;
 				index2 = -1;
+			}
+			else if (global.currentParty[index]==noone){
+				if (_moveV>0){//moving down
+					index = 4;
+					index2 = 0;
+				}
+				else{//moving up
+					while (global.currentParty[index]==noone){
+						index--;	
+					}
+				}
 			}
 			
 		}
