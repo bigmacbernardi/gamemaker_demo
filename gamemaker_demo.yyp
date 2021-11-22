@@ -128,6 +128,7 @@
     {"id":{"name":"battle_area","path":"rooms/battle_area/battle_area.yy",},"order":2,},
     {"id":{"name":"battle_manager","path":"objects/battle_manager/battle_manager.yy",},"order":2,},
     {"id":{"name":"spr_girl_face6","path":"sprites/spr_girl_face6/spr_girl_face6.yy",},"order":9,},
+    {"id":{"name":"obj_enemy_ghost","path":"objects/obj_enemy_ghost/obj_enemy_ghost.yy",},"order":16,},
     {"id":{"name":"spr_girl_face10","path":"sprites/spr_girl_face10/spr_girl_face10.yy",},"order":2,},
     {"id":{"name":"battle_aoi","path":"objects/battle_aoi/battle_aoi.yy",},"order":0,},
     {"id":{"name":"start_menu","path":"rooms/start_menu/start_menu.yy",},"order":3,},
