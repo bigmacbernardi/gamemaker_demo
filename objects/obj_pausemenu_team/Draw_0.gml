@@ -5,13 +5,14 @@ var options = global.availableParty;
 var drawX = x+10;
 draw_set_color(c_white);
 draw_text(drawX,y+5,"Assign Your Teams");
-var drawY = y+35;
+var drawY = y+33;
 var alpha;
 for (var i = 0; i < 4; i++){
   draw_set_color(c_white);
+  if (i==2) drawY += 16;
   if (i == 0)||(i==2){
 	  draw_text_transformed(drawX,drawY, (i == 0)?"Team 1":"Team 2",.5,.5,0);
-	  drawY += 12;
+	  drawY += 14;
   }
   if (i!=index){
 	  draw_set_color(c_black);
@@ -26,7 +27,7 @@ for (var i = 0; i < 4; i++){
 	draw_text_transformed(drawX,drawY,global.names[global.currentParty[i]],.6,.6,0);
   }
   //draw_set_color(c_white);
-  drawY += 20;
+  drawY += 13;
 }
 //drawing team preview
 if (index != 4) && (global.currentParty[index]!=noone){

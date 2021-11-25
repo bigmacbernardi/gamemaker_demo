@@ -73,7 +73,7 @@ if((script != noone)&&(isSelected)&&(battle_manager.allowInput))// && position_m
 	image_index=1;
 	if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{	//Left button is being pressed
-		show_debug_message("Button Pressed");
+		//show_debug_message("Button Pressed");
 		battle_manager.allowInput = false; //done before to prevent shenanigans
 		script_execute(script);
 		//if we just had a way to automatically iterate through children, this could be easier

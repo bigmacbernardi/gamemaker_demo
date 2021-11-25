@@ -12,7 +12,11 @@ function IcyHeat(){
 	global.targets = enemies;
 	var unitX = global.selectedUnit.x + global.selectedUnit.teammate.x / 2;
 	var unitY = global.selectedUnit.y + global.selectedUnit.teammate.y / 2;	
-	battle_aoi.current[MP] -= 4;
+	with battle_aoi{
+		current[MP] -= 4;
+		layer_sequence_headpos(unitSequence,atkStart);
+		state = ATTACK;
+	}
 	setParticle(7);//fire;
 	for(var i = 0; i < array_length(global.targets); i++){
 		show_debug_message(global.selectedUnit.title+" attacking "+global.targets[i].title+"#"+string(global.targets[i]));
@@ -50,7 +54,11 @@ function IcyHeat(){
 	 }
 	global.targets = friends;
 	setParticle(2);//fire
-	battle_yusuf.current[MP] -= 4;
+	with battle_yusuf{
+		current[MP] -= 4;
+		layer_sequence_headpos(unitSequence,atkStart);
+		state = ATTACK;
+	}
 	part_particles_create(global.P_System, battle_yusuf.x, battle_yusuf.y, global.Particle1, 10);
 	
 	for(var i = 0; i < array_length(global.targets); i++){
@@ -63,12 +71,16 @@ function IcyHeat(){
 			}
 		}
 	}
-	instance_destroy(rigid_selector);
-	battle_manager.alarm[1]=1;//naive interpretation - just pushes through the queue
-	with global.selectedUnit.teammate{
-		isHolding = true;//.something
+	with battle_manager{
+		enqueue(global.selectedUnit.teammate);//but the units must be up to something else lol
+		alarm[1]=10;
 	}
-	battle_manager.alarm[1]=10;
+	instance_destroy(rigid_selector);
+	
+	//battle_manager.alarm[1]=1;//naive interpretation - just pushes through the queue
+	/*with global.selectedUnit.teammate{
+		isHolding = true;//.something
+	}*/
 }
 
 
@@ -110,10 +122,9 @@ function MuguMugu(){
 			}
 		}
 	 }
-
-	battle_manager.alarm[1]=1;//naive interpretation - just pushes through the queue
-	with global.selectedUnit.teammate{
-		isHolding = true;//.something
+	with battle_manager{
+		enqueue(global.selectedUnit.teammate);//but the units must be up to something else lol
+		alarm[1]=10;
 	}
-	battle_manager.alarm[1]=10;
+	
 }

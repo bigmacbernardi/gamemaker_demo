@@ -9,17 +9,24 @@ switch(state){
 	
 	case ATTACK:
 		if (layer_sequence_get_headpos(unitSequence) > atkEnd){
-			show_debug_message("Attack animation finished");
+			var myId = id;
+			show_debug_message(title+" attack animation finished");
 			//at THIS point damage should happen right?
 			turnFinished = true;
 			//if (attackWillHit){
 			//	layer_sequence_headpos(unitSequence, idleStart);
-			state = IDLE;
+			state = IDLE;//NEW stuff below this line
+			//broadcast manager do the following
+			/*battle_manager.enqueue(id);//i guess?
+			if id==global.selectedUnit battle_manager.selectedFinished = true;*/
 			//}
 			//else{
 			//	layer_sequence_headpos(unitSequence, missStart);
 			//	state = MISS;
 			//}
+			with battle_manager{
+				enqueue(myId);	
+			}
 		}
 	
 	break;
@@ -27,10 +34,18 @@ switch(state){
 	case ITEM:
 		if (layer_sequence_get_headpos(unitSequence) > itmEnd){
 			show_debug_message("Item animation finished");
+			var myId = id;
 			//at THIS point damage should happen right?
 			turnFinished = true;
 			//layer_sequence_headpos(unitSequence, itmStart);
 			state = IDLE;
+			/*broadcast should do the following*/
+			
+			with battle_manager{
+				enqueue(myId);	
+			}
+			//if id==global.selectedUnit battle_manager.selectedFinished = true; //i guess? figure this out
+
 		}
 	
 	break;
@@ -45,7 +60,7 @@ switch(state){
 	break;
 	
 	case HIT:
-		show_debug_message(title + string(id) + " got hit!!!");
+		//show_debug_message(title + string(id) + " is hit!!!");
 		if (layer_sequence_get_headpos(unitSequence) > hitEnd){
 				show_debug_message("here comes the damage!!!");
 				damageUnit(incomingDamage);
@@ -55,6 +70,7 @@ switch(state){
 					state = IDLE;
 				}
 				else{
+					var myId = id;
 					layer_sequence_headpos(unitSequence, deathStart);
 					if (isPlayer){//could probably just make this battle_player behavior
 						show_debug_message("Player Killed");
@@ -68,13 +84,18 @@ switch(state){
 					}
 					turnFinished = true;
 					state = DEATH;
-					if (ds_priority_find_priority(battle_manager.pq,id)!=undefined) ds_priority_delete_value(battle_manager.pq,id);
+					
+					with battle_manager{
+						remove(myId);	
+					}
+					//if (ds_priority_find_priority(battle_manager.pq,id)!=undefined) ds_priority_delete_value(battle_manager.pq,id);
+					//battle_manager.remove(id); //let broadcast manager do this too!				
 				}
 			}
-			else show_debug_message("hit end HAS NOT happened yet! "+string(layer_sequence_get_headpos(unitSequence))+" vs "+string(hitEnd)+"  probably a sequencing issue");
+			//else show_debug_message("hit end HAS NOT happened yet! "+string(layer_sequence_get_headpos(unitSequence))+" vs "+string(hitEnd));
 	break;
 	case HEAL://also to be used for buffs (and debuffs?)
-		show_debug_message(title + string(id) + " got 'specially healt!!!");
+		show_debug_message(title + string(id) + "is healing!");
 		if (layer_sequence_get_headpos(unitSequence) > hitEnd){//delay is apparently needed for sequencing with battle_manager
 		healUnit(incomingDamage);
 		layer_sequence_headpos(unitSequence, idleStart);
@@ -97,8 +118,12 @@ switch(state){
 	break;
 	
 	case DEATH:
+		//var myId = id;
 		if (layer_sequence_get_headpos(unitSequence) > deathEnd){
 			layer_sequence_headpos(unitSequence,deathMid);
+			/*with battle_manager{//just making sure?
+				remove(myId);	
+			}*/
 		}
 	break;
 }

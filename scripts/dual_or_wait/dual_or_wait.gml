@@ -6,5 +6,11 @@ function dual(){
 	inst.priorMenu = button_dual_wait;
 }
 function wait(){
-	battle_manager.alarm[1]=10;
+	with global.selectedUnit{
+		turnFinished = true;	
+	}
+	with battle_manager{
+		enqueue(global.selectedUnit,pq[1][0]+1);	
+		alarm[1]=10;
+	}
 }

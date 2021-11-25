@@ -9,7 +9,8 @@ switch(combatPhase){
 				//var next_id = instance_create_layer((i%2)==0?16:32,200-(i*64),"Instances",next_char);
 				var unit = instance_create_depth((i%2)==0?16:32,140-(i*60),0,next_char);
 				ds_list_add(global.units,unit);
-				ds_priority_add(pq,unit,getWait(unit));
+				//ds_priority_add(pq,unit,getWait(unit));
+				enqueue(unit,getWait(unit));
 				ds_list_add(global.allies,unit);
 				unit.isPlayer = true;
 			}	
@@ -24,12 +25,14 @@ switch(combatPhase){
 					global.allies[|3].teammate = global.allies[|2];
 				}
 			}
+			/* NEXT CHUNK IS LEFTOVERS*/
 		for (var i = 0; i < instance_number(battle_spawner); i++){
 			var spawner = instance_find(battle_spawner, i);
 			if (!spawner.isPlayer){ //regular
 				var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit);
 				ds_list_add(global.units,unit);
-				ds_priority_add(pq,unit,getWait(unit));
+				//ds_priority_add(pq,unit,getWait(unit));
+				enqueue(unit,getWait(unit));
 				//show_debug_message("Queued "+unit.title+" with priority "+string(getWait(unit)));
 				ds_list_add(global.enemies,unit);
 			}
@@ -42,7 +45,8 @@ switch(combatPhase){
 		for (var i = 0; i < array_length(global.foesToSpawn); i+=3){
 			var unit = instance_create_depth(global.foesToSpawn[i+1],global.foesToSpawn[i+2],0,global.foesToSpawn[i])
 			ds_list_add(global.units,unit);
-			ds_priority_add(pq,unit,getWait(unit));
+			//ds_priority_add(pq,unit,getWait(unit));
+			enqueue(unit,getWait(unit));
 			ds_list_add(global.enemies,unit);
 		}
 		combatPhase = phase.startTurn;
@@ -69,21 +73,22 @@ switch(combatPhase){
 			unitsFinished = 0;
 		}
 		
-		//cycle through the units and find the first w/ turnFinished FALSE
+		//dequeue the next unit
 		//change unit's local selected status (draws indicator) and make it the selectedUnit
-		var last_key = ds_priority_find_priority(pq,ds_priority_find_min(pq));
+		/*var last_key = ds_priority_find_priority(pq,ds_priority_find_min(pq));
 		show_debug_message("Gonna delete the "+string(last_key));
-		var inst = ds_priority_delete_min(pq); //needs corresponding add?
-		show_debug_message("Bout to reduce "+string(ds_priority_size(pq))+" items by "+string(last_key));
+		var inst = ds_priority_delete_min(pq); //needs corresponding add?*/
+		var last_key = dequeue();//sets global.selectedUnit
+		show_debug_message("Bout to reduce "+string(pqSize)+" items by "+string(last_key));
 		
 		reduce(last_key);
 		show_debug_message("Done reduced");
 		
 		//if (inst.turnFinished||inst.state != DEATH) then it shouldn't be in queue
-		inst.selected = true;
-		global.selectedUnit = inst;
+		global.selectedUnit.selected = true;
 		//old list-looping method used:	if ((!inst.turnFinished)&&(inst.state != DEATH))
 		if (global.selectedUnit.isPlayer){  //do check if dual technique is possible HERE
+			show_debug_message("Selected unit "+string(global.selectedUnit)+", is player character "+global.selectedUnit.title+", so I'm showing the buttons");
 			solicitInput = false;
 			allowInput = true;
 			//maybe just have a single method for menu show/hide
@@ -91,7 +96,7 @@ switch(combatPhase){
 			button_skill.visible = 1;
 			button_dual_wait.visible = 1;
 			button_item.visible = 1;
-			show_debug_message("Showing menu button");
+			//show_debug_message("Showing menu buttons");
 			//menu = create_button(0,200,280,80,"Attack",simulateInput(global.enemies));
 		}
 		else {
@@ -123,12 +128,16 @@ switch(combatPhase){
 			unitsFinished++;
 			combatPhase = phase.process;
 			//requeue: this calculation should ONLY be used if they did NOT pick WAIT.
-			var nextPriority;
+			/*var nextPriority;
 			if (!global.selectedUnit.isHolding) //this calculation should ONLY be used if they did NOT pick WAIT.
 			nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedUnit); //this process will need to change for overflow reasons
 			else nextPriority = ds_priority_find_priority(pq,ds_priority_find_min(pq))+1;//come in at SOONEST opportunity
 			show_debug_message("Requeuing "+global.selectedUnit.title+" with priority "+string(nextPriority));
-			ds_priority_add(pq,global.selectedUnit,nextPriority);
+			ds_priority_add(pq,global.selectedUnit,nextPriority);*/
+			
+			//making units do this to themselves now, bc units know when they're done
+			
+			//enqueue(global.selectedUnit,getWait(global.selectedUnit));
 		}//else show_debug_message("Waiting on "+global.selectedUnit.title); //have selectedFinished signaled by the other thing by an alarm
 	break;
 	
@@ -143,7 +152,7 @@ switch(combatPhase){
 	break;
 	
 	case phase.checkFinish:
-		show_debug_message("Checking for the end of states");
+		//show_debug_message("Checking for the end of states");
 		if (ds_list_empty(global.allies)){
 			combatPhase = phase.lose;
 			break;
@@ -155,7 +164,7 @@ switch(combatPhase){
 		processFinished = false;
 		var tempBool = false;
 		for (var i=0; i<array_length(global.targets);i++){
-			if global.targets[0].state==HIT tempBool = true; 
+			if global.targets[i] !=noone && global.targets[i].state==HIT tempBool = true; 
 		}
 		if (!tempBool) combatPhase = phase.endTurn;
 		else combatPhase = phase.checkFinish;

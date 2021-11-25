@@ -36,6 +36,9 @@ if (mode==0) {//single-enemy
 					layer_sequence_headpos(unitSequence,atkStart);
 					script_execute(skill_selector.script);
 				}
+			with battle_manager {
+				enqueue(global.selectedUnit);
+			}
 	        instance_destroy();
 		}
 	else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))

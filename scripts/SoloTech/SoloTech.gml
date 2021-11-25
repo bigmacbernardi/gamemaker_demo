@@ -31,7 +31,11 @@ function speak(){//should open speech menu I guess?
 
 function burn(){
 	var unit = global.selectedUnit;	
-	unit.current[MP] -= 4;
+	with unit{
+		current[MP] -= 4;
+		layer_sequence_headpos(unitSequence,atkStart);
+		state = ATTACK;
+	}
 	setParticle(2);//fire;
 	for(var i = 0; i < array_length(global.targets); i++){
 		show_debug_message(global.selectedUnit.title+" attacking "+global.targets[i].title+"#"+string(global.targets[i]));
@@ -75,13 +79,19 @@ function freeze(){
 	checkForHit();
 	setParticle(7);//ice
 	var unit = global.selectedUnit;
-	unit.current[MP] -= 4;
+	with unit{
+		current[MP] -= 4;
+		layer_sequence_headpos(unitSequence,atkStart);
+		state = ATTACK;
+	}
 	var xStep = (global.targets[0].x - unit.x )/40;
 	var yStep = (global.targets[0].y - unit.y )/40;
 	var partX = unit.x;
 	var partY = unit.y;
 	//part_type_direction(global.Particle1,)
-		
+	with unit{
+			
+	}
 	repeat(40)
 	{
 		partX+=xStep;
@@ -116,7 +126,11 @@ function freeze(){
 function embolden(){
 	var unit = global.selectedUnit;
 	setParticle(8);//Fighting energy
-	unit.current[MP] -= 2;
+	with unit{
+		current[MP] -= 2;
+		layer_sequence_headpos(unitSequence,atkStart);
+		state = ATTACK;
+	}
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
 	with(global.targets[0]){
 		current[STR]+=1.5;//HELL yes

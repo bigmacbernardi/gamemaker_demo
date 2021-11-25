@@ -23,9 +23,10 @@ else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space
 			unitsFinished++;
 			combatPhase = phase.process;
 			//requeue
-			var nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedUnit); //this process will need to change for overflow reasons
+			/*var nextPriority = ds_priority_find_priority(pq,ds_priority_find_max(pq))+getWait(global.selectedUnit); //this process will need to change for overflow reasons
 			show_debug_message("Requeuing "+global.selectedUnit.title+" with priority "+string(nextPriority));
-			ds_priority_add(pq,global.selectedUnit,nextPriority);
+			ds_priority_add(pq,global.selectedUnit,nextPriority);*/
+			enqueue(global.selectedUnit,getWait(global.selectedUnit));
 		}
 		//global.inventory[|global.itemInUse[1]][1] -= 1;
         instance_destroy();

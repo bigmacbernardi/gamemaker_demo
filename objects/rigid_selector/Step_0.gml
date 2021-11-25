@@ -11,6 +11,9 @@
 					layer_sequence_headpos(unitSequence,atkStart);
 					script_execute(rigid_selector.script);
 				}
+			with battle_manager {
+				enqueue(global.selectedUnit);
+			}
 	        if (mode!=2)instance_destroy();//for mode 2 rigid spells, rigid_selector is DESTROYED BY THE TECHNIQUE
 		}
 	else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
