@@ -166,8 +166,8 @@ function enqueue(u,wait=getWait(u)){
 }
 function checkForReadiness(){//ALLY ONLY version;  if using mechanic for enemies, they'd need to check for battle_player instead!  since I got rid of isPlayer bool not trivial to do here
 	/* Top is ALWAYS first pick.  Only proceed if top is player but not teammate.*/
-	if (pq[0][0] == global.selectedUnit.teammate) return true;
-	else if  (pq[0][0] == battle_enemy) return false;
+	if  (pq[0][0].isPlayer != global.selectedUnit.isPlayer) return false;
+	else if (pq[0][0] == global.selectedUnit.teammate) return true;
 	else if (pqSize==1) return false; //shouldn't happen?
 	else if (pqSize==2) //only two slots filled; first is not teammate
 		return (pq[0][1] == global.selectedUnit.teammate);
