@@ -7,6 +7,7 @@ function SoloTech(){
 function flee(){
 	//100% success rate
 	with battle_manager{
+		animCounter = 60;
 		combatPhase = phase.escape;
 	}
 	//battle_manager.alarm[1]=10;

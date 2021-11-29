@@ -5,6 +5,7 @@
 event_inherited();
 
 if (distance_to_object(obj_player) < 200)&&!obj_player.paused{
+	if (distance_to_object(obj_player)<100)obj_player.image_blend=c_white;//for funsies
 	if (obj_player.x > x){
 		if (image_xscale==-1){
 			image_xscale = 1;

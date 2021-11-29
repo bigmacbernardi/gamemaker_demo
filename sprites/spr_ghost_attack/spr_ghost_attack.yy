@@ -201,7 +201,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Ghost",
-    "path": "folders/Sprites/Ghost.yy",
+    "path": "folders/Sprites/Bad Guys/Ghost.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ghost_attack",

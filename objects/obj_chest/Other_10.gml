@@ -4,14 +4,18 @@ if (!opened){
 	//if (can add to inventory) {
 	
 	//obj_player.paused = true;
-	//global.lineNo = 1000; 
+	// 
 	//global.dialogueLine = 1000; 
-	//if (instance_exists(obj_dialoguer)) instance_destroy(obj_dialoguer);
-	//message = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dialoguer);
-	//}
+	//
 	opened = true;
 	global.chests[chestNo] = true;
 	sprite_index = spr_chest_open;
+	var helm = instance_create_depth(0,0,0,obj_oldhelm)
+	ds_list_add(global.equipment,helm);
+	global.typer= 4;
+	global.lineNo = 1001;
+	if (instance_exists(obj_dialoguer)) instance_destroy(obj_dialoguer);
+	message = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dialoguer);
 }
 	
 

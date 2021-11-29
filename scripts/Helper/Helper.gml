@@ -38,19 +38,37 @@ function useItem(){
 function unitAttack(){
 	show_debug_message(global.selectedUnit.title+" attacking "+global.targets[0].title+"#"+string(global.targets[0]));
 	var unit = global.selectedUnit;
+	if unit == noone return; //emergency fix
+/*	var target = global.targets[0];
+var orig_x = unit.x;
+var orig_y= unit.y;
+var xStep = (target.x - orig_x) / 20;
+var yStep = (target.y - orig_y) / 20;
+repeat(20){
+     orig_x += xStep;
+     orig_y += yStep;
+	 layer_sequence_x(unit.unitSequence,orig_x);
+	 layer_sequence_y(unit.unitSequence,orig_y);
+}*///attempt to make animation work
 	if (unit.attackWillHit){
 		for (var i = 0; i < array_length(global.targets); i++){ //should recalculate and put outside, but that's not how attack works rn
+			//if global.targets[i]==noone continue;//emergency fix
+			//else show_debug_message("Hitting "+string(global.targets[i]));
 			with(global.targets[i]){
 					incomingDamage = unit.current[@ STR]; //+= to compound
 					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
 					layer_sequence_headpos(unitSequence,hitStart);
+					audio_play_sound(damageSound,100,false);
 					state = HIT;
 			}
 		}
 	}
 	else{
 		for (var i = 0; i < array_length(global.targets); i++){
+			//if global.targets[i]==undefined continue;//emergency fix
+			//else show_debug_message("Missing "+string(global.targets[i]));
+			
 			with(global.targets[i]){
 				show_debug_message("OFFICIALLY MISSING");
 				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
@@ -61,6 +79,12 @@ function unitAttack(){
 	
 	}
 
+/*repeat(20){
+     orig_x -= xStep;
+     orig_y -= yStep;
+	 layer_sequence_x(unit.unitSequence,orig_x);
+	 layer_sequence_y(unit.unitSequence,orig_y);
+}*/
 }
 
 function equip(char,equI){//character, equipment index

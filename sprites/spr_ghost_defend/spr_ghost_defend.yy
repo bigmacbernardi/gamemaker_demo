@@ -78,7 +78,7 @@
             {"id":"e65586a5-6e86-4f35-936d-62cd9331ce3a","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7e07cc39-21bd-41a6-9071-413d06de5872","path":"sprites/spr_ghost_defend/spr_ghost_defend.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bde77c95-ad42-49b8-bd0d-d64803b24cce","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d711a8df-0986-450b-8a14-68b1a207b44e","path":"sprites/spr_ghost_defend/spr_ghost_defend.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"82fce4c1-cbe5-45dc-ab24-a0a85918d40d","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7fe59eb2-c722-45ac-b06c-819c44916723","path":"sprites/spr_ghost_defend/spr_ghost_defend.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -106,7 +106,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Ghost",
-    "path": "folders/Sprites/Ghost.yy",
+    "path": "folders/Sprites/Bad Guys/Ghost.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ghost_defend",

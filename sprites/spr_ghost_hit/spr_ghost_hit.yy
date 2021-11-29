@@ -74,7 +74,7 @@
             {"id":"6f1abad5-6ecb-4de5-938b-83ef20a3b1cb","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9055dcca-858c-40ed-b304-a7d3aa1fde71","path":"sprites/spr_ghost_hit/spr_ghost_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"17626ed5-8be9-482a-99f5-033d106224d9","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b6bfdf75-3143-43d2-bbe5-92bf5c1e9bf4","path":"sprites/spr_ghost_hit/spr_ghost_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"27d5ba1e-ace1-4d6a-9154-15dffaf41cc5","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b894d33a-f2eb-4891-9e18-6ae5222dd378","path":"sprites/spr_ghost_hit/spr_ghost_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -102,7 +102,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Ghost",
-    "path": "folders/Sprites/Ghost.yy",
+    "path": "folders/Sprites/Bad Guys/Ghost.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ghost_hit",

@@ -82,7 +82,7 @@
             {"id":"00f1bed0-024f-4c98-985c-d338cfa77600","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fe1d5fd2-1cae-4aff-aa82-e542aa79f1c6","path":"sprites/spr_ghost_death/spr_ghost_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"7ef2b746-f794-4bbf-a646-f0c99591841b","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7a10b1b-fb73-4b02-869c-a12affe24c52","path":"sprites/spr_ghost_death/spr_ghost_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"93fe3151-3f1b-4555-8efc-921d5f8d2d7c","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e9a01321-a748-4e0c-903b-dbe483d094e9","path":"sprites/spr_ghost_death/spr_ghost_death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -110,7 +110,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Ghost",
-    "path": "folders/Sprites/Ghost.yy",
+    "path": "folders/Sprites/Bad Guys/Ghost.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ghost_death",

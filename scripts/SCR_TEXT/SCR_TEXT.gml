@@ -24,6 +24,12 @@ switch(argument0){
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;
+	case 1001:
+        global.msg[0]= "Got an Old Helm!/";//maybe make this read the name of last item received
+        global.msg[1]= "%%%";
+        global.msg[2]= "%%%";
+        global.msg[3]= "%%%";
+        break;
 	default: 
         var playerNames = ["Aoi","Yusuf"];
         if (variable_global_exists("currentParty")) global.msg[0]= "* Hey "+playerNames[global.currentParty[0]]+"./";

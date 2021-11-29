@@ -74,7 +74,7 @@
             {"id":"3c234756-3b61-4fb4-8b56-273e1af0fc1b","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"efdf038c-f70d-426c-a59a-ce3f2676d028","path":"sprites/spr_ghost_miss/spr_ghost_miss.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e1f02f16-ad8b-446d-a689-c67ce1fbd2da","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4d561180-deab-40b2-b09f-51188e1b9a5f","path":"sprites/spr_ghost_miss/spr_ghost_miss.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"28c4db92-f470-4f45-98ed-4d1d9b28415b","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"21b5d73a-7414-466e-8b19-0ee21f375def","path":"sprites/spr_ghost_miss/spr_ghost_miss.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -102,7 +102,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Ghost",
-    "path": "folders/Sprites/Ghost.yy",
+    "path": "folders/Sprites/Bad Guys/Ghost.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ghost_miss",

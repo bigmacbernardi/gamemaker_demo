@@ -10,3 +10,8 @@ if (state != DEATH) //clean up some clutter
 	draw_sprite(ui_hp,0,xx,yy-20);
 	draw_sprite_part(ui_hp,1,0,0,hpBarWidth*_hp,hpBarHeight,xx,yy-20);
 }
+else incomingDamage=0;
+if (incomingDamage>0){
+	draw_set_color(c_white);
+	draw_text_transformed(xx +10,yy+20,string(incomingDamage),.5,.5,0);
+}

@@ -1,5 +1,5 @@
 /// @description Another Undertale obj. Will likely merge into something else.
-
+depth = -999;
 count= 0;
 side= 0;
 global.facechange= 1;

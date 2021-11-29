@@ -251,3 +251,5 @@ function foreach_priority(priority) {
         ds_priority_delete_min(priority);
     }
 }
+
+animCounter = 0;

@@ -200,6 +200,15 @@ switch(combatPhase){
 	//return to previous room
 	break;
 	case phase.escape:
+	    for (var i = 0; i<ds_list_size(global.allies);i++){
+		   layer_sequence_xscale(global.allies[|i].unitSequence,-1);
+		}
+        if(animCounter--)>0{
+            for (var i = 0; i<ds_list_size(global.allies);i++){
+                layer_sequence_x(global.allies[|i].unitSequence, layer_sequence_get_x(global.allies[|i].unitSequence)-2);
+            }
+        }
+		else{
 		show_debug_message("You got out of there!");
 		global.foesToSpawn = [];
 		for (var i = 0; i<ds_list_size(global.allies);i++){//if allies are deleted from allies then mayyybe this ain't the best idea lol
@@ -208,6 +217,7 @@ switch(combatPhase){
 			global.party[global.currentParty[i]][XP] += expEarned;//sure since expEarned is only the killed ones
 		}
 		room_goto(global.returnRoom);//orig Room1
+		}
 	break;
 	case phase.lose:
 		show_debug_message("You lose...");
