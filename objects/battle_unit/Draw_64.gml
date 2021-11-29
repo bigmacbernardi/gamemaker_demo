@@ -13,5 +13,5 @@ if (state != DEATH) //clean up some clutter
 else incomingDamage=0;
 if (incomingDamage>0){
 	draw_set_color(c_white);
-	draw_text_transformed(xx +10,yy+20,string(incomingDamage),.5,.5,0);
+	draw_text_transformed(xx +15,yy+30,string(max(0,incomingDamage-current[@ DEF])),.5,.5,0);
 }

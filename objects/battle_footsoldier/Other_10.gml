@@ -1,7 +1,8 @@
 /// @description If MP>3, rolls die for 1/3 chance of "big shot," doing extra damage to all enemies.  Otherwise, shoots player with lowest HP.
 
 if (current[MP]>3){
-	var roll = irandom_range(0,2);
+	var roll = irandom_range(1,3);
+	show_debug_message("Soldier rolled a "+string(roll));
 	doingSpecialAttack = (roll == 3);
 }
 else doingSpecialAttack = false;
@@ -30,4 +31,4 @@ else{
 	
 }
 state = ATTACK; 
-	//audio_play_sound(swingSound,50,false); //gun
+audio_play_sound(swingSound,50,false); //gun

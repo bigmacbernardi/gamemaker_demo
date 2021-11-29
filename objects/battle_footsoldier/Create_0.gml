@@ -12,20 +12,8 @@ hpBarWidth = sprite_get_width(ui_hp);
 hpBarHeight = sprite_get_height(ui_hp);
 doingSpecialAttack = false;
 
-function damageUnit(amount){//physical attacks
-	show_debug_message("Yo it's the soldier override!  HP was "+string(current[@ HP]));
-	var damage = amount - current[@ DEF];
-	show_debug_message("Damage is "+string(damage)+" of "+string(amount));
-	show_debug_message("HP is now "+string(current[@ HP]));
-	current[@ HP] -= max(0,damage);
-}
-function healUnit(amount){
-	current[@ HP] = min(base[HP],current[HP]+amount);
-}
-//
 xp_value = 100;
 cash_value = 100;
-//sPlayer is filler animation for the knight
 unitSequence = layer_sequence_create("Sequences",x,y,sFootsoldier);
 
 //start and end frames for each state
@@ -48,11 +36,24 @@ deathMid = 126;
 deathEnd = 135;
 
 base[HP] = 80;
-current[HP] = base[HP];
+current[HP] = 80;
 
 base[MP] = 6;
-current[MP] = base[MP];
+current[MP] = 6;
 current[STR] = 10;
 current[DEF] = 5;
 current[SPD] = 5;
 current[ACC] = 0.5;
+
+//functions back
+function damageUnit(amount){//physical attacks
+	show_debug_message("Yo it's the soldier override!  HP was "+string(current[@ HP]));
+	var damage = max(0,amount - current[@ DEF]);//will update eventually
+	show_debug_message("Damage is "+string(damage)+" of "+string(amount));
+	current[@ HP] -= max(0,damage);
+	show_debug_message("HP is now "+string(current[@ HP]));
+}
+function healUnit(amount){
+	current[@ HP] = min(base[HP],current[HP]+amount);
+}
+//

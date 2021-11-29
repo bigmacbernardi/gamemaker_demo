@@ -237,7 +237,7 @@ function drawQueue() {
         var key = pq[1][i];
         if element==-4 continue;
 		//func(element, key, i);
-		draw_text_transformed(280,2+(i*15),((i==0)?"NEXT: ":"In "+string(i)+" turn(s): ")+element.title+" ("+string(key)+" left)",.375,.375,0);
+		draw_text_transformed(280,3+(i*13),((i==0)?"NEXT: ":"On level "+string(floor(log2(i))+1)+": ")+element.title+" ("+string(key)+" left)",.375,.375,0);
     }
 }
 function foreach_priority(priority) {

@@ -1,9 +1,10 @@
 if (event_data[? "event_type"] == "sequence event"){
-	switch(event_data[? "message"]){
+show_debug_message("Broadcast received: '"+event_data[? "message"]+"'");
+    switch(event_data[? "message"]){
 		case "attackSent":
-			//show_debug_message(layer_instance_get_instance(event_data[? "element_id"]).title + "'s attack broadcast received");
 			//enqueue(layer_instance_get_instance(event_data[? "element_id"]));
 			selectedFinished = true;
+			if !global.selectedUnit.isPlayer processFinished = true;//just do this
 		break;
 		case "itemUsed": //for all i know, this could work as the same case as the above
 			show_debug_message("Item broadcast received");
@@ -12,7 +13,7 @@ if (event_data[? "event_type"] == "sequence event"){
 			processFinished = true;
 		break;
 		case "unitMiss":
-		case "unitHurt":
+		case "unitHit":
 			processFinished = true;
 		break;
 		
