@@ -18,7 +18,9 @@ show_debug_message("Broadcast received: '"+event_data[? "message"]+"'");
 		break;
 		
 		case "playerDeath":
+		break;
 		case "enemyDeath": //remove(layer_instance_get_instance(event_data[? "element_id"]));
+			processFinished = true;
 		break;
 	}
 }

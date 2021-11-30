@@ -15,15 +15,7 @@ switch(state){
 			turnFinished = true;
 			//if (attackWillHit){
 			//	layer_sequence_headpos(unitSequence, idleStart);
-			state = IDLE;//NEW stuff below this line
-			//broadcast manager do the following
-			/*battle_manager.enqueue(id);//i guess?
-			if id==global.selectedUnit battle_manager.selectedFinished = true;*/
-			//}
-			//else{
-			//	layer_sequence_headpos(unitSequence, missStart);
-			//	state = MISS;
-			//}
+			state = IDLE;
 			with battle_manager{
 				enqueue(myId);	
 			}
@@ -44,8 +36,7 @@ switch(state){
 			with battle_manager{
 				enqueue(myId);	
 			}
-			//if id==global.selectedUnit battle_manager.selectedFinished = true; //i guess? figure this out
-
+			
 		}
 	
 	break;
