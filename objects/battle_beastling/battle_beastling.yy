@@ -23,9 +23,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"title","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"Imperial Footsoldier","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"swingSound","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"Punch3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"damageSound","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"gruntoof","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "bad guys",
     "path": "folders/Objects/battle resources/bad guys.yy",

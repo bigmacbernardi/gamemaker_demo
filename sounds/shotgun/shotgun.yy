@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "shortdamage.wav",
-  "duration": 3.424943,
+  "soundFile": "shotgun.mp3",
+  "duration": 2.786395,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "shortdamage",
+  "name": "shotgun",
   "tags": [],
   "resourceType": "GMSound",
 }

@@ -16,36 +16,37 @@ doingSpecialAttack = false;
 
 xp_value = 100;
 cash_value = 100;
-unitSequence = layer_sequence_create("Sequences",x,y,sFootsoldier);
+unitSequence = layer_sequence_create("Sequences",x,y,sBeastling);
 
 //start and end frames for each state
 idleStart = 0;
-idleEnd = 14;
-atkStart = 15;
-atkEnd = 35;
+idleEnd = 16;
+atkStart = 17;
+atkEnd = 34;
 atk2Start = 35;
-atk2End = 56;
-intoDefStart = 58;
-intoDefEnd = 65;
-defStart = 66;
-defEnd = 72;
-hitStart = 73;
-hitEnd = 98;
-missStart = 99;
-missEnd = 112;
-deathStart = 113;
-deathMid = 126;
-deathEnd = 135;
+atk2End = 63;
+intoDefStart = 63;
+intoDefEnd = 68;//make contiguous if need be
+defStart = 63;
+defEnd = 68;
+hitStart = 68;
+hitEnd = 73;
+missStart = 73;
+missEnd = 89;
+deathStart = 90;
+deathMid = 91;
+deathEnd = 92;
 
-base[HP] = 80;
-current[HP] = 80;
+base[HP] = 24;
+current[HP] = base[HP];
 
-base[MP] = 6;
-current[MP] = 6;
-current[STR] = 10;
-current[DEF] = 5;
+base[MP] = 10;
+current[MP] = base[MP];
+base[STR] = 5;
+current[STR] = base[STR];
+current[DEF] = 1;
 current[SPD] = 5;
-current[ACC] = 0.5;
+current[ACC] = 0.6;
 hasGoneOnce = false;
 //functions back
 function damageUnit(amount){//physical attacks

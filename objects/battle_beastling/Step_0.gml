@@ -74,8 +74,7 @@ switch(state){
 				else{
 					var myId = id;
 					layer_sequence_headpos(unitSequence, deathStart);
-					audio_play_sound(guydies,100,0);
-					show_debug_message("Soldier killed");
+					show_debug_message("Beast slew");
 					battle_manager.expEarned += xp_value; //naive!  doesn't account for resurrection and assumes xp_value exists
 					battle_manager.cashEarned += cash_value; //ditt'
 					ds_list_delete(global.enemies,ds_list_find_index(global.enemies,id));

@@ -46,7 +46,6 @@
         {"properties":[
             {"propertyId":{"name":"roomColor","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"objectId":{"name":"obj_shaderlight","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"value":"$FF000000","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_shaderlight","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":112.0,"y":96.0,"resourceVersion":"1.0","name":"inst_2BD28C73","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_temp","path":"objects/obj_enemy_temp/obj_enemy_temp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":224.0,"resourceVersion":"1.0","name":"inst_7233049F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_elder","path":"objects/obj_elder/obj_elder.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":80.0,"resourceVersion":"1.0","name":"inst_2028D106","tags":[],"resourceType":"GMRInstance",},
@@ -112,7 +111,6 @@
     {"name":"inst_29C380F3","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2BD28C73","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_74D04F0D","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_7233049F","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

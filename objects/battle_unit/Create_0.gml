@@ -3,7 +3,7 @@
 
 #macro Display_ScaleX display_get_gui_width()/Camera_Width
 #macro Display_ScaleY display_get_gui_height()/Camera_Height
-
+depth = -y;
 //macros for unit stats - set in initializer instead
 //#macro HP 0
 //#macro STR 1
