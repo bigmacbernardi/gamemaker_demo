@@ -259,3 +259,4 @@ function foreach_priority(priority) {
 }
 
 animCounter = 0;
+currentMessage = "";

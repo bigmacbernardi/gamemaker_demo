@@ -5,6 +5,7 @@
 if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{
+		battle_manager.currentMessage =  "";
 		if options[|index].usable{
 			//for(var i = 0; i < ds_list_size(global.allies); i++){
 			//if (global.allies[|i].state != DEATH){//probably shouldn't be a concern?
@@ -23,6 +24,7 @@ else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space
 	}
 else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
 	{
+		battle_manager.currentMessage = "";	
 		battle_manager.allowInput = true;
 		button_attack.visible = 1;
 		button_skill.visible = 1;
@@ -32,6 +34,7 @@ else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shif
         instance_destroy();
 	}
 else {
+	battle_manager.currentMessage =  options[|index].description;
 	var _up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 	var _down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 	var _left = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"));

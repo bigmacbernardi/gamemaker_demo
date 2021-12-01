@@ -25,3 +25,9 @@ else*/drawQueue();
 					(ds_list_find_index(global.enemies,global.units[|i])!=-1?"(enemy, alive)":"(dead)"));
 	draw_text_transformed(280,2+(i*15),string(i)+": "+global.units[|i].title+"#"+string(global.units[|i])+" "+guy_type,.375,.375,0);
 }*/
+
+if (currentMessage!=""){
+	draw_sprite_stretched(spr_menu_temp,0,0,0,camera_get_view_width(cam),40);
+	draw_set_color(c_white);
+	draw_text_transformed(7,10,currentMessage,.6,.6,0);
+}
