@@ -14,8 +14,8 @@ hpBarWidth = sprite_get_width(ui_hp);
 hpBarHeight = sprite_get_height(ui_hp);
 doingSpecialAttack = false;
 
-xp_value = 100;
-cash_value = 100;
+xp_value = 80;
+cash_value = 40;
 unitSequence = layer_sequence_create("Sequences",x,y,sBeastling);
 
 //start and end frames for each state
