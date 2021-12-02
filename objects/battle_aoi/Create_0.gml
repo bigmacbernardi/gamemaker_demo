@@ -26,4 +26,12 @@ current[DEX] = base[@ DEX];
 current[WIS] = base[@ WIS] + (global.equipped[AOI][1]!=noone?global.equipped[AOI][1].wisBonus:0);
 current[ACC] = base[@ ACC]; // TIMES weapon accuracy!
 
+if (current[HP]==0){//only added for start of battle
+	var myId = id;
+	layer_sequence_headpos(unitSequence, deathStart);
+	state = DEATH;	
+	with battle_manager{
+		remove(myId);	
+	}
+}
 index = AOI;

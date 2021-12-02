@@ -155,6 +155,7 @@ function remove(unit){//assumes only ONE of this instance is in queue.  not expl
 }
 function enqueue(u,wait=getWait(u)){
 	remove(u);//should never double queue the same item
+	if (u.current[HP]<1)return;
 	show_debug_message("Enqueueing "+u.title);
 	pq[0][pqSize]=u;
 	pq[1][pqSize]=wait;

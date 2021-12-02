@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-
+//layer_shader(unitSequence,shd_Sepia);
 base[HP] = global.party[YUSUF][HP];
 base[MP] = global.party[YUSUF][MP];
 base[DEF] = global.party[YUSUF][DEF];
@@ -28,4 +28,12 @@ current[WIS] = base[@ WIS] + (global.equipped[YUSUF][1]!=noone?global.equipped[Y
 current[ACC] = base[@ ACC]; // TIMES weapon accuracy!
 
 
+if (current[HP]==0){//only added for start of battle
+	var myId = id;
+	layer_sequence_headpos(unitSequence, deathStart);
+	state = DEATH;	
+	with battle_manager{
+		remove(myId);	
+	}
+}
 index = YUSUF;//will make slotting easier
