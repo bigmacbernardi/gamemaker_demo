@@ -190,12 +190,29 @@ switch(combatPhase){
 	case phase.win:
 		show_debug_message("You win!");
 		global.foesToSpawn = [];
-		for (var i = 0; i<ds_list_size(global.allies);i++){//if allies are deleted from allies then mayyybe this ain't the best idea lol
-			global.points[global.currentParty[i]][HP] = global.allies[|i].current[HP];
-			global.points[global.currentParty[i]][MP] = global.allies[|i].current[MP];
+		for (var i = 0; i<4;i++){
+			if global.currentParty[i]==noone continue;
+			global.points[global.currentParty[i]][HP] = max(global.units[|i].current[HP]);
+			global.points[global.currentParty[i]][MP] = max(global.units[|i].current[MP]);
 			global.party[global.currentParty[i]][XP] += expEarned;
 		}
 		global.money += cashEarned;
+		
+		if (global.points[global.currentParty[0]][HP]==0){//reassign leader
+			if global.points[global.currentParty[1]][HP]>0{
+				var temp = global.currentParty[1];
+				global.currentParty[1] = global.currentParty[0];
+				global.currentParty[0] = temp;
+			}
+			else{//swap teams
+				var temp = global.currentParty[0];
+				global.currentParty[2] = global.currentParty[0];
+				global.currentParty[2] = temp;
+				temp = global.currentParty[1];
+				global.currentParty[1] = global.currentParty[3];
+				global.currentParty[3] = temp;
+			}
+		}
 		room_goto(global.returnRoom);//orig Room1
 	//return to previous room
 	break;
@@ -211,10 +228,26 @@ switch(combatPhase){
 		else{
 		show_debug_message("You got out of there!");
 		global.foesToSpawn = [];
-		for (var i = 0; i<ds_list_size(global.allies);i++){//if allies are deleted from allies then mayyybe this ain't the best idea lol
-			global.points[global.currentParty[i]][HP] = global.allies[|i].current[HP];
-			global.points[global.currentParty[i]][MP] = global.allies[|i].current[MP];
+		for (var i = 0; i<4;i++){
+			if global.currentParty[i]==noone continue;
+			global.points[global.currentParty[i]][HP] = max(0,global.units[|i].current[HP]);
+			global.points[global.currentParty[i]][MP] = max(0,global.units[|i].current[MP]);
 			global.party[global.currentParty[i]][XP] += expEarned;//sure since expEarned is only the killed ones
+		}
+		if (global.points[global.currentParty[0]][HP]==0){//reassign leader
+			if global.points[global.currentParty[1]][HP]>0{
+				var temp = global.currentParty[1];
+				global.currentParty[1] = global.currentParty[0];
+				global.currentParty[0] = temp;
+			}
+			else{//swap teams
+				var temp = global.currentParty[0];
+				global.currentParty[2] = global.currentParty[0];
+				global.currentParty[2] = temp;
+				temp = global.currentParty[1];
+				global.currentParty[1] = global.currentParty[3];
+				global.currentParty[3] = temp;
+			}
 		}
 		room_goto(global.returnRoom);//orig Room1
 		}
