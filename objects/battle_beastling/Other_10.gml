@@ -1,8 +1,8 @@
 /// @description If MP>4, rolls die for special
 if (hasGoneOnce && current[MP]>4){
-	var roll = irandom_range(1,5);
+	var roll = irandom_range(1,6);
 	show_debug_message("Beast rolled a "+string(roll));
-	doingSpecialAttack = (roll > 3);
+	doingSpecialAttack = (roll > 4);
 }
 else{
 	hasGoneOnce = true;

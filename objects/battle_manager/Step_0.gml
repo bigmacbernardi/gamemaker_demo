@@ -192,8 +192,8 @@ switch(combatPhase){
 		global.foesToSpawn = [];
 		for (var i = 0; i<4;i++){
 			if global.currentParty[i]==noone continue;
-			global.points[global.currentParty[i]][HP] = max(global.units[|i].current[HP]);
-			global.points[global.currentParty[i]][MP] = max(global.units[|i].current[MP]);
+			global.points[global.currentParty[i]][HP] = max(0,global.units[|i].current[HP]);
+			global.points[global.currentParty[i]][MP] = max(0,global.units[|i].current[MP]);
 			global.party[global.currentParty[i]][XP] += expEarned;
 		}
 		global.money += cashEarned;
