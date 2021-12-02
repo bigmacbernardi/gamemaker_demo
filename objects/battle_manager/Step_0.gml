@@ -96,6 +96,7 @@ switch(combatPhase){
 			button_skill.visible = 1;
 			button_dual_wait.visible = 1;
 			button_item.visible = 1;
+			if (!usingMouse) button_attack.selected = true;
 			//show_debug_message("Showing menu buttons");
 			//menu = create_button(0,200,280,80,"Attack",simulateInput(global.enemies));
 		}

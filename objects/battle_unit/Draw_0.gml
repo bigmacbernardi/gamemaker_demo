@@ -8,5 +8,6 @@ if(selected&&isPlayer){
 }
 
 if(targeted){
-		draw_sprite(spr_angryindicator,0,x,y);
+		var targetCenter = x+unitSequence.activeTracks[0].width/2;
+		draw_sprite(spr_select_down,0,targetCenter-5,y-2);
 }

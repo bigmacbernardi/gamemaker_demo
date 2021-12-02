@@ -1,4 +1,4 @@
-/// @description Used for compound events
+/// @description No navigation, just accept or cancel
 // You can write your code in this editor
 //if (mode==0) {//enemies
 	if (!frameHasPassed) frameHasPassed = true;

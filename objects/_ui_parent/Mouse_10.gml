@@ -6,3 +6,4 @@ if (upNorth != noone) upNorth.isSelected = false;
 if (downSouth != noone) downSouth.isSelected = false;
 if (leftWest != noone) leftWest.isSelected = false;
 if (rightEast != noone) rightEast.isSelected = false;
+if (!battle_manager.usingMouse) battle_manager.usingMouse=true;

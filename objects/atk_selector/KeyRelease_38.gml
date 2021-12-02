@@ -1,7 +1,6 @@
-/// @description Moves index up
+/// @description Moves index up.  Moving to step.
 // You can write your code in this editor
+/*var sets = [global.enemies,global.allies];
 if (index == 0) index = ds_list_size(global.enemies)-1;
-else index -= 1;
-/*while (global.enemies[|index].state == DEATH) // dead enemies are not in the "enemies" list, so get rid of the DEATH check.
-index = abs(index - 1)%ds_list_size(global.enemies);*/
-global.targets = [global.enemies[|index]];
+else index--;
+global.targets = [sets[mode][|index]];*/
