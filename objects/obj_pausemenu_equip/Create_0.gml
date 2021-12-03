@@ -18,6 +18,9 @@ scrollLevel = 0; //for full party list (sublist)
 subY = y+sprite_height-80/*half spr_menu_temp.height*/;
 front_sprites = [spr_aoi,spr_yusuf,spr_old_man,spr_old_man44];
 mode = 0;//can select either
-//mode 1: has selected slot from top part
-//mode 2: has selected party member from bottom part
+//mode 1: has selected character from top part
+//mode 2: has selected slot AND subslot from top part
+//mode 3: has selected party member from bottom part
+//mode 4: has selected party member from bottom part AND character
 index2 = -1;//so none are selected at first
+subindex= 0;//equip slot; weapon,armor,offhand, accessory

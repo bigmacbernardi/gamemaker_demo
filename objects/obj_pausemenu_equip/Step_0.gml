@@ -6,8 +6,8 @@ if (!frameHasPassed) frameHasPassed = true;
 else if go
 	{ 
 		if (mode == 0){
-			if (index==4){ //selected
-				mode = 2;
+			if (index==4){ //selecting bottom part
+				mode = 3;
 				index = 0;
 			}
 			else{
@@ -16,7 +16,10 @@ else if go
 			}
 			
 		}
-		else /*if (mode==1) doesn't matter*/{
+		else if mode==1 or mode==4{//selecting SUBSLOT
+			if mode == 1 mode = 2;
+		}
+		else{//modes 2 or 3
 			if (index > 1)&&((global.currentParty[0]==noone)||(global.currentParty[1]==noone)){
 				//this check should be pushed further down the logic
 				show_debug_message("Fill out your first team first!");//pop up as window
@@ -78,8 +81,13 @@ else {
 	var _right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 	var _moveH = _right - _left;
 	var _moveV = _down - _up;
-	if (_moveV != 0){ 
-		if (index ==4){ //submenu is selected in mode 0
+	if (_moveV != 0){
+		if (mode ==1 or mode ==4){//selecting subindex
+			subindex+=_moveV;
+			if subindex<0 subindex=3;
+			else if subindex>3 subindex=0;
+		}
+		else if (index ==4){ //submenu is selected in mode 0
 			if (_moveV>0){//moving down
 				if (ds_list_size(global.availableParty) > index2+4) index2+=4;
 				else if (mode!=1) {

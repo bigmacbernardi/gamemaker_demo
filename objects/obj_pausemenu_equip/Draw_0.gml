@@ -13,9 +13,10 @@ for (var i = 0; i < 4; i++){// upper slots
   if (iAm!=noone) {
 	draw_text_transformed(drawX,drawY,global.names[iAm],.5,.5,0);
 	drawY+=12;
+	var normalColor = ((i!=index)?c_black:c_white);
 	for (var j = 0; j < 4; j++){
+		draw_set_color((j==subindex and i==index)?c_yellow:normalColor);
 		//draw_sprite(front_sprites[global.currentParty[i]],0,drawX+40,drawY-3);
-		draw_set_color((i!=index)?c_black:c_white);
 		draw_text_transformed(drawX,drawY,equipments[j],.5,.5,0);
 		if (global.equipped[iAm][j]==noone) {
 			draw_set_color(c_dkgray);
