@@ -12,18 +12,13 @@ draw_text_transformed(drawX,drawY,global.names[options[|index]],.8,.8,0);
 draw_text_transformed(drawX+94,drawY,"Level 1",.7,.7,0);
 drawY +=16;
 draw_text_transformed(drawX,drawY,classes[options[|index]],.7,.7,0);
-/*drawing stats and stat tree*/
+/*used to draw stats AND stat tree here; now just draws stats*/
 
 //var mins = [0,0,0,0,0,0,0];//should match seven stats at level 1
 //var maxs = [99,99,99,99,99,99,99];//should match seven stats at level 99
 drawX = x+20;
-drawY+=15;
+drawY+=15;//total: y+43
 
-var lineY = drawY+20;
-var jointX = drawX + 76;//where they meet
-var jointY = y+camera_get_view_height(cam)-60;
-var destY = jointY+10;
-var bendY = lineY+round((jointY-lineY)*2/3);
 for (var i = 0; i < 7; i++){
   //var bendY = lineY+((jointY-lineY)/2)+(10*i);
   //if (i!=index) draw_set_color(c_black);//maybe re-enable for guide mode
@@ -32,14 +27,7 @@ for (var i = 0; i < 7; i++){
   draw_set_color(c_black);
   draw_text_transformed(drawX,drawY+8,global.party[options[|index]][i+2],.75,.75,0);
   //draw_text_transformed(drawX+104,drawY,options[|i].numOwned,.75,.75,0);
-  drawX += 4;
-  repeat(4){
-  draw_line(drawX,lineY,drawX,bendY);
-  draw_line(drawX,bendY,jointX,jointY);
-  draw_line(jointX,jointY,jointX,destY);
-  drawX+=.5;
-  }
-  drawX += 18;
+  drawX += 24;
   
 }
 /* dividing line */

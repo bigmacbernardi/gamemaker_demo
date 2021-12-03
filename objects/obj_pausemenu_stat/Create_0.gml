@@ -21,3 +21,4 @@ scrollLevel = 0;
   ds_list_add(options,instance_create_depth(drawX,drawY,global.inventory[|i][1],global.inventory[|i][0]));
   drawY += 24;
 }*/
+mytree = instance_create_depth(x,y,depth-1,obj_stattree);

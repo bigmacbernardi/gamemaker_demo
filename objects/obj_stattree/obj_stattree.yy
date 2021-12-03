@@ -25,11 +25,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "story",
-    "path": "folders/Objects/overworld/story.yy",
+    "name": "pause",
+    "path": "folders/Objects/GUI/pause.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_gameover",
+  "name": "obj_stattree",
   "tags": [],
   "resourceType": "GMObject",
 }

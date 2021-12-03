@@ -9,16 +9,16 @@
   "length": 100.0,
   "events": {
     "Keyframes": [
-      {"id":"8b94358e-2a45-486d-b70b-1f8e1abfbfea","Key":35.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
-              "attackSent",
-            ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
-      {"id":"23392119-53af-4198-b8a4-f45278898a38","Key":44.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"36f42c20-af2c-4183-a21d-dc22cfc6a59a","Key":44.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitHurt",
             ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
-      {"id":"e6a94e37-c366-4d9e-9e69-dce2f1346299","Key":48.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"21cfb13e-f8ea-4e8e-8ecd-b09cc91a6576","Key":46.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+              "attackSent",
+            ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
+      {"id":"3f89dadb-8888-427a-a09d-b182cc5548f8","Key":48.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitMiss",
             ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
-      {"id":"8c19141a-f4fe-47c8-b1c8-a06a23e2ea08","Key":68.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"d1b2ed66-d842-4b3e-9d99-2002040ce7ae","Key":68.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "playerDeath",
             ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
     ],
@@ -27,10 +27,10 @@
   },
   "moments": {
     "Keyframes": [
-      {"id":"6f94c9de-b28f-4ecf-b285-c0f5c8761392","Key":31.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"7c36745b-44ca-4edc-b495-19433c75be37","Key":32.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "checkForHit",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
-      {"id":"f021fd5f-50ad-44c6-8b1c-31e133ff6530","Key":33.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"1f6735ee-6cad-4235-ae4a-568ae063a63c","Key":37.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitAttack",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
     ],

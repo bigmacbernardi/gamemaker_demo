@@ -9,19 +9,19 @@
   "length": 100.0,
   "events": {
     "Keyframes": [
-      {"id":"278a547d-000c-4201-a4a5-ddaa6b7ccb4b","Key":35.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"ceea0a35-3e87-431b-b824-400eb0c0632e","Key":36.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "attackSent",
             ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
-      {"id":"ab20f71a-a844-4664-9403-d7153368e130","Key":44.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"7a42890e-f0d6-41bc-8c01-8ae09feadd3a","Key":44.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitHurt",
             ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
-      {"id":"4777bf94-02a0-4539-9840-7b029b265c60","Key":48.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"fd5d3d6a-13b8-43df-ab8d-30fdfeca7a32","Key":48.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitMiss",
             ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
-      {"id":"6701c090-4420-42e0-bcca-1740c579f919","Key":68.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"978beba7-88c0-430a-9f3f-39bf8d5e6adf","Key":68.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "playerDeath",
             ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
-      {"id":"2385fe50-b5fe-4bbe-a5ac-138b65a56a14","Key":80.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"e67e372c-364f-430b-a133-79657239d911","Key":80.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "itemUsed",
             ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
     ],
