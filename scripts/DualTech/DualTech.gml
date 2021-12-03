@@ -106,7 +106,7 @@ function MuguMugu(){
 		checkForHit();
 		if (global.selectedUnit.attackWillHit){
 			with(global.targets[i]){ // Freeze Attack / 4
-					incomingDamage = round((battle_aoi.current[@ WIS]*1.25) + (battle_aoi.current[@ STR] / 4)* ((battle_aoi.current[@ AGI] / 2)+(battle_aoi.current[@ CHA] / 2)))/4;
+					incomingDamage = round(((battle_aoi.current[@ WIS]*1.25) + (battle_aoi.current[@ STR] / 4)* ((battle_aoi.current[@ AGI] / 2)+(battle_aoi.current[@ CHA] / 2)))/4);
 					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
 					layer_sequence_headpos(unitSequence,hitStart);

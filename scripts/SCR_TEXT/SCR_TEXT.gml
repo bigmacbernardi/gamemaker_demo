@@ -13,8 +13,8 @@ switch(argument0){
         global.msg[3]= "%%%";
         break;
 	case 2: 
-        global.msg[0]= "* Sign line 1./";
-        global.msg[1]= "PUNCHLINE!/";
+        global.msg[0]= "Hold SHIFT to run./";
+        global.msg[1]= "..."+global.names[global.currentParty[0]]+"./";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;
@@ -37,8 +37,8 @@ switch(argument0){
         global.msg[3]= "%%%";
         break;
 	default: 
-        var playerNames = ["Aoi","Yusuf"];
-        if (variable_global_exists("currentParty")) global.msg[0]= "* Hey "+playerNames[global.currentParty[0]]+"./";
+        //var playerNames = ["Aoi","Yusuf"];
+        if (variable_global_exists("currentParty")) global.msg[0]= "* Hey "+global.names[global.currentParty[0]]+"./";
         else  global.msg[0]= "* Hey kid./";
 		global.msg[1]= "I'm over here. &But don't come talk to me,&or the game will break./%";
         global.msg[2]= "%%%";
