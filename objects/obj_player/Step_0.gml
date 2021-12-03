@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 //pseudoY = y + sprite_height/2;
-right_key = keyboard_check(0x44);
-left_key = keyboard_check(0x41);
-up_key = keyboard_check(0x57);
-down_key = keyboard_check(0x53);
+right_key = keyboard_check(0x44) or keyboard_check(vk_right);
+left_key = keyboard_check(0x41) or keyboard_check(vk_left);
+up_key = keyboard_check(0x57) or keyboard_check(vk_up);
+down_key = keyboard_check(0x53) or keyboard_check(vk_down);
 run_key = keyboard_check(vk_shift);
 check_butt = keyboard_check(vk_space) || keyboard_check(vk_enter);
 pause_butt = (keyboard_check_released(vk_escape) || keyboard_check_released(vk_backspace));
