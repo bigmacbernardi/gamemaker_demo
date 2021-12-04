@@ -2,3 +2,4 @@
 // You can write your code in this editor
 selectedFinished = true;
 processFinished = true;//NEW ADDITION
+alarm1s++;

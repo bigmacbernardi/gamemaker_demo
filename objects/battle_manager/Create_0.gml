@@ -262,3 +262,4 @@ function foreach_priority(priority) {
 animCounter = 0;
 currentMessage = "";
 usingMouse = false;
+alarm1s=0; atkBroadcasts=0; itmBroadcasts=0; hitMissBroadcasts=0; deathBroadcasts=0;

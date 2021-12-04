@@ -14,9 +14,12 @@ draw_text_transformed(90,20,"processFinished",.45,.45,0);
 draw_set_color(global.selectedUnit>0 && global.selectedUnit.turnFinished?c_white:c_dkgray);
 draw_text_transformed(5,27,"global.selectedUnit.turnFinished",.45,.45,0);
 draw_set_color(c_white);
-draw_text_transformed(176,27,"("+string(unitsFinished) + " finished)",.45,.45,0);
+draw_text_transformed(176,27,"("+string(unitsFinished) + "/"+string(ds_list_size(global.units))+ " 'finished')",.45,.45,0);
 draw_set_color(usingMouse?c_white:c_dkgray);
 draw_text_transformed(90,34,"usingMouse",.45,.45,0);
+draw_set_color(c_ltgray);
+draw_text_transformed(45,43,string(alarm1s)+" alarm(s) triggered.    BROADCASTS:",.42,.42,0);
+draw_text_transformed(74,50,"ATK: "+string(atkBroadcasts)+" ITM: "+string(itmBroadcasts)+" H/M: "+string(hitMissBroadcasts)+" DEAD: "+string(deathBroadcasts),.42,.42,0);
 
 
 draw_set_color(c_white);
