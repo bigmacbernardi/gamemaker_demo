@@ -1,7 +1,6 @@
 /// @description Should eventually show perks that come with teams
 // You can write your code in this editor
 draw_self();//background
-var options = global.equipment;
 var drawX = x+10;
 draw_set_color(c_white);
 var drawY = y+5;

@@ -15,6 +15,7 @@ scrollLevel = 0; //for full party list (sublist)
 //  drawY += 24;
 //}
 
+options = global.equipment;
 subY = y+sprite_height-80/*half spr_menu_temp.height*/;
 front_sprites = [spr_aoi,spr_yusuf,spr_old_man,spr_old_man44];
 mode = 0;//can select either

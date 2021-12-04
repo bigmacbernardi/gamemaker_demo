@@ -9,17 +9,23 @@ else if go
 			if (index==4){ //selecting bottom part
 				mode = 3;
 				index = 0;
+				subindex = options[|index2].category;
 			}
 			else{
 				mode = 1;
-				index2 = 0;
+				//index2 = 0;
 			}
 			
 		}
-		else if mode==1 or mode==4{//selecting SUBSLOT
-			if mode == 1 mode = 2;
+		//else if mode==1 or mode==4{//selecting SUBSLOT
+		else if mode == 1{
+			mode = 2;
+			index2 = 0;
 		}
-		else{//modes 2 or 3
+		/*else if mode==3{//actually, shouldn't exist
+			mode = 4;
+		}*/
+		else{//modes 2 and higher
 			if (index > 1)&&((global.currentParty[0]==noone)||(global.currentParty[1]==noone)){
 				//this check should be pushed further down the logic
 				show_debug_message("Fill out your first team first!");//pop up as window
@@ -28,27 +34,24 @@ else if go
 				index2 = -1;
 			}
 			else{
-				var memberToSlot = global.availableParty[|index2];
-				var currentPos = -1;
-				for (var i =0; i<4;i++){
-					if (global.currentParty[i] == memberToSlot){
-						currentPos = i;
+				var equipToSlot = options[|index2];
+				var currentOwner = equipToSlot.currentUser;
+				/*for (var i =0; i<4;i++){
+					if (global.equipped[i][subindex] == equipToSlot){//this is already done by curuser
+						currentOwner = i;
 						break;
 					}
+				}*/
+				if global.equipped[global.currentParty[index]][subindex]!= noone //if they already have something
+					 global.equipped[global.currentParty[index]][subindex].currentUser=noone;
+				if (currentOwner!=noone){
+					global.equipped[currentOwner][subindex]=noone;
+					/*var temp = global.currentParty[index];
+					global.currentParty[index] = global.currentParty[currentPos];
+					global.currentParty[currentPos] = temp;*/
 				}
-				if (currentPos==-1){
-					global.currentParty[index] = global.availableParty[|index2]
-				}
-				else{
-					if (index > 1)&&((global.currentParty[index]==noone)){
-						show_debug_message("Fill out your first team first!");
-					}
-					else{
-						var temp = global.currentParty[index];
-						global.currentParty[index] = global.currentParty[currentPos];
-						global.currentParty[currentPos] = temp;
-					}
-				}
+				global.equipped[global.currentParty[index]][subindex] = equipToSlot;
+				global.equipped[global.currentParty[index]][subindex].currentUser = global.currentParty[index];
 				mode = 0;
 				index = 0;
 				index2 = -1;
@@ -67,7 +70,12 @@ else if cancel
 			}*/
 			instance_destroy();
 		}
-		else mode = 0;
+		else{
+			mode = 0;
+			index = 0;
+			index2 = -1;
+			subindex=0;
+		}
 	}
 /*else if (obj_player.paused)&&(pause_butt){ //work out quick unpause later
 	obj_player.paused = false;
@@ -82,7 +90,7 @@ else {
 	var _moveH = _right - _left;
 	var _moveV = _down - _up;
 	if (_moveV != 0){
-		if (mode ==1 or mode ==4){//selecting subindex
+		if (mode ==1){//selecting subindex
 			subindex+=_moveV;
 			if subindex<0 subindex=3;
 			else if subindex>3 subindex=0;
@@ -138,7 +146,7 @@ else {
 			
 		}
 	}
-	if (_moveH != 0)&&(mode!=2)&&(index2!=-1){ 
+	if (_moveH != 0)&&(mode<3)&&(index2!=-1){ 
 		index2 += _moveH;	
 		if (index2 > ds_list_size(global.availableParty)-1) index2 = max(index2-3,0);
 		else if (index2 < 0) index2 = min(index+3,ds_list_size(global.availableParty)-1);
