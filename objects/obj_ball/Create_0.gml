@@ -6,7 +6,8 @@
 phy_linear_velocity_x = obj_skee_meter2.powX;
 phy_linear_velocity_y = obj_skee_meter2.powY;
 instance_destroy(obj_skee_meter2);
-if instance_exists(obj_skee_meter1) instance_destroy(obj_skee_meter1);
+if instance_exists(obj_skee_meter1) 
+	instance_destroy(obj_skee_meter1);
 //downwardAcceleration = 1;
 baseDepth=depth;
 mode = 0;

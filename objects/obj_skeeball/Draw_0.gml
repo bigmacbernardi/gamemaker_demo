@@ -8,6 +8,8 @@ draw_rectangle(0,0,leftX,camera_get_view_height(cam),false);
 draw_rectangle(rightX,0,camera_get_view_width(cam),camera_get_view_height(cam),false);
 
 draw_set_color(c_black);
-var dividingLine =  220;
+var dividingLine =  440;
 draw_line(0,dividingLine,camera_get_view_width(cam),dividingLine);
+draw_circle((rightX-leftX)/2+leftX,220,220,true);
+draw_circle((rightX-leftX)/2+leftX,220,100,true);
 draw_text(10,camera_get_view_height(cam)-50,"Balls remaining: "+string(ballsRemain));
