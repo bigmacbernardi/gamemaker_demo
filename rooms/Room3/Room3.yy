@@ -54,6 +54,7 @@
             {"propertyId":{"name":"fightNo","path":"objects/obj_enemy_tribble/obj_enemy_tribble.yy",},"objectId":{"name":"obj_enemy_tribble","path":"objects/obj_enemy_tribble/obj_enemy_tribble.yy",},"value":"6","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_enemy_tribble","path":"objects/obj_enemy_tribble/obj_enemy_tribble.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":84.0,"y":144.0,"resourceVersion":"1.0","name":"inst_3604F18B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_temp","path":"objects/obj_enemy_temp/obj_enemy_temp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":272.0,"resourceVersion":"1.0","name":"inst_707FA3A4","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_warp_skeeball","path":"objects/obj_warp_skeeball/obj_warp_skeeball.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":192.0,"resourceVersion":"1.0","name":"inst_383C8D92","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_shaderreset","path":"objects/obj_shaderreset/obj_shaderreset.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":384.0,"resourceVersion":"1.0","name":"inst_6605A28E","tags":[],"resourceType":"GMRInstance",},
@@ -120,6 +121,7 @@
     {"name":"inst_F93D98A","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_3604F18B","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_707FA3A4","path":"rooms/Room3/Room3.yy",},
+    {"name":"inst_383C8D92","path":"rooms/Room3/Room3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
