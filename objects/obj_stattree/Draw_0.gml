@@ -18,5 +18,8 @@ for (var i = 0; i < 7; i++){
   drawX += 18;
 }
 for (var i = 0;i<16;i++){
-	draw_sprite(perks[i].sprite_index,0,perks[i].x,perks[i].y);	
+	with perks[i]{
+		draw_sprite(selected?spr_perk_on:spr_perk_off,0,x,y);
+		//show_debug_message(string(i)+": "+string(perks[i].x)+","+string(perks[i].y));
+	}
 }

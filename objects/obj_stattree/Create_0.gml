@@ -22,8 +22,8 @@ for (var j = 0;j<16;j++){
 	//var t = data[j][2];
 	//var d = data[j][3];
 	
-	var calcX = x+(4*(st-2));
-	var calcY = startY + (endY-startY)*(mR-curmin[st-2]/curmax[st-2]-curmin[st-2]);
+	var calcX = x+(24*(st-1))-2.5;
+	var calcY = startY + (endY-startY)*(mR-curmin[st-2])/(curmax[st-2]-curmin[st-2]+24);
 	perks[j] = instance_create_depth(calcX,calcY,depth-1,obj_perkexplain);
 	perks[j].stat = st;
 	perks[j].minRequired = mR;
