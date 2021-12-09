@@ -3,12 +3,12 @@ if !instance_exists(obj_skee_meter2){
 	var minPow = 400;
 	var maxPow = 1100;
 	if increasing {
-		pow+=5;
+		pow+=10;
 		if pow >= maxPow
 			increasing = false;
 	}
 	else{
-		pow-=5;
+		pow-=10;
 		if pow <= minPow
 			increasing = true;
 	}

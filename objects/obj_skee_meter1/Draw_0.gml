@@ -1,8 +1,14 @@
 /// @description Draw meter
 
 var drawY = 5 * camera_get_view_height(cam)/6;
+draw_set_color(c_white);
+draw_rectangle(minX,drawY,minX+((maxX-minX)/4),drawY+10,false);
+draw_set_color(c_yellow);
+draw_rectangle(minX+((maxX-minX)/4),drawY,minX+((maxX-minX)/2),drawY+10,false);
+draw_set_color(c_orange);
+draw_rectangle(minX+((maxX-minX)/2),drawY,minX+(3*((maxX-minX)/4)),drawY+10,false);
 draw_set_color(c_red);
-draw_rectangle(minX,drawY,maxX,drawY+10,false);
+draw_rectangle(minX+(3*((maxX-minX)/4)),drawY,maxX,drawY+10,false);
 
 var powX = ((maxX-minX)*(pow-400)/700)+minX;
 draw_set_color(c_black);
