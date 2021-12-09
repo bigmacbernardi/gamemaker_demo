@@ -29,5 +29,8 @@ if (index != -1){//when index == -1, pausemenu_stat will handle all input
 		if lastIndex != -1 perks[lastIndex].selected=false;
 		if index != -1 perks[index].selected=true;
 	}
-}	
-	
+}else{//wayyy overkill just to turn selection off
+	for (var i = 0;i<16;i++){
+		perks[i].selected=false;
+	}
+}
