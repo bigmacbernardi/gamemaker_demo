@@ -33,7 +33,8 @@ if (current[HP]==0){//only added for start of battle
 	layer_sequence_headpos(unitSequence, deathStart);
 	state = DEATH;	
 	with battle_manager{
-		remove(myId);	
+		remove(myId);
+		totalUnits--;
 	}
 }
 index = YUSUF;//will make slotting easier

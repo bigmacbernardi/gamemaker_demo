@@ -82,18 +82,26 @@ if (mode==0) {//single-enemy
 		}	
 	}
 }
-if (mode==1) {//single-ally default
+if (floor(mode)==1) {//single-ally default.  updated to allow dead selections
 	if (_up){
-		if (index == 0) index = ds_list_size(sets[mode])-1;
+		if (index == 0) index = instance_number(battle_player)-1;
+		else index--;
+		global.targets = [global.units[|index]];
+		currentMessage = global.targets[0].title;
+		/*if (index == 0) index = ds_list_size(sets[mode])-1;
 		else index--;
 		global.targets = [sets[mode][|index]];
-		currentMessage = global.targets[0].title;
+		currentMessage = global.targets[0].title;*/
 	}
 	if (_down){
-		if (index == ds_list_size(sets[mode])-1) index = 0;
+		if (index == instance_number(battle_player)-1) index = 0;
+		else index++;
+		global.targets = [global.units[|index]];
+		currentMessage = global.targets[0].title;
+		/*if (index == ds_list_size(sets[mode])-1) index = 0;
 		else index += 1;
 		global.targets = [sets[mode][|index]];
-		currentMessage = global.targets[0].title;
+		currentMessage = global.targets[0].title;*/
 	}
 	
 	if (_right){//EVENTUALLY this should be based on leftWest and rightEast.

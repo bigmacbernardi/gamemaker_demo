@@ -62,6 +62,14 @@ repeat(20){
 					audio_play_sound(damageSound,100,false);
 					state = HIT;
 			}
+			if global.targets[i] == global.selectedUnit{
+				if !battle_manager.selectedFinished{
+					show_debug_message("Didn't finish after hitting yourself");
+					with battle_manager{
+						selectedFinished = true;	
+					}
+				}
+			}
 		}
 	}
 	else{
@@ -97,7 +105,29 @@ function equip(char,equI){//character, equipment index
 	global.equipped[char][entry.category] = entry;//equipping item to character data
 	entry.currentUser=char;//equipping character to equipment (used to track "taken" weapons)
 
-}	
+}
+
+function revive_targets(amt=1){
+	//IF AMT <= 1.0, recovery is fractional.
+	//IF AMT > 1, recovery is fixed
+	for (var i = 0; i<array_length(global.targets);i++){
+		var unit = global.targets[i];
+		if (unit.state==DEATH){
+			var recoverAmt = (amt>1)?floor(amt):round(amt*unit.base[HP]);
+			//if instance_exists(battle_manager)	{
+			with unit{
+				current[HP] = recoverAmt;
+				layer_sequence_headpos(unitSequence, idleStart);
+				state = IDLE;
+			}
+			with battle_manager{
+				enqueue(unit);
+				totalUnits++;
+			}
+			//}
+		}
+	}
+}
 
 function isReady(partner,amAlly=true){//pass in .teammate var
 	if (!instance_exists(battle_manager))//SHOULD NOT BE CALLED OUTSIDE OF BATTLE

@@ -165,11 +165,12 @@ function intensiveCare(){
 	setParticle(0);
 	unit.current[MP] -= 10;
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
-	if (global.targets[0].state == DEATH){
+	/*if (global.targets[0].state == DEATH){
 		part_particles_create(global.P_System, global.targets[0].x, global.targets[0].y, global.Particle1, 20);
 			
 		global.targets[0].current[HP] = round(global.targets[0].base[HP]/2);
 		global.targets[0].state = IDLE;
-		}
+		}*/
+	revive_targets(0.5);
 	battle_manager.alarm[1] = 10; 
 }

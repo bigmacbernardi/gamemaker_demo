@@ -26,7 +26,7 @@ switch(combatPhase){
 				}
 			}
 			/* NEXT CHUNK IS LEFTOVERS*/
-		for (var i = 0; i < instance_number(battle_spawner); i++){
+		/*for (var i = 0; i < instance_number(battle_spawner); i++){
 			var spawner = instance_find(battle_spawner, i);
 			if (!spawner.isPlayer){ //regular
 				var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit);
@@ -40,8 +40,8 @@ switch(combatPhase){
 				//spawner.event_user(0); //bc it's player_spawner.  dumb
 				//ignore, shouldn't exist anymore
 			}
-		}
-		//enemy spawner
+		}*/
+		//cur enemy spawner
 		for (var i = 0; i < array_length(global.foesToSpawn); i+=3){
 			var unit = instance_create_depth(global.foesToSpawn[i+1],global.foesToSpawn[i+2],0,global.foesToSpawn[i])
 			ds_list_add(global.units,unit);
@@ -49,6 +49,7 @@ switch(combatPhase){
 			enqueue(unit,getWait(unit));
 			ds_list_add(global.enemies,unit);
 		}
+		totalUnits = ds_list_size(global.units);
 		combatPhase = phase.startTurn;
 	break;
 	
@@ -62,8 +63,8 @@ switch(combatPhase){
 		//this is where you would sort the list of units, based on SPD attribute or whatever else
 		
 		//if there are as many unitsFinished as units, reset everyone's turnFinished status
-		if (unitsFinished >= ds_list_size(global.units)){
-			for(var i = 0;i < ds_list_size(global.units);i++){
+		if (unitsFinished >= totalUnits){
+			for(var i = 0;i < totalUnits;i++){
 				with(global.units[|i]){
 					if !(state == DEATH)
 						turnFinished = false;

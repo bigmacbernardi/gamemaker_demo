@@ -14,14 +14,28 @@ if (mode==0){ //ONE enemy
 			break;
 		}
 	}
-		x = global.targets[0].x;
-y = global.targets[0].y;
+	x = global.targets[0].x;
+	y = global.targets[0].y;
 
-} else if (mode==1){ //ONE ally
-	global.targets = [global.allies[|0]];
-		x = global.targets[0].x;
-y = global.targets[0].y;	
-			currentMessage = global.allies[|0].title;
+} else if (floor(mode)==1){ //ONE ally
+	if mode == 1{
+		global.targets = [global.allies[|0]];
+	}
+	else if mode == 1.5{//revival
+		for(var i = 0; i < 4; i++){
+			if (global.currentParty[i]==noone){//none of the party's dead.  update later to account for overkill
+				global.targets = [global.units[|0]];
+				break;
+			}
+			else if (global.units[|i].state == DEATH){	        
+				global.targets =  [global.units[|i]];
+				break;
+			}
+		}
+	}
+	x = global.targets[0].x;
+	y = global.targets[0].y;	
+	currentMessage = global.targets[0].title;
 } else if (mode==2){//all enemies
 	for(var i = 0; i < ds_list_size(global.enemies); i++){
 		if (global.enemies[|i].state != DEATH){

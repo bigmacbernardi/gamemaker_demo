@@ -76,7 +76,8 @@ switch(state){
 					state = DEATH;
 					
 					with battle_manager{
-						remove(myId);	
+						remove(myId);
+						totalUnits--;	
 					}
 					//if (ds_priority_find_priority(battle_manager.pq,id)!=undefined) ds_priority_delete_value(battle_manager.pq,id);
 					//battle_manager.remove(id); //let broadcast manager do this too!				

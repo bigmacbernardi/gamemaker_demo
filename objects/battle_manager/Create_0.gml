@@ -16,7 +16,8 @@ enum phase{
 }
 
 combatPhase = phase.init;
-unitsFinished = 0;
+unitsFinished = 0;//FUNBOX REMNANT
+totalUnits = 0;//FUNBOX REMNANT
 selectedFinished = false;
 processFinished = false;
 allowInput = false;
@@ -247,7 +248,7 @@ function drawQueue() {
 		draw_text_transformed(280,3+(i*13),((i==0)?"NEXT: ":"On level "+string(floor(log2(i))+1)+": ")+element.title+" ("+string(key)+" left)",.375,.375,0);
     }
 }
-function foreach_priority(priority) {
+/*function foreach_priority(priority) {
     var size = ds_priority_size(priority);
     
     for (var i = 0; i < size; i++) {
@@ -257,7 +258,7 @@ function foreach_priority(priority) {
 	    draw_text_transformed(280,2+(i*15),((i==0)?"NEXT: ":"In "+string(i)+" turn(s): ")+element.title+" ("+string(key)+" left)",.375,.375,0);
         ds_priority_delete_min(priority);
     }
-}
+}*/
 
 animCounter = 0;
 currentMessage = "";

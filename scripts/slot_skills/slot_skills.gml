@@ -63,7 +63,7 @@ function slot_skills(){
 			if (global.skills[YUSUF][2]){
 				var yusufIC = instance_create_layer(0,0,ui_level,obj_skill);
 				yusufIC.title = "Intensive care";
-				yusufIC.mode = 1;
+				yusufIC.mode = 1.5;
 				if battling
 					yusufIC.usable = global.selectedUnit.current[MP]>=10;
 				else yusufIC.usable = global.party[global.selectedUnit][MP]>=10;
