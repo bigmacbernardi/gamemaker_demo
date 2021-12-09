@@ -1,28 +1,36 @@
 /// @description Oscillate/Spawn next
-var minAngle = -80;
-var maxAngle = 80;
 
+var minAngle = -170;
+var maxAngle = -10;
 if increasing {
 	angle++;
-	if angle== maxAngle
+	if angle>= maxAngle
 		increasing = false;
 }
 else{
 	angle--;
-	if angle == minAngle
-		increasing = false;
+	if angle <= minAngle
+		increasing = true;
 }
 
 
 var goButton = ((mouse_check_button_released(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter));
-
+var leftButton = ((keyboard_check_pressed(vk_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(ord("A")));
+var rightButton = ((keyboard_check_pressed(vk_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(ord("D")));
 if frameHasPassed{
 	if goButton{
 		with obj_skeeball{
 			ballsRemain--;
 		}
 		instance_create_depth(ballX, 11 * camera_get_view_height(cam)/12,depth-1,obj_ball);
-		instance_destroy(obj_skee_meter1);
-		instance_destroy();
 	}
+	if leftButton
+		ballX--;	
+	if rightButton
+		ballX++;	
 }else frameHasPassed=true;
+if !instance_exists(obj_skee_meter1) instance_destroy();
+else{
+	powX = obj_skee_meter1.pow*dcos(angle);
+	powY = obj_skee_meter1.pow*dsin(angle);
+}
