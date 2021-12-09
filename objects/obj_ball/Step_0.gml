@@ -6,8 +6,8 @@ if y<220{
 	image_yscale = 1;
 }
 else{
-	if (mode == 1)
-		instance_destroy();	
+	if (mode == 1) and x>obj_skeeball.leftX and x<obj_skeeball.rightX
+		instance_destroy();	//gutter
 	else{
 		image_xscale = 1+(y-220)/600;
 		image_yscale = 1+(y-220)/600;	
