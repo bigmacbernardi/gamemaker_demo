@@ -15,7 +15,8 @@ show_debug_message("Broadcast received: '"+event_data[? "message"]+"'");
 			itmBroadcasts++;
 		break;
 		case "unitMiss":
-		case "unitHit":
+		case "unitHurt":
+		case "unitHit"://i think we may have accidentally called it both
 			processFinished = true;
 			hitMissBroadcasts++;
 		break;
