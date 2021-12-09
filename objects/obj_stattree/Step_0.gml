@@ -24,5 +24,10 @@ if (index != -1){//when index == -1, pausemenu_stat will handle all input
 		index -= 4;	
 		if (index < 0) index+=16;
 	}
-	if lastIndex!=index show_debug_message("Index changed from "+string(lastIndex)+" to "+string(index));
+	if lastIndex!=index{
+		show_debug_message("Index changed from "+string(lastIndex)+" to "+string(index));
+		if lastIndex != -1 perks[lastIndex].selected=false;
+		if index != -1 perks[index].selected=true;
+	}
 }	
+	
