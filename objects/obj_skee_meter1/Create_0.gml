@@ -6,4 +6,5 @@ increasing = true;
 minX = camera_get_view_width(cam)/3;
 maxX = 2*camera_get_view_width(cam)/3;
 ballX = mouse_x;
+lastMX = mouse_x;
 frameHasPassed = false;
