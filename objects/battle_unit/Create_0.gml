@@ -22,6 +22,7 @@ depth = -y;
 #macro DEATH 6
 #macro ITEM 7
 #macro HEAL 8
+#macro SPECIAL 9
 
 state = IDLE;
 

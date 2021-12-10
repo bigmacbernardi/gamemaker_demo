@@ -36,9 +36,10 @@ function useItem(){
 	
 }
 function unitAttack(){
-	show_debug_message(global.selectedUnit.title+" attacking "+global.targets[0].title+"#"+string(global.targets[0]));
 	var unit = global.selectedUnit;
-	if unit == noone return; //emergency fix
+	if unit < 0 return; //emergency fix
+	else show_debug_message(global.selectedUnit.title+" attacking "+global.targets[0].title+"#"+string(global.targets[0]));
+	
 /*	var target = global.targets[0];
 var orig_x = unit.x;
 var orig_y= unit.y;

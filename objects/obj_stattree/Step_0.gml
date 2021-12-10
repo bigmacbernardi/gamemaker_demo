@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 if (index != -1){//when index == -1, pausemenu_stat will handle all input
+if frameHasPassed{	
 	var _up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 	var _down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 	var _left = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"));
@@ -29,6 +30,7 @@ if (index != -1){//when index == -1, pausemenu_stat will handle all input
 		if lastIndex != -1 perks[lastIndex].selected=false;
 		if index != -1 perks[index].selected=true;
 	}
+}else frameHasPassed=true;
 }else{//wayyy overkill just to turn selection off
 	for (var i = 0;i<16;i++){
 		perks[i].selected=false;

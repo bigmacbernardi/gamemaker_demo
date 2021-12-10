@@ -117,4 +117,17 @@ switch(state){
 			}*/
 		}
 	break;
+	case SPECIAL:
+	if (layer_sequence_get_headpos(unitSequence) >= spcEnd){//NO BROADCAST
+			show_debug_message("Special animation finished");
+			var myId = id;
+			//layer_sequence_headpos(unitSequence, idleStart);
+			state = IDLE;			
+			turnFinished = true;
+			with battle_manager{
+				enqueue(myId);
+			}
+			
+		}
+	break;
 }

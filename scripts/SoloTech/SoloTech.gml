@@ -129,11 +129,12 @@ function embolden(){
 	setParticle(8);//Fighting energy
 	with unit{
 		current[MP] -= 2;
-		layer_sequence_headpos(unitSequence,atkStart);
-		state = ATTACK;
+		layer_sequence_headpos(unitSequence,spcStart);
+		state = SPECIAL;
 	}
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
 	with(global.targets[0]){
+		current[DEF]=ceil(current[DEF]*1.1);//hell yes
 		current[STR]+=1.5;//HELL yes
 		layer_sequence_headpos(unitSequence,hitStart);
 		state = HEAL;

@@ -30,3 +30,4 @@ for (var j = 0;j<16;j++){
 	//perks[j].title = t;
 	//perks[j].description = d;
 }
+frameHasPassed=false;
