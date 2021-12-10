@@ -18,8 +18,8 @@ if !instance_exists(obj_skee_meter2){
 	var goButton = ((mouse_check_button_released(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter));
 	var rightButton = keyboard_check(0x44) or keyboard_check(vk_right);
 	var leftButton = keyboard_check(0x41) or keyboard_check(vk_left);
-
-	var _moveH = rightButton - leftButton;
+	var runButton = keyboard_check(vk_shift);
+	var _moveH = (rightButton - leftButton) * (runButton+1);
 	if frameHasPassed{
 		ballX+=_moveH*3;
 		if goButton{

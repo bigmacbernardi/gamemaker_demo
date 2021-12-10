@@ -19,8 +19,9 @@ var goButton = ((mouse_check_button_released(mb_left)) || keyboard_check_pressed
 //var rightButton = ((keyboard_check_pressed(vk_left)) || keyboard_check_pressed(ord("D")));
 var rightButton = keyboard_check(0x44) or keyboard_check(vk_right);
 var leftButton = keyboard_check(0x41) or keyboard_check(vk_left);
+var runButton = keyboard_check(vk_shift);
+var _moveH = (rightButton - leftButton) * (runButton+1);
 
-var _moveH = rightButton - leftButton;
 if frameHasPassed{
 	if goButton{
 		with obj_skeeball{
