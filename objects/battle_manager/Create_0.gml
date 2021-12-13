@@ -108,7 +108,8 @@ function dequeue(priority=pq){//automatically sets turn-haver and returns wait
 		//need to prune before activating
 		global.selectedUnit = priority[0][0];
 		var wait = priority[1][0];
-		pqSize--;
+		//pqSize--; //normal mode                        
+		if --pqSize<0 pqSize=0;//catching a weird error when you kill teammate in 2v1
 		pq[0][0] = pq[0][pqSize];
 		pq[1][0] = pq[1][pqSize];
 		pq[0][pqSize] = noone;

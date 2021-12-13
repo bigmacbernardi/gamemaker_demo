@@ -18,17 +18,20 @@ y_spd = (down_key - up_key) * move_spd * (run_key?1.5:1);
 	}*/
 
 if (!paused){
-//collisions
+//collisions:  NEEDS MAJOR IMPROVEMENTS.  
+//If you try to move diagonally against wall you should SIDLE AGAINST IT.
+//If you clip into wall it should PUSH YOU OUT.
 if place_meeting(x + x_spd, y, obj_wall) == true
-	{
-		x_spd = 0; //this activates the moving animations? what
+//if place_meeting(x + x_spd, y + y_spd, obj_wall) == true //thought this version could be better.  it wasn't, it just changed which diagonals screech to a halt at stop
+{
+	x_spd = 0; //this activates the moving animations? what
 		
-	}
-if place_meeting(x, y + y_spd, obj_wall) == true
-	{
-		y_spd = 0;
-		
-	}
+}
+//if place_meeting(x, y + y_spd, obj_wall) == true
+if place_meeting(x+x_spd, y + y_spd, obj_wall) == true //this was a LITTLE better though
+{
+	y_spd = 0;		
+}
 	
 if ((x_spd==0)&&(y_spd==0))image_speed = 0;
 else{
