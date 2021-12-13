@@ -10,20 +10,32 @@ if (!opened){
 	opened = true;
 	global.chests[chestNo] = true;
 	sprite_index = spr_chest_open;
-	var thing = instance_create_depth(0,0,1,contents);
-	if (object_get_parent(contents)==equippable)||
-	(object_get_parent(object_get_parent(contents))==equippable) ds_list_add(global.equipment,thing);
-	else if instance_exists(contents){
-			show_debug_message("It's me, "+object_get_name(object_get_parent(contents)));
-			var old = instance_find(contents,0);
-			old.depth++;
-			old.numOwned++;
-			instance_destroy(thing);
-		}
-	else{
-		ds_list_add(global.inventory,thing);	
+	if (object_get_parent(contents)==equippable) or 
+	(object_get_parent(object_get_parent(contents))==equippable){
+		show_debug_message("It's a me, "+object_get_name(object_get_parent(contents)));
+		var thing = instance_create_depth(0,0,1,contents);
+		ds_list_add(global.equipment,thing);
 	}
-		
+	else{
+		var found = -1;
+		for (var i = 0;i<ds_list_size(global.inventory);i++){
+			show_debug_message("Checkin "+object_get_name( global.inventory[|i][0] ));
+			if global.inventory[|i][0] == contents{
+				show_debug_message("MATCH!");
+				found = i;
+				break;
+			}
+		}
+		if found>-1{//instance_exists(contents){
+			show_debug_message("It's me, "+object_get_name(object_get_parent(contents)));
+			global.inventory[|found][1]++;
+		}
+		else{
+			show_debug_message("It's a-me, "+object_get_name(object_get_parent(contents)));
+			//var thing = instance_create_depth(0,0,1,contents);
+			ds_list_add(global.inventory,[contents,1]);	
+		}
+	}
 	global.facechoice = 0;
 	global.typer= 4;
 	global.lineNo = 1000 + chestNo;
