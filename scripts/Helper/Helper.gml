@@ -56,7 +56,7 @@ repeat(20){
 			//if global.targets[i]==noone continue;//emergency fix
 			//else show_debug_message("Hitting "+string(global.targets[i]));
 			with(global.targets[i]){
-					incomingDamage = unit.current[@ STR]; //+= to compound
+					incomingDamage = ceil(unit.current[@ STR]); //should account for def here and use separate attack power IMO, but whatever
 					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
 					layer_sequence_headpos(unitSequence,hitStart);

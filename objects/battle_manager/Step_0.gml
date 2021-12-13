@@ -122,6 +122,7 @@ switch(combatPhase){
 			global.selectedUnit.turnFinished = true;
 			unitsFinished++;
 			combatPhase = phase.win;
+			currentMessage = "        You win!";
 		}
 		else if (selectedFinished){
 			//show_debug_message("Selected ("+global.selectedUnit.title+") Finished");
@@ -161,6 +162,7 @@ switch(combatPhase){
 		}
 		else if (ds_list_empty(global.enemies)){
 			combatPhase = phase.win;
+			currentMessage = "        You win!";
 			break;
 		}
 		processFinished = false;
@@ -190,7 +192,14 @@ switch(combatPhase){
 	break;
 	
 	case phase.win:
-		show_debug_message("You win!");
+
+		with obj_persistentmusicplayer{
+			audio_stop_sound(songPlaying);//stops battle them
+			//TO-DO:
+			//Start victory theme
+			//songPlaying = audio_play_sound(victoryTheme,1000,true);
+		}
+		//currentMessage = "You win!";
 		global.foesToSpawn = [];
 		for (var i = 0; i<4;i++){
 			if global.currentParty[i]==noone continue;
@@ -200,6 +209,10 @@ switch(combatPhase){
 		}
 		global.money += cashEarned;
 		
+		//TO-DO:
+		//Display cashEarned and expEarned!
+		//Display item drops received!
+		//CHECK FOR LEVEL UPS
 		if (global.points[global.currentParty[0]][HP]==0){//reassign leader
 			if global.points[global.currentParty[1]][HP]>0{
 				var temp = global.currentParty[1];
@@ -215,7 +228,9 @@ switch(combatPhase){
 				global.currentParty[3] = temp;
 			}
 		}
-		room_goto(global.returnRoom);//orig Room1
+		resultsRemaining++;
+		currentMessage="  Got "+string(cashEarned)+" credit units!\n  Got "+string(expEarned)+"XP!";
+		combatPhase=phase.postWin;//orig Room1
 	//return to previous room
 	break;
 	case phase.escape:
@@ -260,4 +275,14 @@ switch(combatPhase){
 		room_goto(gameover);
 	//game over
 	break;
+	case phase.postWin://displaying results
+		var goButton = ((mouse_check_button_pressed(mb_left)) || (mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_enter));
+		if goButton{
+			resultsRemaining--;
+			if resultsRemaining>0
+				currentMessage = "           Got items!";
+		}
+		if resultsRemaining==0 room_goto(global.returnRoom);//orig Room1
+
+	
 }

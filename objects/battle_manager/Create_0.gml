@@ -12,7 +12,8 @@ enum phase{
 	endTurn,
 	win,
 	lose,
-	escape
+	escape,
+	postWin
 }
 
 combatPhase = phase.init;
@@ -36,6 +37,7 @@ function curPhaseName(){
 		case phase.win: return "win";
 		case phase.lose: return "lose";
 		case phase.escape: return "escape";
+		case phase.postWin: return "postWin";
 	}
 }
 
@@ -265,3 +267,4 @@ animCounter = 0;
 currentMessage = "";
 usingMouse = false;
 alarm1s=0; atkBroadcasts=0; itmBroadcasts=0; hitMissBroadcasts=0; deathBroadcasts=0;
+resultsRemaining=0;
