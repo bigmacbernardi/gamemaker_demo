@@ -40,7 +40,7 @@ else if(mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space)|
 			mode = 0;
 		}
 	}
-else if((mouse_check_button_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace)) || keyboard_check_released(vk_escape))
+else if((mouse_check_button_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace) || keyboard_check_released(vk_escape))
 	{
 		priorMenu.selected = true;
         instance_destroy();
