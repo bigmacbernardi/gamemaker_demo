@@ -38,7 +38,8 @@ function useItem(){
 function unitAttack(){
 	var unit = global.selectedUnit;
 	if unit < 0 return; //emergency fix
-	else show_debug_message(global.selectedUnit.title+" attacking "+global.targets[0].title+"#"+string(global.targets[0]));
+	else show_debug_message(global.selectedUnit.title+" attacking "+
+	global.targets[0].title+"#"+string(global.targets[0]));
 	
 /*	var target = global.targets[0];
 var orig_x = unit.x;

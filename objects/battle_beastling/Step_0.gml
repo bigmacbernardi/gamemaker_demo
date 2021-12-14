@@ -64,7 +64,7 @@ switch(state){
 	case HIT:
 		//show_debug_message(title + string(id) + " is hit!!!");
 		if (layer_sequence_get_headpos(unitSequence) > hitEnd){
-				show_debug_message("damage that footsoldier!!!");
+				show_debug_message("damage that beast!!!");
 				damageUnit(incomingDamage);
 				if (current[@ HP] > 0){
 					layer_sequence_headpos(unitSequence, idleStart);

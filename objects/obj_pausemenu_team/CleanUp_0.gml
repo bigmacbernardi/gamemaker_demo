@@ -1,3 +1,3 @@
 /// @description Exits the menu
 
-obj_pausemenu_main.selected = true;
+if instance_exists(obj_pausemenu_main) obj_pausemenu_main.selected = true;

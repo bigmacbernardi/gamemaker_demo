@@ -2,6 +2,7 @@
 //var pause_butt = keyboard_check_released(vk_escape) || keyboard_check_released(vk_backspace);
 var go = ((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter));
 var cancel = ((mouse_check_button_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace));
+var pause_butt = keyboard_check_released(vk_escape);// || keyboard_check_released(vk_backspace);
 if (!frameHasPassed) frameHasPassed = true;
 else if go
 	{ 
@@ -71,6 +72,13 @@ else if cancel
 	obj_player.framesToBuffer = 2;
     instance_destroy();
 }*/
+else if (obj_player.paused)&&(pause_butt){
+	//if instance_exists(obj_stattree) instance_destroy(obj_stattree);
+	if instance_exists(obj_pausemenu_main) instance_destroy(obj_pausemenu_main);
+	obj_player.paused = false;
+	obj_player.framesToBuffer = 2;
+    instance_destroy();
+}
 else {
 	var _up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 	var _down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
