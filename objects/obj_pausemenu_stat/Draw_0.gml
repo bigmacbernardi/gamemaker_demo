@@ -9,7 +9,7 @@ draw_set_color(c_black);
 /*drawing character header*/
 
 draw_text_transformed(drawX,drawY,global.names[options[|index]],.8,.8,0);
-draw_text_transformed(drawX+94,drawY,"Level 1",.7,.7,0);
+draw_text_transformed(drawX+94,drawY,"Level "+string(global.party[options[|index]][LV]),.7,.7,0);
 drawY +=16;
 draw_text_transformed(drawX,drawY,classes[options[|index]],.7,.7,0);
 /*used to draw stats AND stat tree here; now just draws stats*/

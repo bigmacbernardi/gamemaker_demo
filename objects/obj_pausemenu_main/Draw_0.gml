@@ -27,7 +27,7 @@ for (var i = 0; i<4; i++){
 		drawY +=12;
 		draw_text_transformed(drawX+43,drawY,"MP: "+string(global.points[global.currentParty[i]][MP])+"/"+string(global.party[global.currentParty[i]][MP]),.5,.5,0);
 		drawY +=12;
-		draw_text_transformed(drawX,drawY,"Next LV in: "+string(200-global.party[global.currentParty[i]][XP])+"xp",.5,.5,0);
+		draw_text_transformed(drawX,drawY,"Next LV in: "+string(lvBreaks[global.party[global.currentParty[i]][LV]]-global.party[global.currentParty[i]][XP])+"xp",.5,.5,0);
 
 	}
 }

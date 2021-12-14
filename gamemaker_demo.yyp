@@ -314,6 +314,7 @@
     {"id":{"name":"keyboard_multicheck_pressed","path":"scripts/keyboard_multicheck_pressed/keyboard_multicheck_pressed.yy",},"order":17,},
     {"id":{"name":"sAoi","path":"sequences/sAoi/sAoi.yy",},"order":11,},
     {"id":{"name":"noBKG_KnightRun_strip","path":"sprites/noBKG_KnightRun_strip/noBKG_KnightRun_strip.yy",},"order":11,},
+    {"id":{"name":"statmods","path":"scripts/statmods/statmods.yy",},"order":29,},
     {"id":{"name":"item","path":"scripts/item/item.yy",},"order":8,},
     {"id":{"name":"door","path":"sounds/door/door.yy",},"order":3,},
     {"id":{"name":"obj_tent","path":"objects/obj_tent/obj_tent.yy",},"order":3,},

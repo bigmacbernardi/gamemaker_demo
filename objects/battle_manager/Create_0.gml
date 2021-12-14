@@ -15,6 +15,11 @@ enum phase{
 	escape,
 	postWin
 }
+lvBreaks = [0,200,600,1400,3000,6200,10000,30000,600000,
+1600000,11600000,111600000,222600000,333600000,444600000,
+1000000000,1000000001,1000000002,1000000003,1000000004,1000000005,
+2000000000,2000000001,3000000002,4000000003,5000000004,5000000005
+];//temporarily putting here till we globalize somehow
 
 combatPhase = phase.init;
 unitsFinished = 0;//FUNBOX REMNANT
@@ -265,6 +270,7 @@ function drawQueue() {
 
 animCounter = 0;
 currentMessage = "";
+futureMessages = ds_list_create();
 usingMouse = false;
 alarm1s=0; atkBroadcasts=0; itmBroadcasts=0; hitMissBroadcasts=0; deathBroadcasts=0;
 resultsRemaining=0;

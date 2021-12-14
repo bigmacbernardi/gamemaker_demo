@@ -206,13 +206,17 @@ switch(combatPhase){
 			global.points[global.currentParty[i]][HP] = max(0,global.units[|i].current[HP]);
 			global.points[global.currentParty[i]][MP] = max(0,global.units[|i].current[MP]);
 			global.party[global.currentParty[i]][XP] += expEarned;
+			//CHECKING FOR LEVEL UPS
+			if global.party[global.currentParty[i]][XP] >= lvBreaks[global.party[global.currentParty[i]][LV]]{
+				global.party[global.currentParty[i]][LV]++;
+				upgrade(global.currentParty[i]);
+				ds_list_add(futureMessages,global.names[global.currentParty[i]]+" is now Level "+string(global.party[global.currentParty[i]][LV])+"!");
+			}
 		}
 		global.money += cashEarned;
 		
 		//TO-DO:
-		//Display cashEarned and expEarned!
 		//Display item drops received!
-		//CHECK FOR LEVEL UPS
 		if (global.points[global.currentParty[0]][HP]==0){//reassign leader
 			if global.points[global.currentParty[1]][HP]>0{
 				var temp = global.currentParty[1];
@@ -250,6 +254,12 @@ switch(combatPhase){
 			global.points[global.currentParty[i]][HP] = max(0,global.units[|i].current[HP]);
 			global.points[global.currentParty[i]][MP] = max(0,global.units[|i].current[MP]);
 			global.party[global.currentParty[i]][XP] += expEarned;//sure since expEarned is only the killed ones
+			//CHECKING FOR LEVEL UPS
+			if global.party[global.currentParty[i]][XP] >= lvBreaks[global.party[global.currentParty[i]][LV]]{
+				global.party[global.currentParty[i]][LV]++;
+				upgrade(global.currentParty[i]);
+				ds_list_add(futureMessages,global.names[global.currentParty[i]]+" is now Level "+string(global.party[global.currentParty[i]][LV])+"!");
+			}
 		}
 		if (global.points[global.currentParty[0]][HP]==0){//reassign leader
 			if global.points[global.currentParty[1]][HP]>0{
@@ -266,7 +276,9 @@ switch(combatPhase){
 				global.currentParty[3] = temp;
 			}
 		}
-		room_goto(global.returnRoom);//orig Room1
+		//TO DO:  Add check for level up.  Send to POSTWIN instead if that's the case otherwise.
+		if ds_list_size(futureMessages)==0 room_goto(global.returnRoom);
+		else combatPhase=phase.postWin;
 		}
 	break;
 	case phase.lose:
@@ -278,11 +290,13 @@ switch(combatPhase){
 	case phase.postWin://displaying results
 		var goButton = ((mouse_check_button_pressed(mb_left)) || (mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_enter));
 		if goButton{
-			resultsRemaining--;
-			if resultsRemaining>0
-				currentMessage = "           Got items!";
+			if ds_list_size(futureMessages)>0{
+				currentMessage = futureMessages[|0];
+				ds_list_delete(futureMessages,0);
+			}else room_goto(global.returnRoom);
 		}
-		if resultsRemaining==0 room_goto(global.returnRoom);//orig Room1
+		//if resultsRemaining==0 
+		//orig Room1
 
 	
 }
