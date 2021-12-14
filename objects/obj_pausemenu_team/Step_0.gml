@@ -74,7 +74,8 @@ else if cancel
 }*/
 else if (obj_player.paused)&&(pause_butt){
 	//if instance_exists(obj_stattree) instance_destroy(obj_stattree);
-	if instance_exists(obj_pausemenu_main) instance_destroy(obj_pausemenu_main);
+	if instance_exists(obj_pausemenu_main) 
+		instance_destroy(obj_pausemenu_main);
 	obj_player.paused = false;
 	obj_player.framesToBuffer = 2;
     instance_destroy();

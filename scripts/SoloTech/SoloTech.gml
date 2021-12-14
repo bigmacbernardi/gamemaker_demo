@@ -157,8 +157,11 @@ function balm(){
 				state = HEAL;
 			}
 		}
-	}	
-	battle_manager.alarm[1] = 10;	 
+	}
+	//with battle_manager{
+	//	enqueue(unit); //done elsewhere?
+		battle_manager.alarm[1] = 10;	 
+	//}
 }
 
 function intensiveCare(){
@@ -173,5 +176,9 @@ function intensiveCare(){
 		global.targets[0].state = IDLE;
 		}*/
 	revive_targets(0.5);
-	battle_manager.alarm[1] = 10; 
+	
+	with battle_manager{
+		enqueue(unit);
+		alarm[1] = 10;	 
+	}
 }
