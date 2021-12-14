@@ -1,7 +1,7 @@
 /// @description General  menulogic
 //var pause_butt = keyboard_check_released(vk_escape) || keyboard_check_released(vk_backspace);
 var go = ((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter));
-var cancel = ((mouse_check_button_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace));
+var cancel = ((mouse_check_button_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace) || keyboard_check_released(vk_escape));
 if (!frameHasPassed) frameHasPassed = true;
 else if go
 	{ 
