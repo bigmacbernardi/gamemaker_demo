@@ -38,7 +38,7 @@ function slot_skills(){
 			if (global.skills[YUSUF][0]){
 				var yusufBold = instance_create_layer(0,0,ui_level,obj_skill);
 				yusufBold.title = "Embolden";
-				yusufBold.description = "Raise ally's strength and defense.";
+				yusufBold.description = "Raise ally's strength and defense.  2 MP.";
 				yusufBold.mode = 1;
 				if battling{
 					yusufBold.usable = global.selectedUnit.current[MP]>=2;
