@@ -79,6 +79,7 @@
     {"id":{"name":"twerp","path":"scripts/twerp/twerp.yy",},"order":5,},
     {"id":{"name":"battle_player","path":"objects/battle_player/battle_player.yy",},"order":3,},
     {"id":{"name":"obj_enemy_tribble","path":"objects/obj_enemy_tribble/obj_enemy_tribble.yy",},"order":19,},
+    {"id":{"name":"obj_multiparallax","path":"objects/obj_multiparallax/obj_multiparallax.yy",},"order":4,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":1,},
     {"id":{"name":"spr_knight_intoDef","path":"sprites/spr_knight_intoDef/spr_knight_intoDef.yy",},"order":18,},
     {"id":{"name":"spr_menu_temp","path":"sprites/spr_menu_temp/spr_menu_temp.yy",},"order":16,},
