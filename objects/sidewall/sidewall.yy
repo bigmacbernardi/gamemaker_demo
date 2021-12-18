@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite141",
-    "path": "sprites/Sprite141/Sprite141.yy",
+    "name": "spr_bumper",
+    "path": "sprites/spr_bumper/spr_bumper.yy",
   },
   "solid": true,
   "visible": true,

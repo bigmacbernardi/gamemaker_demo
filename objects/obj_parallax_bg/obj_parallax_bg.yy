@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "overworld",
-    "path": "folders/Objects/overworld.yy",
+    "name": "effects",
+    "path": "folders/Objects/overworld/effects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_parallax_bg",

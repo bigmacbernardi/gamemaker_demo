@@ -28,8 +28,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "story",
-    "path": "folders/Objects/overworld/story.yy",
+    "name": "effects",
+    "path": "folders/Objects/overworld/effects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_shaderreset",
