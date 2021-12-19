@@ -128,7 +128,7 @@
     {"id":{"name":"spr_hold_on","path":"sprites/spr_hold_on/spr_hold_on.yy",},"order":25,},
     {"id":{"name":"bg_torch","path":"sprites/bg_torch/bg_torch.yy",},"order":3,},
     {"id":{"name":"item_abstract","path":"objects/item_abstract/item_abstract.yy",},"order":1,},
-    {"id":{"name":"Room1DepthTest","path":"rooms/Room1DepthTest/Room1DepthTest.yy",},"order":8,},
+    {"id":{"name":"dummiedtestRoom1","path":"rooms/dummiedtestRoom1/dummiedtestRoom1.yy",},"order":8,},
     {"id":{"name":"battle_yusuf","path":"objects/battle_yusuf/battle_yusuf.yy",},"order":6,},
     {"id":{"name":"spr_select_right","path":"sprites/spr_select_right/spr_select_right.yy",},"order":19,},
     {"id":{"name":"spr_girl_face0","path":"sprites/spr_girl_face0/spr_girl_face0.yy",},"order":0,},
@@ -358,7 +358,7 @@
     {"roomId":{"name":"gameover","path":"rooms/gameover/gameover.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"depthtest_1","path":"rooms/depthtest_1/depthtest_1.yy",},},
-    {"roomId":{"name":"Room1DepthTest","path":"rooms/Room1DepthTest/Room1DepthTest.yy",},},
+    {"roomId":{"name":"dummiedtestRoom1","path":"rooms/dummiedtestRoom1/dummiedtestRoom1.yy",},},
     {"roomId":{"name":"depth_test_smaller","path":"rooms/depth_test_smaller/depth_test_smaller.yy",},},
   ],
   "Folders": [
