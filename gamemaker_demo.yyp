@@ -132,6 +132,7 @@
     {"id":{"name":"battle_yusuf","path":"objects/battle_yusuf/battle_yusuf.yy",},"order":6,},
     {"id":{"name":"spr_select_right","path":"sprites/spr_select_right/spr_select_right.yy",},"order":19,},
     {"id":{"name":"spr_girl_face0","path":"sprites/spr_girl_face0/spr_girl_face0.yy",},"order":0,},
+    {"id":{"name":"obj_shaderlight_partial","path":"objects/obj_shaderlight_partial/obj_shaderlight_partial.yy",},"order":5,},
     {"id":{"name":"dual_or_wait","path":"scripts/dual_or_wait/dual_or_wait.yy",},"order":23,},
     {"id":{"name":"soldier_littleshot","path":"sprites/soldier_littleshot/soldier_littleshot.yy",},"order":1,},
     {"id":{"name":"obj_dialogue","path":"objects/obj_dialogue/obj_dialogue.yy",},"order":18,},
