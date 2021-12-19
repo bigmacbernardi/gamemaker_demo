@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if room==gameover{
-	audio_stop_sound(battle_torgotemp);	
-	audio_stop_sound(overworld_manostemp);
+	//audio_stop_sound(battle_torgotemp);	
+	audio_stop_sound(songPlaying);
 	if (!GOplaying){
 		songPlaying = audio_play_sound(alteredbeast_gameover_as_placeholder,1000,true);
 		GOplaying = true;
