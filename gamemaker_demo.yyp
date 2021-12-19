@@ -118,6 +118,7 @@
     {"id":{"name":"spr_aoi_itm","path":"sprites/spr_aoi_itm/spr_aoi_itm.yy",},"order":12,},
     {"id":{"name":"sGhost","path":"sequences/sGhost/sGhost.yy",},"order":8,},
     {"id":{"name":"spr_aoi_intoDef","path":"sprites/spr_aoi_intoDef/spr_aoi_intoDef.yy",},"order":11,},
+    {"id":{"name":"Sprite146","path":"sprites/Sprite146/Sprite146.yy",},"order":11,},
     {"id":{"name":"spr_perk_off","path":"sprites/spr_perk_off/spr_perk_off.yy",},"order":29,},
     {"id":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"order":5,},
     {"id":{"name":"spr_aoi_right","path":"sprites/spr_aoi_right/spr_aoi_right.yy",},"order":3,},

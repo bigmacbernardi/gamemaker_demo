@@ -1,3 +1,3 @@
-target_x = 1200;
-target_y = 2640;
-target_rm = depthtest_1;
+target_x = 275;
+target_y = 54;
+target_rm = depth_test_smaller;
