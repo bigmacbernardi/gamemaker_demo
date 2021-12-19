@@ -1,15 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-//pseudoY = y + sprite_height/2;
-right_key = keyboard_check(0x44) or keyboard_check(vk_right);
-left_key = keyboard_check(0x41) or keyboard_check(vk_left);
-up_key = keyboard_check(0x57) or keyboard_check(vk_up);
-down_key = keyboard_check(0x53) or keyboard_check(vk_down);
-run_key = keyboard_check(vk_shift);
-check_butt = keyboard_check(vk_space) || keyboard_check(vk_enter);
 pause_butt = (keyboard_check_released(vk_escape) || keyboard_check_released(vk_backspace));
-x_spd = (right_key - left_key) * move_spd * (run_key?1.5:1);
-y_spd = (down_key - up_key) * move_spd * (run_key?1.5:1);
 //cheap pause effect
 /*if instance_exists(obj_pauser)//might as well just use pausemenu_main
 	{
@@ -18,33 +9,76 @@ y_spd = (down_key - up_key) * move_spd * (run_key?1.5:1);
 	}*/
 
 if (!paused){
+right_key = keyboard_check(0x44) or keyboard_check(vk_right);
+left_key = keyboard_check(0x41) or keyboard_check(vk_left);
+up_key = keyboard_check(0x57) or keyboard_check(vk_up);
+down_key = keyboard_check(0x53) or keyboard_check(vk_down);
+run_key = keyboard_check(vk_shift);
+check_butt = keyboard_check(vk_space) || keyboard_check(vk_enter);
+x_spd = (right_key - left_key) * move_spd * (run_key?1.5:1);
+y_spd = (down_key - up_key) * move_spd * (run_key?1.5:1);
 //collisions:  NEEDS MAJOR IMPROVEMENTS.  
 //If you try to move diagonally against wall you should SIDLE AGAINST IT.
 //If you clip into wall it should PUSH YOU OUT.
 if place_meeting(x + x_spd, y, obj_wall) == true
 //if place_meeting(x + x_spd, y + y_spd, obj_wall) == true //thought this version could be better.  it wasn't, it just changed which diagonals screech to a halt at stop
 {
-	x_spd = 0; //this activates the moving animations? what
+	show_debug_message("WILL COLLIDE VERTICALLY");
+	var next_try = x_spd+(x_spd>0?-0.05:0.05);
+	while next_try!=0{
+		show_debug_message("TRYING TO MOVE RIGHT BY "+string(next_try));
+		if place_meeting(x + next_try, y, obj_wall) == true{		
+			next_try+=next_try>0?-0.05:0.05;	
+		}
+		else{
+			x += next_try;
+			next_try = 0;//like a break, but cheeky	
+		}
+	}
+	//x_spd = 0; //this activates the moving animations? what
 		
 }
+else x += x_spd;
 //if place_meeting(x, y + y_spd, obj_wall) == true
-if place_meeting(x+x_spd, y + y_spd, obj_wall) == true //this was a LITTLE better though
+if place_meeting(x, y + y_spd, obj_wall) == true 
 {
-	y_spd = 0;		
-}
 	
+	
+	show_debug_message("WILL COLLIDE VERTICALLY");
+	var next_try = y_spd+(y_spd>0?-0.05:0.05);
+	while next_try!=0{
+		show_debug_message("TRYING TO MOVE DOWN BY "+string(next_try));
+		if place_meeting(x,y + next_try, obj_wall) == true{		
+			next_try+=next_try>0?-0.05:0.05;	
+		}
+		else{
+			y += next_try;
+			break;//SHOULD be better than next_try=0
+		}
+	}
+	//y_spd = 0;		
+}
+else y += y_spd;
+
+//turning logic; should have been after movement all along!
 if ((x_spd==0)&&(y_spd==0))image_speed = 0;
 else{
 	if (y_spd<0){ //moving up
 		eye_y1 = y - 16;
 		eye_y2 = y;
 		if (sprite_index != back_sprite) sprite_index = back_sprite; //turning up
-	}
+		if place_meeting(x, y, obj_wall) == true && 
+			place_meeting(x, y-1, obj_wall) == false//to compensate for change in collision box
+			y-=1;
+}
 	else if (y_spd>0){ //moving down
 		eye_y1 = y + sprite_height;
 		eye_y2 = y + sprite_height + 16;
 		if (sprite_index != front_sprite) sprite_index = front_sprite; //turning down
 		//show_debug_message("Y's changed to: "+string(y)+": "+string(eye_y1)+","+string(eye_y2));
+		if place_meeting(x, y, obj_wall) == true && 
+			place_meeting(x, y+1, obj_wall) == false//to compensate for change in collision box
+			y+=1;
 	}
 	else{ //just left or right
 		eye_y1 = y - 1;
@@ -54,11 +88,14 @@ else{
 	}
 	if (x_spd<0) // moving left
 	{
+				
 		eye_x1 = x - 16 -  abs(sprite_width/2) ;//left boundary
 		eye_x2 = x -  abs(sprite_width/2); //right boundary
 		if (sprite_index != left_sprite) sprite_index = left_sprite;//turning left
 		//x-= sprite_width;
-		//show_debug_message("Lefty X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
+		if place_meeting(x, y, obj_wall) == true && 
+			place_meeting(x+1, y, obj_wall) == false//to compensate for change in collision box
+			x+=1;
 	}
 	else if (x_spd>0) //moving right
 	{
@@ -67,6 +104,9 @@ else{
 		eye_x2 = x + sprite_width/2 + 16;
 		//show_debug_message("Righty X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
 		//x-= sprite_width;
+		if place_meeting(x, y, obj_wall) == true && 
+			place_meeting(x-1, y, obj_wall) == false//to compensate for change in collision box
+			x-=1;
 	}
 	else if (y_spd != 0) { //just up or down -- not even needed anymore?
 		eye_x1 = x -  abs(sprite_width)/2 - 1;
@@ -77,8 +117,7 @@ else{
 	}
 	image_speed = 4;
 }
-x += x_spd;
-y += y_spd;
+/* INTERACTIONS */
 if (check_butt)
 {
 	if (checkReleased && framesToBuffer==0)
