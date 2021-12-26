@@ -1,3 +1,3 @@
-target_x=360;
-target_y=101;
-target_rm=Room1;
+target_x=37;
+target_y=295;
+target_rm=depth_size_test;
