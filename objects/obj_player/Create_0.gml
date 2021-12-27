@@ -7,6 +7,7 @@ paused = false;
 framesToBuffer = 0;
 checkReleased = true; //prevents interaction looping
 locomode = 0;
+facing = 2;//numpad directions.  should ALSO use to determine eye coords, but implemented to reset standing sprites
 inst = noone;
 eye_x1 = x - abs(sprite_width/2) -  1;//top left corner
 eye_y1 = y + sprite_height;

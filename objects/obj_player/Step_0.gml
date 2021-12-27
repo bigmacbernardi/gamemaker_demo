@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+var sprites=[noone,front_sprites,noone,left_sprites,noone,right_sprites,noone,back_sprites,noone];
 pause_butt = (keyboard_check_released(vk_escape) || keyboard_check_released(vk_backspace));
 //cheap pause effect
 /*if instance_exists(obj_pauser)//might as well just use pausemenu_main
@@ -15,11 +16,13 @@ up_key = keyboard_check(0x57) or keyboard_check(vk_up);
 down_key = keyboard_check(0x53) or keyboard_check(vk_down);
 run_key = keyboard_check(vk_shift);
 check_butt = keyboard_check(vk_space) || keyboard_check(vk_enter);
-if right_key or left_key or up_key or down_key
-	locomode = run_key?2:1;
-else locomode = 0;
 x_spd = (right_key - left_key) * move_spd * (run_key?2:1);
 y_spd = (down_key - up_key) * move_spd * (run_key?2:1);
+if x_spd!=0 or y_spd!=0
+	locomode = run_key?2:1;
+else{
+	locomode = 0;
+}
 //collisions:  NEEDS MAJOR IMPROVEMENTS.  
 //If you try to move diagonally against wall you should SIDLE AGAINST IT.
 //If you clip into wall it should PUSH YOU OUT.
@@ -93,12 +96,13 @@ if place_meeting(x, y + y_spd, obj_wall) == true
 else y += y_spd;
 
 //turning logic; should have been after movement all along!
-if ((x_spd==0)&&(y_spd==0))image_speed = 0;
+if !((x_spd==0)&&(y_spd==0))&&((real_x_spd==0)&&(real_y_spd==0))image_speed = 0;//instead do this for WALL collision
 else{
 	if (real_y_spd<0){ //moving up
 		eye_y1 = y - 16;
 		eye_y2 = y;
-		if (sprite_index != back_sprites[locomode]) sprite_index = back_sprites[locomode]; //turning up
+		//if (sprite_index != back_sprites[locomode]) sprite_index = back_sprites[locomode]; //turning up
+		facing = 8;
 		if place_meeting(x, y, obj_wall) == true && 
 			place_meeting(x, y+1, obj_wall) == false//to compensate for change in collision box
 			y+=1;
@@ -106,7 +110,8 @@ else{
 	else if (real_y_spd>0){ //moving down
 		eye_y1 = y + sprite_height;
 		eye_y2 = y + sprite_height + 16;
-		if (sprite_index != front_sprites[locomode]) sprite_index = front_sprites[locomode]; //turning down
+		//if (sprite_index != front_sprites[locomode]) sprite_index = front_sprites[locomode]; //turning down
+		facing = 2;
 		if place_meeting(x, y, obj_wall) == true && 
 			place_meeting(x, y-1, obj_wall) == false//to compensate for change in collision box
 			{
@@ -131,7 +136,8 @@ else{
 		if abs(real_x_spd)>=abs(real_y_spd){//to prevent jitter along vertical walls
 			eye_x1 = x - 16 -  abs(sprite_width/2) ;//left boundary
 			eye_x2 = x -  abs(sprite_width/2); //right boundary
-			if (sprite_index != left_sprites[locomode]) sprite_index = left_sprites[locomode];//turning left
+			//if (sprite_index != left_sprites[locomode]) sprite_index = left_sprites[locomode];//turning left
+			facing = 4;
 		}
 		//x-= sprite_width;
 		if place_meeting(x, y, obj_wall) == true && 
@@ -141,7 +147,8 @@ else{
 	else if (real_x_spd>0) //moving right
 	{
 		if abs(real_x_spd)>=abs(real_y_spd){//to prevent jitter along vertical walls
-			if (sprite_index != right_sprites[locomode]) sprite_index = right_sprites[locomode];
+			//if (sprite_index != right_sprites[locomode]) sprite_index = right_sprites[locomode];
+			facing = 6;
 			eye_x1 = x + sprite_width/2;
 			eye_x2 = x + sprite_width/2 + 16;
 		}
@@ -185,4 +192,7 @@ else if (framesToBuffer>0){
 	framesToBuffer--;	
 }
 }
+else locomode = 0;
+if sprite_index!=sprites[facing-1][locomode]
+	sprite_index=sprites[facing-1][locomode];
 depth = -y;//primitive depth effects
