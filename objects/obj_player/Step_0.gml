@@ -18,8 +18,8 @@ check_butt = keyboard_check(vk_space) || keyboard_check(vk_enter);
 if right_key or left_key or up_key or down_key
 	locomode = run_key?2:1;
 else locomode = 0;
-x_spd = (right_key - left_key) * move_spd * (run_key?1.5:1);
-y_spd = (down_key - up_key) * move_spd * (run_key?1.5:1);
+x_spd = (right_key - left_key) * move_spd * (run_key?2:1);
+y_spd = (down_key - up_key) * move_spd * (run_key?2:1);
 //collisions:  NEEDS MAJOR IMPROVEMENTS.  
 //If you try to move diagonally against wall you should SIDLE AGAINST IT.
 //If you clip into wall it should PUSH YOU OUT.

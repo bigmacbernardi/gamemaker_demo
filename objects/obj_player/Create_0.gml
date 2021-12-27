@@ -2,7 +2,7 @@
 // You can write your code in this editor
 x_spd = 0;
 y_spd = 0;
-move_spd = 3;
+move_spd = 2;
 paused = false;
 framesToBuffer = 0;
 checkReleased = true; //prevents interaction looping
