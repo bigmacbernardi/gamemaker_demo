@@ -113,6 +113,7 @@
     {"id":{"name":"KnightAttack_strip","path":"sprites/KnightAttack_strip/KnightAttack_strip.yy",},"order":0,},
     {"id":{"name":"obj_rm_transition","path":"objects/obj_rm_transition/obj_rm_transition.yy",},"order":5,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":1,},
+    {"id":{"name":"obj_scalereset","path":"objects/obj_scalereset/obj_scalereset.yy",},"order":7,},
     {"id":{"name":"attack","path":"scripts/attack/attack.yy",},"order":0,},
     {"id":{"name":"sKnight","path":"sequences/sKnight/sKnight.yy",},"order":9,},
     {"id":{"name":"slot_dual","path":"scripts/slot_dual/slot_dual.yy",},"order":24,},
