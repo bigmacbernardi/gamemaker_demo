@@ -15,6 +15,9 @@ up_key = keyboard_check(0x57) or keyboard_check(vk_up);
 down_key = keyboard_check(0x53) or keyboard_check(vk_down);
 run_key = keyboard_check(vk_shift);
 check_butt = keyboard_check(vk_space) || keyboard_check(vk_enter);
+if right_key or left_key or up_key or down_key
+	locomode = run_key?2:1;
+else locomode = 0;
 x_spd = (right_key - left_key) * move_spd * (run_key?1.5:1);
 y_spd = (down_key - up_key) * move_spd * (run_key?1.5:1);
 //collisions:  NEEDS MAJOR IMPROVEMENTS.  
@@ -95,7 +98,7 @@ else{
 	if (real_y_spd<0){ //moving up
 		eye_y1 = y - 16;
 		eye_y2 = y;
-		if (sprite_index != back_sprite) sprite_index = back_sprite; //turning up
+		if (sprite_index != back_sprites[locomode]) sprite_index = back_sprites[locomode]; //turning up
 		if place_meeting(x, y, obj_wall) == true && 
 			place_meeting(x, y+1, obj_wall) == false//to compensate for change in collision box
 			y+=1;
@@ -103,7 +106,7 @@ else{
 	else if (real_y_spd>0){ //moving down
 		eye_y1 = y + sprite_height;
 		eye_y2 = y + sprite_height + 16;
-		if (sprite_index != front_sprite) sprite_index = front_sprite; //turning down
+		if (sprite_index != front_sprites[locomode]) sprite_index = front_sprites[locomode]; //turning down
 		if place_meeting(x, y, obj_wall) == true && 
 			place_meeting(x, y-1, obj_wall) == false//to compensate for change in collision box
 			{
@@ -128,7 +131,7 @@ else{
 		if abs(real_x_spd)>=abs(real_y_spd){//to prevent jitter along vertical walls
 			eye_x1 = x - 16 -  abs(sprite_width/2) ;//left boundary
 			eye_x2 = x -  abs(sprite_width/2); //right boundary
-			if (sprite_index != left_sprite) sprite_index = left_sprite;//turning left
+			if (sprite_index != left_sprites[locomode]) sprite_index = left_sprites[locomode];//turning left
 		}
 		//x-= sprite_width;
 		if place_meeting(x, y, obj_wall) == true && 
@@ -138,7 +141,7 @@ else{
 	else if (real_x_spd>0) //moving right
 	{
 		if abs(real_x_spd)>=abs(real_y_spd){//to prevent jitter along vertical walls
-			if (sprite_index != right_sprite) sprite_index = right_sprite;
+			if (sprite_index != right_sprites[locomode]) sprite_index = right_sprites[locomode];
 			eye_x1 = x + sprite_width/2;
 			eye_x2 = x + sprite_width/2 + 16;
 		}
@@ -155,7 +158,7 @@ else{
 		//show_debug_message("X's reset");//Last X's changed to: "+string(x)+": "+string(eye_x1)+","+string(eye_x2));
 		
 	}
-	image_speed = 4;
+	image_speed = 1;
 }
 /* INTERACTIONS */
 if (check_butt)

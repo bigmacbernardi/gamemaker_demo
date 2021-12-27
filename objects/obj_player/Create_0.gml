@@ -6,6 +6,7 @@ move_spd = 3;
 paused = false;
 framesToBuffer = 0;
 checkReleased = true; //prevents interaction looping
+locomode = 0;
 inst = noone;
 eye_x1 = x - abs(sprite_width/2) -  1;//top left corner
 eye_y1 = y + sprite_height;
