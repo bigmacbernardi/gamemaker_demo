@@ -5,7 +5,7 @@
 event_inherited();
 if ascending
 {
-	if ++level == 1499 ascending = false;
+	if ++level == 149 ascending = false;
 	
 }
 else {
@@ -13,9 +13,9 @@ else {
 		
 }
 
-if (distance_to_object(obj_player)<120){
-	image_alpha=1-max(0,(distance_to_object(obj_player)-40)/80);
-	if (distance_to_object(obj_player)<100) activated = true;
+if (distance_to_object(obj_player)<visibility_range){
+	image_alpha=1-max(0,(distance_to_object(obj_player)-40)/(visibility_range-40));
+	if (distance_to_object(obj_player)<activation_range) activated = true;
 }
 if activated{
 	if (obj_player.x > x){
@@ -38,22 +38,22 @@ else{// patrolling
 	if forward{
 		if horizontalPatrol{
 			x+=0.5;
-			if (x==maxi) forward=false;
+			if (x>=maxi) forward=false;
 		}
 		else{
 			y+=0.5;
-			if (y == maxi) forward=false;
+			if (y>= maxi) forward=false;
 		}
 	}
 	else{
 		if horizontalPatrol{
 			x-=0.5;
-			if (x==mini) forward=true;
+			if (x<=mini) forward=true;
 		}
 		else{
 			y-=0.5;
-			if (y == mini) forward=true;
+			if (y <= mini) forward=true;
 		}
 	}
 }
-sprite_set_offset(sprite_index, 0, 0 - floor(level/500));
+sprite_set_offset(sprite_index, 0, 0 - floor(level/50));
