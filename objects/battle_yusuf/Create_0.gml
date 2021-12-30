@@ -4,6 +4,9 @@
 // Inherit the parent event
 event_inherited();
 //layer_shader(unitSequence,shd_Sepia);
+layer_sequence_destroy(unitSequence);
+unitSequence = layer_sequence_create("Sequences",x,y,sYusuf);
+
 base[HP] = global.party[YUSUF][HP];
 base[MP] = global.party[YUSUF][MP];
 base[DEF] = global.party[YUSUF][DEF];

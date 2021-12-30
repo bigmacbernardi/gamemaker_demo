@@ -3,6 +3,9 @@
 // Inherit the parent event
 event_inherited();
 
+layer_sequence_destroy(unitSequence);
+unitSequence = layer_sequence_create("Sequences",x,y,sAoiBattle);
+
 base[HP] = global.party[AOI][HP];
 base[MP] = global.party[AOI][MP];
 base[DEF] = global.party[AOI][DEF];
