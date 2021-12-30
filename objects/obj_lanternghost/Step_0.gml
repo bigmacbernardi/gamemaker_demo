@@ -5,7 +5,7 @@
 event_inherited();
 if ascending
 {
-	if ++level == 149 ascending = false;
+	if ++level == 199 ascending = false;
 	
 }
 else {

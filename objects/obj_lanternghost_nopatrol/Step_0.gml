@@ -5,7 +5,7 @@
 event_inherited();
 if ascending
 {
-	if ++level == 1499 ascending = false;
+	if ++level == 199 ascending = false;
 	
 }
 else {
@@ -34,4 +34,4 @@ if activated{
 	if (obj_player.y > y) y+=1;
 	else if (obj_player.y < y) y-=1;
 }
-sprite_set_offset(sprite_index, 0, 0 - floor(level/500));
+sprite_set_offset(sprite_index, 0, 0 - floor(level/50));
