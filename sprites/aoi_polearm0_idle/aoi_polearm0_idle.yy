@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 31,
-  "bbox_top": 0,
+  "bbox_top": 10,
   "bbox_bottom": 26,
   "HTile": false,
   "VTile": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2c0e1ee9-0e8e-4a78-b224-f9519e71bce1","path":"sprites/spr_aoi_idle/spr_aoi_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2c0e1ee9-0e8e-4a78-b224-f9519e71bce1","path":"sprites/spr_aoi_idle/spr_aoi_idle.yy",},"LayerId":{"name":"1e95a700-0163-423c-bb5c-d07e1cb26553","path":"sprites/spr_aoi_idle/spr_aoi_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_aoi_idle","path":"sprites/spr_aoi_idle/spr_aoi_idle.yy",},"resourceVersion":"1.0","name":"2c0e1ee9-0e8e-4a78-b224-f9519e71bce1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2c0e1ee9-0e8e-4a78-b224-f9519e71bce1","path":"sprites/aoi_polearm0_idle/aoi_polearm0_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2c0e1ee9-0e8e-4a78-b224-f9519e71bce1","path":"sprites/aoi_polearm0_idle/aoi_polearm0_idle.yy",},"LayerId":{"name":"1e95a700-0163-423c-bb5c-d07e1cb26553","path":"sprites/aoi_polearm0_idle/aoi_polearm0_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"aoi_polearm0_idle","path":"sprites/aoi_polearm0_idle/aoi_polearm0_idle.yy",},"resourceVersion":"1.0","name":"2c0e1ee9-0e8e-4a78-b224-f9519e71bce1","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_aoi_idle","path":"sprites/spr_aoi_idle/spr_aoi_idle.yy",},
+    "spriteId": {"name":"aoi_polearm0_idle","path":"sprites/aoi_polearm0_idle/aoi_polearm0_idle.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f60f8614-ba66-4676-bf04-1fcf894fc287","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c0e1ee9-0e8e-4a78-b224-f9519e71bce1","path":"sprites/spr_aoi_idle/spr_aoi_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e30b0e32-a987-4366-8f5e-3bd260ce3a7f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c0e1ee9-0e8e-4a78-b224-f9519e71bce1","path":"sprites/aoi_polearm0_idle/aoi_polearm0_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_aoi_idle","path":"sprites/spr_aoi_idle/spr_aoi_idle.yy",},
+    "parent": {"name":"aoi_polearm0_idle","path":"sprites/aoi_polearm0_idle/aoi_polearm0_idle.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_aoi_idle",
+    "name": "aoi_polearm0_idle",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "battle",
-    "path": "folders/Sprites/Aoi/battle.yy",
+    "name": "weapons",
+    "path": "folders/Sprites/Aoi/battle/weapons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_aoi_idle",
+  "name": "aoi_polearm0_idle",
   "tags": [],
   "resourceType": "GMSprite",
 }

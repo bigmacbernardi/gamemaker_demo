@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "battle",
-    "path": "folders/Sprites/Aoi/battle.yy",
+    "name": "old",
+    "path": "folders/Sprites/Aoi/battle/old.yy",
   },
   "resourceVersion": "1.0",
   "name": "noBKG_AoiShield_strip",
