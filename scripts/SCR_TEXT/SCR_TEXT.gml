@@ -14,7 +14,7 @@ switch(argument0){
         break;
 	case 2: 
         global.msg[0]= "Hold SHIFT to run./";
-        global.msg[1]= "..."+global.names[global.currentParty[0]]+"./";
+        global.msg[1]= "       ..."+global.names[global.currentParty[0]]+"./";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;
@@ -32,7 +32,7 @@ switch(argument0){
         global.msg[4]= "%%%";
         break;
 	case 31:
-        global.msg[0]= "I read boooooks/";
+        global.msg[0]= " I read bo^1o^1o^1o^1o^1ks/";
         global.msg[1]= "That's why by thoughts are so complex!/";
         global.msg[2]= "I'b such a cultured figure that to truly&even engage with bee requires all sorts of &conversation options not even developed yet./";
         global.msg[3]= "I bean^4, by god^3!&Forget player choices, what if I had bore&than 4 text boxes of dialogue to share??/";
@@ -40,7 +40,7 @@ switch(argument0){
         global.msg[5]= "%%%";
         break;
 	case 32:
-        global.msg[0]= "I'b what, according to &these books, your people/";
+        global.msg[0]= "I'm what, according to &these books, your people/";
         global.msg[1]= "call a 'bitch-ass.^5'%";
         global.msg[2]= "Boo^1oo%";
         global.msg[3]= "%%%";
@@ -49,7 +49,7 @@ switch(argument0){
         break;
 	/*chest messages*/
 	case 1000:
-        global.msg[0]= "Got an Old Helm!/";//maybe make this read the name of last item received
+        global.msg[0]= "& Got an Old Helm!/";//maybe make this read the name of last item received
         global.msg[1]= "%%%";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
