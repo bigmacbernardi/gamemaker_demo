@@ -17,7 +17,7 @@ if (distance_to_object(obj_player)<visibility_range){
 	image_alpha=1-max(0,(distance_to_object(obj_player)-40)/(visibility_range-40));
 	if (distance_to_object(obj_player)<activation_range) activated = true;
 }
-if activated{
+if activated &&!obj_player.paused{
 	if (obj_player.x > x){
 		if (image_xscale==-1){
 			image_xscale = 1;

@@ -226,6 +226,7 @@
     {"id":{"name":"soldier_idle","path":"sprites/soldier_idle/soldier_idle.yy",},"order":0,},
     {"id":{"name":"obj_shader","path":"objects/obj_shader/obj_shader.yy",},"order":0,},
     {"id":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"order":0,},
+    {"id":{"name":"spr_lanternghost_static","path":"sprites/spr_lanternghost_static/spr_lanternghost_static.yy",},"order":4,},
     {"id":{"name":"obj_initializer","path":"objects/obj_initializer/obj_initializer.yy",},"order":0,},
     {"id":{"name":"Not__Lucas","path":"sprites/Not__Lucas/Not__Lucas.yy",},"order":2,},
     {"id":{"name":"spr_hold_off","path":"sprites/spr_hold_off/spr_hold_off.yy",},"order":26,},

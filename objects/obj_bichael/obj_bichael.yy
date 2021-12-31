@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_lanternghost_static",
+    "path": "sprites/spr_lanternghost_static/spr_lanternghost_static.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "checkable",
