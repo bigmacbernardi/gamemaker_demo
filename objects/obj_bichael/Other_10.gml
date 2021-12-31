@@ -9,7 +9,7 @@ global.lineNo = nextMessage++;
 global.faceemotion= 2;
 global.flag[0]++;
 //}
-if nextMessage>32 nextMessage--;
+if nextMessage>32 nextMessage=30;
 if (instance_exists(obj_dialoguer)) instance_destroy(obj_dialoguer);
 message = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dialoguer);
 //	global.dialogueLine=0;
