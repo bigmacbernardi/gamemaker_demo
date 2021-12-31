@@ -42,7 +42,7 @@ switch(argument0){
 	case 32:
         global.msg[0]= "I'b what, according to &these books, your people/";
         global.msg[1]= "call a 'bitch-ass.^5'%";
-        global.msg[2]= "Boo^2oo%";
+        global.msg[2]= "Boo^1oo%";
         global.msg[3]= "%%%";
         global.msg[4]= "%%%";
         global.msg[5]= "%%%";
