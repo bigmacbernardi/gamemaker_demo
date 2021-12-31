@@ -34,8 +34,8 @@ switch(argument0){
 	case 31:
         global.msg[0]= "I read boooooks/";
         global.msg[1]= "That's why by thoughts are so complex!/";
-        global.msg[2]= "I'b such a cultured figured that to truly&even engage with bee requires all sorts of &conversation options not even developed yet./";
-        global.msg[3]= "I bean^4, by god^3!&Forget player choices, what if I had more&than 4 text boxes of dialogue to share??/";
+        global.msg[2]= "I'b such a cultured figure that to truly&even engage with bee requires all sorts of &conversation options not even developed yet./";
+        global.msg[3]= "I bean^4, by god^3!&Forget player choices, what if I had bore&than 4 text boxes of dialogue to share??/";
         global.msg[4]= "Ok, baybe that's not such a problem.&Thank god for dynabizzub./";
         global.msg[5]= "%%%";
         break;
