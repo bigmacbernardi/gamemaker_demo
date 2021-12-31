@@ -1,11 +1,13 @@
 /// @description When created, this box will print a globally selected line character by character.
 // The entire line will display at once
 //stopping movement
+show_debug_message("Writer created at x: "+string(x)+"; y: "+string(y));
 obj_player.paused = true;
 //Toby's variables
 writingx= 0;
 writingy= 0;
 SCR_TEXTTYPE(global.typer); //sets text properties
+show_debug_message("Writing X is now: "+string(writingx));
 x= round(x);
 y= round(y);
 doak= 0;

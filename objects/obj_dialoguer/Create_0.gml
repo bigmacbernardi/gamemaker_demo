@@ -11,7 +11,8 @@ if(instance_exists(obj_player)) {
         if(global.facechoice != 0) {
             writer= instance_create_depth(xx + 68, yy - 5, -5000,obj_writer);
             script_execute(scr_facechoice);
-        } else  writer= instance_create_depth(xx + 10, yy - 5,-5000, obj_writer);
+        } else  writer= instance_create_depth(xx + 10, yy - 5,-5000, obj_writer);//X OF WRITER OBJECT DETERMINES STARTING POINT OF TEXT
+		
     } else  {
         side= 1;
         if(global.facechoice != 0) {

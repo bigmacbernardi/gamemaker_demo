@@ -27,20 +27,25 @@ switch(argument0){
 	case 30:
         global.msg[0]= "Bichael Mackson/";
         global.msg[1]= "Not that you would know./";
-        global.msg[2]= "%%%";
-        global.msg[3]= "%%%";
+        global.msg[2]= "The parts for by dialogue aren't finished&yet./";
+        global.msg[3]= "And that's why I have this ridiculous &placeholder dialogue./";
+        global.msg[4]= "%%%";
         break;
 	case 31:
         global.msg[0]= "I read boooooks/";
-        global.msg[1]= "%%%";
-        global.msg[2]= "%%%";
-        global.msg[3]= "%%%";
+        global.msg[1]= "That's why by thoughts are so complex!/";
+        global.msg[2]= "I'b such a cultured figured that to truly&even engage with bee requires all sorts of &conversation options not even developed yet./";
+        global.msg[3]= "I bean^4, by god^3!&Forget player choices, what if I had more&than 4 text boxes of dialogue to share??/";
+        global.msg[4]= "Ok, baybe that's not such a problem.&Thank god for dynabizzub./";
+        global.msg[5]= "%%%";
         break;
 	case 32:
         global.msg[0]= "I'b what, according to &these books, your people/";
         global.msg[1]= "call a 'bitch-ass.^5'%";
         global.msg[2]= "Boo%";
         global.msg[3]= "%%%";
+        global.msg[4]= "%%%";
+        global.msg[5]= "%%%";
         break;
 	/*chest messages*/
 	case 1000:
