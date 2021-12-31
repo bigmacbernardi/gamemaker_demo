@@ -12,7 +12,7 @@ else  {
 if(global.facechange == 2) global.facechange= 0;
 if(global.facechange == 1 && global.facechoice == 0) {
     if(instance_exists(writer)) {
-        writer.x= xx + 30;
+        writer.x= xx + 26;//was 30
         writer.writingx= writer.x;
     }
     if(!instance_exists(774/* obj_face */)) {
