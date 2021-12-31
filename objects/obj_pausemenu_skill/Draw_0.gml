@@ -25,7 +25,7 @@ for (var i = 0; i < array_length(skillsToShow[0]); i++){
   if (i%3==2){
 	drawX = x+20;
 	drawY += 16;
-  }else drawX = camera_get_view_width(cam)/6;
+  }else drawX += camera_get_view_width(cam)/6;
 }
 drawX = x+10;
 drawY = y + 100;

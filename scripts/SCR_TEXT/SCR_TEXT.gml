@@ -24,6 +24,25 @@ switch(argument0){
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;
+	case 30:
+        global.msg[0]= "Bichael Mackson/";
+        global.msg[1]= "Not that you would know./";
+        global.msg[2]= "%%%";
+        global.msg[3]= "%%%";
+        break;
+	case 31:
+        global.msg[0]= "I read boooooks/";
+        global.msg[1]= "%%%";
+        global.msg[2]= "%%%";
+        global.msg[3]= "%%%";
+        break;
+	case 32:
+        global.msg[0]= "I'b what, according to &these books, your people/";
+        global.msg[1]= "call a 'bitch-ass.^5'%";
+        global.msg[2]= "Boo%";
+        global.msg[3]= "%%%";
+        break;
+	/*chest messages*/
 	case 1000:
         global.msg[0]= "Got an Old Helm!/";//maybe make this read the name of last item received
         global.msg[1]= "%%%";
