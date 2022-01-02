@@ -30,16 +30,10 @@
   },
   "moments": {
     "Keyframes": [
-      {"id":"84f85aef-5b7c-4946-814c-c0fd695e320f","Key":29.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
-              "checkForHit",
-            ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
-      {"id":"1121e70b-c739-4005-9f06-129698b269bf","Key":30.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"fdaab392-7ce9-4fd4-9d8f-e80070220342","Key":30.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitAttack",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
-      {"id":"e5db4265-c7b9-4e14-bd74-4b2ba9b39132","Key":57.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
-              "checkForHit",
-            ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
-      {"id":"31f12203-0da0-4897-8d01-ce4d5b58151e","Key":58.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"45ce0984-a048-4409-b2e1-683ef15da6ac","Key":58.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitAttack",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
     ],
@@ -181,8 +175,8 @@
     "path": "scripts/sBeastling_Events26/sBeastling_Events26.yy",
   },
   "parent": {
-    "name": "battle resources",
-    "path": "folders/Objects/battle resources.yy",
+    "name": "bad guys",
+    "path": "folders/Objects/battle resources/bad guys.yy",
   },
   "resourceVersion": "1.3",
   "name": "sBeastling",

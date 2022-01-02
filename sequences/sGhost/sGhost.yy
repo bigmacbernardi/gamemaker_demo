@@ -27,10 +27,7 @@
   },
   "moments": {
     "Keyframes": [
-      {"id":"4007dd00-105c-435e-a69b-b53ccbdb1618","Key":42.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
-              "checkForHit",
-            ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
-      {"id":"b1d9b7a8-007d-40c8-a1fb-37fca408a1d3","Key":53.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"829af77e-5641-4f21-99a7-d7ec62189171","Key":50.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitAttack",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
     ],
@@ -153,8 +150,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "battle resources",
-    "path": "folders/Objects/battle resources.yy",
+    "name": "bad guys",
+    "path": "folders/Objects/battle resources/bad guys.yy",
   },
   "resourceVersion": "1.3",
   "name": "sGhost",

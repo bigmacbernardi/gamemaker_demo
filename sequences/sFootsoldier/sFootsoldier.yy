@@ -30,16 +30,10 @@
   },
   "moments": {
     "Keyframes": [
-      {"id":"e9fea565-5b72-44fd-a85d-10c0b5899634","Key":25.5,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
-              "checkForHit",
-            ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
-      {"id":"a4a2226e-ee16-42f3-86ab-67a014c11ee1","Key":26.5,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"43ad6cb6-2f6f-415a-8442-82d45156af00","Key":26.5,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitAttack",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
-      {"id":"e9ce7da3-1bc2-4825-8d83-b95d0032d23f","Key":37.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
-              "checkForHit",
-            ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
-      {"id":"22d97d8a-350b-486d-8a68-ce8aad67a9a0","Key":40.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"ff7351fa-8418-490b-b4c9-b246ab96a7fb","Key":40.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitAttack",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
     ],
@@ -178,8 +172,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "battle resources",
-    "path": "folders/Objects/battle resources.yy",
+    "name": "bad guys",
+    "path": "folders/Objects/battle resources/bad guys.yy",
   },
   "resourceVersion": "1.3",
   "name": "sFootsoldier",

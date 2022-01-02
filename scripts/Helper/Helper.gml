@@ -16,9 +16,8 @@ function Helper(){
 		unit.attackWillHit = false;
 }*/
 
-function checkForHit(){
+function checkForHit(unit = global.selectedUnit){//checks for physical attack
 	var number = random(1);
-	var unit = global.selectedUnit;
 	show_debug_message("Checking for hit (ACC "+string(10*global.selectedUnit.current[@ ACC])
 			+", rolled a "+string(10-(number*10))+")");
 	if (number < unit.current[@ ACC])
@@ -38,25 +37,27 @@ function useItem(){
 function unitAttack(){
 	var unit = global.selectedUnit;
 	if unit < 0 return; //emergency fix
-	else show_debug_message(global.selectedUnit.title+" attacking "+
-	global.targets[0].title+"#"+string(global.targets[0]));
-	
-/*	var target = global.targets[0];
-var orig_x = unit.x;
-var orig_y= unit.y;
-var xStep = (target.x - orig_x) / 20;
-var yStep = (target.y - orig_y) / 20;
-repeat(20){
-     orig_x += xStep;
-     orig_y += yStep;
-	 layer_sequence_x(unit.unitSequence,orig_x);
-	 layer_sequence_y(unit.unitSequence,orig_y);
-}*///attempt to make animation work
-	if (unit.attackWillHit){
-		for (var i = 0; i < array_length(global.targets); i++){ //should recalculate and put outside, but that's not how attack works rn
-			//if global.targets[i]==noone continue;//emergency fix
+	else{
+		show_debug_message(global.selectedUnit.title+" attacking "+
+			global.targets[0].title+"#"+string(global.targets[0]));
+	}
+	var targets = global.targets;
+	for (var i = 0; i < array_length(targets); i++){ //should recalculate and put outside, but that's not how attack works rn
+		checkForHit(unit);
+		/*var orig_x = unit.x;
+		var orig_y= unit.y;
+		var xStep = (targets[i].x - orig_x) / 20;
+		var yStep = (targets[i].y - orig_y) / 20;
+		repeat(20){
+		     orig_x += xStep;
+		     orig_y += yStep;
+			 layer_sequence_x(unit.unitSequence,orig_x);
+			 layer_sequence_y(unit.unitSequence,orig_y);
+		}*///attempt to make animation work
+		if (unit.attackWillHit){
+	//if global.targets[i]==noone continue;//emergency fix
 			//else show_debug_message("Hitting "+string(global.targets[i]));
-			with(global.targets[i]){
+			with(targets[i]){
 					incomingDamage = ceil(unit.current[@ STR]); //should account for def here and use separate attack power IMO, but whatever
 					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
@@ -64,38 +65,37 @@ repeat(20){
 					audio_play_sound(damageSound,100,false);
 					state = HIT;
 			}
-			if global.targets[i] == global.selectedUnit{
-				if !battle_manager.selectedFinished{
-					show_debug_message("Didn't finish after hitting yourself");
-					with battle_manager{
-						selectedFinished = true;	
-					}
-				}
-			}
 		}
-	}
-	else{
-		for (var i = 0; i < array_length(global.targets); i++){
-			//if global.targets[i]==undefined continue;//emergency fix
-			//else show_debug_message("Missing "+string(global.targets[i]));
-			
-			with(global.targets[i]){
+		else{
+			with(targets[i]){
 				show_debug_message("OFFICIALLY MISSING");
 				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
 				layer_sequence_headpos(unitSequence,missStart);
 				state = MISS;
+			}	
+		}
+		if targets[i] == unit{
+			if !battle_manager.selectedFinished{
+				show_debug_message("Didn't finish after swatting yourself");//wasn't doin it
+				with battle_manager{
+					selectedFinished = true;	
+				}
 			}
 		}
-	
 	}
 
-/*repeat(20){
-     orig_x -= xStep;
-     orig_y -= yStep;
-	 layer_sequence_x(unit.unitSequence,orig_x);
-	 layer_sequence_y(unit.unitSequence,orig_y);
-}*/
+	/*repeat(20){
+	     orig_x -= xStep;
+	     orig_y -= yStep;
+		 layer_sequence_x(unit.unitSequence,orig_x);
+		 layer_sequence_y(unit.unitSequence,orig_y);
+	}*/
+	with battle_manager{
+		enqueue(unit);	
+	}
 }
+	
+
 
 function equip(char,equI){//character, equipment index
 	//show_debug_message(global.equipment[|equI]);

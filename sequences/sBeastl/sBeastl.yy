@@ -27,10 +27,7 @@
   },
   "moments": {
     "Keyframes": [
-      {"id":"5af6d527-00be-4ce7-a72f-eda8f7e9c148","Key":43.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
-              "checkForHit",
-            ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
-      {"id":"a2933cbe-6327-4a74-b8f0-02ee91a3a234","Key":53.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"43344c2e-5ede-427f-848a-88c08fea151b","Key":53.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "unitAttack",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
     ],
@@ -153,8 +150,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "battle resources",
-    "path": "folders/Objects/battle resources.yy",
+    "name": "bad guys",
+    "path": "folders/Objects/battle resources/bad guys.yy",
   },
   "resourceVersion": "1.3",
   "name": "sBeastl",

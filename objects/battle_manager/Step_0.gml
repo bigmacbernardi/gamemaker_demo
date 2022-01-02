@@ -86,6 +86,7 @@ switch(combatPhase){
 		show_debug_message("Done reduced");
 		
 		//if (inst.turnFinished||inst.state != DEATH) then it shouldn't be in queue
+		if global.selectedUnit>0{
 		global.selectedUnit.selected = true;
 		//old list-looping method used:	if ((!inst.turnFinished)&&(inst.state != DEATH))
 		if (global.selectedUnit.isPlayer){  //do check if dual technique is possible HERE
@@ -106,6 +107,7 @@ switch(combatPhase){
 			solicitInput = true;
 		}
 		combatPhase = phase.wait;
+		}
 			
 	break;
 	
