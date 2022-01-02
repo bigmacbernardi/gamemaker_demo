@@ -26,9 +26,9 @@ switch(state){
 			//	layer_sequence_headpos(unitSequence, missStart);
 			//	state = MISS;
 			//}
-			with battle_manager{
-				enqueue(myId);	
-			}
+			/*with battle_manager{
+				//enqueue(myId);//should be done by unitAttack!
+			}*/
 		}
 	
 	break;
@@ -44,7 +44,7 @@ switch(state){
 			/*broadcast should do the following*/
 			
 			with battle_manager{
-				enqueue(myId);	
+				enqueue(myId);//ITEM
 			}
 			//if id==global.selectedUnit battle_manager.selectedFinished = true; //i guess? figure this out
 

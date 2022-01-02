@@ -11,16 +11,14 @@ switch(state){
 	
 	case ATTACK:
 		if (layer_sequence_get_headpos(unitSequence) > (doingSpecialAttack?atk2End:atkEnd)){
-			var myId = id;
+			//var myId = id;
 			show_debug_message(title+" attack animation finished");
 			//at THIS point damage should happen right?
 			turnFinished = true;
 			//if (attackWillHit){
 			//	layer_sequence_headpos(unitSequence, idleStart);
 			state = IDLE;//NEW stuff below this line
-			with battle_manager{
-				enqueue(myId);	
-			}
+			/*with battle_manager{enqueue(myId);}*///should be done by unitAttack
 		}
 	
 	break;
@@ -36,7 +34,7 @@ switch(state){
 			/*broadcast should do the following*/
 			
 			with battle_manager{
-				enqueue(myId);	
+				enqueue(myId);//ITEM
 			}
 		}
 	

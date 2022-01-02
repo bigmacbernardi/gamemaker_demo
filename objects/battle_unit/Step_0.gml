@@ -15,9 +15,7 @@ switch(state){
 			//if (attackWillHit){
 			//	layer_sequence_headpos(unitSequence, idleStart);
 			state = IDLE;
-			with battle_manager{
-				enqueue(myId);	
-			}
+			//with battle_manager{enqueue(myId);} //already done by unitAttack!
 		}
 	
 	break;
@@ -33,7 +31,7 @@ switch(state){
 			/*broadcast should do the following*/
 			
 			with battle_manager{
-				enqueue(myId);	
+				enqueue(myId);//ITEM
 			}
 			
 		}
@@ -124,9 +122,8 @@ switch(state){
 			//layer_sequence_headpos(unitSequence, idleStart);
 			state = IDLE;			
 			turnFinished = true;
-			with battle_manager{
-				enqueue(myId);
-			}
+			//with battle_manager{enqueue(myId);} //already done by unitAttack OR special func
+		
 			
 		}
 	break;

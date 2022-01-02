@@ -25,22 +25,6 @@ switch(combatPhase){
 					global.allies[|3].teammate = global.allies[|2];
 				}
 			}
-			/* NEXT CHUNK IS LEFTOVERS*/
-		/*for (var i = 0; i < instance_number(battle_spawner); i++){
-			var spawner = instance_find(battle_spawner, i);
-			if (!spawner.isPlayer){ //regular
-				var unit = instance_create_depth(spawner.x,spawner.y,0,spawner.unit);
-				ds_list_add(global.units,unit);
-				//ds_priority_add(pq,unit,getWait(unit));
-				enqueue(unit,getWait(unit));
-				//show_debug_message("Queued "+unit.title+" with priority "+string(getWait(unit)));
-				ds_list_add(global.enemies,unit);
-			}
-			else{
-				//spawner.event_user(0); //bc it's player_spawner.  dumb
-				//ignore, shouldn't exist anymore
-			}
-		}*/
 		//cur enemy spawner
 		for (var i = 0; i < array_length(global.foesToSpawn); i+=3){
 			var unit = instance_create_depth(global.foesToSpawn[i+1],global.foesToSpawn[i+2],0,global.foesToSpawn[i])

@@ -72,7 +72,10 @@ function burn(){
 			}
 		}
 	 }
-	battle_manager.alarm[1] = 10;		 
+	with battle_manager{
+		enqueue(unit); //was done by selector.  no longer
+		battle_manager.alarm[1] = 10;	 
+	}	 
 }
 
 function freeze(){
@@ -117,7 +120,10 @@ function freeze(){
 			state = MISS;
 		}
 	}
-	battle_manager.alarm[1] = 10;
+	with battle_manager{
+		enqueue(unit); //was done by selector.  no longer
+		battle_manager.alarm[1] = 10;	 
+	}
 	//complete the turn?
 }
 
@@ -139,7 +145,10 @@ function embolden(){
 		layer_sequence_headpos(unitSequence,hitStart);
 		state = HEAL;
 	}
-	battle_manager.alarm[1] = 10;
+	with battle_manager{
+		enqueue(unit); //was done by selector.  no longer
+		battle_manager.alarm[1] = 10;	 
+	}
 }
 
 function balm(){
@@ -158,10 +167,10 @@ function balm(){
 			}
 		}
 	}
-	//with battle_manager{
-	//	enqueue(unit); //done elsewhere?
+	with battle_manager{
+		enqueue(unit); //was done by selector.  no longer
 		battle_manager.alarm[1] = 10;	 
-	//}
+	}
 }
 
 function intensiveCare(){
