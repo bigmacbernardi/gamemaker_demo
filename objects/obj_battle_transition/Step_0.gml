@@ -4,3 +4,6 @@ if room == target_rm && image_index < 1
 	{
 	instance_destroy()
 	}
+else{
+	show_debug_message("Image index: "+string(image_index));	
+}
