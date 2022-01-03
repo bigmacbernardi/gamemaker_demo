@@ -18,7 +18,7 @@ run_key = keyboard_check(vk_shift);
 slow_key = keyboard_check(vk_control);
 check_butt = keyboard_check(vk_space) || keyboard_check(vk_enter);
 x_spd = (right_key - left_key) * move_spd * (run_key?2:1) * (slow_key?.5:1);
-y_spd = (down_key - up_key) * move_spd * (run_key?2:1);
+y_spd = (down_key - up_key) * move_spd * (run_key?2:1) * (slow_key?.5:1);
 if x_spd!=0 or y_spd!=0
 	locomode = run_key?2:1;
 else{
