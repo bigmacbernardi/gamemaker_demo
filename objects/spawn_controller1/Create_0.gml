@@ -1,4 +1,16 @@
 /// @description Once per area, set enemy fights to none.  Start one screen BEFORE enemies
 // Remember to DESTROY when leaving.
-scriptedFights = [false,false,false,false,false,false,false,false];
+scriptedFights = [
+	[battle_enemy,224,66,battle_enemy,256,82,battle_enemy,224,114,battle_enemy,256,146],
+	[battle_enemy,224,66,battle_enemy,256,82,battle_enemy,224,114,battle_enemy,256,146],
+	[battle_enemy,224,66,battle_enemy,256,82,battle_enemy,224,114,battle_enemy,256,146],
+	[battle_lghost,224,66,battle_lghost,256,82,battle_lghost,224,114,battle_enemy,256,146],
+	[battle_footsoldier,224,64],
+	[battle_beastling,224,36],
+	[battle_beastling,224,36,battle_beastling,260,94],
+	[battle_lghost,224,66,battle_lghost,256,82,battle_lghost,224,114,battle_lghost,256,146],
+	[battle_lghost,224,66,battle_enemy,256,82,battle_lghost,224,114,battle_enemy,256,146],
+	[battle_lghost,224,66,battle_lghost,256,82,battle_lghost,224,114,battle_lghost,256,146]
+];
+global.spawnController=spawn_controller1;
 //This could potentially handle overworld enemy spawns by checking room, too

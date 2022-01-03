@@ -189,7 +189,7 @@ switch(combatPhase){
 			//songPlaying = audio_play_sound(victoryTheme,1000,true);
 		}
 		//currentMessage = "You win!";
-		global.foesToSpawn = [];
+		
 		for (var i = 0; i<4;i++){
 			if global.currentParty[i]==noone continue;//will fuck up if we ever have (member,member,noone,member) so watch out
 			global.points[global.currentParty[i]][HP] = max(0,global.units[|i].current[HP]);
@@ -203,7 +203,8 @@ switch(combatPhase){
 			}
 		}
 		global.money += cashEarned;
-		
+		global.spawnController.scriptedFights[global.fightNo] = [];
+		global.foesToSpawn = [];
 		//TO-DO:
 		//Display item drops received!
 		if (global.points[global.currentParty[0]][HP]==0){//reassign leader
@@ -237,7 +238,17 @@ switch(combatPhase){
         }
 		else{
 		show_debug_message("You got out of there!");
+		
+		spawn_controller1.scriptedFights[global.fightNo] = [];
+		
+		global.spawnController.scriptedFights[global.fightNo]=[];//global.foesToSpawn;
+		for (var i = 0; i < ds_list_size(global.enemies);i++){
+			global.spawnController.scriptedFights[global.fightNo][i*3]=global.enemies[|i].object_index;
+			global.spawnController.scriptedFights[global.fightNo][(i*3)+1]=global.enemies[|i].x;
+			global.spawnController.scriptedFights[global.fightNo][(i*3)+2]=global.enemies[|i].y;
+		}
 		global.foesToSpawn = [];
+		global.fightNo = -6;
 		for (var i = 0; i<4;i++){
 			if global.currentParty[i]==noone continue;
 			global.points[global.currentParty[i]][HP] = max(0,global.units[|i].current[HP]);

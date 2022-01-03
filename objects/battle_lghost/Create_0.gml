@@ -4,7 +4,7 @@ event_inherited();
 xp_value = 45;
 cash_value = 5;
 //sPlayer is filler animation for the knight
-unitSequence = layer_sequence_create("Sequences",x,y,sGhost);
+unitSequence = layer_sequence_create("Sequences",x,y,sLGhost);
 
 //start and end frames for each state
 idleStart = 0;
