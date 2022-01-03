@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "battle resources",
-    "path": "folders/Objects/battle resources.yy",
+    "name": "bad guys",
+    "path": "folders/Objects/battle resources/bad guys.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_elf",

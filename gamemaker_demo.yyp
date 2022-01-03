@@ -252,7 +252,7 @@
     {"id":{"name":"obj_gameover","path":"objects/obj_gameover/obj_gameover.yy",},"order":2,},
     {"id":{"name":"spr_aoi","path":"sprites/spr_aoi/spr_aoi.yy",},"order":0,},
     {"id":{"name":"spr_sklbutton_on","path":"sprites/spr_sklbutton_on/spr_sklbutton_on.yy",},"order":14,},
-    {"id":{"name":"battle_elf","path":"objects/battle_elf/battle_elf.yy",},"order":0,},
+    {"id":{"name":"battle_elf","path":"objects/battle_elf/battle_elf.yy",},"order":9,},
     {"id":{"name":"sAoiBattle","path":"sequences/sAoiBattle/sAoiBattle.yy",},"order":22,},
     {"id":{"name":"keyboard_multicheck","path":"scripts/keyboard_multicheck/keyboard_multicheck.yy",},"order":16,},
     {"id":{"name":"spr_atkbutton_off","path":"sprites/spr_atkbutton_off/spr_atkbutton_off.yy",},"order":3,},
