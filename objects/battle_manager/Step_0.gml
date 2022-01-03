@@ -3,27 +3,29 @@ switch(combatPhase){
 	
 	case phase.init:
 		var characters = [battle_aoi,battle_yusuf]; //declare in inner scope so it's not held?
+		var temp = 0;
 		for (var i = 0; i<4;i++){//4 global.currentParty slots
 			if (global.currentParty[i] != noone) {
 				var next_char = characters[global.currentParty[i]];
 				//var next_id = instance_create_layer((i%2)==0?16:32,200-(i*64),"Instances",next_char);
 				var unit = instance_create_depth((i%2)==0?16:32,140-(i*60),0,next_char);
+				ds_list_add(global.units,unit);
 				if unit.current[HP]>=1{
-					ds_list_add(global.units,unit);
 					enqueue(unit,getWait(unit));
 					ds_list_add(global.allies,unit);
 				}
 				unit.isPlayer = true;
+				temp++;
 			}	
 		}
-		if ds_list_size(global.allies)>1{
-				global.allies[|0].teammate = global.allies[|1];
-				show_debug_message(string(global.allies[|0])+"(#"+string(global.allies[|0].index)+")"+"'s teammate is now "+string(global.allies[|0].teammate)+"(#"+string(global.allies[|0].teammate.index)+")");
-				global.allies[|1].teammate = global.allies[|0];
-				show_debug_message(string(global.allies[|1])+"(#"+string(global.allies[|1].index)+")"+"'s teammate is now "+string(global.allies[|1].teammate)+"(#"+string(global.allies[|1].teammate.index)+")");
-				if ds_list_size(global.allies)>3{
-					global.allies[|2].teammate = global.allies[|3];
-					global.allies[|3].teammate = global.allies[|2];
+		if temp>1{
+				global.units[|0].teammate = global.units[|1];
+				show_debug_message(string(global.units[|0])+"(#"+string(global.units[|0].index)+")"+"'s teammate is now "+string(global.units[|0].teammate)+"(#"+string(global.units[|0].teammate.index)+")");
+				global.units[|1].teammate = global.units[|0];
+				show_debug_message(string(global.units[|1])+"(#"+string(global.units[|1].index)+")"+"'s teammate is now "+string(global.units[|1].teammate)+"(#"+string(global.units[|1].teammate.index)+")");
+				if temp>3{
+					global.units[|2].teammate = global.units[|3];
+					global.units[|3].teammate = global.units[|2];
 				}
 			}
 		//cur enemy spawner
@@ -189,7 +191,7 @@ switch(combatPhase){
 		//currentMessage = "You win!";
 		global.foesToSpawn = [];
 		for (var i = 0; i<4;i++){
-			if global.currentParty[i]==noone continue;
+			if global.currentParty[i]==noone continue;//will fuck up if we ever have (member,member,noone,member) so watch out
 			global.points[global.currentParty[i]][HP] = max(0,global.units[|i].current[HP]);
 			global.points[global.currentParty[i]][MP] = max(0,global.units[|i].current[MP]);
 			global.party[global.currentParty[i]][XP] += expEarned;
