@@ -122,6 +122,7 @@ function revive_targets(amt=1){
 				layer_sequence_headpos(unitSequence, idleStart);
 				state = IDLE;
 			}
+			ds_list_add(unit.isPlayer?global.allies:global.enemies,unit);
 			with battle_manager{
 				enqueue(unit);
 				totalUnits++;
