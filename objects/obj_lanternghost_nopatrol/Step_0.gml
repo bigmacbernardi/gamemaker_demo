@@ -12,11 +12,11 @@ else {
 	if --level == 0 ascending = true;
 		
 }
-
-if (distance_to_object(obj_player)<range){
+if (distance_to_object(obj_player)<range)
 	image_alpha=1-max(0,(distance_to_object(obj_player)-40)/(range-40));
+
+if graceRemaining<=0{
 	if (distance_to_object(obj_player)<(range-30)) activated = true;//was: if (image_alpha>=.2) activated = true;
-}
 if activated&&!obj_player.paused{
 	if (obj_player.x > x){
 		if (image_xscale==-1){
@@ -33,5 +33,6 @@ if activated&&!obj_player.paused{
 	}
 	if (obj_player.y > y) y+=1;
 	else if (obj_player.y < y) y-=1;
+}
 }
 sprite_set_offset(sprite_index, 0, 0 - floor(level/50));

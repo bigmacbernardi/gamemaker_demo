@@ -143,4 +143,5 @@ global.dialogueLine=0;
 
 instance_create_depth(0,0,10,obj_persistentmusicplayer); //can just put in room but i do not trust
 global.lastSortOpt = 0;
+global.fightNo = -6;//current battle OR last battle fled
 //global.lastUsedSkills = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];//could be used for ease of use

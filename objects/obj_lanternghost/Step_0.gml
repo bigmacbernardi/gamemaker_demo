@@ -3,6 +3,10 @@
 
 // Inherit the parent event
 event_inherited();
+if (distance_to_object(obj_player)<visibility_range)
+	image_alpha=1-max(0,(distance_to_object(obj_player)-40)/(visibility_range-40));
+
+if graceRemaining<=0{
 if ascending
 {
 	if ++level == 199 ascending = false;
@@ -13,10 +17,7 @@ else {
 		
 }
 
-if (distance_to_object(obj_player)<visibility_range){
-	image_alpha=1-max(0,(distance_to_object(obj_player)-40)/(visibility_range-40));
 	if (distance_to_object(obj_player)<activation_range) activated = true;
-}
 if activated &&!obj_player.paused{
 	if (obj_player.x > x){
 		if (image_xscale==-1){
@@ -55,5 +56,6 @@ else{// patrolling
 			if (y <= mini) forward=true;
 		}
 	}
+}
 }
 sprite_set_offset(sprite_index, 0, 0 - floor(level/50));
