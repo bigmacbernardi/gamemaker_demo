@@ -55,7 +55,7 @@ switch(argument0){
         global.msg[3]= "%%%";
         break;
 	case 1001:
-        global.msg[0]= "Got 1 Potion./";//maybe make this read the name of last item received
+        global.msg[0]= "Got Vegetable Soup!/";//maybe make this read the name of last item received
         global.msg[1]= "%%%";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
