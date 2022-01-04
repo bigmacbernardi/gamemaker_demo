@@ -34,6 +34,7 @@
     {"id":{"name":"chainmail2","path":"sounds/chainmail2/chainmail2.yy",},"order":2,},
     {"id":{"name":"set_sprites","path":"scripts/set_sprites/set_sprites.yy",},"order":25,},
     {"id":{"name":"obj_skillmenu","path":"objects/obj_skillmenu/obj_skillmenu.yy",},"order":7,},
+    {"id":{"name":"cloudy_battle","path":"sprites/cloudy_battle/cloudy_battle.yy",},"order":10,},
     {"id":{"name":"d1bookhall","path":"rooms/d1bookhall/d1bookhall.yy",},"order":11,},
     {"id":{"name":"spr_perk_on","path":"sprites/spr_perk_on/spr_perk_on.yy",},"order":28,},
     {"id":{"name":"spr_aoi_idle_final","path":"sprites/spr_aoi_idle_final/spr_aoi_idle_final.yy",},"order":4,},

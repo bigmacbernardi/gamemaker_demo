@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 130,
+  "bbox_right": 399,
   "bbox_top": 0,
-  "bbox_bottom": 97,
+  "bbox_bottom": 199,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 131,
-  "height": 98,
+  "width": 400,
+  "height": 200,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f19c79cd-0f17-4789-9dc6-77ea8acc2867","path":"sprites/bg_stonewall1/bg_stonewall1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f19c79cd-0f17-4789-9dc6-77ea8acc2867","path":"sprites/bg_stonewall1/bg_stonewall1.yy",},"LayerId":{"name":"963d142c-c97b-405a-9108-c0ef8a6c8009","path":"sprites/bg_stonewall1/bg_stonewall1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_stonewall1","path":"sprites/bg_stonewall1/bg_stonewall1.yy",},"resourceVersion":"1.0","name":"f19c79cd-0f17-4789-9dc6-77ea8acc2867","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8b837074-2a79-4e53-ab67-e5584f8434fc","path":"sprites/cloudy_battle/cloudy_battle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8b837074-2a79-4e53-ab67-e5584f8434fc","path":"sprites/cloudy_battle/cloudy_battle.yy",},"LayerId":{"name":"09447f2d-e938-47ff-9f9d-977299d2b4fd","path":"sprites/cloudy_battle/cloudy_battle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"cloudy_battle","path":"sprites/cloudy_battle/cloudy_battle.yy",},"resourceVersion":"1.0","name":"8b837074-2a79-4e53-ab67-e5584f8434fc","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_stonewall1","path":"sprites/bg_stonewall1/bg_stonewall1.yy",},
+    "spriteId": {"name":"cloudy_battle","path":"sprites/cloudy_battle/cloudy_battle.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"020fae4e-f481-4326-b10f-3bf0c1e18628","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f19c79cd-0f17-4789-9dc6-77ea8acc2867","path":"sprites/bg_stonewall1/bg_stonewall1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ef687608-a222-417f-bbb4-84d414bfeec6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b837074-2a79-4e53-ab67-e5584f8434fc","path":"sprites/cloudy_battle/cloudy_battle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_stonewall1","path":"sprites/bg_stonewall1/bg_stonewall1.yy",},
+    "parent": {"name":"cloudy_battle","path":"sprites/cloudy_battle/cloudy_battle.yy",},
     "resourceVersion": "1.3",
-    "name": "bg_stonewall1",
+    "name": "cloudy_battle",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"963d142c-c97b-405a-9108-c0ef8a6c8009","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"09447f2d-e938-47ff-9f9d-977299d2b4fd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "tilesets",
-    "path": "folders/Sprites/tilesets.yy",
+    "name": "stuff",
+    "path": "folders/Sprites/stuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "bg_stonewall1",
+  "name": "cloudy_battle",
   "tags": [],
   "resourceType": "GMSprite",
 }
