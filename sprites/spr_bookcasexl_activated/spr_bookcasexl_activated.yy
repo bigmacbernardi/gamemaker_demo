@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4328b527-5178-46f7-ae9f-f50e48ccc153","path":"sprites/spr_bookcaselg_activated/spr_bookcaselg_activated.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4328b527-5178-46f7-ae9f-f50e48ccc153","path":"sprites/spr_bookcaselg_activated/spr_bookcaselg_activated.yy",},"LayerId":{"name":"b67d78f9-2537-42f9-9cfe-056bbdf0b9ed","path":"sprites/spr_bookcaselg_activated/spr_bookcaselg_activated.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bookcaselg_activated","path":"sprites/spr_bookcaselg_activated/spr_bookcaselg_activated.yy",},"resourceVersion":"1.0","name":"4328b527-5178-46f7-ae9f-f50e48ccc153","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4328b527-5178-46f7-ae9f-f50e48ccc153","path":"sprites/spr_bookcasexl_activated/spr_bookcasexl_activated.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4328b527-5178-46f7-ae9f-f50e48ccc153","path":"sprites/spr_bookcasexl_activated/spr_bookcasexl_activated.yy",},"LayerId":{"name":"b67d78f9-2537-42f9-9cfe-056bbdf0b9ed","path":"sprites/spr_bookcasexl_activated/spr_bookcasexl_activated.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_bookcasexl_activated","path":"sprites/spr_bookcasexl_activated/spr_bookcasexl_activated.yy",},"resourceVersion":"1.0","name":"4328b527-5178-46f7-ae9f-f50e48ccc153","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bookcaselg_activated","path":"sprites/spr_bookcaselg_activated/spr_bookcaselg_activated.yy",},
+    "spriteId": {"name":"spr_bookcasexl_activated","path":"sprites/spr_bookcasexl_activated/spr_bookcasexl_activated.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d17deee1-9564-4714-89b2-b23214ad762f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4328b527-5178-46f7-ae9f-f50e48ccc153","path":"sprites/spr_bookcaselg_activated/spr_bookcaselg_activated.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d17deee1-9564-4714-89b2-b23214ad762f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4328b527-5178-46f7-ae9f-f50e48ccc153","path":"sprites/spr_bookcasexl_activated/spr_bookcasexl_activated.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bookcaselg_activated","path":"sprites/spr_bookcaselg_activated/spr_bookcaselg_activated.yy",},
+    "parent": {"name":"spr_bookcasexl_activated","path":"sprites/spr_bookcasexl_activated/spr_bookcasexl_activated.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_bookcaselg_activated",
+    "name": "spr_bookcasexl_activated",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/stuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_bookcaselg_activated",
+  "name": "spr_bookcasexl_activated",
   "tags": [],
   "resourceType": "GMSprite",
 }
