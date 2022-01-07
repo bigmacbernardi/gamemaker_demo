@@ -238,6 +238,7 @@ switch(combatPhase){
             }
         }
 		else{
+		currentMessage = "You escaped!";
 		show_debug_message("You got out of there!");
 		if global.fightNo > -1{
 			global.spawnController.scriptedFights[global.fightNo]=[];//global.foesToSpawn;

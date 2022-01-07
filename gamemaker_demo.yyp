@@ -169,6 +169,7 @@
     {"id":{"name":"shotgun","path":"sounds/shotgun/shotgun.yy",},"order":29,},
     {"id":{"name":"obj_ball","path":"objects/obj_ball/obj_ball.yy",},"order":1,},
     {"id":{"name":"spr_aoi_idle","path":"sprites/spr_aoi_idle/spr_aoi_idle.yy",},"order":3,},
+    {"id":{"name":"d1music1","path":"sounds/d1music1/d1music1.yy",},"order":5,},
     {"id":{"name":"ui_hp","path":"sprites/ui_hp/ui_hp.yy",},"order":8,},
     {"id":{"name":"obj_column","path":"objects/obj_column/obj_column.yy",},"order":0,},
     {"id":{"name":"button_item","path":"objects/button_item/button_item.yy",},"order":2,},

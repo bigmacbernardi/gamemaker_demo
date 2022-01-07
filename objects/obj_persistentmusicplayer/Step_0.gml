@@ -28,11 +28,12 @@ else if (instance_exists(obj_pausemenu_stat)||instance_exists(obj_pausemenu_team
 	}	
 }
 else if !playing{
+	var possible_tracks = [overworld_manostemp35,overworld_manostemp,d1music1];
 	//audio_stop_sound(battle_torgotemp);
 	audio_stop_sound(songPlaying);
 	//audio_stop_sound(alteredbeast_gameover_as_placeholder);
-	songPlaying = audio_play_sound(overworld_manostemp,1,true);
-	show_debug_message("Setting to "+string(continue_position));
+	songPlaying = audio_play_sound(possible_tracks[trackNo],1,true);
+	show_debug_message("Setting track "+string(trackNo)+" to "+string(continue_position));
 	audio_sound_set_track_position(songPlaying,continue_position);
 	playing = true;
 }
