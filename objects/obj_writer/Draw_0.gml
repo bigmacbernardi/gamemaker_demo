@@ -4,38 +4,38 @@ myy= writingy;
 n= 1;
 while(n < stringpos + 1) {
     nskip= 0;
-    if(string_char_at(originalstring, n) == "&") {//line break!
+    if(string_char_at(currentLine, n) == "&") {//line break!
         myx= writingx;
 		myy+= vspacing;
 		lineno++;
         n++;
     }
-    if(string_char_at(originalstring, n) == "^") {
-        if(string_char_at(originalstring, n + 1) == "0") nskip= 1;
+    if(string_char_at(currentLine, n) == "^") {
+        if(string_char_at(currentLine, n + 1) == "0") nskip= 1;
         else  n+= 2;
     }
-    if(string_char_at(originalstring, n) == "\\" + chr(ord("\""))+ " + ") {
-        if(string_char_at(originalstring, n + 1) == "R")
+    if(string_char_at(currentLine, n) == "\\" + chr(ord("\""))+ " + ") {
+        if(string_char_at(currentLine, n + 1) == "R")
             mycolor= 255;
-        else if(string_char_at(originalstring, n + 1) == "G")
+        else if(string_char_at(currentLine, n + 1) == "G")
             mycolor= 65280;
-        else if(string_char_at(originalstring, n + 1) == "W")
+        else if(string_char_at(currentLine, n + 1) == "W")
             mycolor= 16777215;
-        else if(string_char_at(originalstring, n + 1) == "Y")
+        else if(string_char_at(currentLine, n + 1) == "Y")
             mycolor= 65535;
-        else if(string_char_at(originalstring, n + 1) == "X")
+        else if(string_char_at(currentLine, n + 1) == "X")
             mycolor= 0;
-        else if(string_char_at(originalstring, n + 1) == "B")
+        else if(string_char_at(currentLine, n + 1) == "B")
             mycolor= 16711680;
-        else if(string_char_at(originalstring, n + 1) == "O")
+        else if(string_char_at(currentLine, n + 1) == "O")
             mycolor= 4235519;
-        else if(string_char_at(originalstring, n + 1) == "L")
+        else if(string_char_at(currentLine, n + 1) == "L")
             mycolor= 16754964;
-        else if(string_char_at(originalstring, n + 1) == "P")
+        else if(string_char_at(currentLine, n + 1) == "P")
             mycolor= 16711935;
-        else if(string_char_at(originalstring, n + 1) == "p")
+        else if(string_char_at(currentLine, n + 1) == "p")
             mycolor= 13941759;
-        else if(string_char_at(originalstring, n + 1) == "C" && global.inbattle == 0) {
+        else if(string_char_at(currentLine, n + 1) == "C" && global.inbattle == 0) {
             if(!instance_exists(obj_choose)) {
                 //SAVE FOR LATER
 				choicer = instance_create_depth(0, 0,-20,obj_choose);
@@ -43,21 +43,21 @@ while(n < stringpos + 1) {
 				halt= 5;
 			}
         }
-        if(string_char_at(originalstring, n + 1) == "M") {
-            global.flag[20]= real(string_char_at(originalstring, n + 2));
+        if(string_char_at(currentLine, n + 1) == "M") {
+            global.flag[20]= real(string_char_at(currentLine, n + 2));
             n++;
         }
-        if(string_char_at(originalstring, n + 1) == "E") {
-            global.faceemotion= real(string_char_at(originalstring, n + 2));
+        if(string_char_at(currentLine, n + 1) == "E") {
+            global.faceemotion= real(string_char_at(currentLine, n + 2));
             n++;
         }
-        if(string_char_at(originalstring, n + 1) == "F") {
-            global.facechoice= real(string_char_at(originalstring, n + 2));
+        if(string_char_at(currentLine, n + 1) == "F") {
+            global.facechoice= real(string_char_at(currentLine, n + 2));
             global.facechange= 1;
             n++;
         }
-        if(string_char_at(originalstring, n + 1) == "T") {
-            newtyper= string_char_at(originalstring, n + 2);
+        if(string_char_at(currentLine, n + 1) == "T") {
+            newtyper= string_char_at(currentLine, n + 2);
             if(newtyper == "T") global.typer= 4;
             else if(newtyper == "t") global.typer= 48;
             else if(newtyper == "0") global.typer= 5;
@@ -74,8 +74,8 @@ while(n < stringpos + 1) {
             global.facechange= 1;
             n++;
         }
-        if(string_char_at(originalstring, n + 1) == "z") {
-            sym= real(string_char_at(originalstring, n + 2));
+        if(string_char_at(currentLine, n + 1) == "z") {
+            sym= real(string_char_at(currentLine, n + 2));
             sym_s= 837;
             if(sym == 4) sym_s= 837;
             if(sym == 4) //wtf?
@@ -84,16 +84,16 @@ while(n < stringpos + 1) {
         }
         n+= 2;
     }
-    if(string_char_at(originalstring, n) == "/") {
+    if(string_char_at(currentLine, n) == "/") {
         halt= 1;
-        if(string_char_at(originalstring, n + 1) == "%") halt= 2;
-        if(string_char_at(originalstring, n + 1) == "^" && string_char_at(originalstring, n + 2) != "0")
+        if(string_char_at(currentLine, n + 1) == "%") halt= 2;
+        if(string_char_at(currentLine, n + 1) == "^" && string_char_at(currentLine, n + 2) != "0")
             halt= 4;
-        if(string_char_at(originalstring, n + 1) == "*") halt= 6;
+        if(string_char_at(currentLine, n + 1) == "*") halt= 6;
         break;
     } else  {
-        if(string_char_at(originalstring, n) == "%") {
-            if(string_char_at(originalstring, n + 1) == "%") {
+        if(string_char_at(currentLine, n) == "%") {
+            if(string_char_at(currentLine, n + 1) == "%") {
 				show_debug_message("DOUBLE % SPOTTED");//used to confirm it wasn't getting this far
                 instance_destroy();
                 break;
@@ -101,7 +101,7 @@ while(n < stringpos + 1) {
 				show_debug_message("SINGLE % SPOTTED");
                 stringpos= 1;
                 stringno++;//stringno = min(stringno+1,array_length(mystring)-1);
-                originalstring= global.msg[stringno]; //once used myString
+                currentLine= global.msg[stringno]; //once used myString
                 myx= writingx;
                 myy= writingy;
                 lineno= 0;
@@ -115,7 +115,7 @@ while(n < stringpos + 1) {
 				myy+= vspacing;
 				lineno++;	
 			}
-            myletter= string_char_at(originalstring, n);
+            myletter= string_char_at(currentLine, n);
             if(global.typer == 18) {
                 if(myletter == "l" || myletter == "i") myx+= 2;
                 if(myletter == "I") myx+= 2;

@@ -21,11 +21,11 @@ myx= writingx;
 myy= writingy;
 script_execute(SCR_TEXT, global.lineNo);
 n= 0;
-while(global.msg[n] != "%%%") { //Toby's method for indicating a line is complete.  Unnecessary for our purposes, but still implemented for the sake of ripping his code at this stage.
+while(global.msg[n] != "%%%") { //Toby's leftover method for indicating a line is complete. Unnecessary, but still functional.
     mystring[n]= global.msg[n];
     n++;
 }
-originalstring= mystring[0];
+currentLine= mystring[0];
 dfy= 0;
 alarm[0]= textspeed;
 

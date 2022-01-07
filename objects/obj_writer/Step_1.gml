@@ -1,5 +1,5 @@
 /// @description Insert description here
-myletter= string_char_at(originalstring, stringpos);
+myletter= string_char_at(currentLine, stringpos);
 if(shake > 38) {
     speed= 2;
     direction+= 20;

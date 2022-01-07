@@ -4,7 +4,7 @@ else  {
     if(keyboard_multicheck_pressed(1/* ANYKEY */)) {
         if(writer.halt == 0 && global.typer != 10) {
             global.flag[25]++;
-            writer.stringpos= string_length(writer.originalstring);
+            writer.stringpos= string_length(writer.currentLine);
         }
         keyboard_clear(16/* SHIFT */);
     }

@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description The writer's "choicer."  Originally used for player choices; currently only really used for updating the writer as a step in the process.
 alarm[1]= 3;
 canchoose= 0;
 add= camera_get_view_x(cam);

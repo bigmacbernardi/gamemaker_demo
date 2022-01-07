@@ -13,7 +13,7 @@ if(instance_exists(obj_writer)){
 if(room != 179 && (obj_player.y > camera_get_view_y(cam) + 130 || d == 0))
     y-= 155;
 mychoice= 0;
-global.choice= -1;
+//global.choice= -1;//unnecessary I think
 chosen = 0;
 creator=obj_dialoguer;
 script_execute(SCR_TEXTTYPE,4); //so ttexttype is set

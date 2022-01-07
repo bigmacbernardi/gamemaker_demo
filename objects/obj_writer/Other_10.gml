@@ -3,7 +3,7 @@ if(halt == 1) {
     myletter= " ";
     stringpos= 1;
     stringno++;//stringno = min(stringno+1,array_length(mystring)-1);
-    originalstring= global.msg[stringno];//once used mystring
+    currentLine= global.msg[stringno];//once used mystring
     myx= writingx;
     myy= writingy;
     lineno= 0;

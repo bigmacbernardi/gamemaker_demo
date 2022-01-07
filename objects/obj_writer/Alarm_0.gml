@@ -1,17 +1,17 @@
 /// @description Type a character!
 
-if(stringpos < string_length(originalstring)) {
+if(stringpos < string_length(currentLine)) {
     stringpos++;
     if(global.typer == 111) stringpos++;
     alarm[0]= textspeed;
-    if(string_char_at(originalstring, stringpos) == "^" && string_char_at(originalstring, stringpos + 1) != "0") {
-        n= real(string_char_at(originalstring, stringpos + 1));
+    if(string_char_at(currentLine, stringpos) == "^" && string_char_at(currentLine, stringpos + 1) != "0") {
+        n= real(string_char_at(currentLine, stringpos + 1));
         alarm[0]= n * 10;
     } else  {
 		audio_play_sound(txtsound,5,0);//silly workaround from the matching below
         if(txtsound == 56 || txtsound == 65 || txtsound == 71) {
             if(txtsound == 56) {
-                if(string_char_at(originalstring, stringpos) != "" && string_char_at(originalstring, stringpos) != "^" && string_char_at(originalstring, stringpos) != "/" && string_char_at(originalstring, stringpos) != "%") {
+                if(string_char_at(currentLine, stringpos) != "" && string_char_at(currentLine, stringpos) != "^" && string_char_at(currentLine, stringpos) != "/" && string_char_at(currentLine, stringpos) != "%") {
                     //snd_stop(56);
                     //snd_stop(57);
                     //snd_stop(58);
@@ -54,7 +54,7 @@ if(stringpos < string_length(originalstring)) {
                 }
                 stringpos+= 2;
             }
-            if(txtsound == 71 && string_char_at(originalstring, stringpos) != "" && string_char_at(originalstring, stringpos) != "^" && string_char_at(originalstring, stringpos) != "/" && string_char_at(originalstring, stringpos) != "%") {
+            if(txtsound == 71 && string_char_at(currentLine, stringpos) != "" && string_char_at(currentLine, stringpos) != "^" && string_char_at(currentLine, stringpos) != "/" && string_char_at(currentLine, stringpos) != "%") {
                 //snd_stop(71);
                 //snd_stop(72);
                 //snd_stop(73);
@@ -88,7 +88,7 @@ if(stringpos < string_length(originalstring)) {
                 }
             }
             if(txtsound == 65) {
-                if(string_char_at(originalstring, stringpos) != "" && string_char_at(originalstring, stringpos) != "^" && string_char_at(originalstring, stringpos) != "/" && string_char_at(originalstring, stringpos) != "%") {
+                if(string_char_at(currentLine, stringpos) != "" && string_char_at(currentLine, stringpos) != "^" && string_char_at(currentLine, stringpos) != "/" && string_char_at(currentLine, stringpos) != "%") {
                     //snd_stop(65);
                     //snd_stop(66);
                     //snd_stop(67);
@@ -120,21 +120,21 @@ if(stringpos < string_length(originalstring)) {
                 stringpos++;
             }
         } else  {
-            if (string_char_at(originalstring, stringpos) != "" && 
-				string_char_at(originalstring, stringpos) != " " && 
-				string_char_at(originalstring, stringpos) != "&" && 
-				string_char_at(originalstring, stringpos) != "^" && 
-				string_char_at(originalstring, stringpos - 1) != "^" && 
-				string_char_at(originalstring, stringpos) != "\\" + chr(ord("\"")) && 
-				string_char_at(originalstring, stringpos - 1) != "\\" + chr(ord("\"")) && 
-				string_char_at(originalstring, stringpos) != "/" && string_char_at(originalstring, stringpos) != "%") {
+            if (string_char_at(currentLine, stringpos) != "" && 
+				string_char_at(currentLine, stringpos) != " " && 
+				string_char_at(currentLine, stringpos) != "&" && 
+				string_char_at(currentLine, stringpos) != "^" && 
+				string_char_at(currentLine, stringpos - 1) != "^" && 
+				string_char_at(currentLine, stringpos) != "\\" + chr(ord("\"")) && 
+				string_char_at(currentLine, stringpos - 1) != "\\" + chr(ord("\"")) && 
+				string_char_at(currentLine, stringpos) != "/" && string_char_at(currentLine, stringpos) != "%") {
                 //snd_stop(txtsound);
                 //snd_play(txtsound);
             }
         }
     }
-    if(string_char_at(originalstring, stringpos) == "&")
+    if(string_char_at(currentLine, stringpos) == "&")
         stringpos++;
-    if(string_char_at(originalstring, stringpos) ==  "\\" + chr(ord("\""))+ " + ")
+    if(string_char_at(currentLine, stringpos) ==  "\\" + chr(ord("\""))+ " + ")
         stringpos+= 2;
 }
