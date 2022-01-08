@@ -108,6 +108,7 @@
     {"id":{"name":"Punch4","path":"sounds/Punch4/Punch4.yy",},"order":15,},
     {"id":{"name":"player_spawner","path":"objects/player_spawner/player_spawner.yy",},"order":12,},
     {"id":{"name":"Notice2","path":"sounds/Notice2/Notice2.yy",},"order":21,},
+    {"id":{"name":"battletrans","path":"sounds/battletrans/battletrans.yy",},"order":30,},
     {"id":{"name":"noBKG_KnightRoll_strip","path":"sprites/noBKG_KnightRoll_strip/noBKG_KnightRoll_strip.yy",},"order":10,},
     {"id":{"name":"spr_girl_face9","path":"sprites/spr_girl_face9/spr_girl_face9.yy",},"order":12,},
     {"id":{"name":"ui_hpold","path":"sprites/ui_hpold/ui_hpold.yy",},"order":24,},
