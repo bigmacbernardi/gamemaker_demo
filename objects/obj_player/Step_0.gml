@@ -93,8 +93,8 @@ if (!paused){
 	if !((x_spd==0)&&(y_spd==0))&&((real_x_spd==0)&&(real_y_spd==0))image_speed = 0;//instead do this for WALL collision
 	else{
 		if (real_y_spd<0){ //moving up
-			eye_y1 = y - 16;
-			eye_y2 = y;
+			eye_y1 = y - sprite_height - 16;
+			eye_y2 = y - sprite_height;
 			//if (sprite_index != back_sprites[locomode]) sprite_index = back_sprites[locomode]; //turning up
 			facing = 8;
 			if place_meeting(x, y, obj_wall) == true && 
@@ -102,8 +102,8 @@ if (!paused){
 				y+=1;
 	}
 		else if (real_y_spd>0){ //moving down
-			eye_y1 = y + sprite_height;
-			eye_y2 = y + sprite_height + 16;
+			eye_y1 = y;
+			eye_y2 = y + 16;
 			//if (sprite_index != front_sprites[locomode]) sprite_index = front_sprites[locomode]; //turning down
 			facing = 2;
 			if place_meeting(x, y, obj_wall) == true && 
@@ -115,9 +115,9 @@ if (!paused){
 			//show_debug_message("Y's changed to: "+string(y)+": "+string(eye_y1)+","+string(eye_y2));
 		
 		}
-		else{ //just left or right
-			eye_y1 = y - 1;
-			eye_y2 = y + sprite_height + 1;
+		else if real_x_spd!=0{ //just left or right
+			eye_y1 = y  - sprite_height - 1;
+			eye_y2 = y + 1;
 		
 			//show_debug_message("Y's reset to: "+string(y)+": "+string(eye_y1)+","+string(eye_y2));
 		}

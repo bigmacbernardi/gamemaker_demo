@@ -13,7 +13,7 @@ switch(argument0){
         global.msg[3]= "%%%";
         break;
 	case 2: 
-        global.msg[0]= "Hold SHIFT to run.&Hold CTRL to slow down./";
+        global.msg[0]= "Hold SHIFT to run.&Hold CTRL to slow down.&Hold V for debug view./";
         global.msg[1]= "       ..."+global.names[global.currentParty[0]]+"./";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if stepsToGo>-1{
+if stepsToGo>-1 && keyboard_check(ord("V")){
 	draw_set_color(c_red);
 	draw_text(obj_player.x-8,obj_player.y+28,string(stepsToGo));
 }

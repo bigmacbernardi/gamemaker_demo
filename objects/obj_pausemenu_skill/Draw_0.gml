@@ -105,8 +105,8 @@ drawX = x+30;
 drawY = y+camera_get_view_height(cam)-30;
 //draw_set_color(c_white);
 for (var i = scrollLevel; i < min(8+scrollLevel,ds_list_size(options)); i++){
-  if (i!=index) draw_sprite_ext(front_sprites[options[|i]],0,drawX,drawY,1,1,0,c_dkgray,.8); //do different indicator
-  else draw_sprite(front_sprites[options[|i]],0,drawX,drawY);
+  if (i!=index) draw_sprite_ext(front_sprites[options[|i]],0,drawX,drawY+23,1,1,0,c_dkgray,.8); //do different indicator
+  else draw_sprite(front_sprites[options[|i]],0,drawX,drawY+23);
   //draw_text_transformed(drawX+104,drawY,options[|i].numOwned,.75,.75,0);
   if ((i%4)==3){
 	drawX = x+30;
