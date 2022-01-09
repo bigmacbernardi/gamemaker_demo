@@ -9,7 +9,7 @@ if graceRemaining<=0{
 		spawn_controller1.scriptedFights[fightNo] = [];//ideally would be set true in battle, so it persists if you flee, but rn that would cause a loop
 		global.foesToSpawn = [battle_footsoldier,224,64];
 		var inst = instance_create_depth(0, 0, -9999, obj_battle_transition)
-		inst.target_rm = battle_area;
+		inst.target_rm = global.battleRoom;
 	}
 }
 else if !(--graceRemaining%4) visible = !visible;

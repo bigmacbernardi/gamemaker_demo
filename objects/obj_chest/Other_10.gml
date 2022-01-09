@@ -36,7 +36,8 @@ if (!opened){
 			ds_list_add(global.inventory,[contents,1]);	
 		}
 	}
-	global.facechoice = 0;
+	
+	global.facechoice = 0;//global.currentParty[0]+2;
 	global.typer= 4;
 	global.lineNo = 1000 + chestNo;
 	if (instance_exists(obj_dialoguer)) instance_destroy(obj_dialoguer);

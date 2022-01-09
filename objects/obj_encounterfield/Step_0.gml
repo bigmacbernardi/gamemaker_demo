@@ -25,7 +25,7 @@ else{
 		global.fightNo = -1;//RANDOM
 		global.foesToSpawn = battles_owned[irandom(array_length(battles_owned)-1)];
 		var inst = instance_create_depth(0, 0, -9999, obj_battle_transition)
-		inst.target_rm = battle_area;
+		inst.target_rm = global.battleRoom;
 		instance_destroy();
 	}
 	else dropToGo--;

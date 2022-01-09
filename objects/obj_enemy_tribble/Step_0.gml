@@ -46,7 +46,7 @@ if graceRemaining<=0 {
 		//spawn_controller1.scriptedFights[fightNo] = true;
 		spawn_controller1.scriptedFights[fightNo] = [];//ideally would be set at battle end
 		var inst = instance_create_depth(0, 0, -9999, obj_battle_transition)
-		inst.target_rm = battle_area;
+		inst.target_rm = global.battleRoom;
 	}
 }
 

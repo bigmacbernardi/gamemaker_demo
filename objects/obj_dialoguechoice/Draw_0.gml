@@ -7,7 +7,12 @@ if (alignment ==0){
 	//var writingX = x+20;
 	drawY = y+20;
 	for (var i = 0; i <s;i++){
-		draw_set_color(i==mychoice?c_white:c_dkgray);
+		if i==mychoice{
+			draw_sprite(spr_select_right,0,drawX-8/*-16*/,drawY+6);
+			//draw_sprite_stretched(spr_select_right,drawX-16,drawY+4,8,8);
+			draw_set_color(c_white);
+		}
+		else draw_set_color(c_dkgray);
 		draw_text(drawX,drawY,options[|i]);
 		if (i % 4) == 3{
 			drawX += 80;

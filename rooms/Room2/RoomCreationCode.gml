@@ -1,0 +1,1 @@
+global.battleRoom = battle_area;
