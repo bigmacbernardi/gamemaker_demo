@@ -15,6 +15,10 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_encounterfield_cavein","path":"objects/obj_encounterfield_cavein/obj_encounterfield_cavein.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":6.214286,"scaleY":3.66666675,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":1216.0,"resourceVersion":"1.0","name":"inst_481BDF90","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"speaker","path":"objects/obj_dialoguetrigger/obj_dialoguetrigger.yy",},"objectId":{"name":"obj_dialoguetrigger","path":"objects/obj_dialoguetrigger/obj_dialoguetrigger.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"lineNo","path":"objects/obj_dialoguetrigger/obj_dialoguetrigger.yy",},"objectId":{"name":"obj_dialoguetrigger","path":"objects/obj_dialoguetrigger/obj_dialoguetrigger.yy",},"value":"26","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_dialoguetrigger","path":"objects/obj_dialoguetrigger/obj_dialoguetrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":376.0,"y":261.0,"resourceVersion":"1.0","name":"inst_6DD637D0","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"til_dungeon1tiles","path":"tilesets/til_dungeon1tiles/til_dungeon1tiles.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":69,"SerialiseHeight":100,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -281,6 +285,7 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_481BDF90","path":"rooms/d1hall1redux/d1hall1redux.yy",},
+    {"name":"inst_6DD637D0","path":"rooms/d1hall1redux/d1hall1redux.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+image_xscale=.8;
+image_yscale=.8;
+
 if (global.faceemotion == 1)sprite_index = yusuf1;
 else if (global.faceemotion == 2)sprite_index = yusuf2;
 else if (global.faceemotion == 3)sprite_index = yusuf3;

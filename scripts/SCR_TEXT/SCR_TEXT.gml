@@ -28,15 +28,15 @@ switch(argument0){
 		global.msg = ["Just gotta keep going north.","%%%"];
 		break;
 	case 26:
-		global.msg = ["Looks like the path up here's collapsed./",
-		"This place is huge^2.&There's probably another safe way down./",
+		global.msg = [" Looks like the path up here's& collapsed./",
+		" This place is huge^2.& There's probably another safe way& down./",
 		"%%%"];
 		break;
 	case 27:
 		global.msg = ["Why are we going this way?/","%%%"];
 		break;
 	case 28:
-		global.msg = ["Just looking around for something that could help./",
+		global.msg = ["Just looking around for something&that could help./",
 		"%%%"];
 		break;
 	case 29.0:
