@@ -4,7 +4,7 @@ if(global.facechoice == 1) {
     instance_create_depth(writer.x - 55, writer.y + 2,-1000, obj_face_elder);//givin character specificity a shot
 }
 if(global.facechoice == AOI+2)
-    instance_create_depth(writer.x - 55, writer.y + 8,-1000, obj_face);//originally character-specific, but why lol
+    instance_create_depth(writer.x - 50, writer.y + 8,-1000, obj_face_aoi);//originally character-specific, but why lol
 if(global.facechoice == YUSUF+2)
     instance_create_depth(writer.x - 50, writer.y + 7,-1000, obj_face_yusuf);
 if(global.facechoice == 4)

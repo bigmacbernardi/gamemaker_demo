@@ -5,7 +5,10 @@
   },
   "solid": true,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_chest_closed",
+    "path": "sprites/spr_chest_closed/spr_chest_closed.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "checkable",

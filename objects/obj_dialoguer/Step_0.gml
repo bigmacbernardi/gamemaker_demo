@@ -26,7 +26,7 @@ if(global.facechange == 1 && instance_exists(writer)) {
     writer.writingx= writer.x + 20;
     if(global.facechoice == 1 && !instance_exists(obj_face_elder))//elder
         script_execute(scr_facechoice);
-    if(global.facechoice == 2 && !instance_exists(obj_face))
+    if(global.facechoice == 2 && !instance_exists(obj_face_aoi))
         script_execute(scr_facechoice);
     if(global.facechoice == 3 && !instance_exists(obj_face_yusuf))
         script_execute(scr_facechoice);

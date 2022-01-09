@@ -33,10 +33,10 @@ switch(argument0){
 		"%%%"];
 		break;
 	case 27:
-		global.msg = ["Why are we going this way?/","%%%"];
+		global.msg = [" Why are we going this way?/","%%%"];
 		break;
 	case 28:
-		global.msg = ["Just looking around for something&that could help./",
+		global.msg = [" Just looking around for something& that could help./",
 		"%%%"];
 		break;
 	case 29.0:
