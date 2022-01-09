@@ -24,6 +24,38 @@ switch(argument0){
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;
+	case 25: 
+		global.msg = ["Just gotta keep going north.","%%%"];
+		break;
+	case 26:
+		global.msg = ["Looks like the path up here's collapsed./",
+		"This place is huge^2.&There's probably another safe way down./",
+		"%%%"];
+		break;
+	case 27:
+		global.msg = ["Why are we going this way?/","%%%"];
+		break;
+	case 28:
+		global.msg = ["Just looking around for something that could help./",
+		"%%%"];
+		break;
+	case 29.0:
+		global.msg = ["The path to the second staircase was&collapsed./","%%%"];
+		break;
+	case 29.1:
+		global.msg = ["You should try going through the library./",
+		"That wing's a lot newer, and there's&another staircase there.",
+		"%%%"];
+		break;
+	case 29.2:
+		global.msg = ["We went down through the library,",
+		"but the path to the third staircase was&collapsed./",
+		"%%%"];
+		break;
+	case 29.3:
+		global.msg = ["Go figure it out, then!  You're being&graded on this.",
+		"%%%"];
+		break;
 	case 30:
         global.msg[0]= "Bichael Mackson/";
         global.msg[1]= "Not that you would know./";
@@ -49,13 +81,13 @@ switch(argument0){
         break;
 	/*chest messages*/
 	case 1000:
-        global.msg[0]= "& Got an Old Helm!/";//maybe make this read the name of last item received
+        global.msg[0]= " Got an Old Helm!/";//maybe make this read the name of last item received
         global.msg[1]= "%%%";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;
 	case 1001:
-        global.msg[0]= "Got Vegetable Soup!/";//maybe make this read the name of last item received
+        global.msg[0]= "Got Vegetable Soup!/";
         global.msg[1]= "%%%";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";

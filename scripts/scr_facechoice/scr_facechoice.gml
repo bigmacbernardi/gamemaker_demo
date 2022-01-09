@@ -2,12 +2,11 @@
 if !variable_global_exists("facechoice") global.facechoice=0;
 if(global.facechoice == 1) {
     instance_create_depth(writer.x - 55, writer.y + 2,-1000, obj_face_elder);//givin character specificity a shot
-    //instance_create_depth(0, 0,-1000, 764/* obj_torbody */);
 }
-if(global.facechoice == 2)
+if(global.facechoice == AOI+2)
     instance_create_depth(writer.x - 36, writer.y + 25,-1000, obj_face);//originally character-specific, but why lol
-if(global.facechoice == 3)
-    instance_create_depth(writer.x - 35, writer.y + 25,-1000, obj_face);
+if(global.facechoice == YUSUF+2)
+    instance_create_depth(writer.x - 35, writer.y + 25,-1000, obj_face_yusuf);
 if(global.facechoice == 4)
     instance_create_depth(writer.x - 35, writer.y + 25,-1000, obj_face);
 if(global.facechoice == 5)
