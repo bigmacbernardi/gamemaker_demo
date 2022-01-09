@@ -4,6 +4,25 @@ myy= writingy;
 n= 1;
 while(n < stringpos + 1) {
     nskip= 0;
+    if(string_char_at(currentLine, n) == "{") {//line break!
+        var next = "";
+		n++;
+		while string_char_at(currentLine,n)!="}"{
+			next += string_char_at(currentLine,n);
+			n++;
+		}
+		if next !=""{
+			var num = real(next);
+			if global.faceemotion!=num{
+				global.faceemotion=num;
+				global.facechange=1;
+				instance_destroy(obj_face);
+				with obj_dialoguer
+					scr_facechoice(num);
+			}
+		}
+		n++;
+    }
     if(string_char_at(currentLine, n) == "&") {//line break!
         myx= writingx;
 		myy+= vspacing;
