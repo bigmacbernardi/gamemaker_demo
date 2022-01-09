@@ -122,6 +122,11 @@
             {"propertyId":{"name":"speakers","path":"objects/obj_multitrigger/obj_multitrigger.yy",},"objectId":{"name":"obj_multitrigger","path":"objects/obj_multitrigger/obj_multitrigger.yy",},"value":"[global.currentParty[1]+2,global.currentParty[0]+2]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"emotions","path":"objects/obj_multitrigger/obj_multitrigger.yy",},"objectId":{"name":"obj_multitrigger","path":"objects/obj_multitrigger/obj_multitrigger.yy",},"value":"[1,0]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_multitrigger","path":"objects/obj_multitrigger/obj_multitrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":577.0,"y":1264.0,"resourceVersion":"1.0","name":"inst_446A0377","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"thisColor","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"objectId":{"name":"obj_shaderlight","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"value":"$FCFFB265","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"roomColor","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"objectId":{"name":"obj_shaderlight","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"value":"$FC8CB23F","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"range","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"objectId":{"name":"obj_shaderlight","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"value":"400","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_shaderlight","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.24538231,"scaleY":0.9908333,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":1056.0,"resourceVersion":"1.0","name":"inst_735E14C1","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"til_dungeon1tiles_big","path":"tilesets/til_dungeon1tiles_big/til_dungeon1tiles_big.yy",},"x":159,"y":-64,"tiles":{"SerialiseWidth":27,"SerialiseHeight":45,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -386,6 +391,7 @@
     {"name":"inst_387321E2","path":"rooms/d1hall1/d1hall1.yy",},
     {"name":"inst_6A7D152E","path":"rooms/d1hall1/d1hall1.yy",},
     {"name":"inst_446A0377","path":"rooms/d1hall1/d1hall1.yy",},
+    {"name":"inst_735E14C1","path":"rooms/d1hall1/d1hall1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

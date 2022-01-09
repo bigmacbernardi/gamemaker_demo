@@ -12,13 +12,13 @@ if(side == 0) {
 	if global.facechoice==1 {
 		draw_rectangle(camera_get_view_x(cam) + 100, camera_get_view_y(cam) + 5, camera_get_view_x(cam) +  140, camera_get_view_y(cam) + 8, 0);
 		draw_set_color(c_white);
-//		draw_set_font(web);
+		draw_set_font(Roses);
 		draw_text_transformed(camera_get_view_x(cam) + 102, camera_get_view_y(cam) + 5,"Elder",.5,.5,0);
 	}
 	else if global.facechoice > 1 and global.facechoice < 20{
 		draw_rectangle(camera_get_view_x(cam) + 100, camera_get_view_y(cam) + 5, camera_get_view_x(cam) +  140, camera_get_view_y(cam) + 8, 0);
 		draw_set_color(c_white);
-		//draw_set_font(web);
+		draw_set_font(Roses);
 		draw_text_transformed(camera_get_view_x(cam) + 102, camera_get_view_y(cam) + 5,global.names[global.facechoice-2],.5,.5,0);
 	}
 } else  {
@@ -34,14 +34,14 @@ if(side == 0) {
 	if global.facechoice==1 {
 		draw_rectangle(camera_get_view_x(cam) + 100, camera_get_view_y(cam)  + camera_get_view_height(cam) - 77, camera_get_view_x(cam) +  140, camera_get_view_y(cam)  + camera_get_view_height(cam) - 74, 0);
 		draw_set_color(c_white);
-		//draw_set_font(web);
+		draw_set_font(Roses);
 		draw_text_transformed(camera_get_view_x(cam) + 102, camera_get_view_y(cam)  + camera_get_view_height(cam) - 80,"Elder",.5,.5,0);
 		//draw_set_font(1);
 	}
 	else if global.facechoice > 1 and global.facechoice < 20{
 		draw_rectangle(camera_get_view_x(cam) + 100, camera_get_view_y(cam)  + camera_get_view_height(cam) - 78, camera_get_view_x(cam) +  140, camera_get_view_y(cam)  + camera_get_view_height(cam) - 74, 0);
 		draw_set_color(c_white);
-		//draw_set_font(web);
+		draw_set_font(Roses);
 		draw_text_transformed(camera_get_view_x(cam) + 102, camera_get_view_y(cam)  + camera_get_view_height(cam) - 80,global.names[global.facechoice-2],.5,.5,0);
 		//draw_set_font(Font2);
 	}
