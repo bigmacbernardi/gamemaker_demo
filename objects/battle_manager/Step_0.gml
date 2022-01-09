@@ -202,7 +202,8 @@ switch(combatPhase){
 				ds_list_add(futureMessages,global.names[global.currentParty[i]]+" is now Level "+string(global.party[global.currentParty[i]][LV])+"!");
 			}
 		}
-		global.money += cashEarned;
+		global.electum += cashEarned;
+		global.gold += goldEarned;
 		if global.fightNo > -1
 			global.spawnController.scriptedFights[global.fightNo] = [];
 		global.foesToSpawn = [];
@@ -224,7 +225,7 @@ switch(combatPhase){
 			}
 		}
 		resultsRemaining++;
-		currentMessage="  Got "+string(cashEarned)+" credit units!\n  Got "+string(expEarned)+"XP!";
+		currentMessage=(cashEarned>0?("  Got "+string(cashEarned)+" Electum!  "):"")+(goldEarned>0?("  Got "+string(goldEarned)+" Electum!\n"):"\n")+"  Got "+string(expEarned)+"XP!";
 		combatPhase=phase.postWin;//orig Room1
 	//return to previous room
 	break;

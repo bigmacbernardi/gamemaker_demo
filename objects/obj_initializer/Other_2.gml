@@ -68,7 +68,8 @@ global.dualSkills = [//even MORE naive
 	false,false,false,false,false,false,false,
 	false,false,false,false,false,false,false
 ];
-global.money= 99;
+global.electum= 99;
+global.gold = 0;
 var staff =  instance_create_depth(0,0,10,obj_weapon);//for now we'll just leave these as persistent things.  will compress eventually
 var spear = instance_create_depth(0,0,10,obj_weapon);
 spear.title = "Kida-yari";

@@ -30,6 +30,7 @@ allowInput = false;
 solicitInput = false;
 expEarned = 0;
 cashEarned = 0;
+goldEarned = 0;
 
 function curPhaseName(){
 	switch(combatPhase){
