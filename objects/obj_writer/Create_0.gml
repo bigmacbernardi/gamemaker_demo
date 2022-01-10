@@ -35,3 +35,5 @@ alarm[0]= textspeed;
 }*/
 
 lastMsc = -1;
+xinterval = writingx - camera_get_view_x(cam);
+yinterval = writingy - camera_get_view_y(cam);

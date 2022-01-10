@@ -9,3 +9,5 @@ if(shake == 42) {
     direction-= 19;
 }
 if(halt == 3 || dfy == 1) instance_destroy();
+writingx = camera_get_view_x(cam) + xinterval;
+writingy = camera_get_view_y(cam) + yinterval;

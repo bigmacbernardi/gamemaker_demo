@@ -38,7 +38,7 @@
     "path": "folders/Objects/overworld/story.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_multitrigger",
+  "name": "obj_convotrigger",
   "tags": [],
   "resourceType": "GMObject",
 }

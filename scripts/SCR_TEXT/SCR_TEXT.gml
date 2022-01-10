@@ -28,8 +28,8 @@ switch(argument0){
 		global.msg = ["Just gotta keep going north.","%%%"];
 		break;
 	case 26:
-		global.msg = [" Looks like the path up here's& collapsed{4}./",
-		"{0} This place is huge^2.{3}& There's probably another safe way& down./",
+		global.msg = [" Looks like the path up here's& collapsed^3.{1}/",
+		"{0} This place is huge^2.& There's {7}probably {0}another safe way& down./",
 		"%%%"];
 		break;
 	case 27:
@@ -96,7 +96,7 @@ switch(argument0){
         //var playerNames = ["Aoi","Yusuf"];
         if (variable_global_exists("currentParty")) global.msg[0]= "* Hey "+global.names[global.currentParty[0]]+"./";
         else  global.msg[0]= "* Hey kid./";
-		global.msg[1]= "I'm over here. &But don't come talk to me,&or the game will break./%";
+		global.msg[1]= "I'm over here. &But don't come talk to me,&or the {2}game will break./%";
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;

@@ -31,18 +31,18 @@ if(side == 0) {
     draw_rectangle(camera_get_view_x(cam) + 16, camera_get_view_y(cam)  + camera_get_view_height(cam) - 77,  camera_get_view_x(cam) +  camera_get_view_width(cam) - 16, camera_get_view_y(cam) +  camera_get_view_height(cam) - 2, 0);
     draw_set_color(c_navy/*was 0*/);
     draw_rectangle(camera_get_view_x(cam) + 19, camera_get_view_y(cam)  + camera_get_view_height(cam) - 74,  camera_get_view_x(cam) +  camera_get_view_width(cam) - 19, camera_get_view_y(cam) + camera_get_view_height(cam) - 5, 0);
-	if global.facechoice==1 {
+	if global.facechoice==1 {//Elder
 		draw_rectangle(camera_get_view_x(cam) + 100, camera_get_view_y(cam)  + camera_get_view_height(cam) - 77, camera_get_view_x(cam) +  140, camera_get_view_y(cam)  + camera_get_view_height(cam) - 74, 0);
 		draw_set_color(c_white);
 		draw_set_font(Roses);
-		draw_text_transformed(camera_get_view_x(cam) + 103, camera_get_view_y(cam)  + camera_get_view_height(cam) - 79,"Elder",.7,.4,0);
+		draw_text_transformed(camera_get_view_x(cam) + 103, camera_get_view_y(cam)  + camera_get_view_height(cam) - 78,"Elder",.7,.4,0);
 		//draw_set_font(1);
 	}
 	else if global.facechoice > 1 and global.facechoice < 20{
 		draw_rectangle(camera_get_view_x(cam) + 100, camera_get_view_y(cam)  + camera_get_view_height(cam) - 78, camera_get_view_x(cam) +  140, camera_get_view_y(cam)  + camera_get_view_height(cam) - 74, 0);
 		draw_set_color(c_white);
 		draw_set_font(Roses);
-		draw_text_transformed(camera_get_view_x(cam) + 103, camera_get_view_y(cam)  + camera_get_view_height(cam) - 79,global.names[global.facechoice-2],.7,.4,0);
+		draw_text_transformed(camera_get_view_x(cam) + 103, camera_get_view_y(cam)  + camera_get_view_height(cam) - 78,global.names[global.facechoice-2],.7,.4,0);
 		//draw_set_font(Font2);
 	}
 }
