@@ -1,3 +1,3 @@
-target_x = 275;
-target_y = 54;
-target_rm = depth_test_smaller;
+target_x = 575;
+target_y = 24;
+target_rm = mystery_zone;

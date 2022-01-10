@@ -160,6 +160,7 @@
     {"id":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"order":5,},
     {"id":{"name":"spr_aoi_right","path":"sprites/spr_aoi_right/spr_aoi_right.yy",},"order":3,},
     {"id":{"name":"spr_dropshadow","path":"sprites/spr_dropshadow/spr_dropshadow.yy",},"order":5,},
+    {"id":{"name":"mystery_zone","path":"rooms/mystery_zone/mystery_zone.yy",},"order":20,},
     {"id":{"name":"shortdamage","path":"sounds/shortdamage/shortdamage.yy",},"order":28,},
     {"id":{"name":"bg_brickwall","path":"sprites/bg_brickwall/bg_brickwall.yy",},"order":0,},
     {"id":{"name":"obj_pauseconfig","path":"objects/obj_pauseconfig/obj_pauseconfig.yy",},"order":4,},
@@ -471,6 +472,7 @@
     {"roomId":{"name":"battle_d1shelves","path":"rooms/battle_d1shelves/battle_d1shelves.yy",},},
     {"roomId":{"name":"battle_d1area","path":"rooms/battle_d1area/battle_d1area.yy",},},
     {"roomId":{"name":"d1biolab","path":"rooms/d1biolab/d1biolab.yy",},},
+    {"roomId":{"name":"mystery_zone","path":"rooms/mystery_zone/mystery_zone.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Extensions.yy","order":0,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
@@ -533,7 +535,7 @@
     {"CopyToMask":153157610357391598,"filePath":"datafiles","resourceVersion":"1.0","name":"RosesareFF0000.ttf","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.7.606",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "gamemaker_demo",
