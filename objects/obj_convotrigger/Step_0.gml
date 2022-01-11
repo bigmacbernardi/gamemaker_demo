@@ -3,7 +3,7 @@
 if place_meeting(x, y, obj_player)
 	{
 	obj_player.paused=!canWalk;
-	obj_backwall.visible=0;
+	if instance_exists(obj_backwall) obj_backwall.visible=0;
 	if !instance_exists(obj_dialoguer){
 		if curr < array_length(lineNos){
 			global.lineNo = lineNos[curr];
@@ -14,7 +14,7 @@ if place_meeting(x, y, obj_player)
 			curr++;
 		}
 		else{
-			obj_backwall.visible=1;
+			if instance_exists(obj_backwall) obj_backwall.visible=1;
 			if correspondingFlag>-1
 				global.flag[correspondingFlag]=true;
 			instance_destroy();

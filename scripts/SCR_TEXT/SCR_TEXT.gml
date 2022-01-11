@@ -24,6 +24,12 @@ switch(argument0){
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;
+	case 4:
+		global.msg = ["What is this thing?/","%%%"];
+		break;
+	case 5:
+		global.msg = ["Who knows, let's keep going./","%%%"];
+		break;
 	case 25: 
 		global.msg = ["Just gotta keep going north.","%%%"];
 		break;
