@@ -93,6 +93,10 @@ switch(argument0){
         global.msg[3]= "%%%";
         break;
 	case 1001:
+		global.msg= ["Got Potion!/","%%%"];
+        break;
+	case 1002:
+	case 1003:
         global.msg[0]= "Got Vegetable Soup!/";
         global.msg[1]= "%%%";
         global.msg[2]= "%%%";
