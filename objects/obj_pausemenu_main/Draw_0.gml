@@ -37,7 +37,7 @@ drawX = x + camera_get_view_width(cam)-120;
 drawY = y + camera_get_view_height(cam)-24;
 draw_text_transformed(drawX,drawY,"Money: ",.5,.5,0);
 drawX = x + camera_get_view_width(cam)-70;
-draw_text_transformed(drawX,drawY,string(global.electum)+"E",.5,.5,0);
+draw_text_transformed(drawX,drawY,string(global.electrum)+"E",.5,.5,0);
 draw_text_transformed(drawX,drawY+10,string(global.gold)+"G",.5,.5,0);
 
 draw_set_color(c_ltgray);
