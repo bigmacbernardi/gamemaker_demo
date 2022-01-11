@@ -138,6 +138,7 @@
     {"id":{"name":"Punch2","path":"sounds/Punch2/Punch2.yy",},"order":13,},
     {"id":{"name":"noBKG_AoiJumpAndFall_strip","path":"sprites/noBKG_AoiJumpAndFall_strip/noBKG_AoiJumpAndFall_strip.yy",},"order":2,},
     {"id":{"name":"spr_yusuf_right2","path":"sprites/spr_yusuf_right2/spr_yusuf_right2.yy",},"order":13,},
+    {"id":{"name":"obj_shaderlight_complex","path":"objects/obj_shaderlight_complex/obj_shaderlight_complex.yy",},"order":9,},
     {"id":{"name":"spr_aoi_right1","path":"sprites/spr_aoi_right1/spr_aoi_right1.yy",},"order":7,},
     {"id":{"name":"KnightAttack_strip","path":"sprites/KnightAttack_strip/KnightAttack_strip.yy",},"order":0,},
     {"id":{"name":"obj_rm_transition","path":"objects/obj_rm_transition/obj_rm_transition.yy",},"order":5,},

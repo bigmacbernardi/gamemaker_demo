@@ -30,6 +30,9 @@ switch(argument0){
 	case 5:
 		global.msg = ["Who knows, let's keep going./","%%%"];
 		break;
+	case 10:
+		global.msg = [" Hm... lots of rubble around here.{0}& We should watch our step./","%%%"]
+		break;
 	case 25: 
 		global.msg = ["Just gotta keep going north.","%%%"];
 		break;

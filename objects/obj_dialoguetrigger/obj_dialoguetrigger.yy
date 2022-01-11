@@ -26,7 +26,7 @@
   ],
   "properties": [
     {"varType":1,"value":"9","rangeEnabled":true,"rangeMin":-1.0,"rangeMax":255.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"correspondingFlag","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":4,"value":"global.flag[correspondingFlag]","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"happened","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"correspondingFlag>-1 &&global.flag[correspondingFlag]","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"happened","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"lineNo","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":true,"rangeMin":0.0,"rangeMax":63.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"speaker","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"emotion","tags":[],"resourceType":"GMObjectProperty",},
