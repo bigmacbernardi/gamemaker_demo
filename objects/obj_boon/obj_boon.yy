@@ -32,7 +32,7 @@
     "path": "folders/Objects/items/equipment.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_accessory",
+  "name": "obj_boon",
   "tags": [],
   "resourceType": "GMObject",
 }

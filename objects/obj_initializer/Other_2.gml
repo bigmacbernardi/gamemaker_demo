@@ -1,7 +1,4 @@
 /// @description Insert description here
-// You can write your code in this editor
-
-
 //order for stats set here
 #macro HP 0
 #macro MP 1
@@ -38,8 +35,8 @@ global.names=["Aoi","Yusuf","Jamir","Bardo","Prison Jane","Luchador","Server","N
 global.inventory = ds_list_create();
 global.equipment = ds_list_create();
 global.currentParty = [AOI,YUSUF,noone,noone];
-global.equipped[AOI] = [noone,noone,noone,noone];
-global.equipped[YUSUF] = [noone,noone,noone,noone];
+global.equipped[AOI] = [noone,noone,noone,noone,noone,noone,noone,noone];
+global.equipped[YUSUF] = [noone,noone,noone,noone,noone,noone,noone,noone];
 global.availableParty = ds_list_create();
 ds_list_add(global.availableParty,AOI);
 ds_list_add(global.availableParty,YUSUF);
