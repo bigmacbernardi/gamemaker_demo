@@ -17,7 +17,7 @@ scrollLevel2 = 0;
 //}
 
 options = global.equipment;
-subY = y+sprite_height-80/*half spr_menu_temp.height*/;
+subY = y+sprite_height-50/*half spr_menu_temp.height*/;
 front_sprites = [spr_aoi,spr_yusuf,spr_old_man,spr_old_man44];
 mode = 0;
 //mode 0: can select from list of characters OR list of equipment
