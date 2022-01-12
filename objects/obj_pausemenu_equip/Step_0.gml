@@ -90,13 +90,79 @@ else {
 	var _right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 	var _moveH = _right - _left;
 	var _moveV = _down - _up;
-	if (_moveH != 0){ //HORIZO
-		if (mode ==1){//selecting subindex (equip slot)
-			subindex+=_moveH;
-			if subindex<0 subindex=7;
-			else if subindex>7 subindex=0;
+	if (mode ==1){//selecting subindex (equip slot)
+		//subindex positions:
+		//  6,
+		//5,2,7,
+		//  3,
+		// 0,1,
+		//  4
+		//
+		//
+		if subindex == 0 or subindex == 1{
+			if _up
+				subindex=3;
+			else if _down
+				subindex=4;
+			else if _left or _right
+				subindex = !subindex;
 		}
-		else if (index ==8){ //submenu is selected in mode 0
+		else if subindex == 4{
+			if _up or _left
+				subindex=0;
+			else if _down{
+				subindex=8;
+				mode--;
+			}
+			else if _right
+				subindex = 1;
+		}
+		else if subindex == 3{
+			if _left
+				subindex = 0;
+			else if _up
+				subindex = 2;
+			else if _right
+				subindex = 1;
+			else if _down
+				subindex=0;
+		}
+		else if subindex ==6{
+			if _left
+				subindex = 5;
+			else if _up
+				subindex = 4;
+			else if _right
+				subindex = 2;//7
+			else if _down
+				subindex=2;
+		}
+		else{
+			if _up
+				subindex=6;
+			else if _down
+				if subindex==5 subindex=0;
+				else subindex=3;
+			else if _moveH!=0{
+				if _left{
+					if subindex==2 subindex=5;
+					else if subindex==7 subindex=2;
+					else if subindex==5 subindex=2;//7
+				}else if _right{
+					if subindex==2 subindex=5;//7
+					else if subindex==7 subindex=5;
+					else if subindex==5 subindex=2;
+				}
+			}
+		}
+		/*if (_moveH != 0){
+		subindex+=_moveH;
+			if subindex<0 subindex=7;
+			else if suebindex>7 subindex=0;
+		}*/
+	}
+	else if (_moveH != 0){ //mode is NOT 1
+		if (index == length){ //submenu is selected in mode 0
 			if (_moveH>0){//moving down
 				if (ds_list_size(global.availableParty) > index2+4) index2+=4;
 				else if (mode!=1) {

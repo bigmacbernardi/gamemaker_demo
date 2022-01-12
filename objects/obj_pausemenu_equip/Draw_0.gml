@@ -1,5 +1,10 @@
 /// @description Should eventually show perks that come with teams
 // You can write your code in this editor
+/*I's = [6,
+5,2,7,
+3,
+0,1,
+4];*/
 /*xs = [100,
 25,100,175,
 100,
@@ -12,6 +17,7 @@
 130];*/
 var xs = [35,165,100,100,100,25,100,175];
 var ys = [100,100,50,78,130,40,20,40];
+
 
 draw_self();//background
 var drawX = x+10;
