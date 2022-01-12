@@ -32,9 +32,11 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":1,"value":"150","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"range","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"80","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"range","tags":[],"resourceType":"GMObjectProperty",},
   ],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"fightNo","path":"objects/obj_enemy/obj_enemy.yy",},"objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"value":"7","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "overworld",
     "path": "folders/Objects/overworld.yy",

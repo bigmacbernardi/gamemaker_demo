@@ -105,6 +105,9 @@ switch(argument0){
         global.msg[2]= "%%%";
         global.msg[3]= "%%%";
         break;
+	case 1005:
+		global.msg= ["Found an Ether./","%%%"];
+        break;
 	default: 
         //var playerNames = ["Aoi","Yusuf"];
         if (variable_global_exists("currentParty")) global.msg[0]= "* Hey "+global.names[global.currentParty[0]]+"./";
