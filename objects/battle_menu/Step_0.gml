@@ -1,4 +1,8 @@
 /// @description Insert description here
+if global.selectedUnit<0 or !global.selectedUnit.isPlayer{
+	menuDisplaying=false;
+	menuActive=false;
+}
 if selected menuActive = true;
 if menuDisplaying and menuActive{
 	var _up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
