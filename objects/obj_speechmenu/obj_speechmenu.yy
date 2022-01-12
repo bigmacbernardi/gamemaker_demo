@@ -38,7 +38,7 @@
     "path": "folders/Objects/GUI/battle.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_skillmenu",
+  "name": "obj_speechmenu",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -272,6 +272,6 @@ function drawQueue() {
 animCounter = 0;
 currentMessage = "";
 futureMessages = ds_list_create();
-usingMouse = false;
+//usingMouse = false;
 alarm1s=0; atkBroadcasts=0; itmBroadcasts=0; hitMissBroadcasts=0; deathBroadcasts=0;
 resultsRemaining=0;

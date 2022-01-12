@@ -3,7 +3,7 @@
 function dual(){
 	var inst = instance_create_depth(0, button_attack.y-90,-90, obj_dualmenu);
 	//change list to skills
-	inst.priorMenu = button_dual_wait;
+	inst.priorMenu = instance_exists(obj_skillmenu)?obj_skillmenu:battle_menu;
 }
 function wait(){
 	var unit = global.selectedUnit;

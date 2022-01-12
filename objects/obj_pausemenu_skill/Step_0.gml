@@ -16,10 +16,6 @@ else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space
 	}
 else if((mouse_check_button_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace))
 	{
-		//replace following with menu buttons?
-		/*button_attack.visible = 1;
-		button_skill.visible = 1;
-		button_item.visible = 1;*/
 		if (priorMenu != noone) priorMenu.selected = true;//logic for if we genericize
         else{
 			obj_player.paused = false;

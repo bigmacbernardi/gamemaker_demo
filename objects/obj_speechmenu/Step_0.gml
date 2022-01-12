@@ -22,19 +22,17 @@ else if goButton
 else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
 	{
 		battle_manager.currentMessage = "";
+
 		battle_manager.allowInput = true;
-		//button_attack.visible = 1;
-		//button_skill.visible = 1;
-		//button_dual_wait.visible = 1;
-		//button_item.visible = 1;
-		with battle_menu{
-			alarm[0]=1;	
-		}
+		button_attack.visible = 1;
+		button_skill.visible = 1;
+		button_dual_wait.visible = 1;
+		button_item.visible = 1;
 		priorMenu.selected = true;
         instance_destroy();
 	}
 else {
-	if(optionSlots[|index] > 0)battle_manager.currentMessage =  optionSlots[|index].description;
+	battle_manager.currentMessage =  optionSlots[|index].description;
 	var _up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 	var _down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 	var _left = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"));

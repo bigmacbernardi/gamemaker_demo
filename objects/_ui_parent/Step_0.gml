@@ -77,10 +77,14 @@ if((script != noone)&&(isSelected)&&(battle_manager.allowInput))// && position_m
 		battle_manager.allowInput = false; //done before to prevent shenanigans
 		script_execute(script);
 		//if we just had a way to automatically iterate through children, this could be easier
-		button_attack.visible = 0;
-		button_skill.visible = 0;
-		button_dual_wait.visible = 0;
-		button_item.visible = 0;
+		//button_attack.visible = 0;
+		//button_skill.visible = 0;
+		//button_dual_wait.visible = 0;
+		//button_item.visible = 0;
+		with battle_menu{
+			menuActive=false;
+			menuDisplaying=false;	
+		}
 	}
 }
 else

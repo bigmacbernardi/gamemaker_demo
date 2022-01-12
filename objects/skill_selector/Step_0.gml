@@ -73,11 +73,15 @@ if (mode==0) {//single-enemy
 		else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
 		{
 			battle_manager.allowInput = true;
-			button_attack.visible = 1;
-			button_skill.visible = 1;
-			button_skill.selected = true;
-			button_dual_wait.visible = 1;
-			button_item.visible = 1;
+			//button_attack.visible = 1;
+			//button_skill.visible = 1;
+			//button_skill.selected = true;
+			//button_dual_wait.visible = 1;
+			//button_item.visible = 1;
+			
+			with battle_menu{
+				alarm[0]=1;//show the menu and reenable input	
+			}
 		    instance_destroy();
 		}	
 	}
@@ -124,11 +128,14 @@ if (floor(mode)==1) {//single-ally default.  updated to allow dead selections
 	else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
 		{
 			battle_manager.allowInput = true;
-			button_attack.visible = 1;
-			button_skill.visible = 1;
-			button_skill.selected = true;
-			button_dual_wait.visible = 1;
-			button_item.visible = 1;
+			//button_attack.visible = 1;
+			//button_skill.visible = 1;
+			//button_skill.selected = true;
+			//button_dual_wait.visible = 1;
+			//button_item.visible = 1;
+			with battle_menu{
+				alarm[0]=1;//show the menu and reenable input	
+			}
 	        instance_destroy();
 		}	
 }	
@@ -160,11 +167,14 @@ else if (mode==2) {//all enemies
 		else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
 		{
 			battle_manager.allowInput = true;
-			button_attack.visible = 1;
-			button_skill.visible = 1;
-			button_skill.selected = true;
-			button_dual_wait.visible = 1;
-			button_item.visible = 1;
+			//button_attack.visible = 1;
+			//button_skill.visible = 1;
+			//button_skill.selected = true;
+			//button_dual_wait.visible = 1;
+			//button_item.visible = 1;
+			with battle_menu{
+				alarm[0]=1;//show the menu and reenable input	
+			}
 		    instance_destroy();
 		}
 	}
@@ -197,11 +207,14 @@ else if (mode==3) {//all enemies
 		else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
 		{
 			battle_manager.allowInput = true;
-			button_attack.visible = 1;
-			button_skill.visible = 1;
-			button_skill.selected = true;
-			button_dual_wait.visible = 1;
-			button_item.visible = 1;
+			//button_attack.visible = 1;
+			//button_skill.visible = 1;
+			//button_skill.selected = true;
+			//button_dual_wait.visible = 1;
+			//button_item.visible = 1;
+			with battle_menu{
+				alarm[0]=1;//show the menu and reenable input	
+			}
 		    instance_destroy();
 		}
 	}

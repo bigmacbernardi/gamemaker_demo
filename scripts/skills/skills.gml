@@ -3,6 +3,6 @@
 function skills(){
 	var inst = instance_create_depth(0, button_attack.y-90,-90, obj_skillmenu);
 	//change list to skills
-	inst.priorMenu = button_skill;	//redundant.
+	inst.priorMenu = battle_menu;	//redundant.
 	//also slot_skills could be handled here
 }
