@@ -153,3 +153,4 @@ if array_length(actualColors)=array_length(colors){
 }
 while instance_exists(obj_light_row) instance_destroy(obj_light_row);
 while instance_exists(obj_light_column) instance_destroy(obj_light_column);
+lastString = "";
