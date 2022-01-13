@@ -297,10 +297,6 @@ switch(combatPhase){
 				global.spawnController.scriptedFights[global.fightNo][(i*3)+2]=global.enemies[|i].y;
 			}
 		}
-		global.foesToSpawn = [];
-		ds_list_destroy(global.units);
-		ds_list_destroy(global.allies);
-		ds_list_destroy(global.enemies);
 		for (var i = 0; i<4;i++){
 			if global.currentParty[i]==noone continue;
 			global.points[global.currentParty[i]][HP] = max(0,global.units[|i].current[HP]);
@@ -329,6 +325,11 @@ switch(combatPhase){
 				global.currentParty[3] = temp;
 			}
 		}
+		
+		global.foesToSpawn = [];
+		ds_list_destroy(global.units);
+		ds_list_destroy(global.allies);
+		ds_list_destroy(global.enemies);
 		//TO DO:  Add check for level up.  Send to POSTWIN instead if that's the case otherwise.
 		if ds_list_size(futureMessages)==0 room_goto(global.returnRoom);
 		else combatPhase=phase.postWin;
