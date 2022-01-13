@@ -206,6 +206,7 @@ switch(combatPhase){
 				upgrade(global.currentParty[i]);
 				ds_list_add(futureMessages,global.names[global.currentParty[i]]+" is now Level "+string(global.party[global.currentParty[i]][LV])+"!");
 			}
+			global.statuses[global.currentParty[i]]=global.units[|i].status;
 		}
 		global.electrum += cashEarned;
 		global.gold += goldEarned;
@@ -231,9 +232,8 @@ switch(combatPhase){
 		}
 		resultsRemaining++;
 		currentMessage=(cashEarned>0?("  Got "+string(cashEarned)+" Electrum!  "):"")+(goldEarned>0?("  Got "+string(goldEarned)+" Electrum!\n"):"\n")+"  Got "+string(expEarned)+"XP!";
-		combatPhase=phase.postWin;//orig Room1
-	//return to previous room
-	break;
+		combatPhase=phase.postWin;//will return here
+		break;
 	case phase.escape:
 	    for (var i = 0; i<ds_list_size(global.allies);i++){
 		   layer_sequence_xscale(global.allies[|i].unitSequence,-1);
@@ -266,6 +266,7 @@ switch(combatPhase){
 				upgrade(global.currentParty[i]);
 				ds_list_add(futureMessages,global.names[global.currentParty[i]]+" is now Level "+string(global.party[global.currentParty[i]][LV])+"!");
 			}
+			global.statuses[global.currentParty[i]]=global.units[|i].status;
 		}
 		if (global.points[global.currentParty[0]][HP]==0){//reassign leader
 			if global.points[global.currentParty[1]][HP]>0{

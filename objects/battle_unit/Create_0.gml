@@ -55,3 +55,4 @@ function damageUnit(amount){
 function healUnit(amount){
 	current[@ HP] = min(base[HP],current[HP]+amount);
 }
+status = [0,0,0,0,0,0,0,0];

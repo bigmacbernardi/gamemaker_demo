@@ -39,3 +39,4 @@ if (current[HP]==0){//only added for start of battle
 	}
 }
 index = AOI;
+status = global.statuses[AOI];

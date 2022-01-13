@@ -41,3 +41,5 @@ if (current[HP]==0){//only added for start of battle
 	}
 }
 index = YUSUF;//will make slotting easier
+
+status = global.statuses[YUSUF];
