@@ -12,32 +12,32 @@ attackWillHit = false;
 incomingDamage = 0;
 hpBarWidth = sprite_get_width(ui_hp);
 hpBarHeight = sprite_get_height(ui_hp);
-doingSpecialAttack = false;
+//doingSpecialAttack = false;
 
-xp_value = 80;
+xp_value = 190;
 cash_value = 40;
-unitSequence = layer_sequence_create("Sequences",x,y,sBeastling);
+unitSequence = layer_sequence_create("Sequences",x,y,sBook);
 
 //start and end frames for each state
 idleStart = 0;
-idleEnd = 16;
-atkStart = 17;
-atkEnd = 34;
-atk2Start = 35;
-atk2End = 63;
-intoDefStart = 63;
-intoDefEnd = 68;//make contiguous if need be
-defStart = 63;
-defEnd = 68;
-hitStart = 68;
-hitEnd = 73;
-missStart = 73;
-missEnd = 89;
-deathStart = 90;
-deathMid = 91;
-deathEnd = 92;
+idleEnd = 35;
+atkStart = 36;
+atkEnd = 75;
+healStart = 76;
+healEnd = 115;
+intoDefStart = 116;
+intoDefEnd = 120;//make contiguous if need be
+defStart = 116;
+defEnd = 135;
+hitStart = 136;
+hitEnd = 159;
+missStart = 160;
+missEnd = 194;
+deathStart = 195;
+deathMid = 231;
+deathEnd = 240;
 
-base[HP] = 24;
+base[HP] = 50;
 current[HP] = base[HP];
 
 base[MP] = 10;

@@ -10,7 +10,7 @@ switch(state){
 	break
 	
 	case ATTACK:
-		if (layer_sequence_get_headpos(unitSequence) > (doingSpecialAttack?atk2End:atkEnd)){
+		if (layer_sequence_get_headpos(unitSequence) > atkEnd){
 			var myId = id;
 			show_debug_message(title+" attack animation finished");
 			//at THIS point damage should happen right?
@@ -34,7 +34,7 @@ switch(state){
 	break;
 
 	case ITEM:
-		if (layer_sequence_get_headpos(unitSequence) > itmEnd){
+		if (layer_sequence_get_headpos(unitSequence) > healEnd){
 			show_debug_message("Item animation finished");
 			var myId = id;
 			//at THIS point damage should happen right?
@@ -93,7 +93,7 @@ switch(state){
 	break;
 	case HEAL://also to be used for buffs (and debuffs?)
 		show_debug_message(title + string(id) + "is healing!");
-		if (layer_sequence_get_headpos(unitSequence) > hitEnd){//delay is apparently needed for sequencing with battle_manager
+		if (layer_sequence_get_headpos(unitSequence) > healEnd){//delay is apparently needed for sequencing with battle_manager
 		healUnit(incomingDamage);
 		layer_sequence_headpos(unitSequence, idleStart);
 		incomingDamage = 0;
