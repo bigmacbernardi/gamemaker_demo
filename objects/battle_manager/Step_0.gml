@@ -194,27 +194,70 @@ switch(combatPhase){
 			//songPlaying = audio_play_sound(victoryTheme,1000,true);
 		}
 		//currentMessage = "You win!";
-		
-		for (var i = 0; i<4;i++){
-			if global.currentParty[i]==noone continue;//will fuck up if we ever have (member,member,noone,member) so watch out
-			global.points[global.currentParty[i]][HP] = max(0,global.units[|i].current[HP]);
-			global.points[global.currentParty[i]][MP] = max(0,global.units[|i].current[MP]);
-			global.party[global.currentParty[i]][XP] += expEarned;
+		var ii;
+		for (ii = 0; ii<4;ii++){
+			if global.currentParty[ii]==noone break;//will cut off last party member if we ever have (member,member,noone,member) so watch out
+			global.points[global.currentParty[ii]][HP] = max(0,global.units[|ii].current[HP]);
+			global.points[global.currentParty[ii]][MP] = max(0,global.units[|ii].current[MP]);
+			global.party[global.currentParty[ii]][XP] += expEarned;
 			//CHECKING FOR LEVEL UPS
-			if global.party[global.currentParty[i]][XP] >= lvBreaks[global.party[global.currentParty[i]][LV]]{
-				global.party[global.currentParty[i]][LV]++;
-				upgrade(global.currentParty[i]);
-				ds_list_add(futureMessages,global.names[global.currentParty[i]]+" is now Level "+string(global.party[global.currentParty[i]][LV])+"!");
+			if global.party[global.currentParty[ii]][XP] >= lvBreaks[global.party[global.currentParty[ii]][LV]]{
+				global.party[global.currentParty[ii]][LV]++;
+				upgrade(global.currentParty[ii]);
+				ds_list_add(futureMessages,global.names[global.currentParty[ii]]+" is now Level "+string(global.party[global.currentParty[ii]][LV])+"!");
 			}
-			global.statuses[global.currentParty[i]]=global.units[|i].status;
+			global.statuses[global.currentParty[ii]]=global.units[|ii].status;
+		}
+		for (; ii<ds_list_size(global.units);ii++){//checking for drops
+			var unit = global.units[|ii];
+			if variable_instance_exists(unit,"drops"){
+				for (var i = 0;i<array_length(unit.drops);i++){
+					var numba = irandom(99);
+					if numba <= unit.drops[i][1]{
+						if (object_get_parent(unit.drops[i][0])==equippable) or 
+						(object_get_parent(object_get_parent(unit.drops[i][0]))==equippable){
+							show_debug_message("It's a weapon, "+object_get_name(object_get_parent(unit.drops[i][0])));
+							var thing = instance_create_depth(0,0,1,unit.drops[i][0]);
+							ds_list_add(global.equipment,thing);
+							ds_list_add(futureMessages,"Found "+thing.title+"!");
+							
+						}
+						else{
+							var found = -1;
+							for (var i = 0;i<ds_list_size(global.inventory);i++){
+								//show_debug_message("Checkin "+object_get_name( global.inventory[|i][0] ));
+								if global.inventory[|i][0] == unit.drops[i][0]{
+								//	show_debug_message("MATCH!");
+									found = i;
+									break;
+								}
+							}
+							if found>-1{//instance_exists(contents){
+								show_debug_message("It's an old item, a(n) "+object_get_name(object_get_parent(unit.drops[i][0])));
+								global.inventory[|found][1]++;
+							}
+							else{
+								show_debug_message("It's a new item, a(n) "+object_get_name(object_get_parent(unit.drops[i][0])));
+								//var thing = instance_create_depth(0,0,1,contents);
+								ds_list_add(global.inventory,[unit.drops[i][0],1]);	
+							}
+							
+							var this = instance_create_depth(0,0,1,unit.drops[i][0]);
+							ds_list_add(futureMessages,"Got "+this.title+"!");
+							instance_destroy(this);
+						}
+					}
+				}
+			}
 		}
 		global.electrum += cashEarned;
 		global.gold += goldEarned;
 		if global.fightNo > -1
 			global.spawnController.scriptedFights[global.fightNo] = [];
 		global.foesToSpawn = [];
-		//TO-DO:
-		//Display item drops received!
+		ds_list_destroy(global.units);
+		ds_list_destroy(global.allies);
+		ds_list_destroy(global.enemies);
 		if (global.points[global.currentParty[0]][HP]==0){//reassign leader
 			if global.points[global.currentParty[1]][HP]>0{
 				var temp = global.currentParty[1];
@@ -255,6 +298,9 @@ switch(combatPhase){
 			}
 		}
 		global.foesToSpawn = [];
+		ds_list_destroy(global.units);
+		ds_list_destroy(global.allies);
+		ds_list_destroy(global.enemies);
 		for (var i = 0; i<4;i++){
 			if global.currentParty[i]==noone continue;
 			global.points[global.currentParty[i]][HP] = max(0,global.units[|i].current[HP]);
