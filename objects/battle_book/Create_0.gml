@@ -50,9 +50,8 @@ current[ACC] = 0.6;
 hasGoneOnce = false;
 //functions back
 function damageUnit(amount){//physical attacks
-	show_debug_message("Yo it's the soldier override!  HP was "+string(current[@ HP]));
 	var damage = max(0,amount - current[@ DEF]);//will update eventually
-	show_debug_message("Damage is "+string(damage)+" of "+string(amount));
+	show_debug_message("Book damage is "+string(damage)+" of "+string(amount));
 	current[@ HP] -= max(0,damage);
 	show_debug_message("HP is now "+string(current[@ HP]));
 }

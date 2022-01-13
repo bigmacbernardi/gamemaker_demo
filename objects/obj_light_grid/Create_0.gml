@@ -115,12 +115,14 @@ var ii=0;//inner index; which value of array colors we're up to
 if upperMargin{
 	for (i=0;i < row_size;i++)
 		actualColors[i]=roomColor;
+	if rightMargin actualColors[i++]=roomColor;
+		
 }else i = 0;
 for (var j = upperMargin; j<col_size;j++){
 	//here, "i" should be equal to j*row_size
 	show_debug_message("i: "+string(i)+" j*row_size: "+string(j*row_size))
 	if leftMargin actualColors[i++]=roomColor;	
-	for (;i<(j*row_size)+leftMargin+array_length(xs);i++){
+	for (;i<(j*row_size)+row_size-rightMargin;i++){
 		show_debug_message(string(ii)+" of "+string(array_length(colors))+" colors");
 	
 		if ii<array_length(colors)
