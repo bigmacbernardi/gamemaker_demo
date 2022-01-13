@@ -20,4 +20,4 @@ if place_meeting(x, y, obj_player)
 			instance_destroy();
 		}
 	}
-}
+}else if cascadeDelete>-1 and global.flag[cascadeDelete] instance_destroy();

@@ -31,6 +31,7 @@
     {"varType":4,"value":"[noone]","rangeEnabled":true,"rangeMin":0.0,"rangeMax":63.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"speakers","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":4,"value":"[0]","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"emotions","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"canWalk","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"-1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"cascadeDelete","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
