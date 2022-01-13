@@ -52,14 +52,16 @@ else {
 	var _right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 	var _moveH = _right - _left; //will use this for pagination/filters/selecting sort options
 	var _moveV = _down - _up;
-	if (_moveH> 0){ //will wrap eventually
-			index3++;
+	if (_moveH!= 0){ //will wrap eventually
+			var types=[0,edible,battle_item,key_item,0];
+			index3+=_moveH;
 			if (index3>=array_length(filterOptions)) index3=0;
 			//update options here
-	}else if (_moveH< 0){ //will wrap eventually
-			index3--;
-			if (index3<0)index3=array_length(filterOptions)-1;
+	//}else if (_moveH< 0){ //will wrap eventually
+			//index3--;
+			else if (index3<0)index3=array_length(filterOptions)-1;
 			//update options here
+			filt(types[index3]);
 		
 	}
 	if (_moveV != 0){

@@ -29,7 +29,6 @@ else if go
 		else{//modes 2 and higher
 			if (index > 1)&&((global.currentParty[0]==noone)||(global.currentParty[1]==noone)){
 				//this check should be pushed further down the logic
-				show_debug_message("Fill out your first team first!");//pop up as window
 				mode = 0;
 				index = 0;
 				index2 = -1;
@@ -155,6 +154,12 @@ else {
 				}
 			}
 		}
+		if subindex==7
+			filter(global.availableParty[|index],5);
+		else
+			filter(global.availableParty[|index],subindex);
+		
+			
 		/*if (_moveH != 0){
 		subindex+=_moveH;
 			if subindex<0 subindex=7;
@@ -180,7 +185,7 @@ else {
 				//else index2%4;//should wrap to bottom row in Mode 1 but does nothing now
 			}
 		}
-		else if (mode != 1){
+		else if (mode != 1){//redundant check
 			index += _moveH;
 			if (index < 0)
 				index = length-1;
@@ -216,6 +221,7 @@ else {
 			}*/
 			
 		}
+		filt(global.availableParty[|index]);
 	}
 	if (_moveV != 0)&&(mode<3)&&(index2!=-1){ 
 		index2 += _moveV;	
