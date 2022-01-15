@@ -19,7 +19,7 @@ if graceRemaining<=0{
 			image_xscale = -1;
 		
 		}
-		if (obj_player.y > y) y+=0.75;
-		else if (obj_player.y < y) y-=0.75;
+		if (obj_player.y-obj_player.sprite_height) y+=0.75;
+		else if (obj_player.y-obj_player.sprite_height) y-=0.75;
 	}
 }

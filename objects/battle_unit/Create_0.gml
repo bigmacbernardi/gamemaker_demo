@@ -44,8 +44,8 @@ selected = false;
 targeted = false;
 attackWillHit = false;
 incomingDamage = 0;
-hpBarWidth = sprite_get_width(ui_hp);
-hpBarHeight = sprite_get_height(ui_hp);
+hpBarWidth = sprite_get_width(ui_mp);
+hpBarHeight = sprite_get_height(ui_mp);
 
 function damageUnit(amount){
 	var damage = amount - current[@ DEF];

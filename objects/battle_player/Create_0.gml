@@ -1,7 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 event_inherited();
-
+base[AGI]=1;
+base[CHA]=1;
+base[DEX]=1;
+base[WIS]=1;
+current[AGI] = base[@ AGI];
+current[CHA] = base[@ CHA];
+current[DEX] = base[@ DEX];
+current[WIS] = base[@ WIS];
 
 base[ACC] = 0.8;  //only miss 1 in 5
 current[ACC] = base[@ ACC]

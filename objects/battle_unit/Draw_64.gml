@@ -1,19 +1,18 @@
+var cx = camera_get_view_x(view_camera[0]);
+var cy = camera_get_view_y(view_camera[0]);
+var xx = (x-cx)*Display_ScaleX;
+var yy = (y-cy)*Display_ScaleY;
+
 if (!instance_exists(obj_itemmenu)&&!instance_exists(obj_dualmenu)&&!instance_exists(obj_skillmenu)){
-	var cx = camera_get_view_x(view_camera[0]);
-	var cy = camera_get_view_y(view_camera[0]);
-	var xx = (x-cx)*Display_ScaleX;
-	var yy = (y-cy)*Display_ScaleY;
-
-
-	var _hp = current[@ HP]/base[@ HP];
-	if (state != DEATH) //clean up some clutter
-	{
-		draw_sprite(ui_hp,0,xx,yy-20);
-		draw_sprite_part(ui_hp,1,0,0,hpBarWidth*_hp,hpBarHeight,xx,yy-20);
-	}
-	else incomingDamage=0;
 	if (incomingDamage>0){
 		draw_set_color(c_white);
 		draw_text_transformed(xx +15,yy+30,string(max(0,incomingDamage-current[@ DEF])),.5,.5,0);
 	}
+}
+if keyboard_check(ord("V")){
+	draw_set_color(c_red);
+	draw_text_transformed(xx -10,yy-35,"DEF: "+string(current[@ DEF])+"/"+string(base[@ DEF]),.4,.4,0);
+	draw_text_transformed(xx -10,yy-28,"SPD: "+string(current[@ SPD])+"/"+string(base[@ SPD]),.4,.4,0);
+	draw_text_transformed(xx -10,yy-21,"STR: "+string(current[@ STR])+"/"+string(base[@ STR]),.4,.4,0);
+	draw_text_transformed(xx -10,yy-14,"ACC: "+string(current[ACC])+"/"+string(base[ACC]),.4,.4,0);
 }
