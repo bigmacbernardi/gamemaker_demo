@@ -1,3 +1,3 @@
-target_x = 90;
-target_y = 446;
+target_x = 798;
+target_y = 498;
 target_rm = d1libalcony;
