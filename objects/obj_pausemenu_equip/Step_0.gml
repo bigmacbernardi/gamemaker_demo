@@ -35,23 +35,27 @@ else if go
 			}
 			else{
 				var equipToSlot = options[|index2];
-				var currentOwner = equipToSlot.currentUser;
-				/*for (var i =0; i<4;i++){
-					if (global.equipped[i][subindex] == equipToSlot){//this is already done by curuser
-						currentOwner = i;
-						break;
+				if equipToSlot>0 and (equipToSlot.category==subindex or (equipToSlot.category==5 and subindex==7)){
+					var currentOwner = equipToSlot>0?equipToSlot.currentUser:-1;
+					/*for (var i =0; i<4;i++){
+						if (global.equipped[i][subindex] == equipToSlot){//this is already done by curuser
+							currentOwner = i;
+							break;
+						}
+					}*/
+					if global.equipped[global.currentParty[index]][subindex]!= noone //if they already have something
+						 global.equipped[global.currentParty[index]][subindex].currentUser=noone;
+					if (currentOwner>=0){
+						global.equipped[currentOwner][subindex]=noone;
+						/*var temp = global.currentParty[index];
+						global.currentParty[index] = global.currentParty[currentPos];
+						global.currentParty[currentPos] = temp;*/
 					}
-				}*/
-				if global.equipped[global.currentParty[index]][subindex]!= noone //if they already have something
-					 global.equipped[global.currentParty[index]][subindex].currentUser=noone;
-				if (currentOwner!=noone){
-					global.equipped[currentOwner][subindex]=noone;
-					/*var temp = global.currentParty[index];
-					global.currentParty[index] = global.currentParty[currentPos];
-					global.currentParty[currentPos] = temp;*/
+					global.equipped[global.currentParty[index]][subindex] = equipToSlot;
+					global.equipped[global.currentParty[index]][subindex].currentUser = global.currentParty[index];
+					
 				}
-				global.equipped[global.currentParty[index]][subindex] = equipToSlot;
-				global.equipped[global.currentParty[index]][subindex].currentUser = global.currentParty[index];
+				else audio_play_sound(Owl2,100,0);
 				mode = 0;
 				index = 0;
 				index2 = -1;
@@ -90,6 +94,8 @@ else {
 	var _moveH = _right - _left;
 	var _moveV = _down - _up;
 	if (mode ==1){//selecting subindex (equip slot)
+		if _moveH != 0 or _moveV != 0 audio_play_sound(Notice3,80,false);
+	
 		//subindex positions:
 		//  6,
 		//5,2,7,
@@ -167,6 +173,7 @@ else {
 		}*/
 	}
 	else if (_moveH != 0){ //mode is NOT 1
+		if _moveH != 0 or _moveV != 0 audio_play_sound(Notice1,80,false);
 		if (index == length){ //submenu is selected in mode 0
 			if (_moveH>0){//moving down
 				if (ds_list_size(global.availableParty) > index2+4) index2+=4;

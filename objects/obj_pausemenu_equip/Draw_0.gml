@@ -61,7 +61,7 @@ drawY = y+10;
 for (var i = scrollLevel; i < min(8+scrollLevel,ds_list_size(options)); i++){
   if (i!=index2) draw_set_color(c_black);
   else draw_set_color(c_white);
-  draw_text_transformed(drawX,drawY,options[|i].title+(options[|i].currentUser==noone?"":"~"),.60,.60,0);
+  draw_text_transformed(drawX,drawY,options[|i].title+(options[|i].currentUser<0?"":"~"),.60,.60,0);
  /* if ((i%3)==2){
 	drawX = x+10;
 	drawY += 30;
