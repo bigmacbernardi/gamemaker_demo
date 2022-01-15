@@ -27,6 +27,6 @@ base[HP] = 4;
 current[HP] = 4;
 current[STR] = 2;
 current[DEF] = 1;
-current[SPD] = 1;
+current[SPD] = 1;//base[SPD]
 current[ACC] = 0.5;
 drops = [[obj_potionsmall,50]];

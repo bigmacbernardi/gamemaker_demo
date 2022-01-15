@@ -7,6 +7,7 @@ function keyValue(mate_one,mate_two){ //sorts and converts to key
 //}
 
 function slot_dual(){
+	var dualReady = battle_manager.checkForReadiness();//need to put here now
 	var key = keyValue(global.selectedUnit.index,global.selectedUnit.teammate.index);
 	var a;//array
 	switch(key){
@@ -17,7 +18,7 @@ function slot_dual(){
 				icyHeat.title = "Icy Heat";
 				icyHeat.description = "Light ice damage on all enemies.  Warm healing to all allies.";
 				icyHeat.mode = 2;
-				icyHeat.usable = global.selectedUnit.current[MP]>=4;
+				icyHeat.usable = global.selectedUnit.current[MP]>=4 and dualReady;
 				icyHeat.script = IcyHeat;
 				a[index++] = icyHeat;
 			}
@@ -26,7 +27,7 @@ function slot_dual(){
 				mugumugu.title = "Mugu mugu";
 				mugumugu.description = "Some kinda status thing?  Idk";
 				mugumugu.mode = 2;//all enemies
-				mugumugu.usable = global.selectedUnit.current[MP]>=4;
+				mugumugu.usable = global.selectedUnit.current[MP]>=4 and dualReady;
 				mugumugu.script = MuguMugu;
 				a[index++] = mugumugu;
 			}
