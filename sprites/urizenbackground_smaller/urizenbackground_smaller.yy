@@ -10,12 +10,12 @@
   "bbox_left": 0,
   "bbox_right": 399,
   "bbox_top": 0,
-  "bbox_bottom": 199,
+  "bbox_bottom": 554,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 400,
-  "height": 200,
+  "height": 555,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8b837074-2a79-4e53-ab67-e5584f8434fc","path":"sprites/cloudy_battle/cloudy_battle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8b837074-2a79-4e53-ab67-e5584f8434fc","path":"sprites/cloudy_battle/cloudy_battle.yy",},"LayerId":{"name":"09447f2d-e938-47ff-9f9d-977299d2b4fd","path":"sprites/cloudy_battle/cloudy_battle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"cloudy_battle","path":"sprites/cloudy_battle/cloudy_battle.yy",},"resourceVersion":"1.0","name":"8b837074-2a79-4e53-ab67-e5584f8434fc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f99ba86c-78b3-4921-833c-c7870a686b20","path":"sprites/urizenbackground_smaller/urizenbackground_smaller.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f99ba86c-78b3-4921-833c-c7870a686b20","path":"sprites/urizenbackground_smaller/urizenbackground_smaller.yy",},"LayerId":{"name":"8b47b010-f1e6-45df-84d3-18c6350ed2f1","path":"sprites/urizenbackground_smaller/urizenbackground_smaller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"urizenbackground_smaller","path":"sprites/urizenbackground_smaller/urizenbackground_smaller.yy",},"resourceVersion":"1.0","name":"f99ba86c-78b3-4921-833c-c7870a686b20","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"cloudy_battle","path":"sprites/cloudy_battle/cloudy_battle.yy",},
+    "spriteId": {"name":"urizenbackground_smaller","path":"sprites/urizenbackground_smaller/urizenbackground_smaller.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ef687608-a222-417f-bbb4-84d414bfeec6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b837074-2a79-4e53-ab67-e5584f8434fc","path":"sprites/cloudy_battle/cloudy_battle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ba1d24c3-dab5-4bdc-bccb-c4a0528d3d86","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f99ba86c-78b3-4921-833c-c7870a686b20","path":"sprites/urizenbackground_smaller/urizenbackground_smaller.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"cloudy_battle","path":"sprites/cloudy_battle/cloudy_battle.yy",},
+    "parent": {"name":"urizenbackground_smaller","path":"sprites/urizenbackground_smaller/urizenbackground_smaller.yy",},
     "resourceVersion": "1.3",
-    "name": "cloudy_battle",
+    "name": "urizenbackground_smaller",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"09447f2d-e938-47ff-9f9d-977299d2b4fd","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8b47b010-f1e6-45df-84d3-18c6350ed2f1","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Backgrounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "cloudy_battle",
+  "name": "urizenbackground_smaller",
   "tags": [],
   "resourceType": "GMSprite",
 }

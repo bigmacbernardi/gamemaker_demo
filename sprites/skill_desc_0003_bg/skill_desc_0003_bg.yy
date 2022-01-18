@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "ansimuz_industrial_parallax",
-    "path": "folders/Sprites/tilesets/ansimuz_industrial_parallax.yy",
+    "path": "folders/Sprites/Backgrounds/ansimuz_industrial_parallax.yy",
   },
   "resourceVersion": "1.0",
   "name": "skill_desc_0003_bg",
