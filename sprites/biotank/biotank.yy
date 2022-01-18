@@ -36,6 +36,24 @@
     {"compositeImage":{"FrameId":{"name":"1cc53448-360d-4aa0-ab43-083e71023d9b","path":"sprites/biotank/biotank.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"1cc53448-360d-4aa0-ab43-083e71023d9b","path":"sprites/biotank/biotank.yy",},"LayerId":{"name":"79f64098-e87c-4222-85b4-f8e15a4dbb1c","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"biotank","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"1cc53448-360d-4aa0-ab43-083e71023d9b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0bf0d979-a437-4a9b-9d02-513899b7bfe6","path":"sprites/biotank/biotank.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0bf0d979-a437-4a9b-9d02-513899b7bfe6","path":"sprites/biotank/biotank.yy",},"LayerId":{"name":"79f64098-e87c-4222-85b4-f8e15a4dbb1c","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"biotank","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"0bf0d979-a437-4a9b-9d02-513899b7bfe6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e16d9de4-54ed-4049-82fd-4756a608e48e","path":"sprites/biotank/biotank.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e16d9de4-54ed-4049-82fd-4756a608e48e","path":"sprites/biotank/biotank.yy",},"LayerId":{"name":"79f64098-e87c-4222-85b4-f8e15a4dbb1c","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"biotank","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"e16d9de4-54ed-4049-82fd-4756a608e48e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0e0ae6f9-a807-4c67-b596-cf8df87949cc","path":"sprites/biotank/biotank.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0e0ae6f9-a807-4c67-b596-cf8df87949cc","path":"sprites/biotank/biotank.yy",},"LayerId":{"name":"79f64098-e87c-4222-85b4-f8e15a4dbb1c","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"biotank","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"0e0ae6f9-a807-4c67-b596-cf8df87949cc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e4d6524d-aeb4-4bf6-8795-d7e98faeb417","path":"sprites/biotank/biotank.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e4d6524d-aeb4-4bf6-8795-d7e98faeb417","path":"sprites/biotank/biotank.yy",},"LayerId":{"name":"79f64098-e87c-4222-85b4-f8e15a4dbb1c","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"biotank","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"e4d6524d-aeb4-4bf6-8795-d7e98faeb417","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4717f772-989e-455e-a2fe-cb120024af84","path":"sprites/biotank/biotank.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4717f772-989e-455e-a2fe-cb120024af84","path":"sprites/biotank/biotank.yy",},"LayerId":{"name":"79f64098-e87c-4222-85b4-f8e15a4dbb1c","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"biotank","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"4717f772-989e-455e-a2fe-cb120024af84","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b7e9342c-df67-4ce9-b257-e6d49d0b7917","path":"sprites/biotank/biotank.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b7e9342c-df67-4ce9-b257-e6d49d0b7917","path":"sprites/biotank/biotank.yy",},"LayerId":{"name":"79f64098-e87c-4222-85b4-f8e15a4dbb1c","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"biotank","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","name":"b7e9342c-df67-4ce9-b257-e6d49d0b7917","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"biotank","path":"sprites/biotank/biotank.yy",},
@@ -45,7 +63,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 4.0,
+    "length": 10.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -54,6 +72,12 @@
             {"id":"6227af3f-6546-4ca5-ba80-97b5dbf10721","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ee9ffcd-8c6d-497e-a5ca-2058ff3df285","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"944373dc-27a7-4e56-8864-ae5d93b0b8c7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"217d2276-0703-42e9-b23f-10e5b8765d09","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"abcd7740-09db-44c2-9cd6-e11711c861c7","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1cc53448-360d-4aa0-ab43-083e71023d9b","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b0d80204-b3a3-4c59-b8ac-bbfa0ac5e5ff","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0bf0d979-a437-4a9b-9d02-513899b7bfe6","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"57548de7-1904-4bdc-9b52-be21d1f86e90","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e16d9de4-54ed-4049-82fd-4756a608e48e","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bed40d31-7172-4fc6-bf0f-a29cfea847f0","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0e0ae6f9-a807-4c67-b596-cf8df87949cc","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7660ff46-930a-42f2-888e-dc63bc552a3c","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e4d6524d-aeb4-4bf6-8795-d7e98faeb417","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"af780e51-f8bf-422b-9826-2bfbf1c0c992","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4717f772-989e-455e-a2fe-cb120024af84","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6cc76ae1-4b0a-4ae3-b250-921322176d68","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7e9342c-df67-4ce9-b257-e6d49d0b7917","path":"sprites/biotank/biotank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
