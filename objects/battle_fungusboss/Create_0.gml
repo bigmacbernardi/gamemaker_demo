@@ -1,4 +1,4 @@
-`/// @description Insert description here
+/// @description Insert description here
 // You can write your code in this editor
 //instead of event_inherited, just doing the important battle_unit things
 depth = -y;
