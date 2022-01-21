@@ -64,6 +64,7 @@ floatTurns = 0;
 poisonTurns = -1;
 regenTurns = 0;
 regenAmt = 0;
+immunity = [0,0,0,0,0,0,0,0,0,0];//earth,wind,fire,water,shadow,light,energy,void,poison,ice
 function turnEnd(){
 	if status[0] < 0{//poison only
 		var amount = 0-status[0]

@@ -59,11 +59,12 @@ function healUnit(amount){
 	current[@ HP] = min(base[HP],current[HP]+amount);
 }
 /* New stuff for poison/regen*/
-status = [0,0,0,0,0,0,0,0];
+status = [1,0,0,0,0,0,0,0];//regenerating
 floatTurns = 0;
 poisonTurns = -1;
-regenTurns = 0;
-regenAmt = 0;
+regenTurns = -1;
+regenAmt = 5;
+immunity = [0,0,-1,2,0,0,0,0,1,-1];//immune to poison.  absorbs water.  weak to fire and ice.
 function turnEnd(){
 	if status[0] < 0{//poison only
 		var amount = 0-status[0]

@@ -57,6 +57,7 @@ status = [0,// 0 = Normal; <0 = POISON; 1 = REGEN; 2+ = Poison AND Regen
 		  0,// 0 = Normal; 1 = 
 		  0,// 0 = Normal; 1 = 
 		  0];//0 = Normal; 1 = 
+immunity = [0,0,0,0,0,0,0,0,0,0];//earth,wind,fire,water,shadow,light,energy,void,poison,ice
 poisonTurns = -1;
 regenTurns = 0;
 floatTurns = 0;
