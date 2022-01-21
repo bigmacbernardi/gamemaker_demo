@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "d1music1.wav",
-  "duration": 82.5806351,
+  "soundFile": "d1music1.mp3",
+  "duration": 165.224487,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
