@@ -34,6 +34,77 @@ function useItem(){
 		}*/
 	
 }
+function elementalAttack(element,target=global.targets[0],unit=global.selectedUnit){
+		checkForHit(unit);
+		if (unit.attackWillHit){
+			var dmg;
+			switch(element){
+				case 0: //earth
+					dmg = ceil(((unit.current[@ DEFEND]/2)+(unit.current[@ STR]/2))
+								*unit.current[@ DEX]);
+					break;
+				case 1: //wind
+					dmg = ceil(((unit.current[@ SPD]/2)+(unit.current[@ STR]/2))
+								*unit.current[@ DEX]);
+					break;
+				case 2: //fire
+					dmg = ceil(unit.current[@ STR]*unit.current[@ DEX]);
+					break;
+				case 3: //water
+					dmg = ceil(((unit.current[@ AGI]/2)+(unit.current[@ STR]/2))
+								*unit.current[@ DEX]);
+					break;
+				case 4: //shadow
+					dmg = ceil(((unit.current[@ CHA]/2)+(unit.current[@ STR]/2))
+								*unit.current[@ DEX]);
+					break;
+				case 5: //light
+					dmg = ceil(((unit.current[@ DEX]/2)+(unit.current[@ STR]/2))
+								*unit.current[@ DEX]);
+					break;
+				case 6: //energy
+					dmg = ceil(((unit.current[@ WIS]/2)+(unit.current[@ STR]/2))
+								*unit.current[@ DEX]);
+					break;
+				case 7: //void
+					dmg = unit.current[@ HP];
+					break;
+				case 8: //bio (poison)
+				
+					dmg = ceil(((unit.current[@ AGI]/2)+(unit.current[@ STR]/2))
+								*unit.current[@ CHA]);
+					//if !immune
+						target.status[0]=-ceil(dmg/14);
+					break;
+				case 9: //ice
+					dmg = ceil(((unit.current[@ AGI]/4)+(unit.current[@ CHA]/4)+(unit.current[@ STR]/2))
+								*unit.current[@ DEX]);
+					break;
+			}
+			with(target){
+					incomingDamage = dmg; //should account for def here and use separate attack power IMO, but whatever
+					incomingElement = element;
+					show_debug_message("INCOMING ELEMENTAL DAMAGE: "+string(incomingDamage));
+					layer_sequence_headpos(unitSequence,hitStart);
+					audio_play_sound(damageSound,100,false);
+					state = HIT;
+			}
+		}
+		else{
+			with(target){
+				show_debug_message("OFFICIALLY ELEMISSING");
+				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
+				layer_sequence_headpos(unitSequence,missStart);
+				state = MISS;
+			}	
+		}
+		if target == unit{
+			if !battle_manager.selectedFinished{
+				show_debug_message("Didn't finish after elementing yourself");//wasn't doin it
+				with battle_manager	selectedFinished = true;
+			}
+		}
+}
 function unitAttack(){
 	var unit = global.selectedUnit;
 	if unit < 0 return; //emergency fix
@@ -59,6 +130,7 @@ function unitAttack(){
 			//else show_debug_message("Hitting "+string(global.targets[i]));
 			with(targets[i]){
 					incomingDamage = ceil(unit.current[@ STR]); //should account for def here and use separate attack power IMO, but whatever
+					incomingElement = -1;//physical
 					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
 					layer_sequence_headpos(unitSequence,hitStart);
