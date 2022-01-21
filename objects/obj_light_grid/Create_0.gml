@@ -113,15 +113,21 @@ var row_size = array_length(xs);
 var col_size = array_length(ys);
 var ii=0;//inner index; which value of array colors we're up to
 if upperMargin{
-	for (i=0;i < row_size;i++)
+	for (i=0;i < row_size;i++){
+		show_debug_message("Upper margin at: "+string(i));
 		actualColors[i]=roomColor;
-	if rightMargin actualColors[i++]=roomColor;
+	}
+	//if rightMargin actualColors[i++]=roomColor;
 		
 }else i = 0;
 for (var j = upperMargin; j<col_size;j++){
 	//here, "i" should be equal to j*row_size
+	i=j*row_size;
 	show_debug_message("i: "+string(i)+" j*row_size: "+string(j*row_size))
-	if leftMargin actualColors[i++]=roomColor;	
+	if leftMargin{
+		show_debug_message("Left margin at: "+string(i));
+		actualColors[i++]=roomColor;
+	}
 	for (;i<(j*row_size)+row_size-rightMargin;i++){
 		show_debug_message(string(ii)+" of "+string(array_length(colors))+" colors");
 	
@@ -129,7 +135,10 @@ for (var j = upperMargin; j<col_size;j++){
 			actualColors[i]=colors[ii++];
 		else actualColors[i]=roomColor;//default, which should handle lower margin
 	}
-	if rightMargin actualColors[i++]=roomColor;	
+	if rightMargin{
+		show_debug_message("Right margin at: "+string(i));
+		actualColors[i++]=roomColor;
+	}
 }
 //If user wants to specify ALL of the points, and does everything to make it so, let them!
 if array_length(actualColors)=array_length(colors){
