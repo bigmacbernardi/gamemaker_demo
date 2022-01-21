@@ -125,5 +125,5 @@ if graceRemaining<=0 and instance_exists(obj_player) and !obj_player.paused {
 		mode = real(distance_to_object(obj_player)<200);	
 	}
 }
-else if !(--graceRemaining%5) visible = !visible;
+else if graceRemaining>0 and !(--graceRemaining%5) visible = !visible;
 depth = -y;//depth can adjust for moving enemies
