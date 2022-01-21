@@ -73,6 +73,8 @@ function upgrade(fighter){
 			   32,34,35,37,39,41,43,52];
 	global.party[fighter][HP] += HPs[lv];
 	global.party[fighter][MP] += MPs[lv];
+	global.points[fighter][HP] += HPs[lv];
+	global.points[fighter][MP] += MPs[lv];
 	global.party[fighter][DEF] += results[DEF - 2];
 	global.party[fighter][SPD] += results[SPD - 2];
 	global.party[fighter][STR] += results[STR - 2];
