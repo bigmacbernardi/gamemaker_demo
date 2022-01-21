@@ -44,6 +44,10 @@
       ],"visible":false,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_2","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_chest","path":"objects/obj_chest/obj_chest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":192.0,"resourceVersion":"1.0","name":"inst_333237ED","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"firstBound","path":"objects/obj_enemy_plant/obj_enemy_plant.yy",},"objectId":{"name":"obj_enemy_plant","path":"objects/obj_enemy_plant/obj_enemy_plant.yy",},"value":"415","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"secondBound","path":"objects/obj_enemy_plant/obj_enemy_plant.yy",},"objectId":{"name":"obj_enemy_plant","path":"objects/obj_enemy_plant/obj_enemy_plant.yy",},"value":"1080","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_enemy_plant","path":"objects/obj_enemy_plant/obj_enemy_plant.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":896.0,"y":320.0,"resourceVersion":"1.0","name":"inst_77F1EE34","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_column","path":"objects/obj_column/obj_column.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":224.0,"resourceVersion":"1.0","name":"inst_34C25E80","tags":[],"resourceType":"GMRInstance",},
@@ -135,6 +139,7 @@
     {"name":"inst_1390217D","path":"rooms/mystery_zone/mystery_zone.yy",},
     {"name":"inst_333237ED","path":"rooms/mystery_zone/mystery_zone.yy",},
     {"name":"inst_2CECAE59","path":"rooms/mystery_zone/mystery_zone.yy",},
+    {"name":"inst_77F1EE34","path":"rooms/mystery_zone/mystery_zone.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
