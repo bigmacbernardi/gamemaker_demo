@@ -1,6 +1,6 @@
 /// @description Handles collisions and warp
 //movement
-if graceRemaining<=0 and instance_exists(obj_player) {
+if graceRemaining<=0 and instance_exists(obj_player) and !obj_player.paused {
 	if mode==0{
 		var target_x=x;
 		var target_y=y;
