@@ -16,5 +16,6 @@ message = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dial
 //	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam)+120,-6,obj_writer);
 if (instance_exists(obj_dialoguechoice)) instance_destroy(obj_dialoguechoice);
 var silly = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dialoguechoice);
+//silly.active = false;
 if nextMessage==32 silly.optionString="Go to hell,Go to heaven,Fight";
 else if nextMessage==30 silly.optionString="Be scared,Be scary,Be dull";

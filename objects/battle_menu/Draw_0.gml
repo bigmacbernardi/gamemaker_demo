@@ -8,10 +8,19 @@ for (var i = 0; i<array_length(players);i++){
 		draw_set_color(global.selectedUnit==players[i]?c_yellow:c_white);
 		draw_text_transformed(drawX,drawY+1,players[i].title,.65,.65,0);
 		drawX += 52;
-		draw_set_color(c_ltgray);
-		draw_text_transformed(drawX,drawY,string(players[i].current[HP])+"/"+string(players[i].base[HP])+"HP",.45,.45,0);
+		draw_set_color(players[i].state==DEATH?c_red:c_ltgray);
+		draw_text_transformed(drawX,drawY,string(max(0,players[i].current[HP]))+"/"+string(players[i].base[HP])+"HP",.45,.45,0);
+		if players[i].current[HP]/players[i].base[HP] <= 0.55{
+			draw_set_color(players[i].current[HP]/players[i].base[HP] <= 0.20?c_red:c_yellow);
+			draw_text_transformed(drawX,drawY,string(max(0,players[i].current[HP])),.45,.45,0);	
+		}
 		drawY+=10;
+		draw_set_color(players[i].state==DEATH?c_red:c_ltgray);
 		draw_text_transformed(drawX,drawY,string(players[i].current[MP])+"/"+string(players[i].base[MP])+"MP",.45,.45,0);
+		if players[i].state!=DEATH and players[i].current[MP]/players[i].base[MP] <= 0.10{
+			draw_set_color(players[i].current[MP]==0?c_red:c_yellow);
+			draw_text_transformed(drawX,drawY,string(max(0,players[i].current[MP])),.45,.45,0);	
+		}
 		drawY+=12;
 }
 if menuDisplaying{

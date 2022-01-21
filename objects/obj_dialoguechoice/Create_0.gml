@@ -9,7 +9,9 @@ if(instance_exists(obj_dialoguer)) d= obj_dialoguer.side;
 if(instance_exists(obj_writer)){
 	x = obj_writer.x;
 	y = obj_writer.y;
+	//active = true;
 }
+//else active = false;
 if(room != 179 && (obj_player.y > camera_get_view_y(cam) + 130 || d == 0))
     y-= 155;
 mychoice= 0;
@@ -21,3 +23,4 @@ textspeed=1;
 options = ds_list_create();
 alarm[2]=2;
 show_debug_message("Speed be "+string(textspeed));
+//obj_player.paused=true;//re

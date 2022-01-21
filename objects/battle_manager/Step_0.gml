@@ -54,9 +54,10 @@ switch(combatPhase){
 		if (unitsFinished >= totalUnits){
 			for(var i = 0;i < totalUnits;i++){
 				with(global.units[|i]){
-					if !(state == DEATH)
+					if !(state == DEATH){
 						turnFinished = false;
-
+						turnEnd();
+					}
 				}
 			}
 			unitsFinished = 0;

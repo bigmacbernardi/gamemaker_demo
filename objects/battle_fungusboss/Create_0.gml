@@ -9,7 +9,7 @@ turnFinished = false;
 selected = false;
 targeted = false;
 attackWillHit = false;
-incomingDamage = 0;
+incomingDamage = 0; incomingHealage = 0; nastyDamage = 0;
 hpBarWidth = sprite_get_width(ui_hp);
 hpBarHeight = sprite_get_height(ui_hp);
 doingSpecialAttack = false;
@@ -58,4 +58,36 @@ function damageUnit(amount){//physical attacks
 function healUnit(amount){
 	current[@ HP] = min(base[HP],current[HP]+amount);
 }
-//
+/* New stuff for poison/regen*/
+status = [0,0,0,0,0,0,0,0];
+floatTurns = 0;
+poisonTurns = -1;
+regenTurns = 0;
+regenAmt = 0;
+function turnEnd(){
+	if status[0] < 0{//poison only
+		var amount = 0-status[0]
+		nastyDamage = amount - current[DEF];
+		if (poisonTurns > 0) poisonTurns--;
+		else if (poisonTurns == 0) status[0]=0;//poison ended
+	}
+	else if status[0]>0{
+		incomingHealage=regenAmt;
+		healUnit(regenAmt);
+		if status[0]>1{
+			var amount = status[0]-1;
+			nastyDamage = amount - current[DEF];
+			damageUnit(amount);
+			if (poisonTurns > 0) poisonTurns--;
+			else if (poisonTurns == 0) status[0]=1;//poison ended!
+			if (regenTurns > 0) regenTurns--;
+			else if (regenTurns == 0) and (poisonTurns==0) status[0]=0;//both ended!
+			else if (regenTurns == 0) status[0]=1-status[0];//regen ended 
+		
+		}
+	}
+	if (floatTurns > 0) floatTurns--;
+	else status[1]=0;//float ended
+	nastyDamage = 0;
+	incomingHealage = 0;
+}

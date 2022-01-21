@@ -7,7 +7,7 @@ event_inherited();
 //global.typer=5;
 mydialoguer=noone;//instance_create_depth(0, 0,-1, obj_dialoguer);
 //alarm[0]=1;
-//}else obj_player.paused=false;
+//}else obj_player.p a u s e d = f a l s e;
 image_alpha=0;
 //if (global.flag[0]>0)instance_destroy(mydialoguer);
 ascending=true;

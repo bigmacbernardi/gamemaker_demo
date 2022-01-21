@@ -5,6 +5,9 @@ var drawY;
 var s = ds_list_size(options);
 if (alignment ==0){
 	//var writingX = x+20;
+	
+	draw_set_color(c_navy);
+	draw_rectangle(x+8,y+14,x+250,y+89,false);
 	drawY = y+20;
 	for (var i = 0; i <s;i++){
 		if i==mychoice{
@@ -12,7 +15,7 @@ if (alignment ==0){
 			//draw_sprite_stretched(spr_select_right,drawX-16,drawY+4,8,8);
 			draw_set_color(c_white);
 		}
-		else draw_set_color(c_dkgray);
+		else draw_set_color(c_ltgray);
 		draw_text(drawX,drawY,options[|i]);
 		if (i % 4) == 3{
 			drawX += 80;

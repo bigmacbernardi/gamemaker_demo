@@ -88,6 +88,22 @@ switch(argument0){
         global.msg[4]= "%%%";
         global.msg[5]= "%%%";
         break;
+	case 33:
+		global.msg =["Happy ghost!/","%%%"];
+		break;
+	case 34:
+		global.msg =["Sad ghost./","%%%"];
+		break;
+	case 35:
+		global.msg =["Ambi ghost/","%%%"];
+		break;
+	case 36:
+		global.msg =["Neither do I^3.%","%%%"];
+		break;
+	case 37:
+		global.msg =["The parts for by dialogue aren't finished&yet./",
+			"And that's why I have this ridiculous &placeholder dialogue./","%%%"];
+		break;
 	/*chest messages*/
 	case 1000:
         global.msg[0]= " Got an Old Helm!/";//maybe make this read the name of last item received
@@ -100,10 +116,7 @@ switch(argument0){
         break;
 	case 1002:
 	case 1003:
-        global.msg[0]= "Got Vegetable Soup!/";
-        global.msg[1]= "%%%";
-        global.msg[2]= "%%%";
-        global.msg[3]= "%%%";
+        global.msg= ["Got Vegetable Soup!/","%%%"];
         break;
 	case 1005:
 		global.msg= ["Found an Ether./","%%%"];

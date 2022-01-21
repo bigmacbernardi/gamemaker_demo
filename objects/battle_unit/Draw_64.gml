@@ -6,7 +6,16 @@ var yy = (y-cy)*Display_ScaleY;
 if (!instance_exists(obj_itemmenu)&&!instance_exists(obj_dualmenu)&&!instance_exists(obj_skillmenu)){
 	if (incomingDamage>0){
 		draw_set_color(c_white);
-		draw_text_transformed(xx +15,yy+30,string(max(0,incomingDamage-current[@ DEF])),.5,.5,0);
+		//draw_text_transformed(xx +15,yy+30,string(max(0,incomingDamage-current[@ DEF])),.5,.5,0);
+		draw_text_transformed(xx +15,yy,string(max(0,incomingDamage-current[@ DEF])),.5,.5,0);
+	}
+	if (incomingHealage>0){
+		draw_set_color(c_green);
+		draw_text_transformed(xx +15,yy-5,string(max(0,incomingHealage)),.5,.5,0);
+	}
+	if (nastyDamage>0){
+		draw_set_color(c_olive);
+		draw_text_transformed(xx +15,yy+5,string(max(0,nastyDamage)),.5,.5,0);
 	}
 }
 if keyboard_check(ord("V")){
