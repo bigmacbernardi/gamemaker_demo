@@ -35,9 +35,69 @@ var halfway = x+camera_get_view_width(cam)/2;
 draw_line(halfway,y,halfway,y+camera_get_view_height(cam));
   
 
-/* right side: showing health and statuses */
-
-
+/* right side: showing ALL statuses (can multipage if needed) */
+//passives
+drawX = halfway+20;
+drawY = y+12;
+draw_set_color(c_black);
+draw_text_transformed(drawX,drawY-8,"Passives",.75,.75,0);
+drawY+=10;
+drawX-=10;
+var passiveNames =
+	["Scan","Auto-Reflect","Revenate","Son o' Soil","Undead","Berserk","Rage","Stinky","Auto-Float","Counter","Hellborne","Mysterious","Enlightened","Drunk","Zonked","Bullet","???","???","???","???"];
+for (var i = 0;i<array_length(passiveNames);i++){
+	draw_text_transformed(drawX-(i%5==1?6:0),drawY,passiveNames[i],.34,.34,0);
+	if i%5==4{
+		drawY+=8;
+		drawX = halfway+10;
+	}else drawX+=(halfway/5);
+}
+//immunities
+drawX = halfway+20;
+drawY = y+70;
+draw_text_transformed(drawX,drawY-8,"Affinities",.75,.75,0);
+drawY+=10;
+drawX-=10;
+var elementNames =
+["Earth","Wind","Fire","Water","Shadow","Light","Energy","Nullspace","Poison","Ice","Crystal","Magma","Acid","Rainbow","Slash","Stab","Bash","Jab","Bullet","Hydra"];
+for (var i = 0;i<array_length(elementNames);i++){
+	draw_text_transformed(drawX-(i%5==1 or i%5==2?4:0),drawY,elementNames[i],.34,.34,0);
+	if i%5==4{
+		drawY+=8;
+		drawX = halfway+10;
+	}else drawX+=(halfway/5);
+}
+//Negative status qlippoths
+draw_set_color(c_white);
+drawX = halfway+20;
+drawY = y+146;
+draw_circle(drawX,drawY,11,true);
+draw_circle(drawX,drawY,10.5,true);
+drawX+=40;
+drawY-=20;
+draw_circle(drawX,drawY,11,true);
+draw_circle(drawX,drawY,10.5,true);
+drawY+=40;
+draw_circle(drawX,drawY,11,true);
+draw_circle(drawX,drawY,10.5,true);
+drawX+=40;
+drawY-=40;
+draw_circle(drawX,drawY,11,true);
+draw_circle(drawX,drawY,10.5,true);
+drawY+=40;
+draw_circle(drawX,drawY,11,true);
+draw_circle(drawX,drawY,10.5,true);
+drawX+=40;
+drawY-=40;
+draw_circle(drawX,drawY,11,true);
+draw_circle(drawX,drawY,10.5,true);
+drawY+=40;
+draw_circle(drawX,drawY,11,true);
+draw_circle(drawX,drawY,10.5,true);
+drawX+=30;
+drawY-=20;
+draw_circle(drawX,drawY,11,true);
+draw_circle(drawX,drawY,10.5,true);
 
 
 
