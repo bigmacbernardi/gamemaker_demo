@@ -23,7 +23,7 @@ current[HP] = global.points[YUSUF][HP];
 current[MP] = global.points[YUSUF][MP];
 current[DEF] = base[@ DEF] + (global.equipped[YUSUF][1]!=noone?global.equipped[YUSUF][1].defBonus:0);
 current[SPD] = base[@ SPD] + (global.equipped[YUSUF][1]!=noone?global.equipped[YUSUF][1].spdBonus:0);
-current[STR] = base[@ STR] + global.equipped[YUSUF][0].ATK;
+current[STR] = base[@ STR] + (global.equipped[YUSUF][0]>0?global.equipped[YUSUF][0].ATK:0);//just for safety
 current[AGI] = base[@ AGI] + (global.equipped[YUSUF][1]!=noone?global.equipped[YUSUF][1].agiBonus:0);
 current[CHA] = base[@ CHA];
 current[DEX] = base[@ DEX];
