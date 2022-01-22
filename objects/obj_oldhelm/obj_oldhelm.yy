@@ -26,7 +26,7 @@
     {"propertyId":{"name":"wisBonus","path":"objects/obj_armor/obj_armor.yy",},"objectId":{"name":"obj_armor","path":"objects/obj_armor/obj_armor.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"defBonus","path":"objects/obj_armor/obj_armor.yy",},"objectId":{"name":"obj_armor","path":"objects/obj_armor/obj_armor.yy",},"value":"8","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"title","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"Old Helm","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"description","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"A probably ancient head protector that closely resembles those worn by the stone guardians of the old city.","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"description","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"A probably ancient head protector that closely resembles \\nthose worn by the stone guardians of the old city.","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "equipment",
