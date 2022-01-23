@@ -45,7 +45,8 @@ current[MP] = 6;
 current[STR] = 10;
 current[DEF] = 5;
 current[SPD] = 5;
-current[ACC] = 0.5;
+base[ACC] = 0.5;
+current[ACC] = base[@ ACC];
 hasGoneOnce = false;
 //functions back
 function damageUnit(amount){//physical attacks

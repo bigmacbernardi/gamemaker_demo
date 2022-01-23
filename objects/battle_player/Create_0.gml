@@ -27,15 +27,7 @@ if index < 20{//not a guest char
 	current[ACC] = base[@ ACC]; // TIMES weapon accuracy!
 
 
-	if (current[HP]==0){//only added for start of battle
-		var myId = id;
-		layer_sequence_headpos(unitSequence, deathStart);
-		state = DEATH;	
-		with battle_manager{
-			remove(myId);
-			totalUnits--;
-		}
-	}
+	
 
 	status = global.statuses[index];
 
@@ -63,5 +55,14 @@ if index < 20{//not a guest char
 	spcStart = 88; //no event, no broadcast
 	spcEnd = 100;
 }
+if (current[HP]==0){//only added for start of battle
+		var myId = id;
+		layer_sequence_headpos(unitSequence, deathStart);
+		state = DEATH;	
+		with battle_manager{
+			remove(myId);
+			totalUnits--;
+		}
+	}
 mpBarWidth = sprite_get_width(ui_mp);
 mpBarHeight = sprite_get_height(ui_mp);
