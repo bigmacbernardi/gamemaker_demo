@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 /// @description Update the UI Element's Position	
 //Gui Size
 var _gw = display_get_gui_width();
