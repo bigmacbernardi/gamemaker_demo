@@ -1,5 +1,4 @@
-/// @description Can be used anywhere.
-// You can write your code in this editor
+/// @description Reworking this for battle stuff
 
 //ds_grid_I'mthinkin
 frameHasPassed = false;
@@ -11,6 +10,7 @@ var drawX = 0;
 var drawY = y;
 optionSlots = ds_list_create(); //temporary means for selection; will be functionally replaced by "options"
 for (var i = 0; i < ds_list_size(options); i++){
+  show_debug_message("From options: "+string(i));
   ds_list_add(optionSlots,instance_create_depth(drawX,drawY,options[|i][1],options[|i][0]));
   if ((i % 3)==2){
 	drawX = 0;
