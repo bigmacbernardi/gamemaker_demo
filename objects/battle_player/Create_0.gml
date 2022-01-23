@@ -64,5 +64,5 @@ if (current[HP]==0){//only added for start of battle
 			totalUnits--;
 		}
 	}
-mpBarWidth = sprite_get_width(ui_mp);
-mpBarHeight = sprite_get_height(ui_mp);
+//mpBarWidth = sprite_get_width(ui_mp);
+//mpBarHeight = sprite_get_height(ui_mp);

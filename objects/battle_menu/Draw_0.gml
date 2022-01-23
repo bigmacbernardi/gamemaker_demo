@@ -24,21 +24,21 @@ for (var i = 0; i<array_length(players);i++){
 		drawY+=12;
 }
 if menuDisplaying{
-	draw_sprite_stretched(spr_menu_temp,0,x+100,y-10,190,90);
+	draw_sprite_stretched(spr_menu_temp,0,x+200,y-10,150,90);
 	
-	drawX = x + 112;
-	drawY = y - 1;
+	drawX = x + 217;
+	drawY = y ;
 	for (var i = 0 ; i<4;i++){
 		draw_set_color(i == index?c_white:c_gray);
 		draw_text_transformed(drawX,drawY,names[i],.65,.65,0);
-		drawY+=12
+		drawY+=13
 	}
 	
-	drawX += 85;
-	drawY = y - 1;
+	drawX += 67;
+	drawY = y ;
 	for (var i = 4 ; i<6;i++){
 		draw_set_color(i == index?c_white:c_gray);
 		draw_text_transformed(drawX,drawY,names[i],.65,.65,0);
-		drawY+=12
+		drawY+=13
 	}
 }	
