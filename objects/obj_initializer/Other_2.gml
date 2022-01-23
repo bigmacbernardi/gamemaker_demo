@@ -37,8 +37,8 @@ global.inventory = ds_list_create();
 global.equipment = ds_list_create();
 global.currentParty = [AOI,YUSUF,noone,noone];
 global.menuOptions = [
-[["Attack","Skills","Speak","Items","Wait","Flee"],[attack,skills,talk,item,wait,flee]],//should be loaded from character?  slot?
-[["Attack","Skills","Talk","Items","Wait","Flee"],[attack,skills,talk,item,wait,flee]],
+[["Attack","Skills","Speak","Items","Wait","Flee"],[attack,skills,dual,item,wait,flee]],//should be loaded from character?  slot?
+[["Attack","Skills","Talk","Items","Wait","Flee"],[attack,skills,dual,item,wait,flee]],
 [["Go"],[attack]],[["Go"],[attack]]//
 ];
 global.equipped[AOI] = [noone,noone,noone,noone,noone,noone,noone,noone];
@@ -80,7 +80,7 @@ spear.description = "A spear-like staff used mainly for ceremonial magic.  But t
 spear.ATK = 3;
 spear.type = 2;//polearm!
 staff.title = "Pathfinder Staff";
-staff.description = "A big, blunt shillelagh originally designed by shepherds.  Searchers uses these to feel through the shadows of the future.";
+staff.description = "A big, blunt shillelagh originally designed by shepherds.  Speakers use these to feel through the shadows of the future.";
 staff.ATK = 2;
 staff.type = 1;//staff!
 ds_list_add(global.equipment,staff);

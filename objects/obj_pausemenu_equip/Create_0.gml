@@ -28,7 +28,7 @@ mode = 0;
 //mode 4: has selected party member from bottom part AND equipment.  can only select slot from left, or cancel out to mode 3 or 0.
 index2 = -1;//so none are selected at first
 //index3 = 9;
-subindex= 0;//equip slot; weapon,armor,offhand, accessory
+subindex= -1;//equip slot; weapon,armor,offhand, accessory
 filters=[[0,2,3,4],[1,3,4],[1,2,3,4,5,6,7,8,9]];
 function filt(char){
 	ds_list_destroy(options);
