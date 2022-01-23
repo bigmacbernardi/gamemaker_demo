@@ -33,7 +33,7 @@
     "path": "folders/Objects/items/equipment/obtainable_weapons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_bigstick134",
+  "name": "obj_bigspear",
   "tags": [],
   "resourceType": "GMObject",
 }

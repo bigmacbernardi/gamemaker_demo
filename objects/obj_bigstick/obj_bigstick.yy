@@ -23,7 +23,7 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"title","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"Big stick","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"title","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"Shaper's staff","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"description","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"It'll whomp ya","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"ATK","path":"objects/obj_weapon/obj_weapon.yy",},"objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"category","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},

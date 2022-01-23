@@ -8,7 +8,7 @@ switch(combatPhase){
 			if (global.currentParty[i] != noone) {
 				var next_char = characters[global.currentParty[i]];
 				//var next_id = instance_create_layer((i%2)==0?16:32,200-(i*64),"Instances",next_char);
-				var unit = instance_create_depth((i%2)==0?16:32,140-(i*60),0,next_char);
+				var unit = instance_create_depth((i%2)==0?12:40,140-(i*40),0,next_char);
 				ds_list_add(global.units,unit);
 				if unit.current[HP]>=1{
 					enqueue(unit,getWait(unit));

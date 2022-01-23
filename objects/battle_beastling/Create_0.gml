@@ -46,6 +46,7 @@ base[STR] = 5;
 current[STR] = base[STR];
 current[DEF] = 1;
 current[SPD] = 5;
+base[ACC] = 0.6;
 current[ACC] = 0.6;
 hasGoneOnce = false;
 //functions back
