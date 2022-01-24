@@ -5,20 +5,33 @@
 if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 	{
-		//replace this part with selection thing
-		with (global.selectedUnit){
-				state = ATTACK; 
-				layer_sequence_headpos(unitSequence,atkStart);
+		battle_manager.currentMessage = "";
+			//replace this part with selection thing
+			show_debug_message("Submenu click detected");
+			if optionSlots[|index].mode>=0{
+				battle_manager.currentMessage = optionSlots[|index].description;
+				if optionSlots[|index].usable{
+					visible = 0;
+					global.selectMode = optionSlots[|index].mode;
+					var inst = instance_create_layer(global.enemies[|0].x, global.enemies[|0].y,"UI_Targeting", skill_selector);
+					//inst.mode = optionSlots[|index].mode;//make sure not too late!
+					inst.script = optionSlots[|index].script;
+					instance_destroy();
+				}
+			}
+			else{ //if optionSlots[|index]==obj_sub{//cond didn't work for some reason
+				if optionSlots[|index].usable{
+					visible = 0;
+					var inst = script_execute(optionSlots[|index].script);
+					inst.priorMenu = id;
+					//instance_destroy();
+				}
 			}
         instance_destroy();
 	}
 else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_shift)|| keyboard_check_pressed(vk_backspace))
 	{
 		battle_manager.allowInput = true;
-		//button_attack.visible = 1;
-		//button_skill.visible = 1;
-		//button_dual_wait.visible = 1;
-		//button_item.visible = 1;
 		with battle_menu{
 			alarm[0]=1;//show the menu and reenable input	
 		}

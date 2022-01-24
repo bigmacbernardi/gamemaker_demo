@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
+draw_rectangle_color(x,y,x+sprite_width,y+64,c_blue,c_blue,c_black,c_black,false);//draw_self();
 var drawX;
 var drawY = y + 4;
 for (var i = 0; i<array_length(players);i++){
@@ -36,7 +36,7 @@ if menuDisplaying{
 	
 	drawX += 67;
 	drawY = y ;
-	for (var i = 4 ; i<6;i++){
+	for (var i = 4 ; i<array_length(names);i++){
 		draw_set_color(i == index?c_white:c_gray);
 		draw_text_transformed(drawX,drawY,names[i],.65,.65,0);
 		drawY+=13

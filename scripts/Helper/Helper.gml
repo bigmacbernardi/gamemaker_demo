@@ -109,6 +109,7 @@ function unitAttack(){
 	var unit = global.selectedUnit;
 	if unit < 0 return; //emergency fix
 	else{
+		if global.targets[0] < 0 global.targets[0]=unit.isPlayer?global.enemies[|0]:global.allies[|0];//auto-fix
 		show_debug_message(global.selectedUnit.title+" attacking "+
 			global.targets[0].title+"#"+string(global.targets[0]));
 	}

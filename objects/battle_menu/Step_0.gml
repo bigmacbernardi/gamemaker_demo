@@ -14,24 +14,24 @@ if menuDisplaying and menuActive{
 	//cancel should be handled by whatever's created by actions[index]
 	//var _moveV = _down - _up;
 	if _down{
-		if index==5 or index==3 index = 0;
+		if index==(array_length(names)-1) or index==3 index = 0;
+		else if index==7 index = 4
 		else index++;
 	}
 	else if _up{
-		if index==4 index=5
+		if index==4 index=(min(7,array_length(names)-1))
 		else if index=0 index=3;
 		else index--;
 	}
 	if _right{
-		if index < 2 index+=4;
-		else if index<4 index=5;
+		if index < array_length(names)-4 index+=4;
+		else if index<4 index=array_length(names)-1;
 		else if index==4 index=0;
 		else index=1;
 	}
 	else if _left{
 		if index>3 index-=4;
-		else if index ==0 index = 4;
-		else if index==1 index = 5;
+		else if array_length(names)>index+4 index += 4;
 		//else index = 0;//? on the fence about this
 	}
 	
