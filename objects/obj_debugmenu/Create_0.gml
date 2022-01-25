@@ -1,3 +1,4 @@
 /// @description Insert description here
 obj_player.paused=true;
-level = global.party[0][LV];
+currentLevel = global.party[0][LV];
+level = currentLevel;
