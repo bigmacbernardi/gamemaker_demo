@@ -78,7 +78,7 @@ function healUnit(amount){
 function turnEnd(){
 	if status[0] < 0{//poison only
 		var amount = 0-status[0]
-		nastyDamage = amount * (50/(50+ current[DEF]));
+		nastyDamage = ceil(amount * 50/(50+ current[DEF]));
 		if (poisonTurns > 0) poisonTurns--;
 		else if (poisonTurns == 0) status[0]=0;//poison ended
 	}
@@ -87,7 +87,7 @@ function turnEnd(){
 		healUnit(regenAmt);
 		if status[0]>1{
 			var amount = status[0]-1;
-			nastyDamage = amount * (50/(50+ current[DEF]));
+			nastyDamage = ceil(amount * 50/(50+ current[DEF]));
 			damageUnit(amount);
 			if (poisonTurns > 0) poisonTurns--;
 			else if (poisonTurns == 0) status[0]=1;//poison ended!
