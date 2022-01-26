@@ -152,10 +152,14 @@ switch(combatPhase){
 	case phase.checkFinish:
 		//show_debug_message("Checking for the end of states");
 		if (ds_list_empty(global.allies)){
+			allowInput = false;
+			battle_menu.menuActive=false;
 			combatPhase = phase.lose;
 			break;
 		}
 		else if (ds_list_empty(global.enemies)){
+			allowInput = false;
+			battle_menu.menuActive=false;
 			combatPhase = phase.win;
 			currentMessage = "        You win!";
 			break;
@@ -256,9 +260,6 @@ switch(combatPhase){
 		if global.fightNo > -1
 			global.spawnController.scriptedFights[global.fightNo] = [];
 		global.foesToSpawn = [];
-		ds_list_destroy(global.units);
-		ds_list_destroy(global.allies);
-		ds_list_destroy(global.enemies);
 		if (global.points[global.currentParty[0]][HP]==0){//reassign leader
 			if global.points[global.currentParty[1]][HP]>0{
 				var temp = global.currentParty[1];
@@ -279,6 +280,8 @@ switch(combatPhase){
 		combatPhase=phase.postWin;//will return here
 		break;
 	case phase.escape:
+		allowInput = false;
+		battle_menu.menuActive=false;
 	    for (var i = 0; i<ds_list_size(global.allies);i++){
 		   layer_sequence_xscale(global.allies[|i].unitSequence,-1);
 		}
@@ -328,9 +331,6 @@ switch(combatPhase){
 		}
 		
 		global.foesToSpawn = [];
-		ds_list_destroy(global.units);
-		ds_list_destroy(global.allies);
-		ds_list_destroy(global.enemies);
 		//TO DO:  Add check for level up.  Send to POSTWIN instead if that's the case otherwise.
 		if ds_list_size(futureMessages)==0 room_goto(global.returnRoom);
 		else combatPhase=phase.postWin;
