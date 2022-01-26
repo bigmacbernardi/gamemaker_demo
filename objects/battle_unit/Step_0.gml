@@ -7,17 +7,36 @@ switch(state){
 	break
 	
 	case ATTACK:
-		if (layer_sequence_get_headpos(unitSequence) > atkEnd){
-			var myId = id;
-			show_debug_message(title+" attack animation finished");
-			//at THIS point damage should happen right?
-			turnFinished = true;
-			//if (attackWillHit){
-			//	layer_sequence_headpos(unitSequence, idleStart);
-			state = IDLE;
-			//with battle_manager{enqueue(myId);} //already done by unitAttack!
+	if movesIn and global.targets[0]>0{
+		var halfDone = (atkStart+atkEnd)/2;
+		var momento = layer_sequence_get_headpos(unitSequence);
+		if (momento<=halfDone){		
+			//var bit = (momento-atkStart)/(halfDone-atkStart);
+			//layer_sequence_x(unitSequence,lerp(root_x,global.targets[0].x,bit));
+			//layer_sequence_y(unitSequence,lerp(root_y,global.targets[0].y,bit));
+			layer_sequence_x(unitSequence,lerp(layer_sequence_get_x(unitSequence),global.targets[0].x,.3));
+			layer_sequence_y(unitSequence,lerp(layer_sequence_get_y(unitSequence),global.targets[0].y+global.targets[0].sprite_height/2,.3));
 		}
-	
+		else{
+			//var bit = (momento-halfDone)/(atkEnd-halfDone);
+			//layer_sequence_x(unitSequence,lerp(root_x,global.targets[0].x,bit));
+			//layer_sequence_y(unitSequence,lerp(root_y,global.targets[0].y,bit));
+			layer_sequence_x(unitSequence,lerp(layer_sequence_get_x(unitSequence),root_x,.3));
+			layer_sequence_y(unitSequence,lerp(layer_sequence_get_y(unitSequence),root_y,.3));
+		}
+	}
+	if (layer_sequence_get_headpos(unitSequence) > atkEnd){
+		layer_sequence_x(unitSequence,root_x);
+		layer_sequence_y(unitSequence,root_y);
+		var myId = id;
+		show_debug_message(title+" attack animation finished");
+		//at THIS point damage should happen right?
+		turnFinished = true;
+		//if (attackWillHit){
+		//	layer_sequence_headpos(unitSequence, idleStart);
+		state = IDLE;
+		//with battle_manager{enqueue(myId);} //already done by unitAttack!
+	}
 	break;
 
 	case ITEM:

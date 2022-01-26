@@ -1,8 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description General behavior
 var sprites=[noone,front_sprites,noone,left_sprites,noone,right_sprites,noone,back_sprites,noone];
 pause_butt = (keyboard_check_released(vk_escape) || keyboard_check_released(vk_backspace));
-if (!paused){
+if (!paused){//only when active
 	var up_key = keyboard_check(0x57) or keyboard_check(vk_up);
 	var down_key = keyboard_check(0x53) or keyboard_check(vk_down);
 	var left_key = keyboard_check(0x41) or keyboard_check(vk_left);
