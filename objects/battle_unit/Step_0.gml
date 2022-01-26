@@ -14,10 +14,10 @@ switch(state){
 			//var bit = (momento-atkStart)/(halfDone-atkStart);
 			//layer_sequence_x(unitSequence,lerp(root_x,global.targets[0].x,bit));
 			//layer_sequence_y(unitSequence,lerp(root_y,global.targets[0].y,bit));
-			layer_sequence_x(unitSequence,lerp(layer_sequence_get_x(unitSequence),global.targets[0].x,.3));
-			layer_sequence_y(unitSequence,lerp(layer_sequence_get_y(unitSequence),global.targets[0].y+global.targets[0].sprite_height/2,.3));
+			layer_sequence_x(unitSequence,lerp(layer_sequence_get_x(unitSequence),global.targets[0].x,.1));
+			layer_sequence_y(unitSequence,lerp(layer_sequence_get_y(unitSequence),global.targets[0].y+global.targets[0].sprite_height/2,.1));
 		}
-		else{
+		else if momento>(halfDone+5){
 			//var bit = (momento-halfDone)/(atkEnd-halfDone);
 			//layer_sequence_x(unitSequence,lerp(root_x,global.targets[0].x,bit));
 			//layer_sequence_y(unitSequence,lerp(root_y,global.targets[0].y,bit));
