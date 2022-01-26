@@ -51,7 +51,7 @@ current[ACC] = base[@ ACC];
 hasGoneOnce = false;
 //functions back
 function damageUnit(amount){//physical attacks
-	var damage = max(0,amount - current[@ DEF]);//will update eventually
+	var damage = max(0,amount * (50/(50+ current[DEF])));//will update eventually
 	show_debug_message("Book damage is "+string(damage)+" of "+string(amount));
 	current[@ HP] -= max(0,damage);
 	show_debug_message("HP is now "+string(current[@ HP]));
@@ -68,7 +68,7 @@ regenAmt = 0;
 function turnEnd(){
 	if status[0] < 0{//poison only
 		var amount = 0-status[0]
-		nastyDamage = amount - current[DEF];
+		nastyDamage = amount * (50/(50+ current[DEF]));
 		if (poisonTurns > 0) poisonTurns--;
 		else if (poisonTurns == 0) status[0]=0;//poison ended
 	}
@@ -77,7 +77,7 @@ function turnEnd(){
 		healUnit(regenAmt);
 		if status[0]>1{
 			var amount = status[0]-1;
-			nastyDamage = amount - current[DEF];
+			nastyDamage = amount * (50/(50+ current[DEF]));
 			damageUnit(amount);
 			if (poisonTurns > 0) poisonTurns--;
 			else if (poisonTurns == 0) status[0]=1;//poison ended!
