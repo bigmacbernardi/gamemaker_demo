@@ -56,7 +56,7 @@ draw_set_color(c_black);
 drawX = halfway + 10;
 drawY = y+6;
 draw_text_transformed(drawX,drawY,"Observed skills",.7,.7,0);
-drawX+=10; drawY+=30;
+drawX+=10; drawY+=15;
 draw_set_color(c_white);
 for (var i = 0; i < array_length(skillsToShow[2]); i++){
   //draw_set_color(statColors[i]);
@@ -71,7 +71,7 @@ drawY = y + 80;
 drawX = halfway+10;
 draw_set_color(c_fuchsia);
 draw_text_transformed(drawX,drawY,"Unique skills",.7,.7,0);
-drawY+=30; drawX += 10;
+drawY+=15; drawX += 10;
 draw_set_color(c_white);
 for (var i = 0; i < array_length(skillsToShow[3]); i++){
   //show_debug_message("showing "+string(i)+" of "+string(array_length(skillsToShow)));
@@ -86,14 +86,14 @@ draw_set_color(c_black);
 drawY=y+camera_get_view_height(cam)-84;
 drawX = halfway + 10;
 draw_text_transformed(drawX,drawY,"Common skills",.5,.5,0);
-drawX+=10; drawY+=20;
+drawX= halfway + 20; drawY+=15;
 draw_set_color(c_white);
 for (var i = 0; i < array_length(skillsToShow[4]); i++){
   draw_text_transformed(drawX,drawY,skillsToShow[4][i].title,.5,.5,0);
-  if (i%2==1){
+  if (i%3==2){
 	drawX = halfway + 20;
 	drawY += 16;
-  }else drawX = halfway + camera_get_view_width(cam)/4;
+  }else drawX += camera_get_view_width(cam)/6;
 }
 
 
