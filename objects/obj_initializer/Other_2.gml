@@ -80,7 +80,7 @@ spear.description = "A spear-like staff used mainly for ceremonial magic.  But t
 spear.ATK = 3;
 spear.type = 2;//polearm!
 staff.title = "Pathfinder Staff";
-staff.description = "A big, blunt shillelagh originally designed by shepherds.  Shapers use these to feel through the shadows of the future.";
+staff.description = "A big, blunt shillelagh originally designed by shepherds.  Speakers use these to feel through the shadows of the future.";
 staff.ATK = 2;
 staff.type = 1;//staff!
 ds_list_add(global.equipment,staff);
