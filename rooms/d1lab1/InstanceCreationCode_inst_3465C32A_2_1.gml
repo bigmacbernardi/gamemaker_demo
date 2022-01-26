@@ -1,3 +1,3 @@
-target_x = 70;
-target_y = 607;
-target_rm = d1library1;
+target_x = 1077;
+target_y = 857;
+target_rm = d1lab2;

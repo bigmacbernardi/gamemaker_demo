@@ -1,3 +1,3 @@
-target_x = 40;
-target_y = 446;
-target_rm = d1hall2;
+target_x = 752;
+target_y = 315;
+target_rm = d1lab1;

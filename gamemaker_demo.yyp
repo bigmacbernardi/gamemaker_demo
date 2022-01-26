@@ -410,6 +410,7 @@
     {"id":{"name":"obj_battle_transition","path":"objects/obj_battle_transition/obj_battle_transition.yy",},"order":0,},
     {"id":{"name":"obj_pauseskill","path":"objects/obj_pauseskill/obj_pauseskill.yy",},"order":5,},
     {"id":{"name":"yusuf1","path":"sprites/yusuf1/yusuf1.yy",},"order":1,},
+    {"id":{"name":"d1sanc1","path":"rooms/d1sanc1/d1sanc1.yy",},"order":27,},
     {"id":{"name":"spr_book_attack","path":"sprites/spr_book_attack/spr_book_attack.yy",},"order":3,},
     {"id":{"name":"spr_dialog_temp","path":"sprites/spr_dialog_temp/spr_dialog_temp.yy",},"order":18,},
     {"id":{"name":"obj_pausemenu_equip","path":"objects/obj_pausemenu_equip/obj_pausemenu_equip.yy",},"order":10,},
@@ -580,6 +581,7 @@
     {"roomId":{"name":"d1relicroom","path":"rooms/d1relicroom/d1relicroom.yy",},},
     {"roomId":{"name":"d1lab1","path":"rooms/d1lab1/d1lab1.yy",},},
     {"roomId":{"name":"d1lab2","path":"rooms/d1lab2/d1lab2.yy",},},
+    {"roomId":{"name":"d1sanc1","path":"rooms/d1sanc1/d1sanc1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Extensions.yy","order":0,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
