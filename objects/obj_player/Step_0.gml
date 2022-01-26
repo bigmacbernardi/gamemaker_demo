@@ -95,7 +95,7 @@ if (!paused){//only when active
 			eye_y1 = y - sprite_height - 16;
 			eye_y2 = y - sprite_height;
 			//if (sprite_index != back_sprites[locomode]) sprite_index = back_sprites[locomode]; //turning up
-			facing = 8;
+			if !place_meeting(x,y,obj_sidestair)facing = 8;
 			if place_meeting(x, y, obj_wall) == true && 
 				place_meeting(x, y+1, obj_wall) == false//to compensate for change in collision box
 				y+=1;
@@ -104,7 +104,7 @@ if (!paused){//only when active
 			eye_y1 = y;
 			eye_y2 = y + 16;
 			//if (sprite_index != front_sprites[locomode]) sprite_index = front_sprites[locomode]; //turning down
-			facing = 2;
+			if !place_meeting(x,y,obj_sidestair)facing = 2;
 			if place_meeting(x, y, obj_wall) == true && 
 				place_meeting(x, y-1, obj_wall) == false//to compensate for change in collision box
 				{
