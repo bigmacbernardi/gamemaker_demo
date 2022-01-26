@@ -9,9 +9,10 @@ draw_set_color(c_black);
 /*drawing character header*/
 
 draw_text_transformed(drawX,drawY,global.names[options[|index]],.8,.8,0);
-draw_text_transformed(drawX+94,drawY,"Level "+string(global.party[options[|index]][LV]),.7,.7,0);
+draw_text_transformed(drawX+94,drawY,"Level "+string(global.party[options[|index]][LV]),.6,.6,0);
 drawY +=16;
 draw_text_transformed(drawX,drawY,classes[options[|index]],.7,.7,0);
+draw_text_transformed(drawX+94,drawY,string(global.party[options[|index]][XP])+"XP",.4,.4,0);
 /*used to draw stats AND stat tree here; now just draws stats*/
 
 //var mins = [0,0,0,0,0,0,0];//should match seven stats at level 1
@@ -46,6 +47,7 @@ drawX-=10;
 var passiveNames =
 	["Scan","Auto-Reflect","Revenate","Son o' Soil","Undead","Berserk","Rage","Stinky","Auto-Float","Counter","Hellborne","Mysterious","Enlightened","Drunk","Zonked","Bullet","???","???","???","???"];
 for (var i = 0;i<array_length(passiveNames);i++){
+	draw_set_color(i==0?c_white:c_black);
 	draw_text_transformed(drawX-(i%5==1?6:0),drawY,passiveNames[i],.34,.34,0);
 	if i%5==4{
 		drawY+=8;

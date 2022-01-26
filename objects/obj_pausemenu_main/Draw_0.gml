@@ -22,6 +22,7 @@ for (var i = 0; i<4; i++){
 	if (global.currentParty[i] != noone){
 		draw_sprite(portraits[global.currentParty[i]],0,drawX+18,drawY+28);//nudging to right bc using sprites for now
 		draw_text_transformed(drawX+43,drawY,global.names[global.currentParty[i]],.5,.5,0);
+		draw_text_transformed(drawX+84.5,drawY+1,"Lv"+string(global.party[global.currentParty[i]][LV]),.4,.4,0);
 		drawY +=12;
 		draw_text_transformed(drawX+43,drawY,"HP: "+string(global.points[global.currentParty[i]][HP])+"/"+string(global.party[global.currentParty[i]][HP]),.5,.5,0);
 		drawY +=12;
