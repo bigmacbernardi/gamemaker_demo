@@ -37,8 +37,8 @@ global.inventory = ds_list_create();
 global.equipment = ds_list_create();
 global.currentParty = [AOI,YUSUF,noone,noone];
 global.menuOptions = [
-[["Attack","Skills","Speak","Items","Wait","Flee"],[attack,skills,dual,item,wait,flee]],//should be loaded from character?  slot?
-[["Attack","Skills","Talk","Items","Wait","Flee"],[attack,skills,dual,item,wait,flee]],
+[["Attack","Skills","Speak","Items","Dual","Wait","Flee"],[attack,skills,talk,item,dual,wait,flee]],//should be loaded from character?  slot?
+[["Attack","Skills","Talk","Items","Dual,","Wait","Flee"],[attack,skills,talk,item,dual,wait,flee]],
 [["Go"],[attack]],[["Go"],[attack]]//
 ];
 global.equipped[AOI] = [noone,noone,noone,noone,noone,noone,noone,noone];
@@ -80,7 +80,7 @@ spear.description = "A spear-like staff used mainly for ceremonial magic.  But t
 spear.ATK = 3;
 spear.type = 2;//polearm!
 staff.title = "Pathfinder Staff";
-staff.description = "A big, blunt shillelagh originally designed by shepherds.  Speakers use these to feel through the shadows of the future.";
+staff.description = "A big, blunt shillelagh originally designed by shepherds.  Shapers use these to feel through the shadows of the future.";
 staff.ATK = 2;
 staff.type = 1;//staff!
 ds_list_add(global.equipment,staff);
@@ -133,10 +133,12 @@ global.points[YUSUF][MP] = global.party[YUSUF][MP]; //full MP
 var pot = [obj_potionsmall,10]; //in menu, will call: instance_create_depth(0,0,10,obj_potionsmall);
 var eth = [obj_ether,4]; //in menu, will call: instance_create_depth(0,0,10,obj_potionsmall);
 var tot = [obj_tent,2];
+var dot = [obj_uhoh,5];
 var oh = [obj_uhoh,1];
 ds_list_add(global.inventory,pot);
 ds_list_add(global.inventory,eth);
 ds_list_add(global.inventory,tot);
+ds_list_add(global.inventory,dot);
 ds_list_add(global.inventory,oh);
 
 //temp system stuff
