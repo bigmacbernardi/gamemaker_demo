@@ -219,35 +219,33 @@ switch(combatPhase){
 				for (var i = 0;i<array_length(unit.drops);i++){
 					var numba = irandom(99);
 					if numba <= unit.drops[i][1]{
-						if (object_get_parent(unit.drops[i][0])==equippable) or 
-						(object_get_parent(object_get_parent(unit.drops[i][0]))==equippable){
-							show_debug_message("It's a weapon, "+object_get_name(object_get_parent(unit.drops[i][0])));
-							var thing = instance_create_depth(0,0,1,unit.drops[i][0]);
+						var drop = unit.drops[i][0];
+						if (object_get_parent(drop)==equippable) or 
+						(object_get_parent(object_get_parent(drop))==equippable){
+							//show_debug_message("It's a weapon, "+object_get_name(object_get_parent(unit.drops[i][0])));
+							var thing = instance_create_depth(0,0,1,drop);
 							ds_list_add(global.equipment,thing);
 							ds_list_add(futureMessages,"Found "+thing.title+"!");
-							
 						}
 						else{
 							var found = -1;
-							for (var i = 0;i<ds_list_size(global.inventory);i++){
+							for (var j = 0;i<ds_list_size(global.inventory);j++){
 								//show_debug_message("Checkin "+object_get_name( global.inventory[|i][0] ));
-								if global.inventory[|i][0] == unit.drops[i][0]{
+								if global.inventory[|j][0] == drop{
 								//	show_debug_message("MATCH!");
-									found = i;
+									found = j;
 									break;
 								}
 							}
 							if found>-1{//instance_exists(contents){
-								show_debug_message("It's an old item, a(n) "+object_get_name(object_get_parent(unit.drops[i][0])));
+								show_debug_message("It's an old item, a(n) "+object_get_name(object_get_parent(drop)));
 								global.inventory[|found][1]++;
 							}
 							else{
-								show_debug_message("It's a new item, a(n) "+object_get_name(object_get_parent(unit.drops[i][0])));
-								//var thing = instance_create_depth(0,0,1,contents);
-								ds_list_add(global.inventory,[unit.drops[i][0],1]);	
-							}
-							
-							var this = instance_create_depth(0,0,1,unit.drops[i][0]);
+								show_debug_message("It's a new item, a(n) "+object_get_name(object_get_parent(drop)));
+								ds_list_add(global.inventory,[drop,1]);	
+							}					
+							var this = instance_create_depth(0,0,1,drop);
 							ds_list_add(futureMessages,"Got "+this.title+"!");
 							instance_destroy(this);
 						}
