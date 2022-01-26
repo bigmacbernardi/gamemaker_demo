@@ -133,7 +133,7 @@ global.points[YUSUF][MP] = global.party[YUSUF][MP]; //full MP
 var pot = [obj_potionsmall,10]; //in menu, will call: instance_create_depth(0,0,10,obj_potionsmall);
 var eth = [obj_ether,4]; //in menu, will call: instance_create_depth(0,0,10,obj_potionsmall);
 var tot = [obj_tent,2];
-var dot = [obj_uhoh,5];
+var dot = [obj_antidote,5];
 var oh = [obj_uhoh,1];
 ds_list_add(global.inventory,pot);
 ds_list_add(global.inventory,eth);

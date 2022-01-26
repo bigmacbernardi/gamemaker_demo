@@ -52,6 +52,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":14.9375,"scaleY":6.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":436.0,"y":0.0,"resourceVersion":"1.0","name":"inst_178D6215","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":5.4375,"scaleY":4.36557865,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":436.0,"y":72.0,"resourceVersion":"1.0","name":"inst_449F6790","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":3.8125,"scaleY":4.25,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":948.0,"y":703.0,"resourceVersion":"1.0","name":"inst_12CE6964","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":10.0,"scaleY":6.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":863.0,"y":81.0,"resourceVersion":"1.0","name":"inst_3E5B50C3","tags":[],"resourceType":"GMRInstance",},
       ],"visible":false,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_encounterfield_cavein","path":"objects/obj_encounterfield_cavein/obj_encounterfield_cavein.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":19.9285717,"scaleY":6.33333349,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":1216.0,"resourceVersion":"1.0","name":"inst_481BDF90","tags":[],"resourceType":"GMRInstance",},
@@ -445,6 +446,7 @@
     {"name":"inst_178D6215","path":"rooms/d1hall1redux/d1hall1redux.yy",},
     {"name":"inst_449F6790","path":"rooms/d1hall1redux/d1hall1redux.yy",},
     {"name":"inst_12CE6964","path":"rooms/d1hall1redux/d1hall1redux.yy",},
+    {"name":"inst_3E5B50C3","path":"rooms/d1hall1redux/d1hall1redux.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

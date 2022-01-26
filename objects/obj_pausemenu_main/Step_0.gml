@@ -3,24 +3,24 @@ var pause_butt = keyboard_check_released(vk_escape) || keyboard_check_released(v
 if (selected){
 if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
-	{ 
-		//if (!variable_instance_exists(options[|index],"usable")||options[|index].usable){//uncomment when you're ready to disable Team
-		if variable_instance_exists(options[|index],"submenu"){
-			instance_create_depth(x,y,depth-1, options[|index].submenu);
-			selected=false;	
-		}
-		//}
-		//options[|index].alarm[0]=1;
+{ 
+	//if (!variable_instance_exists(options[|index],"usable")||options[|index].usable){//uncomment when you're ready to disable Team
+	if variable_instance_exists(options[|index],"submenu"){
+		instance_create_depth(x,y,depth-1, options[|index].submenu);
+		selected=false;	
 	}
+	//}
+	//options[|index].alarm[0]=1;
+}
 else if((keyboard_check_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace))
-	{
-		if (priorMenu != noone) priorMenu.selected = true;//logic for if we genericize
-        else{
-			obj_player.framesToBuffer = 3;
-			obj_player.paused = false;
-			instance_destroy();
-		}
+{
+	if (priorMenu != noone) priorMenu.selected = true;//logic for if we genericize
+    else{
+		obj_player.framesToBuffer = 3;
+		obj_player.paused = false;
+		instance_destroy();
 	}
+}
 else if (obj_player.paused)&&(pause_butt){
 	obj_player.framesToBuffer = 3;
 	obj_player.paused = false;
