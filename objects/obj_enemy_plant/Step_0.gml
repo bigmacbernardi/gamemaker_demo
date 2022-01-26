@@ -82,18 +82,6 @@ if graceRemaining<=0 and instance_exists(obj_player) and !obj_player.paused {
 		}
 
 
-	// Usual enemy code
-	if place_meeting(x, y, obj_player) && !instance_exists(obj_battle_transition)
-	{
-		obj_player.paused=true;
-		global.returnRoom = room;
-		global.fightNo = fightNo;
-		global.foesToSpawn = spawn_controller1.scriptedFights[fightNo];
-		//spawn_controller1.scriptedFights[fightNo] = true;
-		spawn_controller1.scriptedFights[fightNo] = [];//ideally would be set at battle end
-		var inst = instance_create_depth(0, 0, -9999, obj_battle_transition)
-		inst.target_rm = global.battleRoom;
-	}
 	mode = real(distance_to_object(obj_player)<40);
 	}
 	else{//chasing
@@ -123,6 +111,22 @@ if graceRemaining<=0 and instance_exists(obj_player) and !obj_player.paused {
 			}
 		}
 		mode = real(distance_to_object(obj_player)<200);	
+	}
+	
+	// Usual enemy code
+	if place_meeting(x, y, obj_player) {
+		show_debug_message("PLANT COMIN");
+		if !instance_exists(obj_battle_transition)
+		{
+			obj_player.paused=true;
+			global.returnRoom = room;
+			global.fightNo = fightNo;
+			global.foesToSpawn = foes;//spawn_controller1.scriptedFights[fightNo];
+			//spawn_controller1.scriptedFights[fightNo] = true;
+			spawn_controller1.scriptedFights[fightNo] = [];//ideally would be set at battle end
+			var inst = instance_create_depth(0, 0, -9999, obj_battle_transition)
+			inst.target_rm = global.battleRoom;
+		}
 	}
 }
 else if graceRemaining>0 and !(--graceRemaining%5) visible = !visible;
