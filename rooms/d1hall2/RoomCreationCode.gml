@@ -2,6 +2,8 @@ global.battleRoom = battle_d1area;
 with obj_player{
 	if y>1300
 		facing=8;
+	image_xscale=1;
+	image_yscale=1;
 }
 with obj_persistentmusicplayer{
 	if (trackNo != 2){
