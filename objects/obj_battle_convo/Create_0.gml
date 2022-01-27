@@ -1,4 +1,4 @@
-/// @description In-battle bribery menu, ofc
+/// @description Handles dialogue tree stuff
 battle_manager.currentMessage="";
 //ds_grid_I'mthinkin
 frameHasPassed = false;
@@ -10,6 +10,11 @@ draw_set_font(Roses); //why would i call this every time?
 //var drawY = y;
 electrumAmount = 0; //temporary means for selection; will be functionally replaced by "options"
 goldAmount = 0;
-changingGold=false;
+lines=ds_list_create();
+index=0;
 show_debug_message("Bribribribri");
-	
+allowedToGo=false;
+choosing=false;
+mychoice=-1;
+choiceTotal = 0;
+choices = [];

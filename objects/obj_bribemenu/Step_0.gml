@@ -9,10 +9,10 @@ else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space
 		//replace this part with selection thing
 	show_debug_message("Bribe click detected");
 	bribe_attempt(electrumAmount,goldAmount,global.targets[0]);
-	instance_destroy();
 	global.electrum-=electrumAmount;
 	global.gold-=goldAmount;
 	with battle_manager alarm[1]=1;
+	instance_destroy();//has to come last ofc
 }
 else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_backspace))
 	{
@@ -29,8 +29,11 @@ else {
 	var _left = keyboard_check_released(vk_left) or keyboard_check_released(ord("A"));
 	var _right = keyboard_check_released(vk_right) or keyboard_check_released(ord("D"));
 	var _moveH = _right - _left;
-	if (_down - _up != 0)
+	if (_down - _up != 0){
 		changingGold = !changingGold;
+		show_debug_message("Switched"+(changingGold?" from ":" to ")+string(electrumAmount)+" E"+(changingGold?" to ":" from ")+string(goldAmount)+" G");
+	
+	}
 	if changingGold
 		goldAmount+=_moveH * (keyboard_check_pressed(vk_shift)*10);	
 	else electrumAmount+=_moveH * (keyboard_check_pressed(vk_shift)*10);

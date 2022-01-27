@@ -46,7 +46,6 @@ function bribe_attempt(electrum,gold,target=global.targets[0]){
 						ds_list_add(global.inventory,[drop,1]);	
 					}					
 					var this = instance_create_depth(0,0,1,drop);
-							
 					with battle_manager ds_list_add(futureMessages,"Got "+this.title+"!");
 					instance_destroy(this);
 				}
@@ -68,9 +67,7 @@ function bribe_attempt(electrum,gold,target=global.targets[0]){
 						else{
 							var found = -1;
 							for (var j = 0;i<ds_list_size(global.inventory);j++){
-								//show_debug_message("Checkin "+object_get_name( global.inventory[|i][0] ));
 								if global.inventory[|j][0] == drop{
-								//	show_debug_message("MATCH!");
 									found = j;
 									break;
 								}
@@ -96,18 +93,51 @@ function bribe_attempt(electrum,gold,target=global.targets[0]){
 		ds_list_delete(global.enemies,target);
 		expEarned += target.xp_value;
 	}
-
+}
+function converse(){//open up dialogue window
+	var unit = global.selectedUnit;
+	if unit<0{
+		battle_manager.alarm[1]=10;
+		return;
+	}
+	for (var i=0;i<array_length(global.targets);i++){
+		var target = global.targets[i];
+		if target<0 continue;
+		with target{//enemy-specific dialogue behavior
+			event_user(1);	
+		}
+	}
 }
 function pacify(){
-	
+	var unit = global.selectedUnit;
+	if unit<0{
+		battle_manager.alarm[1]=10;
+		return;
+	}
+	for (var i=0;i<array_length(global.targets);i++){
+		var target = global.targets[i];
+		if target<0 continue;
+		var value = (unit.current[CHA]+unit.current[AGI]+50)/(50+target.current[CHA]+target.current[STR]);
+	}
 }
 function negotiate(){
+	show_debug_message("Negotiating...");
 	if global.targets[0]==noone
 		global.targets[0]=global.enemies[|0];
 	/*var inst = */instance_create_depth(10,10,-10000,obj_bribemenu);
 	
 }
 function interrogate(){
+	var unit = global.selectedUnit;
+	if unit<0{
+		battle_manager.alarm[1]=10;
+		return;
+	}
+	for (var i=0;i<array_length(global.targets);i++){
+		var target = global.targets[i];
+		if target<0 continue;
+ 		var value = (unit.current[CHA]+(unit.current[STR]-target.current[STR])+50)/(50+target.current[CHA]+(target.current[STR]-unit.current[STR]));
+	}
 	
 }
 function speak(){//should open speech menu I guess?

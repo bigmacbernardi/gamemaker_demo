@@ -13,6 +13,7 @@ function talk(){
 		case YUSUF:
 			var negotiat = instance_create_layer(0,y-80,"UI_Base", obj_skill);
 			var pacif = instance_create_layer(0,y-80,"UI_Base", obj_skill);
+			var convo = instance_create_layer(0,y-80,"UI_Base", obj_skill);
 			negotiat.title = "Negotiate";
 			negotiat.description = "Persuade or bribe an enemy for peaceful and mutually \ngainful resolution.";
 			negotiat.script = interrogate;
@@ -21,12 +22,18 @@ function talk(){
 			pacif.description = "Try to talk your enemies down.";
 			pacif.mode=2;
 			pacif.script=pacify;
+			convo.title = "Converse";
+			convo.description = "Talk it out.";
+			convo.mode=0;
+			convo.script=converse;
+			ds_list_add(inst.optionSlots,convo);
 			ds_list_add(inst.optionSlots,pacif);
 			ds_list_add(inst.optionSlots,negotiat);
 			break;
 		case AOI:
 			var pacif = instance_create_layer(0,y-80,"UI_Base", obj_skill);
 			var interrogat= instance_create_layer(0,y-80,"UI_Base", obj_skill);
+			var convo = instance_create_layer(0,y-80,"UI_Base", obj_skill);
 			pacif.title = "Pacify (Single)";
 			pacif.description = "Try to talk an enemy down.";
 			pacif.mode=0;
@@ -35,8 +42,13 @@ function talk(){
 			interrogat.description = "Shake an enemy down for information.\nMore effective on damaged or weaker enemies.";
 			interrogat.script = interrogate;
 			interrogat.mode=0;
-			ds_list_add(inst.options,pacif);
-			ds_list_add(inst.options,interrogat);
+			convo.title = "Converse";
+			convo.description = "Talk it out.";
+			convo.mode=0;
+			convo.script=converse;
+			ds_list_add(inst.optionSlots,convo);
+			ds_list_add(inst.optionSlots,pacif);
+			ds_list_add(inst.optionSlots,interrogat);
 			break;
 		default:
 			break;
