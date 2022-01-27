@@ -29,3 +29,5 @@ current[STR] = 2;
 current[DEF] = 1;
 current[SPD] = 1;
 current[ACC] = 0.5;
+price=16;
+electrum_prize=[obj_potion,99];

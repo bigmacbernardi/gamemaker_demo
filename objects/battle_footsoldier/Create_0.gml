@@ -93,3 +93,5 @@ function turnEnd(){
 	nastyDamage = 0;
 	incomingHealage = 0;
 }
+price2=5;
+gold_prize=[obj_shotgun,50];

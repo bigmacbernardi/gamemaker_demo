@@ -68,7 +68,7 @@ regenAmt = 0;
 
 
 function damageUnit(amount){
-	var damage = amount * (50/(50+ current[@ DEF]));
+	var damage = ceil(amount * (50/(50+ current[@ DEF])));
 	//audio_play_sound(damageSound,100,false); //done by Helper->unitAttack instead.  timing works a lil better
 	current[@ HP] -= max(0,damage);
 }
