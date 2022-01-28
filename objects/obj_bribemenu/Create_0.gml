@@ -12,4 +12,5 @@ electrumAmount = 0; //temporary means for selection; will be functionally replac
 goldAmount = 0;
 changingGold=false;
 show_debug_message("Bribribribri");
+finished = false;
 	

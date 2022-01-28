@@ -2,8 +2,7 @@
 // You can write your code in this editor
 //draw_self();//I guess this isn't needed because of the sequence?
 //draw_text(x,y-16,string(id)+", "+string(attackWillHit));
-
-if(selected&&isPlayer){
+if(selected&&isPlayer/*&&noMenu*/){
 	draw_sprite(spr_indicator, 0, x, y);
 }
 

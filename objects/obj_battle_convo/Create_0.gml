@@ -15,6 +15,6 @@ index=0;
 show_debug_message("Bribribribri");
 allowedToGo=false;
 choosing=false;
-mychoice=-1;
+mychoice=0;
 choiceTotal = 0;
 choices = [];

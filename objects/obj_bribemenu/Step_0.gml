@@ -5,6 +5,7 @@
 if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 {
+	finished=true;
 	battle_manager.currentMessage = "";
 		//replace this part with selection thing
 	show_debug_message("Bribe click detected");

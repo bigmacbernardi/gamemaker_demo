@@ -37,8 +37,8 @@ global.inventory = ds_list_create();
 global.equipment = ds_list_create();
 global.currentParty = [AOI,YUSUF,noone,noone];
 global.menuOptions = [
-[["Attack","Skills","Speak","Items","Dual","Wait","Flee"],[attack,skills,talk,item,dual,wait,flee]],//should be loaded from character?  slot?
-[["Attack","Skills","Talk","Items","Dual,","Wait","Flee"],[attack,skills,talk,item,dual,wait,flee]],
+[["Attack","Magic","Skills","Items","Dual","Wait","Flee"],[attack,skills,skills,item,dual,wait,flee]],//should be loaded from character?  slot?
+[["Attack","Skills","Speak","Items","Dual","Wait","Flee"],[attack,skills,talk,item,dual,wait,flee]],
 [["Go"],[attack]],[["Go"],[attack]]//
 ];
 global.equipped[AOI] = [noone,noone,noone,noone,noone,noone,noone,noone];
