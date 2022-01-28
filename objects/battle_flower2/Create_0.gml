@@ -18,7 +18,7 @@ doingSpecialAttack = false;
 xp_value = 60;
 cash_value = 60;
 layer_sequence_destroy(unitSequence);
-unitSequence = layer_sequence_create("Sequences",x,y,sFlowerYellow);
+unitSequence = layer_sequence_create("Sequences",x,y,sFlowerPink);
 
 //start and end frames for each state
 idleStart = 0;
@@ -29,7 +29,7 @@ atk2Start = 35;
 atk2End = 63;
 
 
-drops = [[obj_antidote,48],[obj_potionsmall,25]];
+drops = [[obj_potionsmall,40],[obj_antidote,60],[obj_potion,20]];
 intoDefStart = 63;
 intoDefEnd = 68;//make contiguous if need be
 defStart = 63;
@@ -42,21 +42,21 @@ deathStart = 90;
 deathMid = 91;
 deathEnd = 92;
 
-base[HP] = 24;
+base[HP] = 40;
 current[HP] = base[HP];
 
-base[MP] = 10;
+base[MP] = 100;
 current[MP] = base[MP];
 base[STR] = 5;
 current[STR] = base[STR];
-current[DEF] = 1;
-current[SPD] = 5;
-base[ACC] = 0.6;
-current[ACC] = 0.6;
+current[DEF] = 2;
+current[SPD] = 8;
+base[ACC] = 0.7;
+current[ACC] = 0.7;
 hasGoneOnce = false;
 //functions back
 function damageUnit(amount){//physical attacks
-	show_debug_message("Yo it's the flower override!  HP was "+string(current[@ HP]));
+	show_debug_message("Yo it's the pink override!  HP was "+string(current[@ HP]));
 	var damage = max(0,ceil(amount * 50/(50+ current[DEF])));//will update eventually
 	show_debug_message("Damage is "+string(damage)+" of "+string(amount));
 	current[@ HP] -= max(0,damage);

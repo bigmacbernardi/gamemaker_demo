@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_flower",
-    "path": "sprites/spr_flower/spr_flower.yy",
+    "name": "spr_pinkflower",
+    "path": "sprites/spr_pinkflower/spr_pinkflower.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,7 +30,7 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"title","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"Cohort","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"title","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"Kilroy","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"swingSound","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"Punch3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"damageSound","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"shortdamage","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
@@ -39,7 +39,7 @@
     "path": "folders/Objects/battle resources/bad guys.yy",
   },
   "resourceVersion": "1.0",
-  "name": "battle_flower",
+  "name": "battle_flower2",
   "tags": [],
   "resourceType": "GMObject",
 }
