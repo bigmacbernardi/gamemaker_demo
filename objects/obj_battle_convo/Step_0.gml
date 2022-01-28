@@ -27,17 +27,16 @@ if allowedToGo{
 			with battle_manager currentMessage = "";	
 			instance_destroy();
 		}
-		else {//let's keep going
-			line = lines[|index];
-			pos = string_pos("=>",line) - 1;//to detect need to crop output
-		
-			battle_manager.currentMessage = (
-				pos < 0 ? line		:
-							string_copy(line,0,pos));
-		}
+		//else {//let's keep going
 		show_debug_message("Index is now "+string(index));
+		line = lines[|index];
+			
+		//}
 		
-		if string_char_at(line,0)=="*"{
+		if line==undefined{
+			with battle_manager currentMessage = "";	
+			instance_destroy();
+		}else if string_char_at(line,0)=="*"{
 			show_debug_message("Now choosin");
 			choosing=true;
 			choices=[];
@@ -54,6 +53,11 @@ if allowedToGo{
 			mychoice=0;
 		}
 		else{
+			pos = string_pos("=>",line) - 1;//to detect need to crop output
+			battle_manager.currentMessage = (
+				pos < 0 ? line		:
+						string_copy(line,0,pos));
+		
 			choosing=false;
 			mychoice=0;
 			choiceTotal = 0;
