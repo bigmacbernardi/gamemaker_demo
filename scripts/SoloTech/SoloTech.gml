@@ -109,6 +109,7 @@ function converse(){//open up dialogue window
 	}
 }
 function pacify(){
+	show_debug_message("Attempting to pacify...");
 	var unit = global.selectedUnit;
 	if unit<0{
 		battle_manager.alarm[1]=10;
@@ -124,10 +125,11 @@ function negotiate(){
 	show_debug_message("Negotiating...");
 	if global.targets[0]==noone
 		global.targets[0]=global.enemies[|0];
-	/*var inst = */instance_create_depth(10,10,-10000,obj_bribemenu);
+	/*var inst = */instance_create_depth(150,45,-10000,obj_bribemenu);
 	
 }
 function interrogate(){
+	show_debug_message("Attempting to pacify...");
 	var unit = global.selectedUnit;
 	if unit<0{
 		battle_manager.alarm[1]=10;
@@ -136,7 +138,23 @@ function interrogate(){
 	for (var i=0;i<array_length(global.targets);i++){
 		var target = global.targets[i];
 		if target<0 continue;
+		var healt=target.current[HP]/target.base[HP];
  		var value = (unit.current[CHA]+(unit.current[STR]-target.current[STR])+50)/(50+target.current[CHA]+(target.current[STR]-unit.current[STR]));
+		if value>healt{
+			show_debug_message("Successful interrogation.");
+			with battle_manager{
+				currentMessage = target.title + " gave up intel.";
+				enqueue(unit);
+				alarm[1]=10;
+			}
+		}else{
+			show_debug_message("Rogg failed.");
+			with battle_manager{
+				currentMessage = target.title + " resisted interrogation.";
+				enqueue(unit);
+				alarm[1]=10;
+			}
+		}
 	}
 	
 }

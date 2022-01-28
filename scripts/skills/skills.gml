@@ -16,7 +16,7 @@ function talk(){
 			var convo = instance_create_layer(0,y-80,"UI_Base", obj_skill);
 			negotiat.title = "Negotiate";
 			negotiat.description = "Persuade or bribe an enemy for peaceful and mutually \ngainful resolution.";
-			negotiat.script = interrogate;
+			negotiat.script = negotiate;
 			negotiat.mode=0;
 			pacif.title = "Pacify (All)";
 			pacif.description = "Try to talk your enemies down.";

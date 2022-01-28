@@ -2,24 +2,14 @@
 // You can write your code in this editor
 //draw_self();
 draw_set_color(c_green);
-draw_rectangle(10,10,90,50,false);
+draw_rectangle(x+20,y+15,x+150,y+55,false);
 draw_set_color(c_white);
-draw_rectangle(10,10,90,50,true);
-draw_rectangle(9.75,9.75,90.25,50.25,true);
-draw_rectangle(9.5,9.5,90.5,50.5,true);
+draw_rectangle(x+20,y+15,x+150,y+55,true);
+draw_rectangle(x+19.75,y+14.75,x+150.25,y+55.25,true);
+draw_rectangle(x+19.5,y+14.5,x+150.5,y+55.5,true);
 draw_set_font(Roses);
-draw_text_transformed(15,15,"How much?",.4,.4,0);
-draw_text_transformed(15,25,string(electrumAmount)+" E",.5,.5,0);
-draw_text_transformed(15,38,string(goldAmount)+" G",.5,.5,0);
-draw_sprite(spr_select_right,0,11,changingGold?25:38);
-var drawX = 10;
-var drawY = y+12;
-for (var i = scrollLevel; i < ds_list_size(optionSlots); i++){
-  if (i!=index) draw_set_color(c_black);
-  draw_text_transformed(drawX,drawY,optionSlots[|i].title,.75,.75,0);
-  draw_set_color(c_white);//for other text
-  if ((i % 3)==2){
-	drawX = 10;
-	drawY += 24;
-  }else	drawX += 130;
-}
+draw_text_transformed(x+48,y+20,"Throw in a bribe?",.4,.4,0);
+draw_text_transformed(x+30,y+30,string(electrumAmount)+" E's",.5,.5,0);
+draw_set_color(c_yellow);
+draw_text_transformed(x+30,y+43,string(goldAmount)+" G",.5,.5,0);
+draw_sprite(spr_select_right,0,x+15,y+(changingGold?38:25));

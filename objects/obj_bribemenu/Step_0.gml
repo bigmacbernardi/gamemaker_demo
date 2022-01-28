@@ -21,7 +21,7 @@ else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_back
 		with battle_menu{
 			alarm[0]=1;//show the menu and reenable input	
 		}
-		priorMenu.selected = true;
+		//priorMenu.selected = true;
         instance_destroy();
 	}
 else {
@@ -38,8 +38,8 @@ else {
 	if changingGold
 		goldAmount+=_moveH * (keyboard_check_pressed(vk_shift)*10);	
 	else electrumAmount+=_moveH * (keyboard_check_pressed(vk_shift)*10);
-	goldAmount = min(goldAmount,global.gold);
-	electrumAmount = min(electrumAmount,global.electrum);
+	goldAmount = min(max(0,goldAmount),global.gold);
+	electrumAmount = min(max(0,electrumAmount),global.electrum);
 }
 	
 

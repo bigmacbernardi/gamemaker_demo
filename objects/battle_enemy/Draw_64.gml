@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-if (!instance_exists(obj_itemmenu)&&!instance_exists(obj_dualmenu)&&!instance_exists(obj_skillmenu)&&!instance_exists(obj_submenu)){
+if (!instance_exists(obj_itemmenu)&&!instance_exists(obj_dualmenu)&&!instance_exists(obj_skillmenu)&&!instance_exists(obj_submenu)&&!instance_exists(obj_bribemenu)){
 
 	var cx = camera_get_view_x(view_camera[0]);
 	var cy = camera_get_view_y(view_camera[0]);
