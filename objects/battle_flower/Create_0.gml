@@ -42,15 +42,15 @@ deathStart = 90;
 deathMid = 91;
 deathEnd = 92;
 
-base[HP] = 24;
+base[HP] = 30;
 current[HP] = base[HP];
 
 base[MP] = 10;
 current[MP] = base[MP];
-base[STR] = 5;
+base[STR] = 4;
 current[STR] = base[STR];
 current[DEF] = 1;
-current[SPD] = 5;
+current[SPD] = 6;
 base[ACC] = 0.6;
 current[ACC] = 0.6;
 hasGoneOnce = false;
