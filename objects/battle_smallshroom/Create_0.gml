@@ -18,7 +18,7 @@ doingSpecialAttack = false;
 xp_value = 60;
 cash_value = 60;
 layer_sequence_destroy(unitSequence);
-unitSequence = layer_sequence_create("Sequences",x,y,sFlowerYellow);
+unitSequence = layer_sequence_create("Sequences",x,y,sMushroomSmall);
 
 //start and end frames for each state
 idleStart = 0;
@@ -53,10 +53,9 @@ current[DEF] = 1;
 current[SPD] = 6;
 base[ACC] = 0.6;
 current[ACC] = 0.6;
-hasGoneOnce = false;
 //functions back
 function damageUnit(amount){//physical attacks
-	show_debug_message("Yo it's the flower override!  HP was "+string(current[@ HP]));
+	show_debug_message("Yo it's the flora override!  HP was "+string(current[@ HP]));
 	var damage = max(0,ceil(amount * 50/(50+ current[DEF])));//will update eventually
 	show_debug_message("Damage is "+string(damage)+" of "+string(amount));
 	current[@ HP] -= max(0,damage);
@@ -99,3 +98,6 @@ function turnEnd(){
 	nastyDamage = 0;
 	incomingHealage = 0;
 }
+
+price=200;
+electum_prize=[obj_antidring,100];

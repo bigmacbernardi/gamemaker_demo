@@ -121,9 +121,9 @@ if graceRemaining<=0 and instance_exists(obj_player) and !obj_player.paused {
 			obj_player.paused=true;
 			global.returnRoom = room;
 			global.fightNo = fightNo;
-			global.foesToSpawn = foes;//spawn_controller1.scriptedFights[fightNo];
+			global.foesToSpawn = global.spawnController.scriptedFights[fightNo];
 			//spawn_controller1.scriptedFights[fightNo] = true;
-			spawn_controller1.scriptedFights[fightNo] = [];//ideally would be set at battle end
+			//spawn_controller1.scriptedFights[fightNo] = [];//updated at battle end
 			var inst = instance_create_depth(0, 0, -9999, obj_battle_transition)
 			inst.target_rm = global.battleRoom;
 		}

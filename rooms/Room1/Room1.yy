@@ -53,6 +53,9 @@
             {"propertyId":{"name":"roomColor","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"objectId":{"name":"obj_shaderlight","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"value":"$FFFF00FF","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"thisColor","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"objectId":{"name":"obj_shaderlight","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"value":"$FF4CCC4F","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_shaderlight","path":"objects/obj_shaderlight/obj_shaderlight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":112.0,"y":96.0,"resourceVersion":"1.0","name":"inst_2BD28C73","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"fightNo","path":"objects/obj_enemy/obj_enemy.yy",},"objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"value":"17","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294901887,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":256.0,"resourceVersion":"1.0","name":"inst_5768C38B","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_elder","path":"objects/obj_elder/obj_elder.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":327.0,"y":100.0,"resourceVersion":"1.0","name":"inst_2028D106","tags":[],"resourceType":"GMRInstance",},
@@ -121,6 +124,7 @@
     {"name":"inst_6A13A051","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_6AEF4E0B","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_7298663A","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_5768C38B","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

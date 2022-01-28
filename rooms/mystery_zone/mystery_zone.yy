@@ -51,6 +51,9 @@
         {"properties":[
             {"propertyId":{"name":"currentDirection","path":"objects/obj_enemy_plant_experimentalsmart/obj_enemy_plant_experimentalsmart.yy",},"objectId":{"name":"obj_enemy_plant_experimentalsmart","path":"objects/obj_enemy_plant_experimentalsmart/obj_enemy_plant_experimentalsmart.yy",},"value":"8","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_enemy_plant_experimentalsmart","path":"objects/obj_enemy_plant_experimentalsmart/obj_enemy_plant_experimentalsmart.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":559.0,"y":621.0,"resourceVersion":"1.0","name":"inst_3B946582","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"fightNo","path":"objects/obj_enemy/obj_enemy.yy",},"objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"value":"17","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294901887,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":640.0,"resourceVersion":"1.0","name":"inst_37A2F302","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_column","path":"objects/obj_column/obj_column.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":224.0,"resourceVersion":"1.0","name":"inst_34C25E80","tags":[],"resourceType":"GMRInstance",},
@@ -144,6 +147,7 @@
     {"name":"inst_2CECAE59","path":"rooms/mystery_zone/mystery_zone.yy",},
     {"name":"inst_77F1EE34","path":"rooms/mystery_zone/mystery_zone.yy",},
     {"name":"inst_3B946582","path":"rooms/mystery_zone/mystery_zone.yy",},
+    {"name":"inst_37A2F302","path":"rooms/mystery_zone/mystery_zone.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
