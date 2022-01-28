@@ -176,14 +176,15 @@ function burn(){
 	setParticle(2);//fire;
 	for(var i = 0; i < array_length(global.targets); i++){
 		show_debug_message(global.selectedUnit.title+" attacking "+global.targets[i].title+"#"+string(global.targets[i]));
-		var xStep = (global.targets[i].x - unit.x )/40;
-		var yStep = (global.targets[i].y - unit.y )/40;
+		var xStep = (global.targets[i].x - unit.x )/4;
+		var yStep = (global.targets[i].y - unit.y )/4;
 		var partX = unit.x;
 		var partY = unit.y;
 		//part_type_direction(global.Particle1,)
 		
-		repeat(40)
+		repeat(4)
 		{
+			
 			partX+=xStep;
 			partY+=yStep;
 			part_particles_create(global.P_System, partX, partY, global.Particle1, 1);
@@ -224,15 +225,15 @@ function freeze(){
 		layer_sequence_headpos(unitSequence,atkStart);
 		state = ATTACK;
 	}
-	var xStep = (global.targets[0].x - unit.x )/40;
-	var yStep = (global.targets[0].y - unit.y )/40;
+	var xStep = (global.targets[0].x - unit.x )/6;
+	var yStep = (global.targets[0].y - unit.y )/6;
 	var partX = unit.x;
 	var partY = unit.y;
 	//part_type_direction(global.Particle1,)
 	with unit{
 			
 	}
-	repeat(40)
+	repeat(6)
 	{
 		partX+=xStep;
 		partY+=yStep;
@@ -294,7 +295,7 @@ function detox(){
 		layer_sequence_headpos(unitSequence,spcStart);
 		state = SPECIAL;
 	}
-	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
+	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 8);
 	with(global.targets[0]){
 		if status[0]<0
 			status[0]=0;
@@ -313,7 +314,7 @@ function balm(){
 	var unit = global.selectedUnit;
 	setParticle(0);
 	unit.current[MP] -= 5;
-	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
+	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 6);
 	
 	for(var i = 0; i < array_length(global.targets); i++){
 		part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 2);
@@ -335,7 +336,7 @@ function intensiveCare(){
 	var unit = global.selectedUnit;
 	setParticle(0);
 	unit.current[MP] -= 10;
-	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
+	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 7);
 	/*if (global.targets[0].state == DEATH){
 		part_particles_create(global.P_System, global.targets[0].x, global.targets[0].y, global.Particle1, 20);
 			

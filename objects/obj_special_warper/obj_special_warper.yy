@@ -30,11 +30,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "debug_panels",
+    "path": "folders/Objects/overworld/debug_panels.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_level_adjuster",
+  "name": "obj_special_warper",
   "tags": [],
   "resourceType": "GMObject",
 }
