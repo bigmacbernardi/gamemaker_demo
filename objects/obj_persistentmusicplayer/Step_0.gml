@@ -8,14 +8,14 @@ if room==gameover{
 		GOplaying = true;
 	}
 }
-else if (instance_exists(battle_manager)){
+/*else if (instance_exists(battle_manager)){
 	if (playing){
 	continue_position = audio_sound_get_track_position(songPlaying);
 	audio_stop_sound(songPlaying);
 	songPlaying = audio_play_sound(battle_torgotemp,1,true);
 	playing = false;
 	}
-}
+}*/
 else if (instance_exists(obj_pausemenu_stat)||instance_exists(obj_pausemenu_team)){//gimmickier menus that will have a lot of reading
 	if (playing){
 	continue_position = audio_sound_get_track_position(songPlaying);
@@ -27,7 +27,7 @@ else if (instance_exists(obj_pausemenu_stat)||instance_exists(obj_pausemenu_team
 	playing = false;
 	}	
 }
-else if !playing{
+else if !(instance_exists(battle_manager) || playing){
 	var possible_tracks = [overworld_manostemp35,overworld_manostemp,d1music1];
 	//audio_stop_sound(battle_torgotemp);
 	audio_stop_sound(songPlaying);

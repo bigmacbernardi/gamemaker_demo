@@ -2,6 +2,7 @@
 // You can write your code in this editor
 //instead of event_inherited, just doing the important battle_unit things
 event_inherited();
+show_debug_message("Shroomheritance completz "+string(instance_count));
 depth = -y;
 randomize();
 state = IDLE;
@@ -57,9 +58,9 @@ current[ACC] = 0.6;
 function damageUnit(amount){//physical attacks
 	show_debug_message("Yo it's the flora override!  HP was "+string(current[@ HP]));
 	var damage = max(0,ceil(amount * 50/(50+ current[DEF])));//will update eventually
-	show_debug_message("Damage is "+string(damage)+" of "+string(amount));
+//	show_debug_message("Damage is "+string(damage)+" of "+string(amount));
 	current[@ HP] -= max(0,damage);
-	show_debug_message("HP is now "+string(current[@ HP]));
+//	show_debug_message("HP is now "+string(current[@ HP]));
 }
 function healUnit(amount){
 	current[@ HP] = min(base[HP],current[HP]+amount);
@@ -70,8 +71,14 @@ floatTurns = 0;
 poisonTurns = -1;
 regenTurns = 0;
 regenAmt = 0;
-immunity = [0.5,0.5,0,0.5,0,0,0,0,0,0.5];//resists earth, wind, water, and ice.
+hasGoneOnce = false;//jic?
+
+immunity = [0.5,0.5,0,0.5,0,0,0,0,0,1,-1];//resists earth, wind, water, and ice.
+show_debug_message("shroomdefined "+string(instance_count));
+
 function turnEnd(){
+	show_debug_message("shroomturnend");
+
 	if status[0] < 0{//poison only
 		var amount = 0-status[0]
 		nastyDamage = ceil(amount * 50/(50+ current[DEF]));

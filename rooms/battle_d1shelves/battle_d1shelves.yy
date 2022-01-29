@@ -73,7 +73,7 @@
     {"spriteId":{"name":"cloudy_battle","path":"sprites/cloudy_battle/cloudy_battle.yy",},"colour":4294967295,"x":0,"y":-65,"htiled":true,"vtiled":true,"hspeed":-4.0,"vspeed":-0.1,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "",
+  "creationCodeFile": "${project_dir}/rooms/battle_d1shelves/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_7B291EC0_1","path":"rooms/battle_d1shelves/battle_d1shelves.yy",},

@@ -30,6 +30,8 @@ switch(combatPhase){
 			}
 		//cur enemy spawner
 		for (var i = 0; i < array_length(global.foesToSpawn); i+=3){
+			show_debug_message("Spawning "+string(i+1)+" of "+string(array_length(global.foesToSpawn)/3));
+				
 			var unit = instance_create_depth(global.foesToSpawn[i+1],global.foesToSpawn[i+2],0,global.foesToSpawn[i])
 			ds_list_add(global.units,unit);
 			//ds_priority_add(pq,unit,getWait(unit));
@@ -231,7 +233,8 @@ switch(combatPhase){
 							var found = -1;
 							for (var j = 0;i<ds_list_size(global.inventory);j++){
 								//show_debug_message("Checkin "+object_get_name( global.inventory[|i][0] ));
-								if global.inventory[|j][0] == drop{
+								if/*emergency fix*/  is_array(global.inventory[|j]) and
+									global.inventory[|j][0] == drop{
 								//	show_debug_message("MATCH!");
 									found = j;
 									break;

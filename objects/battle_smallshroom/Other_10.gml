@@ -1,5 +1,6 @@
 /// @description Rolls die to pick target.  If target not poisoned and MP>1, attempts to poison target
 //select random target
+show_debug_message("Doing mushroom");
 var target = global.allies[|irandom(ds_list_size(global.allies)-1)];
 global.targets=[target];
 //if target not poisoned, attempt to poison
@@ -21,3 +22,5 @@ else if target.status[0] == 1 and (current[MP]>=1){
 layer_sequence_headpos(unitSequence,atkStart);
 state = ATTACK; 
 audio_play_sound(swingSound,50,false); //gun
+
+show_debug_message("Mushroom done");

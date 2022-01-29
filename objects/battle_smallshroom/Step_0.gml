@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 // state machine that determines the unit's animation
+show_debug_message("Mushroom "+string(id));
 switch(state){
 	case IDLE:
 		if (layer_sequence_get_headpos(unitSequence) > idleEnd){
