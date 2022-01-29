@@ -18,9 +18,9 @@ scriptedFights = [
 	[battle_flower,224,80,battle_flower2,260,124],
 	[battle_flower2,242,100],							//15
 	[battle_flower2,224,80,battle_flower2,260,124],
-	[battle_smallshroom,260,124],
-	[battle_smallshroom,224,80,battle_smallshroom,260,124],
-	[battle_smallshroom,234,76,battle_smallshroom,276,90,battle_smallshroom,224,124,battle_smallshroom,256,150]
+	[battle_smallshroom,260,104],
+	[battle_smallshroom,224,70,battle_smallshroom,260,104],
+	[battle_smallshroom,234,76,battle_smallshroom,276,90,battle_smallshroom,224,120,battle_smallshroom,256,100]
 ];
 global.spawnController=spawn_controller1;
 //This could potentially handle overworld enemy spawns by checking room, too

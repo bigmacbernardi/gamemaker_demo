@@ -174,7 +174,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 5,
-    "yorigin": 48,
+    "yorigin": 10,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_smallshroom","path":"sprites/spr_smallshroom/spr_smallshroom.yy",},

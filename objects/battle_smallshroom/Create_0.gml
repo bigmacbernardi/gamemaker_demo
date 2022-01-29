@@ -2,7 +2,6 @@
 // You can write your code in this editor
 //instead of event_inherited, just doing the important battle_unit things
 event_inherited();
-show_debug_message("Shroomheritance completz "+string(instance_count));
 depth = -y;
 randomize();
 state = IDLE;
@@ -74,7 +73,6 @@ regenAmt = 0;
 hasGoneOnce = false;//jic?
 
 immunity = [0.5,0.5,0,0.5,0,0,0,0,0,1,-1];//resists earth, wind, water, and ice.
-show_debug_message("shroomdefined "+string(instance_count));
 
 function turnEnd(){
 	show_debug_message("shroomturnend");
@@ -107,4 +105,4 @@ function turnEnd(){
 }
 
 price=200;
-electum_prize=[obj_antidring,100];
+electrum_prize=[obj_antidring,100];

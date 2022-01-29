@@ -120,6 +120,8 @@ function pacify(){
 		if target<0 continue;
 		var value = (unit.current[CHA]+unit.current[AGI]+50)/(50+target.current[CHA]+target.current[STR]);
 	}
+	with battle_manager
+		alarm[1]=10;
 }
 function negotiate(){
 	show_debug_message("Negotiating...");

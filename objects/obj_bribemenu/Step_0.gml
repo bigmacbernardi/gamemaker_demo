@@ -27,17 +27,16 @@ else if((mouse_check_button_pressed(mb_right)) || keyboard_check_pressed(vk_back
 else {
 	var _up = keyboard_check_released(vk_up) or keyboard_check_released(ord("W"));
 	var _down = keyboard_check_released(vk_down) or keyboard_check_released(ord("S"));
-	var _left = keyboard_check_released(vk_left) or keyboard_check_released(ord("A"));
-	var _right = keyboard_check_released(vk_right) or keyboard_check_released(ord("D"));
+	var _left = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"));
+	var _right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 	var _moveH = _right - _left;
 	if (_down - _up != 0){
 		changingGold = !changingGold;
 		show_debug_message("Switched"+(changingGold?" from ":" to ")+string(electrumAmount)+" E"+(changingGold?" to ":" from ")+string(goldAmount)+" G");
-	
 	}
 	if changingGold
-		goldAmount+=_moveH * (keyboard_check_pressed(vk_shift)*10);	
-	else electrumAmount+=_moveH * (keyboard_check_pressed(vk_shift)*10);
+		goldAmount+=_moveH * (keyboard_check(vk_shift)?10:1);	
+	else electrumAmount+=_moveH * (keyboard_check(vk_shift)?10:1);
 	goldAmount = min(max(0,goldAmount),global.gold);
 	electrumAmount = min(max(0,electrumAmount),global.electrum);
 }

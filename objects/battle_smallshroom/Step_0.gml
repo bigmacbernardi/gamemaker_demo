@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 // state machine that determines the unit's animation
-show_debug_message("Mushroom "+string(id));
 switch(state){
 	case IDLE:
 		if (layer_sequence_get_headpos(unitSequence) > idleEnd){
@@ -65,7 +64,7 @@ switch(state){
 	case HIT:
 		//show_debug_message(title + string(id) + " is hit!!!");
 		if (layer_sequence_get_headpos(unitSequence) > hitEnd){
-				show_debug_message("damage that beast!!!");
+				show_debug_message("damage that fung!!!");
 				damageUnit(incomingDamage);
 				if (current[@ HP] > 0){
 					layer_sequence_headpos(unitSequence, idleStart);
@@ -75,7 +74,7 @@ switch(state){
 				else{
 					var myId = id;
 					layer_sequence_headpos(unitSequence, deathStart);
-					show_debug_message("Beast slew");
+					show_debug_message("fung slain");
 					battle_manager.expEarned += xp_value; //naive!  doesn't account for resurrection and assumes xp_value exists
 					battle_manager.cashEarned += cash_value; //ditt'
 					ds_list_delete(global.enemies,ds_list_find_index(global.enemies,id));
