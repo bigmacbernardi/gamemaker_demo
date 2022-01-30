@@ -104,5 +104,5 @@ function turnEnd(){
 	incomingHealage = 0;
 }
 
-price=200;
+price=10;//will actually be 200
 electrum_prize=[obj_antidring,100];

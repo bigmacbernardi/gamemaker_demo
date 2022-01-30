@@ -46,7 +46,7 @@ function bribe_attempt(electrum,gold,target=global.targets[0]){
 						ds_list_add(global.inventory,[drop,1]);	
 					}					
 					var this = instance_create_depth(0,0,1,drop);
-					with battle_manager ds_list_add(futureMessages,"Got "+this.title+"!");
+					with battle_manager ds_list_add(futureMessages,"Got "+this.title+" through bribery!");
 					instance_destroy(this);
 				}
 			}

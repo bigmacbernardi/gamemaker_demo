@@ -15,3 +15,6 @@ with inst{
 	ds_list_add(lines,mytle+":  ...");									//line 9
 	allowedToGo = true;													//END: 10
 }
+
+price=10;
+electrum_prize=[obj_ether,100];
