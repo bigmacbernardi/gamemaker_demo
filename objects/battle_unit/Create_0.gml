@@ -99,6 +99,8 @@ function turnEnd(){
 	}
 	if (floatTurns > 0) floatTurns--;
 	else status[1]=0;//float ended
-	nastyDamage = 0;
-	incomingHealage = 0;
+	showMe = 64;//64 frames
+	//nastyDamage = 0;
+	//incomingHealage = 0;
 }
+showMe=0;

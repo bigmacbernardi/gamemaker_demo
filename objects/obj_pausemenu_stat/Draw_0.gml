@@ -72,7 +72,12 @@ for (var i = 0;i<array_length(elementNames);i++){
 //Negative status qlippoths
 draw_set_color(c_white);
 drawX = halfway+20;
-drawY = y+146;
+drawY = y+146;//poison circle
+if global.statuses[options[|index]][0]<0{
+	draw_set_color(merge_color(c_lime,c_maroon,0.3));	
+	draw_circle(drawX,drawY,11,false);
+	draw_set_color(c_white);
+}
 draw_circle(drawX,drawY,11,true);
 draw_circle(drawX,drawY,10.5,true);
 drawX+=40;

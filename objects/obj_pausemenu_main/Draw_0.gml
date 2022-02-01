@@ -15,20 +15,28 @@ for (var i = scrollLevel; i < ds_list_size(options); i++){
 draw_text_transformed(drawX+10,drawY+24,options[|index].description,.5,.5,0);
 //drawing potraits and stats
 for (var i = 0; i<4; i++){
-	drawX = (i%2==0)? x+140:x+273;
-	drawY = (i<2)? y+24:y+138;
-	draw_set_color((global.currentParty[i] != noone)?c_white:c_gray);
+	drawX = (i%2==0)? x+113:x+261;
+	drawY = (i<2)? y+18:y+138;
+	var iAm = global.currentParty[i];
+	draw_set_color((iAm != noone)?c_white:c_gray);
 	//draw_text_transformed(drawX,drawY,"Member "+string(i+1),.5,.5,0);
-	if (global.currentParty[i] != noone){
-		draw_sprite(portraits[global.currentParty[i]],0,drawX+18,drawY+28);//nudging to right bc using sprites for now
-		draw_text_transformed(drawX+43,drawY,global.names[global.currentParty[i]],.5,.5,0);
-		draw_text_transformed(drawX+84.5,drawY+1,"Lv"+string(global.party[global.currentParty[i]][LV]),.4,.4,0);
-		drawY +=12;
-		draw_text_transformed(drawX+43,drawY,"HP: "+string(global.points[global.currentParty[i]][HP])+"/"+string(global.party[global.currentParty[i]][HP]),.5,.5,0);
-		drawY +=12;
-		draw_text_transformed(drawX+43,drawY,"MP: "+string(global.points[global.currentParty[i]][MP])+"/"+string(global.party[global.currentParty[i]][MP]),.5,.5,0);
-		drawY +=12;
-		draw_text_transformed(drawX,drawY,"Next LV in: "+string(lvBreaks[global.party[global.currentParty[i]][LV]]-global.party[global.currentParty[i]][XP])+"xp",.5,.5,0);
+	if (iAm != noone){
+		draw_sprite(portraits[iAm],0,drawX+18,drawY+28);//nudging to right bc using sprites for now
+		draw_text_transformed(drawX+43,drawY,global.names[iAm],.55,.55,0);
+		drawY +=9;
+		if global.statuses[iAm][0]<0{
+			draw_set_color(c_fuchsia);
+			draw_text_transformed(drawX+43,drawY,"Poisoned",.45,.45,0);
+			draw_set_color(c_white);
+		}
+		//draw_text_transformed(drawX+100/*84.5*/,drawY+1,"Lv"+string(global.party[iAm][LV]),.4,.4,0);
+		drawY +=9;
+		draw_text_transformed(drawX+43,drawY,"HP: "+string(global.points[iAm][HP])+"/"+string(global.party[iAm][HP]),.5,.5,0);
+		drawY +=11;
+		draw_text_transformed(drawX+43,drawY,"MP: "+string(global.points[iAm][MP])+"/"+string(global.party[iAm][MP]),.5,.5,0);
+		drawY +=11;
+		draw_text_transformed(drawX+11.5,drawY,"Lv"+string(global.party[iAm][LV]),.45,.45,0);
+		draw_text_transformed(drawX+43,drawY,"Next in: "+string(lvBreaks[global.party[iAm][LV]]-global.party[iAm][XP])+"xp",.4,.4,0);
 
 	}
 }

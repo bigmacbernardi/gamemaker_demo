@@ -18,9 +18,9 @@
 #macro YUSUF 1
 #macro JAMIR 2
 #macro BARDO 3
-/*#macro PJANE 4
-#macro WRESTLER 5
-#macro SERVER 6
+#macro PJANE 4
+#macro NARANJA 5
+/*#macro SERVER 6
 #macro PAT 7
 #macro NIKOLAI 8
 #macro SPIDER 9

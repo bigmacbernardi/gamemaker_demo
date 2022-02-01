@@ -1,8 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 //instead of event_inherited, just doing the important battle_unit things
+event_inherited();
+layer_sequence_destroy(unitSequence);
+unitSequence = layer_sequence_create("Sequences",x,y,sFootsoldier);
+
 depth = -y;
 randomize();
+/* //shouldn't need the following:
 state = IDLE;
 isPlayer = false;
 turnFinished = false;
@@ -11,12 +16,11 @@ targeted = false;
 attackWillHit = false;
 incomingDamage = 0; incomingHealage = 0; nastyDamage = 0;
 hpBarWidth = sprite_get_width(ui_hp);
-hpBarHeight = sprite_get_height(ui_hp);
+hpBarHeight = sprite_get_height(ui_hp);*/
 doingSpecialAttack = false;
 
 xp_value = 100;
 cash_value = 100;
-unitSequence = layer_sequence_create("Sequences",x,y,sFootsoldier);
 
 //start and end frames for each state
 idleStart = 0;
@@ -47,8 +51,8 @@ current[DEF] = 6;
 current[SPD] = 5;
 current[ACC] = 0.5;
 hasGoneOnce = false;
-//functions back
-function damageUnit(amount){//physical attacks
+//function redeclarations shouldn't be needed
+/*function damageUnit(amount){//physical attacks
 	show_debug_message("Yo it's the soldier override!  HP was "+string(current[@ HP]));
 	var damage = max(0,ceil(amount * 50/(50+ current[DEF])));//will update eventually
 	show_debug_message("Damage is "+string(damage)+" of "+string(amount));
@@ -57,9 +61,9 @@ function damageUnit(amount){//physical attacks
 }
 function healUnit(amount){
 	current[@ HP] = min(base[HP],current[HP]+amount);
-}
-/* New stuff for poison/regen*/
-status = [1,0,0,0,0,0,0,0];//regenerating
+}*/
+/* New stuff for poison/regen shouldn't be needed*/
+/*status = [1,0,0,0,0,0,0,0];//regenerating
 floatTurns = 0;
 poisonTurns = -1;
 regenTurns = -1;
@@ -93,4 +97,4 @@ function turnEnd(){
 	else status[1]=0;//float ended
 	nastyDamage = 0;
 	incomingHealage = 0;
-}
+}*/

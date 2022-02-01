@@ -1,17 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 //instead of event_inherited, just doing the important battle_unit things
+event_inherited();
+layer_sequence_destroy(unitSequence);
 depth = -y;
 randomize();
 state = IDLE;
-isPlayer = false;
+/*isPlayer = false;
 turnFinished = false;
 selected = false;
 targeted = false;
 attackWillHit = false;
 incomingDamage = 0; incomingHealage = 0; nastyDamage = 0;
 hpBarWidth = sprite_get_width(ui_hp);
-hpBarHeight = sprite_get_height(ui_hp);
+hpBarHeight = sprite_get_height(ui_hp);*/
 //doingSpecialAttack = false;
 
 xp_value = 190;
@@ -49,8 +51,8 @@ current[SPD] = 5;
 base[ACC] = 0.6;
 current[ACC] = base[@ ACC];
 hasGoneOnce = false;
-//functions back
-function damageUnit(amount){//physical attacks
+//functions re-decs should be redundant
+/*function damageUnit(amount){//physical attacks
 	var damage = max(0,ceil(amount * 50/(50+ current[DEF])));//will update eventually
 	show_debug_message("Book damage is "+string(damage)+" of "+string(amount));
 	current[@ HP] -= max(0,damage);
@@ -58,38 +60,10 @@ function damageUnit(amount){//physical attacks
 }
 function healUnit(amount){
 	current[@ HP] = min(base[HP],current[HP]+amount);
-}
-/* New stuff for poison/regen*/
-status = [0,0,0,0,0,0,0,0];
+}*/
+/* New stuff for poison/regen shouldn't be needed*/
+/*status = [0,0,0,0,0,0,0,0];
 floatTurns = 0;
 poisonTurns = -1;
 regenTurns = 0;
-regenAmt = 0;
-function turnEnd(){
-	if status[0] < 0{//poison only
-		var amount = 0-status[0]
-		nastyDamage = ceil(amount * 50/(50+ current[DEF]));
-		damageUnit(amount);
-		if (poisonTurns > 0) poisonTurns--;
-		else if (poisonTurns == 0) status[0]=0;//poison ended
-	}
-	else if status[0]>0{
-		incomingHealage=regenAmt;
-		healUnit(regenAmt);
-		if status[0]>1{
-			var amount = status[0]-1;
-			nastyDamage = ceil(amount * 50/(50+ current[DEF]));
-			damageUnit(amount);
-			if (poisonTurns > 0) poisonTurns--;
-			else if (poisonTurns == 0) status[0]=1;//poison ended!
-			if (regenTurns > 0) regenTurns--;
-			else if (regenTurns == 0) and (poisonTurns==0) status[0]=0;//both ended!
-			else if (regenTurns == 0) status[0]=1-status[0];//regen ended 
-		
-		}
-	}
-	if (floatTurns > 0) floatTurns--;
-	else status[1]=0;//float ended
-	nastyDamage = 0;
-	incomingHealage = 0;
-}
+regenAmt = 0;*/
