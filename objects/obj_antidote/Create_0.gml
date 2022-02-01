@@ -4,5 +4,5 @@
 // Inherit the parent event
 event_inherited();
 if instance_exists(obj_itemmenu)
-	  title = "Veg'le Soup";
+	  title = "Antidote";
   

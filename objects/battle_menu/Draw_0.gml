@@ -5,10 +5,12 @@ var drawX;
 var drawY = y + 4;
 for (var i = 0; i<array_length(players);i++){
 		drawX = x + 10;
-		draw_set_color(global.selectedUnit==players[i]?c_yellow:c_white);
+		var base_color=players[i].status[0]<0||players[i].status[0]>1?c_fuchsia:c_white;
+		draw_set_color(global.selectedUnit==players[i]?c_yellow:base_color);
 		draw_text_transformed(drawX,drawY+1,players[i].title,.65,.65,0);
 		drawX += 52;
-		draw_set_color(players[i].state==DEATH?c_red:c_ltgray);
+		base_color=players[i].status[0]<0||players[i].status[0]>1?c_fuchsia:c_ltgray;
+		draw_set_color(players[i].state==DEATH?c_red:base_color);
 		draw_text_transformed(drawX,drawY,string(max(0,players[i].current[HP]))+"/"+string(players[i].base[HP])+"HP",.45,.45,0);
 		if players[i].current[HP]/players[i].base[HP] <= 0.55{
 			draw_set_color(players[i].current[HP]/players[i].base[HP] <= 0.20?c_red:c_yellow);
