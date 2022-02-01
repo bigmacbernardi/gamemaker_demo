@@ -66,9 +66,11 @@ regenTurns = -1;
 regenAmt = 5;
 immunity = [0,0,-1,2,0,0,0,0,1,-1];//immune to poison.  absorbs water.  weak to fire and ice.
 function turnEnd(){
+	show_debug_message("big mushroom turn end");
 	if status[0] < 0{//poison only
 		var amount = 0-status[0]
 		nastyDamage = ceil(amount * 50/(50+ current[DEF]));
+		damageUnit(amount);
 		if (poisonTurns > 0) poisonTurns--;
 		else if (poisonTurns == 0) status[0]=0;//poison ended
 	}

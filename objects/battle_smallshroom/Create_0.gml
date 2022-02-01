@@ -76,10 +76,10 @@ immunity = [0.5,0.5,0,0.5,0,0,0,0,0,1,-1];//resists earth, wind, water, and ice.
 
 function turnEnd(){
 	show_debug_message("shroomturnend");
-
 	if status[0] < 0{//poison only
 		var amount = 0-status[0]
 		nastyDamage = ceil(amount * 50/(50+ current[DEF]));
+		damageUnit(amount);
 		if (poisonTurns > 0) poisonTurns--;
 		else if (poisonTurns == 0) status[0]=0;//poison ended
 	}

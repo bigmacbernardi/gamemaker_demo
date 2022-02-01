@@ -65,8 +65,6 @@ regenTurns = 0;
 floatTurns = 0;
 regenAmt = 0;
 
-
-
 function damageUnit(amount){
 	var damage = ceil(amount * (50/(50+ current[@ DEF])));
 	//audio_play_sound(damageSound,100,false); //done by Helper->unitAttack instead.  timing works a lil better
@@ -76,9 +74,11 @@ function healUnit(amount){
 	current[@ HP] = min(base[HP],current[HP]+amount);
 }
 function turnEnd(){
+	show_debug_message(title+" at turn end");
 	if status[0] < 0{//poison only
 		var amount = 0-status[0]
 		nastyDamage = ceil(amount * 50/(50+ current[DEF]));
+		damageUnit(amount);
 		if (poisonTurns > 0) poisonTurns--;
 		else if (poisonTurns == 0) status[0]=0;//poison ended
 	}
