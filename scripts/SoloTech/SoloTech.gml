@@ -212,10 +212,6 @@ function freeze(){
 	var yStep = (global.targets[0].y - unit.y )/6;
 	var partX = unit.x;
 	var partY = unit.y;
-	//part_type_direction(global.Particle1,)
-	with unit{
-			
-	}
 	repeat(6)
 	{
 		partX+=xStep;
