@@ -172,8 +172,8 @@ function burn(){
 	var unit = global.selectedUnit;	
 	with unit{
 		current[MP] -= 4;
-		layer_sequence_headpos(unitSequence,atkStart);
-		state = ATTACK;
+		//layer_sequence_headpos(unitSequence,atkStart);
+		//state = ATTACK;
 	}
 	setParticle(2);//fire;
 	for(var i = 0; i < array_length(global.targets); i++){
@@ -183,34 +183,14 @@ function burn(){
 		var partX = unit.x;
 		var partY = unit.y;
 		//part_type_direction(global.Particle1,)
-		
 		repeat(4)
 		{
-			
 			partX+=xStep;
 			partY+=yStep;
 			part_particles_create(global.P_System, partX, partY, global.Particle1, 1);
 		}
 		//part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 10);
-		checkForHit();
-		if (unit.attackWillHit){
-			with(global.targets[i]){ // (Energy) * (Fire) / 4
-					incomingDamage = round(unit.current[@ WIS] * unit.current[@ STR]/4);
-					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
-					//alarm[0] = 10;
-					layer_sequence_headpos(unitSequence,hitStart);
-					state = HIT;
-			}
-		}
-		else{
-			with(global.targets[i]){
-				show_debug_message("OFFICIALLY MISSING");
-				incomingDamage=0;//t
-				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
-				layer_sequence_headpos(unitSequence,missStart);
-				state = MISS;
-			}
-		}
+		elemAttack(2,.25,unit,global.targets[i]);
 	 }
 	with battle_manager{
 		enqueue(unit); //was done by selector.  no longer
@@ -225,8 +205,8 @@ function freeze(){
 	var unit = global.selectedUnit;
 	with unit{
 		current[MP] -= 4;
-		layer_sequence_headpos(unitSequence,atkStart);
-		state = ATTACK;
+	//	layer_sequence_headpos(unitSequence,atkStart);
+	//	state = ATTACK;
 	}
 	var xStep = (global.targets[0].x - unit.x )/6;
 	var yStep = (global.targets[0].y - unit.y )/6;
@@ -243,29 +223,12 @@ function freeze(){
 		part_particles_create(global.P_System, partX, partY, global.Particle1, 1);
 	}
 	//part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 20);
-	if (unit.attackWillHit){
-		with(global.targets[0]){ // (Energy*1.25 + Fire/4) * (Ice/2 + Shadow/2)  ... / Earth * (Ice/2 + Shadow/2)?
-				incomingDamage = round((unit.current[@ WIS]*1.25) + (unit.current[@ STR] / 4)* ((unit.current[@ AGI] / 2)+(unit.current[@ CHA] / 2)));
-				show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
-				//alarm[0] = 10;
-				layer_sequence_headpos(unitSequence,hitStart);
-				state = HIT;
-		}
-	}
-	else{
-		with(global.targets[0]){
-			show_debug_message("OFFICIALLY MISSING");
-			incomingDamage=0;
-			if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
-			layer_sequence_headpos(unitSequence,missStart);
-			state = MISS;
-		}
-	}
-	with battle_manager{
+	//if (unit.attackWillHit){
+	elemAttack(9);//ice, default strength
+	with battle_manager{//complete the turn
 		enqueue(unit); //was done by selector.  no longer
 		battle_manager.alarm[1] = 10;	 
 	}
-	//complete the turn?
 }
 
 /* YUSUF TECH */

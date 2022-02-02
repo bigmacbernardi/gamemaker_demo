@@ -34,7 +34,7 @@ function useItem(){
 		}*/
 	
 }
-function elementalAttack(element,strength=1,target=global.targets[0],unit=global.selectedUnit){
+function elemAttack(element,strength=1,unit=global.selectedUnit,target=global.targets[0]){
 		checkForHit(unit);
 		if (unit.attackWillHit){
 			var dmg;
