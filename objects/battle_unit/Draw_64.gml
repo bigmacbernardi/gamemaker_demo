@@ -7,7 +7,7 @@ if (!instance_exists(obj_itemmenu)&&!instance_exists(obj_dualmenu)&&!instance_ex
 	if (incomingDamage>0){
 		draw_set_color(c_white);
 		//draw_text_transformed(xx +15,yy+30,string(max(0,incomingDamage-current[@ DEF])),.5,.5,0);
-		draw_text_transformed(xx +15,yy,string(max(0,incomingDamage-current[@ DEF])),.5,.5,0);
+		draw_text_transformed(xx +15,yy,string(max(0,incomingDamage*50/(50+current[@ DEF]))),.5,.5,0);
 	}
 	if (incomingHealage>0){
 		draw_set_color(c_green);

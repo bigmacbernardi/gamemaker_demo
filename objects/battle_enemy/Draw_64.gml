@@ -16,7 +16,7 @@ if (!instance_exists(obj_itemmenu)&&!instance_exists(obj_dualmenu)&&!instance_ex
 		draw_sprite(ui_mp,0,xx,yy-20);
 		draw_sprite_part(ui_mp,1,0,0,hpBarWidth*_hp,hpBarHeight,xx,yy-20);
 	}
-	else incomingDamage=0;
+	else incomingDamage=0;//uhh wait is this right?
 	
 }
 event_inherited();
