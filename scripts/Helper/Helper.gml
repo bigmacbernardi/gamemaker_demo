@@ -111,7 +111,7 @@ function unitAttack(){
 	if unit < 0 return; //emergency fix
 	else{
 		if global.targets[0] < 0 global.targets[0]=unit.isPlayer?global.enemies[|0]:global.allies[|0];//auto-fix
-		show_debug_message(global.selectedUnit.title+" attacking "+
+		show_debug_message(global.selectedUnit.title+" attacking AT LEAST "+
 			global.targets[0].title+"#"+string(global.targets[0]));
 	}
 	var targets = global.targets;
@@ -131,7 +131,7 @@ function unitAttack(){
 	//if global.targets[i]==noone continue;//emergency fix
 			//else show_debug_message("Hitting "+string(global.targets[i]));
 			with(targets[i]){
-					incomingDamage = ceil(unit.current[@ STR]); //should account for def here and use separate attack power IMO, but whatever
+					incomingDamage = ceil(unit.current[@ STR]); //WILL account for def here and use separate attack power IMO, but whatever
 					incomingElement = -1;//physical
 					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
