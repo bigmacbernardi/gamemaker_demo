@@ -135,13 +135,13 @@ function dequeue(priority=pq){//automatically sets turn-haver and returns wait
 		pq[1][0] = pq[1][pqSize];
 		pq[0][pqSize] = noone;
 		pq[1][pqSize] = 999;
-		show_debug_message("Pretrickle: ["+string(pq[1][0])+","+string(pq[1][1])+","+
+		/*show_debug_message("Pretrickle: ["+string(pq[1][0])+","+string(pq[1][1])+","+
 						string(pq[1][2])+","+string(pq[1][3])+","+
-						string(pq[1][4])+","+string(pq[1][5])+"]; "+string(pqSize));
+						string(pq[1][4])+","+string(pq[1][5])+"]; "+string(pqSize));*/
 		trickleDown();
 		show_debug_message("Queue shrunk to: ["+string(pq[1][0])+","+string(pq[1][1])+","+
 						string(pq[1][2])+","+string(pq[1][3])+","+
-						string(pq[1][4])+","+string(pq[1][5])+"]; "+string(pqSize));
+						string(pq[1][4])+","+string(pq[1][5])+"]; size "+string(pqSize));
 		return wait;
 }
 function remove(unit){//assumes only ONE of this instance is in queue.  not explicitly enforced, though logically to be expected

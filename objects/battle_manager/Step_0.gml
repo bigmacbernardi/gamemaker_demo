@@ -74,7 +74,7 @@ switch(combatPhase){
 		show_debug_message("Bout to reduce "+string(pqSize)+" items by "+string(last_key));
 		
 		reduce(last_key);
-		show_debug_message("Done reduced");
+		//show_debug_message("Done reduced");
 		
 		//if (inst.turnFinished||inst.state != DEATH) then it shouldn't be in queue
 		if global.selectedUnit>0{

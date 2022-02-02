@@ -34,36 +34,36 @@ function useItem(){
 		}*/
 	
 }
-function elementalAttack(element,target=global.targets[0],unit=global.selectedUnit){
+function elementalAttack(element,strength=1,target=global.targets[0],unit=global.selectedUnit){
 		checkForHit(unit);
 		if (unit.attackWillHit){
 			var dmg;
 			switch(element){
 				case 0: //earth
-					dmg = ceil(((unit.current[@ DEFEND]/2)+(unit.current[@ STR]/2))
+					dmg = ceil(strength*((unit.current[@ DEFEND]/2)+(unit.current[@ STR]/2))
 								*unit.current[@ DEX]);
 					break;
 				case 1: //wind
-					dmg = ceil(((unit.current[@ SPD]/2)+(unit.current[@ STR]/2))
+					dmg = ceil(strength*((unit.current[@ SPD]/2)+(unit.current[@ STR]/2))
 								*unit.current[@ DEX]);
 					break;
 				case 2: //fire
-					dmg = ceil(unit.current[@ STR]*unit.current[@ DEX]);
+					dmg = ceil(strength*unit.current[@ STR]*unit.current[@ DEX]);
 					break;
 				case 3: //water
-					dmg = ceil(((unit.current[@ AGI]/2)+(unit.current[@ STR]/2))
+					dmg = ceil(strength*((unit.current[@ AGI]/2)+(unit.current[@ STR]/2))
 								*unit.current[@ DEX]);
 					break;
 				case 4: //shadow
-					dmg = ceil(((unit.current[@ CHA]/2)+(unit.current[@ STR]/2))
+					dmg = ceil(strength*((unit.current[@ CHA]/2)+(unit.current[@ STR]/2))
 								*unit.current[@ DEX]);
 					break;
 				case 5: //light
-					dmg = ceil(((unit.current[@ DEX]/2)+(unit.current[@ STR]/2))
+					dmg = ceil(strength*((unit.current[@ DEX]/2)+(unit.current[@ STR]/2))
 								*unit.current[@ DEX]);
 					break;
 				case 6: //energy
-					dmg = ceil(((unit.current[@ WIS]/2)+(unit.current[@ STR]/2))
+					dmg = ceil(strength*((unit.current[@ WIS]/2)+(unit.current[@ STR]/2))
 								*unit.current[@ DEX]);
 					break;
 				case 7: //void
@@ -71,13 +71,13 @@ function elementalAttack(element,target=global.targets[0],unit=global.selectedUn
 					break;
 				case 8: //bio (poison)
 				
-					dmg = ceil(((unit.current[@ AGI]/2)+(unit.current[@ STR]/2))
+					dmg = ceil(strength*((unit.current[@ AGI]/2)+(unit.current[@ STR]/2))
 								*unit.current[@ CHA]);
 					//if !immune
 						target.status[0]=-ceil(dmg/14);
 					break;
 				case 9: //ice
-					dmg = ceil(((unit.current[@ AGI]/4)+(unit.current[@ CHA]/4)+(unit.current[@ STR]/2))
+					dmg = ceil(strength*((unit.current[@ AGI]/4)+(unit.current[@ CHA]/4)+(unit.current[@ STR]/2))
 								*unit.current[@ DEX]);
 					break;
 			}
@@ -93,6 +93,7 @@ function elementalAttack(element,target=global.targets[0],unit=global.selectedUn
 		else{
 			with(target){
 				show_debug_message("OFFICIALLY ELEMISSING");
+				incomingDamage=0;
 				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
 				layer_sequence_headpos(unitSequence,missStart);
 				state = MISS;

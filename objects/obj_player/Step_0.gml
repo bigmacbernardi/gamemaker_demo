@@ -29,7 +29,7 @@ if (!paused){//only when active
 			for (var i = -1;i<2;i++){
 				for (var j = -1;j<2;j++){
 					if place_meeting(x + i, y+j, obj_wall) == false{
-						show_debug_message("Corner push!");
+						show_debug_message("Corner push!");//leaving bc it's the rarest
 						x+=i;
 						y+=j;
 						break	
@@ -39,7 +39,7 @@ if (!paused){//only when active
 		}
 		else if place_meeting(x + x_spd, y-1, obj_wall) == false
 		{
-			show_debug_message("This pushup");
+			//show_debug_message("This pushup");//for debugging
 			y-=1;
 			x+=x_spd;
 			real_y_spd = 0;
@@ -77,7 +77,7 @@ if (!paused){//only when active
 				next_try+=next_try>0?-0.5:0.5;	
 			}
 			else{
-				show_debug_message("THIS pushup");
+				//show_debug_message("THIS pushup");//for debugging
 				y += next_try;
 				real_y_spd = next_try;
 				break;//SHOULD be better than next_try=0
