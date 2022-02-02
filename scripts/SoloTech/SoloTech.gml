@@ -172,8 +172,8 @@ function burn(){
 	var unit = global.selectedUnit;	
 	with unit{
 		current[MP] -= 4;
-		//layer_sequence_headpos(unitSequence,atkStart);
-		//state = ATTACK;
+		layer_sequence_headpos(unitSequence,spcStart);
+		state = SPECIAL;
 	}
 	setParticle(2);//fire;
 	for(var i = 0; i < array_length(global.targets); i++){
@@ -205,8 +205,8 @@ function freeze(){
 	var unit = global.selectedUnit;
 	with unit{
 		current[MP] -= 4;
-	//	layer_sequence_headpos(unitSequence,atkStart);
-	//	state = ATTACK;
+		layer_sequence_headpos(unitSequence,spcStart);
+		state = SPECIAL;
 	}
 	var xStep = (global.targets[0].x - unit.x )/6;
 	var yStep = (global.targets[0].y - unit.y )/6;
