@@ -1,3 +1,3 @@
-target_x = 314;
-target_y = 37
-target_rm = Room1;
+target_x = 1709;
+target_y = 1206;
+target_rm = TownAncyra1;
