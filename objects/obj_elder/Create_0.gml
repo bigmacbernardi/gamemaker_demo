@@ -1,7 +1,7 @@
 /// @description Override
 event_inherited();
 show_debug_message(global.flag[0]);
-if (global.flag[0]!=1){//why doesn't this work? if you run this check it just fails and pauses player
+if (global.flag[0]!=1){
 global.facechoice= 1;
 global.faceemotion=0;
 global.typer=5;
