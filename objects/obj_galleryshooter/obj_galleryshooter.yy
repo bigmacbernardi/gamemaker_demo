@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_skeeball_ovrwld",
-    "path": "sprites/spr_skeeball_ovrwld/spr_skeeball_ovrwld.yy",
+    "name": "spr_PLAYHERE",
+    "path": "sprites/spr_PLAYHERE/spr_PLAYHERE.yy",
   },
   "solid": false,
   "visible": true,
