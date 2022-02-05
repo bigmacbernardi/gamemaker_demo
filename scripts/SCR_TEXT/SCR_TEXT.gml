@@ -109,6 +109,10 @@ switch(argument0){
 		global.msg =["Give shooting a shot!/","Pew pew pew! ^4 Pew pew pew pew pew!/",
 				"Get 10 points to get the most points &you can get!/","%%%"];
 		break;
+	case 201:
+		global.msg =["Last time, you got "+string(obj_attendant.lastPoints)+" points./",
+			"The best you've ever done is "+string(global.shootHiScore)+" points./","%%%"];
+		break;
 	/*chest messages*/
 	case 1000:
         global.msg[0]= " Got an Old Helm!/";//maybe make this read the name of last item received

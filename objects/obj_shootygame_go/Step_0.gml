@@ -9,6 +9,8 @@ if go{
 				//binibini
 			}
 			else {
+				if points > global.shootHiScore global.shootHiScore=points;
+				obj_attendant.lastPoints=points;
 				instance_destroy();
 			}
 		}
