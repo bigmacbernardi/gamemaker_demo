@@ -27,7 +27,7 @@
 	playing = false;
 	}	
 }
-else if !(instance_exists(battle_manager) || playing){
+else if !(instance_exists(battle_manager) || playing || room==gameover){
 	var possible_tracks = [yusufDayTheme,overworld_breezetemp,d1music1,overworld_manotemp,bouncerock_shoptheme];
 	//audio_stop_sound(battle_torgotemp);
 	audio_stop_sound(songPlaying);
