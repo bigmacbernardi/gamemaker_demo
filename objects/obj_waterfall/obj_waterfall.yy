@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "spr_sign",
-    "path": "sprites/spr_sign/spr_sign.yy",
+    "name": "spr_waterfall0",
+    "path": "sprites/spr_waterfall0/spr_waterfall0.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -26,18 +26,17 @@
   "eventList": [
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":0,"value":"2","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"lineNo","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"style","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "overworld",
-    "path": "folders/Objects/overworld.yy",
+    "name": "props",
+    "path": "folders/Objects/overworld/props.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_sign",
+  "name": "obj_waterfall",
   "tags": [],
   "resourceType": "GMObject",
 }
