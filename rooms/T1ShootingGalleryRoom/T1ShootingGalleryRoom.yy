@@ -80,7 +80,7 @@
 ],},"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Tiles_1","tags":[],"resourceType":"GMRTileLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/Room3/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/T1ShootingGalleryRoom/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_5833EB0_1_1","path":"rooms/T1ShootingGalleryRoom/T1ShootingGalleryRoom.yy",},
