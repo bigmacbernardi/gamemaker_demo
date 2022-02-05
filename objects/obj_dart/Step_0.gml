@@ -4,4 +4,6 @@ if place_meeting(x,y,obj_shootytarget){
 	audio_play_sound(chainmail2,100,false);
 	obj_shootygame_go.points++;
 	instance_destroy();
+}else if y<0{
+	instance_destroy();	
 }

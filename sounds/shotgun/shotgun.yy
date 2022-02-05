@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "shotgun.mp3",
-  "duration": 2.786395,
+  "duration": 2.142041,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

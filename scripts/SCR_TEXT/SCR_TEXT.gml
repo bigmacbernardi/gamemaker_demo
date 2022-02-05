@@ -104,6 +104,11 @@ switch(argument0){
 		global.msg =["The parts for by dialogue aren't finished&yet./",
 			"And that's why I have this ridiculous &placeholder dialogue./","%%%"];
 		break;
+		
+	case 200:
+		global.msg =["Give shooting a shot!/","Pew pew pew! ^4 Pew pew pew pew pew!/",
+				"Get 10 points to get the most points &you can get!/","%%%"];
+		break;
 	/*chest messages*/
 	case 1000:
         global.msg[0]= " Got an Old Helm!/";//maybe make this read the name of last item received
