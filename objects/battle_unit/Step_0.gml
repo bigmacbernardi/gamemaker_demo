@@ -1,6 +1,6 @@
 // state machine that determines the unit's animation
 if variable_instance_exists(id,showMe)&&showMe>0{
-	if --showMe==0{
+	if --showMe<=0{
 		incomingHealage=0;
 		nastyDamage=0;
 	}

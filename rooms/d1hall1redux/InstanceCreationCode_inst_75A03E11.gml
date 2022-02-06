@@ -1,3 +1,3 @@
-target_x = 575;
-target_y = 35;
-target_rm = mystery_zone;
+target_x = 960;
+target_y = 41;
+target_rm = d1admin;

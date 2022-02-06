@@ -3,7 +3,7 @@ var cy = camera_get_view_y(view_camera[0]);
 var xx = (x-cx)*Display_ScaleX;
 var yy = (y-cy)*Display_ScaleY;
 
-if (!instance_exists(obj_itemmenu)&&!instance_exists(obj_dualmenu)&&!instance_exists(obj_skillmenu)&&!instance_exists(obj_submenu)){
+/*if (!instance_exists(obj_itemmenu)&&!instance_exists(obj_dualmenu)&&!instance_exists(obj_skillmenu)&&!instance_exists(obj_submenu)){
 	if (incomingDamage>0){
 		draw_set_color(c_white);
 		//draw_text_transformed(xx +15,yy+30,string(max(0,incomingDamage-current[@ DEF])),.5,.5,0);
@@ -17,7 +17,7 @@ if (!instance_exists(obj_itemmenu)&&!instance_exists(obj_dualmenu)&&!instance_ex
 		draw_set_color(c_olive);
 		draw_text_transformed(xx +15,yy+5,string(max(0,nastyDamage)),.5,.5,0);
 	}
-}
+}*/
 if keyboard_check(ord("V")){
 	if isPlayer{
 		if id == global.units[|0]{
