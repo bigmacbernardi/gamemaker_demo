@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "yusufDayTheme.wav",
-  "duration": 108.489433,
+  "duration": 105.210434,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
