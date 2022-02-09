@@ -4,7 +4,7 @@ function slot_skills(){
 	var a; //"all" array
 	var m = [],t = [],o = [],u = [],c = [];//more arrays. magic, trained, observed (enemy skills), unique, common
 	var index = 0;
-	var mIndex = 0; var tIndex = 0; var oIndex = 0; var cIndex = 0;//var uIndex = 0; 
+	var mIndex = 0; var tIndex = 0; var oIndex = 0; var cIndex = 0; var uIndex = 0; 
 	var battling = instance_exists(battle_menu);
 	
 	//minimal version of later process to implement
@@ -119,6 +119,18 @@ function slot_skills(){
 				}else yusufBurn.usable = false;
 				a[index++]  = yusufBurn;
 				m[mIndex++] = yusufBurn;
+			}
+			if (global.skills[YUSUF][4]){
+				var yusufDetox = instance_create_layer(0,0,ui_level,obj_skill);
+				yusufDetox.title = "Cure Poison";
+				yusufDetox.description = "Cure Poison on a buddy! .";
+				yusufDetox.mode = 1;
+				if battling{
+					yusufDetox.script = detox;
+					yusufDetox.usable = global.selectedUnit.current[MP]>=2;
+				}else yusufDetox.usable = false;
+				a[index++]  = yusufDetox;
+				u[uIndex++] = yusufDetox;
 			}
 			break;
 		default: //testing only

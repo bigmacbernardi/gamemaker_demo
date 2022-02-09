@@ -33,7 +33,7 @@ if instance_exists(battle_manager){
 	/* status recovery */
 	if (specialProperties>-1){
 		switch(specialProperties){
-			case 0: global.statuses[0]=(global.statuses[0]>0?1:0);
+			case 0: global.statuses[global.targets[0]][0]=(global.statuses[global.targets[0]][0]>0?1:0);
 					break;
 			default: break;
 		}

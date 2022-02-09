@@ -95,12 +95,19 @@ function upgrade(fighter){
 	global.points[fighter][HP] += HPs[lv];
 	global.points[fighter][MP] += MPs[lv];
 	global.party[fighter][DEF] += results[DEF - 2];
+	checkForPerks(fighter,DEF,global.party[fighter][DEF]-results[DEF - 2],global.party[fighter][DEF]);
 	global.party[fighter][SPD] += results[SPD - 2];
+	checkForPerks(fighter,SPD,global.party[fighter][SPD]-results[SPD - 2],global.party[fighter][SPD]);
 	global.party[fighter][STR] += results[STR - 2];
+	checkForPerks(fighter,STR,global.party[fighter][STR]-results[STR - 2],global.party[fighter][STR]);
 	global.party[fighter][AGI] += results[AGI - 2];
+	checkForPerks(fighter,AGI,global.party[fighter][AGI]-results[AGI - 2],global.party[fighter][AGI]);
 	global.party[fighter][CHA] += results[CHA - 2];
+	checkForPerks(fighter,DEF,global.party[fighter][DEF]-results[DEF - 2],global.party[fighter][DEF]);
 	global.party[fighter][DEX] += results[DEX - 2];
+	checkForPerks(fighter,DEX,global.party[fighter][DEX]-results[DEX - 2],global.party[fighter][DEX]);
 	global.party[fighter][WIS] += results[WIS - 2];
+	checkForPerks(fighter,WIS,global.party[fighter][WIS]-results[WIS - 2],global.party[fighter][WIS]);
 	//at this point, check for perks gained
 	return
 }
@@ -134,12 +141,19 @@ function downgrade(fighter){
 	global.points[fighter][HP] -= HPs[lv];
 	global.points[fighter][MP] -= MPs[lv];
 	global.party[fighter][DEF] -= results[DEF - 2];
+	checkForPerkLoss(fighter,DEF,global.party[fighter][DEF]+results[DEF - 2],global.party[fighter][DEF]);
 	global.party[fighter][SPD] -= results[SPD - 2];
+	checkForPerkLoss(fighter,SPD,global.party[fighter][SPD]+results[SPD - 2],global.party[fighter][SPD]);
 	global.party[fighter][STR] -= results[STR - 2];
+	checkForPerkLoss(fighter,STR,global.party[fighter][STR]+results[STR - 2],global.party[fighter][STR]);
 	global.party[fighter][AGI] -= results[AGI - 2];
+	checkForPerkLoss(fighter,AGI,global.party[fighter][AGI]+results[AGI - 2],global.party[fighter][AGI]);
 	global.party[fighter][CHA] -= results[CHA - 2];
+	checkForPerkLoss(fighter,CHA,global.party[fighter][CHA]+results[CHA - 2],global.party[fighter][CHA]);
 	global.party[fighter][DEX] -= results[DEX - 2];
+	checkForPerkLoss(fighter,DEX,global.party[fighter][DEX]+results[DEX - 2],global.party[fighter][DEX]);
 	global.party[fighter][WIS] -= results[WIS - 2];
+	checkForPerkLoss(fighter,WIS,global.party[fighter][WIS]+results[WIS - 2],global.party[fighter][WIS]);
 	global.party[fighter][LV]--;
 	//at this point, check for perks lost
 	return
