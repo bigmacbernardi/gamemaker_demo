@@ -11,7 +11,7 @@ global.faceemotion= 2;
 //}
 if nextMessage>32 nextMessage=30;
 if (instance_exists(obj_dialoguer)) instance_destroy(obj_dialoguer);
-message = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dialoguer);
+message = instance_create_layer(camera_get_view_x(cam),10,"Instances",obj_dialoguer);
 //	global.dialogueLine=0;
 //	instance_create_depth(camera_get_view_x(cam),camera_get_view_y(cam)+120,-6,obj_writer);
 if (instance_exists(obj_dialoguechoice)) instance_destroy(obj_dialoguechoice);
