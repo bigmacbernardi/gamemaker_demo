@@ -41,7 +41,7 @@ if (!opened){
 	global.typer= 4;
 	global.lineNo = 1000 + chestNo;
 	if (instance_exists(obj_dialoguer)) instance_destroy(obj_dialoguer);
-	message = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dialoguer);
+	message = instance_create_layer(camera_get_view_x(cam),10,"Instances",obj_dialoguer);
 }
 else obj_player.paused = false;
 
