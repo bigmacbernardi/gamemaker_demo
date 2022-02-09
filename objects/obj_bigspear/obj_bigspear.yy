@@ -25,12 +25,13 @@
   "overriddenProperties": [
     {"propertyId":{"name":"title","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"Killer Spear","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"description","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"It'll poke ya","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"ATK","path":"objects/obj_weapon/obj_weapon.yy",},"objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"value":"11","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"category","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"ATK","path":"objects/obj_weapon/obj_weapon.yy",},"objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"value":"8","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"weaponNo","path":"objects/obj_weapon/obj_weapon.yy",},"objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"type","path":"objects/obj_weapon/obj_weapon.yy",},"objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "obtainable_weapons",
-    "path": "folders/Objects/items/equipment/obtainable_weapons.yy",
+    "name": "weapons",
+    "path": "folders/Objects/items/equipment/weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bigspear",

@@ -14,16 +14,26 @@ if index < 20{//not a guest char
 	base[WIS] = global.party[index][WIS];
 
 	base[ACC] = global.party[index][ACC]; //change to formuler
-
 	current[HP] = global.points[index][HP];
 	current[MP] = global.points[index][MP];
-	current[DEF] = base[@ DEF] + (global.equipped[index][1]>0?global.equipped[index][1].defBonus:0)+ (global.equipped[index][2]>0?global.equipped[index][2].defBonus:0)+ (global.equipped[index][3]>0?global.equipped[index][3].defBonus:0)+ (global.equipped[index][4]>0?global.equipped[index][4].defBonus:0)+ (global.equipped[index][5]>0?global.equipped[index][5].defBonus:0);
-	current[SPD] = base[@ SPD] + (global.equipped[index][1]!=noone?global.equipped[index][1].spdBonus:0);
-	current[STR] = base[@ STR] + (global.equipped[index][0]>0?global.equipped[index][0].ATK:0);//just for safety
-	current[AGI] = base[@ AGI] + (global.equipped[index][1]!=noone?global.equipped[index][1].agiBonus:0);
+
+	/*load equipment*/
+	weapon = global.equipped[index][0]>=0?instance_create_depth(x,y,0,global.equipment[|global.equipped[index][0]][0]):0;
+	offhand = global.equipped[index][1]>=0?instance_create_depth(x,y,0,global.equipment[|global.equipped[index][1]][0]):0;
+	helmet = global.equipped[index][2]>=0?instance_create_depth(x,y,0,global.equipment[|global.equipped[index][2]][0]):0;
+	armor = global.equipped[index][3]>=0?instance_create_depth(x,y,0,global.equipment[|global.equipped[index][3]][0]):0;
+	digs = global.equipped[index][4]>=0?instance_create_depth(x,y,0,global.equipment[|global.equipped[index][4]][0]):0;
+	acc1 = global.equipped[index][5]>=0?instance_create_depth(x,y,0,global.equipment[|global.equipped[index][5]][0]):0;
+	boon = global.equipped[index][6]>=0?instance_create_depth(x,y,0,global.equipment[|global.equipped[index][6]][0]):0;
+	acc2 = global.equipped[index][7]>=0?instance_create_depth(x,y,0,global.equipment[|global.equipped[index][7]][0]):0;
+
+	current[DEF] = base[@ DEF] + (offhand>0?offhand.defBonus:0)+ (helmet>0?helmet.defBonus:0)+ (armor>0?armor.defBonus:0)+ (digs>0?digs.defBonus:0)+ (acc1?acc1.defBonus:0)+ (acc2?acc2.defBonus:0);
+	current[SPD] = base[@ SPD] + (offhand>0?offhand.spdBonus:0)+ (digs>0?digs.spdBonus:0)+ (acc1?acc1.spdBonus:0)+ (acc2?acc2.spdBonus:0);
+	current[STR] = base[@ STR] + (weapon>0?weapon.ATK:0);//just for safety
+	current[AGI] = base[@ AGI] + (armor>0?armor.agiBonus:0);
 	current[CHA] = base[@ CHA];
-	current[DEX] = base[@ DEX];
-	current[WIS] = base[@ WIS] + (global.equipped[index][1]!=noone?global.equipped[index][1].wisBonus:0);
+	current[DEX] = base[@ DEX] + (acc1?acc1.dexBonus:0)+ (acc2?acc2.dexBonus:0);
+	current[WIS] = base[@ WIS] + (offhand>0?offhand.wisBonus:0);
 	current[ACC] = base[@ ACC]; // TIMES weapon accuracy!
 
 

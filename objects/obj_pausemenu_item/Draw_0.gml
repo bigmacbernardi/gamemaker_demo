@@ -46,7 +46,7 @@ draw_set_color(c_white);//for next text
 /* DESCRIPTION */
 
 if ds_list_size(options)>0{
-show_debug_message("Index: "+string(index)+"; options length: "+string(ds_list_size(options)));
+//show_debug_message("Index: "+string(index)+"; options length: "+string(ds_list_size(options)));
 draw_sprite(spr_menu_temp,0,x,y+camera_get_view_height(cam)-40);
 draw_set_color(c_white);
 draw_text_transformed(x+10,y+camera_get_view_height(cam)-30,options[|index].description,.6,.6,0);

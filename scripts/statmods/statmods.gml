@@ -101,6 +101,7 @@ function upgrade(fighter){
 	global.party[fighter][CHA] += results[CHA - 2];
 	global.party[fighter][DEX] += results[DEX - 2];
 	global.party[fighter][WIS] += results[WIS - 2];
+	//at this point, check for perks gained
 	return
 }
 
@@ -140,5 +141,6 @@ function downgrade(fighter){
 	global.party[fighter][DEX] -= results[DEX - 2];
 	global.party[fighter][WIS] -= results[WIS - 2];
 	global.party[fighter][LV]--;
+	//at this point, check for perks lost
 	return
 }

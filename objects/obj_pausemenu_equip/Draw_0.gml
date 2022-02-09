@@ -29,16 +29,23 @@ var equipments = ["Weapon","Offhand","Head","Armor","Lower","Accessory","Boon","
 
   if (iAm!=noone) {
 	draw_text_transformed(x+185,y+130,global.names[iAm],1,1,0);
-	draw_text_transformed(x+208,y+150, string(global.party[iAm][STR]+ (global.equipped[iAm][0]>0?global.equipped[iAm][0].ATK:0)),.38,.38,0);
-	draw_text_transformed(x+208,y+160, string(global.party[iAm][DEF]+ (global.equipped[iAm][1]>0?global.equipped[iAm][1].defBonus:0)+ (global.equipped[iAm][2]>0?global.equipped[iAm][2].defBonus:0)+ (global.equipped[iAm][3]>0?global.equipped[iAm][3].defBonus:0)+ (global.equipped[iAm][4]>0?global.equipped[iAm][4].defBonus:0)+ (global.equipped[iAm][5]>0?global.equipped[iAm][5].defBonus:0)),.38,.38,0);
+	//draw_text_transformed(x+208,y+150, string(global.party[iAm][STR]+ (global.equipped[iAm][0]>0?global.equipped[iAm][0].ATK:0)),.38,.38,0);
+	draw_text_transformed(x+208,y+150, string(global.party[iAm][STR]+ (global.equipped[iAm][0]>=0?allOptions[|global.equipped[iAm][0]].ATK:0)),.38,.38,0);
+	//draw_text_transformed(x+208,y+160, string(global.party[iAm][DEF]+ (global.equipped[iAm][1]>0?global.equipped[iAm][1].defBonus:0)+ (global.equipped[iAm][2]>0?global.equipped[iAm][2].defBonus:0)+ (global.equipped[iAm][3]>0?global.equipped[iAm][3].defBonus:0)+ (global.equipped[iAm][4]>0?global.equipped[iAm][4].defBonus:0)+ (global.equipped[iAm][5]>0?global.equipped[iAm][5].defBonus:0)),.38,.38,0);
+	//show_debug_message("Yo yo "+string(iAm)+" got "+string(global.equipped[iAm][2])+" on his head");
+	draw_text_transformed(x+208,y+160, string(global.party[iAm][DEF] 
+		+ (global.equipped[iAm][1]>=0?allOptions[|global.equipped[iAm][1]].defBonus:0)
+		+ (global.equipped[iAm][2]>=0?allOptions[|global.equipped[iAm][2]].defBonus:0)
+		+ (global.equipped[iAm][3]>=0?allOptions[|global.equipped[iAm][3]].defBonus:0)
+		+ (global.equipped[iAm][4]>=0?allOptions[|global.equipped[iAm][4]].defBonus:0)+ (global.equipped[iAm][5]>=0?allOptions[|global.equipped[iAm][5]].defBonus:0)),.38,.38,0);
 	if index2>=0 and index2<ds_list_size(options){
 		draw_set_color(c_aqua);
 		if options[|index2].category==0{
 			draw_text_transformed(x+220,y+150,"->"+string(global.party[iAm][STR]+ options[|index2].ATK),.38,.38,0);
 		}
 		else if options[|index2].category<6{
-			draw_text_transformed(x+220,y+160,"->"+string(global.party[iAm][DEF]+ (global.equipped[iAm][1]>0?global.equipped[iAm][1].defBonus:0)+ (global.equipped[iAm][2]>0?global.equipped[iAm][2].defBonus:0)+ (global.equipped[iAm][3]>0?global.equipped[iAm][3].defBonus:0)+ (global.equipped[iAm][4]>0?global.equipped[iAm][4].defBonus:0)+ (global.equipped[iAm][5]>0?global.equipped[iAm][5].defBonus:0)
-			- (global.equipped[iAm][options[|index2].category]>0?global.equipped[iAm][options[|index2].category].defBonus:0)+options[|index2].defBonus),.38,.38,0);
+			draw_text_transformed(x+220,y+160,"->"+string(global.party[iAm][DEF]+ (global.equipped[iAm][1]>=0?allOptions[|global.equipped[iAm][1]].defBonus:0)+ (global.equipped[iAm][2]>=0?allOptions[|global.equipped[iAm][2]].defBonus:0)+ (global.equipped[iAm][3]>0?allOptions[|global.equipped[iAm][3]].defBonus:0)+ (global.equipped[iAm][4]>=0?allOptions[|global.equipped[iAm][4]].defBonus:0)+ (global.equipped[iAm][5]>=0?allOptions[|global.equipped[iAm][5]].defBonus:0)
+			- (global.equipped[iAm][options[|index2].category]>0?allOptions[|global.equipped[iAm][options[|index2].category]].defBonus:0)+options[|index2].defBonus),.38,.38,0);
 		}
 	}
 	draw_set_color(c_gray);
@@ -58,7 +65,7 @@ var equipments = ["Weapon","Offhand","Head","Armor","Lower","Accessory","Boon","
 			draw_text_transformed(drawX+18,drawY,"None",.5,.5,0);
 		}
 		else{
-			draw_text_transformed(drawX+18,drawY,global.equipped[iAm][j].title,.5,.5,0);
+			draw_text_transformed(drawX+18,drawY,allOptions[|global.equipped[iAm][j]].title,.5,.5,0);
 		}
 	}	
   }

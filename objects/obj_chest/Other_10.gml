@@ -13,8 +13,8 @@ if (!opened){
 	if (object_get_parent(contents)==equippable) or 
 	(object_get_parent(object_get_parent(contents))==equippable){
 		show_debug_message("It's a me, "+object_get_name(object_get_parent(contents)));
-		var thing = instance_create_depth(0,0,1,contents);
-		ds_list_add(global.equipment,thing);
+		//var thing = instance_create_depth(0,0,1,contents);
+		ds_list_add(global.equipment,[contents,noone]);
 	}
 	else{
 		var found = -1;

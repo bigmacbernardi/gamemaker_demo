@@ -11,7 +11,7 @@ if (!instance_exists(obj_itemmenu)&&!instance_exists(obj_dualmenu)&&!instance_ex
 
 
 	var _hp = current[@ HP]/base[@ HP];
-	if (state != DEATH) //clean up some clutter
+	if beingScanned and (state != DEATH) //clean up some clutter
 	{
 		draw_sprite(ui_mp,0,xx,yy-20);
 		draw_sprite_part(ui_mp,1,0,0,hpBarWidth*_hp,hpBarHeight,xx,yy-20);

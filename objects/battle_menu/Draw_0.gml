@@ -30,7 +30,7 @@ if menuDisplaying{
 	
 	drawX = x + 217;
 	drawY = y ;
-	for (var i = 0 ; i<4;i++){
+	for (var i = 0 ; i<min(4,array_length(names));i++){
 		draw_set_color(i == index?c_white:c_gray);
 		draw_text_transformed(drawX,drawY,names[i],.65,.65,0);
 		drawY+=13

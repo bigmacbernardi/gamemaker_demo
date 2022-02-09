@@ -44,15 +44,15 @@ else if go
 						}
 					}*/
 					if global.equipped[global.currentParty[index]][subindex]!= noone //if they already have something
-						 global.equipped[global.currentParty[index]][subindex].currentUser=noone;
+						 allOptions[|global.equipped[global.currentParty[index]][subindex]].currentUser=noone;
 					if (currentOwner>=0){
 						global.equipped[currentOwner][subindex]=noone;
 						/*var temp = global.currentParty[index];
 						global.currentParty[index] = global.currentParty[currentPos];
 						global.currentParty[currentPos] = temp;*/
 					}
-					global.equipped[global.currentParty[index]][subindex] = equipToSlot;
-					global.equipped[global.currentParty[index]][subindex].currentUser = global.currentParty[index];
+					global.equipped[global.currentParty[index]][subindex] = equipToSlot.index;
+					equipToSlot.currentUser = global.currentParty[index];
 					
 				}
 				else audio_play_sound(Owl2,100,0);

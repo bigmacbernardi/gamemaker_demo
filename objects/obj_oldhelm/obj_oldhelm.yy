@@ -3,7 +3,7 @@
   "solid": false,
   "visible": false,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": {
     "name": "obj_headwear",
     "path": "objects/obj_headwear/obj_headwear.yy",
@@ -29,8 +29,8 @@
     {"propertyId":{"name":"description","path":"objects/equippable/equippable.yy",},"objectId":{"name":"equippable","path":"objects/equippable/equippable.yy",},"value":"A probably ancient head protector that closely resembles \\nthose worn by the stone guardians of the old city.","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "equipment",
-    "path": "folders/Objects/items/equipment.yy",
+    "name": "other",
+    "path": "folders/Objects/items/equipment/other.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_oldhelm",

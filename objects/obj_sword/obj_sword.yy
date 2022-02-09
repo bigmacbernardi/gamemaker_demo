@@ -28,8 +28,8 @@
     {"propertyId":{"name":"ATK","path":"objects/obj_weapon/obj_weapon.yy",},"objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "obtainable_weapons",
-    "path": "folders/Objects/items/equipment/obtainable_weapons.yy",
+    "name": "weapons",
+    "path": "folders/Objects/items/equipment/weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_sword",

@@ -226,8 +226,9 @@ switch(combatPhase){
 						(object_get_parent(object_get_parent(drop))==equippable){
 							//show_debug_message("It's a weapon, "+object_get_name(object_get_parent(unit.drops[i][0])));
 							var thing = instance_create_depth(0,0,1,drop);
-							ds_list_add(global.equipment,thing);
 							ds_list_add(futureMessages,"Found "+thing.title+"!");
+							instance_destroy(thing);
+							ds_list_add(global.equipment,[drop,noone]);
 						}
 						else{
 							var found = -1;

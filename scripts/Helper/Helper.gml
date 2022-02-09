@@ -172,15 +172,15 @@ function unitAttack(){
 
 
 function equip(char,equI){//character, equipment index
-	//show_debug_message(global.equipment[|equI]);
-	//show_debug_message("round equi: "+global.names[char]+" gets equipment #"+string(round(equI)));
+	//doesn't unequip, not sure if needed with equip menu functionality
 	var entry = ds_list_find_value(global.equipment,equI);
-	//show_debug_message("in slot "+string(entry.category));
-	//if (is_array(equI))entry = global.equipment[|equI[0]];
-	//else entry = global.equipment[|equI];
-	global.equipped[char][entry.category] = entry;//equipping item to character data
-	entry.currentUser=char;//equipping character to equipment (used to track "taken" weapons)
-
+	var piece = instance_create_depth(0,0,0,entry[0]);
+	global.equipped[char][piece.category] = equI;//equipping item to character data
+	instance_destroy(piece);
+	//global.equipped[char][entry.category] = entry;//old method
+	
+	entry[1]=char;//equipping character to equipment (used to track "taken" weapons)
+	//entry.currentUser=char; //old method
 }
 
 function revive_targets(amt=1){

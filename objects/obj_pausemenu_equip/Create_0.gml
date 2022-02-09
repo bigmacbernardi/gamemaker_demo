@@ -17,7 +17,14 @@ scrollLevel2 = 0;
 //}
 
 options = ds_list_create();
-ds_list_copy(options,global.equipment);
+allOptions = ds_list_create();
+for (var i = 0; i < ds_list_size(global.equipment);i++){
+	var piece = instance_create_depth(x,y,depth,global.equipment[|i][0]);
+	piece.currentUser = global.equipment[|i][1];
+	piece.index = i;
+	ds_list_add(allOptions,piece);
+}
+ds_list_copy(options,allOptions);
 subY = y+sprite_height-50/*half spr_menu_temp.height*/;
 front_sprites = [spr_aoi,spr_yusuf,spr_old_man,spr_old_man44];
 mode = 0;
@@ -35,8 +42,8 @@ function filt(char){
 	options = ds_list_create();
 	//var ii = 0;
 	var ray = filters[char];
-	for (var i = 0; i < ds_list_size(global.equipment);i++){
-		var piece = global.equipment[|i];
+	for (var i = 0; i < ds_list_size(allOptions);i++){
+		var piece = allOptions[|i];
 		if piece.category==0{
 			var passedFilter=false;
 			for (var j = 0; j<array_length(ray);j++){
@@ -56,8 +63,8 @@ function filter(char,cat){
 	options = ds_list_create();
 	//var ii = 0;
 	var ray = filters[char];
-	for (var i = 0; i < ds_list_size(global.equipment);i++){
-		var piece = global.equipment[|i];
+	for (var i = 0; i < ds_list_size(allOptions);i++){
+		var piece = allOptions[|i];
 		if piece.category==0 and cat==0{
 			var passedFilter=false;
 			for (var j = 0; j<array_length(ray);j++){

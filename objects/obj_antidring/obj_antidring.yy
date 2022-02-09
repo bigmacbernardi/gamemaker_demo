@@ -3,7 +3,7 @@
   "solid": false,
   "visible": false,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": {
     "name": "obj_accessory",
     "path": "objects/obj_accessory/obj_accessory.yy",
@@ -28,8 +28,8 @@
     {"propertyId":{"name":"accessoryNo","path":"objects/obj_accessory/obj_accessory.yy",},"objectId":{"name":"obj_accessory","path":"objects/obj_accessory/obj_accessory.yy",},"value":"10","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "equipment",
-    "path": "folders/Objects/items/equipment.yy",
+    "name": "other",
+    "path": "folders/Objects/items/equipment/other.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_antidring",
