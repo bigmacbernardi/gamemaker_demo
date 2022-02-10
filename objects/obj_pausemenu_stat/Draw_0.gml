@@ -44,10 +44,13 @@ draw_set_color(c_black);
 draw_text_transformed(drawX,drawY-8,"Passives",.75,.75,0);
 drawY+=10;
 drawX-=10;
+var iAm = options[|index];
 var passiveNames =
 	["Scan","Auto-Reflect","Revenate","Son o' Soil","Undead","Berserk","Rage","Stinky","Auto-Float","Counter","Hellborne","Mysterious","Enlightened","Drunk","Zonked","Bullet","???","???","???","???"];
-for (var i = 0;i<array_length(passiveNames);i++){
-	draw_set_color(i==0?c_white:c_black);
+var passiveColors = 
+	[c_black,c_white,c_yellow,c_green,c_blue,c_orange,c_white,c_yellow,c_green,c_blue];
+for (var i = 0;i<min(array_length(passiveNames),array_length(global.passives[iAm]));i++){
+	draw_set_color(passiveColors[global.passives[iAm][i]]);
 	draw_text_transformed(drawX-(i%5==1?6:0),drawY,passiveNames[i],.34,.34,0);
 	if i%5==4{
 		drawY+=8;

@@ -48,6 +48,13 @@ current[SPD] = 5;
 base[ACC] = 0.5;
 current[ACC] = base[@ ACC];
 hasGoneOnce = false;
+beingScanned=false;
+for (var i=0;i<ds_list_size(global.allies);i++){
+	if global.passives[global.allies[|i].index][0]>0{
+		beingScanned = true;
+		break;
+	}
+}
 //functions back
 function damageUnit(amount){//physical attacks
 	show_debug_message("Yo it's the soldier override!  HP was "+string(current[@ HP]));

@@ -55,13 +55,13 @@ base[ACC] = 0.7;
 current[ACC] = 0.7;
 hasGoneOnce = false;
 //functions back
-function damageUnit(amount){//physical attacks
+/*function damageUnit(amount){//physical attacks
 	show_debug_message("Yo it's the pink override!  HP was "+string(current[@ HP]));
 	var damage = max(0,ceil(amount * 50/(50+ current[DEF])));//will update eventually
 	show_debug_message("Damage is "+string(damage)+" of "+string(amount));
 	current[@ HP] -= max(0,damage);
 	show_debug_message("HP is now "+string(current[@ HP]));
-}
+}*/
 function healUnit(amount){
 	current[@ HP] = min(base[HP],current[HP]+amount);
 }

@@ -66,6 +66,7 @@ floatTurns = 0;
 regenAmt = 0;
 
 function damageUnit(amount){
+	show_debug_message(title+" damaged "+string(amount));
 	var damage = ceil(amount * (50/(50+ current[@ DEF])));
 	//audio_play_sound(damageSound,100,false); //done by Helper->unitAttack instead.  timing works a lil better
 	//if display{

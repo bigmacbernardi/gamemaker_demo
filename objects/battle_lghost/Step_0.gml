@@ -1,10 +1,4 @@
-// state machine that determines the unit's animation
-if variable_instance_exists(id,showMe)&&showMe>0{
-	if --showMe<=0{
-		incomingHealage=0;
-		nastyDamage=0;
-	}
-}
+/// @description Overriding JUST to stop the path
 switch(state){
 	case IDLE:
 		if (layer_sequence_get_headpos(unitSequence) > idleEnd){
@@ -70,7 +64,7 @@ switch(state){
 	case HIT:
 		//show_debug_message(title + string(id) + " is hit!!!");
 		if (layer_sequence_get_headpos(unitSequence) > hitEnd){
-			show_debug_message("here comes the "+string(incomingDamage)+" damage!!!");
+			show_debug_message("here comes the damage!!!");
 			damageUnit(incomingDamage);
 			if (current[@ HP] > 0){
 				layer_sequence_headpos(unitSequence, idleStart);
@@ -91,6 +85,7 @@ switch(state){
 					ds_list_delete(global.enemies,ds_list_find_index(global.enemies,id));
 				}
 				turnFinished = true;
+				path_end();
 				state = DEATH;
 					
 				with battle_manager{

@@ -30,10 +30,10 @@ current[DEF] = 1;
 current[SPD] = 1;//base[SPD]
 current[ACC] = 0.5;
 drops = [[obj_potionsmall,50]];
-beingScanned = false;//shows HP bar
-for (var i = 0; i<ds_list_size(global.allies); i++){
-	//if global.something[global.allies[|i].index][scanNumber] {
-	beingScanned = true;
-	break;
-	//}
+beingScanned=false;
+for (var i=0;i<ds_list_size(global.allies);i++){
+	if global.passives[global.allies[|i].index][0]>0{
+		beingScanned = true;
+		break;
+	}
 }
