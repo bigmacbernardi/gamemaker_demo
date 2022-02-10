@@ -46,7 +46,7 @@ drawY+=10;
 drawX-=10;
 var iAm = options[|index];
 var passiveNames =
-	["Scan","Auto-Reflect","Revenate","Son o' Soil","Undead","Berserk","Rage","Stinky","Auto-Float","Counter","Hellborne","Mysterious","Enlightened","Drunk","Zonked","Bullet","???","???","???","???"];
+	["Scan","Auto-Reflect","Revenate","Son o' Soil","Undead","Berserk","Rage","Stinky","Auto-Float","Counter","Hellborne","Mysterious","Enlightened","Drunk","Zonked","Bullet","2xAttack","???","???","???"];
 var passiveColors = 
 	[c_black,c_white,c_yellow,c_green,c_blue,c_orange,c_white,c_yellow,c_green,c_blue];
 for (var i = 0;i<min(array_length(passiveNames),array_length(global.passives[iAm]));i++){

@@ -15,8 +15,13 @@ function checkForPerks(char,stat,oldval,newval){
 					  if oldval<30 && newval>=30{	  
 						//gain Aoi STR perk 2
 					  }
-					  if oldval<65 && newval>=65{	  
-						//gain Aoi STR perk 3
+					  if oldval<60 && newval>=60{
+						  global.passives[AOI][16]+=6;	//gain Aoi STR perk 3if instance_exists(battle_manager){
+						  
+						  if instance_exists(battle_manager) with battle_manager{
+							var strong = global.names[AOI] + " gained Double Attack!";
+							ds_list_add(futureMessages,strong);
+						  }
 					  }
 					  if oldval<80 && newval>=80{	  
 						//gain Aoi STR perk 3
@@ -150,7 +155,8 @@ function checkForPerkLoss(char,stat,oldval,newval){
 					  if newval<30 && oldval>=30{	  
 						//lose Aoi STR perk 2
 					  }
-					  if newval<65 && oldval>=65{	  
+					  if newval<60 && oldval>=60{
+						  global.passives[AOI][16]-=6;
 						//lose Aoi STR perk 3
 					  }
 					  if newval<80 && oldval>=80{	  
@@ -264,9 +270,9 @@ function slot_perks(charIndex){
 		[STR,30,"",""],
 		[AGI,35,"",""],
 		[WIS,40,"",""],
-		[DEF,60,"",""],
-		[STR,65,"",""],
-		[CHA,55,"",""],
+		[DEF,55,"",""],
+		[STR,60,"Double Attack","When single-wielding, all physical attacks\n are doubled."],
+		[CHA,51,"",""],
 		[WIS,60,"",""],
 		[DEF,80,"",""],
 		[STR,80,"",""],
@@ -274,21 +280,21 @@ function slot_perks(charIndex){
 		[WIS,80,"",""]
 	],[
 		[DEF,10,"",""],
-		[AGI,7,"Skill","Unlock 'Cure Poison' skill"],
+		[AGI,7,"New skill: Cure Poison","Unlock 'Cure Poison' skill"],
 		[CHA,15,"",""],
 		[DEX,10,"",""],
 		[SPD,25,"",""],
 		[STR,30,"",""],
 		[CHA,35,"",""],
 		[WIS,40,"",""],
-		[DEF,60,"",""],
+		[DEF,60,"Resiliance","Take less damage from Poison, Ice,/n and Earth attacks."],
 		[STR,65,"",""],
 		[CHA,55,"",""],
 		[WIS,60,"",""],
 		[DEF,80,"",""],
 		[SPD,80,"",""],
 		[CHA,80,"",""],
-		[DEX,80,"",""]
+		[DEX,80,"Sleight-of-Hand","Chance to steal ultra-rare items from/n certain enemies."]
 	]];
 	return arr[charIndex];
 }

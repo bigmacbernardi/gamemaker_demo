@@ -115,7 +115,7 @@
     {"id":{"name":"sYusuf","path":"sequences/sYusuf/sYusuf.yy",},"order":23,},
     {"id":{"name":"obj_kid","path":"objects/obj_kid/obj_kid.yy",},"order":37,},
     {"id":{"name":"enemy_dodge","path":"paths/enemy_dodge/enemy_dodge.yy",},"order":7,},
-    {"id":{"name":"spr_perk_off140","path":"sprites/spr_perk_off140/spr_perk_off140.yy",},"order":30,},
+    {"id":{"name":"spr_perk_got","path":"sprites/spr_perk_got/spr_perk_got.yy",},"order":30,},
     {"id":{"name":"obj_chest","path":"objects/obj_chest/obj_chest.yy",},"order":13,},
     {"id":{"name":"obj_potion","path":"objects/obj_potion/obj_potion.yy",},"order":9,},
     {"id":{"name":"spr_galleryattendant","path":"sprites/spr_galleryattendant/spr_galleryattendant.yy",},"order":21,},
