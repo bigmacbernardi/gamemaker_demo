@@ -7,15 +7,15 @@ if (distance_to_object(obj_player)<visibility_range)
 	image_alpha=1-max(0,(distance_to_object(obj_player)-40)/(visibility_range-40));
 
 if graceRemaining<=0{
-if ascending
-{
-	if ++level == 199 ascending = false;
+	if ascending
+	{
+		if ++level == 199 ascending = false;
 	
-}
-else {
-	if --level == 0 ascending = true;
+	}
+	else {
+		if --level == 0 ascending = true;
 		
-}
+	}
 
 	if (distance_to_object(obj_player)<activation_range) activated = true;
 if activated &&!obj_player.paused{
@@ -35,7 +35,7 @@ if activated &&!obj_player.paused{
 	if ((obj_player.y-obj_player.sprite_height) > y) y++;
 	else if ((obj_player.y-obj_player.sprite_height) < y) y--;
 }
-else{// patrolling
+else if !obj_player.paused{// patrolling
 	if forward{
 		if horizontalPatrol{
 			x+=0.5;
