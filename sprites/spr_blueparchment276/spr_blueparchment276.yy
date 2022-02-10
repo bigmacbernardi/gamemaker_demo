@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 799,
+  "bbox_right": 203,
   "bbox_top": 0,
-  "bbox_bottom": 449,
+  "bbox_bottom": 127,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 800,
-  "height": 450,
+  "width": 204,
+  "height": 128,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1b6b0380-f664-47d3-9f24-38cbc7c0e712","path":"sprites/spr_blueparchment/spr_blueparchment.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1b6b0380-f664-47d3-9f24-38cbc7c0e712","path":"sprites/spr_blueparchment/spr_blueparchment.yy",},"LayerId":{"name":"f3f4640d-e39a-4e64-9e74-3144d87bc877","path":"sprites/spr_blueparchment/spr_blueparchment.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_blueparchment","path":"sprites/spr_blueparchment/spr_blueparchment.yy",},"resourceVersion":"1.0","name":"1b6b0380-f664-47d3-9f24-38cbc7c0e712","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1b6b0380-f664-47d3-9f24-38cbc7c0e712","path":"sprites/spr_blueparchment276/spr_blueparchment276.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1b6b0380-f664-47d3-9f24-38cbc7c0e712","path":"sprites/spr_blueparchment276/spr_blueparchment276.yy",},"LayerId":{"name":"f3f4640d-e39a-4e64-9e74-3144d87bc877","path":"sprites/spr_blueparchment276/spr_blueparchment276.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_blueparchment276","path":"sprites/spr_blueparchment276/spr_blueparchment276.yy",},"resourceVersion":"1.0","name":"1b6b0380-f664-47d3-9f24-38cbc7c0e712","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_blueparchment","path":"sprites/spr_blueparchment/spr_blueparchment.yy",},
+    "spriteId": {"name":"spr_blueparchment276","path":"sprites/spr_blueparchment276/spr_blueparchment276.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"36777c80-487e-4150-a633-382965486f21","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1b6b0380-f664-47d3-9f24-38cbc7c0e712","path":"sprites/spr_blueparchment/spr_blueparchment.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ff08b7e9-cc68-4831-9263-61286d322a38","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1b6b0380-f664-47d3-9f24-38cbc7c0e712","path":"sprites/spr_blueparchment276/spr_blueparchment276.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,7 +58,7 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_blueparchment","path":"sprites/spr_blueparchment/spr_blueparchment.yy",},
+    "parent": {"name":"spr_blueparchment276","path":"sprites/spr_blueparchment276/spr_blueparchment276.yy",},
     "resourceVersion": "1.3",
     "name": "spr_blueparchment",
     "tags": [],
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/GUI and object filler.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_blueparchment",
+  "name": "spr_blueparchment276",
   "tags": [],
   "resourceType": "GMSprite",
 }

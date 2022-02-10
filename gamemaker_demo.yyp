@@ -356,6 +356,7 @@
     {"id":{"name":"spr_hold_off","path":"sprites/spr_hold_off/spr_hold_off.yy",},"order":26,},
     {"id":{"name":"yusuf0","path":"sprites/yusuf0/yusuf0.yy",},"order":0,},
     {"id":{"name":"yusuf_staff0_idle","path":"sprites/yusuf_staff0_idle/yusuf_staff0_idle.yy",},"order":0,},
+    {"id":{"name":"spr_blueparchment276","path":"sprites/spr_blueparchment276/spr_blueparchment276.yy",},"order":32,},
     {"id":{"name":"T1Ancyra1","path":"rooms/T1Ancyra1/T1Ancyra1.yy",},"order":29,},
     {"id":{"name":"spr_castletiles","path":"sprites/spr_castletiles/spr_castletiles.yy",},"order":3,},
     {"id":{"name":"obj_spear","path":"objects/obj_spear/obj_spear.yy",},"order":5,},

@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();//should be PARCHMENT background
+//draw_self();//should be PARCHMENT background
+
+draw_sprite_tiled(sprite_index,image_index, x+(drawPos/4), y-(drawPos/2));
+if (drawPos++)>=sprite_width*sprite_height*2 drawPos=0;
 draw_set_font(Roses); //should be DIFFERENT font
 var drawX = x+10;
 var drawY = y+12;
