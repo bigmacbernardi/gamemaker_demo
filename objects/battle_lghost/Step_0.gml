@@ -1,6 +1,9 @@
 /// @description Overriding JUST to stop the path
 switch(state){
 	case IDLE:
+		if path_endaction==path_action_stop and path_position==1{
+			path_start(ghost_float,5,path_action_reverse,false);
+		}
 		if (layer_sequence_get_headpos(unitSequence) > idleEnd){
 			layer_sequence_headpos(unitSequence, idleStart);
 		}
@@ -85,7 +88,8 @@ switch(state){
 					ds_list_delete(global.enemies,ds_list_find_index(global.enemies,id));
 				}
 				turnFinished = true;
-				path_end();
+				path_speed=6;
+				//path_end();//moved to death
 				state = DEATH;
 					
 				with battle_manager{
@@ -122,6 +126,9 @@ switch(state){
 	
 	case DEATH:
 		//var myId = id;
+		if path_position==0 and path_endaction==path_action_reverse{
+			path_end();	
+		}
 		if (layer_sequence_get_headpos(unitSequence) > deathEnd){
 			layer_sequence_headpos(unitSequence,deathMid);
 			/*with battle_manager{//just making sure?
