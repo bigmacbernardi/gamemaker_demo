@@ -58,7 +58,7 @@ for (var i = 0;i<min(array_length(passiveNames),array_length(global.passives[iAm
 	if i%5==4{
 		drawY+=8;
 		drawX = halfway+10;
-	}else drawX+=(halfway/5);
+	}else drawX+=((halfway-x)/5);
 }
 //immunities
 drawX = halfway+20;
@@ -73,7 +73,7 @@ for (var i = 0;i<array_length(elementNames);i++){
 	if i%5==4{
 		drawY+=8;
 		drawX = halfway+10;
-	}else drawX+=(halfway/5);
+	}else drawX+=((halfway-x)/5);
 }
 //Negative status qlippoths
 draw_set_color(c_white);
