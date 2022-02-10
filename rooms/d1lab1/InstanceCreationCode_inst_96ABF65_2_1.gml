@@ -1,3 +1,3 @@
-target_x = 1233;
-target_y = 880;
-target_rm = d1library1;
+target_x = 900;
+target_y = 630;
+target_rm = d1hall1redux;
