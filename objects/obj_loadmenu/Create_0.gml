@@ -10,7 +10,8 @@ for (var i =0;i<99;i++){
 	slot.index = i;
 	ds_list_add(options,slot);
 }
-/*initializing a buncha crap so i don't have to count*/
+/*** reinitializing everything so i don't have to count 
+	 or go back over future party members ***/
 if !variable_global_exists("party"){
 	global.party[AOI][HP] = 10;
 	global.party[AOI][MP] = 10;
@@ -83,6 +84,29 @@ if !variable_global_exists("inventory")
 	global.inventory=ds_list_create();
 if !variable_global_exists("equipment")
 	global.equipment=ds_list_create();
+if !variable_global_exists("passives")
+	global.passives = [
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	];
 function loadGame(fname = "save0.ini"){
 	ini_open(fname);
 	for (var i = 0; i<array_length(global.party);i++){
@@ -114,6 +138,12 @@ function loadGame(fname = "save0.ini"){
 			//show_debug_message("Bit "+string(j)+":" +string(skillNum%2))
 			skillNum=floor(skillNum/2);
 		}
+		skillNum = ini_read_real("party","p"+string(i)+"passives",0);
+		for (var j = 0;j<array_length(global.passives[i]);j++){
+			global.passives[i][j]=skillNum%10;
+			skillNum=floor(skillNum/10);
+		}
+		
 		
 	}
 	var emptiness_string = ds_list_write(global.availableParty);

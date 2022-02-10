@@ -61,6 +61,14 @@ function saveGame(fname = "save0.ini"){
 		}
 		show_debug_message("Skillnum: "+string(skillNum));
 		ini_write_real("party","p"+string(i)+"skills",skillNum);
+		skillNum = 0;
+		mag = 1;
+		for (var j = 0;j<array_length(global.passives[i]);j++){
+			skillNum+=global.passives[i][j]*mag;
+			mag*=10;
+		}
+		show_debug_message("Passnum: "+string(skillNum));
+		ini_write_real("party","p"+string(i)+"passives",skillNum);
 		ini_write_real("party","p"+string(i)+"totalSkills",array_length(global.skills[i]));
 	}
 	ini_write_string("global","availableParty",ds_list_write(global.availableParty));
