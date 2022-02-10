@@ -46,9 +46,9 @@ for (var i = 0;i<16;i++){
 if picked !=noone{//draw afterward to draw on top of sprites
 	with picked{
 		draw_set_color(sprite_index==spr_perk_off?c_dkgray:c_navy);
-		draw_rectangle(x+10,y-5,x+250,y+28,false);
+		draw_rectangle(x+10,y-5,x+232,y+28,false);
 		draw_set_color(c_white);
-		draw_rectangle(x+10,y-5,x+250,y+28,true);			
+		draw_rectangle(x+10,y-5,x+232,y+28,true);			
 		draw_text_transformed(x+26,y,title,.5,.5,0);		
 		draw_text_transformed(x+22,y+11,description,.4,.4,0);
 		if sprite_index==spr_perk_got{
