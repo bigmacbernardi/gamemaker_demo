@@ -287,14 +287,14 @@ function slot_perks(charIndex){
 		[STR,30,"",""],
 		[CHA,35,"",""],
 		[WIS,40,"",""],
-		[DEF,60,"Resiliance","Take less damage from Poison, Ice,/n and Earth attacks."],
+		[DEF,60,"Resiliance","Take less damage from Poison, Ice,\n and Earth attacks."],
 		[STR,65,"",""],
 		[CHA,55,"",""],
 		[WIS,60,"",""],
 		[DEF,80,"",""],
 		[SPD,80,"",""],
 		[CHA,80,"",""],
-		[DEX,80,"Sleight-of-Hand","Chance to steal ultra-rare items from/n certain enemies."]
+		[DEX,80,"Sleight-of-Hand","Chance to steal ultra-rare items from\n certain enemies."]
 	]];
 	return arr[charIndex];
 }
