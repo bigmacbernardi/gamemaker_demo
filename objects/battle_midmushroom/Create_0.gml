@@ -11,8 +11,6 @@ xp_value = 60;
 cash_value = 60;
 layer_sequence_destroy(unitSequence);
 unitSequence = layer_sequence_create("Sequences",x,y,sMushroomSmall);
-layer_sequence_xscale(unitSequence,.5);//smallness
-layer_sequence_yscale(unitSequence,.5);
 
 //start and end frames for each state
 idleStart = 0;

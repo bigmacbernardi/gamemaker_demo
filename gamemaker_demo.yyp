@@ -209,6 +209,7 @@
     {"id":{"name":"spr_knight_itm","path":"sprites/spr_knight_itm/spr_knight_itm.yy",},"order":20,},
     {"id":{"name":"spr_aoi_itm","path":"sprites/spr_aoi_itm/spr_aoi_itm.yy",},"order":13,},
     {"id":{"name":"sGhost","path":"sequences/sGhost/sGhost.yy",},"order":8,},
+    {"id":{"name":"battle_midmushroom","path":"objects/battle_midmushroom/battle_midmushroom.yy",},"order":21,},
     {"id":{"name":"spr_aoi_back1","path":"sprites/spr_aoi_back1/spr_aoi_back1.yy",},"order":5,},
     {"id":{"name":"spr_aoi_intoDef","path":"sprites/spr_aoi_intoDef/spr_aoi_intoDef.yy",},"order":12,},
     {"id":{"name":"Sprite146","path":"sprites/Sprite146/Sprite146.yy",},"order":11,},
