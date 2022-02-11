@@ -74,8 +74,9 @@ if !variable_global_exists("names"){
 }
 if !variable_global_exists("statuses")
 	global.statuses=[[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0]];
-if !variable_global_exists("equipped")
-	global.equipped=[[]];
+//if !variable_global_exists("equipped")
+//	global.equipped=[[]];
+
 if !variable_global_exists("points")
 	global.points=[[]];
 if !variable_global_exists("availableParty")
@@ -108,6 +109,8 @@ if !variable_global_exists("passives")
 		[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 	];
 function loadGame(fname = "save0.ini"){
+	global.equipped=[ [noone,noone,noone,noone,noone,noone,noone,noone], [noone,noone,noone,noone,noone,noone,noone,noone]];
+	//^ for debugging weird equipment bug
 	ini_open(fname);
 	for (var i = 0; i<array_length(global.party);i++){
 		global.names[i] = ini_read_string("party","p"+string(i)+"-name",global.names[i]);
@@ -117,7 +120,7 @@ function loadGame(fname = "save0.ini"){
 		//show_debug_message("Read " + string(global.points[i][MP]) +" MP from " + "p"+string(i)+"-MP");
 		for (var j = 0; j<12;j++)
 			global.party[i][j] = ini_read_real("party","p"+string(i)+"-"+string(j),0);
-		for (var j = 0; j<8;j++)
+		for (var j = 0; j<array_length(global.equipped[i]);j++)
 			global.equipped[i][j] = ini_read_real("party","e"+string(i)+"-"+string(j),noone);
 		for (var j = 0; j<8;j++)
 			global.statuses[i][j] = ini_read_real("party","s"+string(i)+"-"+string(j),0);

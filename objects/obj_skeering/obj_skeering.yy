@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_skhole",
-    "path": "sprites/spr_skhole/spr_skhole.yy",
+    "name": "spr_skee_ring",
+    "path": "sprites/spr_skee_ring/spr_skee_ring.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
     "path": "folders/Objects/minigame assets/skeeball.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_skeehole",
+  "name": "obj_skeering",
   "tags": [],
   "resourceType": "GMObject",
 }
