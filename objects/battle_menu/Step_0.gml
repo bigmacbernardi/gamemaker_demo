@@ -4,7 +4,7 @@ if global.selectedUnit<0 or !global.selectedUnit.isPlayer{
 	menuActive=false;
 }
 if selected menuActive = true;
-if menuDisplaying and menuActive{
+if menuDisplaying and menuActive and battle_manager.allowInput{
 	var _up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 	var _down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"));
 	var _left = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"));

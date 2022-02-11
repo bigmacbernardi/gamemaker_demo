@@ -110,7 +110,7 @@ if !variable_global_exists("passives")
 	];
 function loadGame(fname = "save0.ini"){
 	global.equipped=[ [noone,noone,noone,noone,noone,noone,noone,noone], [noone,noone,noone,noone,noone,noone,noone,noone]];
-	//^ for debugging weird equipment bug
+	//^ for debugging weird equipment bug.  Don't think this solved it, but I haven't experienced it since making the change, so...
 	ini_open(fname);
 	for (var i = 0; i<array_length(global.party);i++){
 		global.names[i] = ini_read_string("party","p"+string(i)+"-name",global.names[i]);
