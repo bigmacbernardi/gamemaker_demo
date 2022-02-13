@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "soldier_idle",
-    "path": "sprites/soldier_idle/soldier_idle.yy",
+    "name": "spr_myceliuman",
+    "path": "sprites/spr_myceliuman/spr_myceliuman.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,10 +27,11 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"title","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"[SHAPED] Fuckin Funga Man","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"title","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"[SHAPED] Myceliuhmed","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"swingSound","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"longdamage","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"damageSound","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"gruntoof","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],

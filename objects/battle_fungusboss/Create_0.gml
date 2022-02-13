@@ -3,7 +3,7 @@
 //instead of event_inherited, just doing the important battle_unit things
 event_inherited();
 layer_sequence_destroy(unitSequence);
-unitSequence = layer_sequence_create("Sequences",x,y,sFootsoldier);
+unitSequence = layer_sequence_create("Sequences",x,y,myceliumBoss);
 
 depth = -y;
 randomize();
