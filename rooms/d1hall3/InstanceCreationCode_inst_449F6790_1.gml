@@ -1,3 +1,3 @@
-target_rm = d1hall2;
-target_x=600;
-target_y=220;
+target_rm = d1columb1;
+target_x=413;
+target_y=1307;
