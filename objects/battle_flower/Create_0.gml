@@ -39,8 +39,8 @@ hitEnd = 73;
 missStart = 73;
 missEnd = 89;
 deathStart = 90;
-deathMid = 91;
-deathEnd = 92;
+deathMid = 95;
+deathEnd = 97;
 
 base[HP] = 30;
 current[HP] = base[HP];

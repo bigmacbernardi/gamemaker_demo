@@ -240,6 +240,7 @@
     {"id":{"name":"spr_select_right","path":"sprites/spr_select_right/spr_select_right.yy",},"order":19,},
     {"id":{"name":"spr_girl_face0","path":"sprites/spr_girl_face0/spr_girl_face0.yy",},"order":0,},
     {"id":{"name":"obj_partnerpuppet","path":"objects/obj_partnerpuppet/obj_partnerpuppet.yy",},"order":28,},
+    {"id":{"name":"mobile_hall","path":"rooms/mobile_hall/mobile_hall.yy",},"order":36,},
     {"id":{"name":"yusuf4","path":"sprites/yusuf4/yusuf4.yy",},"order":4,},
     {"id":{"name":"obj_shaderlight_partial","path":"objects/obj_shaderlight_partial/obj_shaderlight_partial.yy",},"order":5,},
     {"id":{"name":"dual_or_wait","path":"scripts/dual_or_wait/dual_or_wait.yy",},"order":23,},
@@ -662,6 +663,7 @@
     {"roomId":{"name":"T1YusufHouse","path":"rooms/T1YusufHouse/T1YusufHouse.yy",},},
     {"roomId":{"name":"d1admin","path":"rooms/d1admin/d1admin.yy",},},
     {"roomId":{"name":"d1save2","path":"rooms/d1save2/d1save2.yy",},},
+    {"roomId":{"name":"mobile_hall","path":"rooms/mobile_hall/mobile_hall.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Extensions.yy","order":0,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
