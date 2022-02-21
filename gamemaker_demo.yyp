@@ -557,6 +557,7 @@
     {"id":{"name":"spr_stalactite","path":"sprites/spr_stalactite/spr_stalactite.yy",},"order":11,},
     {"id":{"name":"spr_stair_eback","path":"sprites/spr_stair_eback/spr_stair_eback.yy",},"order":17,},
     {"id":{"name":"spr_girl_face2","path":"sprites/spr_girl_face2/spr_girl_face2.yy",},"order":5,},
+    {"id":{"name":"d1columb1","path":"rooms/d1columb1/d1columb1.yy",},"order":25,},
     {"id":{"name":"til_platformtiles","path":"sprites/til_platformtiles/til_platformtiles.yy",},"order":4,},
     {"id":{"name":"rigid_selector","path":"objects/rigid_selector/rigid_selector.yy",},"order":11,},
     {"id":{"name":"til_factory","path":"tilesets/til_factory/til_factory.yy",},"order":26,},
@@ -675,6 +676,7 @@
     {"roomId":{"name":"d1artifacts","path":"rooms/d1artifacts/d1artifacts.yy",},},
     {"roomId":{"name":"d1columb","path":"rooms/d1columb/d1columb.yy",},},
     {"roomId":{"name":"d1extravault1","path":"rooms/d1extravault1/d1extravault1.yy",},},
+    {"roomId":{"name":"d1columb1","path":"rooms/d1columb1/d1columb1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Extensions.yy","order":0,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
