@@ -76,6 +76,7 @@
     {"id":{"name":"MeanyHit2","path":"sounds/MeanyHit2/MeanyHit2.yy",},"order":18,},
     {"id":{"name":"obj_savepreview","path":"objects/obj_savepreview/obj_savepreview.yy",},"order":2,},
     {"id":{"name":"gamestarter","path":"objects/gamestarter/gamestarter.yy",},"order":30,},
+    {"id":{"name":"d1music2","path":"sounds/d1music2/d1music2.yy",},"order":11,},
     {"id":{"name":"spr_ghost_miss","path":"sprites/spr_ghost_miss/spr_ghost_miss.yy",},"order":5,},
     {"id":{"name":"obj_parallax_bg","path":"objects/obj_parallax_bg/obj_parallax_bg.yy",},"order":3,},
     {"id":{"name":"guardianOverworldBig","path":"sprites/guardianOverworldBig/guardianOverworldBig.yy",},"order":1,},
