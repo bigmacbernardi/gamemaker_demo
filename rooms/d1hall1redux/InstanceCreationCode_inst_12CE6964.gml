@@ -1,3 +1,3 @@
-target_x=90;
-target_y=95;
+target_x=53;
+target_y=356;
 target_rm=d1lab1;
