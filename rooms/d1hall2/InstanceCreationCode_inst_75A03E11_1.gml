@@ -1,3 +1,3 @@
-target_x = 575;
-target_y = 35;
-target_rm = mystery_zone;
+target_x = 799;
+target_y = 1342;
+target_rm = d1hall3;

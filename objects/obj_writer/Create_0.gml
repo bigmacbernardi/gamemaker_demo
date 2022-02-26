@@ -27,6 +27,7 @@ while(global.msg[n] != "%%%") { //Toby's leftover method for indicating a line i
 }
 currentLine= mystring[0];
 dfy= 0;
+//if !variable_instance_exists(id,"textspeed")textspeed=1;
 alarm[0]= textspeed;
 //if depth> obj_dialoguer.depth depth=-10000;
 /*for (var i = 0; i < string_length(line);i++){
