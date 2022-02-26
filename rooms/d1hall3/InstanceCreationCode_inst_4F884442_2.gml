@@ -1,3 +1,3 @@
-target_x=37;
-target_y=320;
+target_x=107;
+target_y=1397;
 target_rm=d1sanc3;
