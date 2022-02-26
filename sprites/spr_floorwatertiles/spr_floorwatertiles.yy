@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 0,
+  "bbox_right": 527,
   "bbox_top": 0,
-  "bbox_bottom": 0,
+  "bbox_bottom": 79,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 528,
+  "height": 242,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"10915783-bc5c-4705-b11b-210b2550c969","path":"sprites/spr_floortiles/spr_floortiles.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"10915783-bc5c-4705-b11b-210b2550c969","path":"sprites/spr_floortiles/spr_floortiles.yy",},"LayerId":{"name":"cd723d17-a35b-470d-b653-5ef80bc97975","path":"sprites/spr_floortiles/spr_floortiles.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_floortiles","path":"sprites/spr_floortiles/spr_floortiles.yy",},"resourceVersion":"1.0","name":"10915783-bc5c-4705-b11b-210b2550c969","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"10915783-bc5c-4705-b11b-210b2550c969","path":"sprites/spr_floorwatertiles/spr_floorwatertiles.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"10915783-bc5c-4705-b11b-210b2550c969","path":"sprites/spr_floorwatertiles/spr_floorwatertiles.yy",},"LayerId":{"name":"cd723d17-a35b-470d-b653-5ef80bc97975","path":"sprites/spr_floorwatertiles/spr_floorwatertiles.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_floorwatertiles","path":"sprites/spr_floorwatertiles/spr_floorwatertiles.yy",},"resourceVersion":"1.0","name":"10915783-bc5c-4705-b11b-210b2550c969","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_floortiles","path":"sprites/spr_floortiles/spr_floortiles.yy",},
+    "spriteId": {"name":"spr_floorwatertiles","path":"sprites/spr_floorwatertiles/spr_floorwatertiles.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"70188182-4161-445a-957a-63efba853f17","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"10915783-bc5c-4705-b11b-210b2550c969","path":"sprites/spr_floortiles/spr_floortiles.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"70188182-4161-445a-957a-63efba853f17","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"10915783-bc5c-4705-b11b-210b2550c969","path":"sprites/spr_floorwatertiles/spr_floorwatertiles.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_floortiles","path":"sprites/spr_floortiles/spr_floortiles.yy",},
+    "parent": {"name":"spr_floorwatertiles","path":"sprites/spr_floorwatertiles/spr_floorwatertiles.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_floortiles",
+    "name": "spr_floorwatertiles",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Nature/water.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_floortiles",
+  "name": "spr_floorwatertiles",
   "tags": [],
   "resourceType": "GMSprite",
 }
