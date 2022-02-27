@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_sign",
-    "path": "sprites/spr_sign/spr_sign.yy",
+    "name": "spr_lectern",
+    "path": "sprites/spr_lectern/spr_lectern.yy",
   },
   "solid": true,
   "visible": true,
@@ -37,7 +37,7 @@
     "path": "folders/Objects/overworld.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_lecturn",
+  "name": "obj_lectern",
   "tags": [],
   "resourceType": "GMObject",
 }
