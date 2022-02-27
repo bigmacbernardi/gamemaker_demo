@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"soldier_miss","path":"sprites/soldier_miss/soldier_miss.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "soldier_miss",
     "tags": [],
     "resourceType": "GMSequence",

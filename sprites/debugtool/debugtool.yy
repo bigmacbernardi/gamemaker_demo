@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"debugtool","path":"sprites/debugtool/debugtool.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "debugtool",
     "tags": [],
     "resourceType": "GMSequence",

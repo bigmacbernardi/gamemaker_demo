@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"soldier_bigshot","path":"sprites/soldier_bigshot/soldier_bigshot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "soldier_bigshot",
     "tags": [],
     "resourceType": "GMSequence",

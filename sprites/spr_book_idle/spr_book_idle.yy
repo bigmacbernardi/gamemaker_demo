@@ -127,7 +127,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_book_idle","path":"sprites/spr_book_idle/spr_book_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_book_idle",
     "tags": [],
     "resourceType": "GMSequence",

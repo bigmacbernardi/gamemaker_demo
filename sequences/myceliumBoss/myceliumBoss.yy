@@ -53,7 +53,7 @@
     "name": "Fungus",
     "path": "folders/Sprites/Bad Guys/Bosses/Fungus.yy",
   },
-  "resourceVersion": "1.3",
+  "resourceVersion": "1.4",
   "name": "myceliumBoss",
   "tags": [],
   "resourceType": "GMSequence",

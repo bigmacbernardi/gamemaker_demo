@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_angryindicator","path":"sprites/spr_angryindicator/spr_angryindicator.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_angryindicator",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"MarioBooks","path":"sprites/MarioBooks/MarioBooks.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "MarioBooks",
     "tags": [],
     "resourceType": "GMSequence",

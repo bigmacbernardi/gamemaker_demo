@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"guardianOverworldBig","path":"sprites/guardianOverworldBig/guardianOverworldBig.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "guardianOverworldBig",
     "tags": [],
     "resourceType": "GMSequence",

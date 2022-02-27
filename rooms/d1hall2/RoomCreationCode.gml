@@ -1,6 +1,6 @@
 global.battleRoom = battle_d1area;
 with obj_player{
-	if y>1300
+	if y>1150
 		facing=8;
 	image_xscale=1;
 	image_yscale=1;

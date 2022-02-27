@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_stanley","path":"sprites/spr_stanley/spr_stanley.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_stanley",
     "tags": [],
     "resourceType": "GMSequence",

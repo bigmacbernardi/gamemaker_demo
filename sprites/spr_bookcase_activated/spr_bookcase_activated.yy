@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bookcase_activated","path":"sprites/spr_bookcase_activated/spr_bookcase_activated.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bookcase_activated",
     "tags": [],
     "resourceType": "GMSequence",

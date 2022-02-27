@@ -303,7 +303,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yusuf_left","path":"sprites/spr_yusuf_left/spr_yusuf_left.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yusuf_left",
     "tags": [],
     "resourceType": "GMSequence",

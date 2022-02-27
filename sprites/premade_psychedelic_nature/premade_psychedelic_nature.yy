@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"premade_psychedelic_nature","path":"sprites/premade_psychedelic_nature/premade_psychedelic_nature.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "premade_psychedelic_nature",
     "tags": [],
     "resourceType": "GMSequence",

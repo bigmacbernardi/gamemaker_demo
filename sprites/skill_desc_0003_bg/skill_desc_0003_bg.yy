@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"skill_desc_0003_bg","path":"sprites/skill_desc_0003_bg/skill_desc_0003_bg.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "skill_desc_0003_bg",
     "tags": [],
     "resourceType": "GMSequence",

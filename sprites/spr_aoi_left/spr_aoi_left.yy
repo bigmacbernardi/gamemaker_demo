@@ -382,7 +382,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_aoi_left","path":"sprites/spr_aoi_left/spr_aoi_left.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_aoi_left",
     "tags": [],
     "resourceType": "GMSequence",

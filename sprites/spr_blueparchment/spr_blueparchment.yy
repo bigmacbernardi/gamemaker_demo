@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_blueparchment","path":"sprites/spr_blueparchment/spr_blueparchment.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_blueparchment",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yusuf_dead_alt","path":"sprites/spr_yusuf_dead_alt/spr_yusuf_dead_alt.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yusuf_dead_alt",
     "tags": [],
     "resourceType": "GMSequence",

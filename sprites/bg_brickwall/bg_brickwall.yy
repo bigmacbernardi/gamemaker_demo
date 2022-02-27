@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_brickwall","path":"sprites/bg_brickwall/bg_brickwall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_brickwall",
     "tags": [],
     "resourceType": "GMSequence",

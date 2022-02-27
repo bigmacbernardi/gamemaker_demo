@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"noBKG_KnightRoll_strip","path":"sprites/noBKG_KnightRoll_strip/noBKG_KnightRoll_strip.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "noBKG_KnightRoll_strip",
     "tags": [],
     "resourceType": "GMSequence",

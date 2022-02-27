@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dropshadow","path":"sprites/spr_dropshadow/spr_dropshadow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dropshadow",
     "tags": [],
     "resourceType": "GMSequence",

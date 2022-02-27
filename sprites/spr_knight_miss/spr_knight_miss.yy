@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_knight_miss","path":"sprites/spr_knight_miss/spr_knight_miss.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_knight_miss",
     "tags": [],
     "resourceType": "GMSequence",

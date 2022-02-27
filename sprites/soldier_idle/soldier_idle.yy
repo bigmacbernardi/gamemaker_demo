@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"soldier_idle","path":"sprites/soldier_idle/soldier_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "soldier_idle",
     "tags": [],
     "resourceType": "GMSequence",

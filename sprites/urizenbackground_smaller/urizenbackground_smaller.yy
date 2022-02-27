@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"urizenbackground_smaller","path":"sprites/urizenbackground_smaller/urizenbackground_smaller.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "urizenbackground_smaller",
     "tags": [],
     "resourceType": "GMSequence",

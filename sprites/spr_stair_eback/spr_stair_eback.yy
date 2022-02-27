@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_stair_eback","path":"sprites/spr_stair_eback/spr_stair_eback.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_stair_eback",
     "tags": [],
     "resourceType": "GMSequence",

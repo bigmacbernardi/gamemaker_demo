@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hold_on","path":"sprites/spr_hold_on/spr_hold_on.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hold_on",
     "tags": [],
     "resourceType": "GMSequence",

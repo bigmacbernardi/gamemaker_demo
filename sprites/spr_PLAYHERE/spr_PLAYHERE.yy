@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_PLAYHERE","path":"sprites/spr_PLAYHERE/spr_PLAYHERE.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_PLAYHERE",
     "tags": [],
     "resourceType": "GMSequence",

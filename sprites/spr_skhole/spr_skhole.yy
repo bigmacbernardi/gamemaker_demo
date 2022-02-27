@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skhole","path":"sprites/spr_skhole/spr_skhole.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skhole",
     "tags": [],
     "resourceType": "GMSequence",

@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_book_attack","path":"sprites/spr_book_attack/spr_book_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_book_attack",
     "tags": [],
     "resourceType": "GMSequence",

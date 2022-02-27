@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"soldier_hit","path":"sprites/soldier_hit/soldier_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "soldier_hit",
     "tags": [],
     "resourceType": "GMSequence",

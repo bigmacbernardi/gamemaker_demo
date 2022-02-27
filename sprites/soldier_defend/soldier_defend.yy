@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"soldier_defend","path":"sprites/soldier_defend/soldier_defend.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "soldier_defend",
     "tags": [],
     "resourceType": "GMSequence",

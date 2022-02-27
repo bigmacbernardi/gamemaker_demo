@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_aoi_intoDef","path":"sprites/spr_aoi_intoDef/spr_aoi_intoDef.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_aoi_intoDef",
     "tags": [],
     "resourceType": "GMSequence",

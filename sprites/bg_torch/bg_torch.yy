@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_torch","path":"sprites/bg_torch/bg_torch.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_torch",
     "tags": [],
     "resourceType": "GMSequence",

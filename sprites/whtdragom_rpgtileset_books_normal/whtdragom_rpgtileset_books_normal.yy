@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"whtdragom_rpgtileset_books_normal","path":"sprites/whtdragom_rpgtileset_books_normal/whtdragom_rpgtileset_books_normal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "whtdragom_rpgtileset_books_normal",
     "tags": [],
     "resourceType": "GMSequence",

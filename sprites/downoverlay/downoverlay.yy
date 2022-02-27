@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"downoverlay","path":"sprites/downoverlay/downoverlay.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "downoverlay",
     "tags": [],
     "resourceType": "GMSequence",

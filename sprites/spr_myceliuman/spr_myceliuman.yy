@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_myceliuman","path":"sprites/spr_myceliuman/spr_myceliuman.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_myceliuman",
     "tags": [],
     "resourceType": "GMSequence",

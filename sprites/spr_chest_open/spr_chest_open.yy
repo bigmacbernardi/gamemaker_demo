@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_chest_open","path":"sprites/spr_chest_open/spr_chest_open.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_chest_open",
     "tags": [],
     "resourceType": "GMSequence",

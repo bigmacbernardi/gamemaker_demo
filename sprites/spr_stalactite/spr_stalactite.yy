@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_stalactite","path":"sprites/spr_stalactite/spr_stalactite.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_stalactite",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"aoi_polearm0_idle","path":"sprites/aoi_polearm0_idle/aoi_polearm0_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "aoi_polearm0_idle",
     "tags": [],
     "resourceType": "GMSequence",

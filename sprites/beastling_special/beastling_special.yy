@@ -191,7 +191,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"beastling_special","path":"sprites/beastling_special/beastling_special.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "beastling_special",
     "tags": [],
     "resourceType": "GMSequence",

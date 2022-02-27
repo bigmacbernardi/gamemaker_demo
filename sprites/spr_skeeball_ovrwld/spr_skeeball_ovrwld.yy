@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skeeball_ovrwld","path":"sprites/spr_skeeball_ovrwld/spr_skeeball_ovrwld.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skeeball_ovrwld",
     "tags": [],
     "resourceType": "GMSequence",

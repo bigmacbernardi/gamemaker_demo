@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_atkbutton_on","path":"sprites/spr_atkbutton_on/spr_atkbutton_on.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_atkbutton_on",
     "tags": [],
     "resourceType": "GMSequence",

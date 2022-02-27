@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_select_right","path":"sprites/spr_select_right/spr_select_right.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_select_right",
     "tags": [],
     "resourceType": "GMSequence",

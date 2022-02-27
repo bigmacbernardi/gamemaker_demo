@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yusuf_defend","path":"sprites/spr_yusuf_defend/spr_yusuf_defend.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yusuf_defend",
     "tags": [],
     "resourceType": "GMSequence",

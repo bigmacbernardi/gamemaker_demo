@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sign","path":"sprites/spr_sign/spr_sign.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sign",
     "tags": [],
     "resourceType": "GMSequence",

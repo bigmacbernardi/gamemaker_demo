@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"noBKG_AoiShield_strip","path":"sprites/noBKG_AoiShield_strip/noBKG_AoiShield_strip.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "noBKG_AoiShield_strip",
     "tags": [],
     "resourceType": "GMSequence",

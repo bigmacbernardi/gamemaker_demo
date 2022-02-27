@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"exterior_parallaxBG2","path":"sprites/exterior_parallaxBG2/exterior_parallaxBG2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "exterior_parallaxBG2",
     "tags": [],
     "resourceType": "GMSequence",

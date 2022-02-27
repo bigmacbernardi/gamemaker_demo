@@ -139,7 +139,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"beastling_attack","path":"sprites/beastling_attack/beastling_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "beastling_attack",
     "tags": [],
     "resourceType": "GMSequence",

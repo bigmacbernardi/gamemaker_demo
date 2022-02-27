@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_battleunit","path":"sprites/spr_battleunit/spr_battleunit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_battleunit",
     "tags": [],
     "resourceType": "GMSequence",

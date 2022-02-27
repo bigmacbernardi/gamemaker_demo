@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_stair_e","path":"sprites/spr_stair_e/spr_stair_e.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_stair_e",
     "tags": [],
     "resourceType": "GMSequence",

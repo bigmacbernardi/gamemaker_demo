@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"premade_ancient_ruins_shrunk","path":"sprites/premade_ancient_ruins_shrunk/premade_ancient_ruins_shrunk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "premade_ancient_ruins_shrunk",
     "tags": [],
     "resourceType": "GMSequence",

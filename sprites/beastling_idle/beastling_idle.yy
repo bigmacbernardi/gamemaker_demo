@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"beastling_idle","path":"sprites/beastling_idle/beastling_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "beastling_idle",
     "tags": [],
     "resourceType": "GMSequence",

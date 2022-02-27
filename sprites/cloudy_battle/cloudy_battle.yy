@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"cloudy_battle","path":"sprites/cloudy_battle/cloudy_battle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "cloudy_battle",
     "tags": [],
     "resourceType": "GMSequence",

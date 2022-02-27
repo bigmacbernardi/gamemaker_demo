@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"doohicky","path":"sprites/doohicky/doohicky.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "doohicky",
     "tags": [],
     "resourceType": "GMSequence",

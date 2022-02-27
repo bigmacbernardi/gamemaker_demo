@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_column_wide","path":"sprites/spr_column_wide/spr_column_wide.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_column_wide",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_spiritlevel","path":"sprites/spr_spiritlevel/spr_spiritlevel.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_spiritlevel",
     "tags": [],
     "resourceType": "GMSequence",

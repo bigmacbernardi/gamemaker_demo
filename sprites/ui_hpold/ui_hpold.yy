@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ui_hpold","path":"sprites/ui_hpold/ui_hpold.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ui_hpold",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"YusufProto","path":"sprites/YusufProto/YusufProto.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "YusufProto",
     "tags": [],
     "resourceType": "GMSequence",

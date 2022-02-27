@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"kidside","path":"sprites/kidside/kidside.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "kidside",
     "tags": [],
     "resourceType": "GMSequence",

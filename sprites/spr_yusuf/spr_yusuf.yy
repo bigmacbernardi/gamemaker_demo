@@ -311,7 +311,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yusuf","path":"sprites/spr_yusuf/spr_yusuf.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yusuf",
     "tags": [],
     "resourceType": "GMSequence",

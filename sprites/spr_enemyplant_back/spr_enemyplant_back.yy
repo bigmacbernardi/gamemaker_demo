@@ -198,7 +198,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemyplant_back","path":"sprites/spr_enemyplant_back/spr_enemyplant_back.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_enemyplant_back",
     "tags": [],
     "resourceType": "GMSequence",

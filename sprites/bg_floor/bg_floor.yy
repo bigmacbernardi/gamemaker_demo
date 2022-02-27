@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_floor","path":"sprites/bg_floor/bg_floor.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_floor",
     "tags": [],
     "resourceType": "GMSequence",

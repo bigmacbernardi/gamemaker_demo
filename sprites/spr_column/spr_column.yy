@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_column","path":"sprites/spr_column/spr_column.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_column",
     "tags": [],
     "resourceType": "GMSequence",

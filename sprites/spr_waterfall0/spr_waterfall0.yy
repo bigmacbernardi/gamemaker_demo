@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_waterfall0","path":"sprites/spr_waterfall0/spr_waterfall0.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_waterfall0",
     "tags": [],
     "resourceType": "GMSequence",

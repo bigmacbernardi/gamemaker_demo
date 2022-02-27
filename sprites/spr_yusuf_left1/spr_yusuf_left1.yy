@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yusuf_left1","path":"sprites/spr_yusuf_left1/spr_yusuf_left1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yusuf_left1",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_arena2","path":"sprites/bg_arena2/bg_arena2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_arena2",
     "tags": [],
     "resourceType": "GMSequence",

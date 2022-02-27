@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shooty_dart","path":"sprites/spr_shooty_dart/spr_shooty_dart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shooty_dart",
     "tags": [],
     "resourceType": "GMSequence",

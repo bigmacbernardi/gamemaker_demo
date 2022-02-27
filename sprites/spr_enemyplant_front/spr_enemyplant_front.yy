@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemyplant_front","path":"sprites/spr_enemyplant_front/spr_enemyplant_front.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_enemyplant_front",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"arcanos_magecity","path":"sprites/arcanos_magecity/arcanos_magecity.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "arcanos_magecity",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shootytarget","path":"sprites/spr_shootytarget/spr_shootytarget.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shootytarget",
     "tags": [],
     "resourceType": "GMSequence",

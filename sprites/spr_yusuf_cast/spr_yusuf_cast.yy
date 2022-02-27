@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yusuf_cast","path":"sprites/spr_yusuf_cast/spr_yusuf_cast.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yusuf_cast",
     "tags": [],
     "resourceType": "GMSequence",

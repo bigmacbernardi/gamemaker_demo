@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_knight_intoDef","path":"sprites/spr_knight_intoDef/spr_knight_intoDef.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_knight_intoDef",
     "tags": [],
     "resourceType": "GMSequence",

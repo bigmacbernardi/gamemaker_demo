@@ -394,7 +394,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_aoi","path":"sprites/spr_aoi/spr_aoi.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_aoi",
     "tags": [],
     "resourceType": "GMSequence",

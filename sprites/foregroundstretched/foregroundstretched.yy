@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"foregroundstretched","path":"sprites/foregroundstretched/foregroundstretched.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "foregroundstretched",
     "tags": [],
     "resourceType": "GMSequence",

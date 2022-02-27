@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"premade_pkmn_cave","path":"sprites/premade_pkmn_cave/premade_pkmn_cave.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "premade_pkmn_cave",
     "tags": [],
     "resourceType": "GMSequence",

@@ -123,7 +123,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yusuf_attack","path":"sprites/spr_yusuf_attack/spr_yusuf_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yusuf_attack",
     "tags": [],
     "resourceType": "GMSequence",

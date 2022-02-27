@@ -212,7 +212,7 @@
     "name": "battle resources",
     "path": "folders/Objects/battle resources.yy",
   },
-  "resourceVersion": "1.3",
+  "resourceVersion": "1.4",
   "name": "sAoiBattle",
   "tags": [],
   "resourceType": "GMSequence",

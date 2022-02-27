@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"premade_cool_scifi_doors","path":"sprites/premade_cool_scifi_doors/premade_cool_scifi_doors.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "premade_cool_scifi_doors",
     "tags": [],
     "resourceType": "GMSequence",

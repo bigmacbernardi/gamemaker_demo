@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ui_hp","path":"sprites/ui_hp/ui_hp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ui_hp",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"skill_desc_0000_foreground","path":"sprites/skill_desc_0000_foreground/skill_desc_0000_foreground.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "skill_desc_0000_foreground",
     "tags": [],
     "resourceType": "GMSequence",

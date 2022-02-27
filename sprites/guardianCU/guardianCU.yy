@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"guardianCU","path":"sprites/guardianCU/guardianCU.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "guardianCU",
     "tags": [],
     "resourceType": "GMSequence",

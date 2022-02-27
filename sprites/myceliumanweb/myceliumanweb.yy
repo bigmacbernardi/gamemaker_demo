@@ -611,7 +611,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "myceliumanweb",
     "tags": [],
     "resourceType": "GMSequence",

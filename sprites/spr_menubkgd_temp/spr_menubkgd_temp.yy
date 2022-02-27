@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_menubkgd_temp","path":"sprites/spr_menubkgd_temp/spr_menubkgd_temp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_menubkgd_temp",
     "tags": [],
     "resourceType": "GMSequence",

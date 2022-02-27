@@ -178,7 +178,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_g_g_g_ghostsword","path":"sprites/spr_g_g_g_ghostsword/spr_g_g_g_ghostsword.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_g_g_g_ghostsword",
     "tags": [],
     "resourceType": "GMSequence",

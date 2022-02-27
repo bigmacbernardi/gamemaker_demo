@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_perk_on","path":"sprites/spr_perk_on/spr_perk_on.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_perk_on",
     "tags": [],
     "resourceType": "GMSequence",

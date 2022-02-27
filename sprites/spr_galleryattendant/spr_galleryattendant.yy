@@ -143,7 +143,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_galleryattendant","path":"sprites/spr_galleryattendant/spr_galleryattendant.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_galleryattendant",
     "tags": [],
     "resourceType": "GMSequence",

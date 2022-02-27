@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pool","path":"sprites/spr_pool/spr_pool.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pool",
     "tags": [],
     "resourceType": "GMSequence",

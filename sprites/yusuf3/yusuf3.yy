@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"yusuf3","path":"sprites/yusuf3/yusuf3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "yusuf3",
     "tags": [],
     "resourceType": "GMSequence",

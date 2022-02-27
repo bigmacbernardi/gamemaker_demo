@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"YusufProtoWFeather","path":"sprites/YusufProtoWFeather/YusufProtoWFeather.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "YusufProtoWFeather",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"urizenbackground","path":"sprites/urizenbackground/urizenbackground.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "urizenbackground",
     "tags": [],
     "resourceType": "GMSequence",

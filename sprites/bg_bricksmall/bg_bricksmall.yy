@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_bricksmall","path":"sprites/bg_bricksmall/bg_bricksmall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_bricksmall",
     "tags": [],
     "resourceType": "GMSequence",

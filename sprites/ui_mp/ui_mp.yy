@@ -150,7 +150,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ui_mp","path":"sprites/ui_mp/ui_mp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ui_mp",
     "tags": [],
     "resourceType": "GMSequence",

@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dungeon1tiles_big_wide","path":"sprites/spr_dungeon1tiles_big_wide/spr_dungeon1tiles_big_wide.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dungeon1tiles_big_wide",
     "tags": [],
     "resourceType": "GMSequence",

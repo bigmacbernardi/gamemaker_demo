@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"noBKG_KnightRun_strip","path":"sprites/noBKG_KnightRun_strip/noBKG_KnightRun_strip.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "noBKG_KnightRun_strip",
     "tags": [],
     "resourceType": "GMSequence",

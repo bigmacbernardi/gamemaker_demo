@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_knight_idling","path":"sprites/spr_knight_idling/spr_knight_idling.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_knight_idling",
     "tags": [],
     "resourceType": "GMSequence",

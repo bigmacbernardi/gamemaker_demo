@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_knight_itm","path":"sprites/spr_knight_itm/spr_knight_itm.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_knight_itm",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_idle","path":"sprites/spr_ghost_idle/spr_ghost_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_idle",
     "tags": [],
     "resourceType": "GMSequence",

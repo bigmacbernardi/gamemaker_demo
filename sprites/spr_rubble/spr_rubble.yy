@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rubble","path":"sprites/spr_rubble/spr_rubble.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rubble",
     "tags": [],
     "resourceType": "GMSequence",

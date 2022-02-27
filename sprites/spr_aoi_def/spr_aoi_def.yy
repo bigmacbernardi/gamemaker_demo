@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_aoi_def","path":"sprites/spr_aoi_def/spr_aoi_def.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_aoi_def",
     "tags": [],
     "resourceType": "GMSequence",

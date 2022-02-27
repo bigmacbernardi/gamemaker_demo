@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_knight_death","path":"sprites/spr_knight_death/spr_knight_death.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_knight_death",
     "tags": [],
     "resourceType": "GMSequence",

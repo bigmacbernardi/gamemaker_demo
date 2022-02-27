@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_lanternghost_static","path":"sprites/spr_lanternghost_static/spr_lanternghost_static.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_lanternghost_static",
     "tags": [],
     "resourceType": "GMSequence",

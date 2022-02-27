@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"gopher","path":"sprites/gopher/gopher.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "gopher",
     "tags": [],
     "resourceType": "GMSequence",

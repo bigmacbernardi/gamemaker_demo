@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_depthtestbkgd","path":"sprites/spr_depthtestbkgd/spr_depthtestbkgd.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_depthtestbkgd",
     "tags": [],
     "resourceType": "GMSequence",

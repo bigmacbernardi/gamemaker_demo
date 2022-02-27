@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"skill_desc_0002_far_buildings","path":"sprites/skill_desc_0002_far_buildings/skill_desc_0002_far_buildings.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "skill_desc_0002_far_buildings",
     "tags": [],
     "resourceType": "GMSequence",

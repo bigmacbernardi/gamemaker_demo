@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Not__Lucas","path":"sprites/Not__Lucas/Not__Lucas.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Not__Lucas",
     "tags": [],
     "resourceType": "GMSequence",

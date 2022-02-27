@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bookcasexl_activated","path":"sprites/spr_bookcasexl_activated/spr_bookcasexl_activated.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bookcasexl_activated",
     "tags": [],
     "resourceType": "GMSequence",

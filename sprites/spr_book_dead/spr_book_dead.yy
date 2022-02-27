@@ -147,7 +147,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_book_dead","path":"sprites/spr_book_dead/spr_book_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_book_dead",
     "tags": [],
     "resourceType": "GMSequence",

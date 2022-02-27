@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"hiddengopher","path":"sprites/hiddengopher/hiddengopher.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "hiddengopher",
     "tags": [],
     "resourceType": "GMSequence",

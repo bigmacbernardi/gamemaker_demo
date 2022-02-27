@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_castlewalls","path":"sprites/bg_castlewalls/bg_castlewalls.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_castlewalls",
     "tags": [],
     "resourceType": "GMSequence",

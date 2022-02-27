@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"kidfront","path":"sprites/kidfront/kidfront.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "kidfront",
     "tags": [],
     "resourceType": "GMSequence",

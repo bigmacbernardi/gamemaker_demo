@@ -428,7 +428,7 @@
     {"spriteId":{"name":"spr_blueparchment","path":"sprites/spr_blueparchment/spr_blueparchment.yy",},"colour":4278524006,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":true,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/d1hall1redux/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/d1hall3/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_481BDF90_2","path":"rooms/d1hall3/d1hall3.yy",},

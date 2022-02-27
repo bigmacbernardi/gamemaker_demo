@@ -135,7 +135,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"beastling_miss","path":"sprites/beastling_miss/beastling_miss.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "beastling_miss",
     "tags": [],
     "resourceType": "GMSequence",

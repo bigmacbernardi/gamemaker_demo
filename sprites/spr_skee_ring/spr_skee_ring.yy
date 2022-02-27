@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skee_ring","path":"sprites/spr_skee_ring/spr_skee_ring.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skee_ring",
     "tags": [],
     "resourceType": "GMSequence",

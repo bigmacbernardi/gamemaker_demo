@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_lanternghost_lantern","path":"sprites/spr_lanternghost_lantern/spr_lanternghost_lantern.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_lanternghost_lantern",
     "tags": [],
     "resourceType": "GMSequence",

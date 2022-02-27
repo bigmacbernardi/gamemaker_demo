@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"soldier_death","path":"sprites/soldier_death/soldier_death.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "soldier_death",
     "tags": [],
     "resourceType": "GMSequence",

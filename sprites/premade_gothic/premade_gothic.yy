@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"premade_gothic","path":"sprites/premade_gothic/premade_gothic.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "premade_gothic",
     "tags": [],
     "resourceType": "GMSequence",

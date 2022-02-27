@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"parallaxBG_interior2","path":"sprites/parallaxBG_interior2/parallaxBG_interior2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "parallaxBG_interior2",
     "tags": [],
     "resourceType": "GMSequence",

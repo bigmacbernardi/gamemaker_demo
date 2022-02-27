@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_aoi_death","path":"sprites/spr_aoi_death/spr_aoi_death.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_aoi_death",
     "tags": [],
     "resourceType": "GMSequence",

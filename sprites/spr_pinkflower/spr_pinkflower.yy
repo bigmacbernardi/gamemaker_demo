@@ -123,7 +123,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pinkflower","path":"sprites/spr_pinkflower/spr_pinkflower.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pinkflower",
     "tags": [],
     "resourceType": "GMSequence",

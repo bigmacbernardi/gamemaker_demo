@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_old_man","path":"sprites/spr_old_man/spr_old_man.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_old_man",
     "tags": [],
     "resourceType": "GMSequence",

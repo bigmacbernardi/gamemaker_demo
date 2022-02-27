@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_castletiles","path":"sprites/spr_castletiles/spr_castletiles.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_castletiles",
     "tags": [],
     "resourceType": "GMSequence",

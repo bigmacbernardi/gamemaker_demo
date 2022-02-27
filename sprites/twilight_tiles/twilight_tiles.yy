@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"twilight_tiles","path":"sprites/twilight_tiles/twilight_tiles.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "twilight_tiles",
     "tags": [],
     "resourceType": "GMSequence",

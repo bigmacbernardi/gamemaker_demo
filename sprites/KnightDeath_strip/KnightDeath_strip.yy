@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"KnightDeath_strip","path":"sprites/KnightDeath_strip/KnightDeath_strip.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "KnightDeath_strip",
     "tags": [],
     "resourceType": "GMSequence",

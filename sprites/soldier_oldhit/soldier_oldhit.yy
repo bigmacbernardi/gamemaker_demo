@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"soldier_oldhit","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "soldier_oldhit",
     "tags": [],
     "resourceType": "GMSequence",

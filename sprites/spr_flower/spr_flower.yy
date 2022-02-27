@@ -123,7 +123,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_flower","path":"sprites/spr_flower/spr_flower.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_flower",
     "tags": [],
     "resourceType": "GMSequence",

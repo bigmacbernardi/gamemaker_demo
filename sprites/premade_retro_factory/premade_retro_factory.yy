@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"premade_retro_factory","path":"sprites/premade_retro_factory/premade_retro_factory.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "premade_retro_factory",
     "tags": [],
     "resourceType": "GMSequence",

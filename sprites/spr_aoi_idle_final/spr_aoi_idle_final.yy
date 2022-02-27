@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_aoi_idle_final","path":"sprites/spr_aoi_idle_final/spr_aoi_idle_final.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_aoi_idle_final",
     "tags": [],
     "resourceType": "GMSequence",

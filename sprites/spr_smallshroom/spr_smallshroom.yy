@@ -178,7 +178,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_smallshroom","path":"sprites/spr_smallshroom/spr_smallshroom.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_smallshroom",
     "tags": [],
     "resourceType": "GMSequence",

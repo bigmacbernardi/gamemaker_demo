@@ -170,7 +170,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_beastling_tribble","path":"sprites/spr_beastling_tribble/spr_beastling_tribble.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_beastling_tribble",
     "tags": [],
     "resourceType": "GMSequence",

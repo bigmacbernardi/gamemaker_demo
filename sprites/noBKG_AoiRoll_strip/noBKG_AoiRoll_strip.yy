@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"noBKG_AoiRoll_strip","path":"sprites/noBKG_AoiRoll_strip/noBKG_AoiRoll_strip.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "noBKG_AoiRoll_strip",
     "tags": [],
     "resourceType": "GMSequence",

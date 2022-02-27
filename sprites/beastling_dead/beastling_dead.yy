@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"beastling_dead","path":"sprites/beastling_dead/beastling_dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "beastling_dead",
     "tags": [],
     "resourceType": "GMSequence",

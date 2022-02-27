@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"soldier_littleshot","path":"sprites/soldier_littleshot/soldier_littleshot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "soldier_littleshot",
     "tags": [],
     "resourceType": "GMSequence",

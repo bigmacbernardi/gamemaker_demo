@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_g_g_g_ghosthammer","path":"sprites/spr_g_g_g_ghosthammer/spr_g_g_g_ghosthammer.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_g_g_g_ghosthammer",
     "tags": [],
     "resourceType": "GMSequence",

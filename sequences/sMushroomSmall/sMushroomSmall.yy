@@ -91,7 +91,7 @@
     "name": "bad guys",
     "path": "folders/Objects/battle resources/bad guys.yy",
   },
-  "resourceVersion": "1.3",
+  "resourceVersion": "1.4",
   "name": "sMushroomSmall",
   "tags": [],
   "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"KnightJumpAndFall_strip","path":"sprites/KnightJumpAndFall_strip/KnightJumpAndFall_strip.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "KnightJumpAndFall_strip",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bichael","path":"sprites/spr_bichael/spr_bichael.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bichael",
     "tags": [],
     "resourceType": "GMSequence",

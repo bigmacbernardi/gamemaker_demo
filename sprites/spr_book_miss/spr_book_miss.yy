@@ -127,7 +127,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_book_miss","path":"sprites/spr_book_miss/spr_book_miss.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_book_miss",
     "tags": [],
     "resourceType": "GMSequence",

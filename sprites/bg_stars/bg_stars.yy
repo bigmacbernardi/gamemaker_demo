@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_stars","path":"sprites/bg_stars/bg_stars.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_stars",
     "tags": [],
     "resourceType": "GMSequence",

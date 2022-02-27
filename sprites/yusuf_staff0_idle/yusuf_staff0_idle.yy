@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"yusuf_staff0_idle","path":"sprites/yusuf_staff0_idle/yusuf_staff0_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "yusuf_staff0_idle",
     "tags": [],
     "resourceType": "GMSequence",

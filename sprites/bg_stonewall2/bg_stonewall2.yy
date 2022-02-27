@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_stonewall2","path":"sprites/bg_stonewall2/bg_stonewall2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_stonewall2",
     "tags": [],
     "resourceType": "GMSequence",

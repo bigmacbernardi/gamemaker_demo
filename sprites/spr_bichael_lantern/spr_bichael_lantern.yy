@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bichael_lantern","path":"sprites/spr_bichael_lantern/spr_bichael_lantern.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bichael_lantern",
     "tags": [],
     "resourceType": "GMSequence",

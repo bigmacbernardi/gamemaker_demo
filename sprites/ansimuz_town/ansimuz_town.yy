@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ansimuz_town","path":"sprites/ansimuz_town/ansimuz_town.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ansimuz_town",
     "tags": [],
     "resourceType": "GMSequence",

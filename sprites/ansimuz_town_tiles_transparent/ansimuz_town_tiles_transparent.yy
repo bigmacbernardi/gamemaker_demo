@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ansimuz_town_tiles_transparent","path":"sprites/ansimuz_town_tiles_transparent/ansimuz_town_tiles_transparent.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "ansimuz_town_tiles_transparent",
     "tags": [],
     "resourceType": "GMSequence",

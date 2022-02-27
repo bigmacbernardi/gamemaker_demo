@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"KnightIdle_strip","path":"sprites/KnightIdle_strip/KnightIdle_strip.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "KnightIdle_strip",
     "tags": [],
     "resourceType": "GMSequence",
