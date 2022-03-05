@@ -40,6 +40,66 @@ missEnd = 112;
 deathStart = 113;
 deathMid = 126;
 deathEnd = 135;
+transform0to2 = 135;
+transform0to3 = 135;
+transform0to1 = 135;
+idleStart1 = 135;
+idleEnd1 = 135;
+atkStart1 = 135;
+atkEnd1 = 35;
+atk2Start1 = 35;
+atk2End1 = 56;
+intoDefStart1 = 58;
+intoDefEnd1 = 65;
+defStart1 = 66;
+defEnd1 = 72;
+hitStart1 = 73;
+hitEnd1 = 98;
+missStart1 = 99;
+missEnd1 = 112;
+deathStart1 = 113;
+deathMid1 = 126;
+deathEnd1 = 135;
+transform1to0 = 135;
+transform1to3 = 135;
+transform1to2 = 135;
+idleStart2 = 135;
+idleEnd2 = 135;
+atkStart2 = 135;
+atkEnd2 = 35;
+atk2Start2 = 35;
+atk2End2 = 56;
+intoDefStart2 = 58;
+intoDefEnd2 = 65;
+defStart2 = 66;
+defEnd2 = 72;
+hitStart2 = 73;
+hitEnd2 = 98;
+missStart2 = 99;
+missEnd2 = 112;
+deathStart2 = 113;
+deathMid2 = 126;
+deathEnd2 = 135;
+transform2to0 = 135;
+transform2to1 = 135;
+transform2to3 = 135;
+idleStart3 = 135;
+idleEnd3 = 135;
+atkStart3 = 135;
+atkEnd3 = 35;
+atk2Start3 = 35;
+atk2End3 = 56;
+intoDefStart3 = 58;
+intoDefEnd3 = 65;
+defStart3 = 66;
+defEnd3 = 72;
+hitStart3 = 73;
+hitEnd3 = 98;
+missStart3 = 99;
+missEnd3 = 112;
+deathStart3 = 113;
+deathMid3 = 126;
+deathEnd3 = 135;
 
 base[HP] = 80;
 current[HP] = 80;
@@ -51,6 +111,13 @@ current[DEF] = 6;
 current[SPD] = 5;
 current[ACC] = 0.5;
 hasGoneOnce = false;
+	 //0: GOO FORM
+	 //1: SHELL FORM
+mode = 2//MAN FORM
+	 //3: HAND FORM  
+
+
+
 //function redeclarations shouldn't be needed
 /*function damageUnit(amount){//physical attacks
 	show_debug_message("Yo it's the soldier override!  HP was "+string(current[@ HP]));
