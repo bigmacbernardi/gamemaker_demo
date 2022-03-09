@@ -47,6 +47,7 @@
         {"properties":[
             {"propertyId":{"name":"fightNo","path":"objects/obj_enemy/obj_enemy.yy",},"objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"value":"19","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294901887,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":640.0,"resourceVersion":"1.0","name":"inst_37A2F302_1","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_topdesk","path":"objects/obj_topdesk/obj_topdesk.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.93749976,"scaleY":3.19774,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":465.0,"y":401.118652,"resourceVersion":"1.0","name":"inst_63FDA9E2","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_column","path":"objects/obj_column/obj_column.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.1875,"scaleY":2.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":973.0,"y":631.0,"resourceVersion":"1.0","name":"inst_34C25E80_1","tags":[],"resourceType":"GMRInstance",},
@@ -190,6 +191,7 @@
     {"name":"inst_77F1EE34_1","path":"rooms/d1admin/d1admin.yy",},
     {"name":"inst_3B946582_1","path":"rooms/d1admin/d1admin.yy",},
     {"name":"inst_37A2F302_1","path":"rooms/d1admin/d1admin.yy",},
+    {"name":"inst_63FDA9E2","path":"rooms/d1admin/d1admin.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

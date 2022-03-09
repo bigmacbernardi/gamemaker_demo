@@ -225,6 +225,7 @@
     {"id":{"name":"spr_waterfall0","path":"sprites/spr_waterfall0/spr_waterfall0.yy",},"order":0,},
     {"id":{"name":"obj_smallishpool","path":"objects/obj_smallishpool/obj_smallishpool.yy",},"order":7,},
     {"id":{"name":"spr_aoi_death","path":"sprites/spr_aoi_death/spr_aoi_death.yy",},"order":7,},
+    {"id":{"name":"universal_controls","path":"scripts/universal_controls/universal_controls.yy",},"order":32,},
     {"id":{"name":"beastling_ready","path":"sprites/beastling_ready/beastling_ready.yy",},"order":1,},
     {"id":{"name":"spr_knight_itm","path":"sprites/spr_knight_itm/spr_knight_itm.yy",},"order":20,},
     {"id":{"name":"spr_aoi_itm","path":"sprites/spr_aoi_itm/spr_aoi_itm.yy",},"order":13,},

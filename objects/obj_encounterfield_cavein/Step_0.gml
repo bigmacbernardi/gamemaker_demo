@@ -3,8 +3,14 @@
 if !activated{
 	if place_meeting(x,y,obj_player){
 		if stepsToGo == -1 stepsToGo=50+irandom(100);
-		if last_x!=obj_player.x or last_y!=obj_player.y{
-			stepsToGo--;	
+		else{
+		if last_x!=obj_player.x{
+			//stepsToGo--;//with: or last_y!=obj_player.y
+			stepsToGo=max(0,stepsToGo-round(abs(last_x-obj_player.x)/2));	
+		}
+		if last_y!=obj_player.y{
+			stepsToGo=max(0,stepsToGo-round(abs(last_y-obj_player.y)/2));	
+		}
 		}
 		last_x=obj_player.x;
 		last_y=obj_player.y;

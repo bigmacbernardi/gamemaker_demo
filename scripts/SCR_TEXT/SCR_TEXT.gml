@@ -74,8 +74,8 @@ switch(argument0){
         break;
 	case 31:
         global.msg[0]= " I read bo^1o^1o^1o^1o^1ks/";
-        global.msg[1]= "That's why by thoughts are so complex!/";
-        global.msg[2]= "I'b such a cultured figure that to truly&even engage with bee requires all sorts of &conversation options not even developed yet./";
+        global.msg[1]= "A lot of these books were eaten through,/";
+        global.msg[2]= "but for some reason I can still read the parts where the pages are gone./";
         global.msg[3]= "I bean^4, by god^3!&Forget player choices, what if I had bore&than 4 text boxes of dialogue to share??/";
         global.msg[4]= "Ok, baybe that's not such a problem.&Thank god for dynabizzub./";
         global.msg[5]= "%%%";
@@ -105,6 +105,28 @@ switch(argument0){
 			"And that's why I have this ridiculous &placeholder dialogue./","%%%"];
 		break;
 		
+	//DUNGEON 1 NOTES: After changing font, maybe “ and ” will work again
+	case 40:
+		global.msg=["A note is written:/","'We excavated some old tools and weapons.&Worthless now, but maybe we can test on&them.'/",
+		"%%%"];
+		break;
+	case 41:
+		global.msg=["A note:/","'According to the documents we've recovered,&these were used by past inhabitants to&control the weather.'/",
+		"'No use or interest to us at this time.'/","%%%"];
+		break;
+	case 42:
+		global.msg=["A note:/","'Aw sweet, rocks!  Now we're talkin''/",
+		"%%%"];
+		break;
+	case 43:
+		global.msg=["A partially legible log is written out:/","'[...] (unreadable)&Finally, we're seeing results. Applying the&[...] the sword to move, but only...'/",
+		"'...in one direction.&It inevitably ends up trapped in a corner.'/","%%%"];
+		break;
+	case 44:
+		global.msg=["A note:/","'Day 93: Testing has bore unexpected fruit&in a practical application.  The hammer's&reliable movement has proven useful for...'/",
+		"'...tempering our current equipment.& &We don't yet know how to stop it.'/","%%%"];
+		break;
+	
 	case 200:
 		global.msg =["Give shooting a shot!/","Pew pew pew! ^4 Pew pew pew pew pew!/",
 				"Get 10 points to get the most points &you can get!/","%%%"];
