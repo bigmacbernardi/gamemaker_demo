@@ -174,6 +174,7 @@
     {"id":{"name":"spr_book_idle","path":"sprites/spr_book_idle/spr_book_idle.yy",},"order":0,},
     {"id":{"name":"parallaxBG_interior2","path":"sprites/parallaxBG_interior2/parallaxBG_interior2.yy",},"order":3,},
     {"id":{"name":"obj_dialoguechoice","path":"objects/obj_dialoguechoice/obj_dialoguechoice.yy",},"order":10,},
+    {"id":{"name":"spr_desk1","path":"sprites/spr_desk1/spr_desk1.yy",},"order":19,},
     {"id":{"name":"bg_stonewall2","path":"sprites/bg_stonewall2/bg_stonewall2.yy",},"order":8,},
     {"id":{"name":"spr_girl_face11","path":"sprites/spr_girl_face11/spr_girl_face11.yy",},"order":3,},
     {"id":{"name":"spr_aoi_miss","path":"sprites/spr_aoi_miss/spr_aoi_miss.yy",},"order":14,},
