@@ -37,7 +37,7 @@
     "path": "folders/Objects/overworld.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_sideshelf",
+  "name": "obj_sideshelf_og",
   "tags": [],
   "resourceType": "GMObject",
 }
