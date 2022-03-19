@@ -629,6 +629,7 @@
     {"id":{"name":"obj_stairhelper","path":"objects/obj_stairhelper/obj_stairhelper.yy",},"order":32,},
     {"id":{"name":"spr_dumbguy_face2","path":"sprites/spr_dumbguy_face2/spr_dumbguy_face2.yy",},"order":15,},
     {"id":{"name":"door","path":"sounds/door/door.yy",},"order":3,},
+    {"id":{"name":"spr_myceliumhand","path":"sprites/spr_myceliumhand/spr_myceliumhand.yy",},"order":3,},
     {"id":{"name":"d1save2","path":"rooms/d1save2/d1save2.yy",},"order":20,},
     {"id":{"name":"obj_tent","path":"objects/obj_tent/obj_tent.yy",},"order":3,},
     {"id":{"name":"Selection1","path":"sounds/Selection1/Selection1.yy",},"order":16,},
