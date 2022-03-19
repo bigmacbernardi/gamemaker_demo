@@ -7,3 +7,4 @@ global.faceemotion= 0;
 if (instance_exists(obj_dialoguer)) instance_destroy(obj_dialoguer);
 message = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dialoguer);
 */
+obj_player.paused = false;
