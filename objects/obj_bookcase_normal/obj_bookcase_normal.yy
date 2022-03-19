@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_bookcase_hainted",
-    "path": "sprites/spr_bookcase_hainted/spr_bookcase_hainted.yy",
+    "name": "spr_bookcase_prev",
+    "path": "sprites/spr_bookcase_prev/spr_bookcase_prev.yy",
   },
   "persistent": false,
   "parentObjectId": {
