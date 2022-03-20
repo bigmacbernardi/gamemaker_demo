@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_old_man",
-    "path": "sprites/spr_old_man/spr_old_man.yy",
+    "name": "kidfront",
+    "path": "sprites/kidfront/kidfront.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,9 +25,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":2,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,7 +34,7 @@
     "path": "folders/Objects/overworld/people/ancyra.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_elder",
+  "name": "obj_kid0_stationary",
   "tags": [],
   "resourceType": "GMObject",
 }

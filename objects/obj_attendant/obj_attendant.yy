@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "overworld",
-    "path": "folders/Objects/overworld.yy",
+    "name": "ancyra",
+    "path": "folders/Objects/overworld/people/ancyra.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_attendant",
