@@ -8,9 +8,9 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 6,
-  "bbox_right": 58,
+  "bbox_right": 63,
   "bbox_top": 1,
-  "bbox_bottom": 62,
+  "bbox_bottom": 63,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -441,6 +441,39 @@
     {"compositeImage":{"FrameId":{"name":"43c5323a-1114-458b-a9ba-076b110a5daa","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"43c5323a-1114-458b-a9ba-076b110a5daa","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"43c5323a-1114-458b-a9ba-076b110a5daa","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"25cb4df0-e8f3-4cba-b53f-edff240550ab","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"25cb4df0-e8f3-4cba-b53f-edff240550ab","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"25cb4df0-e8f3-4cba-b53f-edff240550ab","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"79b6dcef-014e-4e8a-82da-a9e6716345ea","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"79b6dcef-014e-4e8a-82da-a9e6716345ea","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"79b6dcef-014e-4e8a-82da-a9e6716345ea","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8cbd1079-bf10-418a-a355-d5fe6faeaa7b","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8cbd1079-bf10-418a-a355-d5fe6faeaa7b","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"8cbd1079-bf10-418a-a355-d5fe6faeaa7b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"20454da5-626e-4e8e-99ae-dea3912b6103","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"20454da5-626e-4e8e-99ae-dea3912b6103","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"20454da5-626e-4e8e-99ae-dea3912b6103","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7108e319-f381-45d9-89c8-8ce61f3e0c8c","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7108e319-f381-45d9-89c8-8ce61f3e0c8c","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"7108e319-f381-45d9-89c8-8ce61f3e0c8c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"71e6d090-5a4e-469e-a584-3ca97ec6f0ff","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"71e6d090-5a4e-469e-a584-3ca97ec6f0ff","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"71e6d090-5a4e-469e-a584-3ca97ec6f0ff","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9ed8230b-bef2-46a4-9495-b7f93977ba57","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9ed8230b-bef2-46a4-9495-b7f93977ba57","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"9ed8230b-bef2-46a4-9495-b7f93977ba57","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7a854b88-2207-4037-9951-3247bfcea759","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7a854b88-2207-4037-9951-3247bfcea759","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"7a854b88-2207-4037-9951-3247bfcea759","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"db45fe2b-edda-40fb-b4ab-6f3b62655a38","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"db45fe2b-edda-40fb-b4ab-6f3b62655a38","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"db45fe2b-edda-40fb-b4ab-6f3b62655a38","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f2c90be0-570e-4432-916a-167164a5ec19","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f2c90be0-570e-4432-916a-167164a5ec19","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"f2c90be0-570e-4432-916a-167164a5ec19","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"17b33f86-1a27-41f1-9526-99bed6e281ca","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"17b33f86-1a27-41f1-9526-99bed6e281ca","path":"sprites/myceliumanweb/myceliumanweb.yy",},"LayerId":{"name":"0b8319bb-0c29-49dd-9088-013048bd496f","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","name":"17b33f86-1a27-41f1-9526-99bed6e281ca","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"myceliumanweb","path":"sprites/myceliumanweb/myceliumanweb.yy",},
@@ -450,7 +483,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 139.0,
+    "length": 150.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -594,6 +627,17 @@
             {"id":"91d090e9-eff0-4505-972f-5c59629134ce","Key":136.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b21eec7-e9e4-49e8-b41f-437d96305f2d","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d973c674-3360-49e6-9172-862e0c105d9c","Key":137.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dad3ba78-e8b1-405d-8eff-2b8e33aeb3ad","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d0063012-b3ef-4d61-8fb1-651b249552a4","Key":138.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43c5323a-1114-458b-a9ba-076b110a5daa","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"970446a3-2e7b-4c8a-99ed-627f305dcf39","Key":139.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"25cb4df0-e8f3-4cba-b53f-edff240550ab","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5c744fb1-658e-4b2b-90f4-51a783a04558","Key":140.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"79b6dcef-014e-4e8a-82da-a9e6716345ea","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"575df15c-339b-40cc-a7c9-5455448db972","Key":141.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8cbd1079-bf10-418a-a355-d5fe6faeaa7b","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"df45e3c2-f543-433a-aa80-b557f1e8d528","Key":142.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20454da5-626e-4e8e-99ae-dea3912b6103","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d0c69fde-49da-4ddf-b7ba-5293e3317e96","Key":143.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7108e319-f381-45d9-89c8-8ce61f3e0c8c","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c409e264-74c6-416c-962b-038d2e2ab657","Key":144.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"71e6d090-5a4e-469e-a584-3ca97ec6f0ff","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1c2241af-ecab-4e32-a44a-525432cc3ab3","Key":145.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ed8230b-bef2-46a4-9495-b7f93977ba57","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5da02f37-ee8b-4dd3-a47e-5f5a7b663e8a","Key":146.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a854b88-2207-4037-9951-3247bfcea759","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7f211b48-6d08-47c7-b5d2-fb2ac2b178b5","Key":147.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db45fe2b-edda-40fb-b4ab-6f3b62655a38","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1cf98521-9e3b-4277-aec1-b7114dbe5bda","Key":148.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f2c90be0-570e-4432-916a-167164a5ec19","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"057be9af-7c26-4a46-aa86-a738d201431a","Key":149.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"17b33f86-1a27-41f1-9526-99bed6e281ca","path":"sprites/myceliumanweb/myceliumanweb.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
