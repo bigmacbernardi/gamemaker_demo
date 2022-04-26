@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 // state machine that determines the unit's animation
+var current_form = form;
 switch(state){
 	case IDLE:
 		if (layer_sequence_get_headpos(unitSequence) > idleEnd){
@@ -103,6 +104,28 @@ switch(state){
 			}
 	break;
 	
+	case SPECIAL: 
+		if !doingSpecialAttack{ //transforming
+			if (layer_sequence_get_headpos(unitSequence)-start_frame) >= 8{
+				state = IDLE;
+				idleStarts = [idleStart,idleStart1,idleStart3,idleStart3];
+				layer_sequence_headpos(unitSequence,idleStarts[form]);
+			}
+		}
+		else{ //doing special attack
+			if form == 0{
+				
+			}
+			else if form == 1{
+				
+			}
+			else if form == 2{
+				
+			}
+		
+		}
+	break;
+	
 	case DEATH:
 		//var myId = id;
 		if (layer_sequence_get_headpos(unitSequence) > deathEnd){
@@ -112,4 +135,25 @@ switch(state){
 			}*/
 		}
 	break;
+}
+if form != current_form //transform
+{
+	state = SPECIAL;
+	if form == 0{
+		var possibilities = [transform0to1,transform0to2,transform0to3];
+		layer_sequence_headpos(unitSequence,possibilities[current_form-1]);
+		start_frame = possibilities[current_form];
+	}else if form == 1{
+		var possibilities = [transform1to0,0,transform1to2,transform1to3];
+		layer_sequence_headpos(unitSequence,possibilities[current_form]);
+		start_frame = possibilities[current_form];
+	}else if form == 2{
+		var possibilities = [transform1to0,0,transform1to2,transform1to3];
+		layer_sequence_headpos(unitSequence,possibilities[current_form]);
+		start_frame = possibilities[current_form];
+	}else if form == 3{
+		var possibilities = [transform3to0,transform3to1,transform3to2];
+		start_frame = possibilities[current_form];
+		layer_sequence_headpos(unitSequence,possibilities[current_form]);
+	}
 }

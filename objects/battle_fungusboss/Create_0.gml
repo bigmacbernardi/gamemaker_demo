@@ -22,6 +22,8 @@ doingSpecialAttack = false;
 xp_value = 100;
 cash_value = 100;
 
+form = 1;//0=flat 1=man 2=hand 3=def 4=dead
+
 //start and end frames for each state
 idleStart = 0;
 idleEnd = 14;
@@ -83,6 +85,9 @@ deathEnd2 = 135;
 transform2to0 = 135;
 transform2to1 = 135;
 transform2to3 = 135;
+transform3to0 = 135;
+transform3to1 = 135;
+transform3to2 = 135;
 idleStart3 = 135;
 idleEnd3 = 135;
 atkStart3 = 135;
@@ -113,9 +118,13 @@ current[ACC] = 0.5;
 hasGoneOnce = false;
 	 //0: GOO FORM
 	 //1: SHELL FORM
-mode = 2//MAN FORM
+starts=[0,135,180]
+form = 2;//MAN FORM
 	 //3: HAND FORM  
-
+start_frame = 0;
+unitSequence = transform0to2;
+state=SPECIAL;
+start_frame = transform0to2;
 
 
 //function redeclarations shouldn't be needed
