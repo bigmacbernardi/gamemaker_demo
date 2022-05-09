@@ -16,7 +16,7 @@ doingSpecialAttack = false;
 
 xp_value = 100;
 cash_value = 100;
-unitSequence = layer_sequence_create("Sequences",x,y,sFootsoldier);
+unitSequence = layer_sequence_create("Sequences",x,y,sGang0);
 
 //start and end frames for each state
 idleStart = 0;
