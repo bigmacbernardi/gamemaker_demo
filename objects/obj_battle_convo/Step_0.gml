@@ -4,11 +4,15 @@
 //y = global.enemies[|index].y;
 if allowedToGo{
 	var line = lines[|index];
-	if (!frameHasPassed){
-		battle_manager.currentMessage = lines[|index];
+	if line == undefined instance_destroy()
+	else if string_char_at(line,0)=="{"{
+		//do action
+	}
+	else if (!frameHasPassed){
+		battle_manager.currentMessage = line;
 		frameHasPassed=true;
 		//show_debug_message("Starting convo");
-		if line!=undefined && string_char_at(line,0)=="*"
+		if string_char_at(line,0)=="*"
 			with battle_manager currentMessage = line;
 		//else instance_destroy();
 	}

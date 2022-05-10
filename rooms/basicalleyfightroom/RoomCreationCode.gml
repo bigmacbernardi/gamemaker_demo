@@ -6,4 +6,3 @@ with obj_persistentmusicplayer{
 		trackNo = 3;	
 	}
 }
-global.battleRoom=basicalleyfightroom;

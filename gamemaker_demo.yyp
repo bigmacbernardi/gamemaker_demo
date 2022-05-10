@@ -543,6 +543,7 @@
     {"id":{"name":"battle_smallshroom","path":"objects/battle_smallshroom/battle_smallshroom.yy",},"order":19,},
     {"id":{"name":"spr_ball","path":"sprites/spr_ball/spr_ball.yy",},"order":14,},
     {"id":{"name":"battle_book","path":"objects/battle_book/battle_book.yy",},"order":12,},
+    {"id":{"name":"basicalleyfightroom","path":"rooms/basicalleyfightroom/basicalleyfightroom.yy",},"order":40,},
     {"id":{"name":"testobj_writercreator","path":"objects/testobj_writercreator/testobj_writercreator.yy",},"order":8,},
     {"id":{"name":"obj_skee_meter2","path":"objects/obj_skee_meter2/obj_skee_meter2.yy",},"order":3,},
     {"id":{"name":"spr_aoi_back2","path":"sprites/spr_aoi_back2/spr_aoi_back2.yy",},"order":9,},
@@ -725,6 +726,7 @@
     {"roomId":{"name":"d1columb1","path":"rooms/d1columb1/d1columb1.yy",},},
     {"roomId":{"name":"d1columb2","path":"rooms/d1columb2/d1columb2.yy",},},
     {"roomId":{"name":"T1Ancyra2CrimeAlley","path":"rooms/T1Ancyra2CrimeAlley/T1Ancyra2CrimeAlley.yy",},},
+    {"roomId":{"name":"basicalleyfightroom","path":"rooms/basicalleyfightroom/basicalleyfightroom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Extensions.yy","order":0,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
