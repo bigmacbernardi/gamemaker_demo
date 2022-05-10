@@ -7,6 +7,20 @@ if allowedToGo{
 	if line == undefined instance_destroy()
 	else if string_char_at(line,0)=="{"{
 		//do action
+		if string_pos(string_lower(line),"give")==1{
+			
+		}
+		if string_pos(string_lower(line),"stat")==1{
+			
+		}
+		if string_pos(string_lower(line),"hit")==1{
+			
+		}
+		if string_pos(string_lower(line),"cast")==1{
+			
+		}
+		
+		
 	}
 	else if (!frameHasPassed){
 		battle_manager.currentMessage = line;
