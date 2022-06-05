@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_encounterfield",
+    "path": "objects/obj_encounterfield/obj_encounterfield.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
