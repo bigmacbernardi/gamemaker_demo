@@ -106,15 +106,14 @@ function elemAttack(element,strength=1,unit=global.selectedUnit,target=global.ta
 			}
 		}
 }
-function unitAttack(){
-	var unit = global.selectedUnit;
+function unitAttack(unit = global.selectedUnit,targets = global.targets,thatsIt = true){
 	if unit < 0 return; //emergency fix
 	else{
-		if global.targets[0] < 0 global.targets[0]=unit.isPlayer?global.enemies[|0]:global.allies[|0];//auto-fix
-		show_debug_message(global.selectedUnit.title+" attacking AT LEAST "+
-			global.targets[0].title+"#"+string(global.targets[0]));
+		if targets[0] < 0 targets[0]=unit.isPlayer?global.enemies[|0]:global.allies[|0];//auto-fix
+		show_debug_message(unit.title+" attacking AT LEAST "+
+			targets[0].title+"#"+string(global.targets[0]));
 	}
-	var targets = global.targets;
+	//var targets = global.targets;
 	for (var i = 0; i < array_length(targets); i++){ //should recalculate and put outside, but that's not how attack works rn
 		checkForHit(unit);
 		/*var orig_x = unit.x;
@@ -164,7 +163,7 @@ function unitAttack(){
 		 layer_sequence_x(unit.unitSequence,orig_x);
 		 layer_sequence_y(unit.unitSequence,orig_y);
 	}*/
-	with battle_manager{
+	if thatsIt with battle_manager{
 		enqueue(unit);	
 	}
 }

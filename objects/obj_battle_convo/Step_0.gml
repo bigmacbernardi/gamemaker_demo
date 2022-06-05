@@ -6,18 +6,45 @@ if allowedToGo{
 	var line = lines[|index];
 	if line == undefined instance_destroy()
 	else if string_char_at(line,0)=="{"{
+		var ll = string_lower(line);
+		var secondArg = string_pos_ext(" ", line, string_pos(" ",line)+1)+1;//position of second arg
 		//do action
-		if string_pos(string_lower(line),"give")==1{
+		if string_pos("give",ll)==1{
 			
 		}
-		if string_pos(string_lower(line),"stat")==1{
+		else if string_pos("stat",ll)==1{
 			
 		}
-		if string_pos(string_lower(line),"hit")==1{
+		else if string_pos("hit",ll)==1{
+			//read attacker
+			if string_pos("selected",ll) == 5{//global.selectedUnit
+				if string_pos("target",ll) == secondArg{
+					 unitAttack(global.selectedUnit,global.targets,false);
+				}
+			}
+			else if string_pos("target",ll) == 5{//global.selectedUnit
+				if string_pos("selected",ll) == secondArg{
+					 unitAttack(global.targets[0],[global.selectedUnit],false);
+				}
+			}
+		}
+		else if string_pos("cast",ll)==1{
 			
 		}
-		if string_pos(string_lower(line),"cast")==1{
+		else if string_pos("event",ll)==1{
 			
+		}
+		else if string_pos("move",ll)==1{
+			
+		}
+		else if string_pos("warp",ll)==1{
+			
+		}
+		else if string_pos("end",ll)==1{
+			with battle_manager{
+				enqueue_unit(global.selectedUnit());	
+			}
+			instance_destroy();//?
 		}
 		
 		
