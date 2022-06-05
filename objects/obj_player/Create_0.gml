@@ -15,3 +15,5 @@ eye_x2 = x + abs(sprite_width/2) + 1;//top right corner
 eye_y2 = y + 16;
 //everything below this line should be based on currentParty[0]
 set_sprites();
+stepsTaken = 0;
+stepping = true;
