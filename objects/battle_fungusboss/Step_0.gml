@@ -2,24 +2,33 @@
 // You can write your code in this editor
 // state machine that determines the unit's animation
 var current_form = form;
+var labels = ["IDLE","ATTACK","HIT","MISS","TODEFEND","DEFEND","DEATH"," ITEM","HEAL","SPECIAL"];
+show_debug_message("Boss state "+labels[state]);
 switch(state){
 	case IDLE:
+		var starts = [idleStart,idleStart1,idleStart2,idleStart3];
+		var ends = [idleEnd,idleEnd1,idleEnd2,idleEnd3];
 		if (layer_sequence_get_headpos(unitSequence) > idleEnd){
 			layer_sequence_headpos(unitSequence, idleStart);
-		}
-	
-	break
+		}	
+		break
 	
 	case ATTACK:
-		if (layer_sequence_get_headpos(unitSequence) > (doingSpecialAttack?atk2End:atkEnd)){
-			//var myId = id;
+		if (layer_sequence_get_headpos(unitSequence) > (doingSpecialAttack?atk2End:atkEnd)){//min(atk2End,atkEnd)){//
 			show_debug_message(title+" attack animation finished");
 			//at THIS point damage should happen right?
 			turnFinished = true;
+			checkForHit();//not using sequences rn bc that's dumb to set up
+			unitAttack();
 			//if (attackWillHit){
 			//	layer_sequence_headpos(unitSequence, idleStart);
 			state = IDLE;//NEW stuff below this line
-			/*with battle_manager{enqueue(myId);}*///should be done by unitAttack
+			var myId = id;
+			with battle_manager{
+				enqueue(myId);///should be done by unitAttack but wygd
+				alarm[1]=1;
+			}
+			
 		}
 	
 	break;
@@ -122,7 +131,7 @@ switch(state){
 			else if form == 2{
 				
 			}
-		
+			state = IDLE;
 		}
 	break;
 	

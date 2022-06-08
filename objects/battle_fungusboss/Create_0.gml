@@ -122,7 +122,7 @@ starts=[0,135,180]
 form = 2;//MAN FORM
 	 //3: HAND FORM  
 start_frame = 0;
-unitSequence = transform0to2;
+layer_sequence_headpos(unitSequence, transform0to2);
 state=SPECIAL;
 start_frame = transform0to2;
 
@@ -174,3 +174,4 @@ function turnEnd(){
 	nastyDamage = 0;
 	incomingHealage = 0;
 }*/
+show_debug_message("it's naught thought");
