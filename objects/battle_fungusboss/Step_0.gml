@@ -18,7 +18,6 @@ switch(state){
 			show_debug_message(title+" attack animation finished");
 			//at THIS point damage should happen right?
 			turnFinished = true;
-			checkForHit();//not using sequences rn bc that's dumb to set up
 			unitAttack();
 			//if (attackWillHit){
 			//	layer_sequence_headpos(unitSequence, idleStart);
