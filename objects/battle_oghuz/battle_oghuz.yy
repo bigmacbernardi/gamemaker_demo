@@ -25,14 +25,15 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"title","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"Yusuf","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"title","path":"objects/battle_unit/battle_unit.yy",},"objectId":{"name":"battle_unit","path":"objects/battle_unit/battle_unit.yy",},"value":"Oghuz","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"index","path":"objects/battle_player/battle_player.yy",},"objectId":{"name":"battle_player","path":"objects/battle_player/battle_player.yy",},"value":"-1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "good guys",
     "path": "folders/Objects/battle resources/good guys.yy",
   },
   "resourceVersion": "1.0",
-  "name": "battle_yusuf",
+  "name": "battle_oghuz",
   "tags": [],
   "resourceType": "GMObject",
 }
