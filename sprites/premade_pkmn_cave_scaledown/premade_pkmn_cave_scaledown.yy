@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 575,
+  "bbox_right": 767,
   "bbox_top": 0,
-  "bbox_bottom": 575,
+  "bbox_bottom": 767,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 576,
-  "height": 576,
+  "width": 768,
+  "height": 768,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9312925d-e422-411b-9149-ba1f189648d6","path":"sprites/premade_pkmn_cave/premade_pkmn_cave.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9312925d-e422-411b-9149-ba1f189648d6","path":"sprites/premade_pkmn_cave/premade_pkmn_cave.yy",},"LayerId":{"name":"163ce201-317f-44a5-956b-dc9357cf964d","path":"sprites/premade_pkmn_cave/premade_pkmn_cave.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"premade_pkmn_cave","path":"sprites/premade_pkmn_cave/premade_pkmn_cave.yy",},"resourceVersion":"1.0","name":"9312925d-e422-411b-9149-ba1f189648d6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9312925d-e422-411b-9149-ba1f189648d6","path":"sprites/premade_pkmn_cave_scaledown/premade_pkmn_cave_scaledown.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9312925d-e422-411b-9149-ba1f189648d6","path":"sprites/premade_pkmn_cave_scaledown/premade_pkmn_cave_scaledown.yy",},"LayerId":{"name":"163ce201-317f-44a5-956b-dc9357cf964d","path":"sprites/premade_pkmn_cave_scaledown/premade_pkmn_cave_scaledown.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"premade_pkmn_cave_scaledown","path":"sprites/premade_pkmn_cave_scaledown/premade_pkmn_cave_scaledown.yy",},"resourceVersion":"1.0","name":"9312925d-e422-411b-9149-ba1f189648d6","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"premade_pkmn_cave","path":"sprites/premade_pkmn_cave/premade_pkmn_cave.yy",},
+    "spriteId": {"name":"premade_pkmn_cave_scaledown","path":"sprites/premade_pkmn_cave_scaledown/premade_pkmn_cave_scaledown.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2bb42136-7932-46d5-abda-2f5195336d95","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9312925d-e422-411b-9149-ba1f189648d6","path":"sprites/premade_pkmn_cave/premade_pkmn_cave.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f9779e44-7be8-4dd8-a727-731651065707","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9312925d-e422-411b-9149-ba1f189648d6","path":"sprites/premade_pkmn_cave_scaledown/premade_pkmn_cave_scaledown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"premade_pkmn_cave","path":"sprites/premade_pkmn_cave/premade_pkmn_cave.yy",},
+    "parent": {"name":"premade_pkmn_cave_scaledown","path":"sprites/premade_pkmn_cave_scaledown/premade_pkmn_cave_scaledown.yy",},
     "resourceVersion": "1.4",
-    "name": "premade_pkmn_cave",
+    "name": "premade_pkmn_cave_scaledown",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/tilesets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "premade_pkmn_cave",
+  "name": "premade_pkmn_cave_scaledown",
   "tags": [],
   "resourceType": "GMSprite",
 }
