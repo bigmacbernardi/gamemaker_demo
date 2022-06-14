@@ -311,6 +311,7 @@
     {"id":{"name":"longdamage","path":"sounds/longdamage/longdamage.yy",},"order":11,},
     {"id":{"name":"Notice3","path":"sounds/Notice3/Notice3.yy",},"order":22,},
     {"id":{"name":"spr_aoi_left2","path":"sprites/spr_aoi_left2/spr_aoi_left2.yy",},"order":10,},
+    {"id":{"name":"icecavetake1","path":"sounds/icecavetake1/icecavetake1.yy",},"order":12,},
     {"id":{"name":"obj_backwall","path":"objects/obj_backwall/obj_backwall.yy",},"order":4,},
     {"id":{"name":"noBKG_AoiAttack_strip","path":"sprites/noBKG_AoiAttack_strip/noBKG_AoiAttack_strip.yy",},"order":0,},
     {"id":{"name":"spr_skeeball_ovrwld","path":"sprites/spr_skeeball_ovrwld/spr_skeeball_ovrwld.yy",},"order":28,},
@@ -483,6 +484,7 @@
     {"id":{"name":"soldier_defend","path":"sprites/soldier_defend/soldier_defend.yy",},"order":7,},
     {"id":{"name":"spr_aoi_right2","path":"sprites/spr_aoi_right2/spr_aoi_right2.yy",},"order":12,},
     {"id":{"name":"spr_bookcase_old","path":"sprites/spr_bookcase_old/spr_bookcase_old.yy",},"order":9,},
+    {"id":{"name":"cave0","path":"rooms/cave0/cave0.yy",},"order":0,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":3,},
     {"id":{"name":"spr_dumbguy_face3","path":"sprites/spr_dumbguy_face3/spr_dumbguy_face3.yy",},"order":16,},
     {"id":{"name":"yusufDayTheme","path":"sounds/yusufDayTheme/yusufDayTheme.yy",},"order":10,},
@@ -749,6 +751,7 @@
     {"roomId":{"name":"d1columb2","path":"rooms/d1columb2/d1columb2.yy",},},
     {"roomId":{"name":"T1Ancyra2CrimeAlley","path":"rooms/T1Ancyra2CrimeAlley/T1Ancyra2CrimeAlley.yy",},},
     {"roomId":{"name":"basicalleyfightroom","path":"rooms/basicalleyfightroom/basicalleyfightroom.yy",},},
+    {"roomId":{"name":"cave0","path":"rooms/cave0/cave0.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Extensions.yy","order":0,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
@@ -823,6 +826,7 @@
     {"folderPath":"folders/Objects/overworld/people.yy","order":46,"resourceVersion":"1.0","name":"people","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/overworld/people/ancyra.yy","order":1,"resourceVersion":"1.0","name":"ancyra","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/battle resources/good guys.yy","order":27,"resourceVersion":"1.0","name":"good guys","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/pseudungeons.yy","order":41,"resourceVersion":"1.0","name":"pseudungeons","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

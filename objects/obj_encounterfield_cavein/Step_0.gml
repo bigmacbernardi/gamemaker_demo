@@ -2,25 +2,19 @@
 // You can write your code in this editor
 if !activated{
 	if place_meeting(x,y,obj_player){
-		if stepsToGo == -1 stepsToGo=50+irandom(100);
-		else{
-		if last_x!=obj_player.x{
-			//stepsToGo--;//with: or last_y!=obj_player.y
-			stepsToGo=max(0,stepsToGo-round(abs(last_x-obj_player.x)/2));	
-		}
-		if last_y!=obj_player.y{
-			stepsToGo=max(0,stepsToGo-round(abs(last_y-obj_player.y)/2));	
-		}
+		if lastStep == -1 lastStep=obj_player.stepsTaken+16+irandom(15);
+		/*if last_x!=obj_player.x or last_y!=obj_player.y{
+			stepsToGo--;	
 		}
 		last_x=obj_player.x;
-		last_y=obj_player.y;
+		last_y=obj_player.y;*/
 	}
 	else {
-		stepsToGo=-1;	
-		last_x=-1;
-		last_y=-1;
+		lastStep=-1;	
+		//last_x=-1;
+		//last_y=-1;
 	}
-	if stepsToGo==0{
+	if lastStep!=-1 and lastStep<=obj_player.stepsTaken{
 		activated = true;
 		obj_player.paused=true;
 		audio_play_sound(shortdamage,100,false);

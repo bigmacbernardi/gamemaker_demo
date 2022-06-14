@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-if stepsToGo>-1 && keyboard_check(ord("V")){
+if lastStep>-1 && keyboard_check(ord("V")){
 	draw_set_color(c_red);
-	draw_text(obj_player.x-8,obj_player.y+28,string(stepsToGo));
+	draw_text(x,y,string(lastStep - obj_player.stepsTaken));
 }
 /*if activated{
 	draw_sprite(spr_dropshadow,0,obj_player.x,obj_player.y-(dropToGo*3));
