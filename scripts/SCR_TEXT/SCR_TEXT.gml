@@ -37,7 +37,7 @@ switch(argument0){
 	
 	case 8://mirror text
 		if global.currentParty[0]==YUSUF{
-			global.msg = ["Wow!{1}&What a handsome young man!{4} :)/","%%%"]; 
+			global.msg = ["Wow!{1}&What a handsome young man!^3 :)/","%%%"]; 
 		}
 		else if  global.currentParty[0]==AOI{
 				global.msg = ["You look fine./","%%%"];
@@ -45,7 +45,7 @@ switch(argument0){
 		else global.msg = ["A mirror./","%%%"];
 		break;
 	case 9://dresser message
-		global.msg = ["The drawers are filled with wadded-up &shirts./",(global.currentParty[0]==YUSUF?"You think":global.names[0]+" thinks")+" that folding takes up &too much time./","%%%"];
+		global.msg = ["The drawers are filled with wadded-up &shirts./",(global.currentParty[0]==YUSUF?"You think":global.names[YUSUF]+" thinks")+" that folding takes up &too much time./","%%%"];
 		break;
 	case 10:
 		global.msg = [" Hm... lots of rubble around here.{0}& We should watch our step./","%%%"]
