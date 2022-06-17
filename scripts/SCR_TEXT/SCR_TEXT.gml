@@ -30,18 +30,22 @@ switch(argument0){
 	case 5:
 		global.msg = ["Who knows, let's keep going./","%%%"];
 		break;
-	/* mirror messages */
-	case 6://Yusuf
-		global.msg = ["Wow!{1}&What a handsome young man! {2}:)/","%%%"];
+	case 6:
 		break;
-	case 7://Aoi
-		global.msg = ["You look fine./","%%%"];
+	case 7:
 		break;
-	case 8://Other
-		global.msg = ["A mirror./","%%%"];
+	
+	case 8://mirror text
+		if global.currentParty[0]==YUSUF{
+			global.msg = ["Wow!{1}&What a handsome young man!{4} :)/","%%%"]; 
+		}
+		else if  global.currentParty[0]==AOI{
+				global.msg = ["You look fine./","%%%"];
+		}
+		else global.msg = ["A mirror./","%%%"];
 		break;
 	case 9://dresser message
-		global.msg = ["The drawers are filled with wadded-up &shirts./","You think that folding takes up &too much time./","%%%"];
+		global.msg = ["The drawers are filled with wadded-up &shirts./",(global.currentParty[0]==YUSUF?"You think":global.names[0]+" thinks")+" that folding takes up &too much time./","%%%"];
 		break;
 	case 10:
 		global.msg = [" Hm... lots of rubble around here.{0}& We should watch our step./","%%%"]
