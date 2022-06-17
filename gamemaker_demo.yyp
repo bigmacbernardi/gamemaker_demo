@@ -666,6 +666,7 @@
     {"id":{"name":"kidside","path":"sprites/kidside/kidside.yy",},"order":23,},
     {"id":{"name":"beastling_miss","path":"sprites/beastling_miss/beastling_miss.yy",},"order":8,},
     {"id":{"name":"til_goth","path":"tilesets/til_goth/til_goth.yy",},"order":20,},
+    {"id":{"name":"obj_scene0","path":"objects/obj_scene0/obj_scene0.yy",},"order":6,},
     {"id":{"name":"obj_elder","path":"objects/obj_elder/obj_elder.yy",},"order":2,},
     {"id":{"name":"exterior_parallaxBG2","path":"sprites/exterior_parallaxBG2/exterior_parallaxBG2.yy",},"order":1,},
     {"id":{"name":"keyboard_multicheck_pressed","path":"scripts/keyboard_multicheck_pressed/keyboard_multicheck_pressed.yy",},"order":17,},
