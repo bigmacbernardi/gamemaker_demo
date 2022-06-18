@@ -83,13 +83,14 @@ switch(argument0){
 		"%%%"];
 		break;
 	case 30:
-        global.msg[0]= "Bichael Mackson/";
-        global.msg[1]= "Not that you would know./";
+        global.msg[0]= "Hello!  Not often we get vistors./";
+        global.msg[1]= "What brings you here?/";
         global.msg[2]= "The parts for by dialogue aren't finished&yet./";
         global.msg[3]= "And that's why I have this ridiculous &placeholder dialogue./";
         global.msg[4]= "%%%";
         break;
 	case 31:
+		global.nameplate = "Bichael";
         global.msg[0]= " I read bo^1o^1o^1o^1o^1ks/";
         global.msg[1]= "A lot of these books were eaten through,/";
         global.msg[2]= "but for some reason I can still read the parts where the pages are gone./";
@@ -98,6 +99,7 @@ switch(argument0){
         global.msg[5]= "%%%";
         break;
 	case 32:
+		global.nameplate = "Bichael";
         global.msg[0]= "I'm what, according to &these books, your people/";
         global.msg[1]= "call a 'bitch-ass.^5'%";
         global.msg[2]= "Boo^1oo%";
@@ -112,10 +114,10 @@ switch(argument0){
 		global.msg =["Sad ghost./","%%%"];
 		break;
 	case 35:
-		global.msg =["Ambi ghost/","%%%"];
+		global.msg =["Oh, they're not my friends./","%%%"];
 		break;
 	case 36:
-		global.msg =["Neither do I^3.%","%%%"];
+		global.msg =["They're not my friends^5. &Asshole^1.%","%%%"];
 		break;
 	case 37:
 		global.msg =["The parts for by dialogue aren't finished&yet./",

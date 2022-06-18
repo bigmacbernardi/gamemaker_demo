@@ -17,5 +17,4 @@ message = instance_create_layer(camera_get_view_x(cam),10,"Instances",obj_dialog
 if (instance_exists(obj_dialoguechoice)) instance_destroy(obj_dialoguechoice);
 var silly = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dialoguechoice);
 //silly.active = false;
-if nextMessage==32 silly.optionString="Go to hell,Go to heaven,Fight";
-else if nextMessage==30 silly.optionString="Be scared,Be scary,Be dull";
+if nextMessage==32 silly.optionString="Go to hell,Fight me,Who are these other guys?,Call your friends off";

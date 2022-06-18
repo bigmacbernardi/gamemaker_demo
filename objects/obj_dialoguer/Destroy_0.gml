@@ -1,4 +1,5 @@
 /// @description Cleanup
+global.nameplate=noone;
 show_debug_message("DIALOGUER SMASH");
 if !instance_exists(obj_face) {
     with(obj_face) instance_destroy();//what??

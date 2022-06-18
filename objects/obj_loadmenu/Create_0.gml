@@ -220,5 +220,6 @@ function loadGame(fname = "save0.ini"){
 	global.dialogueLine=0;
 	global.lastSortOpt = 0;
 	global.fightNo = -6;
+	global.nameplate = noone;
 	room_goto(rom);
 }
