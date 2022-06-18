@@ -1,6 +1,4 @@
 /// @description Insert description here
-var bag_x = obj_player.x;
-var bag_y = obj_player.y+obj_player.height;
 switch (state){
 	case 0:
 			//draw_set_alpha(progress/room_speed);
