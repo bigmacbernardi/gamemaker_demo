@@ -108,7 +108,10 @@ switch(argument0){
         global.msg[5]= "%%%";
         break;
 	case 33:
-		global.msg =["Happy ghost!/","%%%"];
+		global.facechoice = global.currentParty[0]+2;
+		global.faceemotion = 2;
+		global.nameplate = global.currentParty[0]==YUSUF?"Yousuf":"You";
+		global.msg =["        Happy ghost!/","%%%"];
 		break;
 	case 34:
 		global.msg =["Sad ghost./","%%%"];
