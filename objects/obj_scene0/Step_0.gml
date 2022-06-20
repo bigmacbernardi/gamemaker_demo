@@ -3,16 +3,18 @@ switch (state){
 	case 0:
 			if (++progress >= room_speed) state = 1;
 			break;
-	case 1:
+	case 1: state = 2;
 			break;
-	case 2:
+	case 2: state = 3;
 			break;
 	case 3:
-			
+			var namer = instance_create_layer(0,0,"Instances",obj_nameentry);
+			namer.naming_whom = YUSUF;
+			state = 4;
 			break;
-	case 4:
+	case 4: state = 5;
 			break;
-	case 5:
+	case 5: state = 6;
 			break;
 	default:
 		camera_set_view_target(cam,obj_player);

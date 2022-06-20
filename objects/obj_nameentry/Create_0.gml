@@ -1,4 +1,4 @@
-///","@description","
+///@description Set display crap
 
 black=false;
 black_alpha = 1;
