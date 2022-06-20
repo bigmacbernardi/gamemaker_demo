@@ -6,13 +6,21 @@ else if defaulted{
 	var drawX = 10;
 	for (var i = 0 ; i< array_length(characters);i++){
 		draw_text(drawX,drawY,characters[i]);
+		
 	}
 	drawX = 10;
 	var drawY = 50;
 	if (black_alpha > 0) black_alpha -= .05;
 	for (var i = 0 ; i< array_length(characters);i++){
+		draw_set_color(i==index2?c_white:c_yellow);
 		draw_text(drawX,drawY,characters[i]);
+		drawX += 20;
+		if i%10 == 0 {
+			drawX = 10;
+			drawY += 15;
+		}
 	}
+	
 }
 if black {
 	if black_alpha > 0 {
