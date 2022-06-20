@@ -12,7 +12,10 @@ switch (state){
 			namer.naming_whom = YUSUF;
 			state = 4;
 			break;
-	case 4: state = 5;
+	case 4: if !instance_exists(obj_nameentry)state = 5;
+			with obj_player{
+				facing = 2;	
+			}
 			break;
 	case 5: state = 6;
 			break;
