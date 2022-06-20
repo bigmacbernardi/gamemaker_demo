@@ -10,8 +10,8 @@ obj_player.paused = true;
 state = 0;
 draw_set_alpha(1);
 progress = 0;
-obj_player.x = camera_get_view_x(cam)+5;
-obj_player.y = camera_get_view_y(cam)+30;
+//obj_player.x = camera_get_view_x(cam)+5;
+//obj_player.y = camera_get_view_y(cam)+30;
 bag_x = obj_player.x - 50;
 bag_y = obj_player.y+obj_player.sprite_height;
 
