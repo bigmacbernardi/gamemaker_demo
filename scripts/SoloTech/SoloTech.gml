@@ -13,6 +13,13 @@ function flee(){
 	//battle_manager.alarm[1]=10;
 }
 /* NEAR UNIVERSAL */
+function cast(spell=burn){
+	if layer_exists(layer_get_id("Midground")){
+		var fade = instance_create_layer(0,0,"Midground",obj_roomdarken);
+		fade.associatedAction = spell;
+	}
+}
+
 function bribe_attempt(electrum,gold,target=global.targets[0]){
 	var roll = irandom(99);
 	if variable_instance_exists(target,"price"){

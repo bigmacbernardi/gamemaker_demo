@@ -51,7 +51,7 @@ function slot_skills(){
 				aoiBurn.mode = 2;
 				if battling{
 					aoiBurn.usable = global.selectedUnit.current[MP]>=4;
-					aoiBurn.script = burn;
+					aoiBurn.script = cast;//temp test
 				}else aoiBurn.usable = false;
 				a[index++] = aoiBurn;
 				m[mIndex++] = aoiBurn;

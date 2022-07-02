@@ -1,14 +1,14 @@
 {
-  "spriteId": {
-    "name": "skill_desc_0003_desat",
-    "path": "sprites/skill_desc_0003_desat/skill_desc_0003_desat.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_skill",
+    "path": "objects/obj_skill/obj_skill.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,18 +23,15 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [
-    {"varType":4,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"associatedAction","tags":[],"resourceType":"GMObjectProperty",},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "battle",
-    "path": "folders/Objects/GUI/battle.yy",
+    "name": "tech",
+    "path": "folders/Objects/GUI/battle/tech.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_roomdarken",
+  "name": "obj_spell",
   "tags": [],
   "resourceType": "GMObject",
 }
