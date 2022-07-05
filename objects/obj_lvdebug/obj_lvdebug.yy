@@ -31,7 +31,7 @@
     "path": "folders/Objects/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_debugmenu",
+  "name": "obj_lvdebug",
   "tags": [],
   "resourceType": "GMObject",
 }

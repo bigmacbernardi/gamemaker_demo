@@ -12,6 +12,8 @@ for (var i =0;i<99;i++){
 }
 /*** reinitializing everything so i don't have to count 
 	 or go back over future party members ***/
+	 
+if !variable_global_exists("location_name") global.location_name="Load menu";
 if !variable_global_exists("party"){
 	global.party[AOI][HP] = 10;
 	global.party[AOI][MP] = 10;

@@ -4,6 +4,54 @@ function Helper(){
 
 }
 
+function getRoomName(rm = room){
+	switch (rm){
+		case start_menu:
+			return "Startup";
+		case Room2:
+			return "Opening Test Room";
+		case d1hall1:
+			return "Ancyran Archive - Great Hall, Lv 3 (Old)";
+		case Room1:
+			return "Elder's Hall";
+		case gameover:
+			return "Game over realm";
+		case Room3:
+			return "Ski Ball Hall";
+		case depthtest_1:
+			return "Depth Test 1";
+		case depth_test_smaller:
+			return "Depth Test 2";
+		case depth_size_test:
+			return "Scaling depth test room";
+		case d1bookhall:
+			return "Ancyran Archive - Path to Library";
+		case d1entrcha:
+			return "Ancyran Archive - Upper Archive";
+		case d1library1:
+			return "Ancyran Archive - Library, Lv 3";
+		case d1hall1redux:
+			return "Ancyran Archive - Great Hall, Lv 3";
+		case d1library2:
+			return "Ancyran Archive - Library, Lv 2";
+		case d1sanc1:
+		case d1sanc2:
+			return "Ancyran Archive - Sanctuary";
+		case d1save1:
+		case d1save2:
+			return "Ancyran Archive - Safe Room";
+		case d1admin:
+			return "Ancyran Archive - Administration Room";
+			
+		/*case battle_area:
+		case battle_d1area:
+		case battle_d1shelves:
+		case Minigame0:*/
+		default:
+			return global.location_name;//no change
+			
+	}
+}
 
 /*function checkForHit(){
 	var number = random(1);

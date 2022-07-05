@@ -184,7 +184,8 @@ function burn(){
 	}
 	setParticle(2);//fire;
 	for(var i = 0; i < array_length(global.targets); i++){
-		show_debug_message(global.selectedUnit.title+" attacking "+global.targets[i].title+"#"+string(global.targets[i]));
+		if !instance_exists(global.targets[i]) continue;//already dead!
+		show_debug_message(unit.title+" attacking "+global.targets[i].title+"#"+string(global.targets[i]));
 		var xStep = (global.targets[i].x - unit.x )/4;
 		var yStep = (global.targets[i].y - unit.y )/4;
 		var partX = unit.x;

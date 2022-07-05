@@ -126,7 +126,7 @@ function saveGame(fname = "save0.ini"){
 		ini_write_real("states","spawns",0);
 	}
 	ini_write_real("position","room",room);
-	ini_write_string("position","name",obj_savepoint.location_name);
+	ini_write_string("position","name",global.location_name);
 	ini_write_real("position","x",obj_player.x);
 	ini_write_real("position","y",obj_player.y);
 	ini_close();

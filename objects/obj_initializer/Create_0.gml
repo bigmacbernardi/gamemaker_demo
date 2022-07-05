@@ -30,7 +30,8 @@
 #macro OGHUZ 30*/
 
 /*party stuff*/
-global.nameplate = noone;
+global.nameplate = noone;//probably a dialogue thing?
+global.location_name = "Startup";
 global.names=["Aoi","Yusuf","Jamir","Bardo","Prison Jane","Luchador","Server","Nikolai","Atta","Pat","Wormwood"];
 //global.varisMistake="Birdo";
 global.saveSlot = 1;
