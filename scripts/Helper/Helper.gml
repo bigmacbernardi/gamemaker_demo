@@ -12,6 +12,10 @@ function getRoomName(rm = room){
 			return "Opening Test Room";
 		case d1hall1:
 			return "Ancyran Archive - Great Hall, Lv 3 (Old)";
+		case d1hall2:
+			return "Ancyran Archive - Great Hall, Lv 2";
+		case d1hall3:
+			return "Ancyran Archive - Great Hall, Lv 1";
 		case Room1:
 			return "Elder's Hall";
 		case gameover:
@@ -36,16 +40,46 @@ function getRoomName(rm = room){
 			return "Ancyran Archive - Library, Lv 2";
 		case d1sanc1:
 		case d1sanc2:
+		case d1sanc3:
+		case d1sancliminal:
 			return "Ancyran Archive - Sanctuary";
+		case d1archlab:
+			return "Ancyran Archive - Archeology Lab";
+		case d1lab1:
+			return "Ancyran Archive - Biology Lab, Lv 3";
+		case d1lab2:
+			return "Ancyran Archive - Biology Lab, Lv 2";
+		case d1columb1:
+		case d1columb2:
+			return "Ancyran Archive - Columbarium";
 		case d1save1:
 		case d1save2:
 			return "Ancyran Archive - Safe Room";
+		case d1extravault1:
+			return "Ancyran Archive - Vault";
+		case d1artifacts:
+			return "Ancyran Archive - Artifact Safe";
+		case d1relicroom:
+			return "Ancyran Archive - Relic Vault";
+		case T1Ancyra1:
+			return "Ancyra";
+		case T1YusufHouse:
+			return global.names[YUSUF]+"'s House";
+		case T1YusufRoom:
+			return global.names[YUSUF]+"'s Room";
+		case T1Ancyra2CrimeAlley:
+			return "Ancyra - Crime Alley";
+		case mobile_hall:
+			return "Mobile Hall?";
+		case T1ShootingGalleryRoom:
+			return "Ancyra Shooting Gallery";
 		case d1admin:
 			return "Ancyran Archive - Administration Room";
 			
 		/*case battle_area:
 		case battle_d1area:
 		case battle_d1shelves:
+		case basicalleyfightroom:
 		case Minigame0:*/
 		default:
 			return global.location_name;//no change
