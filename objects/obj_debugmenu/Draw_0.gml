@@ -2,12 +2,12 @@
 draw_set_font(Roses);
 draw_set_color(c_black);
 var drawY = camera_get_view_y(cam)+30;
-draw_rectangle(camera_get_view_x(cam)+20,drawY,camera_get_view_x(cam)+100,camera_get_view_y(cam)+70,false);
+draw_rectangle(camera_get_view_x(cam)+20,drawY,camera_get_view_x(cam)+200,drawY+(array_length(options)*12),false);
 drawY+=4;
 for (var i = 0; i<array_length(options);i++){
 	draw_set_color(i==currentIndex?c_white:c_gray);	
 	draw_text_transformed(camera_get_view_x(cam)+47,drawY,options[i],.5,.5,0);
-	drawY+=8;
+	if options[i]=="NO-CLIP"
+		draw_text_transformed(camera_get_view_x(cam)+87,drawY,noClipOn?"On":"Off",.5,.5,0);
+	drawY+=12;
 }
-draw_text(camera_get_view_x(cam)+49,camera_get_view_y(cam)+44,level);
-draw_text_transformed(camera_get_view_x(cam)+31,drawY+17,"Max level: "+string(array_length(lvBreaks)),.4,.4,0);

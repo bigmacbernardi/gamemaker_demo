@@ -1,8 +1,8 @@
 /// @description Insert description here
 obj_player.paused=true;
-options = ["LEVEL","WARP","PARTY","EVENT","MUSIC","NO-CLIP",
+options = ["LEVEL","WARP","INVEM","PARTY","EVENT","MUSIC","NO-CLIP",
 "RESET SPAWNS","EXIT"]
-currentIndex = 4;
+currentIndex = 0;
 usingSubmenu = false;
 noClipOn = obj_player.mask_index==spr_empty;
 /*lvBreaks = [0,200,600,1400,3000,6200,10000,30000,600000,
