@@ -510,6 +510,7 @@
     {"id":{"name":"spr_aoi2","path":"sprites/spr_aoi2/spr_aoi2.yy",},"order":8,},
     {"id":{"name":"skill_desc_0002_far_buildings","path":"sprites/skill_desc_0002_far_buildings/skill_desc_0002_far_buildings.yy",},"order":2,},
     {"id":{"name":"battle_mutant","path":"objects/battle_mutant/battle_mutant.yy",},"order":1,},
+    {"id":{"name":"spr_empty","path":"sprites/spr_empty/spr_empty.yy",},"order":33,},
     {"id":{"name":"spr_justalittleguy","path":"sprites/spr_justalittleguy/spr_justalittleguy.yy",},"order":0,},
     {"id":{"name":"obj_waterfall","path":"objects/obj_waterfall/obj_waterfall.yy",},"order":6,},
     {"id":{"name":"obj_pauseteam","path":"objects/obj_pauseteam/obj_pauseteam.yy",},"order":9,},

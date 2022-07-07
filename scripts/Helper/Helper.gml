@@ -406,3 +406,28 @@ function setParticle(int){
 	}
 
 }
+
+/* DEBUG FUNCTIONS
+ DEBUG FUNCTIONS
+ DEBUG FUNCTIONS
+ DEBUG FUNCTIONS
+ DEBUG FUNCTIONS
+ DEBUG FUNCTIONS
+*/
+function checkForOpenSpace(xx,yy,x_gap,y_gap){
+    if !(obj_player.place_meeting(xx,yy,obj_wall) or obj_player.place_meeting(xx,yy,checkable) or obj_player.place_meeting(xx,yy,obj_warp)){
+	   obj_player.x = xx;
+	   obj_player.y = yy;
+	   return true;
+	}
+    else if checkForOpenSpace(xx-x_gap,yy-y_gap,x_gap/2,y_gap/2)
+		return true;
+	else if checkForOpenSpace(xx-x_gap,yy+y_gap,x_gap/2,y_gap/2)
+		return true;	
+	else if checkForOpenSpace(xx+x_gap,yy-y_gap,x_gap/2,y_gap/2)
+		return true;	
+	else if checkForOpenSpace(xx+x_gap,yy+y_gap,x_gap/2,y_gap/2)
+		return true;
+	else return false;
+
+}
