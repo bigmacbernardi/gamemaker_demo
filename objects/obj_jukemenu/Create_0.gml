@@ -1,5 +1,5 @@
 /// @description Insert description here
-currentIndex=0;
+currentIndex=min(0,obj_persistentmusicplayer.trackNo);
 easeFrames = 0;
 obj_player.paused=true;
 currentLevel = global.party[0][LV];

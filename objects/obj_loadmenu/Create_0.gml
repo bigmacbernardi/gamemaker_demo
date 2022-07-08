@@ -183,7 +183,7 @@ function loadGame(fname = "save0.ini"){
 	var readNum = ini_read_real("states","trackNo",-1);
 	if readNum>-1 obj_persistentmusicplayer.trackNo = readNum;	
 	with obj_persistentmusicplayer{
-		var possible_tracks = [yusufDayTheme,overworld_breezetemp,d1music1,overworld_manotemp,bouncerock_shoptheme];
+		var possible_tracks = [yusufDayTheme_needsADSR,overworld_breezetemp,d1music1,overworld_manotemp,bouncerock_shoptheme];
 		audio_stop_sound(songPlaying);
 		songPlaying = audio_play_sound(possible_tracks[trackNo],1,true);
 		//audio_sound_set_track_position(songPlaying,continue_position);

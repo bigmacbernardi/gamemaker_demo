@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "debug_panels",
-    "path": "folders/Objects/overworld/debug_panels.yy",
+    "name": "debug",
+    "path": "folders/Objects/overworld/debug.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_warphelper",
