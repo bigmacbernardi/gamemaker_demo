@@ -1,6 +1,6 @@
 /// @description Insert description here
 currentIndex=0;
-easeFrame = false;
+easeFrames = 0;
 obj_player.paused=true;
 currentLevel = global.party[0][LV];
 scrollLevel = 0;

@@ -6,6 +6,6 @@ draw_rectangle(camera_get_view_x(cam)+20,drawY,camera_get_view_x(cam)+200,drawY+
 drawY+=4;
 for (var i = scrollLevel; i<scrollLevel+11;i++){
 	draw_set_color(i==currentIndex?c_white:c_gray);	
-	draw_text_transformed(camera_get_view_x(cam)+47,drawY,names[i],.4,.4,0);
+	draw_text_transformed(camera_get_view_x(cam)+38,drawY,names[i],.4,.4,0);
 	drawY+=11;
 }

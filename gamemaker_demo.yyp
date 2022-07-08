@@ -298,7 +298,7 @@
     {"id":{"name":"obj_trans_clearstuff","path":"objects/obj_trans_clearstuff/obj_trans_clearstuff.yy",},"order":12,},
     {"id":{"name":"gopher","path":"sprites/gopher/gopher.yy",},"order":2,},
     {"id":{"name":"spr_g_g_g_ghostsword_rest","path":"sprites/spr_g_g_g_ghostsword_rest/spr_g_g_g_ghostsword_rest.yy",},"order":36,},
-    {"id":{"name":"nikolai","path":"sounds/nikolai/nikolai.yy",},"order":15,},
+    {"id":{"name":"nikolai_rough","path":"sounds/nikolai_rough/nikolai_rough.yy",},"order":15,},
     {"id":{"name":"d1music1","path":"sounds/d1music1/d1music1.yy",},"order":5,},
     {"id":{"name":"obj_staff","path":"objects/obj_staff/obj_staff.yy",},"order":4,},
     {"id":{"name":"largeruffle","path":"sounds/largeruffle/largeruffle.yy",},"order":46,},

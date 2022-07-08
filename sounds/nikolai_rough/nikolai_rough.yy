@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "nikolai.wav",
+  "soundFile": "nikolai_rough.wav",
   "duration": 66.666664,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
   },
   "resourceVersion": "1.0",
-  "name": "nikolai",
+  "name": "nikolai_rough",
   "tags": [],
   "resourceType": "GMSound",
 }
