@@ -90,7 +90,8 @@ function getRoomName(rm = room){
 		case basicalleyfightroom:
 		case Minigame0:*/
 		default:
-			return global.location_name;//no change
+			return "[No name available]";
+			//return global.location_name;//ultimately want this.  no change
 			
 	}
 }
@@ -422,7 +423,10 @@ function setParticle(int){
  DEBUG FUNCTIONS
 */
 function checkForOpenSpace(xx,yy,x_gap,y_gap){
+	show_debug_message("Checking "+string(xx)+","+string(yy));
     if !(obj_player.place_meeting(xx,yy,obj_wall) or obj_player.place_meeting(xx,yy,checkable) or obj_player.place_meeting(xx,yy,obj_warp)){
+	   
+		show_debug_message("Success at: "+string(xx)+","+string(yy));
 	   obj_player.x = xx;
 	   obj_player.y = yy;
 	   return true;

@@ -7,4 +7,4 @@ with obj_roomdebug{
 }
 if noClipOn obj_player.mask_index=spr_empty;
 else obj_player.mask_index=obj_player.sprite_index;
-obj_player.paused=false;
+if !instance_exists(obj_debugmenu) obj_player.paused=false;

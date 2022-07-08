@@ -28,8 +28,8 @@
 	}	
 }
 else if !(instance_exists(battle_manager) || playing || room==gameover){
-	var possible_tracks = [yusufDayTheme,overworld_breezetemp,d1music1,overworld_manotemp,bouncerock_shoptheme,d1music2,noone,noone,noone,icecavetake1,
-							noone];
+	//var possible_tracks = [yusufDayTheme,overworld_breezetemp,d1music1,overworld_manotemp,bouncerock_shoptheme,d1music2,noone,noone,noone,icecavetake1,
+				//			noone];
 	//audio_stop_sound(battle_torgotemp);
 	audio_stop_sound(songPlaying);
 	//audio_stop_sound(alteredbeast_gameover_as_placeholder);

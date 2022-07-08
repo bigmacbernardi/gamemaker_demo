@@ -30,7 +30,7 @@ else if goButton and !usingSubmenu{
 			usingSubmenu = true;
 			break;
 		case "MUSIC": 
-			instance_create_depth(x,y,depth-1,obj_roomdebug);
+			instance_create_depth(x,y,depth-1,obj_jukemenu);
 			usingSubmenu = true;
 			break;
 		case "RESET SPAWNS": 
