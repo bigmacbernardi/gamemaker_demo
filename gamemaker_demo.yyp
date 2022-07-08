@@ -349,6 +349,7 @@
     {"id":{"name":"overworld_manotemp","path":"sounds/overworld_manotemp/overworld_manotemp.yy",},"order":4,},
     {"id":{"name":"spr_enemyplant_front","path":"sprites/spr_enemyplant_front/spr_enemyplant_front.yy",},"order":2,},
     {"id":{"name":"battle_aoi","path":"objects/battle_aoi/battle_aoi.yy",},"order":0,},
+    {"id":{"name":"obj_warphelper","path":"objects/obj_warphelper/obj_warphelper.yy",},"order":4,},
     {"id":{"name":"spr_beastling_tribble","path":"sprites/spr_beastling_tribble/spr_beastling_tribble.yy",},"order":3,},
     {"id":{"name":"T1ShootingGalleryRoom","path":"rooms/T1ShootingGalleryRoom/T1ShootingGalleryRoom.yy",},"order":14,},
     {"id":{"name":"obj_maninthemirror","path":"objects/obj_maninthemirror/obj_maninthemirror.yy",},"order":10,},

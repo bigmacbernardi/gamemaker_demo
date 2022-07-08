@@ -32,8 +32,12 @@ function getRoomName(rm = room){
 			return "Ancyran Archive - Path to Library";
 		case d1entrcha:
 			return "Ancyran Archive - Upper Archive";
-		case d1library1:
-			return "Ancyran Archive - Library, Lv 3";
+        case d1stairs:
+			return "Ancyran Archive - Stairwell";
+        case d1library1:
+			return "Ancyran Archive - Library, Lv 3"; 
+		case d1libalcony:
+			return "Ancyran Archive - Library Balcony";
 		case d1hall1redux:
 			return "Ancyran Archive - Great Hall, Lv 3";
 		case d1library2:
@@ -67,10 +71,14 @@ function getRoomName(rm = room){
 			return global.names[YUSUF]+"'s House";
 		case T1YusufRoom:
 			return global.names[YUSUF]+"'s Room";
+        case mystery_zone:
+            return "Mystery Zone";
 		case T1Ancyra2CrimeAlley:
 			return "Ancyra - Crime Alley";
 		case mobile_hall:
-			return "Mobile Hall?";
+			return "Mobile Base";
+	    case cave0:
+	        return "Frosty Cavern";
 		case T1ShootingGalleryRoom:
 			return "Ancyra Shooting Gallery";
 		case d1admin:
@@ -86,7 +94,6 @@ function getRoomName(rm = room){
 			
 	}
 }
-
 /*function checkForHit(){
 	var number = random(1);
 	var unit = global.selectedUnit;
