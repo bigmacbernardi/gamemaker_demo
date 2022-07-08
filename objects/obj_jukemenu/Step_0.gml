@@ -5,15 +5,18 @@ var _moveV =  keyboard_check/*_released*/(vk_up) - keyboard_check/*_released*/(v
 var _moveH =  keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
 if _moveV ==1 and currentIndex==scrollLevel and easeFrames<=0{
 	scrollLevel = max(0,scrollLevel-1);
-	easeFrames = 5;
+	easeFrames = 3;
 	currentIndex = max(0,currentIndex - 1)
 }
 else if _moveV==-1 and currentIndex==scrollLevel+9  and easeFrames<=0{
 	scrollLevel = min(array_length(names)-10,scrollLevel+1);
-	easeFrames = 5;
+	easeFrames = 3;
 	currentIndex = min(array_length(names)-1,currentIndex + 1);
 }else{
-	if (easeFrames-- <= 0) currentIndex = max(0,min(array_length(names)-1,currentIndex - _moveV));
+	if (easeFrames-- <= 0){
+		currentIndex = max(0,min(array_length(names)-1,currentIndex - _moveV));
+		easeFrames=3;
+	}
 }
 if _moveH > 0 and (currentIndex+10)<array_length(names){
 	currentIndex += 10;

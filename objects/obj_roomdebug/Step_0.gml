@@ -16,7 +16,7 @@ else if _moveV==-1 and currentIndex==scrollLevel+10  and !easeFrame{
 if !easeFrame{
 	easeFrame = true;
 	currentIndex = max(0,min(array_length(names)-1,currentIndex - _moveV));
-}else easeFrame = false;
+}else easeFrame-= 0.5;
 if goButton{
 	instance_create_depth(x,y,0,obj_warphelper);
       room_goto(rooms[currentIndex]);

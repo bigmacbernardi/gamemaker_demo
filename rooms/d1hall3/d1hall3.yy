@@ -136,6 +136,7 @@
         {"properties":[
             {"propertyId":{"name":"location_name","path":"objects/obj_savepoint/obj_savepoint.yy",},"objectId":{"name":"obj_savepoint","path":"objects/obj_savepoint/obj_savepoint.yy",},"value":"Ancyra Archive, Level B3 (Dev save)","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_savepoint","path":"objects/obj_savepoint/obj_savepoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":722.0,"y":945.19055,"resourceVersion":"1.0","name":"inst_7A5E7753","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_warptarget","path":"objects/obj_warptarget/obj_warptarget.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":800.0,"y":1344.0,"resourceVersion":"1.0","name":"inst_37197CEA","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"til_floorwater","path":"tilesets/til_floorwater/til_floorwater.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":73,"SerialiseHeight":80,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -485,6 +486,7 @@
     {"name":"inst_386E3B34","path":"rooms/d1hall3/d1hall3.yy",},
     {"name":"inst_EE56BCE","path":"rooms/d1hall3/d1hall3.yy",},
     {"name":"inst_7A5E7753","path":"rooms/d1hall3/d1hall3.yy",},
+    {"name":"inst_37197CEA","path":"rooms/d1hall3/d1hall3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

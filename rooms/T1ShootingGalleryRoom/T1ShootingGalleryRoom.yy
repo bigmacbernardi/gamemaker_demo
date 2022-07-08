@@ -38,6 +38,7 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_galleryshooter","path":"objects/obj_galleryshooter/obj_galleryshooter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":352.0,"resourceVersion":"1.0","name":"inst_36F52D18","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_attendant","path":"objects/obj_attendant/obj_attendant.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":352.0,"resourceVersion":"1.0","name":"inst_1B776F27","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_warptarget","path":"objects/obj_warptarget/obj_warptarget.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":112.0,"y":384.0,"resourceVersion":"1.0","name":"inst_58961BEB","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_shaderreset","path":"objects/obj_shaderreset/obj_shaderreset.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":384.0,"resourceVersion":"1.0","name":"inst_6605A28E_1","tags":[],"resourceType":"GMRInstance",},
@@ -102,6 +103,7 @@
     {"name":"inst_26B2756C_1","path":"rooms/T1ShootingGalleryRoom/T1ShootingGalleryRoom.yy",},
     {"name":"inst_36F52D18","path":"rooms/T1ShootingGalleryRoom/T1ShootingGalleryRoom.yy",},
     {"name":"inst_1B776F27","path":"rooms/T1ShootingGalleryRoom/T1ShootingGalleryRoom.yy",},
+    {"name":"inst_58961BEB","path":"rooms/T1ShootingGalleryRoom/T1ShootingGalleryRoom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
