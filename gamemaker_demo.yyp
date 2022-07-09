@@ -671,6 +671,7 @@
     {"id":{"name":"spr_aoi_atk","path":"sprites/spr_aoi_atk/spr_aoi_atk.yy",},"order":6,},
     {"id":{"name":"_ui_parent","path":"objects/_ui_parent/_ui_parent.yy",},"order":0,},
     {"id":{"name":"bg_floor","path":"sprites/bg_floor/bg_floor.yy",},"order":4,},
+    {"id":{"name":"obj_itemdebug","path":"objects/obj_itemdebug/obj_itemdebug.yy",},"order":21,},
     {"id":{"name":"idkguy","path":"tilesets/idkguy/idkguy.yy",},"order":3,},
     {"id":{"name":"obj_bookcase","path":"objects/obj_bookcase/obj_bookcase.yy",},"order":1,},
     {"id":{"name":"swing","path":"sounds/swing/swing.yy",},"order":6,},
@@ -876,7 +877,7 @@
     {"CopyToMask":153157610357391598,"filePath":"datafiles","resourceVersion":"1.0","name":"RosesareFF0000.ttf","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.5.1.16",
+    "IDEVersion": "2022.6.0.23",
   },
   "resourceVersion": "1.5",
   "name": "gamemaker_demo",

@@ -36,7 +36,7 @@ function bribe_attempt(electrum,gold,target=global.targets[0]){
 				}
 				else{
 					var found = -1;
-					for (var j = 0;i<ds_list_size(global.inventory);j++){
+					for (var j = 0;j<ds_list_size(global.inventory);j++){
 						//show_debug_message("Checkin "+object_get_name( global.inventory[|i][0] ));
 						if global.inventory[|j][0] == drop{
 						//	show_debug_message("MATCH!");
@@ -73,7 +73,7 @@ function bribe_attempt(electrum,gold,target=global.targets[0]){
 						}
 						else{
 							var found = -1;
-							for (var j = 0;i<ds_list_size(global.inventory);j++){
+							for (var j = 0;j<ds_list_size(global.inventory);j++){
 								if global.inventory[|j][0] == drop{
 									found = j;
 									break;

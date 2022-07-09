@@ -23,7 +23,7 @@ if !usingSubmenu{
 				usingSubmenu = true;
 				break;
 			case "INVEM": 
-				instance_create_depth(x,y,depth-1,obj_item_fenagler);
+				instance_create_depth(x,y,depth-1,obj_itemdebug);
 				usingSubmenu = true;
 				break;
 			case "TRIGGER EVENT 0 HERE": 

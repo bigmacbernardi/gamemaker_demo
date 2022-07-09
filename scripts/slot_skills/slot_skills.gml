@@ -4,7 +4,7 @@ function slot_skills(){
 	var a; //"all" array
 	var m = [],t = [],o = [],u = [],c = [];//more arrays. magic, trained, observed (enemy skills), unique, common
 	var index = 0;
-	var mIndex = 0; var tIndex = 0; var oIndex = 0; var cIndex = 0; var uIndex = 0; 
+	var mIndex = 0; var tIndex = 0; /*var oIndex = 0;*/ var cIndex = 0; var uIndex = 0; 
 	var battling = instance_exists(battle_menu);
 	
 	//minimal version of later process to implement
