@@ -176,12 +176,17 @@ function speak(){//should open speech menu I guess?
 /* AOI TECH */
 
 function burn(){
-	var unit = global.selectedUnit;	
+	var unit = global.selectedUnit;
+	if !unit.isPlayer{
+		show_debug_message("NOT PLAYER!");
+		return;
+	}
 	with unit{
 		current[MP] -= 4;
 		layer_sequence_headpos(unitSequence,spcStart);
 		state = SPECIAL;
 	}
+	
 	setParticle(2);//fire;
 	for(var i = 0; i < array_length(global.targets); i++){
 		if !instance_exists(global.targets[i]) continue;//already dead!
