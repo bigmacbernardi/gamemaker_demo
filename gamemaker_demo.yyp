@@ -129,6 +129,7 @@
     {"id":{"name":"obj_dart","path":"objects/obj_dart/obj_dart.yy",},"order":2,},
     {"id":{"name":"obj_dialoguer","path":"objects/obj_dialoguer/obj_dialoguer.yy",},"order":1,},
     {"id":{"name":"spr_floorwatertiles","path":"sprites/spr_floorwatertiles/spr_floorwatertiles.yy",},"order":3,},
+    {"id":{"name":"debugnums","path":"sprites/debugnums/debugnums.yy",},"order":34,},
     {"id":{"name":"obj_skeehole","path":"objects/obj_skeehole/obj_skeehole.yy",},"order":4,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
     {"id":{"name":"spr_yusuf_idle","path":"sprites/spr_yusuf_idle/spr_yusuf_idle.yy",},"order":0,},
