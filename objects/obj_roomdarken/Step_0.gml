@@ -5,7 +5,10 @@ if fade>0 and fade < 100 and not leaving{
 	image_alpha += 0.01;
 }
 else if leaving{
-	if fade == 100 instance_destroy();
+	if fade == 100{
+		show_debug_message("Bye bye!");
+		instance_destroy();
+	}
 	else{
 		fade++;
 		image_alpha -= 0.01;
@@ -13,6 +16,7 @@ else if leaving{
 }
 
 if fade == 100 {
+	show_debug_message("Executing!");
 	if !instance_exists(obj_event){
 		var inst = instance_create_depth(0,0,0,obj_event);
 		inst.action = associatedAction;
@@ -21,6 +25,7 @@ if fade == 100 {
 	else inst.action = associatedAction;
 }
 else if fade==101 and !instance_exists(obj_event){
+	show_debug_message("Reversing!");
 	fade = 0;
 	leaving = true;
 }

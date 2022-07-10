@@ -3,7 +3,8 @@
 // state machine that determines the unit's animation
 var current_form = form;
 var labels = ["IDLE","ATTACK","HIT","MISS","TODEFEND","DEFEND","DEATH"," ITEM","HEAL","SPECIAL"];
-show_debug_message("Boss state "+labels[state]);
+if state!=lastState show_debug_message("Boss state "+labels[state]);
+lastState=state;
 switch(state){
 	case IDLE:
 		var starts = [idleStart,idleStart1,idleStart2,idleStart3];

@@ -176,6 +176,7 @@ function speak(){//should open speech menu I guess?
 /* AOI TECH */
 
 function burn(){
+	show_debug_message("Burning");
 	var unit = global.selectedUnit;
 	if !unit.isPlayer{
 		show_debug_message("NOT PLAYER!");

@@ -175,3 +175,4 @@ function turnEnd(){
 	incomingHealage = 0;
 }*/
 show_debug_message("it's naught thought");
+lastState = state;//debug var
