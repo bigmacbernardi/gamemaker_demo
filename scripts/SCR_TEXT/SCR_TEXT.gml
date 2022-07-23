@@ -83,7 +83,7 @@ switch(argument0){
 		"%%%"];
 		break;
 	case 30:
-        global.msg[0]= "Hello!  Not often we get vistors./";
+        global.msg[0]= "Hello!  Not often we get visitors./";
         global.msg[1]= "What brings you here?/";
         global.msg[2]= "The parts for by dialogue aren't finished&yet./";
         global.msg[3]= "And that's why I have this ridiculous &placeholder dialogue./";
