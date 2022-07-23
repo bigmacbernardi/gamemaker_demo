@@ -43,7 +43,9 @@ global.menuOptions = [
 [["Attack","Magic","Skills","Items","Dual","Wait","Flee"],[attack,skills,skills,item,dual,wait,flee]],//should be loaded from character?  slot?
 [["Attack","Skills","Speak","Items","Dual","Wait","Flee"],[attack,skills,talk,item,dual,wait,flee]],
 [["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]]//
-];
+];//DOING AWAY WITH THIS
+
+global.actions=[standardActions(),standardActions(1)];
 global.equipped[AOI] = [noone,noone,noone,noone,noone,noone,noone,noone];
 global.equipped[YUSUF] = [noone,noone,noone,noone,noone,noone,noone,noone];
 global.availableParty = ds_list_create();
@@ -71,7 +73,7 @@ global.passives = [
 	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 	[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 ];
-global.skills= [/*naive but still fully functional solution*/
+global.skills= [/*naive solution that's getting REPLACED*/
 	[true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
 	[true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
 	[true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
@@ -79,7 +81,7 @@ global.skills= [/*naive but still fully functional solution*/
 	[true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
 	[]
 ];
-global.dualSkills = [//even MORE naive
+global.dualSkills = [//even MORE naive, but probably NOT getting replaced
 	true,true,false,false,false,false,false,
 	false,false,false,false,false,false,false,
 	false,false,false,false,false,false,false,
@@ -98,7 +100,7 @@ global.dualSkills = [//even MORE naive
 ];
 global.electrum= 99;
 global.gold = 0;
-
+global.canLearn=[];
 /*var staff =  instance_create_depth(0,0,10,obj_weapon);//for now we'll just leave these as persistent things.  will compress eventually
 var spear = instance_create_depth(0,0,10,obj_weapon);
 spear.title = "Kida-yari";
@@ -138,7 +140,20 @@ global.party[AOI][WIS] = 5;
 global.party[AOI][ACC] = .75;
 global.party[AOI][LV] = 1;
 global.party[AOI][XP] = 0;
+global.canLearn[AOI]= [true/*Earth*/,true/*Wind*/,true/*Fire*/,true/*Water*/,false/*Dark*/,true/*Light*/,true/*Electric*/,false/*Kiai*/,true/*Poison*/,true/*Ice*/,
+						true/*Crystal*/,false/*Magma*/,false/*Acid*/,false/*Rainbow*/,true/*Healing*/,false/*Curing*/,true/*Buffing*/,true/*Time*/,true/*Protect*/,false/*Hydra*/];
+global.canLearn[YUSUF]= [false/*Earth*/,true/*Wind*/,true/*Fire*/,true/*Water*/,true/*Dark*/,true/*Light*/,true/*Electric*/,true/*Kiai*/,false/*Poison*/,true/*Ice*/,
+						false/*Crystal*/,false/*Magma*/,true/*Acid*/,false/*Rainbow*/,true/*Healing*/,true/*Curing*/,true/*Buffing*/,true/*Time*/,true/*Protect*/,false/*Hydra*/];
 
+global.spellConfig=[];
+for (var i = 0; i<array_length(global.canLearn[AOI]);i++){
+	global.spellConfig[AOI][i]=1;//magic folder for you
+	global.spellConfig[YUSUF][i]=2;
+}
+global.spellLv[AOI] = [0,0,1,0,0,0,0,0,0,1,
+						0,0,0,0,0,0,0,0,0,0];
+global.spellLv[YUSUF] = [0,0,0,0,0,0,0,0,0,0,
+						0,0,0,0,0,0,0,0,0,0];
 global.party[YUSUF][HP] = 10;
 global.party[YUSUF][MP] = 10;
 global.party[YUSUF][DEF] = 1;

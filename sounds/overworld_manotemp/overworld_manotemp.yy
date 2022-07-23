@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "overworld_manotemp.mp3",
-  "duration": 105.586937,
+  "duration": 105.58694,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

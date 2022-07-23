@@ -80,5 +80,102 @@ if (current[HP]==0){//only added for start of battle
 			totalUnits--;
 		}
 	}
+actions = [];
+var in = 0;
+var m = -1;
+var s = -1;
+//var t = -1; //not implemented yet
+for (var i = 0; i<ds_list_size(global.actions[index]);i++){
+	var it = global.actions[index][|i];
+	show_debug_message(string(i)+"st action: "+it[0]);
+	if it[1]==skills s = in;
+	//else if it[1] == talk t=in;
+	switch (it[3]){
+		case 0://should do these first
+			actions[in++]=
+			{name:it[0],
+			 action:it[1],
+			 element :(-1),
+			 lvl:0,
+			 children:[]
+			};
+			if array_length(it)>3{
+				
+				if array_length(it)>4{
+					
+				}
+				if it[1]==castStandard//lvl should read from
+					continue;
+			}
+			break;
+		case 1: //magic
+		case 2: //skills
+			show_debug_message("s: "+string(s)+"\n"+string(array_length(actions))+" actions");
+			if s<array_length(actions)
+				actions[s].children[array_length(actions[s].children)]={
+																	name:it[0],
+																	action:it[1],
+																	element:-1,
+																	lvl:0,
+																	children:[]
+																		};
+			else actions[in++]=
+				{
+					name:it[0],
+					 action:it[1],
+					 element :(-1),
+					 lvl:0,
+					 children:[]
+				};
+			break;
+		default: //
+			actions[s].children[array_length(actions[s].children)]=
+			{name:it[0],
+			 action:it[1],
+			 children:[]
+			};
+			break;
+		
+	}
+	
+}
+var names = ["Quake","Gale","Flame","Torrent","Dark","Nova","Shock","Kiai","Bitch","no",//torrent=>flood?
+			"You","Are","A","Toy","Buzz","HPeal","Statcure","8","19","tenty"];
+var costs = [[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],
+				[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16]];
+for (var i = 0;i<array_length(names);i++){
+		
+	var n = names[i];
+	//deepest allowed NOT NEEDED!
+	//for (var j = 0;j<global.spellLv[index][i];j++){
+	if global.spellLv[index][i]>0 {
+		//var insertIt = [,castStandard,2,0,costs[i][j],i,];
+		//if battling
+		switch (global.spellConfig[index][i]){
+			case 0:
+				actions[in++]=
+				{name:n,
+					action:castStandard,
+					mp: costs[i],
+					element :(-1),
+					lvl:global.spellLv[index][i],
+					children:[]
+				};
+				break;
+			case 1: //magic
+			case 2: //skills
+				actions[s].children[array_length(actions[s].children)]=
+				{name:n,
+					action:castStandard,
+					mp: costs[i],
+					element:-1,
+					lvl:0,
+					children:[]
+				};
+				break;
+		}
+	//else do this however	ds_list_add(list,);
+	}
+}
 //mpBarWidth = sprite_get_width(ui_mp);
 //mpBarHeight = sprite_get_height(ui_mp);

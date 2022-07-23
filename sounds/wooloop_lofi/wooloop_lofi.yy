@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "wooloop_lofi.wav",
-  "duration": 33.2858047,
+  "duration": 33.285805,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

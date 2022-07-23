@@ -35,7 +35,7 @@ switch(state){
 		layer_sequence_x(unitSequence,root_x);
 		layer_sequence_y(unitSequence,root_y);
 		var myId = id;
-		show_debug_message(title+" attack animation finished");
+		//show_debug_message(title+" attack animation finished");
 		//at THIS point damage should happen right?
 		turnFinished = true;
 		//if (attackWillHit){

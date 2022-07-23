@@ -1,5 +1,5 @@
 if (event_data[? "event_type"] == "sequence event"){
-show_debug_message("Broadcast received: '"+event_data[? "message"]+"'");
+//show_debug_message("Broadcast received: '"+event_data[? "message"]+"'");
     switch(event_data[? "message"]){
 		case "attackSent":
 			//enqueue(layer_instance_get_instance(event_data[? "element_id"]));
@@ -8,7 +8,7 @@ show_debug_message("Broadcast received: '"+event_data[? "message"]+"'");
 			atkBroadcasts++;}
 		break;
 		case "itemUsed": //for all i know, this could work as the same case as the above
-			show_debug_message("Item broadcast received");
+			//show_debug_message("Item broadcast received");
 			//enqueue(layer_instance_get_instance(event_data[? "element_id"]));
 			selectedFinished = true;
 			processFinished = true;

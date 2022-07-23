@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "overworld_breezetemp.mp3",
-  "duration": 177.658783,
+  "duration": 177.65878,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

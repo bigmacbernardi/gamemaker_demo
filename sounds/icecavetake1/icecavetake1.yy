@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "icecavetake1.wav",
-  "duration": 84.8224945,
+  "duration": 84.822495,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

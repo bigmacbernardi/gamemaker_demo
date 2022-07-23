@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "lightstep1_processedbutuncut_plsfix.wav",
-  "duration": 25.0026665,
+  "duration": 25.002666,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

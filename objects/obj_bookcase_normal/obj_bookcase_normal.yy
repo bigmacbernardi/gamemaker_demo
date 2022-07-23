@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_bookcase_prev",
     "path": "sprites/spr_bookcase_prev/spr_bookcase_prev.yy",

@@ -20,6 +20,54 @@ function cast(spell=burn){
 	}
 }
 
+
+function standardCast(element,level,caster=global.selectedUnit,targets=global.targets){
+	var battling = instance_exists(battle_menu);
+	if !battling {
+		if element==14
+			show_debug_message("Do heal");
+		else if element==15
+			show_debug_message("Cure stat");
+		else return false;
+	}
+	else if element<14{
+		for (var i = 0;i<array_length(targets); i++){
+			//show_debug_message("why?");
+			elemAttack(element,level,caster,targets[i]);
+		}
+	}else if element==14{
+		for (var i = 0;i<array_length(targets);i++){
+			with (targets[i]) {
+				healUnit(base[HP]*(level/3));
+			}
+		}
+	}else if element==15{
+		setParticle(8);//Fighting energy
+		with caster{
+			layer_sequence_headpos(unitSequence,spcStart);
+			state = SPECIAL;
+		}
+		part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 8);
+		for (var i = 0;i<array_length(targets);i++){
+			with (targets[i]){
+				if status[0]<0
+					status[0]=0;
+				else if status[0]>1
+					status[0]=1;
+				layer_sequence_headpos(unitSequence,hitStart);
+				state = HEAL;
+			}
+		}
+	}
+	if global.selectedUnit==caster and !battle_manager.selectedFinished{
+		show_debug_message("Didn't finish after normocast yourself");//wasn't doin it
+		with battle_manager{
+			selectedFinished = true;
+			enqueue(caster);
+		}
+	}
+}
+
 function bribe_attempt(electrum,gold,target=global.targets[0]){
 	var roll = irandom(99);
 	if variable_instance_exists(target,"price"){
@@ -289,7 +337,7 @@ function detox(){
 
 function balm(){
 	var unit = global.selectedUnit;
-	setParticle(0);
+	setParticle(16);
 	unit.current[MP] -= 5;
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 6);
 	
@@ -311,7 +359,7 @@ function balm(){
 
 function intensiveCare(){
 	var unit = global.selectedUnit;
-	setParticle(0);
+	setParticle(16);
 	unit.current[MP] -= 10;
 	part_particles_create(global.P_System, unit.x, unit.y, global.Particle1, 7);
 	/*if (global.targets[0].state == DEATH){

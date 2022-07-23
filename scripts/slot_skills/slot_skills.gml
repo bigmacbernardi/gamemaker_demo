@@ -1,5 +1,5 @@
 //
-function slot_skills(){
+function slot_skills(){//repurpose for initialization maybe?
 	var ui_level = layer_exists("UI_Base")?"UI_Base":"Instances";
 	var a; //"all" array
 	var m = [],t = [],o = [],u = [],c = [];//more arrays. magic, trained, observed (enemy skills), unique, common

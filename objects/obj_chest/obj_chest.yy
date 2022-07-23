@@ -5,6 +5,7 @@
   },
   "solid": true,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_chest_closed",
     "path": "sprites/spr_chest_closed/spr_chest_closed.yy",

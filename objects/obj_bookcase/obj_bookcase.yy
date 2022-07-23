@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_bookcase_hainted",
     "path": "sprites/spr_bookcase_hainted/spr_bookcase_hainted.yy",

@@ -5,7 +5,7 @@ var _moveV =  keyboard_check_released(vk_up) - keyboard_check_released(vk_down);
 var _moveH =  keyboard_check_released(vk_right) - keyboard_check_released(vk_left);
 if !usingSubmenu{
 	currentIndex = max(0,min(array_length(options)-1,currentIndex - _moveV));
-	if options[currentIndex]=="NO-CLIP"{
+	if options[currentIndex]=="LO-CLIP"{
 		if goButton or _moveH noClipOn = !noClipOn;
 	}
 	else if goButton{

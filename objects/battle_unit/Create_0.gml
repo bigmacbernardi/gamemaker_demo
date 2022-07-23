@@ -79,7 +79,7 @@ function healUnit(amount){
 	current[@ HP] = min(base[HP],current[HP]+amount);
 }
 function turnEnd(){
-	show_debug_message(title+" at turn end");
+	//show_debug_message(title+" at turn end");
 	if status[0] < 0{//poison only
 		var amount = 0-status[0]
 		var nD = ceil(amount * 50/(50+ current[DEF]));

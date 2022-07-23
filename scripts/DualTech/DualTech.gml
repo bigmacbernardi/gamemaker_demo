@@ -37,7 +37,7 @@ function IcyHeat(){
 		if (global.selectedUnit.attackWillHit){
 			with(global.targets[i]){ // Freeze Attack / 4
 					incomingDamage = round((battle_aoi.current[@ WIS]*1.25) + (battle_aoi.current[@ STR] / 4)* ((battle_aoi.current[@ AGI] / 2)+(battle_aoi.current[@ CHA] / 2)))/4;
-					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
+					//show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
 					layer_sequence_headpos(unitSequence,hitStart);
 					state = HIT;
@@ -87,7 +87,7 @@ function IcyHeat(){
 function MuguMugu(){
 	var unitX = (global.selectedUnit.x + global.selectedUnit.teammate.x) / 2;
 	var unitY = (global.selectedUnit.y + global.selectedUnit.teammate.y) / 2;	
-	setParticle(0);//idk;
+	setParticle(16);//idk;
 	for(var i = 0; i < array_length(global.targets); i++){
 		show_debug_message(global.selectedUnit.title+" attacking "+global.targets[i].title+"#"+string(global.targets[i]));
 		var xStep = (global.targets[i].x - unitX )/10;
@@ -107,7 +107,7 @@ function MuguMugu(){
 		if (global.selectedUnit.attackWillHit){
 			with(global.targets[i]){ // Freeze Attack / 4
 					incomingDamage = round(((battle_aoi.current[@ WIS]*1.25) + (battle_aoi.current[@ STR] / 4)* ((battle_aoi.current[@ AGI] / 2)+(battle_aoi.current[@ CHA] / 2)))/4);
-					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
+					//show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
 					layer_sequence_headpos(unitSequence,hitStart);
 					state = HIT;

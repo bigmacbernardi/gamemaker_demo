@@ -7,8 +7,7 @@ for(var i = 0; i < ds_list_size(checkList); i++){
 		break;
 		}
 }if global.targets[0]!=noone{
-show_debug_message(global.selectedUnit.title + " attack "
-+global.targets[0].title);
+//show_debug_message(global.selectedUnit.title + " attack "+global.targets[0].title);
 layer_sequence_headpos(unitSequence,atkStart);
 state = ATTACK; 
 audio_play_sound(swingSound,50,false);

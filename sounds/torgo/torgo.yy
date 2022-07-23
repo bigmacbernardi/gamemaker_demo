@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "torgo.wav",
-  "duration": 29.4000912,
+  "duration": 29.400091,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-if fade>0 and fade < 100 and not leaving{
-	fade++;
-	image_alpha += 0.01;
+if fade < 100 and not leaving{
+	fade+=2;
+	image_alpha += 0.02;
 }
 else if leaving{
 	if fade == 100{
@@ -14,8 +14,7 @@ else if leaving{
 		image_alpha -= 0.01;
 	}
 }
-
-if fade == 100 {
+else if fade == 100 {
 	show_debug_message("Executing!");
 	if !instance_exists(obj_event){
 		var inst = instance_create_depth(0,0,0,obj_event);

@@ -40,7 +40,7 @@ switch(combatPhase){
 		}
 		totalUnits = ds_list_size(global.units);
 		combatPhase = phase.startTurn;
-		instance_create_layer(button_attack.x,button_attack.y-10,"UI_Base",battle_menu);
+		instance_create_layer(battle_menu_positioner.x,battle_menu_positioner.y+40,"UI_Base",battle_menu);
 	break;
 	
 	case phase.startTurn:
@@ -71,7 +71,7 @@ switch(combatPhase){
 		show_debug_message("Gonna delete the "+string(last_key));
 		var inst = ds_priority_delete_min(pq); //needs corresponding add?*/
 		var last_key = dequeue();//sets global.selectedUnit
-		show_debug_message("Bout to reduce "+string(pqSize)+" items by "+string(last_key));
+		//show_debug_message("Bout to reduce "+string(pqSize)+" items by "+string(last_key));
 		
 		reduce(last_key);
 		//show_debug_message("Done reduced");
@@ -81,21 +81,13 @@ switch(combatPhase){
 		global.selectedUnit.selected = true;
 		//old list-looping method used:	if ((!inst.turnFinished)&&(inst.state != DEATH))
 		if (global.selectedUnit.isPlayer){  //do check if dual technique is possible HERE
-			show_debug_message("Selected unit "+string(global.selectedUnit)+", is player character "+global.selectedUnit.title+", so I'm showing the buttons");
+			//show_debug_message("Selected unit "+string(global.selectedUnit)+", is player character "+global.selectedUnit.title+", so I'm showing the buttons");
 			solicitInput = false;
 			allowInput = true;
 			//new method for menu show/hide:
 			with battle_menu{
 				alarm[0]=1;	
 			}
-			//old method for menu show/hide:
-			//button_attack.visible = 1;
-			//button_skill.visible = 1;
-			//button_dual_wait.visible = 1;
-			//button_item.visible = 1;
-			//if (!usingMouse) //button_attack.selected = true;*/
-			//show_debug_message("Showing menu buttons");
-			//menu = create_button(0,200,280,80,"Attack",simulateInput(global.enemies));
 		}
 		else {
 		    //allowInput = false; //just in case

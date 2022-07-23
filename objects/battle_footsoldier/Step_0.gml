@@ -12,7 +12,7 @@ switch(state){
 	case ATTACK:
 		if (layer_sequence_get_headpos(unitSequence) > (doingSpecialAttack?atk2End:atkEnd)){
 			//var myId = id;
-			show_debug_message(title+" attack animation finished");
+			//show_debug_message(title+" attack animation finished");
 			//at THIS point damage should happen right?
 			turnFinished = true;
 			//if (attackWillHit){

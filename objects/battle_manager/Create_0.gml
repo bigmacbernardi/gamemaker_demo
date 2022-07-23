@@ -94,7 +94,7 @@ function trickleUp(initial){
 
 function trickleDown(initial = 0){
 	var cur = initial;
-	show_debug_message("Trickling down "+string(cur*2)+"("+string(pq[1][cur])+")");
+	//show_debug_message("Trickling down "+string(cur*2)+"("+string(pq[1][cur])+")");
 	
 	while (pq[0][cur]!=noone)&&((cur*2)<15)&&
 	(pq[1][(cur*2)+1]<pq[1][cur]||
@@ -139,13 +139,13 @@ function dequeue(priority=pq){//automatically sets turn-haver and returns wait
 						string(pq[1][2])+","+string(pq[1][3])+","+
 						string(pq[1][4])+","+string(pq[1][5])+"]; "+string(pqSize));*/
 		trickleDown();
-		show_debug_message("Queue shrunk to: ["+string(pq[1][0])+","+string(pq[1][1])+","+
+		/*show_debug_message("Queue shrunk to: ["+string(pq[1][0])+","+string(pq[1][1])+","+
 						string(pq[1][2])+","+string(pq[1][3])+","+
-						string(pq[1][4])+","+string(pq[1][5])+"]; size "+string(pqSize));
+						string(pq[1][4])+","+string(pq[1][5])+"]; size "+string(pqSize));*/
 		return wait;
 }
 function remove(unit){//assumes only ONE of this instance is in queue.  not explicitly enforced, though logically to be expected
-	    show_debug_message("Considering "+unit.title+" removal");
+	    //show_debug_message("Considering "+unit.title+" removal");
 		//need to prune before activating
 		var i,wait = -1;
 		for (i = 0 ; i<15; i++){
@@ -166,27 +166,27 @@ function remove(unit){//assumes only ONE of this instance is in queue.  not expl
 		pq[1][i] = pq[1][pqSize];
 		pq[0][pqSize] = noone;
 		pq[1][pqSize] = 999;
-		show_debug_message("Remover pretrickle: ["+string(pq[1][0])+","+string(pq[1][1])+","+
+		/*show_debug_message("Remover pretrickle: ["+string(pq[1][0])+","+string(pq[1][1])+","+
 						string(pq[1][2])+","+string(pq[1][3])+","+
-						string(pq[1][4])+","+string(pq[1][5])+"]; "+string(pqSize));
+						string(pq[1][4])+","+string(pq[1][5])+"]; "+string(pqSize));*/
 		trickleDown(i);//actually this should work lol
-		show_debug_message("Queue sprunk to: ["+string(pq[1][0])+","+string(pq[1][1])+","+
+		/*show_debug_message("Queue sprunk to: ["+string(pq[1][0])+","+string(pq[1][1])+","+
 						string(pq[1][2])+","+string(pq[1][3])+","+
-						string(pq[1][4])+","+string(pq[1][5])+"]; "+string(pqSize));
+						string(pq[1][4])+","+string(pq[1][5])+"]; "+string(pqSize));*/
 		
 		return wait;
 }
 function enqueue(u,wait=getWait(u)){
 	remove(u);//should never double queue the same item
 	if (u.current[HP]<1)return;
-	show_debug_message("Enqueueing "+u.title);
+	//show_debug_message("Enqueueing "+u.title);
 	pq[0][pqSize]=u;
 	pq[1][pqSize]=wait;
 	trickleUp(pqSize++);
 	//initial pq[0][next] will only be noone if empty so ignore that case
-	show_debug_message("Queue grew to: ["+string(pq[1][0])+","+string(pq[1][1])+","+
+	/*show_debug_message("Queue grew to: ["+string(pq[1][0])+","+string(pq[1][1])+","+
 						string(pq[1][2])+","+string(pq[1][3])+","+
-						string(pq[1][4])+","+string(pq[1][5])+"]; "+string(pqSize));
+						string(pq[1][4])+","+string(pq[1][5])+"]; "+string(pqSize));*/
 }
 function checkForReadiness(){//ALLY ONLY version;  if using mechanic for enemies, they'd need to check for battle_player instead!  since I got rid of isPlayer bool not trivial to do here
 	/*show_debug_message("Checking ["+string(pq[1][0])+","+string(pq[1][1])+","+
@@ -256,7 +256,7 @@ function reduce(amt) {
 		if pq[0][i]==noone break;//revert to break; when working again
         else pq[1][i]-=amt;
     }
-	show_debug_message("After all reduction, pq size is "+string(i));
+	//show_debug_message("After all reduction, pq size is "+string(i));
 }
 draw_set_font(Roses);
 obj_player.visible = 0;//undoes debug crap

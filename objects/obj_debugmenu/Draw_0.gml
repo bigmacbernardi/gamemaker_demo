@@ -7,7 +7,7 @@ drawY+=4;
 for (var i = 0; i<array_length(options);i++){
 	draw_set_color(i==currentIndex?c_white:c_gray);	
 	draw_text_transformed(camera_get_view_x(cam)+47,drawY,options[i],.5,.5,0);
-	if options[i]=="NO-CLIP"
+	if options[i]=="LO-CLIP"
 		draw_text_transformed(camera_get_view_x(cam)+87,drawY,noClipOn?"On":"Off",.5,.5,0);
 	drawY+=12;
 }

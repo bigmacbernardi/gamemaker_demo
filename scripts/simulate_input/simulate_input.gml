@@ -10,7 +10,7 @@ function simulateInput(){
 						break;
 						}
 				}
-			    show_debug_message(global.selectedUnit.title + " attack "+global.targets[0].title);
+			    show_debug_message(global.selectedUnit.title + " simput against "+global.targets[0].title);
 				state = ATTACK; 
 				layer_sequence_headpos(unitSequence,atkStart);
 			}	

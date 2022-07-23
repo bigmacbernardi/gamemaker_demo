@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_lanternghost_static",
     "path": "sprites/spr_lanternghost_static/spr_lanternghost_static.yy",

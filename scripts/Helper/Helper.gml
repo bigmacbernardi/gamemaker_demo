@@ -3,7 +3,7 @@
 function Helper(){
 
 }
-
+#macro castStandard 1337
 function getRoomName(rm = room){
 	switch (rm){
 		case start_menu:
@@ -98,8 +98,6 @@ function getRoomName(rm = room){
 /*function checkForHit(){
 	var number = random(1);
 	var unit = global.selectedUnit;
-	show_debug_message("Checking for hit (ACC "+string(10*global.selectedUnit.current[@ ACC])
-			+", rolled a "+string(10-(number*10))+")");
 	if (number < unit.current[@ ACC])
 		unit.attackWillHit = true;
 	else
@@ -108,8 +106,7 @@ function getRoomName(rm = room){
 
 function checkForHit(unit = global.selectedUnit){//checks for physical attack
 	var number = random(1);
-	show_debug_message("Checking for hit (ACC "+string(10*global.selectedUnit.current[@ ACC])
-			+", rolled a "+string(10-(number*10))+")");
+	//show_debug_message("Checking for hit (ACC "+string(10*global.selectedUnit.current[@ ACC])+", rolled a "+string(10-(number*10))+")");
 	if (number < unit.current[@ ACC])
 		unit.attackWillHit = true;
 	else
@@ -125,9 +122,10 @@ function useItem(){
 	
 }
 function elemAttack(element,strength=1,unit=global.selectedUnit,target=global.targets[0]){
+		//calculates power HERE from level
 		checkForHit(unit);
 		if (unit.attackWillHit){
-			var dmg;
+			var dmg = 0;
 			switch(element){
 				case 0: //earth
 					dmg = ceil(strength*((unit.current[@ DEFEND]/2)+(unit.current[@ STR]/2))
@@ -222,7 +220,7 @@ function unitAttack(unit = global.selectedUnit,targets = global.targets,thatsIt 
 			with(targets[i]){
 					incomingDamage = ceil(unit.current[@ STR]); //WILL account for def here and use separate attack power IMO, but whatever
 					incomingElement = -1;//physical
-					show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
+					//show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
 					layer_sequence_headpos(unitSequence,hitStart);
 					audio_play_sound(damageSound,100,false);
@@ -232,6 +230,12 @@ function unitAttack(unit = global.selectedUnit,targets = global.targets,thatsIt 
 		else{
 			with(targets[i]){
 				show_debug_message("OFFICIALLY MISSING");
+				with battle_menu{
+					show_debug_message(string(instance_count)+" battle_menus");
+				}
+				with battle_yusuf{
+					show_debug_message(string(instance_count)+" yusufs");
+				}
 				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
 				layer_sequence_headpos(unitSequence,missStart);
 				state = MISS;
@@ -286,10 +290,7 @@ function revive_targets(amt=1){
 				state = IDLE;
 			}
 			ds_list_add(unit.isPlayer?global.allies:global.enemies,unit);
-			with battle_manager{
-				enqueue(unit);
-				totalUnits++;
-			}
+			
 			//}
 		}
 	}
@@ -309,16 +310,28 @@ function isReady(partner,amAlly=true){//pass in .teammate var
 }
 
 function setParticle(int){
-	var debug_names = ["Healing","Wind","Fire","Water","Shadow","Light","Electric","Ice","Spirit"];
+	var debug_names = ["Earth","Wind","Fire","Water","Dark","Light","Electric","Kiai","Poison","Ice",
+						"Crystal","Magma","Acid","Rainbow","Healing","Curing","Buffing","Time","Protective","Hydra"];
 	show_debug_message("Casting "+debug_names[int]+" magic");
 	switch(int){
-		case 0: //heal
+		case 16: //heal
 				part_type_shape(global.Particle1, pt_shape_spark);
 				part_type_size(global.Particle1,1,1,0,2);
 				part_type_color1(global.Particle1,c_green);
 				part_type_alpha1(global.Particle1,1);
 				part_type_speed(global.Particle1,0.50,2,-0.10,0);
 				part_type_direction(global.Particle1,0,359,0,20);
+				part_type_orientation(global.Particle1,0,0,0,0,true);
+				part_type_blend(global.Particle1,1);
+				part_type_life(global.Particle1,5,30);
+				break;
+		case 0:	//earth
+				part_type_shape(global.Particle1, pt_shape_line);
+				part_type_size(global.Particle1,1,1,0,2);
+				part_type_color1(global.Particle1,c_maroon);
+				part_type_alpha1(global.Particle1,1);
+				part_type_speed(global.Particle1,0.50,2,-0.10,0);
+				part_type_direction(global.Particle1,0,269,0,20);
 				part_type_orientation(global.Particle1,0,0,0,0,true);
 				part_type_blend(global.Particle1,1);
 				part_type_life(global.Particle1,5,30);
@@ -411,6 +424,17 @@ function setParticle(int){
 				part_type_blend(global.Particle1,1);
 				part_type_life(global.Particle1,5,30);
 				break;
+		default://Fighting spirit clone
+				part_type_shape(global.Particle1, pt_shape_spark);
+				part_type_size(global.Particle1,1,1,0,2);
+				part_type_color1(global.Particle1,c_yellow);
+				part_type_alpha1(global.Particle1,1);
+				part_type_speed(global.Particle1,0.50,2,-0.10,0);
+				part_type_direction(global.Particle1,0,359,0,20);
+				part_type_orientation(global.Particle1,0,0,0,0,true);
+				part_type_blend(global.Particle1,1);
+				part_type_life(global.Particle1,5,30);
+				break;
 	}
 
 }
@@ -422,7 +446,7 @@ function setParticle(int){
  DEBUG FUNCTIONS
  DEBUG FUNCTIONS
 */
-function checkForOpenSpace(xx,yy,x_gap,y_gap){
+function checkForOpenSpace(xx,yy,x_gap,y_gap){//not even using
 	show_debug_message("Checking "+string(xx)+","+string(yy));
     if !(obj_player.place_meeting(xx,yy,obj_wall) or obj_player.place_meeting(xx,yy,checkable) or obj_player.place_meeting(xx,yy,obj_warp)){
 	   
@@ -442,3 +466,48 @@ function checkForOpenSpace(xx,yy,x_gap,y_gap){
 	else return false;
 
 }
+function defaultConfig(){
+	//put spells into "normal" order
+	//search through all skills, put them in their default place
+	//
+}
+function standardActions(isSpellcaster=0){//returns a ds_list with all the normal actions; used OUTSIDE of battle
+	var toReturn = ds_list_create();
+	//FORMAT:  [Name, action, type (deepest menu allowed), current menu]
+	//TYPES: 0 = Default only; 1 = Skill; 2 = Magic (subset of skill); 3 = Speech (handled differently at the time of this co
+	ds_list_add(toReturn,["Attack",attack,1,0]);
+	ds_list_add(toReturn,["Skills",skills,0,0]);
+	ds_list_add(toReturn,["Magic",skills,1,!isSpellcaster]);//look up how I filtered magic action bc idr
+	if (!isSpellcaster) ds_list_add(toReturn,["Talk",talk,1,0]);
+	ds_list_add(toReturn,["Items",item,1,0]);
+	ds_list_add(toReturn,["Dual",dual,1,0]);
+	ds_list_add(toReturn,["Wait",wait,0,0]);
+	ds_list_add(toReturn,["Flee",flee,1,0]);
+	return toReturn;
+}
+function standardSpells(){
+	var battling = instance_exists(battle_menu);
+	if battling
+		return standardSpells()
+}
+
+/*function spellsForBattle(unit){//HAS to happen on global data, for config stuff
+var battling = instance_exists(battle_menu);
+	if !battling
+		return standardSpells()
+	var index = unit.ind;
+	var names = ["Quake","Gale","Flame","Torrent","Dark","Nova","Shock","Kiai","Bitch"];//torrent=>flood?
+	var costs = [[5,10,16],[]];
+	for (var i = 0;i<array_length(names);i++){
+		var n = names[i];
+		//deepest allowed NOT NEEDED!
+		var a = castStandard
+		//for (var j = 0;j<global.spellLv[index][i];j++){
+		if global.spellLv[index][i]>0 {
+			var insertIt = [names[i],castStandard,2,0,costs[i][j],i,global.spellLv[index][i]];
+			//if battling
+		
+		//else do this however	ds_list_add(list,);
+		}
+	}
+}*/

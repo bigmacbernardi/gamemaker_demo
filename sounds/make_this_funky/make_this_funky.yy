@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "make_this_funky.wav",
-  "duration": 111.304329,
+  "duration": 111.30433,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

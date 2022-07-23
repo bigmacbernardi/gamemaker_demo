@@ -1,0 +1,9 @@
+{
+  "extensionId": {
+    "name": "Basic_Platformer_Tiles",
+    "path": "extensions/Basic_Platformer_Tiles/Basic_Platformer_Tiles.yy"
+  },
+  "resourceVersion": "1.0",
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": null
+}

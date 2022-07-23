@@ -128,51 +128,6 @@ start_frame = transform0to2;
 
 
 //function redeclarations shouldn't be needed
-/*function damageUnit(amount){//physical attacks
-	show_debug_message("Yo it's the soldier override!  HP was "+string(current[@ HP]));
-	var damage = max(0,ceil(amount * 50/(50+ current[DEF])));//will update eventually
-	show_debug_message("Damage is "+string(damage)+" of "+string(amount));
-	current[@ HP] -= max(0,damage);
-	show_debug_message("HP is now "+string(current[@ HP]));
-}
-function healUnit(amount){
-	current[@ HP] = min(base[HP],current[HP]+amount);
-}*/
-/* New stuff for poison/regen shouldn't be needed*/
-/*status = [1,0,0,0,0,0,0,0];//regenerating
-floatTurns = 0;
-poisonTurns = -1;
-regenTurns = -1;
-regenAmt = 5;
-immunity = [0,0,-1,2,0,0,0,0,1,-1];//immune to poison.  absorbs water.  weak to fire and ice.
-function turnEnd(){
-	show_debug_message("big mushroom turn end");
-	if status[0] < 0{//poison only
-		var amount = 0-status[0]
-		nastyDamage = ceil(amount * 50/(50+ current[DEF]));
-		damageUnit(amount);
-		if (poisonTurns > 0) poisonTurns--;
-		else if (poisonTurns == 0) status[0]=0;//poison ended
-	}
-	else if status[0]>0{
-		incomingHealage=regenAmt;
-		healUnit(regenAmt);
-		if status[0]>1{
-			var amount = status[0]-1;
-			nastyDamage = ceil(amount * 50/(50+ current[DEF]));
-			damageUnit(amount);
-			if (poisonTurns > 0) poisonTurns--;
-			else if (poisonTurns == 0) status[0]=1;//poison ended!
-			if (regenTurns > 0) regenTurns--;
-			else if (regenTurns == 0) and (poisonTurns==0) status[0]=0;//both ended!
-			else if (regenTurns == 0) status[0]=1-status[0];//regen ended 
-		
-		}
-	}
-	if (floatTurns > 0) floatTurns--;
-	else status[1]=0;//float ended
-	nastyDamage = 0;
-	incomingHealage = 0;
-}*/
+
 show_debug_message("it's naught thought");
 lastState = state;//debug var

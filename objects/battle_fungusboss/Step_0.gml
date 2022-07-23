@@ -16,7 +16,7 @@ switch(state){
 	
 	case ATTACK:
 		if (layer_sequence_get_headpos(unitSequence) > (doingSpecialAttack?atk2End:atkEnd)){//min(atk2End,atkEnd)){//
-			show_debug_message(title+" attack animation finished");
+			//show_debug_message(title+" attack animation finished");
 			//at THIS point damage should happen right?
 			turnFinished = true;
 			

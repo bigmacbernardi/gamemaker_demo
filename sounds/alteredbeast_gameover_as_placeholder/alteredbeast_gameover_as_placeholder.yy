@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "alteredbeast_gameover_as_placeholder.mp3",
-  "duration": 38.4783669,
+  "duration": 38.478367,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
