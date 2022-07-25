@@ -14,7 +14,7 @@ if menuDisplaying and menuActive and battle_manager.allowInput{
 	var cancel = ((mouse_check_button_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace) || keyboard_check_released(vk_escape));
 	//cancel should be handled by whatever's created by actions[index]
 	//var _moveV = _down - _up;
-	var rows = 4;//+bigSubmenu;
+	var rows = 4+bigSubmenu;
 	if _down{
 		if index==(array_length(actions)-1) or (index%rows==rows-1)//last option OR bottom of column
 			index-=	(array_length(actions)-1)%rows;//bring to top of column

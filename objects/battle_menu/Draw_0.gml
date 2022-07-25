@@ -27,9 +27,9 @@ for (var i = 0; i<array_length(players);i++){
 }
 if menuDisplaying{
 	//draw_sprite_stretched(spr_menu_temp,0,x+submenuDisplaying?400:200,y-(submenuDisplaying&&bigSubmenu?60:10),150,120+(submenuDisplaying&&bigSubmenu * 50));
-	draw_sprite_stretched(spr_menu_temp,0,x+200,y-6,150,120);
+	draw_sprite_stretched(spr_menu_temp,0,x+200,y-6 - (bigSubmenu * 12),150,120);
 	drawX = x + 217;
-	drawY = y - (bigSubmenu * 50) - 2;
+	drawY = y - (bigSubmenu * 12) - 2;
 	for (var i = 0 ; i<min(4+bigSubmenu,array_length(actions));i++){
 		draw_set_color(i == index?c_white:c_gray);
 		draw_text_transformed(drawX,drawY,actions[i].name+(array_length(actions[i].children)==0?"":"..."),.65,.65,0);
@@ -47,7 +47,7 @@ if menuDisplaying{
 	}
 	
 	drawX += 67;
-	drawY = y  - (bigSubmenu * 50) - 2;
+	drawY = y  - (bigSubmenu * 12) - 2;
 	for (var i = 4+bigSubmenu ; i<min(8+(2*bigSubmenu),array_length(actions));i++){
 		draw_set_color(i == index?c_white:c_gray);
 		draw_text_transformed(drawX,drawY,actions[i].name,.65,.65,0);
@@ -55,7 +55,7 @@ if menuDisplaying{
 	}
 	if submenuDisplaying{
 		drawX += 67;
-		drawY = y  - (bigSubmenu * 50) - 2;
+		drawY = y  - (bigSubmenu * 12) - 2;
 		for (var i = 8+(bigSubmenu*2) ; i<min(12+(2*bigSubmenu),array_length(actions));i++){
 			draw_set_color(i == index?c_white:c_gray);
 			draw_text_transformed(drawX,drawY,actions[i].name,.65,.65,0);
