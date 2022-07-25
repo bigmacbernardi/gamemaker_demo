@@ -168,11 +168,11 @@ for (var i = 0; i<ds_list_size(global.actions[index]);i++){
 	
 }
 var spell_names = ["Quake","Gale","Flame","Torrent","Dark","Nova","Shock","Kiai","Bitch","no",//torrent=>flood?
-			"You","Are","A","Toy","Buzz","HPeal","Statcure","Eight","19","tenty"];
+					"You","Are","A","Toy","Buzz","HPeal","Statcure","Eight","19","tenty"];
 var element_names = ["earth","wind","fire","water","dark","light","electric","kiai","poison","ice",
-						"crystal","magma","acid","rainbow","healing","curing","buffing","time","protective","hydra"];
+					"crystal","magma","acid","rainbow","healing","curing","buffing","time","protective","hydra"];
 	
-var costs = [[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],
+var costs = [[3,7,12],[3,7,12],[3,7,12],[3,7,12],[3,7,12],[3,7,12],[3,7,12],[3,7,12],[3,7,12],[3,7,12],[3,7,12],
 				[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16],[5,10,16]];
 for (var i = 0;i<array_length(spell_names);i++){
 		
@@ -222,6 +222,7 @@ for (var i = 0;i<array_length(spell_names);i++){
 					mp: costs[i],
 					element :i,
 					lvl:global.spellLv[index][i],
+					description:desc,
 					children:[]
 				};
 				break;
@@ -233,6 +234,7 @@ for (var i = 0;i<array_length(spell_names);i++){
 					mp: costs[i],
 					element:i,
 					lvl:0,
+					description:desc,
 					children:[]
 				};
 				}
@@ -243,6 +245,7 @@ for (var i = 0;i<array_length(spell_names);i++){
 					mp: costs[i],
 					element:i,
 					lvl:0,
+					description:desc,
 					children:slotSkills(self)//should just lump skills into actions, temporary solution
 				};	
 				}
@@ -254,6 +257,7 @@ for (var i = 0;i<array_length(spell_names);i++){
 					mp: costs[i],
 					element:i,
 					lvl:0,
+					description:desc,
 					children:[]
 				};
 				break;
