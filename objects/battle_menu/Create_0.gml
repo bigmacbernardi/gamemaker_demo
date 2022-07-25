@@ -1,6 +1,6 @@
 /// @description Update: DO ACTION(CHILDREN) IF LEN(CHILDREN)>1
 // Spawn by manager, after setup
-
+show_debug_message("BATTLE MENU CREATED!  REJOICE!");
 menuDisplaying = false;
 submenuDisplaying = false;
 bigSubmenu = false;//covers up more
@@ -21,7 +21,7 @@ for (var i=0;i<battle_manager.totalUnits;i++){
 	if !global.units[|i].isPlayer break;
 	else players[i]=global.units[|i];
 }
-function openSubmenu(newOptions,clear=true){
+function openSubmenu(newOptions,clear=true){//doesn't update parent
 	if clear{//useless now
 		actions = [];
 	}
@@ -49,6 +49,7 @@ function openSubmenu(newOptions,clear=true){
 	}
 	index=0;
 	secondIndex=0;
+	bigSubmenu = array_length(newOptions)>8;
 }
 /*function getAction(indy=index){
 	

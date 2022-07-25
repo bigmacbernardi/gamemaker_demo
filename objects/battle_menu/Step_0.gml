@@ -106,9 +106,10 @@ if menuDisplaying and menuActive and battle_manager.allowInput{
 		}
 		
 	}
-	if cancel and submenuDisplaying{
+	if cancel /*and submenuDisplaying*//*ain't right*/ and parent>0{
 		actions = parent.actions;
 		parent = parent.parent;
+		openSubmenu(actions);//to update other, dummying out lists
 		submenuDisplaying = (parent != noone);
 	}
 }	

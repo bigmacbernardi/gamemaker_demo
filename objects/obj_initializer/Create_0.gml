@@ -45,7 +45,7 @@ global.menuOptions = [
 [["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]],[["Go"],[attack]]//
 ];//DOING AWAY WITH THIS
 
-global.actions=[standardActions(),standardActions(1)];
+global.actions=[standardActions(1),standardActions()];
 global.equipped[AOI] = [noone,noone,noone,noone,noone,noone,noone,noone];
 global.equipped[YUSUF] = [noone,noone,noone,noone,noone,noone,noone,noone];
 global.availableParty = ds_list_create();
@@ -148,10 +148,16 @@ global.canLearn[YUSUF]= [false/*Earth*/,true/*Wind*/,true/*Fire*/,true/*Water*/,
 global.spellConfig=[];
 for (var i = 0; i<array_length(global.canLearn[AOI]);i++){
 	global.spellConfig[AOI][i]=1;//magic folder for you
-	global.spellConfig[YUSUF][i]=2;
+	global.spellConfig[YUSUF][i]=2;//skill folder
 }
-global.spellLv[AOI] = [0,0,1,0,0,0,0,0,0,1,
-						0,0,0,0,0,0,0,0,0,0];
+//TEST!!!
+global.spellConfig[AOI][4]=2;
+global.spellConfig[AOI][7]=0;
+//TEST!!! end
+global.spellLv[AOI] = [3,3,1,2,3,2,3,2,2,1,
+						0,0,0,2,0,0,0,4,0,0];
+/*global.spellLv[AOI] = [0,0,1,0,0,0,0,0,0,1,
+						0,0,0,0,0,0,0,0,0,0];*/
 global.spellLv[YUSUF] = [0,0,0,0,0,0,0,0,0,0,
 						0,0,0,0,0,0,0,0,0,0];
 global.party[YUSUF][HP] = 10;

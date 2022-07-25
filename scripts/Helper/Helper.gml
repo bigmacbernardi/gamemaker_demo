@@ -477,7 +477,7 @@ function standardActions(isSpellcaster=0){//returns a ds_list with all the norma
 	//TYPES: 0 = Default only; 1 = Skill; 2 = Magic (subset of skill); 3 = Speech (handled differently at the time of this co
 	ds_list_add(toReturn,["Attack",attack,1,0]);
 	ds_list_add(toReturn,["Skills",skills,0,0]);
-	ds_list_add(toReturn,["Magic",skills,1,!isSpellcaster]);//look up how I filtered magic action bc idr
+	if (isSpellcaster) ds_list_add(toReturn,["Magic",magic,1,!isSpellcaster]);//look up how I filtered magic action bc idr
 	if (!isSpellcaster) ds_list_add(toReturn,["Talk",talk,1,0]);
 	ds_list_add(toReturn,["Items",item,1,0]);
 	ds_list_add(toReturn,["Dual",dual,1,0]);
@@ -511,3 +511,7 @@ var battling = instance_exists(battle_menu);
 		}
 	}
 }*/
+
+function getDescription(action){//move skills logic here!
+	return "Placeholder description.";	
+}

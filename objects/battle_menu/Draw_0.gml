@@ -37,8 +37,8 @@ if menuDisplaying{
 		if actions[i].element>-1{
 			draw_circle(drawX,drawY,2,false)
 		}
-		if actions[i].lvl>0{
-			for (var j=0;j<actions[i].lvl;j++){
+		if actions[i].lvl>0||levels[i]>0{
+			for (var j=0;j<max(actions[i].lvl,levels[i]);j++){
 				draw_set_color((i == index)?(j == secondIndex?c_white:c_dkgray):c_black);
 				draw_text_transformed(drawX+80+(j*9),drawY-1,string(j+1),.5,.5,0);
 			}
