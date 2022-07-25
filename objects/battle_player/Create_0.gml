@@ -42,9 +42,6 @@ if index < 20{//not a guest char
 	current[WIS] = base[@ WIS] + (offhand>0?offhand.wisBonus:0);
 	current[ACC] = base[@ ACC]; // TIMES weapon accuracy!
 
-
-	
-
 	status = global.statuses[index];
 
 	//sPlayer is filler animation for the knight
@@ -116,13 +113,13 @@ for (var i = 0; i<ds_list_size(global.actions[index]);i++){
 		case 1: //magic
 			if m<array_length(actions)
 				actions[m].children[array_length(actions[m].children)]={
-																	name:it[0],
-																	action:it[1],
-																	element:-1,
-																	lvl:0,
-																	children:[],
-																	description:"Sorcel a spelll"
-																		};
+					name:it[0],
+					action:it[1],
+					element:-1,
+					lvl:0,
+					children:[],
+					description:"Sorcel a spell"
+				};
 			else actions[in++]=
 				{
 					name:it[0],
@@ -137,13 +134,13 @@ for (var i = 0; i<ds_list_size(global.actions[index]);i++){
 			show_debug_message("s: "+string(s)+"\n"+string(array_length(actions))+" actions");
 			if s<array_length(actions)
 				actions[s].children[array_length(actions[s].children)]={
-																	name:it[0],
-																	action:it[1],
-																	element:-1,
-																	lvl:0,
-																	children:[],
-																	description:"Use special techniques"
-																		};
+					name:it[0],
+					action:it[1],
+					element:-1,
+					lvl:0,
+					children:[],
+					description:"Use special techniques"
+				};
 			else actions[in++]=
 				{
 					name:it[0],
@@ -154,13 +151,13 @@ for (var i = 0; i<ds_list_size(global.actions[index]);i++){
 				};
 			break;
 		default: //
-			actions[s].children[array_length(actions[s].children)]=
-			{name:it[0],
-			 action:it[1],
-			 children:[],
-			 element :ele,
-			 lvl:lev,
-			 description:getDescription(it[1])
+			actions[s].children[array_length(actions[s].children)] = {
+				name:it[0],
+				action:it[1],
+				children:[],
+				element :ele,
+				lvl:lev,
+				description:getDescription(it[1])
 			};
 			break;
 		
@@ -214,8 +211,10 @@ for (var i = 0;i<array_length(spell_names);i++){
 							["Deals medium "+element_names[i]+" damage.\nCosts "+string(costs[i][1])+" MP."],
 							["Deals heavy "+element_names[i]+" damage.\nCosts "+string(costs[i][2])+" MP."]];
 		}
+		show_debug_message(desc);
 		switch (global.spellConfig[index][i]){
 			case 0:
+				show_debug_message("adding spell "+string(i));
 				actions[in++]=
 				{	name:n,
 					action:castStandard,
@@ -227,32 +226,34 @@ for (var i = 0;i<array_length(spell_names);i++){
 				};
 				break;
 			case 1: //magic menu
+				show_debug_message("magic time"+string(i));
 				if m!=-1{
-				actions[m].children[array_length(actions[s].children)]=
-				{name:n,
-					action:castStandard,
-					mp: costs[i],
-					element:i,
-					lvl:0,
-					description:desc,
-					children:[]
-				};
+					actions[m].children[array_length(actions[m].children)] = {
+						name:n,
+						action:castStandard,
+						mp: costs[i],
+						element:i,
+						lvl:0,
+						description:desc,
+						children:[]
+					};
 				}
 				else{//everyone should have an S at this point
-				actions[s].children[array_length(actions[s].children)]=
-				{name:n,
-					action:castStandard,
-					mp: costs[i],
-					element:i,
-					lvl:0,
-					description:desc,
-					children:slotSkills(self)//should just lump skills into actions, temporary solution
-				};	
+					actions[s].children[array_length(actions[s].children)] =	{
+						name:n,
+						action:castStandard,
+						mp: costs[i],
+						element:i,
+						lvl:0,
+						description:desc,
+						children:slotSkills(self)//should just lump skills into actions, temporary solution
+					};
 				}
 				break;
 			case 2: //skills
-				actions[s].children[array_length(actions[s].children)]=
-				{name:n,
+				show_debug_message("skilling spell "+string(i));
+				actions[s].children[array_length(actions[s].children)] = {
+					name:n,
 					action:castStandard,
 					mp: costs[i],
 					element:i,
