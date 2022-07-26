@@ -233,7 +233,7 @@ for (var i = 0;i<array_length(spell_names);i++){
 						action:castStandard,
 						mp: costs[i],
 						element:i,
-						lvl:0,
+						lvl:global.spellLv[index][i],
 						description:desc,
 						children:[]
 					};
@@ -244,7 +244,7 @@ for (var i = 0;i<array_length(spell_names);i++){
 						action:castStandard,
 						mp: costs[i],
 						element:i,
-						lvl:0,
+						lvl:global.spellLv[index][i],
 						description:desc,
 						children:slotSkills(self)//should just lump skills into actions, temporary solution
 					};

@@ -27,8 +27,8 @@ for (var i = 0; i<array_length(players);i++){
 }
 if menuDisplaying{
 	//draw_sprite_stretched(spr_menu_temp,0,x+submenuDisplaying?400:200,y-(submenuDisplaying&&bigSubmenu?60:10),150,120+(submenuDisplaying&&bigSubmenu * 50));
-	draw_sprite_stretched(spr_menu_temp,0,x+200,y-6 - (bigSubmenu * 12),150,120);
-	drawX = x + 217;
+	draw_sprite_stretched(spr_menu_temp,0,x+20+(90*(2-bigSubmenu)),y-6 - (bigSubmenu * 12),150,120);
+	drawX = x + 37 + (90*(2-bigSubmenu));
 	drawY = y - (bigSubmenu * 12) - 2;
 	for (var i = 0 ; i<min(4+bigSubmenu,array_length(actions));i++){
 		draw_set_color(i == index?c_white:c_gray);
@@ -37,10 +37,12 @@ if menuDisplaying{
 		if actions[i].element>-1{
 			draw_circle(drawX,drawY,2,false)
 		}
+		//show_debug_message(actions[i].name+" level is "+string(actions[i].lvl));
+			
 		if actions[i].lvl>0||levels[i]>0{
 			for (var j=0;j<max(actions[i].lvl,levels[i]);j++){
 				draw_set_color((i == index)?(j == secondIndex?c_white:c_dkgray):c_black);
-				draw_text_transformed(drawX+80+(j*9),drawY-1,string(j+1),.5,.5,0);
+				draw_text_transformed(drawX+50+(j*7),drawY+2,string(j+1),.4,.4,0);
 			}
 		}
 		drawY+=8
@@ -51,6 +53,12 @@ if menuDisplaying{
 	for (var i = 4+bigSubmenu ; i<min(8+(2*bigSubmenu),array_length(actions));i++){
 		draw_set_color(i == index?c_white:c_gray);
 		draw_text_transformed(drawX,drawY,actions[i].name,.65,.65,0);
+		if actions[i].lvl>0||levels[i]>0{
+			for (var j=0;j<max(actions[i].lvl,levels[i]);j++){
+				draw_set_color((i == index)?(j == secondIndex?c_white:c_dkgray):c_black);
+				draw_text_transformed(drawX+50+(j*7),drawY+2,string(j+1),.4,.4,0);
+			}
+		}
 		drawY+=13
 	}
 	if submenuDisplaying{
@@ -59,8 +67,12 @@ if menuDisplaying{
 		for (var i = 8+(bigSubmenu*2) ; i<min(12+(2*bigSubmenu),array_length(actions));i++){
 			draw_set_color(i == index?c_white:c_gray);
 			draw_text_transformed(drawX,drawY,actions[i].name,.65,.65,0);
-			if variable_struct_exists(actions[i],"element")
-			if variable_struct_exists(actions[i],"element")
+			if actions[i].lvl>0||levels[i]>0{
+				for (var j=0;j<max(actions[i].lvl,levels[i]);j++){
+					draw_set_color((i == index)?(j == secondIndex?c_white:c_dkgray):c_black);
+					draw_text_transformed(drawX+50+(j*7),drawY+2,string(j+1),.4,.4,0);
+				}
+			}
 			drawY+=13
 		}
 	}
