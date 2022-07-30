@@ -85,12 +85,15 @@ var s = -1;
 for (var i = 0; i<ds_list_size(global.actions[index]);i++){
 	var it = global.actions[index][|i];
 	show_debug_message(string(i)+"st action: "+it[0]);
-	if it[1]==skills s = in;
+	var kids = [];//always on root; only passing to case 0
+	if it[1]==skills{
+		s = in;
+		kids = slotSkills(self);
+	}
 	if it[1]==magic m = in;
 	//else if it[1] == talk t=in;
 	var ele = -1;
 	var lev = 0;
-	
 	if array_length(it)>4{//has elemental
 		ele=it[4];
 		if array_length(it)>5{//has extra levels
@@ -106,7 +109,7 @@ for (var i = 0; i<ds_list_size(global.actions[index]);i++){
 				 action:it[1],
 				 element :ele,
 				 lvl:lev,
-				 children:[],
+				 children:kids,
 				 description:getDescription(it[1])
 			};
 			break;
@@ -149,6 +152,7 @@ for (var i = 0; i<ds_list_size(global.actions[index]);i++){
 					 lvl:lev,
 					 children:[]
 				};
+			
 			break;
 		default: //
 			actions[s].children[array_length(actions[s].children)] = {
@@ -246,7 +250,7 @@ for (var i = 0;i<array_length(spell_names);i++){
 						element:i,
 						lvl:global.spellLv[index][i],
 						description:desc,
-						children:slotSkills(self)//should just lump skills into actions, temporary solution
+						children:[]
 					};
 				}
 				break;

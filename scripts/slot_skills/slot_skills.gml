@@ -24,6 +24,7 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 				selector: atk_selector,
 				description: "Deal an ordinary physical blow.",
 				mode: 0,
+				lvl:0,children:[],element:-1,
 				usable: global.selectedUnit>0 && !global.selectedUnit.status[2]// or something
 			};
 			a[index++] = atkOpt;
@@ -34,9 +35,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 		case AOI:
 			if (global.skills[AOI][0]){
 				var aoiBurn = {
-				title: "Burn",
+				name: "Burn",
 				description: "Fire damage on all enemies.",
 				mode: 2,
+				lvl:0,children:[],element:2,
 				usable: global.selectedUnit.current[MP]>=4,
 				action: cast//temp test
 				}
@@ -44,9 +46,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 			}
 			if (global.skills[AOI][1]){
 				var aoiFreeze = {
-					title: "Freeze",
+					name: "Freeze",
 					description: "Ice damage on one enemy.",
 					mode: 0,
+					lvl:0,children:[],element:9,
 					usable: global.selectedUnit.current[MP]>=4,
 					action: freeze
 				}
@@ -56,9 +59,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 		case YUSUF:
 			if (global.skills[YUSUF][0]){
 				var yusufBold = {
-					title: "Embolden",
+					name: "Embolden",
 					description: "Raise ally's strength and defense.  2 MP.",
 					mode: 1,
+					lvl:0,children:[],element:7,
 					usable: global.selectedUnit.current[MP]>=2,
 					action: embolden
 				}
@@ -66,9 +70,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 			}
 			if (global.skills[YUSUF][1]){
 				var yusufBalm = {
-					title: "Balm",
+					name: "Balm",
 					selector: rigid_selector,
-					mode: 4,//rigid_selector:4 - team stuff
+					mode: 4,
+					lvl:0,children:[],element:14,//rigid_selector:4 - team stuff
 					usable: global.selectedUnit.current[MP]>=5,
 					description: "Heals you and your teammate.  5 MP.",
 					action: balm
@@ -77,8 +82,9 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 			}
 			if (global.skills[YUSUF][2]){
 				var yusufIC = {
-					title: "Intensive care",
+					name: "Intensive care",
 					mode: 1.5,
+					lvl:0,children:[],element:14,
 					usable: global.party[global.selectedUnit][MP]>=10,
 					description: "Raise fallen ally.  10 MP.",
 					action: intensiveCare
@@ -87,9 +93,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 			}
 			if (global.skills[YUSUF][3]){
 				var yusufBurn = {
-					title: "Ignite",
+					name: "Ignite",
 					description: "Fire damage on one enemy.",
 					mode: 0,
+					lvl:0,children:[],element:2,
 					action: freeze,
 					usable: global.selectedUnit.current[MP]>=4
 				};
@@ -97,9 +104,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 			}
 			if (global.skills[YUSUF][4]){
 				var yusufDetox = {
-					title: "Cure Poison",
+					name: "Cure Poison",
 					description: "Cure Poison on a buddy! .",
 					mode: 1,
+					lvl:0,children:[],element:15,
 					action: detox,
 					usable: global.selectedUnit.current[MP]>=2
 				}
@@ -112,10 +120,11 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 	//common options
 	if !deFound{
 		var defOpt = {
-			title: "Defend",
+			name: "Defend",
 			description: "Stand firm and brace yourself for impact.",
 			selector: rigid_selector,
 			mode: 3,//self
+			lvl:0,children:[],element:-1,
 			usable: battling && global.selectedUnit>0 && !global.selectedUnit.status[1] && !global.selectedUnit.status[2],// or something
 			action: defend
 		};
@@ -123,8 +132,9 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 	}
 	if !talkFound{
 		var talkOpt = {
-			title: "Talk",
+			name: "Talk...",
 			description: "Use your words.",
+			lvl:0,children:[],element:-1,
 			usable: battling and global.selectedUnit>0 and !global.selectedUnit.status[1] ,// or something
 			action: talk
 		};
@@ -132,10 +142,11 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 	}
 	if !fleeFound{
 		var fleeOpt = {
-			title: "Flee",
+			name: "Flee",
 			selector: rigid_selector,
 			description: "Run away, boy.",
 			mode: 1,
+			lvl:0,children:[],element:-1,
 			usable: battling && !instance_exists(micro_manager),// or something
 			action: flee
 		};
@@ -145,6 +156,24 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 		obj_skillmenu.options = a;
 	}
 	return a;
+}
+
+
+function getDescription(action){
+	switch(action){
+		case attack: return "Deal an ordinary physical blow.";
+        case burn:
+        case cast: return "Fire damage on all enemies.";
+		case freeze: return "Ice damage on one enemy.";
+		case embolden: return "Raise ally's strength and defense.  2 MP.";
+		case balm: return "Heals you and your teammate.  5 MP."; 
+		case intensiveCare: return "Raise fallen ally.  10 MP.";
+		case detox: return "Cure a buddy's poison.";
+		case defend: return "Stand firm and brace yourself for impact.";
+		case talk: return "Use your words.";
+		case flee: return "Run away, boy.";
+		default: return "Unrecognized action."
+	}
 }
 function slot_skills(){//repurpose for initialization maybe?
 	var ui_level = layer_exists("UI_Base")?"UI_Base":"Instances";

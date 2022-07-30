@@ -511,7 +511,17 @@ var battling = instance_exists(battle_menu);
 		}
 	}
 }*/
-
-function getDescription(action){//move skills logic here!
-	return "Placeholder description.";	
+function learnSkill(charIndex,name,action,defaultPlace=1,element=-1,level=0){
+		var entry = [name,action,defaultPlace,defaultPlace];
+		if level > 0{
+			entry[4]=element;//has to maintain order
+			entry[5]=level;
+		}
+		else if element > -1 entry[4]=element;
+		ds_list_add(global.actions[charIndex],entry);
+}
+function learnStartingSkills(){
+		learnSkill(AOI,"Burn",cast,2,2);//magic menu; fire elemental; no level
+		learnSkill(AOI,"Freeze",freeze,2,10);//magic menu; ice elemental; no level
+		
 }
