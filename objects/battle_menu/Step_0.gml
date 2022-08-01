@@ -12,10 +12,10 @@ if menuDisplaying and menuActive and battle_manager.allowInput{
 	var _left = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"));
 	var _right = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"));
 	var go = ((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter));
-	var cancel = ((mouse_check_button_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace) || keyboard_check_released(vk_escape));
+	var cancel = ((mouse_check_button_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_pressed(vk_backspace) || keyboard_check_released(vk_escape));
 	//cancel should be handled by whatever's created by actions[index]
 	//var _moveV = _down - _up;
-	var rows = 4+bigSubmenu;
+	//var rows = 4+bigSubmenu;
 	if _down{
 		if index==(array_length(actions)-1) or (index%rows==rows-1)//last option OR bottom of column
 			index-=	(array_length(actions)-1)%rows;//bring to top of column
@@ -28,7 +28,7 @@ if menuDisplaying and menuActive and battle_manager.allowInput{
 		else index--;
 	}
 	if _right{
-		if actions[index].lvl>1 && secondIndex-1< actions[index].lvl//if can move spell level
+		if actions[index].lvl>1 && secondIndex+1< actions[index].lvl//if can move spell level
 			secondIndex++;
 		else if index < array_length(actions)-rows{
 			index+=rows;
@@ -93,13 +93,14 @@ if menuDisplaying and menuActive and battle_manager.allowInput{
 			menuActive=false;
 		}
 		else if array_length(action.children)>0{
-			submenuDisplaying=true;
+			var p = parent;//just in case a reference is getting passed
 			parent = {
 				//indexEntered:index,//too hard for now
 				actions:actions,
-				parent: parent
+				parent: p
 			};
 			openSubmenu(action.children);
+			submenuDisplaying=true;
 			bigSubmenu = array_length(actions)>8;
 		}
 		else{

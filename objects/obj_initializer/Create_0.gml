@@ -155,7 +155,7 @@ global.spellConfig[AOI][4]=2;
 global.spellConfig[AOI][7]=0;
 //TEST!!! end
 global.spellLv[AOI] = [3,3,1,2,3,2,3,2,2,1,
-						0,0,0,2,0,0,0,4,0,0];
+						0,1,0,2,0,1,1,3,1,1];
 /*global.spellLv[AOI] = [0,0,1,0,0,0,0,0,0,1,
 						0,0,0,0,0,0,0,0,0,0];*/
 global.spellLv[YUSUF] = [0,0,0,0,0,0,0,0,0,0,

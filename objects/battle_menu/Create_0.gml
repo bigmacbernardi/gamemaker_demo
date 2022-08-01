@@ -18,6 +18,8 @@ levels=[];//0 - no levels; 1-3 - levels accessible
 //selectedChildren = noone;
 actions = [];
 players = [];
+rows=0;
+cols=2;
 parent = noone;
 for (var i=0;i<battle_manager.totalUnits;i++){
 	if !global.units[|i].isPlayer break;
@@ -51,6 +53,9 @@ function openSubmenu(newOptions,clear=true){//doesn't update parent
 	}
 	index=0;
 	secondIndex=0;
+	var len =  array_length(newOptions);
+	rows = 4 + (len>12) + (len>16);
+	cols = ceil(array_length(newOptions)/rows);
 	bigSubmenu = array_length(newOptions)>8;
 }
 /*function getAction(indy=index){
@@ -60,3 +65,5 @@ function openSubmenu(newOptions,clear=true){//doesn't update parent
 /*function doAMagic(){
 	
 }*/
+element_colors = [c_maroon,c_ltgray,c_red,c_aqua,c_black,c_white,c_yellow,c_black,c_fuchsia,c_aqua,
+					c_fuchsia,c_silver,c_lime,c_green,c_lime,c_gray,c_olive,c_navy,c_dkgray,c_orange];

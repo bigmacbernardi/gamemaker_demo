@@ -27,53 +27,28 @@ for (var i = 0; i<array_length(players);i++){
 }
 if menuDisplaying{
 	//draw_sprite_stretched(spr_menu_temp,0,x+submenuDisplaying?400:200,y-(submenuDisplaying&&bigSubmenu?60:10),150,120+(submenuDisplaying&&bigSubmenu * 50));
-	draw_sprite_stretched(spr_menu_temp,0,x+20+(90*(2-bigSubmenu)),y-6 - (bigSubmenu * 12),150,120);
-	drawX = x + 37 + (90*(2-bigSubmenu));
-	drawY = y - (bigSubmenu * 12) - 2;
-	for (var i = 0 ; i<min(4+bigSubmenu,array_length(actions));i++){
-		draw_set_color(i == index?c_white:c_gray);
-		draw_text_transformed(drawX,drawY,actions[i].name+(array_length(actions[i].children)==0?"":"..."),.65,.65,0);
-		drawY+=5
-		if actions[i].element>-1{
-			draw_circle(drawX,drawY,2,false)
-		}
-		//show_debug_message(actions[i].name+" level is "+string(actions[i].lvl));
-			
-		if actions[i].lvl>0||levels[i]>0{
-			for (var j=0;j<max(actions[i].lvl,levels[i]);j++){
-				draw_set_color((i == index)?(j == secondIndex?c_white:c_dkgray):c_black);
-				draw_text_transformed(drawX+50+(j*7),drawY+2,string(j+1),.4,.4,0);
-			}
-		}
-		drawY+=8
-	}
-	
-	drawX += 67;
-	drawY = y  - (bigSubmenu * 12) - 2;
-	for (var i = 4+bigSubmenu ; i<min(8+(2*bigSubmenu),array_length(actions));i++){
-		draw_set_color(i == index?c_white:c_gray);
-		draw_text_transformed(drawX,drawY,actions[i].name,.65,.65,0);
-		if actions[i].lvl>0||levels[i]>0{
-			for (var j=0;j<max(actions[i].lvl,levels[i]);j++){
-				draw_set_color((i == index)?(j == secondIndex?c_white:c_dkgray):c_black);
-				draw_text_transformed(drawX+50+(j*7),drawY+2,string(j+1),.4,.4,0);
-			}
-		}
-		drawY+=13
-	}
-	if submenuDisplaying{
-		drawX += 67;
-		drawY = y  - (bigSubmenu * 12) - 2;
-		for (var i = 8+(bigSubmenu*2) ; i<min(12+(2*bigSubmenu),array_length(actions));i++){
+	draw_sprite_stretched(spr_menu_temp,0,x+20+submenuDisplaying?30+(30*(4-cols)):90,y-6 - (bigSubmenu * 12),submenuDisplaying?200:150,120);
+	drawX = x + submenuDisplaying?(30*(4-cols))+44:105;
+	for (var c = 0; c<cols;c++){
+		drawY = y - (rows * 12) + 46;
+		for (var i = c*rows ; i<min(rows*(c+1),array_length(actions));i++){
 			draw_set_color(i == index?c_white:c_gray);
-			draw_text_transformed(drawX,drawY,actions[i].name,.65,.65,0);
+			draw_text_transformed(drawX,drawY,actions[i].name+(array_length(actions[i].children)==0?"":"..."),.65,.65,0);
+			drawY+=5
+			if actions[i].element>-1{
+				draw_set_color(element_colors[actions[i].element]);
+				draw_circle(drawX-5,drawY,2,false)
+			}
+			//show_debug_message(actions[i].name+" level is "+string(actions[i].lvl));
+			
 			if actions[i].lvl>0||levels[i]>0{
 				for (var j=0;j<max(actions[i].lvl,levels[i]);j++){
 					draw_set_color((i == index)?(j == secondIndex?c_white:c_dkgray):c_black);
-					draw_text_transformed(drawX+50+(j*7),drawY+2,string(j+1),.4,.4,0);
+					draw_text_transformed(drawX+46+(j*6),drawY-2,string(j+1),.4,.4,0);
 				}
 			}
-			drawY+=13
+			drawY+=8
 		}
+		drawX += 70;
 	}
 }	
