@@ -109,11 +109,14 @@ if menuDisplaying and menuActive and battle_manager.allowInput{
 		}
 		
 	}
-	if cancel /*and submenuDisplaying*//*ain't right*/ and parent>0{
-		actions = parent.actions;
-		parent = parent.parent;
-		openSubmenu(actions);//to update other, dummying out lists
-		submenuDisplaying = (parent != noone);
+	if cancel /*and submenuDisplaying*//*ain't right*/{
+		//show_debug_message("You might not understand... "+string(parent));
+		if  parent!=noone{
+			actions = parent.actions;
+			parent = parent.parent;
+			openSubmenu(actions);//to update other, dummying out lists
+			submenuDisplaying = (parent != noone);
+		}
 	}
 }
 if array_length(actions)>0 and !(instance_exists(obj_speechmenu)or instance_exists(obj_itemmenu)or instance_exists(obj_dualmenu)){
