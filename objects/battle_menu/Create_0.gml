@@ -3,6 +3,7 @@
 show_debug_message("BATTLE MENU CREATED!  REJOICE!");
 menuDisplaying = false;
 submenuDisplaying = false;
+descriptionsOn = false;//global var
 bigSubmenu = false;//covers up more
 menuActive = false;
 selected = false;//leftover
@@ -15,6 +16,7 @@ usability=[];
 elementals=[];//-1 - Nonelemental, no dot
 levels=[];//0 - no levels; 1-3 - levels accessible
 //selectedChildren = noone;
+actions = [];
 players = [];
 parent = noone;
 for (var i=0;i<battle_manager.totalUnits;i++){

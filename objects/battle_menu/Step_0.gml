@@ -1,4 +1,5 @@
 /// @description Insert description here
+if keyboard_check_pressed(vk_tab) descriptionsOn = !descriptionsOn;
 if global.selectedUnit<0 or !global.selectedUnit.isPlayer{
 	menuDisplaying=false;
 	submenuDisplaying=false;
@@ -59,7 +60,8 @@ if menuDisplaying and menuActive and battle_manager.allowInput{
 	
 	if go
 		and global.selectedUnit==unit{//preemptive failsafe
-		selected=false; 
+		selected=false;  
+		battle_manager.currentMessage = "";
 		var action = actions[index];
 		show_debug_message("MENU GOING: "+string(index)+"="+action.name);
 		var keys = variable_struct_get_names(action);
@@ -112,4 +114,12 @@ if menuDisplaying and menuActive and battle_manager.allowInput{
 		openSubmenu(actions);//to update other, dummying out lists
 		submenuDisplaying = (parent != noone);
 	}
-}	
+}
+if array_length(actions)>0 and !(instance_exists(obj_speechmenu)or instance_exists(obj_itemmenu)or instance_exists(obj_dualmenu)){
+	var action = actions[index];
+	if descriptionsOn and variable_struct_exists(action,"description"){
+		if is_array(action.description)	battle_manager.currentMessage = action.description[secondIndex];
+		else battle_manager.currentMessage = action.description;
+	}
+	else battle_manager.currentMessage = "";
+}

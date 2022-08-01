@@ -880,7 +880,7 @@
     {"CopyToMask":153157610357391598,"filePath":"datafiles","resourceVersion":"1.0","name":"RosesareFF0000.ttf","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.6.0.23",
+    "IDEVersion": "2022.6.1.26",
   },
   "resourceVersion": "1.5",
   "name": "gamemaker_demo",
