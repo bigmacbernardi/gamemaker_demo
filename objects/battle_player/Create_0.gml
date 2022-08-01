@@ -186,34 +186,34 @@ for (var i = 0;i<array_length(spell_names);i++){
 		//if battling
 		switch(i){
 			case 8: 
-					desc = [["Light "+element_names[i]+" to power up an ally.\nCosts "+string(costs[i][0])+" MP."],
-							["Normal "+element_names[i]+" to power up an ally.\nCosts "+string(costs[i][1])+" MP."],
-							["Strong "+element_names[i]+" to power up an ally.\nCosts "+string(costs[i][2])+" MP."]];
+					desc = ["Light "+element_names[i]+" to power up an ally.\nCosts "+string(costs[i][0])+" MP.",
+							"Normal "+element_names[i]+" to power up an ally.\nCosts "+string(costs[i][1])+" MP.",
+							"Strong "+element_names[i]+" to power up an ally.\nCosts "+string(costs[i][2])+" MP."];
 					break;
 			case 14: 
-					desc = [["Light "+element_names[i]+" on yourself or an ally.\nCosts "+string(costs[i][0])+" MP."],
-							["Normal "+element_names[i]+" on yourself or an ally.\nCosts "+string(costs[i][1])+" MP."],
-							["Strong "+element_names[i]+" on yourself or an ally.\nCosts "+string(costs[i][2])+" MP."]];
+					desc = ["Light "+element_names[i]+" on yourself or an ally.\nCosts "+string(costs[i][0])+" MP.",
+							"Normal "+element_names[i]+" on yourself or an ally.\nCosts "+string(costs[i][1])+" MP.",
+							"Strong "+element_names[i]+" on yourself or an ally.\nCosts "+string(costs[i][2])+" MP."];
 					break;
 			case 15: 
-					desc = [["Cures some status ailments.\nCosts "+string(costs[i][0])+" MP."],
-							["Cures most status ailments.\nCosts "+string(costs[i][1])+" MP."],
-							["Cures all status ailments.\nCosts "+string(costs[i][2])+" MP."]];
+					desc = ["Cures some status ailments.\nCosts "+string(costs[i][0])+" MP.",
+							"Cures most status ailments.\nCosts "+string(costs[i][1])+" MP.",
+							"Cures all status ailments.\nCosts "+string(costs[i][2])+" MP."];
 					break;
 			case 16: 
-					desc = [["Lightly powers up an ally.\nCosts "+string(costs[i][0])+" MP."],
-							["Powers up an ally.\nCosts "+string(costs[i][1])+" MP."],
-							["Heavily powers up an ally.\nCosts "+string(costs[i][2])+" MP."]];
+					desc = ["Lightly powers up an ally.\nCosts "+string(costs[i][0])+" MP.",
+							"Powers up an ally.\nCosts "+string(costs[i][1])+" MP.",
+							"Heavily powers up an ally.\nCosts "+string(costs[i][2])+" MP."];
 					break;
 			case 18: 
-					desc = [["Casts a light barrier to protect an ally.\nCosts "+string(costs[i][0])+" MP."],
-							["Casts a barrier to protect an ally.\nCosts "+string(costs[i][1])+" MP."],
-							["Casts a strong barrier to protect an ally.\nCosts "+string(costs[i][2])+" MP."]];
+					desc = ["Casts a light barrier to protect an ally.\nCosts "+string(costs[i][0])+" MP.",
+							"Casts a barrier to protect an ally.\nCosts "+string(costs[i][1])+" MP.",
+							"Casts a strong barrier to protect an ally.\nCosts "+string(costs[i][2])+" MP."];
 					break;
 			default:
-					desc = [["Deals light "+element_names[i]+" damage.\nCosts "+string(costs[i][0])+" MP."],
-							["Deals medium "+element_names[i]+" damage.\nCosts "+string(costs[i][1])+" MP."],
-							["Deals heavy "+element_names[i]+" damage.\nCosts "+string(costs[i][2])+" MP."]];
+					desc = ["Deals light "+element_names[i]+" damage.\nCosts "+string(costs[i][0])+" MP.",
+							"Deals medium "+element_names[i]+" damage.\nCosts "+string(costs[i][1])+" MP.",
+							"Deals heavy "+element_names[i]+" damage.\nCosts "+string(costs[i][2])+" MP."];
 		}
 		show_debug_message(desc);
 		switch (global.spellConfig[index][i]){
