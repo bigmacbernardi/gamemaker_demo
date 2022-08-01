@@ -523,5 +523,7 @@ function learnSkill(charIndex,name,action,defaultPlace=1,element=-1,level=0){
 function learnStartingSkills(){
 		learnSkill(AOI,"Burn",cast,2,2);//magic menu; fire elemental; no level
 		learnSkill(AOI,"Freeze",freeze,2,10);//magic menu; ice elemental; no level
+		learnSkill(YUSUF,"Balm",balm,1,14);//skill menu; HP elemental
+		learnSkill(YUSUF,"Intensive Care",intensiveCare,1,15);//skill menu; esuna elemental
 		
 }
