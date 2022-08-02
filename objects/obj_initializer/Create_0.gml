@@ -46,6 +46,7 @@ global.menuOptions = [
 ];//DOING AWAY WITH THIS
 
 global.actions=[standardActions(1),standardActions()];
+learnStartingSkills();
 global.equipped[AOI] = [noone,noone,noone,noone,noone,noone,noone,noone];
 global.equipped[YUSUF] = [noone,noone,noone,noone,noone,noone,noone,noone];
 global.availableParty = ds_list_create();

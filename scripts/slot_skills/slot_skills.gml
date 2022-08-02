@@ -170,6 +170,11 @@ function getDescription(action){
 		case intensiveCare: return "Raise fallen ally.  10 MP.";
 		case detox: return "Cure a buddy's poison.";
 		case defend: return "Stand firm and brace yourself for impact.";
+		case wait: return "Pass to a teammate.  You'll be able to go\nagain before the opponent if there's time.";
+		case item: return "Use items from your inventory.";
+		case skills: return "Use a special ability.";
+		case dual: return "Moves you can use with your teammate.";
+		case magic: return "Ensorcel a spell into being.";
 		case talk: return "Use your words.";
 		case flee: return "Run away, boy.";
 		default: return "Unrecognized action."

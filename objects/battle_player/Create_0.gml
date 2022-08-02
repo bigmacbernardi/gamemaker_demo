@@ -113,7 +113,7 @@ for (var i = 0; i<ds_list_size(global.actions[index]);i++){
 				 description:getDescription(it[1])
 			};
 			break;
-		case 1: //magic
+		case 2: //magic
 			if m<array_length(actions)
 				actions[m].children[array_length(actions[m].children)]={
 					name:it[0],
@@ -133,7 +133,7 @@ for (var i = 0; i<ds_list_size(global.actions[index]);i++){
 					 description:"Sorcel an enspellment"
 				};
 			break;
-		case 2: //skills
+		case 1: //skills
 			show_debug_message("s: "+string(s)+"\n"+string(array_length(actions))+" actions");
 			if s<array_length(actions)
 				actions[s].children[array_length(actions[s].children)]={

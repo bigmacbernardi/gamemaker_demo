@@ -55,7 +55,7 @@ function openSubmenu(newOptions,clear=true){//doesn't update parent
 	secondIndex=0;
 	var len =  array_length(newOptions);
 	rows = 4 + (len>12) + (len>16);
-	cols = ceil(array_length(newOptions)/rows);
+	cols = ceil(len/rows);
 	bigSubmenu = array_length(newOptions)>8;
 }
 /*function getAction(indy=index){
