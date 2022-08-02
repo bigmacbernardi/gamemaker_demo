@@ -169,7 +169,7 @@ function getDescription(action){
 		case balm: return "Heals you and your teammate.  5 MP."; 
 		case intensiveCare: return "Raise fallen ally.  10 MP.";
 		case detox: return "Cure a buddy's poison.";
-		case defend: return "Stand firm and brace yourself for impact.";
+		case defend: return "Stand firm and brace yourself for impact.\n(Unfinished, will ruin the battle.)";
 		case wait: return "Pass to a teammate.  You'll be able to go\nagain before the opponent if there's time.";
 		case item: return "Use items from your inventory.";
 		case skills: return "Use a special ability.";
