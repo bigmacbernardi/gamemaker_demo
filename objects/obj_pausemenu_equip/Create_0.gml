@@ -4,17 +4,8 @@ image_yscale = camera_get_view_height(cam) / sprite_height;
 //ds_grid_I'mthinkin
 frameHasPassed = false;
 //initialize options?
-front_sprites = [spr_aoi,spr_yusuf,spr_old_man,spr_old_man44];
-//was spawning all in position for now, just in case we switch to having slots draw themselves
-//var drawX = 0;
-//var drawY = y;
 scrollLevel = 0; 
 scrollLevel2 = 0;
-//options = global.availableParty;
-//for (var i = 0; i < ds_list_size(global.availableParty); i++){
-//  ds_list_add(options,instance_create_depth(drawX,drawY,global.inventory[|i][1],global.inventory[|i][0]));
-//  drawY += 24;
-//}
 
 options = ds_list_create();
 allOptions = ds_list_create();
