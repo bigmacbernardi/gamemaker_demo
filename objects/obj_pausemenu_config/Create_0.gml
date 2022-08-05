@@ -20,7 +20,6 @@ mode = 0;
 index2 = -1;//so none are selected at first
 //index3 = 9;
 subindex= 0;//equip slot; weapon,armor,offhand, accessory
-filters=[[0,2,3,4],[1,3,4],[1,2,3,4,5,6,7,8,9]];
 function filt(char){
 	ds_list_destroy(options);
 	options = ds_list_create();
@@ -42,24 +41,13 @@ function filt(char){
 			ds_list_add(options,piece);
 	}
 }
-function filter(char,cat){
+function openConfig(char,menu){
 	ds_list_destroy(options);
 	options = ds_list_create();
 	//var ii = 0;
-	var ray = filters[char];
-	for (var i = 0; i < ds_list_size(global.equipment);i++){
-		var piece = global.equipment[|i];
-		if piece.category==0 and cat==0{
-			var passedFilter=false;
-			for (var j = 0; j<array_length(ray);j++){
-				if ray[j]==piece.type{
-					passedFilter=true;
-					break;
-				}
-			}
-			if passedFilter
-				ds_list_add(options,piece);	
-		}else if piece.category==cat
-			ds_list_add(options,piece);		
+	for (var i = 0; i < array_length(global.actions[|char]);i++){
+		var action = global.actions[|char][i];
+		if action[3]==menu
+			ds_list_add(options,action);			
 	}
 }

@@ -4,13 +4,13 @@ if (selected){
 if (!frameHasPassed) frameHasPassed = true;
 else if((mouse_check_button_pressed(mb_left)) || keyboard_check_pressed(vk_space)|| keyboard_check_pressed(vk_enter))
 { 
-	//if (!variable_instance_exists(options[|index],"usable")||options[|index].usable){//uncomment when you're ready to disable Team
-	if variable_instance_exists(options[|index],"submenu"){
-		instance_create_depth(x,y,depth-1, options[|index].submenu);
+	//if (!variable_instance_exists(options[index],"usable")||options[index].usable){//uncomment when you're ready to disable Team
+	if variable_instance_exists(options[index],"submenu"){
+		instance_create_depth(x,y,depth-1, options[index].submenu);//oh my god this is such a dumb leftovver
 		selected=false;	
 	}
 	//}
-	//options[|index].alarm[0]=1;
+	//options[index].alarm[0]=1;
 }
 else if((keyboard_check_released(mb_right)) || keyboard_check_released(vk_shift)|| keyboard_check_released(vk_backspace))
 {
@@ -36,15 +36,15 @@ else {
 	var startingIndex =index; //just used to track if sound should play rn
 	if (_moveV != 0){ //will wrap eventually
 		index += _moveV;
-		if (index < 0) index = ds_list_size(options)-1;
-		if (index > ds_list_size(options)-1) index = 0;
+		if (index < 0) index = array_length(options)-1;
+		if (index > array_length(options)-1) index = 0;
 	}
 	if (_moveH < 0){ //assumes width of 3
 		index += 3;	
-		if (index > ds_list_size(options)-1) index = 0;
+		if (index > array_length(options)-1) index = 0;
 	}else if(_moveH > 0){
 		index -= 3;	
-		if (index < 0) index = ds_list_size(options)-1;
+		if (index < 0) index = array_length(options)-1;
 	}
 	if (index !=startingIndex) audio_play_sound(Notice2,100,false);
 }

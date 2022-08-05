@@ -10,18 +10,20 @@ draw_set_font(Roses); //why would i call this every time?
 //was spawning all in position for now, just in case we switch to having slots draw themselves
 var drawX = 0;
 var drawY = y;
-options = ds_list_create(); 
-ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pauseitem));
+options = [];//obj_pauseitem,obj_pauseequip,obj_pauseskill,obj_pausestat,obj_pauseteam,obj_pauseconfig];
+
+//ds_list_create(); 
+options[0]=instance_create_depth(drawX,drawY,depth-1,obj_pauseitem);
 drawY += 24;
-ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pauseequip));
+options[1]=instance_create_depth(drawX,drawY,depth-1,obj_pauseequip);
 drawY += 24;
-ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pauseskill));
+options[2]=instance_create_depth(drawX,drawY,depth-1,obj_pauseskill);
 drawY += 24;
-ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pausestat));
+options[3]=instance_create_depth(drawX,drawY,depth-1,obj_pausestat);
 drawY += 24;
-ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pauseteam));
+options[4]=instance_create_depth(drawX,drawY,depth-1,obj_pauseteam);
 drawY += 24;
-ds_list_add(options,instance_create_depth(drawX,drawY,depth-1,obj_pauseconfig));
+options[5]=instance_create_depth(drawX,drawY,depth-1,obj_pauseconfig);
 drawY += 24;
 /*for (var i = 0; i < ds_list_size(global.inventory); i++){
   ds_list_add(options,instance_create_depth(drawX,drawY,global.inventory[|i][1],global.inventory[|i][0]));

@@ -4,15 +4,15 @@ draw_self();
 var drawX = x+10;
 var drawY = y+12;
 draw_set_color(c_white);
-for (var i = scrollLevel; i < ds_list_size(options); i++){
+for (var i = scrollLevel; i < array_length(options); i++){
   if (i!=index) draw_set_color(c_black);
-  draw_text_transformed(drawX,drawY,options[|i].title,.75,.75,0);
-  //draw_text_transformed(drawX+104,drawY,options[|i].numOwned,.75,.75,0);
+  draw_text_transformed(drawX,drawY,options[i].title,.75,.75,0);
+  //draw_text_transformed(drawX+104,drawY,options[i].numOwned,.75,.75,0);
   draw_set_color(c_white);//for other text
   //drawX = x+20;
   drawY += 24;
 }
-draw_text_transformed(drawX+10,drawY+24,options[|index].description,.5,.5,0);
+draw_text_transformed(drawX+10,drawY+24,options[index].description,.5,.5,0);
 //drawing potraits and stats
 for (var i = 0; i<4; i++){
 	drawX = (i%2==0)? x+113:x+261;

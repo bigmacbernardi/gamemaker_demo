@@ -161,9 +161,9 @@ else {
 			}
 		}
 		if subindex==7
-			filter(global.availableParty[|index],5);
+			openConfig(global.availableParty[|index],5);
 		else
-			filter(global.availableParty[|index],subindex);
+			openConfig(global.availableParty[|index],subindex);
 		
 			
 		/*if (_moveH != 0){

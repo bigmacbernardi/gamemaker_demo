@@ -36,12 +36,12 @@ mode = 0;
 index2 = -1;//so none are selected at first
 //index3 = 9;
 subindex= -1;//equip slot; weapon,armor,offhand, accessory
-filters=[[0,2,3,4],[1,3,4],[1,2,3,4,5,6,7,8,9]];
+filters=[[0,2,3,4],[1,3,4],[1,2,3,4,5,6,7,8,9]];//should replace with constant returns from (obviously) non-static function
 function filt(char){
 	ds_list_destroy(options);
 	options = ds_list_create();
 	//var ii = 0;
-	var ray = filters[char];
+	var ray = filters[char];//going to make function that checks char and graduation status and returns ray from that
 	for (var i = 0; i < ds_list_size(allOptions);i++){
 		var piece = allOptions[|i];
 		if piece.category==0{
