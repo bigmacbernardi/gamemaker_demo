@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"obj_spawn_resetter","path":"objects/obj_spawn_resetter/obj_spawn_resetter.yy",},"order":2,},
+    {"id":{"name":"GranderoTree331","path":"sprites/GranderoTree331/GranderoTree331.yy",},"order":7,},
     {"id":{"name":"noBKG_AoiRoll_strip","path":"sprites/noBKG_AoiRoll_strip/noBKG_AoiRoll_strip.yy",},"order":3,},
     {"id":{"name":"obj_sign","path":"objects/obj_sign/obj_sign.yy",},"order":12,},
     {"id":{"name":"obj_shooter","path":"objects/obj_shooter/obj_shooter.yy",},"order":1,},

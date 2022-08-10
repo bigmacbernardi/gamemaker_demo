@@ -6,3 +6,8 @@ with obj_persistentmusicplayer{
 		trackNo = 1;	
 	}
 }
+with obj_player{
+	image_xscale=1;
+	image_yscale=1;
+	image_blend=c_white;
+}

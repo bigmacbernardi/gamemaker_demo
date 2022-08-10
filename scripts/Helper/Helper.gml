@@ -73,7 +73,7 @@ function getRoomName(rm = room){
 			return global.names[YUSUF]+"'s Room";
         case mystery_zone:
             return "Mystery Zone";
-		case T1Ancyra2CrimeAlley:
+		case  T1AncyraCrimeAlley:
 			return "Ancyra - Crime Alley";
 		case mobile_hall:
 			return "Mobile Base";
