@@ -83,6 +83,10 @@ function getRoomName(rm = room){
 			return "Ancyra Shooting Gallery";
 		case d1admin:
 			return "Ancyran Archive - Administration Room";
+		case d0woods1:
+			return "Ancyra Woods";
+		case d0woods2tree:
+			return "Ancyra Woods - Great Tree";
 			
 		/*case battle_area:
 		case battle_d1area:
