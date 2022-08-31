@@ -3,25 +3,25 @@ switch (state){
 	case 0:
 			if (++progress >= room_speed) state = 1;
 			break;
-	case 1: show_debug_message("Scene 0 Phase 1");
+	case 1: show_debug_message("Scene 1 Phase 1");
 			state = 2;
 			break;
-	case 2: show_debug_message("Scene 0 Phase 2");
+	case 2: show_debug_message("Scene 1 Phase 2");
 			state = 3;
 			break;
 	case 3:
-			show_debug_message("Scene 0 Phase 3");
+			show_debug_message("Scene 1 Phase 3");
 			var namer = instance_create_layer(0,0,"Instances",obj_nameentry);
-			namer.naming_whom = YUSUF;
+			namer.naming_whom = AOI;
 			state = 4;
 			break;
-	case 4: show_debug_message("Scene 0 Phase 4");
+	case 4: show_debug_message("Scene 1 Phase 4");
 			if !instance_exists(obj_nameentry)state = 5;
 			with obj_player{
 				facing = 2;	
 			}
 			break;
-	case 5: show_debug_message("Scene 0 Phase 5");
+	case 5: show_debug_message("Scene 1 Phase 5");
 			state = 6;
 			break;
 	default:

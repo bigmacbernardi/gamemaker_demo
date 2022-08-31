@@ -1,7 +1,6 @@
-/// @description Get set up
-if room != T1YusufRoom room_goto(T1YusufRoom);
+/// @description Elder first talks to Yusuf and Aoi
 resetParty = global.currentParty;
-global.currentParty = [YUSUF,noone,noone,noone];
+global.currentParty = [AOI,YUSUF,noone,noone];
 with obj_player{
 	set_sprites();	
 }

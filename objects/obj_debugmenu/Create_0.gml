@@ -1,6 +1,7 @@
 /// @description Insert description here
 obj_player.paused=true;
-options = ["LEVEL","WARP","INVEM","PARTY","TRIGGER EVENT 0 HERE","MUSIC","LO-CLIP",
+eventIndex = 0;
+options = ["LEVEL","WARP","INVEM","PARTY","TRIGGER EVENT ","MUSIC","LO-CLIP",
 "RESET SPAWNS","EXIT"]
 currentIndex = 0;
 usingSubmenu = false;

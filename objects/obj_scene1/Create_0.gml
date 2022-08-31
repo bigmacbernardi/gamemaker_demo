@@ -1,7 +1,7 @@
-/// @description Get set up
-if room != T1YusufRoom room_goto(T1YusufRoom);
+/// @description Replace warp with pan effect
+if room != T1AoiHouse  room_goto(T1AoiHouse);
 resetParty = global.currentParty;
-global.currentParty = [YUSUF,noone,noone,noone];
+global.currentParty = [AOI,noone,noone,noone];
 with obj_player{
 	set_sprites();	
 }
@@ -15,4 +15,3 @@ progress = 0;
 //obj_player.y = camera_get_view_y(cam)+30;
 bag_x = obj_player.x - 50;
 bag_y = obj_player.y+obj_player.sprite_height;
-

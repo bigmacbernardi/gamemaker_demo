@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Sprite333",
+    "path": "sprites/Sprite333/Sprite333.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -18,18 +21,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "fishing",
-    "path": "folders/Objects/minigame assets/fishing.yy",
+    "name": "minigame assets",
+    "path": "folders/Objects/minigame assets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_timeforfish",
+  "name": "obj_yourcar",
   "tags": [],
   "resourceType": "GMObject",
 }

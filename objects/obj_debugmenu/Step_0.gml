@@ -26,8 +26,8 @@ if !usingSubmenu{
 				instance_create_depth(x,y,depth-1,obj_itemdebug);
 				usingSubmenu = true;
 				break;
-			case "TRIGGER EVENT 0 HERE": 
-				instance_create_depth(x,y,depth-1,obj_scene0);
+			case "TRIGGER EVENT ": 
+				instance_create_depth(x,y,depth-1,eventIndex==1?obj_scene1:(eventIndex==2?obj_scene2:obj_scene0));
 				instance_destroy();
 				break;
 			case "MUSIC": 
@@ -45,5 +45,6 @@ if !usingSubmenu{
 		obj_player.paused=false;
 		instance_destroy();		
 	}
+	eventIndex+=_moveH;
 }
 else if backButton usingSubmenu = false;

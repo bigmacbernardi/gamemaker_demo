@@ -1,4 +1,5 @@
-/// @description Lets you slot your teams and pick the "leader."
+/// @description NEEDS character equip swap options, both for ALL POSSIBLE EQUIPMENT and per slot
+//Lets you slot your teams and pick the "leader."
 image_xscale = camera_get_view_width(cam) / sprite_width;
 image_yscale = camera_get_view_height(cam) / sprite_height;
 //ds_grid_I'mthinkin

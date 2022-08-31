@@ -12,6 +12,12 @@ else{
 if (specialProperties>-1){
 	switch(specialProperties){
 		case 0: global.statuses[0]=(global.statuses[0]>0?1:0);
+				break;				
+		case 1: //learn spell
+				global.spellLv[global.targets[0]][spell]++;
+				break;
+		case 2: //learn skill
+				//ds_list_add(global.actions[global.targets[0]][0],getSkill(skill));
 				break;
 		default: break;
 	}

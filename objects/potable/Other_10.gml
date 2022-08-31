@@ -16,6 +16,7 @@ if instance_exists(battle_manager){
 		switch(specialProperties){
 			case 0: global.targets[0].status[0]=(global.targets[0].status[0]>0?1:0);
 					break;
+			//case 1, 2: books, cannot be used in battle
 			default: break;
 		}
 	}
@@ -33,7 +34,8 @@ if instance_exists(battle_manager){
 	/* status recovery */
 	if (specialProperties>-1){
 		switch(specialProperties){
-			case 0: global.statuses[global.targets[0]][0]=(global.statuses[global.targets[0]][0]>0?1:0);
+			case 0: //cure poison
+					global.statuses[global.targets[0]][0]=(global.statuses[global.targets[0]][0]>0?1:0);
 					break;
 			default: break;
 		}

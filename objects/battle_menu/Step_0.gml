@@ -19,7 +19,7 @@ if menuDisplaying and menuActive and battle_manager.allowInput{
 	//var rows = 4+bigSubmenu;
 	if _down{
 		if index==(array_length(actions)-1) or (index%rows==rows-1)//last option OR bottom of column
-			index-=	(array_length(actions)-1)%rows;//bring to top of column
+			index-=	(array_length(actions)-1)%rows;// bring to top of column
 		//else if index==(rows*2)-1 index = rows
 		else index++;
 	}
