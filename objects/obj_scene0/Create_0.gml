@@ -1,5 +1,9 @@
 /// @description Get set up
-if room != T1YusufRoom room_goto(T1YusufRoom);
+if room != T1YusufRoom{
+	room_goto(T1YusufRoom);
+	obj_player.x = 93;
+	obj_player.y = 311;
+}
 resetParty = global.currentParty;
 global.currentParty = [YUSUF,noone,noone,noone];
 with obj_player{

@@ -545,9 +545,9 @@ function say(lineNo,face=0,emotion=0,typer=typerGet(face)){//unfinished
 	global.facechoice= face+2;
 	global.lineNo = lineNo; 
 	global.faceemotion= emotion;
-	/*if nextMessage>32 nextMessage=30;
+	//if nextMessage>32 nextMessage=30;
 	if (instance_exists(obj_dialoguer)) instance_destroy(obj_dialoguer);
 	message = instance_create_layer(camera_get_view_x(cam),10,"Instances",obj_dialoguer);
-	if (instance_exists(obj_dialoguechoice)) instance_destroy(obj_dialoguechoice);
-	var silly = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dialoguechoice);*/
+	//if (instance_exists(obj_dialoguechoice)) instance_destroy(obj_dialoguechoice);
+	//var silly = instance_create_layer(camera_get_view_x(cam),10,"Instances_2",obj_dialoguechoice);*/
 }
