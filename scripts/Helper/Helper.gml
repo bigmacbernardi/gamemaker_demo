@@ -542,7 +542,7 @@ function typerGet(face){
 function say(lineNo,face=0,emotion=0,typer=typerGet(face)){//unfinished
 	obj_player.paused = true;
 	global.typer= 5;//should produce sound
-	global.facechoice= emotion;
+	global.facechoice= face+2;
 	global.lineNo = lineNo; 
 	global.faceemotion= emotion;
 	/*if nextMessage>32 nextMessage=30;

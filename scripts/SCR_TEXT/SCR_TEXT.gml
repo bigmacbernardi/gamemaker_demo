@@ -50,6 +50,37 @@ switch(argument0){
 	case 10:
 		global.msg = [" Hm... lots of rubble around here.{0}& We should watch our step./","%%%"]
 		break;
+	case 11: 
+		global.msg = ["{6} Where is it???/",
+		"%%%"];
+		break;
+
+	case 12: 
+		global.msg = ["{6}"+global.names[YUSUF]+"!!/",
+		"%%%"];
+		break;
+
+	case 13: 
+		global.msg = ["{5} Just a second!/",
+		"%%%"];
+		break;
+	case 14: global.msg = ["{4}Did you lose your bag again?/",
+		"%%%"];
+		break;
+	case 15:
+		global.msg = ["{4} I’ll be right out!/",
+		"%%%"];
+		break;
+	case 16:
+		global.msg = ["yuo know u need to see elder/","About… ^7&…Ashfall?/"
+		"%%%"];
+		break;
+	case 17:
+           global.msg = ["mom i’m leaving/", "go take a shit or & something/",
+		"%%%"];
+		break;
+	case 18: global.msg = ["get serious dialogue you&lazy ass fuck/","%%%"];
+         break;
 	case 25: 
 		global.msg = ["Just gotta keep going north.","%%%"];
 		break;
