@@ -72,7 +72,7 @@ switch(argument0){
 		"%%%"];
 		break;
 	case 16:
-		global.msg = ["yuo know u need to see elder/","About… ^7&…Ashfall?/"
+		global.msg = ["yuo know u need to see elder/","About… ^7&…Ashfall?/",
 		"%%%"];
 		break;
 	case 17:
