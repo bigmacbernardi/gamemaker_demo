@@ -51,35 +51,40 @@ switch(argument0){
 		global.msg = [" Hm... lots of rubble around here.{0}& We should watch our step./","%%%"]
 		break;
 	case 11: 
+		global.nameplate = "???";
 		global.msg = ["{6} Where is it???/",
 		"%%%"];
 		break;
 
 	case 12: 
-		global.msg = ["{6}"+global.names[YUSUF]+"!!/",
+		global.msg = ["{5}   "+global.names[YUSUF]+"!!/",
 		"%%%"];
 		break;
 
 	case 13: 
-		global.msg = ["{5} Just a second!/",
+		global.msg = ["{0} Just a second!/",
 		"%%%"];
 		break;
-	case 14: global.msg = ["{4}Did you lose your bag again?/",
+	case 14: global.msg = ["{10}   Did you lose your bag again?/",
 		"%%%"];
 		break;
 	case 15:
-		global.msg = ["{4} I’ll be right out!/",
+		global.msg = ["{1} I'll be right out!/",
 		"%%%"];
 		break;
 	case 16:
-		global.msg = ["yuo know u need to see elder/","About… ^7&…Ashfall?/",
+		global.msg = ["You got your Doctors Bag!/",global.names[YUSUF]+" can apply balm and revive allies.&You can access these abilities&from your SKILLS menu./",
 		"%%%"];
 		break;
 	case 17:
-           global.msg = ["mom i’m leaving/", "go take a shit or & something/",
+		global.msg = ["{3}   yuo know u need to see elder/","   About..^7.&   ...Ashfall?/",
 		"%%%"];
 		break;
-	case 18: global.msg = ["get serious dialogue you&lazy ass fuck/","%%%"];
+	case 18:
+           global.msg = ["{1} mom i'm leaving/", "go take a shit or & something/",
+		"%%%"];
+		break;
+	case 19: global.msg = ["{10}  get serious dialogue you&  lazy ass fuck/","%%%"];
          break;
 	case 25: 
 		global.msg = ["Just gotta keep going north.","%%%"];

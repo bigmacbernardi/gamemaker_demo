@@ -539,7 +539,7 @@ function typerGet(face){
 		default: return face;
 	}
 }
-function say(lineNo,face=0,emotion=0,typer=typerGet(face)){//unfinished
+function say(lineNo,face=-2,emotion=0,typer=typerGet(face)){//unfinished
 	obj_player.paused = true;
 	global.typer= 5;//should produce sound
 	global.facechoice= face+2;
