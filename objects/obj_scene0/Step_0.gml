@@ -1,9 +1,20 @@
 switch (state){
 	case 0:
 			obj_player.paused = true;
-			if (++progress >= room_speed) state = 1;
+			if (++progress >= 10*room_speed) state = 0.5;
 			break;
-	case 1: show_debug_message("Scene 0 Phase 1");
+      case 0.5:
+          with obj_player{
+                  facing = 4;
+                  x_spd = -1;
+           }
+           if --progress<40 state = 1;
+	case 1: 
+       with obj_player{
+                  facing = 2;
+                  x_spd = 0;
+           }
+show_debug_message("Scene 0 Phase 1");
             say(11,YUSUF);
 			state = 2;
 			break;
