@@ -1,6 +1,6 @@
 /// @description Insert description here
 obj_player.paused = true;
-global.lineNo = 200; 
+global.lineNo = myLine; 
 global.typer= 5;
 global.facechoice= 0;
 global.faceemotion= 0;

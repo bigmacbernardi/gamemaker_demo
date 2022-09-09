@@ -31,8 +31,10 @@ switch(argument0){
 		global.msg = ["Who knows, let's keep going./","%%%"];
 		break;
 	case 6:
+		global.msg = ["What's Ashfall?/","%%%"];
 		break;
 	case 7:
+		global.msg = ["Why do grown-ups have wars?/","%%%"];
 		break;
 	
 	case 8://mirror text
