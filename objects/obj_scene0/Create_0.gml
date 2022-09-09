@@ -3,6 +3,7 @@ resetParty = global.currentParty;
 global.currentParty = [YUSUF,noone,noone,noone];
 with obj_player{
 	set_sprites();	
+	facing = 8;
 }
 if room != T1YusufRoom{
 	room_goto(T1YusufRoom);
@@ -21,6 +22,7 @@ draw_set_alpha(1);
 progress = 0;
 //obj_player.x = camera_get_view_x(cam)+5;
 //obj_player.y = camera_get_view_y(cam)+30;
-bag_x = obj_player.x - 10;
-bag_y = obj_player.y+obj_player.sprite_height;
+bag_x = obj_player.x - 20;
+bag_y = obj_player.y+(obj_player.sprite_height/2);
+depth = obj_player.depth-1;
 
