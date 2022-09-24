@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "beastling_dead",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e2cfc086-a4f8-4179-abce-c87645ee1e01","path":"sprites/beastling_dead/beastling_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e2cfc086-a4f8-4179-abce-c87645ee1e01","path":"sprites/beastling_dead/beastling_dead.yy",},"LayerId":{"name":"e4335373-69f1-4dfb-a7f0-c13fa97a847f","path":"sprites/beastling_dead/beastling_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"beastling_dead","path":"sprites/beastling_dead/beastling_dead.yy",},"resourceVersion":"1.0","name":"e2cfc086-a4f8-4179-abce-c87645ee1e01","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a51a1f86-14bc-4bbb-95c4-c18a16da665c","path":"sprites/beastling_dead/beastling_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a51a1f86-14bc-4bbb-95c4-c18a16da665c","path":"sprites/beastling_dead/beastling_dead.yy",},"LayerId":{"name":"e4335373-69f1-4dfb-a7f0-c13fa97a847f","path":"sprites/beastling_dead/beastling_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"beastling_dead","path":"sprites/beastling_dead/beastling_dead.yy",},"resourceVersion":"1.0","name":"a51a1f86-14bc-4bbb-95c4-c18a16da665c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e2cfc086-a4f8-4179-abce-c87645ee1e01",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a51a1f86-14bc-4bbb-95c4-c18a16da665c",},
   ],
   "sequence": {
-    "spriteId": {"name":"beastling_dead","path":"sprites/beastling_dead/beastling_dead.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "beastling_dead",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d9a49f2d-3303-4237-9284-1b497830c215","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2cfc086-a4f8-4179-abce-c87645ee1e01","path":"sprites/beastling_dead/beastling_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c476ca8a-0980-413f-bfd1-a6d8e104a340","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a51a1f86-14bc-4bbb-95c4-c18a16da665c","path":"sprites/beastling_dead/beastling_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"d9a49f2d-3303-4237-9284-1b497830c215","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2cfc086-a4f8-4179-abce-c87645ee1e01","path":"sprites/beastling_dead/beastling_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c476ca8a-0980-413f-bfd1-a6d8e104a340","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a51a1f86-14bc-4bbb-95c4-c18a16da665c","path":"sprites/beastling_dead/beastling_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"beastling_dead","path":"sprites/beastling_dead/beastling_dead.yy",},
-    "resourceVersion": "1.4",
-    "name": "beastling_dead",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e4335373-69f1-4dfb-a7f0-c13fa97a847f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e4335373-69f1-4dfb-a7f0-c13fa97a847f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Beastling",
     "path": "folders/Sprites/Bad Guys/Beastling.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "beastling_dead",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

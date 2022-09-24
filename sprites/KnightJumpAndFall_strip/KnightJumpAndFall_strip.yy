@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "KnightJumpAndFall_strip",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f1a1da7f-1209-40d3-aa81-2d2bd125a79f","path":"sprites/KnightJumpAndFall_strip/KnightJumpAndFall_strip.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f1a1da7f-1209-40d3-aa81-2d2bd125a79f","path":"sprites/KnightJumpAndFall_strip/KnightJumpAndFall_strip.yy",},"LayerId":{"name":"d3f72c73-87f7-4b73-96e3-38874f2f35ab","path":"sprites/KnightJumpAndFall_strip/KnightJumpAndFall_strip.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"KnightJumpAndFall_strip","path":"sprites/KnightJumpAndFall_strip/KnightJumpAndFall_strip.yy",},"resourceVersion":"1.0","name":"f1a1da7f-1209-40d3-aa81-2d2bd125a79f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f1a1da7f-1209-40d3-aa81-2d2bd125a79f",},
   ],
   "sequence": {
-    "spriteId": {"name":"KnightJumpAndFall_strip","path":"sprites/KnightJumpAndFall_strip/KnightJumpAndFall_strip.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "KnightJumpAndFall_strip",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0cb0684a-9f06-465b-8223-96ea7af74986","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f1a1da7f-1209-40d3-aa81-2d2bd125a79f","path":"sprites/KnightJumpAndFall_strip/KnightJumpAndFall_strip.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"0cb0684a-9f06-465b-8223-96ea7af74986","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f1a1da7f-1209-40d3-aa81-2d2bd125a79f","path":"sprites/KnightJumpAndFall_strip/KnightJumpAndFall_strip.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"KnightJumpAndFall_strip","path":"sprites/KnightJumpAndFall_strip/KnightJumpAndFall_strip.yy",},
-    "resourceVersion": "1.4",
-    "name": "KnightJumpAndFall_strip",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d3f72c73-87f7-4b73-96e3-38874f2f35ab","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d3f72c73-87f7-4b73-96e3-38874f2f35ab","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Knight",
     "path": "folders/Sprites/Knight.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "KnightJumpAndFall_strip",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

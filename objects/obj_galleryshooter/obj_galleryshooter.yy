@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_galleryshooter",
   "spriteId": {
     "name": "spr_PLAYHERE",
     "path": "sprites/spr_PLAYHERE/spr_PLAYHERE.yy",
@@ -25,7 +28,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,8 +36,4 @@
     "name": "overworld",
     "path": "folders/Objects/overworld.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_galleryshooter",
-  "tags": [],
-  "resourceType": "GMObject",
 }

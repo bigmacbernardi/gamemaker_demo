@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_g_g_g_ghostsword_rise",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -103,12 +106,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2e6ecd54-fe32-412a-b755-9f2a413dccb5","path":"sprites/spr_g_g_g_ghostsword_rise/spr_g_g_g_ghostsword_rise.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2e6ecd54-fe32-412a-b755-9f2a413dccb5","path":"sprites/spr_g_g_g_ghostsword_rise/spr_g_g_g_ghostsword_rise.yy",},"LayerId":{"name":"c8905d63-9877-432b-99f8-d201ce0dcfb1","path":"sprites/spr_g_g_g_ghostsword_rise/spr_g_g_g_ghostsword_rise.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_g_g_g_ghostsword_rise","path":"sprites/spr_g_g_g_ghostsword_rise/spr_g_g_g_ghostsword_rise.yy",},"resourceVersion":"1.0","name":"2e6ecd54-fe32-412a-b755-9f2a413dccb5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2e6ecd54-fe32-412a-b755-9f2a413dccb5",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_g_g_g_ghostsword_rise","path":"sprites/spr_g_g_g_ghostsword_rise/spr_g_g_g_ghostsword_rise.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_g_g_g_ghostsword_rise",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -116,12 +119,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"41224519-d928-4c9f-b9d9-4b1eb7507f24","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2e6ecd54-fe32-412a-b755-9f2a413dccb5","path":"sprites/spr_g_g_g_ghostsword_rise/spr_g_g_g_ghostsword_rise.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"41224519-d928-4c9f-b9d9-4b1eb7507f24","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2e6ecd54-fe32-412a-b755-9f2a413dccb5","path":"sprites/spr_g_g_g_ghostsword_rise/spr_g_g_g_ghostsword_rise.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -137,22 +140,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_g_g_g_ghostsword_rise","path":"sprites/spr_g_g_g_ghostsword_rise/spr_g_g_g_ghostsword_rise.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_g_g_g_ghostsword_rise",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c8905d63-9877-432b-99f8-d201ce0dcfb1","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c8905d63-9877-432b-99f8-d201ce0dcfb1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "gamemaker_demo",
     "path": "gamemaker_demo.yyp",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_g_g_g_ghostsword_rise",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

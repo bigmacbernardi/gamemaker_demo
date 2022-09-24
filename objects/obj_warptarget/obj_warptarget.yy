@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_warptarget",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -25,8 +28,4 @@
     "name": "gamemaker_demo",
     "path": "gamemaker_demo.yyp",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_warptarget",
-  "tags": [],
-  "resourceType": "GMObject",
 }

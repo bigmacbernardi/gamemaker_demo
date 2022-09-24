@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "premade_ancient_ruins_shrunk",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b41a9f68-e6d3-480a-b077-ab7b9577fddd","path":"sprites/premade_ancient_ruins_shrunk/premade_ancient_ruins_shrunk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b41a9f68-e6d3-480a-b077-ab7b9577fddd","path":"sprites/premade_ancient_ruins_shrunk/premade_ancient_ruins_shrunk.yy",},"LayerId":{"name":"c90ae777-b554-4197-a423-a7a952861559","path":"sprites/premade_ancient_ruins_shrunk/premade_ancient_ruins_shrunk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"premade_ancient_ruins_shrunk","path":"sprites/premade_ancient_ruins_shrunk/premade_ancient_ruins_shrunk.yy",},"resourceVersion":"1.0","name":"b41a9f68-e6d3-480a-b077-ab7b9577fddd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b41a9f68-e6d3-480a-b077-ab7b9577fddd",},
   ],
   "sequence": {
-    "spriteId": {"name":"premade_ancient_ruins_shrunk","path":"sprites/premade_ancient_ruins_shrunk/premade_ancient_ruins_shrunk.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "premade_ancient_ruins_shrunk",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7c934108-b36e-46f2-92e3-b425d549df29","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b41a9f68-e6d3-480a-b077-ab7b9577fddd","path":"sprites/premade_ancient_ruins_shrunk/premade_ancient_ruins_shrunk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"7c934108-b36e-46f2-92e3-b425d549df29","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b41a9f68-e6d3-480a-b077-ab7b9577fddd","path":"sprites/premade_ancient_ruins_shrunk/premade_ancient_ruins_shrunk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"premade_ancient_ruins_shrunk","path":"sprites/premade_ancient_ruins_shrunk/premade_ancient_ruins_shrunk.yy",},
-    "resourceVersion": "1.4",
-    "name": "premade_ancient_ruins_shrunk",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c90ae777-b554-4197-a423-a7a952861559","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c90ae777-b554-4197-a423-a7a952861559","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "tilesets",
     "path": "folders/Sprites/tilesets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "premade_ancient_ruins_shrunk",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

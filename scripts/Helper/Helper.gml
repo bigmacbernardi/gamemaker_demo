@@ -87,6 +87,8 @@ function getRoomName(rm = room){
 			return "Ancyra Woods";
 		case d0woods2tree:
 			return "Ancyra Woods - Great Tree";
+		case WateryGrave0:
+			return "The Watery Grave - Entrance";
 			
 		/*case battle_area:
 		case battle_d1area:

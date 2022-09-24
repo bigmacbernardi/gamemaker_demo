@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "soldier_oldhit",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"04f31dff-32ba-4458-b363-2ce16be34cb2","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"04f31dff-32ba-4458-b363-2ce16be34cb2","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":{"name":"9733f120-af21-40bc-b851-b66a86278720","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"soldier_oldhit","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"04f31dff-32ba-4458-b363-2ce16be34cb2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"71bd8201-3af4-4ae3-a851-168ca3c21819","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"71bd8201-3af4-4ae3-a851-168ca3c21819","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":{"name":"9733f120-af21-40bc-b851-b66a86278720","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"soldier_oldhit","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"71bd8201-3af4-4ae3-a851-168ca3c21819","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8c5eba9d-8086-4cbc-ab19-a2357e5dc4e6","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8c5eba9d-8086-4cbc-ab19-a2357e5dc4e6","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":{"name":"9733f120-af21-40bc-b851-b66a86278720","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"soldier_oldhit","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"8c5eba9d-8086-4cbc-ab19-a2357e5dc4e6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2e2778a6-bebc-44eb-851e-cb7180d2db2a","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2e2778a6-bebc-44eb-851e-cb7180d2db2a","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":{"name":"9733f120-af21-40bc-b851-b66a86278720","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"soldier_oldhit","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"2e2778a6-bebc-44eb-851e-cb7180d2db2a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"af900355-d16f-45be-8692-136d7fa02797","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"af900355-d16f-45be-8692-136d7fa02797","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":{"name":"9733f120-af21-40bc-b851-b66a86278720","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"soldier_oldhit","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"af900355-d16f-45be-8692-136d7fa02797","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cac456c9-1291-4939-a64b-aa76f1d63022","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cac456c9-1291-4939-a64b-aa76f1d63022","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"LayerId":{"name":"9733f120-af21-40bc-b851-b66a86278720","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"soldier_oldhit","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","name":"cac456c9-1291-4939-a64b-aa76f1d63022","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"04f31dff-32ba-4458-b363-2ce16be34cb2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"71bd8201-3af4-4ae3-a851-168ca3c21819",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8c5eba9d-8086-4cbc-ab19-a2357e5dc4e6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2e2778a6-bebc-44eb-851e-cb7180d2db2a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"af900355-d16f-45be-8692-136d7fa02797",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cac456c9-1291-4939-a64b-aa76f1d63022",},
   ],
   "sequence": {
-    "spriteId": {"name":"soldier_oldhit","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "soldier_oldhit",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,17 +45,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"bdd43d47-b633-4b4e-b2ca-3ec9dbd61f96","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"04f31dff-32ba-4458-b363-2ce16be34cb2","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"2400fb35-ad10-48c5-ab1f-a6d5514beb1e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"71bd8201-3af4-4ae3-a851-168ca3c21819","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"5ddd17ed-ce3f-4185-9e91-aa9167983a02","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8c5eba9d-8086-4cbc-ab19-a2357e5dc4e6","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"4287d81b-8836-4afc-bc6d-ddbbbcc40ad9","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2e2778a6-bebc-44eb-851e-cb7180d2db2a","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"3662d183-b659-4181-b431-3624bcf2aa42","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"af900355-d16f-45be-8692-136d7fa02797","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c60a403c-6919-44d8-9b01-c0b49a8af3d6","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cac456c9-1291-4939-a64b-aa76f1d63022","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"bdd43d47-b633-4b4e-b2ca-3ec9dbd61f96","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"04f31dff-32ba-4458-b363-2ce16be34cb2","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2400fb35-ad10-48c5-ab1f-a6d5514beb1e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"71bd8201-3af4-4ae3-a851-168ca3c21819","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5ddd17ed-ce3f-4185-9e91-aa9167983a02","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8c5eba9d-8086-4cbc-ab19-a2357e5dc4e6","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4287d81b-8836-4afc-bc6d-ddbbbcc40ad9","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2e2778a6-bebc-44eb-851e-cb7180d2db2a","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3662d183-b659-4181-b431-3624bcf2aa42","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"af900355-d16f-45be-8692-136d7fa02797","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c60a403c-6919-44d8-9b01-c0b49a8af3d6","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cac456c9-1291-4939-a64b-aa76f1d63022","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"soldier_oldhit","path":"sprites/soldier_oldhit/soldier_oldhit.yy",},
-    "resourceVersion": "1.4",
-    "name": "soldier_oldhit",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9733f120-af21-40bc-b851-b66a86278720","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9733f120-af21-40bc-b851-b66a86278720","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Footsoldier",
     "path": "folders/Sprites/Bad Guys/Footsoldier.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "soldier_oldhit",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

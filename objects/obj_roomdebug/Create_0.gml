@@ -15,9 +15,12 @@ while room_next(last_room) != -1 and room_next(last_room) != room_first{
 		and last_room != battle_d1area
 		and last_room != battle_d1shelves
 		and last_room != basicalleyfightroom
-		and last_room != Minigame0{
-	names[i]= getRoomName(last_room)
-	rooms[i++] = last_room;
+		and last_room != Minigame0
+		and last_room != Minigame1Fishing
+		and last_room != Minigame2
+		and last_room != start_menu{
+			names[i]= getRoomName(last_room)
+			rooms[i++] = last_room;
 	}
 }
 /*var last_room = room_next(room_first);

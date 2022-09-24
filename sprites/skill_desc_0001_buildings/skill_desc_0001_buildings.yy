@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "skill_desc_0001_buildings",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"77bfacc0-cd9c-4602-a153-1359047214e0","path":"sprites/skill_desc_0001_buildings/skill_desc_0001_buildings.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"77bfacc0-cd9c-4602-a153-1359047214e0","path":"sprites/skill_desc_0001_buildings/skill_desc_0001_buildings.yy",},"LayerId":{"name":"71b24a5f-1197-486b-9d97-6f3ce0c89051","path":"sprites/skill_desc_0001_buildings/skill_desc_0001_buildings.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"skill_desc_0001_buildings","path":"sprites/skill_desc_0001_buildings/skill_desc_0001_buildings.yy",},"resourceVersion":"1.0","name":"77bfacc0-cd9c-4602-a153-1359047214e0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"77bfacc0-cd9c-4602-a153-1359047214e0",},
   ],
   "sequence": {
-    "spriteId": {"name":"skill_desc_0001_buildings","path":"sprites/skill_desc_0001_buildings/skill_desc_0001_buildings.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "skill_desc_0001_buildings",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1d30aed8-1f9c-402e-8794-909866b5460a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"77bfacc0-cd9c-4602-a153-1359047214e0","path":"sprites/skill_desc_0001_buildings/skill_desc_0001_buildings.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"1d30aed8-1f9c-402e-8794-909866b5460a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"77bfacc0-cd9c-4602-a153-1359047214e0","path":"sprites/skill_desc_0001_buildings/skill_desc_0001_buildings.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"skill_desc_0001_buildings","path":"sprites/skill_desc_0001_buildings/skill_desc_0001_buildings.yy",},
-    "resourceVersion": "1.4",
-    "name": "skill_desc_0001_buildings",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"71b24a5f-1197-486b-9d97-6f3ce0c89051","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"71b24a5f-1197-486b-9d97-6f3ce0c89051","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "ansimuz_industrial_parallax",
     "path": "folders/Sprites/Backgrounds/ansimuz_industrial_parallax.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "skill_desc_0001_buildings",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
