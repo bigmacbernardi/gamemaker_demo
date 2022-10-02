@@ -99,7 +99,8 @@ global.dualSkills = [//even MORE naive, but probably NOT getting replaced
 	false,false,false,false,false,false,false,
 	false,false,false,false,false,false,false
 ];
-global.perkState=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//will track path via bitwise addition
+global.dust=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.perkState=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];//will track path via bitwise addition
 global.electrum= 99;
 global.gold = 0;
 global.canLearn=[];

@@ -263,7 +263,6 @@
     {"id":{"name":"sBook","path":"sequences/sBook/sBook.yy",},"order":13,},
     {"id":{"name":"slot_dual","path":"scripts/slot_dual/slot_dual.yy",},"order":24,},
     {"id":{"name":"premade_gothic","path":"sprites/premade_gothic/premade_gothic.yy",},"order":17,},
-    {"id":{"name":"levelUp","path":"scripts/levelUp/levelUp.yy",},"order":27,},
     {"id":{"name":"spr_guide","path":"sprites/spr_guide/spr_guide.yy",},"order":0,},
     {"id":{"name":"obj_partysensitiveconvo","path":"objects/obj_partysensitiveconvo/obj_partysensitiveconvo.yy",},"order":5,},
     {"id":{"name":"obj_antidring","path":"objects/obj_antidring/obj_antidring.yy",},"order":1,},

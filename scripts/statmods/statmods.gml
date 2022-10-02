@@ -66,9 +66,9 @@ function getBoosts(fighter,lv){
 	
 	return allBoosts[fighter][lv-1];
 }
-function upgrade(fighter){
-	
+function upgrade(fighter){//aka levelUp aka lvlUp
 	var lv = global.party[fighter][LV];
+	if ((lv%3)==2) global.dust[fighter]++;
 	var results = getBoosts(fighter,lv-1);
 	var HPs = [2,8,9,11,13,15,17,19,21,23,
 		25,27,29,31,33,35,37,39,41,43,
