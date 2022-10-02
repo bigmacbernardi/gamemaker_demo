@@ -4,7 +4,7 @@ function DualTech(){
 //seems like we can just ignore this
 }
 
-/* AOI + YUSUF TECH */
+/* MORI + MUSA TECH */
 
 function IcyHeat(){
 	var enemies = rigid_selector.targetSet1;		 
@@ -12,7 +12,7 @@ function IcyHeat(){
 	global.targets = enemies;
 	var unitX = global.selectedUnit.x + global.selectedUnit.teammate.x / 2;
 	var unitY = global.selectedUnit.y + global.selectedUnit.teammate.y / 2;	
-	with battle_aoi{
+	with battle_mori{
 		current[MP] -= 4;
 		layer_sequence_headpos(unitSequence,atkStart);
 		state = ATTACK;
@@ -36,7 +36,7 @@ function IcyHeat(){
 		checkForHit();
 		if (global.selectedUnit.attackWillHit){
 			with(global.targets[i]){ // Freeze Attack / 4
-					incomingDamage = round((battle_aoi.current[@ WIS]*1.25) + (battle_aoi.current[@ STR] / 4)* ((battle_aoi.current[@ AGI] / 2)+(battle_aoi.current[@ CHA] / 2)))/4;
+					incomingDamage = round((battle_mori.current[@ WIS]*1.25) + (battle_mori.current[@ STR] / 4)* ((battle_mori.current[@ AGI] / 2)+(battle_mori.current[@ CHA] / 2)))/4;
 					//show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
 					layer_sequence_headpos(unitSequence,hitStart);
@@ -54,12 +54,12 @@ function IcyHeat(){
 	 }
 	global.targets = friends;
 	setParticle(2);//fire
-	with battle_yusuf{
+	with battle_musa{
 		current[MP] -= 4;
 		layer_sequence_headpos(unitSequence,atkStart);
 		state = ATTACK;
 	}
-	part_particles_create(global.P_System, battle_yusuf.x, battle_yusuf.y, global.Particle1, 10);
+	part_particles_create(global.P_System, battle_musa.x, battle_musa.y, global.Particle1, 10);
 	
 	for(var i = 0; i < array_length(global.targets); i++){
 		part_particles_create(global.P_System, global.targets[i].x, global.targets[i].y, global.Particle1, 3);
@@ -106,7 +106,7 @@ function MuguMugu(){
 		checkForHit();
 		if (global.selectedUnit.attackWillHit){
 			with(global.targets[i]){ // Freeze Attack / 4
-					incomingDamage = round(((battle_aoi.current[@ WIS]*1.25) + (battle_aoi.current[@ STR] / 4)* ((battle_aoi.current[@ AGI] / 2)+(battle_aoi.current[@ CHA] / 2)))/4);
+					incomingDamage = round(((battle_mori.current[@ WIS]*1.25) + (battle_mori.current[@ STR] / 4)* ((battle_mori.current[@ AGI] / 2)+(battle_mori.current[@ CHA] / 2)))/4);
 					//show_debug_message("INCOMING DAMAGE: "+string(incomingDamage));
 					//alarm[0] = 10;
 					layer_sequence_headpos(unitSequence,hitStart);

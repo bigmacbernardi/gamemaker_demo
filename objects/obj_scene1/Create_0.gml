@@ -1,7 +1,7 @@
 /// @description Replace warp with pan effect
-if room != T1AoiHouse  room_goto(T1AoiHouse);
+if room != T1MoriHouse  room_goto(T1MoriHouse);
 resetParty = global.currentParty;
-global.currentParty = [AOI,noone,noone,noone];
+global.currentParty = [MORI,noone,noone,noone];
 with obj_player{
 	set_sprites();	
 }

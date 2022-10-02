@@ -1,10 +1,10 @@
 /// @description Show
 
 obj_player.paused = true;
-/*if global.currentParty[0]==YUSUF{
+/*if global.currentParty[0]==MUSA{
 	global.lineNo = 6; 
 }
-else if  global.currentParty[0]==AOI{
+else if  global.currentParty[0]==MORI{
 	global.lineNo = 7; 
 }
 else*/global.lineNo = 8;

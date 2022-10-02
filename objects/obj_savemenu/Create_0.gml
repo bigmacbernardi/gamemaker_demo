@@ -22,7 +22,7 @@ for (var i =0;i<99;i++){
   drawY += 24;
 }*/
 selected=true;
-portraits = [spr_aoi,spr_yusuf,spr_old_man44,spr_old_man44,spr_old_man44,spr_old_man44];
+portraits = [spr_mori,spr_musa,spr_old_man44,spr_old_man44,spr_old_man44,spr_old_man44];
 index = global.saveSlot;
 if index>6 scrollLevel = floor(index/6)*6;
 

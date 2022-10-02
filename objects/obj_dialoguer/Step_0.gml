@@ -26,9 +26,9 @@ if(global.facechange == 1 && instance_exists(writer)) {
     writer.writingx= writer.x + 20;
     if(global.facechoice == 1 && !instance_exists(obj_face_elder))//elder
         script_execute(scr_facechoice);
-    if(global.facechoice == 2 && !instance_exists(obj_face_aoi))
+    if(global.facechoice == 2 && !instance_exists(obj_face_mori))
         script_execute(scr_facechoice);
-    if(global.facechoice == 3 && !instance_exists(obj_face_yusuf))
+    if(global.facechoice == 3 && !instance_exists(obj_face_musa))
         script_execute(scr_facechoice);
     if(global.facechoice == 4 && !instance_exists(775/* obj_face_papyrus */))
         script_execute(scr_facechoice);

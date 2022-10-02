@@ -6,11 +6,11 @@ switch (global.facechoice){
 	case 1:
 	    instance_create_depth(writer.x - 55, writer.y + 2,-1000, obj_face_elder);//givin character specificity a shot
 		break;
-	case AOI+2:
-	    instance_create_depth(writer.x - 50, writer.y + 8,-1000, obj_face_aoi);//originally character-specific, but why lol
+	case MORI+2:
+	    instance_create_depth(writer.x - 50, writer.y + 8,-1000, obj_face_mori);//originally character-specific, but why lol
 		break;
-	case YUSUF+2:
-	    instance_create_depth(writer.x - 50, writer.y + 7,-1000, obj_face_yusuf);
+	case MUSA+2:
+	    instance_create_depth(writer.x - 50, writer.y + 7,-1000, obj_face_musa);
 		break;
 	case 4:
 	    instance_create_depth(writer.x - 35, writer.y + 25,-1000, obj_face);

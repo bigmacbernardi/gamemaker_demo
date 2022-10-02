@@ -67,10 +67,10 @@ function getRoomName(rm = room){
 			return "Ancyran Archive - Relic Vault";
 		case T1Ancyra1:
 			return "Ancyra";
-		case T1YusufHouse:
-			return global.names[YUSUF]+"'s House";
-		case T1YusufRoom:
-			return global.names[YUSUF]+"'s Room";
+		case T1MusaHouse:
+			return global.names[MUSA]+"'s House";
+		case T1MusaRoom:
+			return global.names[MUSA]+"'s Room";
         case mystery_zone:
             return "Mystery Zone";
 		case  T1AncyraCrimeAlley:
@@ -239,8 +239,8 @@ function unitAttack(unit = global.selectedUnit,targets = global.targets,thatsIt 
 				with battle_menu{
 					show_debug_message(string(instance_count)+" battle_menus");
 				}
-				with battle_yusuf{
-					show_debug_message(string(instance_count)+" yusufs");
+				with battle_musa{
+					show_debug_message(string(instance_count)+" musas");
 				}
 				if (!isPlayer) path_start(enemy_dodge,5,path_action_stop,false);	
 				layer_sequence_headpos(unitSequence,missStart);
@@ -529,10 +529,10 @@ function learnSkill(charIndex,name,action,defaultPlace=1,element=-1,level=0){
 		ds_list_add(global.actions[charIndex],entry);
 }
 function learnStartingSkills(){
-		learnSkill(AOI,"Burn",cast,2,2);//magic menu; fire elemental; no level
-		learnSkill(AOI,"Freeze",freeze,2,10);//magic menu; ice elemental; no level
-		learnSkill(YUSUF,"Balm",balm,1,14);//skill menu; HP elemental
-		learnSkill(YUSUF,"Intensive Care",intensiveCare,1,15);//skill menu; esuna elemental
+		learnSkill(MORI,"Burn",cast,2,2);//magic menu; fire elemental; no level
+		learnSkill(MORI,"Freeze",freeze,2,10);//magic menu; ice elemental; no level
+		learnSkill(MUSA,"Balm",balm,1,14);//skill menu; HP elemental
+		learnSkill(MUSA,"Intensive Care",intensiveCare,1,15);//skill menu; esuna elemental
 		
 }
 function typerGet(face){

@@ -11,7 +11,7 @@ function slot_dual(){
 	var key = keyValue(global.selectedUnit.index,global.selectedUnit.teammate.index);
 	var a;//array
 	switch(key){
-		case ((AOI*32)+(YUSUF)):
+		case ((MORI*32)+(MUSA)):
 			if (global.dualSkills[0]){//just put them in order
 				var icyHeat = instance_create_layer(0,0,"UI_Base",obj_dual);
 				icyHeat.selector = rigid_selector;
@@ -32,16 +32,16 @@ function slot_dual(){
 				a[index++] = mugumugu;
 			}
 			break;
-		case ((AOI*32)+(JAMIR)):
+		case ((MORI*32)+(JAMIR)):
 			
 			break;
-		case ((AOI*32)+(BARDO)):
+		case ((MORI*32)+(BARDO)):
 			
 			break;
-		case ((YUSUF*32)+(JAMIR)):
+		case ((MUSA*32)+(JAMIR)):
 			
 			break;
-		case ((YUSUF*32)+(BARDO)):
+		case ((MUSA*32)+(BARDO)):
 			
 			break;
 		case ((JAMIR*32)+(BARDO)):
@@ -49,16 +49,16 @@ function slot_dual(){
 			break;
 		default: //testing only
 		
-				var aoiBurn = instance_create_layer(0,0,"UI_Base",obj_dual);
-				aoiBurn.title = "Burn";
-				aoiBurn.description = "Fire damage on all enemies.";
-				aoiBurn.script = burn;
-				a[index++] = aoiBurn;
-			var yusufBalm = instance_create_layer(0,0,"UI_Base",obj_dual);
-				yusufBalm.title = "Balm";
-				yusufBalm.description = "Heals you and your teammate.  5 MP.";
-				yusufBalm.script = balm;
-				a[index++] = yusufBalm;
+				var moriBurn = instance_create_layer(0,0,"UI_Base",obj_dual);
+				moriBurn.title = "Burn";
+				moriBurn.description = "Fire damage on all enemies.";
+				moriBurn.script = burn;
+				a[index++] = moriBurn;
+			var musaBalm = instance_create_layer(0,0,"UI_Base",obj_dual);
+				musaBalm.title = "Balm";
+				musaBalm.description = "Heals you and your teammate.  5 MP.";
+				musaBalm.script = balm;
+				a[index++] = musaBalm;
 			//a = [];
 	}
 	obj_dualmenu.options = a;

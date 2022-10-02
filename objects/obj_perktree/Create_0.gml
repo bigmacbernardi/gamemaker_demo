@@ -1,27 +1,24 @@
 /// @description Replacing obj_stattree
 
+if object_exists(obj_pausemenu_stat)
+	char = obj_pausemenu_stat.options[|obj_pausemenu_stat.index];
+else char = global.currentParty[0];//tracks config 
 
-
-
-
+perkState=global.perkState[char];
+ptsToSpend=global.dust[char];
 
 // You can write your code in this editor
 if !instance_exists(obj_pausemenu_stat) instance_destroy();
 var i = obj_pausemenu_stat.options[|obj_pausemenu_stat.index];
 
 //FOLLOWING VALUES ARE JUST PLACEHOLDERS
-var maxs = [[99,101,104,101,101,101,103],[99,102,103,103,101,101,101],[99,99,99,99,99,99,99]];
-var incs = [[1,1,1,1,1,1,1],[1,1,1,1,1,1,1],[1,1,1,1,1,1,1]];
 
 amounts = [global.party[i][2],global.party[i][3],global.party[i][4],global.party[i][5],global.party[i][6],global.party[i][7],global.party[i][8],global.party[i][9]];
 startY = y+63;
 endY = y+camera_get_view_height(cam)-60;
-curmax = maxs[i];
-curmin = mins[i];
-curinc = incs[i];
 index = -1;
 var data = slot_perks(i);
-for (var j = 0;j<16;j++){
+for (var j = 0;j<array_length(data);j++){
 	var st = data[j][0];
 	var mR = data[j][1];
 	//var t = data[j][2];

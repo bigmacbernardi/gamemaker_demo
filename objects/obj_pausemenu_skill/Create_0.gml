@@ -13,7 +13,7 @@ options = global.availableParty;
 stats = ["DEF","SPD","STR","AGI","CHA","DEX","WIS"]
 statColors = [c_maroon,c_ltgray,c_red,c_aqua,c_black,c_white,c_yellow];
 classes=["Seer","Speaker","Composer","Bard","Ex-Con","Wrestler"];//should be somewhere that responds to promotion.  could be stored with character.
-front_sprites = [spr_aoi,spr_yusuf,spr_old_man,spr_old_man44];
+front_sprites = [spr_mori,spr_musa,spr_old_man,spr_old_man44];
 
 index = 0;
 //scrollLevel = 0;

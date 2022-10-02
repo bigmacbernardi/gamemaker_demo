@@ -32,9 +32,9 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 	}
 	//normal skills
 	switch(battling?global.selectedUnit.index:global.selectedUnit){//cannot work permanently; use index, e
-		case AOI:
-			if (global.skills[AOI][0]){
-				var aoiBurn = {
+		case MORI:
+			if (global.skills[MORI][0]){
+				var moriBurn = {
 				name: "Burn",
 				description: "Fire damage on all enemies.",
 				mode: 2,
@@ -42,10 +42,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 				usable: global.selectedUnit.current[MP]>=4,
 				action: cast//temp test
 				}
-				a[index++] = aoiBurn;
+				a[index++] = moriBurn;
 			}
-			if (global.skills[AOI][1]){
-				var aoiFreeze = {
+			if (global.skills[MORI][1]){
+				var moriFreeze = {
 					name: "Freeze",
 					description: "Ice damage on one enemy.",
 					mode: 0,
@@ -53,12 +53,12 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 					usable: global.selectedUnit.current[MP]>=4,
 					action: freeze
 				}
-				a[index++]  = aoiFreeze;
+				a[index++]  = moriFreeze;
 			}
 			break;
-		case YUSUF:
-			if (global.skills[YUSUF][0]){
-				var yusufBold = {
+		case MUSA:
+			if (global.skills[MUSA][0]){
+				var musaBold = {
 					name: "Embolden",
 					description: "Raise ally's strength and defense.  2 MP.",
 					mode: 1,
@@ -66,10 +66,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 					usable: global.selectedUnit.current[MP]>=2,
 					action: embolden
 				}
-				a[index++] = yusufBold;
+				a[index++] = musaBold;
 			}
-			if (global.skills[YUSUF][1]){
-				var yusufBalm = {
+			if (global.skills[MUSA][1]){
+				var musaBalm = {
 					name: "Balm",
 					selector: rigid_selector,
 					mode: 4,
@@ -78,10 +78,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 					description: "Heals you and your teammate.  5 MP.",
 					action: balm
 				}
-				a[index++] = yusufBalm;
+				a[index++] = musaBalm;
 			}
-			if (global.skills[YUSUF][2]){
-				var yusufIC = {
+			if (global.skills[MUSA][2]){
+				var musaIC = {
 					name: "Intensive care",
 					mode: 1.5,
 					lvl:0,children:[],element:14,
@@ -89,10 +89,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 					description: "Raise fallen ally.  10 MP.",
 					action: intensiveCare
 				};
-				a[index++] = yusufIC;
+				a[index++] = musaIC;
 			}
-			if (global.skills[YUSUF][3]){
-				var yusufBurn = {
+			if (global.skills[MUSA][3]){
+				var musaBurn = {
 					name: "Ignite",
 					description: "Fire damage on one enemy.",
 					mode: 0,
@@ -100,10 +100,10 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 					action: freeze,
 					usable: global.selectedUnit.current[MP]>=4
 				};
-				a[index++]  = yusufBurn;
+				a[index++]  = musaBurn;
 			}
-			if (global.skills[YUSUF][4]){
-				var yusufDetox = {
+			if (global.skills[MUSA][4]){
+				var musaDetox = {
 					name: "Cure Poison",
 					description: "Cure Poison on a buddy! .",
 					mode: 1,
@@ -111,11 +111,11 @@ function slotSkills(unit = global.selectedUnit){//temporary.  repurpose for init
 					action: detox,
 					usable: global.selectedUnit.current[MP]>=2
 				}
-				a[index++]  = yusufDetox;
+				a[index++]  = musaDetox;
 			}
 			break;
 		default: //testing only
-			var aoiBurn;
+			var moriBurn;
 	}
 	//common options
 	if !deFound{
@@ -224,109 +224,109 @@ function slot_skills(){//repurpose for initialization maybe?
 	}
 	//normal skills
 	switch(battling?global.selectedUnit.index:global.selectedUnit){//cannot work permanently; use index, e
-		case AOI:
-			if (global.skills[AOI][0]){
-				var aoiBurn = instance_create_layer(0,0,ui_level,obj_skill);
-				aoiBurn.title = "Burn";
-				aoiBurn.description = "Fire damage on all enemies.";
-				aoiBurn.mode = 2;
+		case MORI:
+			if (global.skills[MORI][0]){
+				var moriBurn = instance_create_layer(0,0,ui_level,obj_skill);
+				moriBurn.title = "Burn";
+				moriBurn.description = "Fire damage on all enemies.";
+				moriBurn.mode = 2;
 				if battling{
-					aoiBurn.usable = global.selectedUnit.current[MP]>=4;
-					aoiBurn.script = cast;//temp test
-				}else aoiBurn.usable = false;
-				a[index++] = aoiBurn;
-				m[mIndex++] = aoiBurn;
+					moriBurn.usable = global.selectedUnit.current[MP]>=4;
+					moriBurn.script = cast;//temp test
+				}else moriBurn.usable = false;
+				a[index++] = moriBurn;
+				m[mIndex++] = moriBurn;
 			}
-			if (global.skills[AOI][1]){
-				var aoiFreeze = instance_create_layer(0,0,ui_level,obj_skill);
-				aoiFreeze.title = "Freeze";
-				aoiFreeze.description = "Ice damage on one enemy.";
-				aoiFreeze.mode = 0;
+			if (global.skills[MORI][1]){
+				var moriFreeze = instance_create_layer(0,0,ui_level,obj_skill);
+				moriFreeze.title = "Freeze";
+				moriFreeze.description = "Ice damage on one enemy.";
+				moriFreeze.mode = 0;
 				if battling{
-					aoiFreeze.usable = global.selectedUnit.current[MP]>=4;
-					aoiFreeze.script = freeze;
+					moriFreeze.usable = global.selectedUnit.current[MP]>=4;
+					moriFreeze.script = freeze;
 				}
-				else aoiBurn.usable = false;
-				a[index++]  = aoiFreeze;
-				m[mIndex++] = aoiFreeze;
+				else moriBurn.usable = false;
+				a[index++]  = moriFreeze;
+				m[mIndex++] = moriFreeze;
 			}
 			break;
-		case YUSUF:
-			if (global.skills[YUSUF][0]){
-				var yusufBold = instance_create_layer(0,0,ui_level,obj_skill);
-				yusufBold.title = "Embolden";
-				yusufBold.description = "Raise ally's strength and defense.  2 MP.";
-				yusufBold.mode = 1;
+		case MUSA:
+			if (global.skills[MUSA][0]){
+				var musaBold = instance_create_layer(0,0,ui_level,obj_skill);
+				musaBold.title = "Embolden";
+				musaBold.description = "Raise ally's strength and defense.  2 MP.";
+				musaBold.mode = 1;
 				if battling{
-					yusufBold.usable = global.selectedUnit.current[MP]>=2;
-					yusufBold.script = embolden;
-				}else yusufBold.usable = false;
-				a[index++] = yusufBold;
-				m[mIndex++] = yusufBold;
+					musaBold.usable = global.selectedUnit.current[MP]>=2;
+					musaBold.script = embolden;
+				}else musaBold.usable = false;
+				a[index++] = musaBold;
+				m[mIndex++] = musaBold;
 			}
-			if (global.skills[YUSUF][1]){
-				var yusufBalm = instance_create_layer(0,0,ui_level,obj_skill);
-				yusufBalm.title = "Balm";
-				yusufBalm.selector = rigid_selector;
-				yusufBalm.mode = 4;//rigid_selector:4 - team stuff
+			if (global.skills[MUSA][1]){
+				var musaBalm = instance_create_layer(0,0,ui_level,obj_skill);
+				musaBalm.title = "Balm";
+				musaBalm.selector = rigid_selector;
+				musaBalm.mode = 4;//rigid_selector:4 - team stuff
 				if battling{
-					yusufBalm.usable = global.selectedUnit.current[MP]>=5;
-				}else yusufBalm.usable = global.party[global.selectedUnit][MP]>=5;
-				yusufBalm.description = "Heals you and your teammate.  5 MP.";
-				yusufBalm.script = balm;
-				a[index++] = yusufBalm;
-				t[tIndex++] = yusufBalm;
+					musaBalm.usable = global.selectedUnit.current[MP]>=5;
+				}else musaBalm.usable = global.party[global.selectedUnit][MP]>=5;
+				musaBalm.description = "Heals you and your teammate.  5 MP.";
+				musaBalm.script = balm;
+				a[index++] = musaBalm;
+				t[tIndex++] = musaBalm;
 			}
-			if (global.skills[YUSUF][2]){
-				var yusufIC = instance_create_layer(0,0,ui_level,obj_skill);
-				yusufIC.title = "Intensive care";
-				yusufIC.mode = 1.5;
+			if (global.skills[MUSA][2]){
+				var musaIC = instance_create_layer(0,0,ui_level,obj_skill);
+				musaIC.title = "Intensive care";
+				musaIC.mode = 1.5;
 				if battling
-					yusufIC.usable = global.selectedUnit.current[MP]>=10;
-				else yusufIC.usable = global.party[global.selectedUnit][MP]>=10;
-				yusufIC.description = "Raise fallen ally.  10 MP.";
-				yusufIC.script = intensiveCare;
-				a[index++] = yusufIC;
-				t[tIndex++] = yusufIC;
+					musaIC.usable = global.selectedUnit.current[MP]>=10;
+				else musaIC.usable = global.party[global.selectedUnit][MP]>=10;
+				musaIC.description = "Raise fallen ally.  10 MP.";
+				musaIC.script = intensiveCare;
+				a[index++] = musaIC;
+				t[tIndex++] = musaIC;
 			}
-			if (global.skills[YUSUF][3]){
-				var yusufBurn = instance_create_layer(0,0,ui_level,obj_skill);
-				yusufBurn.title = "Ignite";
-				yusufBurn.description = "Fire damage on one enemy.";
-				yusufBurn.mode = 0;
+			if (global.skills[MUSA][3]){
+				var musaBurn = instance_create_layer(0,0,ui_level,obj_skill);
+				musaBurn.title = "Ignite";
+				musaBurn.description = "Fire damage on one enemy.";
+				musaBurn.mode = 0;
 				if battling{
-					yusufBurn.script = freeze;
-					yusufBurn.usable = global.selectedUnit.current[MP]>=4;
-				}else yusufBurn.usable = false;
-				a[index++]  = yusufBurn;
-				m[mIndex++] = yusufBurn;
+					musaBurn.script = freeze;
+					musaBurn.usable = global.selectedUnit.current[MP]>=4;
+				}else musaBurn.usable = false;
+				a[index++]  = musaBurn;
+				m[mIndex++] = musaBurn;
 			}
-			if (global.skills[YUSUF][4]){
-				var yusufDetox = instance_create_layer(0,0,ui_level,obj_skill);
-				yusufDetox.title = "Cure Poison";
-				yusufDetox.description = "Cure Poison on a buddy! .";
-				yusufDetox.mode = 1;
+			if (global.skills[MUSA][4]){
+				var musaDetox = instance_create_layer(0,0,ui_level,obj_skill);
+				musaDetox.title = "Cure Poison";
+				musaDetox.description = "Cure Poison on a buddy! .";
+				musaDetox.mode = 1;
 				if battling{
-					yusufDetox.script = detox;
-					yusufDetox.usable = global.selectedUnit.current[MP]>=2;
-				}else yusufDetox.usable = false;
-				a[index++]  = yusufDetox;
-				u[uIndex++] = yusufDetox;
+					musaDetox.script = detox;
+					musaDetox.usable = global.selectedUnit.current[MP]>=2;
+				}else musaDetox.usable = false;
+				a[index++]  = musaDetox;
+				u[uIndex++] = musaDetox;
 			}
 			break;
 		default: //testing only
-			var aoiBurn = instance_create_layer(0,0,ui_level,obj_skill);
-			aoiBurn.title = "Burn";
-			aoiBurn.description = "Fire damage on all enemies.";
-			aoiBurn.script = burn;
-			a[index++] = aoiBurn;
-			m[mIndex++] = aoiBurn;
-			var yusufBalm = instance_create_layer(0,0,ui_level,obj_skill);
-			yusufBalm.title = "Balm";
-			yusufBalm.description = "Heals you and your teammate.  5 MP.";
-			yusufBalm.script = balm;
-			a[index++] = yusufBalm;
-			t[tIndex++] = yusufBalm;
+			var moriBurn = instance_create_layer(0,0,ui_level,obj_skill);
+			moriBurn.title = "Burn";
+			moriBurn.description = "Fire damage on all enemies.";
+			moriBurn.script = burn;
+			a[index++] = moriBurn;
+			m[mIndex++] = moriBurn;
+			var musaBalm = instance_create_layer(0,0,ui_level,obj_skill);
+			musaBalm.title = "Balm";
+			musaBalm.description = "Heals you and your teammate.  5 MP.";
+			musaBalm.script = balm;
+			a[index++] = musaBalm;
+			t[tIndex++] = musaBalm;
 	}
 	//common options
 	if !deFound{

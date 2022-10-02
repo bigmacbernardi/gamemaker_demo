@@ -4,7 +4,7 @@
 /* format is 
 [CHARACTER, EXPRESSION, LINE, DOES IT CONTINUE? (true/false)]
 
-CHARACTERS:  0 = No one/Narrator, 1 = Yusuf, 2 = Aoi, 3 = Elder, 4 = Andolphus, 5 = Yusuf Mom, 6 = Aoi Mom ...
+CHARACTERS:  0 = No one/Narrator, 1 = Musa, 2 = Mori, 3 = Elder, 4 = Andolphus, 5 = Musa Mom, 6 = Mori Mom ...
 EXPRESSIONS: 0 = Neutral/Calm, 1 = Serious, 2 = Happy, 3 = Sad, 4 = Afraid, 5 = Angry, 6 = Laughing
              7 = Confused, 8 = Shocked, 9 = Disgusted, 10 = Tired/Annoyed, 11 = Smug, 12 = Horny/other
              Obviously not every character needs all these expressions.

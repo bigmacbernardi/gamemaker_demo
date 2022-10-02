@@ -9,7 +9,7 @@ switch (state){
 				  //locomode = 1;
                   facing = 4;
                   x_spd = -1;
-				  sprite_index=spr_yusuf_left1;
+				  sprite_index=spr_musa_left1;
 				  x-=.5;
            }
 			show_debug_message(progress);
@@ -26,14 +26,14 @@ switch (state){
 				  //locomode = 0;
 			}
 			show_debug_message("Scene 0 Phase 1");
-            say(11,YUSUF);
+            say(11,MUSA);
 			state = 3;
 			break;
 	case 3: if !instance_exists(obj_dialoguer){
 				obj_player.paused = true;
 				show_debug_message("Scene 0 Phase 2");
 				var namer = instance_create_layer(0,0,"Instances",obj_nameentry);
-				namer.naming_whom = YUSUF;
+				namer.naming_whom = MUSA;
 				state = 4;
 			}
 			break;
@@ -55,7 +55,7 @@ switch (state){
 				show_debug_message("Scene 0 Phase 5");
 				obj_player.paused = true;
 				show_debug_message(state);
-                say(13,YUSUF); 
+                say(13,MUSA); 
 				state = 7;
 				show_debug_message(state);
 			}
@@ -71,7 +71,7 @@ switch (state){
 	case 8: if !instance_exists(obj_dialoguer){
 				show_debug_message("Scene 0 Phase 7");
 				obj_player.paused = true;
-	            say(15,YUSUF); 
+	            say(15,MUSA); 
 				state = 9;
 			}
 			break;
@@ -95,7 +95,7 @@ switch (state){
 	case 11: if !instance_exists(obj_dialoguer){
 				show_debug_message("Scene 0 Phase 10");
 				obj_player.paused = true;
-	            say(18,YUSUF); 
+	            say(18,MUSA); 
 				state = 12;
 			}
 			break;

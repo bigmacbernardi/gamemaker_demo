@@ -2,7 +2,7 @@
 switch(combatPhase){
 	
 	case phase.init:
-		var characters = [battle_aoi,battle_yusuf]; //declare in inner scope so it's not held?
+		var characters = [battle_mori,battle_musa]; //declare in inner scope so it's not held?
 		var temp = 0;
 		for (var i = 0; i<4;i++){//4 global.currentParty slots
 			if (global.currentParty[i] != noone) {

@@ -30,7 +30,7 @@ drawY += 24;
   drawY += 24;
 }*/
 selected=true;
-portraits = [spr_aoi,spr_yusuf,spr_old_man44,spr_old_man44,spr_old_man44,spr_old_man44];
+portraits = [spr_mori,spr_musa,spr_old_man44,spr_old_man44,spr_old_man44,spr_old_man44];
 lvBreaks = [0,200,600,1400,3000,6200,10000,30000,600000,
 1600000,6400000,11600000,111600000,222600000,333600000,444600000,644600000,794600000,
 1000000000,1500000000,2000000001,3000000002,4000000003,5000000004,5000000005,

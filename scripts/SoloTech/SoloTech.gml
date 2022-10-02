@@ -221,7 +221,7 @@ function speak(){//should open speech menu I guess?
 	interrogate();
 }
 
-/* AOI TECH */
+/* MORI TECH */
 
 function burn(){
 	show_debug_message("Burning");
@@ -289,7 +289,7 @@ function freeze(){
 	}
 }
 
-/* YUSUF TECH */
+/* MUSA TECH */
 
 
 function embolden(){

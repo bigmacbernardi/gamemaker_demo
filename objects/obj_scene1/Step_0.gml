@@ -12,7 +12,7 @@ switch (state){
 	case 3:
 			show_debug_message("Scene 1 Phase 3");
 			var namer = instance_create_layer(0,0,"Instances",obj_nameentry);
-			namer.naming_whom = AOI;
+			namer.naming_whom = MORI;
 			state = 4;
 			break;
 	case 4: show_debug_message("Scene 1 Phase 4");

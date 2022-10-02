@@ -4,7 +4,7 @@
 image_xscale = camera_get_view_width(cam) / sprite_width;
 image_yscale = camera_get_view_height(cam) / sprite_height;
 frameHasPassed = false;
-front_sprites = [spr_aoi,spr_yusuf,spr_old_man,spr_old_man44];
+front_sprites = [spr_mori,spr_musa,spr_old_man,spr_old_man44];
 scrollLevel = 0; 
 scrollLevel2 = 0;
 options = ds_list_create();

@@ -38,16 +38,16 @@ switch(argument0){
 		break;
 	
 	case 8://mirror text
-		if global.currentParty[0]==YUSUF{
+		if global.currentParty[0]==MUSA{
 			global.msg = ["Wow!{1}&What a handsome young man!^3 :)/","%%%"]; 
 		}
-		else if  global.currentParty[0]==AOI{
+		else if  global.currentParty[0]==MORI{
 				global.msg = ["You look fine./","%%%"];
 		}
 		else global.msg = ["A mirror./","%%%"];
 		break;
 	case 9://dresser message
-		global.msg = ["The drawers are filled with wadded-up &shirts./",(global.currentParty[0]==YUSUF?"You think":global.names[YUSUF]+" thinks")+" that folding takes up &too much time./","%%%"];
+		global.msg = ["The drawers are filled with wadded-up &shirts./",(global.currentParty[0]==MUSA?"You think":global.names[MUSA]+" thinks")+" that folding takes up &too much time./","%%%"];
 		break;
 	case 10:
 		global.msg = [" Hm... lots of rubble around here.{0}& We should watch our step./","%%%"]
@@ -59,7 +59,7 @@ switch(argument0){
 		break;
 
 	case 12: 
-		global.msg = ["{5}   "+global.names[YUSUF]+"!!/",
+		global.msg = ["{5}   "+global.names[MUSA]+"!!/",
 		"%%%"];
 		break;
 
@@ -75,7 +75,7 @@ switch(argument0){
 		"%%%"];
 		break;
 	case 16:
-		global.msg = ["You got your Doctors Bag!/",global.names[YUSUF]+" can apply balm and revive allies.&You can access these abilities&from your SKILLS menu./",
+		global.msg = ["You got your Doctors Bag!/",global.names[MUSA]+" can apply balm and revive allies.&You can access these abilities&from your SKILLS menu./",
 		"%%%"];
 		break;
 	case 17:
@@ -148,7 +148,7 @@ switch(argument0){
 	case 33:
 		global.facechoice = global.currentParty[0]+2;
 		global.faceemotion = 2;
-		global.nameplate = global.currentParty[0]==YUSUF?"Yousuf":"You";
+		global.nameplate = global.currentParty[0]==MUSA?"Yousuf":"You";
 		global.msg =["        Happy ghost!/","%%%"];
 		break;
 	case 34:
@@ -216,7 +216,7 @@ switch(argument0){
 		global.msg= ["Got a Halite Ring!/","%%%"];
         break;
 	default: 
-        //var playerNames = ["Aoi","Yusuf"];
+        //var playerNames = ["Mori","Musa"];
         if (variable_global_exists("currentParty")) global.msg[0]= "* Hey "+global.names[global.currentParty[0]]+"./";
         else  global.msg[0]= "* Hey kid./";
 		global.msg[1]= "I'm over here. &But don't come talk to me,&or the {2}game will break./%";

@@ -18,7 +18,7 @@ for (var i = 0; i < ds_list_size(global.equipment);i++){
 }
 ds_list_copy(options,allOptions);
 subY = y+sprite_height-50/*half spr_menu_temp.sprite_height*/;
-front_sprites = [spr_aoi,spr_yusuf,spr_old_man,spr_old_man44];
+front_sprites = [spr_mori,spr_musa,spr_old_man,spr_old_man44];
 mode = 0;
 //mode 0: can select from list of characters OR list of equipment
 //mode 1: has selected character from bottom part

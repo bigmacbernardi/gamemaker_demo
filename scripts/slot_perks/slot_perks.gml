@@ -1,45 +1,45 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function checkForPerks(char,stat,oldval,newval){
-	if char == AOI{
+	if char == MORI{
 		switch(stat){
 			case DEF: if oldval<10 && newval>=10{
-						//gain Aoi def perk	
+						//gain Mori def perk	
 					  }break;
 			case SPD: if oldval<25 && newval>=25{
-						//gain Aoi spd perk	
+						//gain Mori spd perk	
 					  }break;
 			case STR: if oldval<10 && newval>=10{
-						//gain Aoi STR perk 1	
+						//gain Mori STR perk 1	
 					  }
 					  if oldval<30 && newval>=30{	  
-						//gain Aoi STR perk 2
+						//gain Mori STR perk 2
 					  }
 					  if oldval<60 && newval>=60{
-						  global.passives[AOI][16]+=6;	//gain Aoi STR perk 3if instance_exists(battle_manager){
+						  global.passives[MORI][16]+=6;	//gain Mori STR perk 3if instance_exists(battle_manager){
 						  
 						  if instance_exists(battle_manager) with battle_manager{
-							var strong = global.names[AOI] + " gained Double Attack!";
+							var strong = global.names[MORI] + " gained Double Attack!";
 							ds_list_add(futureMessages,strong);
 						  }
 					  }
 					  if oldval<80 && newval>=80{	  
-						//gain Aoi STR perk 3
+						//gain Mori STR perk 3
 					  }
 					  break;
 			case AGI: if oldval<35 && newval>=35{
-						//gain Aoi AGI perk	
+						//gain Mori AGI perk	
 					  }break;
 			case CHA: if oldval<55 && newval>=55{
-						//gain Aoi CHA perk	
+						//gain Mori CHA perk	
 					  }break;
 			//correct levels below this line
 			case DEX: if oldval<4 && newval>=4{
-						//gain Aoi DEX perk 1
-						global.passives[AOI][0]+=5;
+						//gain Mori DEX perk 1
+						global.passives[MORI][0]+=5;
 						if instance_exists(battle_manager){
 							with battle_manager{
-								var strong = global.names[AOI] + " learned Scan (Lv 1)!";
+								var strong = global.names[MORI] + " learned Scan (Lv 1)!";
 								ds_list_add(futureMessages,strong);
 							}
 						}
@@ -48,56 +48,56 @@ function checkForPerks(char,stat,oldval,newval){
 						}
 					  }
 					  if oldval<30 && newval>=30{	  
-						//gain Aoi DEX perk 2
+						//gain Mori DEX perk 2
 					  }
 					  if oldval<65 && newval>=65{	  
-						//gain Aoi DEX perk 3
+						//gain Mori DEX perk 3
 					  }
 					  if oldval<80 && newval>=80{	  
-						//gain Aoi DEX perk 3
+						//gain Mori DEX perk 3
 					  }
 					  break;
 			case WIS: if oldval<10 && newval>=10{
-						//gain Aoi WIS perk 1	
+						//gain Mori WIS perk 1	
 					  }
 					  if oldval<30 && newval>=30{	  
-						//gain Aoi WIS perk 2
+						//gain Mori WIS perk 2
 					  }
 					  if oldval<65 && newval>=65{	  
-						//gain Aoi WIS perk 3
+						//gain Mori WIS perk 3
 					  }
 					  if oldval<80 && newval>=80{	  
-						//gain Aoi WIS perk 3
+						//gain Mori WIS perk 3
 					  }
 					  break;
 			
 		}
-	}else if char==YUSUF{
+	}else if char==MUSA{
 		switch(stat){//ONLY UP-TO_DATE NUMBER IS AGI
 			case DEF: if oldval<10 && newval>=10{
-						//gain Yusuf def perk	
+						//gain Musa def perk	
 					  }break;
 			case SPD: if oldval<25 && newval>=25{
-						//gain Yusuf spd perk	
+						//gain Musa spd perk	
 					  }break;
 			case STR: if oldval<10 && newval>=10{
-						//gain Yusuf STR perk 1	
+						//gain Musa STR perk 1	
 					  }
 					  if oldval<30 && newval>=30{	  
-						//gain Yusuf STR perk 2
+						//gain Musa STR perk 2
 					  }
 					  if oldval<65 && newval>=65{	  
-						//gain Yusuf STR perk 3
+						//gain Musa STR perk 3
 					  }
 					  if oldval<80 && newval>=80{	  
-						//gain Yusuf STR perk 3
+						//gain Musa STR perk 3
 					  }
 					  break;
 			case AGI: if oldval<7 && newval>=7{
-						global.skills[YUSUF][4]=true;
+						global.skills[MUSA][4]=true;
 						if instance_exists(battle_manager){
 							with battle_manager{
-								var strong = global.names[YUSUF] + " learned Cure Poison!";
+								var strong = global.names[MUSA] + " learned Cure Poison!";
 								ds_list_add(futureMessages,strong);
 							}
 						}
@@ -106,33 +106,33 @@ function checkForPerks(char,stat,oldval,newval){
 						}
 					  }break;
 			case CHA: if oldval<55 && newval>=55{
-						//gain Yusuf CHA perk	
+						//gain Musa CHA perk	
 					  }break;
 			//correct levels below this line
 			case DEX: if oldval<10 && newval>=10{
-						//gain Yusuf DEX perk 1	
+						//gain Musa DEX perk 1	
 					  }
 					  if oldval<30 && newval>=30{	  
-						//gain Yusuf DEX perk 2
+						//gain Musa DEX perk 2
 					  }
 					  if oldval<65 && newval>=65{	  
-						//gain Yusuf DEX perk 3
+						//gain Musa DEX perk 3
 					  }
 					  if oldval<80 && newval>=80{	  
-						//gain Yusuf DEX perk 3
+						//gain Musa DEX perk 3
 					  }
 					  break;
 			case WIS: if oldval<10 && newval>=10{
-						//gain Yusuf WIS perk 1	
+						//gain Musa WIS perk 1	
 					  }
 					  if oldval<30 && newval>=30{	  
-						//gain Yusuf WIS perk 2
+						//gain Musa WIS perk 2
 					  }
 					  if oldval<65 && newval>=65{	  
-						//gain Yusuf WIS perk 3
+						//gain Musa WIS perk 3
 					  }
 					  if oldval<80 && newval>=80{	  
-						//gain Yusuf WIS perk 3
+						//gain Musa WIS perk 3
 					  }
 					  break;
 			
@@ -141,119 +141,119 @@ function checkForPerks(char,stat,oldval,newval){
 }
 
 function checkForPerkLoss(char,stat,oldval,newval){
-	if char == AOI{
+	if char == MORI{
 		switch(stat){
 			case DEF: if newval<10 && oldval>=10{
-						//lose Aoi def perk	
+						//lose Mori def perk	
 					  }break;
 			case SPD: if newval<25 && oldval>=25{
-						//lose Aoi spd perk	
+						//lose Mori spd perk	
 					  }break;
 			case STR: if newval<10 && oldval>=10{
-						//lose Aoi STR perk 1	
+						//lose Mori STR perk 1	
 					  }
 					  if newval<30 && oldval>=30{	  
-						//lose Aoi STR perk 2
+						//lose Mori STR perk 2
 					  }
 					  if newval<60 && oldval>=60{
-						  global.passives[AOI][16]-=6;
-						//lose Aoi STR perk 3
+						  global.passives[MORI][16]-=6;
+						//lose Mori STR perk 3
 					  }
 					  if newval<80 && oldval>=80{	  
-						//lose Aoi STR perk 3
+						//lose Mori STR perk 3
 					  }
 					  break;
 			case AGI: if newval<35 && oldval>=35{
-						//lose Aoi AGI perk	
+						//lose Mori AGI perk	
 					  }break;
 			case CHA: if newval<55 && oldval>=55{
-						//lose Aoi CHA perk	
+						//lose Mori CHA perk	
 					  }break;
 			//correct levels below this line
 			case DEX: if newval<4 && oldval>=4{
-						//lose Aoi DEX perk 1
-						global.passives[AOI][0]-=5;
+						//lose Mori DEX perk 1
+						global.passives[MORI][0]-=5;
 						audio_play_sound(MeanyHit4,100,0);	
 					  }
 					  if newval<30 && oldval>=30{	  
-						//lose Aoi DEX perk 2
+						//lose Mori DEX perk 2
 					  }
 					  if newval<65 && oldval>=65{	  
-						//lose Aoi DEX perk 3
+						//lose Mori DEX perk 3
 					  }
 					  if newval<80 && oldval>=80{	  
-						//lose Aoi DEX perk 3
+						//lose Mori DEX perk 3
 					  }
 					  break;
 			case WIS: if newval<10 && oldval>=10{
-						//lose Aoi WIS perk 1	
+						//lose Mori WIS perk 1	
 					  }
 					  if newval<30 && oldval>=30{	  
-						//lose Aoi WIS perk 2
+						//lose Mori WIS perk 2
 					  }
 					  if newval<65 && oldval>=65{	  
-						//lose Aoi WIS perk 3
+						//lose Mori WIS perk 3
 					  }
 					  if newval<80 && oldval>=80{	  
-						//lose Aoi WIS perk 3
+						//lose Mori WIS perk 3
 					  }
 					  break;
 			
 		}
 	}
-	else if char==YUSUF{
+	else if char==MUSA{
 		switch(stat){//ONLY UP-TO_DATE NUMBER IS AGI
 			case DEF: if newval<10 && oldval>=10{
-						//lose Yusuf def perk	
+						//lose Musa def perk	
 					  }break;
 			case SPD: if newval<25 && oldval>=25{
-						//lose Yusuf spd perk	
+						//lose Musa spd perk	
 					  }break;
 			case STR: if newval<10 && oldval>=10{
-						//lose Yusuf STR perk 1	
+						//lose Musa STR perk 1	
 					  }
 					  if newval<30 && oldval>=30{	  
-						//lose Yusuf STR perk 2
+						//lose Musa STR perk 2
 					  }
 					  if newval<65 && oldval>=65{	  
-						//lose Yusuf STR perk 3
+						//lose Musa STR perk 3
 					  }
 					  if newval<80 && oldval>=80{	  
-						//lose Yusuf STR perk 3
+						//lose Musa STR perk 3
 					  }
 					  break;
 			case AGI: if newval<7 && oldval>=7{
-						global.skills[YUSUF][4]=false;
+						global.skills[MUSA][4]=false;
 						audio_play_sound(MeanyHit4,100,0);
 					  }break;
 			case CHA: if newval<55 && oldval>=55{
-						//lose Yusuf CHA perk	
+						//lose Musa CHA perk	
 					  }break;
 			//correct levels below this line
 			case DEX: if newval<10 && oldval>=10{
-						//lose Yusuf DEX perk 1	
+						//lose Musa DEX perk 1	
 					  }
 					  if newval<30 && oldval>=30{	  
-						//lose Yusuf DEX perk 2
+						//lose Musa DEX perk 2
 					  }
 					  if newval<65 && oldval>=65{	  
-						//lose Yusuf DEX perk 3
+						//lose Musa DEX perk 3
 					  }
 					  if newval<80 && oldval>=80{	  
-						//lose Yusuf DEX perk 3
+						//lose Musa DEX perk 3
 					  }
 					  break;
 			case WIS: if newval<10 && oldval>=10{
-						//lose Yusuf WIS perk 1	
+						//lose Musa WIS perk 1	
 					  }
 					  if newval<30 && oldval>=30{	  
-						//lose Yusuf WIS perk 2
+						//lose Musa WIS perk 2
 					  }
 					  if newval<65 && oldval>=65{	  
-						//lose Yusuf WIS perk 3
+						//lose Musa WIS perk 3
 					  }
 					  if newval<80 && oldval>=80{	  
-						//lose Yusuf WIS perk 3
+						//lose Musa WIS perk 3
 					  }
 					  break;
 			}

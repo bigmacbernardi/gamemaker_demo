@@ -1,12 +1,12 @@
 /// @description Get set up
 resetParty = global.currentParty;
-global.currentParty = [YUSUF,noone,noone,noone];
+global.currentParty = [MUSA,noone,noone,noone];
 with obj_player{
 	set_sprites();	
 	facing = 8;
 }
-if room != T1YusufRoom{
-	room_goto(T1YusufRoom);
+if room != T1MusaRoom{
+	room_goto(T1MusaRoom);
 	obj_player.x = 93;
 	obj_player.y = 311;
 	var sprs = [obj_player.back_sprites,obj_player.right_sprites,obj_player.left_sprites,obj_player.front_sprites];

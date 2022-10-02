@@ -15,31 +15,31 @@ for (var i =0;i<99;i++){
 	 
 if !variable_global_exists("location_name") global.location_name="Load menu";
 if !variable_global_exists("party"){
-	global.party[AOI][HP] = 10;
-	global.party[AOI][MP] = 10;
-	global.party[AOI][DEF] = 1;
-	global.party[AOI][SPD] = 3;
-	global.party[AOI][STR] = 6;
-	global.party[AOI][AGI] = 3;
-	global.party[AOI][CHA] = 3;
-	global.party[AOI][DEX] = 3;
-	global.party[AOI][WIS] = 5;
-	global.party[AOI][ACC] = .75;
-	global.party[AOI][LV] = 1;
-	global.party[AOI][XP] = 0;
+	global.party[MORI][HP] = 10;
+	global.party[MORI][MP] = 10;
+	global.party[MORI][DEF] = 1;
+	global.party[MORI][SPD] = 3;
+	global.party[MORI][STR] = 6;
+	global.party[MORI][AGI] = 3;
+	global.party[MORI][CHA] = 3;
+	global.party[MORI][DEX] = 3;
+	global.party[MORI][WIS] = 5;
+	global.party[MORI][ACC] = .75;
+	global.party[MORI][LV] = 1;
+	global.party[MORI][XP] = 0;
 
-	global.party[YUSUF][HP] = 10;
-	global.party[YUSUF][MP] = 10;
-	global.party[YUSUF][DEF] = 1;
-	global.party[YUSUF][SPD] = 4;
-	global.party[YUSUF][STR] = 5;
-	global.party[YUSUF][AGI] = 5;
-	global.party[YUSUF][CHA] = 3;
-	global.party[YUSUF][DEX] = 3;
-	global.party[YUSUF][WIS] = 3;
-	global.party[YUSUF][ACC] = .75;
-	global.party[YUSUF][LV] = 1;
-	global.party[YUSUF][XP] = 0;
+	global.party[MUSA][HP] = 10;
+	global.party[MUSA][MP] = 10;
+	global.party[MUSA][DEF] = 1;
+	global.party[MUSA][SPD] = 4;
+	global.party[MUSA][STR] = 5;
+	global.party[MUSA][AGI] = 5;
+	global.party[MUSA][CHA] = 3;
+	global.party[MUSA][DEX] = 3;
+	global.party[MUSA][WIS] = 3;
+	global.party[MUSA][ACC] = .75;
+	global.party[MUSA][LV] = 1;
+	global.party[MUSA][XP] = 0;
 }
 if !variable_global_exists("flag"){
 	global.flag=[0,0,0,0,0,0,0,0,0,0,//Elder has gotten your attention
@@ -72,7 +72,7 @@ if !variable_global_exists("dualSkills"){
 	];
 }
 if !variable_global_exists("names"){
-	global.names=["Aoi","Yusuf","Jamir","Bardo","Prison Jane","Luchador","Server","Nikolai","Atta","Pat","Wormwood"];
+	global.names=["Mori","Musa","Jamir","Bardo","Prison Jane","Luchador","Server","Nikolai","Atta","Pat","Wormwood"];
 }
 if !variable_global_exists("statuses")
 	global.statuses=[[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0]];
@@ -183,7 +183,7 @@ function loadGame(fname = "save0.ini"){
 	var readNum = ini_read_real("states","trackNo",-1);
 	if readNum>-1 obj_persistentmusicplayer.trackNo = readNum;	
 	with obj_persistentmusicplayer{
-		var possible_tracks = [yusufDayTheme_needsADSR,overworld_breezetemp,d1music1,overworld_manotemp,bouncerock_shoptheme];
+		var possible_tracks = [musaDayTheme_needsADSR,overworld_breezetemp,d1music1,overworld_manotemp,bouncerock_shoptheme];
 		audio_stop_sound(songPlaying);
 		songPlaying = audio_play_sound(possible_tracks[trackNo],1,true);
 		//audio_sound_set_track_position(songPlaying,continue_position);

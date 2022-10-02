@@ -1,6 +1,6 @@
-/// @description Elder first talks to Yusuf and Aoi
+/// @description Elder first talks to Musa and Mori
 resetParty = global.currentParty;
-global.currentParty = [AOI,YUSUF,noone,noone];
+global.currentParty = [MORI,MUSA,noone,noone];
 with obj_player{
 	set_sprites();	
 }

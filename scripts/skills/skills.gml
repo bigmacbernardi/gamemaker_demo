@@ -17,7 +17,7 @@ function talk(){
 	var inst = instance_create_depth(0, battle_menu_positioner.y-40,-90, obj_submenu);
 	inst.priorMenu = battle_menu;	//redundant.
 	switch global.selectedUnit.index{
-		case YUSUF:
+		case MUSA:
 			var negotiat = instance_create_layer(0,battle_menu_positioner.y-80,"UI_Base", obj_skill);
 			var pacif = instance_create_layer(0,battle_menu_positioner.y-80,"UI_Base", obj_skill);
 			var convo = instance_create_layer(0,battle_menu_positioner.y-80,"UI_Base", obj_skill);
@@ -37,7 +37,7 @@ function talk(){
 			ds_list_add(inst.optionSlots,pacif);
 			ds_list_add(inst.optionSlots,negotiat);
 			break;
-		case AOI:
+		case MORI:
 			var pacif = instance_create_layer(0,battle_menu_positioner.y-80,"UI_Base", obj_skill);
 			var interrogat= instance_create_layer(0,battle_menu_positioner.y-80,"UI_Base", obj_skill);
 			var convo = instance_create_layer(0,battle_menu_positioner.y-80,"UI_Base", obj_skill);
