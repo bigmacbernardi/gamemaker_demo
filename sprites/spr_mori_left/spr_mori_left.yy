@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 18,
   "height": 25,
   "textureGroupId": {
@@ -268,7 +269,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Aoi",
-    "path": "folders/Sprites/Aoi.yy",
+    "name": "Mori",
+    "path": "folders/Sprites/Good Guys/Mori.yy",
   },
 }

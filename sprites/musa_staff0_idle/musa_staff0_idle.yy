@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 32,
   "textureGroupId": {
@@ -68,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "weapons",
-    "path": "folders/Sprites/Yusuf/battle/weapons.yy",
+    "path": "folders/Sprites/Good Guys/Musa/battle/weapons.yy",
   },
 }

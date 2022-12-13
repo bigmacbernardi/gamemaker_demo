@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 15,
   "height": 14,
   "textureGroupId": {
@@ -193,7 +194,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Yusuf",
-    "path": "folders/Sprites/Yusuf.yy",
+    "name": "Musa",
+    "path": "folders/Sprites/Good Guys/Musa.yy",
   },
 }

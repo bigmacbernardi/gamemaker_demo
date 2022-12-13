@@ -261,6 +261,45 @@ function checkForPerkLoss(char,stat,oldval,newval){
 }
 
 function slot_perks(charIndex){
+	var arr = [[//cost?,requiredParent,title,description
+		[DEX,-1,"Unlock Scan","See the truth (enemy HP)\nCan be powered up."],
+		[DEF,0,"",""],
+		[STR,1,"",""],
+		[WIS,1,"",""],
+		[SPD,2,"",""],
+		[STR,3,"",""],
+		[AGI,4,"Unlock Foresight","Increase your whole squad's likelihood to \n dodge any attack.  Can be powered up."],
+		[WIS,5,"",""],
+		[DEF,6,"",""],
+		[STR,7,"Double-Attack","When single-wielding, all physical attacks\n are doubled."],
+		[CHA,8,"",""],
+		[WIS,9,"",""],
+		[DEF,10,"",""],
+		[STR,11,"",""],
+		[DEX,12,"",""],
+		[WIS,13,"",""]
+	],[
+		
+		[0,-1,"",""],
+		[AGI,0,"New skill: Cure Poison","Unlock 'Cure Poison' skill"],
+		[CHA,0,"",""],
+		[DEX,1,"",""],
+		[SPD,2,"",""],
+		[STR,3,"",""],
+		[CHA,4,"",""],
+		[WIS,5,"",""],
+		[DEF,6,"Resiliance","Take less damage from Poison, Ice,\n and Earth attacks."],
+		[STR,7,"",""],
+		[CHA,8,"",""],
+		[WIS,9,"",""],
+		[DEF,10,"",""],
+		[SPD,11,"",""],
+		[CHA,12,"",""],
+		[DEX,13,"Sleight-of-Hand","Chance to steal ultra-rare items from\n certain enemies."]
+	]];
+	return arr[charIndex];
+}
+function slot_perks_old(charIndex){
 	var arr = [[//stat,minRequired,title,description
 		[DEF,10,"",""],
 		[STR,10,"",""],
@@ -279,7 +318,7 @@ function slot_perks(charIndex){
 		[DEX,80,"",""],
 		[WIS,80,"",""]
 	],[
-		[DEF,10,"",""],
+		[0,-1,"",""],
 		[AGI,7,"New skill: Cure Poison","Unlock 'Cure Poison' skill"],
 		[CHA,15,"",""],
 		[DEX,10,"",""],

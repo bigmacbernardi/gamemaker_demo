@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 27,
   "textureGroupId": {
@@ -84,6 +85,6 @@
   "nineSlice": null,
   "parent": {
     "name": "battle",
-    "path": "folders/Sprites/Aoi/battle.yy",
+    "path": "folders/Sprites/Good Guys/Mori/battle.yy",
   },
 }

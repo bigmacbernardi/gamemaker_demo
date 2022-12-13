@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 25,
   "height": 28,
   "textureGroupId": {
@@ -147,6 +148,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Elder",
-    "path": "folders/Sprites/Elder.yy",
+    "path": "folders/Sprites/Good Guys/Elder.yy",
   },
 }
