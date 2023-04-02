@@ -1,7 +1,13 @@
 {
-  "kind": 1,
+  "resourceType": "GMPath",
+  "resourceVersion": "1.0",
+  "name": "badcirclepath",
   "closed": true,
-  "precision": 4,
+  "kind": 1,
+  "parent": {
+    "name": "minigame assets",
+    "path": "folders/Objects/minigame assets.yy",
+  },
   "points": [
     {"speed":100.0,"x":33.0,"y":-24.0,},
     {"speed":100.0,"x":-98.14288,"y":388.35712,},
@@ -13,12 +19,5 @@
     {"speed":100.0,"x":-130.57144,"y":244.21426,},
     {"speed":100.0,"x":-187.28574,"y":182.21426,},
   ],
-  "parent": {
-    "name": "minigame assets",
-    "path": "folders/Objects/minigame assets.yy",
-  },
-  "resourceVersion": "1.0",
-  "name": "badcirclepath",
-  "tags": [],
-  "resourceType": "GMPath",
+  "precision": 4,
 }

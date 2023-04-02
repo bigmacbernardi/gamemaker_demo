@@ -1,8 +1,8 @@
 /// @description Updates positions!  Will skip indexes of destroyed items, so I guess watch out?
 
-var tribbles = instance_count(obj_enemy_tribble);
-var ghosts = instance_count(obj_enemy);
-var plants = instance_count(obj_enemy_plant);
+var tribbles = obj_enemy_tribble.instance_count;
+var ghosts = obj_enemy.instance_count;
+var plants = obj_enemy_plant.instance_count;
 var index = -1;
 for (var i = 0;i<tribbles;i++){
 	var unit = instance_find(obj_enemy_tribble,i);

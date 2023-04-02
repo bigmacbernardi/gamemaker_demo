@@ -81,6 +81,8 @@ function getRoomName(rm = room){
 	        return "Frosty Cavern";
 		case T1ShootingGalleryRoom:
 			return "Ancyra Shooting Gallery";
+		case T1Shop1:
+			return "Ancyra General Store";
 		case d1admin:
 			return "Ancyran Archive - Administration Room";
 		case d0woods1:

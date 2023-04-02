@@ -1,8 +1,8 @@
 /// @description Track current room's enemies OR reset to last position
 if !instance_exists(battle_manager){
-	var tribbles = instance_count(obj_enemy_tribble);
-	var ghosts = instance_count(obj_enemy);
-	var plants = instance_count(obj_enemy_plant);
+	var tribbles = obj_enemy_tribble.instance_count;
+var ghosts = obj_enemy.instance_count;
+var plants = obj_enemy_plant.instance_count;
 	var found=false;
 	for (var i =0;i<ds_list_size(rooms_visited);i++){	
 		if rooms_visited[|i]==room{
